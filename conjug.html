@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercices de Conjugaison Française</title>
+    <!-- Chargement de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Configuration de la police Inter */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fc;
+        }
+        /* Styles pour les animations de feedback */
+        .feedback {
+            transition: all 0.3s ease-in-out;
+            transform: translateY(0);
+        }
+        .correct-animation {
+            background-color: #d1fae5; /* Vert très clair */
+            animation: flash-correct 0.7s ease-out;
+        }
+        .incorrect-animation {
+            background-color: #fee2e2; /* Rouge très clair */
+            animation: flash-incorrect 0.7s ease-out;
+        }
+
+        @keyframes flash-correct {
+            0% { background-color: #a7f3d0; transform: scale(1.02); }
+            50% { background-color: #d1fae5; transform: scale(1); }
+            100% { background-color: #f7f9fc; }
+        }
+        @keyframes flash-incorrect {
+            0% { background-color: #fca5a5; transform: translateX(-5px); }
+            25% { transform: translateX(5px); }
+            50% { background-color: #fee2e2; transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+            100% { background-color: #f7f9fc; transform: translateX(0); }
+        }
+        /* Style pour la modale */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+        .modal-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            width: 90%;
+            max-width: 600px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+
+    <div id="app" class="w-full max-w-2xl bg-white shadow-xl rounded-2xl p-6 md:p-10 border border-gray-100">
+
+        <h1 class="text-3xl font-bold text-center text-indigo-700 mb-6">Maîtrise de la Conjugaison</h1>
+        <p class="text-center text-gray-500 mb-8">Sélectionnez un temps et testez vos connaissances !</p>
+
+        <!-- Sélecteur de temps -->
+        <div class="mb-8">
+            <label for="temps-select" class="block text-lg font-semibold text-gray-700 mb-2">Choisir un temps :</label>
+            <select id="temps-select" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 transition duration-150 ease-in-out shadow-sm">
+                
+                <!-- Indicatif -->
+                <optgroup label="Indicatif">
+                    <option value="present">Indicatif Présent</option>
+                    <option value="imparfait">Indicatif Imparfait</option>
+                    <option value="passe_simple">Indicatif Passé simple</option>
+                    <option value="futur_simple">Indicatif Futur simple</option>
+                    <option value="passe_compose">Indicatif Passé composé</option>
+                    <option value="plus_que_parfait">Indicatif Plus-que-parfait</option>
+                    <option value="passe_anterieur">Indicatif Passé antérieur</option>
+                    <option value="futur_anterieur">Indicatif Futur antérieur</option>
+                </optgroup>
+                
+                <!-- Conditionnel -->
+                <optgroup label="Conditionnel">
+                    <option value="conditionnel_present">Conditionnel Présent</option>
+                    <option value="conditionnel_passe">Conditionnel Passé</option>
+                </optgroup>
+
+                <!-- Subjonctif -->
+                <optgroup label="Subjonctif">
+                    <option value="subjonctif_present">Subjonctif Présent</option>
+                    <option value="subjonctif_imparfait">Subjonctif Imparfait (littéraire)</option>
+                    <option value="subjonctif_passe">Subjonctif Passé</option>
+                    <option value="subjonctif_plus_que_parfait">Subjonctif Plus-que-parfait (littéraire)</option>
+                </optgroup>
+
+            </select>
+        </div>
+        
+
+        <!-- Section de l'exercice -->
+        <div id="exercise-card" class="bg-indigo-50 p-6 rounded-xl border border-indigo-200">
+            <div id="question-display" class="text-center mb-6">
+                <!-- Nouveau libellé plus court -->
+                <p class="text-lg font-semibold text-gray-700 mb-1">Verbe à conjuguer (Temps sélectionné) :</p>
+                <!-- Verbe -->
+                <p id="verb-display" class="text-2xl font-extrabold text-gray-800 mb-4">Chargement...</p>
+                <!-- Pronom -->
+                <p id="person-display" class="text-xl font-semibold text-indigo-600">Chargement...</p>
+            </div>
+
+            <!-- Formulaire de réponse -->
+            <form id="conjugation-form" class="flex flex-col gap-4 md:flex-row">
+                <input type="text" id="user-answer" placeholder="Entrez la conjugaison ici (ex: suis allé)" required
+                       class="flex-grow p-3 border border-gray-300 rounded-lg shadow-inner focus:ring-indigo-500 focus:border-indigo-500 transition duration-150 ease-in-out text-lg">
+                <button type="submit" id="submit-button"
+                        class="px-6 py-3 bg-indigo-600 text-white font-bold rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-4 focus:ring-indigo-500 focus:ring-opacity-50 transition duration-150 ease-in-out shadow-md hover:shadow-lg disabled:bg-indigo-400">
+                    Vérifier
+                </button>
+            </form>
+
+            <!-- Feedback et Solution -->
+            <div id="feedback-area" class="mt-4 p-4 rounded-lg text-center feedback hidden">
+                <p id="feedback-message" class="font-semibold"></p>
+                <p id="solution-message" class="text-sm text-gray-600 mt-1"></p>
+            </div>
+            
+            <button id="next-question-button"
+                    class="mt-4 w-full px-6 py-3 bg-green-500 text-white font-bold rounded-lg hover:bg-green-600 focus:outline-none focus:ring-4 focus:ring-green-500 focus:ring-opacity-50 transition duration-150 ease-in-out shadow-md hidden">
+                Question Suivante
+            </button>
+        </div>
+        
+        <!-- Affichage du score de la session actuelle -->
+        <div id="score-card" class="mt-8 p-4 bg-gray-100 rounded-xl flex justify-between items-center text-lg font-semibold text-gray-700 border-t-4 border-indigo-500">
+            <span>Score de la session :</span>
+            <span id="score-display" class="text-2xl font-extrabold text-indigo-600">0 / 0</span>
+        </div>
+        
+        <!-- Bouton de stats (Déplacé sous le score) -->
+        <button id="show-stats-button"
+                class="w-full p-3 mt-4 bg-gray-200 text-gray-700 font-semibold rounded-lg hover:bg-gray-300 focus:outline-none focus:ring-4 focus:ring-gray-300 focus:ring-opacity-50 transition duration-150 ease-in-out shadow-sm">
+            📊 Voir mes Statistiques
+        </button>
+
+
+    </div>
+
+    <!-- Modale de Statistiques -->
+    <div id="stats-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <h2 class="text-2xl font-bold text-indigo-700 mb-4 text-center">Statistiques de Conjugaison</h2>
+
+            <div class="mb-6 p-4 bg-indigo-50 rounded-lg text-center border border-indigo-200">
+                <p class="text-lg font-semibold text-gray-700">Total Global</p>
+                <p id="global-stats" class="text-3xl font-extrabold text-indigo-600 mt-1">0 / 0 (0%)</p>
+            </div>
+            
+            <h3 class="text-xl font-semibold text-gray-700 mb-3 border-b pb-2">Scores par Temps</h3>
+            
+            <div id="time-stats-list" class="space-y-3">
+                <!-- Les statistiques détaillées seront insérées ici par JavaScript -->
+            </div>
+
+            <button id="close-stats-button"
+                    class="mt-6 w-full p-3 bg-indigo-600 text-white font-bold rounded-lg hover:bg-indigo-700 transition duration-150 ease-in-out">
+                Fermer
+            </button>
+
+             <button id="reset-stats-button"
+                    class="mt-2 w-full p-3 bg-red-500 text-white font-bold rounded-lg hover:bg-red-600 transition duration-150 ease-in-out">
+                Réinitialiser les Stats
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // --- BASE DE DONNÉES DE CONJUGAISON ÉTENDUE ---
+        // Les temps composés utilisent la forme simplifiée : AUXILIAIRE + PARTICIPE PASSÉ
+        // Pour les verbes en 'être', le participe passé est donné avec l'accord au masculin pluriel pour 'Nous', 'Vous', 'Ils/Elles'.
+        // L'application ignore la concordance du genre (féminin/masculin) pour simplifier le code.
+
+        // Participe Passé (PP) au Masculin Singulier et Pluriel (pour 'être' verbs)
+        const PP = {
+            'être': { s: 'été', p: 'été' }, // Avoir
+            'avoir': { s: 'eu', p: 'eu' }, // Avoir
+            'aller': { s: 'allé', p: 'allés' }, // Être
+            'faire': { s: 'fait', p: 'fait' }, // Avoir
+            'chanter': { s: 'chanté', p: 'chanté' }, // Avoir
+            'finir': { s: 'fini', p: 'fini' }, // Avoir
+            'vendre': { s: 'vendu', p: 'vendu' }, // Avoir
+            'prendre': { s: 'pris', p: 'pris' }, // Avoir
+            'dire': { s: 'dit', p: 'dit' }, // Avoir
+            'venir': { s: 'venu', p: 'venus' }, // Être
+            'voir': { s: 'vu', p: 'vu' } // Avoir
+        };
+
+        const VERB_DATABASE = {
+            // VERBE ÊTRE (Auxiliaire AVOIR)
+            'être': {
+                // Temps simples
+                'present': ['suis', 'es', 'est', 'sommes', 'êtes', 'sont'],
+                'imparfait': ['étais', 'étais', 'était', 'étions', 'étiez', 'étaient'],
+                'passe_simple': ['fus', 'fus', 'fut', 'fûmes', 'fûtes', 'furent'],
+                'futur_simple': ['serai', 'seras', 'sera', 'serons', 'serez', 'seront'],
+                'conditionnel_present': ['serais', 'serais', 'serait', 'serions', 'seriez', 'seraient'],
+                'subjonctif_present': ['sois', 'sois', 'soit', 'soyons', 'soyez', 'soient'],
+                'subjonctif_imparfait': ['fusse', 'fusses', 'fût', 'fussions', 'fussiez', 'fussent'],
+                
+                // Temps composés (Auxiliaire AVOIR + PP 'été')
+                'passe_compose': ['ai ' + PP.être.s, 'as ' + PP.être.s, 'a ' + PP.être.s, 'avons ' + PP.être.p, 'avez ' + PP.être.p, 'ont ' + PP.être.p],
+                'plus_que_parfait': ['avais ' + PP.être.s, 'avais ' + PP.être.s, 'avait ' + PP.être.s, 'avions ' + PP.être.p, 'aviez ' + PP.être.p, 'avaient ' + PP.être.p],
+                'passe_anterieur': ['eus ' + PP.être.s, 'eus ' + PP.être.s, 'eut ' + PP.être.s, 'eûmes ' + PP.être.p, 'eûtes ' + PP.être.p, 'eurent ' + PP.être.p],
+                'futur_anterieur': ['aurai ' + PP.être.s, 'auras ' + PP.être.s, 'aura ' + PP.être.s, 'aurons ' + PP.être.p, 'aurez ' + PP.être.p, 'auront ' + PP.être.p],
+                'conditionnel_passe': ['aurais ' + PP.être.s, 'aurais ' + PP.être.s, 'aurait ' + PP.être.s, 'aurions ' + PP.être.p, 'auriez ' + PP.être.p, 'auraient ' + PP.être.p],
+                'subjonctif_passe': ['aie ' + PP.être.s, 'aies ' + PP.être.s, 'ait ' + PP.être.s, 'ayons ' + PP.être.p, 'ayez ' + PP.être.p, 'aient ' + PP.être.p],
+                'subjonctif_plus_que_parfait': ['eusse ' + PP.être.s, 'eusses ' + PP.être.s, 'eût ' + PP.être.s, 'eussions ' + PP.être.p, 'eussiez ' + PP.être.p, 'eussent ' + PP.être.p]
+            },
+
+            // VERBE AVOIR (Auxiliaire AVOIR)
+            'avoir': {
+                // Temps simples
+                'present': ['ai', 'as', 'a', 'avons', 'avez', 'ont'],
+                'imparfait': ['avais', 'avais', 'avait', 'avions', 'aviez', 'avaient'],
+                'passe_simple': ['eus', 'eus', 'eut', 'eûmes', 'eûtes', 'eurent'],
+                'futur_simple': ['aurai', 'auras', 'aura', 'aurons', 'aurez', 'auront'],
+                'conditionnel_present': ['aurais', 'aurais', 'aurait', 'aurions', 'auriez', 'auraient'],
+                'subjonctif_present': ['aie', 'aies', 'ait', 'ayons', 'ayez', 'aient'],
+                'subjonctif_imparfait': ['eusse', 'eusses', 'eût', 'eussions', 'eussiez', 'eussent'],
+
+                // Temps composés (Auxiliaire AVOIR + PP 'eu')
+                'passe_compose': ['ai ' + PP.avoir.s, 'as ' + PP.avoir.s, 'a ' + PP.avoir.s, 'avons ' + PP.avoir.p, 'avez ' + PP.avoir.p, 'ont ' + PP.avoir.p],
+                'plus_que_parfait': ['avais ' + PP.avoir.s, 'avais ' + PP.avoir.s, 'avait ' + PP.avoir.s, 'avions ' + PP.avoir.p, 'aviez ' + PP.avoir.p, 'avaient ' + PP.avoir.p],
+                'passe_anterieur': ['eus ' + PP.avoir.s, 'eus ' + PP.avoir.s, 'eut ' + PP.avoir.s, 'eûmes ' + PP.avoir.p, 'eûtes ' + PP.avoir.p, 'eurent ' + PP.avoir.p],
+                'futur_anterieur': ['aurai ' + PP.avoir.s, 'auras ' + PP.avoir.s, 'aura ' + PP.avoir.s, 'aurons ' + PP.avoir.p, 'aurez ' + PP.avoir.p, 'auront ' + PP.avoir.p],
+                'conditionnel_passe': ['aurais ' + PP.avoir.s, 'aurais ' + PP.avoir.s, 'aurait ' + PP.avoir.s, 'aurions ' + PP.avoir.p, 'auriez ' + PP.avoir.p, 'auraient ' + PP.avoir.p],
+                'subjonctif_passe': ['aie ' + PP.avoir.s, 'aies ' + PP.avoir.s, 'ait ' + PP.avoir.s, 'ayons ' + PP.avoir.p, 'ayez ' + PP.avoir.p, 'aient ' + PP.avoir.p],
+                'subjonctif_plus_que_parfait': ['eusse ' + PP.avoir.s, 'eusses ' + PP.avoir.s, 'eût ' + PP.avoir.s, 'eussions ' + PP.avoir.p, 'eussiez ' + PP.avoir.p, 'eussent ' + PP.avoir.p]
+            },
+
+            // VERBE ALLER (Auxiliaire ÊTRE)
+            'aller': {
+                // Temps simples
+                'present': ['vais', 'vas', 'va', 'allons', 'allez', 'vont'],
+                'imparfait': ['allais', 'allais', 'allait', 'allions', 'alliez', 'allaient'],
+                'passe_simple': ['allai', 'allas', 'alla', 'allâmes', 'allâtes', 'allèrent'],
+                'futur_simple': ['irai', 'iras', 'ira', 'irons', 'irez', 'iront'],
+                'conditionnel_present': ['irais', 'irais', 'irait', 'irions', 'iriez', 'iraient'],
+                'subjonctif_present': ['aille', 'ailles', 'aille', 'allions', 'alliez', 'aillent'],
+                'subjonctif_imparfait': ['allasse', 'allasses', 'allât', 'allassions', 'allassiez', 'allassent'],
+
+                // Temps composés (Auxiliaire ÊTRE + PP 'allé(s)')
+                'passe_compose': ['suis ' + PP.aller.s, 'es ' + PP.aller.s, 'est ' + PP.aller.s, 'sommes ' + PP.aller.p, 'êtes ' + PP.aller.p, 'sont ' + PP.aller.p],
+                'plus_que_parfait': ['étais ' + PP.aller.s, 'étais ' + PP.aller.s, 'était ' + PP.aller.s, 'étions ' + PP.aller.p, 'étiez ' + PP.aller.p, 'étaient ' + PP.aller.p],
+                'passe_anterieur': ['fus ' + PP.aller.s, 'fus ' + PP.aller.s, 'fut ' + PP.aller.s, 'fûmes ' + PP.aller.p, 'fûtes ' + PP.aller.p, 'furent ' + PP.aller.p],
+                'futur_anterieur': ['serai ' + PP.aller.s, 'seras ' + PP.aller.s, 'sera ' + PP.aller.s, 'serons ' + PP.aller.p, 'serez ' + PP.aller.p, 'seront ' + PP.aller.p],
+                'conditionnel_passe': ['serais ' + PP.aller.s, 'serais ' + PP.aller.s, 'serait ' + PP.aller.s, 'serions ' + PP.aller.p, 'seriez ' + PP.aller.p, 'seraient ' + PP.aller.p],
+                'subjonctif_passe': ['sois ' + PP.aller.s, 'sois ' + PP.aller.s, 'soit ' + PP.aller.s, 'soyons ' + PP.aller.p, 'soyez ' + PP.aller.p, 'soient ' + PP.aller.p],
+                'subjonctif_plus_que_parfait': ['fusse ' + PP.aller.s, 'fusses ' + PP.aller.s, 'fût ' + PP.aller.s, 'fussions ' + PP.aller.p, 'fussiez ' + PP.aller.p, 'fussent ' + PP.aller.p]
+            },
+            
+            // VERBE CHANTER (Auxiliaire AVOIR)
+            'chanter': { 
+                // Temps simples
+                'present': ['chante', 'chantes', 'chante', 'chantons', 'chantez', 'chantent'],
+                'imparfait': ['chantais', 'chantais', 'chantait', 'chantions', 'chantiez', 'chantaient'],
+                'passe_simple': ['chantai', 'chantas', 'chanta', 'chantâmes', 'chantâtes', 'chantèrent'],
+                'futur_simple': ['chanterai', 'chanteras', 'chantera', 'chanterons', 'chanterez', 'chanteront'],
+                'conditionnel_present': ['chanterais', 'chanterais', 'chanterait', 'chanterions', 'chanteriez', 'chanteraient'],
+                'subjonctif_present': ['chante', 'chantes', 'chante', 'chantions', 'chantiez', 'chantent'],
+                'subjonctif_imparfait': ['chantasse', 'chantasses', 'chantât', 'chantassions', 'chantassiez', 'chantassent'],
+
+                // Temps composés (Auxiliaire AVOIR + PP 'chanté')
+                'passe_compose': ['ai ' + PP.chanter.s, 'as ' + PP.chanter.s, 'a ' + PP.chanter.s, 'avons ' + PP.chanter.p, 'avez ' + PP.chanter.p, 'ont ' + PP.chanter.p],
+                'plus_que_parfait': ['avais ' + PP.chanter.s, 'avais ' + PP.chanter.s, 'avait ' + PP.chanter.s, 'avions ' + PP.chanter.p, 'aviez ' + PP.chanter.p, 'avaient ' + PP.chanter.p],
+                'passe_anterieur': ['eus ' + PP.chanter.s, 'eus ' + PP.chanter.s, 'eut ' + PP.chanter.s, 'eûmes ' + PP.chanter.p, 'eûtes ' + PP.chanter.p, 'eurent ' + PP.chanter.p],
+                'futur_anterieur': ['aurai ' + PP.chanter.s, 'auras ' + PP.chanter.s, 'aura ' + PP.chanter.s, 'aurons ' + PP.chanter.p, 'aurez ' + PP.chanter.p, 'auront ' + PP.chanter.p],
+                'conditionnel_passe': ['aurais ' + PP.chanter.s, 'aurais ' + PP.chanter.s, 'aurait ' + PP.chanter.s, 'aurions ' + PP.chanter.p, 'auriez ' + PP.chanter.p, 'auraient ' + PP.chanter.p],
+                'subjonctif_passe': ['aie ' + PP.chanter.s, 'aies ' + PP.chanter.s, 'ait ' + PP.chanter.s, 'ayons ' + PP.chanter.p, 'ayez ' + PP.chanter.p, 'aient ' + PP.chanter.p],
+                'subjonctif_plus_que_parfait': ['eusse ' + PP.chanter.s, 'eusses ' + PP.chanter.s, 'eût ' + PP.chanter.s, 'eussions ' + PP.chanter.p, 'eussiez ' + PP.chanter.p, 'eussent ' + PP.chanter.p]
+            },
+
+            // VERBE FINIR (Auxiliaire AVOIR)
+            'finir': { 
+                // Temps simples
+                'present': ['finis', 'finis', 'finit', 'finissons', 'finissez', 'finissent'],
+                'imparfait': ['finissais', 'finissais', 'finissait', 'finissions', 'finissiez', 'finissaient'],
+                'passe_simple': ['finis', 'finis', 'finit', 'finîmes', 'finîtes', 'finirent'],
+                'futur_simple': ['finirai', 'finiras', 'finira', 'finirons', 'finirez', 'finiront'],
+                'conditionnel_present': ['finirais', 'finirais', 'finirait', 'finirions', 'finiriez', 'finiraient'],
+                'subjonctif_present': ['finisse', 'finisses', 'finisse', 'finissions', 'finissiez', 'finissent'],
+                'subjonctif_imparfait': ['finisse', 'finisses', 'finît', 'finissions', 'finissiez', 'finissent'],
+
+                // Temps composés (Auxiliaire AVOIR + PP 'fini')
+                'passe_compose': ['ai ' + PP.finir.s, 'as ' + PP.finir.s, 'a ' + PP.finir.s, 'avons ' + PP.finir.p, 'avez ' + PP.finir.p, 'ont ' + PP.finir.p],
+                'plus_que_parfait': ['avais ' + PP.finir.s, 'avais ' + PP.finir.s, 'avait ' + PP.finir.s, 'avions ' + PP.finir.p, 'aviez ' + PP.finir.p, 'avaient ' + PP.finir.p],
+                'passe_anterieur': ['eus ' + PP.finir.s, 'eus ' + PP.finir.s, 'eut ' + PP.finir.s, 'eûmes ' + PP.finir.p, 'eûtes ' + PP.finir.p, 'eurent ' + PP.finir.p],
+                'futur_anterieur': ['aurai ' + PP.finir.s, 'auras ' + PP.finir.s, 'aura ' + PP.finir.s, 'aurons ' + PP.finir.p, 'aurez ' + PP.finir.p, 'auront ' + PP.finir.p],
+                'conditionnel_passe': ['aurais ' + PP.finir.s, 'aurais ' + PP.finir.s, 'aurait ' + PP.finir.s, 'aurions ' + PP.finir.p, 'auriez ' + PP.finir.p, 'auraient ' + PP.finir.p],
+                'subjonctif_passe': ['aie ' + PP.finir.s, 'aies ' + PP.finir.s, 'ait ' + PP.finir.s, 'ayons ' + PP.finir.p, 'ayez ' + PP.finir.p, 'aient ' + PP.finir.p],
+                'subjonctif_plus_que_parfait': ['eusse ' + PP.finir.s, 'eusses ' + PP.finir.s, 'eût ' + PP.finir.s, 'eussions ' + PP.finir.p, 'eussiez ' + PP.finir.p, 'eussent ' + PP.finir.p]
+            },
+
+            // VERBE VENDRE (Auxiliaire AVOIR)
+            'vendre': { 
+                // Temps simples
+                'present': ['vends', 'vends', 'vend', 'vendons', 'vendez', 'vendent'],
+                'imparfait': ['vendais', 'vendais', 'vendait', 'vendions', 'vendiez', 'vendaient'],
+                'passe_simple': ['vendis', 'vendis', 'vendit', 'vendîmes', 'vendîtes', 'vendirent'],
+                'futur_simple': ['vendrai', 'vendras', 'vendra', 'vendrons', 'vendrez', 'vendront'],
+                'conditionnel_present': ['vendrais', 'vendrais', 'vendrait', 'vendrions', 'vendriez', 'vendraient'],
+                'subjonctif_present': ['vende', 'vendes', 'vende', 'vendions', 'vendiez', 'vendent'],
+                'subjonctif_imparfait': ['vendisse', 'vendisses', 'vendît', 'vendissions', 'vendissiez', 'vendissent'],
+
+                // Temps composés (Auxiliaire AVOIR + PP 'vendu')
+                'passe_compose': ['ai ' + PP.vendre.s, 'as ' + PP.vendre.s, 'a ' + PP.vendre.s, 'avons ' + PP.vendre.p, 'avez ' + PP.vendre.p, 'ont ' + PP.vendre.p],
+                'plus_que_parfait': ['avais ' + PP.vendre.s, 'avais ' + PP.vendre.s, 'avait ' + PP.vendre.s, 'avions ' + PP.vendre.p, 'aviez ' + PP.vendre.p, 'avaient ' + PP.vendre.p],
+                'passe_anterieur': ['eus ' + PP.vendre.s, 'eus ' + PP.vendre.s, 'eut ' + PP.vendre.s, 'eûmes ' + PP.vendre.p, 'eûtes ' + PP.vendre.p, 'eurent ' + PP.vendre.p],
+                'futur_anterieur': ['aurai ' + PP.vendre.s, 'auras ' + PP.vendre.s, 'aura ' + PP.vendre.s, 'aurons ' + PP.vendre.p, 'aurez ' + PP.vendre.p, 'auront ' + PP.vendre.p],
+                'conditionnel_passe': ['aurais ' + PP.vendre.s, 'aurais ' + PP.vendre.s, 'aurait ' + PP.vendre.s, 'aurions ' + PP.vendre.p, 'auriez ' + PP.vendre.p, 'auraient ' + PP.vendre.p],
+                'subjonctif_passe': ['aie ' + PP.vendre.s, 'aies ' + PP.vendre.s, 'ait ' + PP.vendre.s, 'ayons ' + PP.vendre.p, 'ayez ' + PP.vendre.p, 'aient ' + PP.vendre.p],
+                'subjonctif_plus_que_parfait': ['eusse ' + PP.vendre.s, 'eusses ' + PP.vendre.s, 'eût ' + PP.vendre.s, 'eussions ' + PP.vendre.p, 'eussiez ' + PP.vendre.p, 'eussent ' + PP.vendre.p]
+            },
+
+            // VERBE PRENDRE (Auxiliaire AVOIR)
+            'prendre': { 
+                // Temps simples
+                'present': ['prends', 'prends', 'prend', 'prenons', 'prenez', 'prennent'],
+                'imparfait': ['prenais', 'prenais', 'prenait', 'prenions', 'preniez', 'prenaient'],
+                'passe_simple': ['pris', 'pris', 'prit', 'prîmes', 'prîtes', 'prirent'],
+                'futur_simple': ['prendrai', 'prendras', 'prendra', 'prendrons', 'prendrez', 'prendront'],
+                'conditionnel_present': ['prendrais', 'prendrais', 'prendrait', 'prendrions', 'prendriez', 'prendraient'],
+                'subjonctif_present': ['prenne', 'prennes', 'prenne', 'prenions', 'preniez', 'prennent'],
+                'subjonctif_imparfait': ['prisse', 'prises', 'prît', 'prissions', 'prissiez', 'prissent'],
+
+                // Temps composés (Auxiliaire AVOIR + PP 'pris')
+                'passe_compose': ['ai ' + PP.prendre.s, 'as ' + PP.prendre.s, 'a ' + PP.prendre.s, 'avons ' + PP.prendre.p, 'avez ' + PP.prendre.p, 'ont ' + PP.prendre.p],
+                'plus_que_parfait': ['avais ' + PP.prendre.s, 'avais ' + PP.prendre.s, 'avait ' + PP.prendre.s, 'avions ' + PP.prendre.p, 'aviez ' + PP.prendre.p, 'avaient ' + PP.prendre.p],
+                'passe_anterieur': ['eus ' + PP.prendre.s, 'eus ' + PP.prendre.s, 'eut ' + PP.prendre.s, 'eûmes ' + PP.prendre.p, 'eûtes ' + PP.prendre.p, 'eurent ' + PP.prendre.p],
+                'futur_anterieur': ['aurai ' + PP.prendre.s, 'auras ' + PP.prendre.s, 'aura ' + PP.prendre.s, 'aurons ' + PP.prendre.p, 'aurez ' + PP.prendre.p, 'auront ' + PP.prendre.p],
+                'conditionnel_passe': ['aurais ' + PP.prendre.s, 'aurais ' + PP.prendre.s, 'aurait ' + PP.prendre.s, 'aurions ' + PP.prendre.p, 'auriez ' + PP.prendre.p, 'auraient ' + PP.prendre.p],
+                'subjonctif_passe': ['aie ' + PP.prendre.s, 'aies ' + PP.prendre.s, 'ait ' + PP.prendre.s, 'ayons ' + PP.prendre.p, 'ayez ' + PP.prendre.p, 'aient ' + PP.prendre.p],
+                'subjonctif_plus_que_parfait': ['eusse ' + PP.prendre.s, 'eusses ' + PP.prendre.s, 'eût ' + PP.prendre.s, 'eussions ' + PP.prendre.p, 'eussiez ' + PP.prendre.p, 'eussent ' + PP.prendre.p]
+            },
+
+            // VERBE DIRE (Auxiliaire AVOIR)
+            'dire': { 
+                // Temps simples
+                'present': ['dis', 'dis', 'dit', 'disons', 'dites', 'disent'],
+                'imparfait': ['disais', 'disais', 'disait', 'disions', 'disiez', 'disaient'],
+                'passe_simple': ['dis', 'dis', 'dit', 'dîmes', 'dîtes', 'dirent'],
+                'futur_simple': ['dirai', 'diras', 'dira', 'dirons', 'direz', 'diront'],
+                'conditionnel_present': ['dirais', 'dirais', 'dirait', 'dirions', 'diriez', 'diraient'],
+                'subjonctif_present': ['dise', 'dises', 'dise', 'disions', 'disiez', 'disent'],
+                'subjonctif_imparfait': ['disse', 'disses', 'dît', 'dissions', 'dissiez', 'dissent'],
+
+                // Temps composés (Auxiliaire AVOIR + PP 'dit')
+                'passe_compose': ['ai ' + PP.dire.s, 'as ' + PP.dire.s, 'a ' + PP.dire.s, 'avons ' + PP.dire.p, 'avez ' + PP.dire.p, 'ont ' + PP.dire.p],
+                'plus_que_parfait': ['avais ' + PP.dire.s, 'avais ' + PP.dire.s, 'avait ' + PP.dire.s, 'avions ' + PP.dire.p, 'aviez ' + PP.dire.p, 'avaient ' + PP.dire.p],
+                'passe_anterieur': ['eus ' + PP.dire.s, 'eus ' + PP.dire.s, 'eut ' + PP.dire.s, 'eûmes ' + PP.dire.p, 'eûtes ' + PP.dire.p, 'eurent ' + PP.dire.p],
+                'futur_anterieur': ['aurai ' + PP.dire.s, 'auras ' + PP.dire.s, 'aura ' + PP.dire.s, 'aurons ' + PP.dire.p, 'aurez ' + PP.dire.p, 'auront ' + PP.dire.p],
+                'conditionnel_passe': ['aurais ' + PP.dire.s, 'aurais ' + PP.dire.s, 'aurait ' + PP.dire.s, 'aurions ' + PP.dire.p, 'auriez ' + PP.dire.p, 'auraient ' + PP.dire.p],
+                'subjonctif_passe': ['aie ' + PP.dire.s, 'aies ' + PP.dire.s, 'ait ' + PP.dire.s, 'ayons ' + PP.dire.p, 'ayez ' + PP.dire.p, 'aient ' + PP.dire.p],
+                'subjonctif_plus_que_parfait': ['eusse ' + PP.dire.s, 'eusses ' + PP.dire.s, 'eût ' + PP.dire.s, 'eussions ' + PP.dire.p, 'eussiez ' + PP.dire.p, 'eussent ' + PP.dire.p]
+            },
+
+            // VERBE VENIR (Auxiliaire ÊTRE)
+            'venir': { 
+                // Temps simples
+                'present': ['viens', 'viens', 'vient', 'venons', 'venez', 'viennent'],
+                'imparfait': ['venais', 'venais', 'venait', 'venions', 'veniez', 'venaient'],
+                'passe_simple': ['vins', 'vins', 'vint', 'vînmes', 'vîntes', 'vinrent'],
+                'futur_simple': ['viendrai', 'viendras', 'viendra', 'viendrons', 'viendrez', 'viendront'],
+                'conditionnel_present': ['viendrais', 'viendrais', 'viendrait', 'viendrions', 'viendriez', 'viendraient'],
+                'subjonctif_present': ['vienne', 'viennes', 'vienne', 'venions', 'veniez', 'viennent'],
+                'subjonctif_imparfait': ['vinsse', 'vinsses', 'vînt', 'vinssions', 'vinssiez', 'vinssent'],
+
+                // Temps composés (Auxiliaire ÊTRE + PP 'venu(s)')
+                'passe_compose': ['suis ' + PP.venir.s, 'es ' + PP.venir.s, 'est ' + PP.venir.s, 'sommes ' + PP.venir.p, 'êtes ' + PP.venir.p, 'sont ' + PP.venir.p],
+                'plus_que_parfait': ['étais ' + PP.venir.s, 'étais ' + PP.venir.s, 'était ' + PP.venir.s, 'étions ' + PP.venir.p, 'étiez ' + PP.venir.p, 'étaient ' + PP.venir.p],
+                'passe_anterieur': ['fus ' + PP.venir.s, 'fus ' + PP.venir.s, 'fut ' + PP.venir.s, 'fûmes ' + PP.venir.p, 'fûtes ' + PP.venir.p, 'furent ' + PP.venir.p],
+                'futur_anterieur': ['serai ' + PP.venir.s, 'seras ' + PP.venir.s, 'sera ' + PP.venir.s, 'serons ' + PP.venir.p, 'serez ' + PP.venir.p, 'seront ' + PP.venir.p],
+                'conditionnel_passe': ['serais ' + PP.venir.s, 'serais ' + PP.venir.s, 'serait ' + PP.venir.s, 'serions ' + PP.venir.p, 'seriez ' + PP.venir.p, 'seraient ' + PP.venir.p],
+                'subjonctif_passe': ['sois ' + PP.venir.s, 'sois ' + PP.venir.s, 'soit ' + PP.venir.s, 'soyons ' + PP.venir.p, 'soyez ' + PP.venir.p, 'soient ' + PP.venir.p],
+                'subjonctif_plus_que_parfait': ['fusse ' + PP.venir.s, 'fusses ' + PP.venir.s, 'fût ' + PP.venir.s, 'fussions ' + PP.venir.p, 'fussiez ' + PP.venir.p, 'fussent ' + PP.venir.p]
+            },
+
+            // VERBE VOIR (Auxiliaire AVOIR)
+            'voir': { 
+                // Temps simples
+                'present': ['vois', 'vois', 'voit', 'voyons', 'voyez', 'voient'],
+                'imparfait': ['voyais', 'voyais', 'voyait', 'voyions', 'voyiez', 'voyaient'],
+                'passe_simple': ['vis', 'vis', 'vit', 'vîmes', 'vîtes', 'virent'],
+                'futur_simple': ['verrai', 'verras', 'verra', 'verrons', 'verrez', 'verront'],
+                'conditionnel_present': ['verrais', 'verrais', 'verrait', 'verrions', 'verriez', 'verraient'],
+                'subjonctif_present': ['voie', 'voies', 'voie', 'voyions', 'voyiez', 'voient'],
+                'subjonctif_imparfait': ['visse', 'visses', 'vît', 'vissions', 'vissiez', 'vissent'],
+
+                // Temps composés (Auxiliaire AVOIR + PP 'vu')
+                'passe_compose': ['ai ' + PP.voir.s, 'as ' + PP.voir.s, 'a ' + PP.voir.s, 'avons ' + PP.voir.p, 'avez ' + PP.voir.p, 'ont ' + PP.voir.p],
+                'plus_que_parfait': ['avais ' + PP.voir.s, 'avais ' + PP.voir.s, 'avait ' + PP.voir.s, 'avions ' + PP.voir.p, 'aviez ' + PP.voir.p, 'avaient ' + PP.voir.p],
+                'passe_anterieur': ['eus ' + PP.voir.s, 'eus ' + PP.voir.s, 'eut ' + PP.voir.s, 'eûmes ' + PP.voir.p, 'eûtes ' + PP.voir.p, 'eurent ' + PP.voir.p],
+                'futur_anterieur': ['aurai ' + PP.voir.s, 'auras ' + PP.voir.s, 'aura ' + PP.voir.s, 'aurons ' + PP.voir.p, 'aurez ' + PP.voir.p, 'auront ' + PP.voir.p],
+                'conditionnel_passe': ['aurais ' + PP.voir.s, 'aurais ' + PP.voir.s, 'aurait ' + PP.voir.s, 'aurions ' + PP.voir.p, 'auriez ' + PP.voir.p, 'auraient ' + PP.voir.p],
+                'subjonctif_passe': ['sois ' + PP.voir.s, 'sois ' + PP.voir.s, 'soit ' + PP.voir.s, 'soyons ' + PP.voir.p, 'soyez ' + PP.voir.p, 'soient ' + PP.voir.p],
+                'subjonctif_plus_que_parfait': ['eusse ' + PP.voir.s, 'eusses ' + PP.voir.s, 'eût ' + PP.voir.s, 'eussions ' + PP.voir.p, 'eussiez ' + PP.voir.p, 'eussent ' + PP.voir.p]
+            },
+            
+            // VERBE FAIRE (Auxiliaire AVOIR)
+            'faire': {
+                // Temps simples
+                'present': ['fais', 'fais', 'fait', 'faisons', 'faites', 'font'],
+                'imparfait': ['faisais', 'faisais', 'faisait', 'faisions', 'faisiez', 'faisaient'],
+                'passe_simple': ['fis', 'fis', 'fit', 'fîmes', 'fîtes', 'firent'],
+                'futur_simple': ['ferai', 'feras', 'fera', 'ferons', 'ferez', 'feront'],
+                'conditionnel_present': ['ferais', 'ferais', 'ferait', 'ferions', 'feriez', 'feraient'],
+                'subjonctif_present': ['fasse', 'fasses', 'fasse', 'fassions', 'fassiez', 'fassent'],
+                'subjonctif_imparfait': ['fisse', 'fisses', 'fît', 'fissions', 'fissiez', 'fissent'],
+                
+                // Temps composés (Auxiliaire AVOIR + PP 'fait')
+                'passe_compose': ['ai ' + PP.faire.s, 'as ' + PP.faire.s, 'a ' + PP.faire.s, 'avons ' + PP.faire.p, 'avez ' + PP.faire.p, 'ont ' + PP.faire.p],
+                'plus_que_parfait': ['avais ' + PP.faire.s, 'avais ' + PP.faire.s, 'avait ' + PP.faire.s, 'avions ' + PP.faire.p, 'aviez ' + PP.faire.p, 'avaient ' + PP.faire.p],
+                'passe_anterieur': ['eus ' + PP.faire.s, 'eus ' + PP.faire.s, 'eut ' + PP.faire.s, 'eûmes ' + PP.faire.p, 'eûtes ' + PP.faire.p, 'eurent ' + PP.faire.p],
+                'futur_anterieur': ['aurai ' + PP.faire.s, 'auras ' + PP.faire.s, 'aura ' + PP.faire.s, 'aurons ' + PP.faire.p, 'aurez ' + PP.faire.p, 'auront ' + PP.faire.p],
+                'conditionnel_passe': ['aurais ' + PP.faire.s, 'aurais ' + PP.faire.s, 'aurait ' + PP.faire.s, 'aurions ' + PP.faire.p, 'auriez ' + PP.faire.p, 'auraient ' + PP.faire.p],
+                'subjonctif_passe': ['aie ' + PP.faire.s, 'aies ' + PP.faire.s, 'ait ' + PP.faire.s, 'ayons ' + PP.faire.p, 'ayez ' + PP.faire.p, 'aient ' + PP.faire.p],
+                'subjonctif_plus_que_parfait': ['eusse ' + PP.faire.s, 'eusses ' + PP.faire.s, 'eût ' + PP.faire.s, 'eussions ' + PP.faire.p, 'eussiez ' + PP.faire.p, 'eussent ' + PP.faire.p]
+            }
+        };
+
+        // Liste des pronoms sujets
+        const PRONOUNS = ['Je', 'Tu', 'Il/Elle/On', 'Nous', 'Vous', 'Ils/Elles'];
+        
+        // État de l'application
+        let state = {
+            currentVerb: null,
+            currentTime: null,
+            currentPersonIndex: null,
+            correctAnswer: null,
+            score: 0,
+            total: 0
+        };
+
+        // Références DOM
+        const tempsSelect = document.getElementById('temps-select');
+        const verbDisplay = document.getElementById('verb-display');
+        const personDisplay = document.getElementById('person-display');
+        const conjugationForm = document.getElementById('conjugation-form');
+        const userAnswerInput = document.getElementById('user-answer');
+        const submitButton = document.getElementById('submit-button');
+        const nextQuestionButton = document.getElementById('next-question-button');
+        const feedbackArea = document.getElementById('feedback-area');
+        const feedbackMessage = document.getElementById('feedback-message');
+        const solutionMessage = document.getElementById('solution-message');
+        const scoreDisplay = document.getElementById('score-display');
+        const exerciseCard = document.getElementById('exercise-card');
+        const showStatsButton = document.getElementById('show-stats-button');
+        const statsModal = document.getElementById('stats-modal');
+        const closeStatsButton = document.getElementById('close-stats-button');
+        const resetStatsButton = document.getElementById('reset-stats-button');
+        const globalStatsDisplay = document.getElementById('global-stats');
+        const timeStatsList = document.getElementById('time-stats-list');
+
+        // Clé pour le localStorage
+        const STORAGE_KEY = 'conjugationStats';
+        
+        /**
+         * Structure des statistiques persistantes.
+         * Exemple: { totalCorrect: 15, totalAttempted: 20, byTime: { present: { correct: 5, attempted: 10 }, ... } }
+         */
+        let persistentStats = loadStats();
+
+        // --- Fonctions de gestion des statistiques ---
+
+        /**
+         * Charge les statistiques depuis le localStorage.
+         */
+        function loadStats() {
+            try {
+                const stored = localStorage.getItem(STORAGE_KEY);
+                if (stored) {
+                    return JSON.parse(stored);
+                }
+            } catch (e) {
+                console.error("Erreur lors du chargement des statistiques locales:", e);
+            }
+            // Initialisation par défaut
+            return {
+                totalCorrect: 0,
+                totalAttempted: 0,
+                byTime: {}
+            };
+        }
+
+        /**
+         * Sauvegarde les statistiques dans le localStorage.
+         */
+        function saveStats() {
+            try {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(persistentStats));
+            } catch (e) {
+                console.error("Erreur lors de la sauvegarde des statistiques locales:", e);
+            }
+        }
+
+        /**
+         * Met à jour les statistiques persistantes après une réponse.
+         * @param {boolean} isCorrect - Vrai si la réponse était correcte.
+         */
+        function updatePersistentStats(isCorrect) {
+            const timeKey = state.currentTime;
+
+            // Mise à jour globale
+            persistentStats.totalAttempted++;
+            if (isCorrect) {
+                persistentStats.totalCorrect++;
+            }
+
+            // Initialisation par temps si nécessaire
+            if (!persistentStats.byTime[timeKey]) {
+                persistentStats.byTime[timeKey] = { correct: 0, attempted: 0, name: tempsSelect.options[tempsSelect.selectedIndex].textContent };
+            }
+
+            // Mise à jour par temps
+            persistentStats.byTime[timeKey].attempted++;
+            if (isCorrect) {
+                persistentStats.byTime[timeKey].correct++;
+            }
+
+            saveStats();
+        }
+
+        /**
+         * Affiche les statistiques dans la modale.
+         */
+        function renderStatsModal() {
+            const { totalCorrect, totalAttempted, byTime } = persistentStats;
+            
+            // 1. Statistiques globales
+            const percentage = totalAttempted > 0 ? ((totalCorrect / totalAttempted) * 100).toFixed(1) : 0;
+            globalStatsDisplay.textContent = `${totalCorrect} / ${totalAttempted} (${percentage}%)`;
+
+            // 2. Statistiques détaillées par temps
+            timeStatsList.innerHTML = '';
+            
+            // Récupérer tous les temps disponibles, y compris ceux qui n'ont pas encore de score.
+            const allTimes = Array.from(tempsSelect.options)
+                                 .filter(opt => opt.value) // Exclure les optgroups s'ils n'ont pas de valeur
+                                 .map(opt => ({
+                                     key: opt.value,
+                                     name: opt.textContent
+                                 }));
+
+            // Afficher les stats, triées par ordre d'apparition dans le select
+            allTimes.forEach(({ key, name }) => {
+                const stats = byTime[key] || { correct: 0, attempted: 0 };
+                const timeCorrect = stats.correct;
+                const timeAttempted = stats.attempted;
+                const timePercentage = timeAttempted > 0 ? ((timeCorrect / timeAttempted) * 100).toFixed(1) : 0;
+
+                const element = document.createElement('div');
+                element.className = 'flex justify-between items-center p-3 bg-white rounded-lg border border-gray-200 shadow-sm';
+                element.innerHTML = `
+                    <span class="text-sm font-medium text-indigo-700">${name}</span>
+                    <span class="text-lg font-bold text-gray-800">${timeCorrect} / ${timeAttempted} <span class="text-sm font-semibold text-gray-500">(${timePercentage}%)</span></span>
+                `;
+                timeStatsList.appendChild(element);
+            });
+
+            if (totalAttempted === 0) {
+                timeStatsList.innerHTML = '<p class="text-center text-gray-500 italic">Commencez un exercice pour voir vos statistiques s\'afficher ici !</p>';
+            }
+        }
+        
+        /**
+         * Réinitialise toutes les statistiques.
+         */
+        function resetAllStats() {
+             // Utilisation d'un modal personnalisé pour la confirmation (conformément aux règles)
+            const confirmed = window.confirm("Êtes-vous sûr de vouloir réinitialiser TOUTES vos statistiques ? Cette action est irréversible.");
+            
+            if (confirmed) {
+                persistentStats = { totalCorrect: 0, totalAttempted: 0, byTime: {} };
+                saveStats();
+                renderStatsModal();
+                // Mise à jour de l'état de la session courante également
+                state.score = 0;
+                state.total = 0;
+                updateScoreDisplay();
+                // Fermer la modale après la réinitialisation si nécessaire
+                statsModal.classList.add('hidden');
+                // Générer une nouvelle question pour un état propre
+                generateNewQuestion(); 
+            }
+        }
+
+
+        /**
+         * Ouvre la modale.
+         */
+        function openStatsModal() {
+            renderStatsModal();
+            statsModal.classList.remove('hidden');
+        }
+
+        /**
+         * Ferme la modale.
+         */
+        function closeStatsModal() {
+            statsModal.classList.add('hidden');
+        }
+
+        // --- Fonctions d'Exercice (inchangées) ---
+
+        /**
+         * Choisit un verbe et une personne aléatoires, et met à jour l'interface.
+         */
+        function generateNewQuestion() {
+            // 1. Déterminer le temps
+            const selectedTime = tempsSelect.value;
+            // timeName est maintenant plus explicite, ex: "Indicatif Présent"
+            const timeName = tempsSelect.options[tempsSelect.selectedIndex].textContent; 
+            const verbs = Object.keys(VERB_DATABASE);
+
+            // 2. Choisir un verbe aléatoire qui supporte le temps sélectionné
+            let verb = null;
+            let verbList = verbs.filter(v => VERB_DATABASE[v][selectedTime]);
+            if (verbList.length === 0) {
+                verbDisplay.textContent = "Aucun verbe trouvé pour ce temps.";
+                personDisplay.textContent = "Veuillez choisir un autre temps.";
+                userAnswerInput.disabled = true;
+                submitButton.disabled = true;
+                return;
+            }
+            const randomIndexVerb = Math.floor(Math.random() * verbList.length);
+            verb = verbList[randomIndexVerb];
+
+            // 3. Choisir une personne aléatoire (index 0 à 5)
+            const personIndex = Math.floor(Math.random() * PRONOUNS.length);
+            const pronoun = PRONOUNS[personIndex];
+
+            // 4. Déterminer la réponse correcte
+            const correctAnswer = VERB_DATABASE[verb][selectedTime][personIndex];
+
+            // 5. Mettre à jour l'état
+            state.currentVerb = verb;
+            state.currentTime = selectedTime;
+            state.currentPersonIndex = personIndex;
+            state.correctAnswer = correctAnswer;
+            
+            // 6. Afficher la question
+            // Utilisation du nouveau timeName explicite
+            verbDisplay.textContent = `${verb} (${timeName})`;
+            personDisplay.textContent = `${pronoun} _________________`;
+
+            // 7. Réinitialiser l'interface de réponse
+            userAnswerInput.value = '';
+            userAnswerInput.disabled = false;
+            submitButton.disabled = false;
+            nextQuestionButton.classList.add('hidden');
+            feedbackArea.classList.add('hidden');
+            exerciseCard.classList.remove('correct-animation', 'incorrect-animation');
+            userAnswerInput.focus();
+        }
+
+        /**
+         * Normalise l'entrée de conjugaison pour la comparaison.
+         */
+        function normalizeConjugation(input) {
+            // Supprime les espaces inutiles et convertit en minuscule
+            return input.trim().toLowerCase().replace(/\s+/g, ' ');
+        }
+
+        /**
+         * Gère la soumission du formulaire par l'utilisateur.
+         */
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            
+            if (submitButton.disabled) return; // Empêcher la double soumission
+
+            const userAnswer = normalizeConjugation(userAnswerInput.value);
+            const correctAnswer = normalizeConjugation(state.correctAnswer);
+            
+            state.total++;
+            let isCorrect = false;
+
+            // Préparer le feedback
+            feedbackArea.classList.remove('hidden', 'bg-red-100', 'bg-green-100', 'text-red-700', 'text-green-700');
+            
+            // Masquer le bouton Vérifier et afficher le bouton Suivant
+            submitButton.disabled = true;
+            userAnswerInput.disabled = true;
+            nextQuestionButton.classList.remove('hidden');
+
+            if (userAnswer === correctAnswer) {
+                // Réponse correcte
+                state.score++;
+                isCorrect = true;
+                feedbackMessage.textContent = 'Correct ! 🎉';
+                feedbackArea.className = 'mt-4 p-4 rounded-lg text-center feedback correct-animation bg-green-100 text-green-700';
+                solutionMessage.textContent = `La réponse est bien : ${state.currentVerb} (conjugaison: ${state.correctAnswer})`;
+            } else {
+                // Réponse incorrecte
+                feedbackMessage.textContent = 'Incorrect. 😥';
+                feedbackArea.className = 'mt-4 p-4 rounded-lg text-center feedback incorrect-animation bg-red-100 text-red-700';
+                solutionMessage.textContent = `La bonne réponse était : ${state.currentVerb} (conjugaison: ${state.correctAnswer})`;
+                
+                // Mettre à jour l'affichage de la personne pour montrer l'erreur
+                personDisplay.textContent = `${PRONOUNS[state.currentPersonIndex]} ${userAnswerInput.value.trim() || '""'} (Incorrect)`;
+                personDisplay.classList.add('text-red-600');
+            }
+
+            // Mettre à jour les stats persistantes
+            updatePersistentStats(isCorrect);
+            
+            // Mettre à jour l'affichage du score de la session
+            updateScoreDisplay();
+        }
+
+        /**
+         * Met à jour l'affichage du score total de la session.
+         */
+        function updateScoreDisplay() {
+            scoreDisplay.textContent = `${state.score} / ${state.total}`;
+        }
+
+        // --- Listeners d'événements ---
+
+        // Événement pour le changement de temps
+        tempsSelect.addEventListener('change', () => {
+            // Réinitialiser le score de session si le temps change 
+            state.score = 0;
+            state.total = 0;
+            updateScoreDisplay();
+            generateNewQuestion();
+        });
+
+        // Événement pour la soumission du formulaire
+        conjugationForm.addEventListener('submit', handleFormSubmit);
+
+        // Événement pour la question suivante
+        nextQuestionButton.addEventListener('click', () => {
+            // Nettoyer les styles de feedback avant la nouvelle question
+            personDisplay.classList.remove('text-red-600');
+            exerciseCard.classList.remove('correct-animation', 'incorrect-animation');
+            generateNewQuestion();
+        });
+        
+        // Événement pour ouvrir la modale
+        showStatsButton.addEventListener('click', openStatsModal);
+        
+        // Événement pour fermer la modale
+        closeStatsButton.addEventListener('click', closeStatsModal);
+        
+        // Événement pour réinitialiser les stats
+        resetStatsButton.addEventListener('click', resetAllStats);
+
+        // Initialisation : générer la première question au chargement
+        window.onload = generateNewQuestion;
+
+    </script>
+</body>
+</html>
