@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WikiLingo - Quiz & Découverte</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #111827;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .card-enter {
+            opacity: 0;
+            transform: translateY(50px) scale(0.95);
+        }
+        .card-enter-active {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+            transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .shake {
+            animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+        }
+
+        @keyframes shake {
+            10%, 90% { transform: translate3d(-1px, 0, 0); }
+            20%, 80% { transform: translate3d(2px, 0, 0); }
+            30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+            40%, 60% { transform: translate3d(4px, 0, 0); }
+        }
+
+        .badge-mode {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 2px 8px;
+            border-radius: 999px;
+            font-weight: 800;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1f2937; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #374151; 
+            border-radius: 4px;
+        }
+
+        .tab-active {
+            color: #10b981;
+            border-bottom: 3px solid #10b981;
+        }
+
+        /* Style pour le texte de l'article */
+        .article-text p {
+            margin-bottom: 1.25rem;
+            line-height: 1.75;
+        }
+    </style>
+</head>
+<body class="text-white min-h-screen flex flex-col items-center overflow-x-hidden pb-20">
+
+    <!-- Header Sticky -->
+    <header class="sticky top-0 z-50 w-full max-w-2xl bg-gray-900/95 backdrop-blur-md border-b border-gray-800 shadow-lg">
+        <div class="px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-fire text-orange-500 text-2xl" id="fire-icon"></i>
+                <div class="flex flex-col">
+                    <span class="text-[10px] text-gray-400 font-bold uppercase">Série</span>
+                    <span id="streak-display" class="font-black text-lg text-orange-500 leading-none">0</span>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center">
+                <h1 class="text-xl font-black tracking-tighter bg-gradient-to-r from-green-400 to-emerald-600 bg-clip-text text-transparent">WIKILINGO</h1>
+            </div>
+
+            <div class="flex flex-col items-end">
+                <span class="text-[10px] text-gray-400 font-bold uppercase">Points</span>
+                <span id="score-display" class="font-black text-lg text-yellow-400 leading-none">0</span>
+            </div>
+        </div>
+        
+        <!-- Navigation Tabs -->
+        <nav class="flex w-full border-t border-gray-800">
+            <button onclick="switchTab('quiz')" id="tab-quiz" class="flex-1 py-3 text-sm font-bold transition-all flex items-center justify-center gap-2 tab-active">
+                <i class="fas fa-gamepad"></i> Quiz
+            </button>
+            <button onclick="switchTab('discover')" id="tab-discover" class="flex-1 py-3 text-sm font-bold transition-all text-gray-500 flex items-center justify-center gap-2">
+                <i class="fas fa-book-open"></i> Découvrir
+            </button>
+            <button onclick="switchTab('stats')" id="tab-stats" class="flex-1 py-3 text-sm font-bold transition-all text-gray-500 flex items-center justify-center gap-2">
+                <i class="fas fa-chart-bar"></i> Stats
+            </button>
+        </nav>
+    </header>
+
+    <!-- Content Sections -->
+    <main class="w-full max-w-2xl p-4 pt-6">
+        
+        <!-- SECTION QUIZ -->
+        <div id="section-quiz" class="flex flex-col gap-6">
+            <div id="game-container"></div>
+        </div>
+
+        <!-- SECTION DECOUVERTE (Article Long) -->
+        <div id="section-discover" class="hidden">
+            <div class="bg-gray-800 rounded-3xl overflow-hidden border border-gray-700 shadow-2xl relative min-h-[500px] flex flex-col">
+                <div id="random-article-content" class="p-6 md:p-8 flex-grow">
+                    <!-- Placeholder Loading -->
+                    <div class="animate-pulse">
+                        <div class="h-10 bg-gray-700 rounded w-3/4 mb-6"></div>
+                        <div class="h-64 bg-gray-700 rounded-2xl w-full mb-8"></div>
+                        <div class="space-y-4">
+                            <div class="h-4 bg-gray-700 rounded w-full"></div>
+                            <div class="h-4 bg-gray-700 rounded w-full"></div>
+                            <div class="h-4 bg-gray-700 rounded w-5/6"></div>
+                            <div class="h-4 bg-gray-700 rounded w-4/5"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bouton flottant ou fixé en bas pour changer -->
+                <div class="p-6 bg-gray-800/80 backdrop-blur border-t border-gray-700">
+                    <button onclick="fetchRandomArticle()" class="w-full bg-emerald-600 hover:bg-emerald-500 py-4 rounded-2xl font-black text-white shadow-lg transition-all active:scale-95 flex items-center justify-center gap-3">
+                        <i class="fas fa-dice"></i> Explorer un autre sujet
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION STATS -->
+        <div id="section-stats" class="hidden">
+            <div class="grid grid-cols-2 gap-4 mb-6">
+                <div class="bg-gray-800 p-6 rounded-3xl border border-gray-700 text-center">
+                    <div class="text-3xl mb-1">✅</div>
+                    <div class="text-gray-400 text-xs font-bold uppercase mb-1">Bonnes Réponses</div>
+                    <div id="stat-correct" class="text-3xl font-black text-green-400">0</div>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-3xl border border-gray-700 text-center">
+                    <div class="text-3xl mb-1">❌</div>
+                    <div class="text-gray-400 text-xs font-bold uppercase mb-1">Erreurs</div>
+                    <div id="stat-wrong" class="text-3xl font-black text-red-400">0</div>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-3xl border border-gray-700 text-center col-span-2">
+                    <div class="text-3xl mb-1">🏆</div>
+                    <div class="text-gray-400 text-xs font-bold uppercase mb-1">Meilleure Série</div>
+                    <div id="stat-best-streak" class="text-3xl font-black text-orange-500">0</div>
+                </div>
+            </div>
+            <button onclick="resetStats()" class="w-full text-gray-500 hover:text-red-400 transition-colors text-xs font-bold uppercase tracking-widest">
+                Réinitialiser les statistiques
+            </button>
+        </div>
+
+    </main>
+
+    <!-- Loading State Footer -->
+    <div id="loader" class="fixed bottom-24 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white px-6 py-3 rounded-full shadow-xl flex items-center space-x-3 z-40 transition-all duration-300 opacity-0 translate-y-10 border border-gray-700">
+        <div class="w-4 h-4 border-2 border-green-500 border-t-transparent rounded-full animate-spin"></div>
+        <span class="text-xs font-bold">Recherche...</span>
+    </div>
+
+    <!-- Message Toast -->
+    <div id="toast" class="fixed top-32 left-1/2 transform -translate-x-1/2 px-6 py-3 rounded-xl shadow-2xl z-50 transition-all duration-300 opacity-0 -translate-y-10 pointer-events-none border font-bold">
+        <span id="toast-message"></span>
+    </div>
+
+    <script>
+        /**
+         * STATE MANAGEMENT
+         */
+        const STATE = {
+            score: 0,
+            streak: 0,
+            multiplier: 1,
+            questionQueue: [],
+            isLoading: false,
+            processedIds: new Set(),
+            cardCount: 0,
+            activeTab: 'quiz',
+            stats: {
+                correct: 0,
+                wrong: 0,
+                bestStreak: 0
+            }
+        };
+
+        const DOM = {
+            container: document.getElementById('game-container'),
+            score: document.getElementById('score-display'),
+            streak: document.getElementById('streak-display'),
+            loader: document.getElementById('loader'),
+            toast: document.getElementById('toast'),
+            toastMsg: document.getElementById('toast-message'),
+            fireIcon: document.getElementById('fire-icon')
+        };
+
+        // --- Tab Management ---
+        function switchTab(tabId) {
+            STATE.activeTab = tabId;
+            const sections = ['quiz', 'discover', 'stats'];
+            
+            sections.forEach(s => {
+                document.getElementById(`section-${s}`).classList.add('hidden');
+                document.getElementById(`tab-${s}`).classList.remove('tab-active');
+                document.getElementById(`tab-${s}`).classList.add('text-gray-500');
+            });
+
+            document.getElementById(`section-${tabId}`).classList.remove('hidden');
+            document.getElementById(`tab-${tabId}`).classList.add('tab-active');
+            document.getElementById(`tab-${tabId}`).classList.remove('text-gray-500');
+
+            if (tabId === 'discover') fetchRandomArticle();
+            if (tabId === 'stats') updateStatsDisplay();
+            if (tabId === 'quiz' && STATE.cardCount === 0) manageQueue();
+        }
+
+        // --- Local Storage & Stats ---
+        function loadState() {
+            const stored = localStorage.getItem('wikilingo_state');
+            if(stored) {
+                const parsed = JSON.parse(stored);
+                STATE.score = parsed.score || 0;
+                STATE.streak = parsed.streak || 0;
+                STATE.stats = parsed.stats || { correct: 0, wrong: 0, bestStreak: 0 };
+            }
+            updateUI();
+        }
+
+        function saveState() {
+            localStorage.setItem('wikilingo_state', JSON.stringify({
+                score: STATE.score,
+                streak: STATE.streak,
+                stats: STATE.stats
+            }));
+        }
+
+        function resetStats() {
+            if(confirm("Voulez-vous vraiment effacer vos statistiques ?")) {
+                STATE.stats = { correct: 0, wrong: 0, bestStreak: 0 };
+                STATE.score = 0;
+                STATE.streak = 0;
+                saveState();
+                updateUI();
+                updateStatsDisplay();
+            }
+        }
+
+        function updateStatsDisplay() {
+            document.getElementById('stat-correct').innerText = STATE.stats.correct;
+            document.getElementById('stat-wrong').innerText = STATE.stats.wrong;
+            document.getElementById('stat-best-streak').innerText = STATE.stats.bestStreak;
+        }
+
+        function updateUI() {
+            DOM.score.innerText = Math.floor(STATE.score);
+            DOM.streak.innerText = STATE.streak;
+            if (STATE.streak > 5) DOM.fireIcon.classList.add('animate-pulse');
+            else DOM.fireIcon.classList.remove('animate-pulse');
+        }
+
+        function showToast(msg, type = 'info') {
+            DOM.toastMsg.innerText = msg;
+            DOM.toast.className = `fixed top-32 left-1/2 transform -translate-x-1/2 px-6 py-3 rounded-xl shadow-2xl z-50 transition-all duration-300 pointer-events-none border font-bold ${
+                type === 'success' ? 'bg-green-600 border-green-500' : 
+                type === 'error' ? 'bg-red-600 border-red-500' : 'bg-gray-800 border-gray-700'
+            }`;
+            DOM.toast.classList.remove('opacity-0', '-translate-y-10');
+            setTimeout(() => { DOM.toast.classList.add('opacity-0', '-translate-y-10'); }, 1500);
+        }
+
+        // --- Wikipedia API ---
+        async function fetchWikipediaData() {
+            const endpoint = "https://fr.wikipedia.org/w/api.php";
+            const params = new URLSearchParams({
+                action: "query", format: "json", origin: "*",
+                generator: "random", grnnamespace: 0, prop: "extracts|pageimages",
+                grnlimit: 8, exintro: 1, explaintext: 1, exsentences: 4,
+                piprop: "thumbnail", pithumbsize: 600
+            });
+
+            try {
+                const response = await fetch(`${endpoint}?${params}`);
+                const data = await response.json();
+                if (!data.query || !data.query.pages) return null;
+
+                const pages = Object.values(data.query.pages);
+                const validPages = pages.filter(p => p.extract && p.extract.length > 100 && !p.title.includes("Liste"));
+                if (validPages.length < 4) return null;
+
+                const winner = validPages[0];
+                const yearRegex = /\b(1\d{3}|20[0-2]\d)\b/g;
+                const years = [...winner.extract.matchAll(yearRegex)].map(m => m[0]);
+                
+                let mode = 'classic';
+                const rand = Math.random();
+                if (years.length > 0 && rand > 0.7) mode = 'timeline';
+                else if (winner.thumbnail && rand > 0.4) mode = 'visual';
+
+                let dataPackage = { id: winner.pageid, mode, options: [], correctAnswer: "", question: "", image: winner.thumbnail?.source };
+
+                if (mode === 'timeline') {
+                    const targetYear = years[0];
+                    dataPackage.correctAnswer = targetYear;
+                    dataPackage.question = `<span class="text-indigo-400 font-bold block mb-2">${winner.title}</span>` + winner.extract.replace(new RegExp(`\\b${targetYear}\\b`, 'g'), " <span class='text-yellow-400'>[????]</span> ");
+                    dataPackage.options = shuffleArray([targetYear, (parseInt(targetYear)-5).toString(), (parseInt(targetYear)+3).toString(), (parseInt(targetYear)+10).toString()]);
+                } else if (mode === 'visual') {
+                    dataPackage.correctAnswer = winner.title;
+                    dataPackage.question = "Que représente cette image ?";
+                    dataPackage.options = shuffleArray([winner.title, validPages[1].title, validPages[2].title, validPages[3].title]);
+                } else {
+                    dataPackage.correctAnswer = winner.title;
+                    dataPackage.question = censorTitle(winner.extract, winner.title);
+                    dataPackage.options = shuffleArray([winner.title, validPages[1].title, validPages[2].title, validPages[3].title]);
+                }
+                return dataPackage;
+            } catch (e) { return null; }
+        }
+
+        /**
+         * FETCH RANDOM ARTICLE (LONG VERSION)
+         */
+        async function fetchRandomArticle() {
+            const container = document.getElementById('random-article-content');
+            container.innerHTML = `
+                <div class="animate-pulse">
+                    <div class="h-10 bg-gray-700 rounded w-3/4 mb-6"></div>
+                    <div class="h-64 bg-gray-700 rounded-2xl w-full mb-8"></div>
+                    <div class="space-y-4">
+                        <div class="h-4 bg-gray-700 rounded w-full"></div>
+                        <div class="h-4 bg-gray-700 rounded w-full"></div>
+                        <div class="h-4 bg-gray-700 rounded w-5/6"></div>
+                    </div>
+                </div>
+            `;
+            
+            const endpoint = "https://fr.wikipedia.org/w/api.php";
+            // On retire "exintro" et on augmente "exchars" ou "exsentences" pour avoir plus de contenu
+            const params = new URLSearchParams({
+                action: "query", 
+                format: "json", 
+                origin: "*",
+                generator: "random", 
+                grnnamespace: 0, 
+                prop: "extracts|pageimages",
+                grnlimit: 1, 
+                explaintext: 1, // On garde le texte brut (plus propre que HTML direct ici)
+                exsentences: 20, // On demande beaucoup plus de phrases
+                piprop: "thumbnail", 
+                pithumbsize: 800
+            });
+
+            try {
+                const response = await fetch(`${endpoint}?${params}`);
+                const data = await response.json();
+                const page = Object.values(data.query.pages)[0];
+                
+                // Calculer un temps de lecture approximatif (200 mots/min)
+                const wordCount = page.extract.split(/\s+/).length;
+                const readingTime = Math.max(1, Math.round(wordCount / 200));
+
+                container.innerHTML = `
+                    <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
+                        <h2 class="text-4xl font-black text-emerald-400 leading-tight">${page.title}</h2>
+                        <div class="flex items-center gap-2 text-xs font-bold text-gray-400 uppercase tracking-widest bg-gray-900/50 px-3 py-1.5 rounded-full border border-gray-700">
+                            <i class="far fa-clock"></i> ${readingTime} min de lecture
+                        </div>
+                    </div>
+
+                    ${page.thumbnail ? `
+                        <div class="group relative mb-8 rounded-2xl overflow-hidden shadow-2xl border border-gray-700">
+                            <img src="${page.thumbnail.source}" class="w-full h-auto max-h-[400px] object-cover transition-transform duration-700 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent pointer-events-none"></div>
+                        </div>
+                    ` : ''}
+
+                    <div class="article-text text-gray-200 leading-relaxed text-lg text-justify">
+                        ${formatArticleText(page.extract)}
+                    </div>
+
+                    <div class="mt-12 pt-8 border-t border-gray-700 flex flex-col sm:flex-row items-center justify-between gap-4">
+                        <p class="text-sm text-gray-500 italic font-medium">Source : Wikipédia l'encyclopédie libre</p>
+                        <a href="https://fr.wikipedia.org/?curid=${page.pageid}" target="_blank" class="px-6 py-2 bg-gray-700 hover:bg-gray-600 rounded-full text-sm font-bold transition-all flex items-center gap-2">
+                            Voir sur Wikipédia <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                `;
+                // Scroll en haut du container
+                document.getElementById('section-discover').scrollTo({ top: 0, behavior: 'smooth' });
+            } catch (e) {
+                container.innerHTML = `<p class="text-red-400 font-bold p-8">Erreur lors de la récupération de l'article. Veuillez réessayer.</p>`;
+            }
+        }
+
+        // Formater le texte brut en paragraphes pour la lisibilité
+        function formatArticleText(text) {
+            if (!text) return "";
+            // Diviser par les retours à la ligne existants ou créer des blocs de 3-4 phrases
+            const paragraphs = text.split('\n').filter(p => p.trim().length > 0);
+            return paragraphs.map(p => `<p>${p.trim()}</p>`).join('');
+        }
+
+        function censorTitle(text, title) {
+            let clean = title.replace(/\(.*\)/, '').trim();
+            const words = clean.split(' ').filter(w => w.length > 2);
+            let censored = text;
+            words.forEach(w => {
+                const regex = new RegExp(`\\b${w}\\b`, 'gi');
+                censored = censored.replace(regex, '<span class="bg-gray-700 text-transparent rounded px-1">???</span>');
+            });
+            return censored;
+        }
+
+        function shuffleArray(arr) {
+            return arr.sort(() => Math.random() - 0.5);
+        }
+
+        // --- Quiz Loop ---
+        async function manageQueue() {
+            if (STATE.isLoading || STATE.questionQueue.length >= 2 || STATE.activeTab !== 'quiz') return;
+            STATE.isLoading = true;
+            DOM.loader.classList.remove('opacity-0', 'translate-y-10');
+            
+            const data = await fetchWikipediaData();
+            STATE.isLoading = false;
+            DOM.loader.classList.add('opacity-0', 'translate-y-10');
+
+            if (data) {
+                STATE.questionQueue.push(data);
+                if (STATE.cardCount === 0) renderNextCard();
+            } else {
+                setTimeout(manageQueue, 1000);
+            }
+        }
+
+        function renderNextCard() {
+            if (STATE.questionQueue.length === 0) {
+                manageQueue();
+                return;
+            }
+            const data = STATE.questionQueue.shift();
+            const card = createCard(data);
+            DOM.container.appendChild(card);
+            STATE.cardCount++;
+
+            requestAnimationFrame(() => {
+                card.classList.add('card-enter-active');
+                card.classList.remove('card-enter');
+                card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            });
+            manageQueue();
+        }
+
+        function createCard(data) {
+            const card = document.createElement('div');
+            card.className = `quiz-card bg-gray-800 border border-gray-700 rounded-3xl p-6 shadow-2xl mb-12 relative overflow-hidden card-enter transform transition-all duration-300`;
+            
+            let icon = 'fa-align-left';
+            let label = 'Sujet Mystère';
+            if (data.mode === 'visual') { icon = 'fa-eye'; label = 'Image Mystère'; }
+            if (data.mode === 'timeline') { icon = 'fa-hourglass-half'; label = 'Chronologie'; }
+
+            card.innerHTML = `
+                <div class="flex items-center gap-2 mb-6 opacity-60">
+                    <i class="fas ${icon} text-emerald-400"></i>
+                    <span class="text-[10px] font-black uppercase tracking-widest">${label}</span>
+                </div>
+                ${data.mode === 'visual' ? `<img src="${data.image}" class="w-full h-48 object-contain bg-gray-900 rounded-2xl mb-6 shadow-inner">` : ''}
+                <div class="text-lg font-medium leading-relaxed mb-8">${data.question}</div>
+                <div class="grid gap-3">
+                    ${data.options.map(opt => `
+                        <button onclick="checkAnswer(this, '${opt.replace(/'/g, "\\'")}', '${data.correctAnswer.replace(/'/g, "\\'")}', this.closest('.quiz-card'))" 
+                                class="w-full p-4 rounded-2xl border-2 border-gray-700 bg-gray-900/50 hover:bg-gray-700 font-bold transition-all active:scale-95 text-left">
+                            ${opt}
+                        </button>
+                    `).join('')}
+                </div>
+                <div class="feedback absolute inset-0 bg-gray-900/95 flex flex-col items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300 z-20">
+                    <div class="text-6xl mb-4 status-icon"></div>
+                    <div class="text-2xl font-black status-text"></div>
+                    <div class="mt-4 text-gray-400 text-sm hidden correct-info">La réponse était : <span class="text-white font-bold block"></span></div>
+                </div>
+            `;
+            return card;
+        }
+
+        function checkAnswer(btn, selected, correct, card) {
+            const isCorrect = selected === correct;
+            const feedback = card.querySelector('.feedback');
+            const icon = card.querySelector('.status-icon');
+            const text = card.querySelector('.status-text');
+            const info = card.querySelector('.correct-info');
+
+            card.querySelectorAll('button').forEach(b => b.disabled = true);
+
+            if (isCorrect) {
+                btn.classList.add('border-green-500', 'bg-green-500/20');
+                STATE.score += (1 + (STATE.streak * 0.1));
+                STATE.streak++;
+                STATE.stats.correct++;
+                if(STATE.streak > STATE.stats.bestStreak) STATE.stats.bestStreak = STATE.streak;
+                icon.innerHTML = '✨';
+                text.innerText = 'BRAVO !';
+                text.className = 'text-2xl font-black text-green-400';
+                showToast("+ Points !", 'success');
+            } else {
+                btn.classList.add('border-red-500', 'bg-red-500/20', 'shake');
+                STATE.streak = 0;
+                STATE.stats.wrong++;
+                icon.innerHTML = '💀';
+                text.innerText = 'DOMMAGE...';
+                text.className = 'text-2xl font-black text-red-500';
+                info.classList.remove('hidden');
+                info.querySelector('span').innerText = correct;
+                showToast("Série brisée", 'error');
+            }
+
+            saveState();
+            updateUI();
+            
+            setTimeout(() => {
+                feedback.classList.remove('opacity-0');
+            }, 500);
+
+            setTimeout(() => {
+                card.classList.add('opacity-30', 'scale-95', 'pointer-events-none');
+                renderNextCard();
+                if (document.querySelectorAll('.quiz-card').length > 3) document.querySelector('.quiz-card').remove();
+            }, 2500);
+        }
+
+        // Init
+        loadState();
+        switchTab('quiz');
+
+    </script>
+</body>
+</html>
