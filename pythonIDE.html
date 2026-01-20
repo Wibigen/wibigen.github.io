@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PyNexus IDE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Monaco CSS -->
+    <link rel="stylesheet" data-name="vs/editor/editor.main" href="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.45.0/min/vs/editor/editor.main.min.css">
+    
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.25.0/full/pyodide.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    
+    <style>
+        body, html { height: 100%; margin: 0; overflow: hidden; background-color: #1e1e1e; color: #d4d4d4; }
+        #container { display: flex; flex-direction: column; height: 100vh; }
+        #main-content { display: flex; flex: 1; overflow: hidden; }
+        
+        #sidebar { 
+            width: 10vw; 
+            min-width: 160px; 
+            background: #252526; 
+            border-right: 1px solid #333; 
+            display: flex; 
+            flex-direction: column; 
+        }
+        
+        #editor-container { flex: 1; position: relative; background: #1e1e1e; display: flex; flex-direction: column; }
+        #monaco-editor { flex: 1; width: 100%; height: 100%; }
+
+        #terminal { height: 200px; background: #000; border-top: 1px solid #333; padding: 10px; font-family: 'Consolas', monospace; overflow-y: auto; color: #a0a0a0; font-size: 12px; }
+        
+        .file-item { padding: 8px 12px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-size: 12px; border-bottom: 1px solid #2d2d2d; }
+        .file-item.active { background: #37373d; border-left: 2px solid #007acc; color: #fff; }
+        
+        .tab-bar { display: flex; background: #252526; height: 35px; border-bottom: 1px solid #1e1e1e; }
+        .tab { padding: 8px 15px; background: #2d2d2d; cursor: pointer; border-right: 1px solid #1e1e1e; font-size: 11px; display: flex; align-items: center; color: #969696; }
+        .tab.active { background: #1e1e1e; color: white; border-top: 1px solid #007acc; }
+        
+        #resizer { height: 4px; cursor: ns-resize; background: #333; }
+        #resizer:hover { background: #007acc; }
+        
+        #loader-overlay {
+            position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+            background: #1e1e1e; display: flex; align-items: center; justify-content: center;
+            z-index: 100; color: #569cd6; font-family: monospace;
+        }
+
+        /* Checkbox style */
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            font-size: 11px;
+            color: #969696;
+            cursor: pointer;
+            user-select: none;
+        }
+        .checkbox-container input {
+            margin-right: 6px;
+            cursor: pointer;
+        }
+        
+        /* Conteneur de sortie pour styliser les lignes de print */
+        .stdout-line { color: #ffffff; white-space: pre-wrap; }
+        .stderr-line { color: #f44747; white-space: pre-wrap; }
+        .system-line { color: #569cd6; font-weight: bold; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+<div id="container">
+    <div class="h-12 bg-[#333333] flex items-center justify-between px-4 border-b border-[#1e1e1e]">
+        <div class="flex items-center space-x-4">
+            <span class="font-bold text-blue-400">PyNexus IDE</span>
+            <div class="flex items-center space-x-2">
+                <button onclick="runCode()" class="bg-green-600 hover:bg-green-700 text-white px-4 py-1 rounded text-sm flex items-center transition-all">
+                    ▶ Exécuter
+                </button>
+                <label class="checkbox-container">
+                    <input type="checkbox" id="auto-clear" checked> Effacer auto.
+                </label>
+            </div>
+            <button onclick="exportProject()" class="text-xs bg-gray-700 hover:bg-gray-600 px-2 py-1 rounded">📦 Export ZIP</button>
+        </div>
+        <div id="status" class="text-xs text-gray-400">Initialisation...</div>
+    </div>
+
+    <div id="main-content">
+        <div id="sidebar">
+            <div class="p-3 text-[10px] font-bold uppercase text-gray-500 flex justify-between items-center border-b border-[#333]">
+                <span>Fichiers</span>
+                <button onclick="addNewFile()" class="hover:text-white text-lg">+</button>
+            </div>
+            <div id="file-list" class="flex-1 overflow-y-auto"></div>
+        </div>
+
+        <div id="editor-container">
+            <div id="loader-overlay">Initialisation de l'éditeur...</div>
+            <div id="tabs" class="tab-bar"></div>
+            <div id="monaco-editor"></div>
+        </div>
+    </div>
+
+    <div id="resizer"></div>
+    <div id="terminal">
+        <div class="flex justify-between items-center mb-2 text-[10px] text-gray-500 border-b border-[#222] pb-1">
+            <span>SORTIE CONSOLE</span>
+            <button onclick="clearConsole()" class="hover:text-white">EFFACER</button>
+        </div>
+        <div id="output"></div>
+    </div>
+</div>
+
+<!-- Monaco Loader -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.45.0/min/vs/loader.min.js"></script>
+
+<script>
+    /**
+     * MOCKING DES MODULES :
+     * On définit manuellement les modules manquants pour éviter les erreurs 404.
+     */
+    define('stackframe', [], function() { return function() {}; });
+    define('error-stack-parser', ['stackframe'], function() { return { parse: function() { return []; } }; });
+
+    window.addEventListener('error', function(e) {
+        if (e.message && (e.message.includes('stackframe') || e.message.includes('error-stack-parser'))) {
+            e.stopImmediatePropagation();
+            return false;
+        }
+    }, true);
+
+    let pyodide;
+    let editor;
+    let currentFile = 'main.py';
+    let files = {
+        'main.py': { content: 'def test():\n    print("Ce texte est maintenant en blanc !")\n    print("C\'est beaucoup plus lisible.")\n\ntest()' }
+    };
+
+    require.config({ 
+        paths: { 'vs': 'https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.45.0/min/vs' }
+    });
+
+    function initMonaco() {
+        require(['vs/editor/editor.main'], function() {
+            editor = monaco.editor.create(document.getElementById('monaco-editor'), {
+                value: files[currentFile].content,
+                language: 'python',
+                theme: 'vs-dark',
+                automaticLayout: true,
+                fontSize: 14,
+                minimap: { enabled: false },
+                scrollBeyondLastLine: false,
+                autoClosingBrackets: "always",
+                autoClosingQuotes: "always",
+                suggestOnTriggerCharacters: true,
+                renderValidationDecorations: "on",
+                quickSuggestions: true
+            });
+
+            editor.onDidChangeModelContent(() => {
+                files[currentFile].content = editor.getValue();
+            });
+
+            document.getElementById('loader-overlay').style.display = 'none';
+            renderUI();
+        });
+    }
+
+    function renderUI() {
+        const fileList = document.getElementById('file-list');
+        const tabs = document.getElementById('tabs');
+        if(!fileList || !tabs) return;
+
+        fileList.innerHTML = '';
+        tabs.innerHTML = '';
+
+        Object.keys(files).forEach(filename => {
+            const item = document.createElement('div');
+            item.className = `file-item ${filename === currentFile ? 'active' : ''}`;
+            item.innerHTML = `<span>${filename}</span>`;
+            item.onclick = () => switchFile(filename);
+            fileList.appendChild(item);
+
+            const tab = document.createElement('div');
+            tab.className = `tab ${filename === currentFile ? 'active' : ''}`;
+            tab.innerHTML = `<span>${filename}</span> <span class="ml-2 hover:text-red-500" onclick="deleteFile(event, '${filename}')">×</span>`;
+            tab.onclick = () => switchFile(filename);
+            tabs.appendChild(tab);
+        });
+    }
+
+    function switchFile(filename) {
+        currentFile = filename;
+        if (editor) editor.setValue(files[filename].content);
+        renderUI();
+    }
+
+    function addNewFile() {
+        const name = prompt("Nom du fichier :");
+        if (name) {
+            const clean = name.endsWith('.py') ? name : name + '.py';
+            if (!files[clean]) {
+                files[clean] = { content: "# Nouveau fichier Python\n" };
+                switchFile(clean);
+            }
+        }
+    }
+
+    function deleteFile(e, name) {
+        e.stopPropagation();
+        if (Object.keys(files).length > 1) {
+            delete files[name];
+            if (currentFile === name) {
+                currentFile = Object.keys(files)[0];
+                switchFile(currentFile);
+            } else {
+                renderUI();
+            }
+        }
+    }
+
+    async function initPython() {
+        try {
+            pyodide = await loadPyodide();
+            document.getElementById('status').innerHTML = '<span class="text-green-500">● Python Prêt</span>';
+        } catch (e) {
+            document.getElementById('status').innerText = "Erreur Python";
+        }
+    }
+
+    async function runCode() {
+        if (!pyodide) return;
+        
+        if (document.getElementById('auto-clear').checked) {
+            clearConsole();
+        }
+
+        const outputEl = document.getElementById('output');
+        const code = editor.getValue();
+        
+        // Log de début d'exécution (Bleu)
+        const header = document.createElement('div');
+        header.className = 'system-line';
+        header.textContent = `> Exécution de ${currentFile}...`;
+        outputEl.appendChild(header);
+
+        // Configuration de la sortie standard (Blanc pour les prints)
+        pyodide.setStdout({ 
+            batched: (str) => { 
+                const line = document.createElement('div');
+                line.className = 'stdout-line';
+                line.textContent = str;
+                outputEl.appendChild(line);
+                document.getElementById('terminal').scrollTop = document.getElementById('terminal').scrollHeight;
+            } 
+        });
+
+        // Configuration de la sortie d'erreur (Rouge)
+        pyodide.setStderr({ 
+            batched: (str) => { 
+                const line = document.createElement('div');
+                line.className = 'stderr-line';
+                line.textContent = str;
+                outputEl.appendChild(line);
+                document.getElementById('terminal').scrollTop = document.getElementById('terminal').scrollHeight;
+            } 
+        });
+
+        try {
+            await pyodide.runPythonAsync(code);
+        } catch (err) {
+            const line = document.createElement('div');
+            line.className = 'stderr-line';
+            line.textContent = `Erreur:\n${err}`;
+            outputEl.appendChild(line);
+        }
+        document.getElementById('terminal').scrollTop = document.getElementById('terminal').scrollHeight;
+    }
+
+    async function exportProject() {
+        const zip = new JSZip();
+        for (const [name, data] of Object.entries(files)) {
+            zip.file(name, data.content);
+        }
+        const blob = await zip.generateAsync({ type: "blob" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = "projet_python.zip";
+        a.click();
+    }
+
+    function clearConsole() { document.getElementById('output').innerHTML = ""; }
+
+    window.onload = () => {
+        initMonaco();
+        initPython();
+    };
+
+    const resizer = document.getElementById('resizer');
+    let isResizing = false;
+    resizer.onmousedown = () => isResizing = true;
+    window.onmousemove = (e) => {
+        if (!isResizing) return;
+        const h = window.innerHeight - e.clientY;
+        if (h > 50 && h < window.innerHeight - 100) {
+            document.getElementById('terminal').style.height = h + 'px';
+            if(editor) editor.layout();
+        }
+    };
+    window.onmouseup = () => isResizing = false;
+</script>
+</body>
+</html>
