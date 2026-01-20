@@ -203,4 +203,6 @@ footer {
 
 .secret {
     font-size: 10%;
+    background: #f4f4f4;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
