@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PyNexus IDE</title>
+    <title>PyNexus IDE - REPL Monaco</title>
     <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- Monaco CSS -->
@@ -18,8 +18,7 @@
         #main-content { display: flex; flex: 1; overflow: hidden; }
         
         #sidebar { 
-            width: 10vw; 
-            min-width: 160px; 
+            width: 180px; 
             background: #252526; 
             border-right: 1px solid #333; 
             display: flex; 
@@ -29,8 +28,23 @@
         #editor-container { flex: 1; position: relative; background: #1e1e1e; display: flex; flex-direction: column; }
         #monaco-editor { flex: 1; width: 100%; height: 100%; }
 
-        #terminal { height: 200px; background: #000; border-top: 1px solid #333; padding: 10px; font-family: 'Consolas', monospace; overflow-y: auto; color: #a0a0a0; font-size: 12px; }
+        /* Console à 40% de hauteur */
+        #terminal { height: 40vh; background: #000; border-top: 1px solid #333; display: flex; flex-direction: column; cursor: text; }
+        #terminal-header { padding: 4px 10px; background: #111; border-bottom: 1px solid #222; display: flex; justify-content: space-between; align-items: center; font-size: 10px; color: #666; cursor: default; }
         
+        #output { flex: 1; overflow-y: auto; padding: 10px; font-family: 'Consolas', monospace; font-size: 12px; pointer-events: none; }
+        
+        #repl-container { 
+            display: flex; 
+            background: #000; 
+            border-top: 1px solid #222;
+            height: 32px; 
+            align-items: center;
+            overflow: hidden;
+        }
+        #repl-prompt { color: #569cd6; font-family: 'Consolas', monospace; font-size: 12px; padding: 0 10px; font-weight: bold; }
+        #monaco-repl { flex: 1; height: 100%; }
+
         .file-item { padding: 8px 12px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-size: 12px; border-bottom: 1px solid #2d2d2d; }
         .file-item.active { background: #37373d; border-left: 2px solid #007acc; color: #fff; }
         
@@ -38,107 +52,104 @@
         .tab { padding: 8px 15px; background: #2d2d2d; cursor: pointer; border-right: 1px solid #1e1e1e; font-size: 11px; display: flex; align-items: center; color: #969696; }
         .tab.active { background: #1e1e1e; color: white; border-top: 1px solid #007acc; }
         
-        #resizer { height: 4px; cursor: ns-resize; background: #333; }
+        #resizer { height: 4px; cursor: ns-resize; background: #333; transition: background 0.2s; }
         #resizer:hover { background: #007acc; }
         
-        #loader-overlay {
-            position: absolute; top: 0; left: 0; right: 0; bottom: 0;
-            background: #1e1e1e; display: flex; align-items: center; justify-content: center;
-            z-index: 100; color: #569cd6; font-family: monospace;
+        #input-modal {
+            display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+            background: #252526; padding: 20px; border-radius: 8px; border: 1px solid #007acc;
+            z-index: 1000; box-shadow: 0 10px 30px rgba(0,0,0,0.5); width: 400px;
         }
 
-        /* Checkbox style */
-        .checkbox-container {
-            display: flex;
-            align-items: center;
-            font-size: 11px;
-            color: #969696;
-            cursor: pointer;
-            user-select: none;
-        }
-        .checkbox-container input {
-            margin-right: 6px;
-            cursor: pointer;
-        }
-        
-        /* Conteneur de sortie pour styliser les lignes de print */
-        .stdout-line { color: #ffffff; white-space: pre-wrap; }
+        .stdout-line { color: #ffffff; white-space: pre-wrap; margin-bottom: 1px; }
         .stderr-line { color: #f44747; white-space: pre-wrap; }
-        .system-line { color: #569cd6; font-weight: bold; margin-top: 10px; }
+        .system-line { color: #569cd6; font-weight: bold; margin-top: 8px; font-size: 11px; }
+        .repl-echo { color: #888; font-style: italic; font-size: 11px; }
     </style>
 </head>
 <body>
+
+<div id="input-modal">
+    <div id="input-prompt" class="mb-3 text-sm text-blue-300">Entrée requise :</div>
+    <input type="text" id="input-field" class="w-full bg-[#1e1e1e] border border-[#333] p-2 rounded text-white outline-none focus:border-blue-500 mb-4">
+    <div class="flex justify-end">
+        <button onclick="submitInput()" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded text-sm">Valider</button>
+    </div>
+</div>
 
 <div id="container">
     <div class="h-12 bg-[#333333] flex items-center justify-between px-4 border-b border-[#1e1e1e]">
         <div class="flex items-center space-x-4">
             <span class="font-bold text-blue-400">PyNexus IDE</span>
             <div class="flex items-center space-x-2">
-                <button onclick="runCode()" class="bg-green-600 hover:bg-green-700 text-white px-4 py-1 rounded text-sm flex items-center transition-all">
+                <button onclick="runCode()" class="bg-green-600 hover:bg-green-700 text-white px-4 py-1 rounded text-sm flex items-center shadow-lg active:scale-95 transition-all">
                     ▶ Exécuter
                 </button>
-                <label class="checkbox-container">
-                    <input type="checkbox" id="auto-clear" checked> Effacer auto.
+                <label class="flex items-center text-[11px] text-gray-400 cursor-pointer ml-2">
+                    <input type="checkbox" id="auto-clear" checked class="mr-1"> Auto-clear
                 </label>
             </div>
-            <button onclick="exportProject()" class="text-xs bg-gray-700 hover:bg-gray-600 px-2 py-1 rounded">📦 Export ZIP</button>
         </div>
-        <div id="status" class="text-xs text-gray-400">Initialisation...</div>
+        
+        <div class="flex items-center space-x-2">
+            <button onclick="document.getElementById('file-import').click()" class="text-xs bg-gray-700 hover:bg-gray-600 px-3 py-1 rounded">📥 Importer</button>
+            <button onclick="exportProject()" class="text-xs bg-blue-700 hover:bg-blue-600 px-3 py-1 rounded">📦 ZIP</button>
+            <input type="file" id="file-import" class="hidden" accept=".py" onchange="importFile(this)">
+            <div id="status" class="text-xs text-gray-400 ml-4 font-mono uppercase">Chargement...</div>
+        </div>
     </div>
 
     <div id="main-content">
         <div id="sidebar">
             <div class="p-3 text-[10px] font-bold uppercase text-gray-500 flex justify-between items-center border-b border-[#333]">
                 <span>Fichiers</span>
-                <button onclick="addNewFile()" class="hover:text-white text-lg">+</button>
+                <button onclick="addNewFile()" class="text-lg hover:text-white">+</button>
             </div>
             <div id="file-list" class="flex-1 overflow-y-auto"></div>
         </div>
 
         <div id="editor-container">
-            <div id="loader-overlay">Initialisation de l'éditeur...</div>
+            <div id="loader-overlay" class="absolute inset-0 bg-[#1e1e1e] flex items-center justify-center z-50">Chargement Monaco...</div>
             <div id="tabs" class="tab-bar"></div>
             <div id="monaco-editor"></div>
         </div>
     </div>
 
     <div id="resizer"></div>
-    <div id="terminal">
-        <div class="flex justify-between items-center mb-2 text-[10px] text-gray-500 border-b border-[#222] pb-1">
-            <span>SORTIE CONSOLE</span>
-            <button onclick="clearConsole()" class="hover:text-white">EFFACER</button>
+    <!-- Écouteur de clic ajouté sur le terminal -->
+    <div id="terminal" onclick="focusRepl()">
+        <div id="terminal-header" onclick="event.stopPropagation()">
+            <span>CONSOLE / REPL</span>
+            <button onclick="clearConsole()" class="hover:text-white uppercase">Effacer</button>
         </div>
         <div id="output"></div>
+        <div id="repl-container">
+            <span id="repl-prompt">>>></span>
+            <div id="monaco-repl"></div>
+        </div>
     </div>
 </div>
 
-<!-- Monaco Loader -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.45.0/min/vs/loader.min.js"></script>
 
 <script>
-    /**
-     * MOCKING DES MODULES :
-     * On définit manuellement les modules manquants pour éviter les erreurs 404.
-     */
-    define('stackframe', [], function() { return function() {}; });
-    define('error-stack-parser', ['stackframe'], function() { return { parse: function() { return []; } }; });
-
-    window.addEventListener('error', function(e) {
-        if (e.message && (e.message.includes('stackframe') || e.message.includes('error-stack-parser'))) {
-            e.stopImmediatePropagation();
-            return false;
-        }
-    }, true);
+    if (typeof define === 'function' && define.amd) {
+        define('stackframe', [], function() { return {}; });
+        define('error-stack-parser', [], function() { return { parse: function() { return []; } }; });
+    }
 
     let pyodide;
     let editor;
+    let replEditor;
     let currentFile = 'main.py';
+    let inputResolver = null;
     let files = {
         'main.py': { content: 'print("Hello World !")' }
     };
 
     require.config({ 
-        paths: { 'vs': 'https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.45.0/min/vs' }
+        paths: { 'vs': 'https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.45.0/min/vs' },
+        ignoreDuplicateErrors: true
     });
 
     function initMonaco() {
@@ -151,15 +162,44 @@
                 fontSize: 14,
                 minimap: { enabled: false },
                 scrollBeyondLastLine: false,
-                autoClosingBrackets: "always",
-                autoClosingQuotes: "always",
-                suggestOnTriggerCharacters: true,
-                renderValidationDecorations: "on",
-                quickSuggestions: true
+                links: true
+            });
+            
+            editor.onDidChangeModelContent(() => { 
+                files[currentFile].content = editor.getValue(); 
             });
 
-            editor.onDidChangeModelContent(() => {
-                files[currentFile].content = editor.getValue();
+            replEditor = monaco.editor.create(document.getElementById('monaco-repl'), {
+                value: '',
+                language: 'python',
+                theme: 'vs-dark',
+                automaticLayout: true,
+                fontSize: 12,
+                lineNumbers: 'off',
+                glyphMargin: false,
+                folding: false,
+                lineDecorationsWidth: 0,
+                lineNumbersMinChars: 0,
+                minimap: { enabled: false },
+                scrollbar: { vertical: 'hidden', horizontal: 'hidden' },
+                overviewRulerLanes: 0,
+                scrollBeyondLastLine: false,
+                fixedOverflowWidgets: true,
+                renderLineHighlight: 'none',
+                contextmenu: false,
+                wordWrap: 'off'
+            });
+
+            replEditor.onKeyDown((e) => {
+                if (e.keyCode === monaco.KeyCode.Enter) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    const code = replEditor.getValue().trim();
+                    if (code) {
+                        replEditor.setValue('');
+                        executeDirect(code);
+                    }
+                }
             });
 
             document.getElementById('loader-overlay').style.display = 'none';
@@ -167,21 +207,23 @@
         });
     }
 
+    // Fonction pour forcer le focus sur le REPL
+    function focusRepl() {
+        if (replEditor) {
+            replEditor.focus();
+        }
+    }
+
     function renderUI() {
         const fileList = document.getElementById('file-list');
         const tabs = document.getElementById('tabs');
-        if(!fileList || !tabs) return;
-
-        fileList.innerHTML = '';
-        tabs.innerHTML = '';
-
+        fileList.innerHTML = ''; tabs.innerHTML = '';
         Object.keys(files).forEach(filename => {
             const item = document.createElement('div');
             item.className = `file-item ${filename === currentFile ? 'active' : ''}`;
             item.innerHTML = `<span>${filename}</span>`;
             item.onclick = () => switchFile(filename);
             fileList.appendChild(item);
-
             const tab = document.createElement('div');
             tab.className = `tab ${filename === currentFile ? 'active' : ''}`;
             tab.innerHTML = `<span>${filename}</span> <span class="ml-2 hover:text-red-500" onclick="deleteFile(event, '${filename}')">×</span>`;
@@ -200,10 +242,7 @@
         const name = prompt("Nom du fichier :");
         if (name) {
             const clean = name.endsWith('.py') ? name : name + '.py';
-            if (!files[clean]) {
-                files[clean] = { content: "# Nouveau fichier Python\n" };
-                switchFile(clean);
-            }
+            if (!files[clean]) { files[clean] = { content: "" }; switchFile(clean); }
         }
     }
 
@@ -211,92 +250,105 @@
         e.stopPropagation();
         if (Object.keys(files).length > 1) {
             delete files[name];
-            if (currentFile === name) {
-                currentFile = Object.keys(files)[0];
-                switchFile(currentFile);
-            } else {
-                renderUI();
-            }
+            if (currentFile === name) switchFile(Object.keys(files)[0]);
+            else renderUI();
         }
     }
 
     async function initPython() {
         try {
             pyodide = await loadPyodide();
-            document.getElementById('status').innerHTML = '<span class="text-green-500">● Python Prêt</span>';
+            pyodide.runPython(`
+import builtins
+from js import window
+def custom_input(p=""):
+    print(p, end="")
+    return window.promptUser(p)
+builtins.input = custom_input
+            `);
+            document.getElementById('status').innerHTML = '<span class="text-green-500">● Python prêt</span>';
         } catch (e) {
-            document.getElementById('status').innerText = "Erreur Python";
+            document.getElementById('status').innerText = "ERREUR CHARGEMENT";
+        }
+    }
+
+    window.promptUser = (text) => new Promise((resolve) => {
+        document.getElementById('input-prompt').innerText = text || "Entrée :";
+        document.getElementById('input-modal').style.display = 'block';
+        document.getElementById('input-field').value = '';
+        document.getElementById('input-field').focus();
+        inputResolver = resolve;
+    });
+
+    function submitInput() {
+        const val = document.getElementById('input-field').value;
+        document.getElementById('input-modal').style.display = 'none';
+        appendToConsole(val, 'stdout-line', '#4ec9b0');
+        if (inputResolver) inputResolver(val);
+    }
+
+    function appendToConsole(text, className, color = null) {
+        const outputEl = document.getElementById('output');
+        const line = document.createElement('div');
+        line.className = className;
+        if (color) line.style.color = color;
+        line.textContent = text;
+        outputEl.appendChild(line);
+        outputEl.scrollTop = outputEl.scrollHeight;
+    }
+
+    async function executeDirect(code) {
+        if (!pyodide) return;
+        appendToConsole(`>>> ${code}`, 'repl-echo');
+        
+        pyodide.setStdout({ batched: (str) => appendToConsole(str, 'stdout-line') });
+        pyodide.setStderr({ batched: (str) => appendToConsole(str, 'stderr-line') });
+
+        try {
+            const result = await pyodide.runPythonAsync(code);
+            if (result !== undefined) {
+                appendToConsole(result, 'stdout-line', '#ce9178');
+            }
+        } catch (err) {
+            appendToConsole(err.message, 'stderr-line');
         }
     }
 
     async function runCode() {
         if (!pyodide) return;
+        if (document.getElementById('auto-clear').checked) clearConsole();
+        appendToConsole(`> EXÉCUTION: ${currentFile}`, 'system-line');
         
-        if (document.getElementById('auto-clear').checked) {
-            clearConsole();
-        }
-
-        const outputEl = document.getElementById('output');
-        const code = editor.getValue();
-        
-        // Log de début d'exécution (Bleu)
-        const header = document.createElement('div');
-        header.className = 'system-line';
-        header.textContent = `> Exécution de ${currentFile}...`;
-        outputEl.appendChild(header);
-
-        // Configuration de la sortie standard (Blanc pour les prints)
-        pyodide.setStdout({ 
-            batched: (str) => { 
-                const line = document.createElement('div');
-                line.className = 'stdout-line';
-                line.textContent = str;
-                outputEl.appendChild(line);
-                document.getElementById('terminal').scrollTop = document.getElementById('terminal').scrollHeight;
-            } 
-        });
-
-        // Configuration de la sortie d'erreur (Rouge)
-        pyodide.setStderr({ 
-            batched: (str) => { 
-                const line = document.createElement('div');
-                line.className = 'stderr-line';
-                line.textContent = str;
-                outputEl.appendChild(line);
-                document.getElementById('terminal').scrollTop = document.getElementById('terminal').scrollHeight;
-            } 
-        });
+        pyodide.setStdout({ batched: (str) => appendToConsole(str, 'stdout-line') });
+        pyodide.setStderr({ batched: (str) => appendToConsole(str, 'stderr-line') });
 
         try {
-            await pyodide.runPythonAsync(code);
+            await pyodide.runPythonAsync(editor.getValue());
         } catch (err) {
-            const line = document.createElement('div');
-            line.className = 'stderr-line';
-            line.textContent = `Erreur:\n${err}`;
-            outputEl.appendChild(line);
+            appendToConsole(err.message, 'stderr-line');
         }
-        document.getElementById('terminal').scrollTop = document.getElementById('terminal').scrollHeight;
-    }
-
-    async function exportProject() {
-        const zip = new JSZip();
-        for (const [name, data] of Object.entries(files)) {
-            zip.file(name, data.content);
-        }
-        const blob = await zip.generateAsync({ type: "blob" });
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = "projet_python.zip";
-        a.click();
     }
 
     function clearConsole() { document.getElementById('output').innerHTML = ""; }
 
-    window.onload = () => {
-        initMonaco();
-        initPython();
-    };
+    function importFile(input) {
+        const file = input.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = (e) => { files[file.name] = { content: e.target.result }; switchFile(file.name); };
+        reader.readAsText(file);
+        input.value = '';
+    }
+
+    async function exportProject() {
+        const zip = new JSZip();
+        Object.entries(files).forEach(([name, data]) => zip.file(name, data.content));
+        const blob = await zip.generateAsync({ type: "blob" });
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = "nexus_project.zip";
+        a.click();
+    }
 
     const resizer = document.getElementById('resizer');
     let isResizing = false;
@@ -304,12 +356,15 @@
     window.onmousemove = (e) => {
         if (!isResizing) return;
         const h = window.innerHeight - e.clientY;
-        if (h > 50 && h < window.innerHeight - 100) {
+        if (h > 100 && h < window.innerHeight - 150) {
             document.getElementById('terminal').style.height = h + 'px';
             if(editor) editor.layout();
+            if(replEditor) replEditor.layout();
         }
     };
     window.onmouseup = () => isResizing = false;
+
+    window.onload = () => { initMonaco(); initPython(); };
 </script>
 </body>
 </html>
