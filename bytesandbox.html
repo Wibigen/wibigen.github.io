@@ -73,6 +73,20 @@
             30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
             40%, 60% { transform: translate3d(4px, 0, 0); }
         }
+
+        /* Color Picker Styles */
+        #colorPickerCanvas {
+            cursor: crosshair;
+            border-radius: 8px;
+            border: 2px solid #334155;
+        }
+        .color-preview {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            border: 2px solid #475569;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body class="min-h-screen p-4 md:p-8">
@@ -85,12 +99,15 @@
             <p class="text-slate-400">Analyse de fichiers et reconstruction de données binaires.</p>
         </header>
 
-        <div class="flex justify-center space-x-8 mb-8 border-b border-slate-700">
-            <button onclick="switchTab('decomp')" id="tab-decomp" class="pb-2 px-4 font-semibold transition-colors tab-active">
-                Décomposition (Fichier → Octets)
+        <div class="flex justify-center space-x-4 md:space-x-8 mb-8 border-b border-slate-700 overflow-x-auto">
+            <button onclick="switchTab('decomp')" id="tab-decomp" class="pb-2 px-4 font-semibold transition-colors tab-active whitespace-nowrap">
+                Décomposition
             </button>
-            <button onclick="switchTab('comp')" id="tab-comp" class="pb-2 px-4 font-semibold transition-colors text-slate-400 hover:text-slate-200">
-                Composition (Octets → Rendu)
+            <button onclick="switchTab('comp')" id="tab-comp" class="pb-2 px-4 font-semibold transition-colors text-slate-400 hover:text-slate-200 whitespace-nowrap">
+                Composition
+            </button>
+            <button onclick="switchTab('picker')" id="tab-picker" class="pb-2 px-4 font-semibold transition-colors text-slate-400 hover:text-slate-200 whitespace-nowrap">
+                Sélecteur Couleur
             </button>
         </div>
 
@@ -126,7 +143,7 @@
                     </div>
 
                     <div class="bg-slate-800/80 p-5 rounded-xl border border-slate-700 flex flex-col justify-center space-y-3">
-                        <button onclick="copyToClipboard()" class="w-full py-2 bg-blue-600 hover:bg-blue-500 rounded-lg font-semibold transition-colors">
+                        <button onclick="copyToClipboard(currentByteString)" class="w-full py-2 bg-blue-600 hover:bg-blue-500 rounded-lg font-semibold transition-colors">
                             Copier les octets
                         </button>
                         <button onclick="downloadBytes()" class="w-full py-2 bg-slate-700 hover:bg-slate-600 rounded-lg font-semibold transition-colors">
@@ -198,20 +215,85 @@
                 </div>
             </div>
         </div>
+
+        <!-- SECTION COLOR PICKER -->
+        <div id="section-picker" class="hidden space-y-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <!-- Picker Area -->
+                <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-700 shadow-xl flex flex-col items-center">
+                    <h3 class="text-sm font-bold text-slate-300 uppercase mb-4 self-start">Sélecteur Visuel</h3>
+                    <canvas id="colorPickerCanvas" width="400" height="300" class="max-w-full h-auto mb-4"></canvas>
+                    <div class="w-full h-4 rounded-full bg-gradient-to-r from-red-500 via-yellow-500 via-green-500 via-blue-500 via-purple-500 to-red-500 cursor-pointer mb-2" id="hueBar"></div>
+                    <p class="text-[10px] text-slate-500 italic">Cliquez sur le spectre pour extraire les octets</p>
+                </div>
+
+                <!-- Result Area -->
+                <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-700 shadow-xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <h3 class="text-sm font-bold text-slate-300 uppercase">Données Extraites</h3>
+                            <div id="colorPreviewBox" class="color-preview" style="background-color: #3b82f6;"></div>
+                        </div>
+
+                        <div class="space-y-4">
+                            <!-- Hex Display -->
+                            <div>
+                                <label class="text-[10px] uppercase font-bold text-slate-500 mb-1 block">Hexadécimal</label>
+                                <div class="flex gap-2">
+                                    <input type="text" id="hexOutput" readonly class="flex-1 bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 mono text-blue-400 outline-none">
+                                    <button onclick="copyToClipboard(document.getElementById('hexOutput').value)" class="p-2 bg-slate-700 hover:bg-slate-600 rounded-lg transition-colors">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- RGBA Display -->
+                            <div>
+                                <label class="text-[10px] uppercase font-bold text-slate-500 mb-1 block">Composantes RGBA (Décimal)</label>
+                                <div id="rgbaOutput" class="grid grid-cols-4 gap-2">
+                                    <div class="bg-slate-900 p-2 rounded border border-red-900/50 text-center"><span class="text-[10px] block text-red-500">R</span><span id="valR" class="mono text-xs">255</span></div>
+                                    <div class="bg-slate-900 p-2 rounded border border-green-900/50 text-center"><span class="text-[10px] block text-green-500">G</span><span id="valG" class="mono text-xs">255</span></div>
+                                    <div class="bg-slate-900 p-2 rounded border border-blue-900/50 text-center"><span class="text-[10px] block text-blue-500">B</span><span id="valB" class="mono text-xs">255</span></div>
+                                    <div class="bg-slate-900 p-2 rounded border border-slate-600/50 text-center"><span class="text-[10px] block text-slate-400">A</span><span id="valA" class="mono text-xs">255</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Binary Flux -->
+                    <div class="mt-6">
+                        <label class="text-[10px] uppercase font-bold text-slate-500 mb-1 block">Flux Binaire (RGBA)</label>
+                        <div class="relative">
+                            <div id="binaryColorOutput" class="bg-slate-950 p-3 rounded-lg border border-slate-700 mono text-[10px] leading-relaxed break-all text-purple-400 min-h-[60px]"></div>
+                            <button onclick="copyToClipboard(document.getElementById('binaryColorOutput').textContent)" class="absolute top-2 right-2 p-1.5 bg-slate-800 hover:bg-slate-700 rounded transition-colors">
+                                <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                            </button>
+                        </div>
+                        <p class="text-[10px] text-slate-500 mt-2">Prêt à être utilisé dans l'onglet Composition.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         
-        <div id="toast" class="fixed bottom-5 right-5 bg-blue-600 text-white px-6 py-3 rounded-xl shadow-2xl transform translate-y-20 transition-transform duration-300">
+        <div id="toast" class="fixed bottom-5 right-5 bg-blue-600 text-white px-6 py-3 rounded-xl shadow-2xl transform translate-y-20 transition-transform duration-300 pointer-events-none">
             Copié !
         </div>
     </div>
 
     <script>
+        // Global variables for color picker
+        let hue = 0;
+        let selectedColor = { r: 59, g: 130, b: 246, a: 255 };
+
         function switchTab(tab) {
-            ['decomp', 'comp'].forEach(s => {
+            ['decomp', 'comp', 'picker'].forEach(s => {
                 document.getElementById(`section-${s}`).classList.add('hidden');
-                document.getElementById(`tab-${s}`).className = "pb-2 px-4 font-semibold transition-colors text-slate-400 hover:text-slate-200";
+                document.getElementById(`tab-${s}`).className = "pb-2 px-4 font-semibold transition-colors text-slate-400 hover:text-slate-200 whitespace-nowrap";
             });
             document.getElementById(`section-${tab}`).classList.remove('hidden');
-            document.getElementById(`tab-${tab}`).className = "pb-2 px-4 font-semibold transition-colors tab-active text-blue-400";
+            document.getElementById(`tab-${tab}`).className = "pb-2 px-4 font-semibold transition-colors tab-active text-blue-400 whitespace-nowrap";
+            
+            if (tab === 'picker') initColorPicker();
         }
 
         function showError(msg) {
@@ -229,8 +311,10 @@
         }
 
         function hideError() {
-            document.getElementById('error-message').classList.add('hidden');
-            document.getElementById('input-container').classList.remove('border-red-500');
+            const errDiv = document.getElementById('error-message');
+            if (errDiv) errDiv.classList.add('hidden');
+            const inputCont = document.getElementById('input-container');
+            if (inputCont) inputCont.classList.remove('border-red-500');
         }
 
         function setCanvasSize(widthStr, btnElement) {
@@ -302,8 +386,16 @@
             `;
         }
 
-        function copyToClipboard() {
-            navigator.clipboard.writeText(currentByteString);
+        function copyToClipboard(text) {
+            if (!text) return;
+            // Fallback strategy for clipboard
+            const textArea = document.createElement("textarea");
+            textArea.value = text;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
+            
             const toast = document.getElementById('toast');
             toast.classList.remove('translate-y-20');
             setTimeout(() => toast.classList.add('translate-y-20'), 2000);
@@ -323,7 +415,6 @@
                 showError("Veuillez entrer des données.");
                 return null;
             }
-            // Nettoyer : on garde uniquement ce qui ressemble à des octets binaires après l'éventuel SIZE:
             const cleanInput = input.replace(/^SIZE:\d+x\d+\s*/, "").replace(/[^01]/g, " ");
             const tokens = cleanInput.trim().split(/\s+/).filter(t => t.length === 8);
             
@@ -359,7 +450,6 @@
             let pixelCount = 0;
             let drawFunc = null;
 
-            // Vérification de la quantité minimale d'octets selon le mode
             const bytesPerPixel = mode === 'rgba' ? 4 : mode === 'rgb' ? 3 : mode === 'grayscale' ? 1 : 0.125;
             if (bytes.length < Math.ceil(bytesPerPixel)) {
                 showError(`Pas assez d'octets pour le mode ${mode.toUpperCase()} (min required: ${Math.ceil(bytesPerPixel)}).`);
@@ -423,11 +513,9 @@
                 if (sizeMatch) {
                     width = parseInt(sizeMatch[1]);
                     height = parseInt(sizeMatch[2]);
-                    // Vérification que les dimensions SIZE ne dépassent pas la capacité des octets fournis
                     const capacity = mode === 'binary' ? bytes.length * 8 : Math.floor(bytes.length / bytesPerPixel);
                     if (width * height > capacity) {
                         showError("L'en-tête SIZE demande plus de pixels que les données ne peuvent en fournir.");
-                        // On continue quand même avec les dimensions automatiques
                         width = Math.ceil(Math.sqrt(pixelCount));
                         height = Math.ceil(pixelCount / width);
                     }
@@ -447,6 +535,87 @@
                 console.error(err);
             }
         }
+
+        // --- COLOR PICKER LOGIC ---
+
+        function initColorPicker() {
+            const pickerCanvas = document.getElementById('colorPickerCanvas');
+            const pickerCtx = pickerCanvas.getContext('2d');
+            const hueBar = document.getElementById('hueBar');
+
+            const drawSpectrum = () => {
+                // Color layer
+                pickerCtx.fillStyle = `hsl(${hue}, 100%, 50%)`;
+                pickerCtx.fillRect(0, 0, pickerCanvas.width, pickerCanvas.height);
+
+                // White gradient (left to right)
+                let whiteGrad = pickerCtx.createLinearGradient(0, 0, pickerCanvas.width, 0);
+                whiteGrad.addColorStop(0, 'rgba(255, 255, 255, 1)');
+                whiteGrad.addColorStop(1, 'rgba(255, 255, 255, 0)');
+                pickerCtx.fillStyle = whiteGrad;
+                pickerCtx.fillRect(0, 0, pickerCanvas.width, pickerCanvas.height);
+
+                // Black gradient (bottom to top)
+                let blackGrad = pickerCtx.createLinearGradient(0, pickerCanvas.height, 0, 0);
+                blackGrad.addColorStop(0, 'rgba(0, 0, 0, 1)');
+                blackGrad.addColorStop(1, 'rgba(0, 0, 0, 0)');
+                pickerCtx.fillStyle = blackGrad;
+                pickerCtx.fillRect(0, 0, pickerCanvas.width, pickerCanvas.height);
+            };
+
+            const pick = (e) => {
+                const rect = pickerCanvas.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                const data = pickerCtx.getImageData(x, y, 1, 1).data;
+                updateColorResults(data[0], data[1], data[2], 255);
+            };
+
+            const updateHue = (e) => {
+                const rect = hueBar.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                hue = (x / rect.width) * 360;
+                drawSpectrum();
+                // Refresh current pick (center of canvas roughly if not clicking)
+                const data = pickerCtx.getImageData(pickerCanvas.width/2, pickerCanvas.height/2, 1, 1).data;
+                updateColorResults(data[0], data[1], data[2], 255);
+            };
+
+            pickerCanvas.addEventListener('mousedown', (e) => {
+                pick(e);
+                const onMove = (me) => pick(me);
+                window.addEventListener('mousemove', onMove);
+                window.addEventListener('mouseup', () => window.removeEventListener('mousemove', onMove), {once: true});
+            });
+
+            hueBar.addEventListener('mousedown', (e) => {
+                updateHue(e);
+                const onMove = (me) => updateHue(me);
+                window.addEventListener('mousemove', onMove);
+                window.addEventListener('mouseup', () => window.removeEventListener('mousemove', onMove), {once: true});
+            });
+
+            drawSpectrum();
+            updateColorResults(selectedColor.r, selectedColor.g, selectedColor.b, selectedColor.a);
+        }
+
+        function updateColorResults(r, g, b, a) {
+            selectedColor = {r, g, b, a};
+            const hex = "#" + [r, g, b].map(x => x.toString(16).padStart(2, '0')).join('').toUpperCase();
+            
+            document.getElementById('hexOutput').value = hex;
+            document.getElementById('colorPreviewBox').style.backgroundColor = hex;
+            document.getElementById('valR').textContent = r;
+            document.getElementById('valG').textContent = g;
+            document.getElementById('valB').textContent = b;
+            document.getElementById('valA').textContent = a;
+
+            const bin = [r, g, b, a].map(x => x.toString(2).padStart(8, '0')).join(' ');
+            document.getElementById('binaryColorOutput').textContent = bin;
+        }
+
+        // Initialize first tab
+        window.onload = () => switchTab('decomp');
     </script>
 </body>
 </html>
