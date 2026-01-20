@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Byte Sandbox - Analyseur Binaire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #e2e8f0;
+        }
+
+        .mono {
+            font-family: 'Fira Code', monospace;
+        }
+
+        .tab-active {
+            border-bottom: 2px solid #3b82f6;
+            color: #3b82f6;
+        }
+
+        .byte-container {
+            scrollbar-width: thin;
+            scrollbar-color: #334155 #0f172a;
+        }
+
+        .byte-container::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .byte-container::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+
+        .byte-container::-webkit-scrollbar-thumb {
+            background-color: #334155;
+            border-radius: 20px;
+        }
+
+        #compCanvas {
+            image-rendering: pixelated;
+            image-rendering: crisp-edges;
+            width: 10vw; 
+            height: auto;
+            min-width: 50px;
+            border: 2px solid #334155;
+            transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            background-image: 
+                linear-gradient(45deg, #1e293b 25%, transparent 25%), 
+                linear-gradient(-45deg, #1e293b 25%, transparent 25%), 
+                linear-gradient(45deg, transparent 75%, #1e293b 75%), 
+                linear-gradient(-45deg, transparent 75%, #1e293b 75%);
+            background-size: 10px 10px;
+            background-position: 0 0, 0 5px, 5px -5px, -5px 0px;
+        }
+
+        .size-btn-active {
+            background-color: #3b82f6 !important;
+            color: white !important;
+        }
+
+        .error-shake {
+            animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+        }
+
+        @keyframes shake {
+            10%, 90% { transform: translate3d(-1px, 0, 0); }
+            20%, 80% { transform: translate3d(2px, 0, 0); }
+            30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+            40%, 60% { transform: translate3d(4px, 0, 0); }
+        }
+    </style>
+</head>
+<body class="min-h-screen p-4 md:p-8">
+
+    <div class="max-w-5xl mx-auto">
+        <header class="mb-10 text-center">
+            <h1 class="text-4xl font-bold tracking-tight mb-2 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                Byte Sandbox
+            </h1>
+            <p class="text-slate-400">Analyse de fichiers et reconstruction de données binaires.</p>
+        </header>
+
+        <div class="flex justify-center space-x-8 mb-8 border-b border-slate-700">
+            <button onclick="switchTab('decomp')" id="tab-decomp" class="pb-2 px-4 font-semibold transition-colors tab-active">
+                Décomposition (Fichier → Octets)
+            </button>
+            <button onclick="switchTab('comp')" id="tab-comp" class="pb-2 px-4 font-semibold transition-colors text-slate-400 hover:text-slate-200">
+                Composition (Octets → Rendu)
+            </button>
+        </div>
+
+        <!-- SECTION DECOMPOSITION -->
+        <div id="section-decomp" class="space-y-6">
+            <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-700 shadow-xl">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+                    <label class="text-sm font-medium text-slate-300">Importer un fichier</label>
+                    <div class="flex items-center space-x-2 bg-slate-900 p-2 rounded-lg border border-slate-700">
+                        <input type="checkbox" id="extractPixels" class="w-4 h-4 text-blue-600 bg-slate-800 border-slate-600 rounded focus:ring-blue-500" checked>
+                        <label for="extractPixels" class="text-xs text-slate-300 cursor-pointer">Décoder les pixels (Recommandé pour PNG/JPG)</label>
+                    </div>
+                </div>
+                
+                <div class="flex items-center justify-center w-full">
+                    <label class="flex flex-col items-center justify-center w-full h-32 border-2 border-slate-600 border-dashed rounded-lg cursor-pointer hover:bg-slate-800 transition-all">
+                        <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                            <svg class="w-8 h-8 mb-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/></svg>
+                            <p class="mb-2 text-sm text-slate-400"><span class="font-semibold">Cliquez</span> ou glissez un fichier</p>
+                        </div>
+                        <input id="fileInput" type="file" class="hidden" onchange="handleFile(event)" />
+                    </label>
+                </div>
+            </div>
+
+            <div id="decomp-results" class="hidden space-y-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-slate-800/80 p-5 rounded-xl border border-slate-700">
+                        <h3 class="text-blue-400 font-bold mb-3 flex items-center text-sm uppercase">
+                            Métadonnées & Signature
+                        </h3>
+                        <div id="metadata-output" class="text-sm space-y-2 text-slate-300 mono"></div>
+                    </div>
+
+                    <div class="bg-slate-800/80 p-5 rounded-xl border border-slate-700 flex flex-col justify-center space-y-3">
+                        <button onclick="copyToClipboard()" class="w-full py-2 bg-blue-600 hover:bg-blue-500 rounded-lg font-semibold transition-colors">
+                            Copier les octets
+                        </button>
+                        <button onclick="downloadBytes()" class="w-full py-2 bg-slate-700 hover:bg-slate-600 rounded-lg font-semibold transition-colors">
+                            Télécharger l'analyse
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
+                    <h3 class="text-purple-400 font-bold mb-3 text-sm uppercase">Flux d'octets</h3>
+                    <div id="byte-output" class="byte-container max-h-64 overflow-y-auto mono text-xs leading-relaxed tracking-widest text-slate-400 p-2 break-all bg-slate-950 rounded"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION COMPOSITION -->
+        <div id="section-comp" class="hidden space-y-6">
+            <div id="input-container" class="bg-slate-800/50 p-6 rounded-2xl border border-slate-700 shadow-xl transition-all">
+                <label class="block mb-4 text-sm font-medium text-slate-300">Saisir ou coller une suite d'octets</label>
+                <textarea id="byteInput" rows="6" class="w-full bg-slate-900 border border-slate-700 rounded-xl p-4 mono text-sm focus:ring-2 focus:ring-blue-500 outline-none text-blue-300" placeholder="SIZE:200x50 01001000 01100101..."></textarea>
+                
+                <div id="error-message" class="hidden mt-2 text-red-400 text-xs font-semibold flex items-center">
+                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
+                    <span id="error-text">Entrée invalide</span>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+                    <div class="flex flex-col space-y-2">
+                        <label class="text-xs text-slate-400 uppercase font-bold">Interprétation</label>
+                        <select id="imageMode" class="bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-blue-500">
+                            <option value="rgba">RGBA (4 octets / px)</option>
+                            <option value="rgb">RGB (3 octets / px)</option>
+                            <option value="grayscale">Niveaux de gris (1 octet / px)</option>
+                            <option value="binary">Noir & Blanc (1 bit / px)</option>
+                        </select>
+                    </div>
+                    <button onclick="renderImageFromBytes()" class="py-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 rounded-xl font-bold transition-all shadow-lg self-end">
+                        Faire l'image
+                    </button>
+                    <button onclick="renderTextFromBytes()" class="py-3 bg-slate-700 hover:bg-slate-600 rounded-xl font-bold transition-all self-end">
+                        Traduire en Texte
+                    </button>
+                </div>
+            </div>
+
+            <div id="composition-results" class="hidden space-y-4">
+                <div class="bg-slate-900 p-8 rounded-2xl border border-slate-700 flex flex-col items-center justify-center min-h-[300px]">
+                    <h3 id="render-title" class="text-slate-500 uppercase tracking-widest text-xs mb-6">Aperçu</h3>
+                    
+                    <div id="image-output-container" class="hidden flex flex-col items-center w-full">
+                        <div class="p-4 bg-slate-800 border border-slate-700 rounded-xl shadow-inner mb-6">
+                            <canvas id="compCanvas"></canvas>
+                        </div>
+
+                        <!-- Contrôles de taille -->
+                        <div class="flex items-center space-x-1 bg-slate-800 p-1 rounded-lg border border-slate-700 mb-4">
+                            <span class="text-[10px] uppercase font-bold text-slate-500 px-3">Largeur Rendu :</span>
+                            <button onclick="setCanvasSize('10vw', this)" class="size-btn px-4 py-1.5 text-xs font-semibold rounded-md bg-slate-700 text-slate-300 hover:bg-slate-600 transition-all size-btn-active">10%</button>
+                            <button onclick="setCanvasSize('25vw', this)" class="size-btn px-4 py-1.5 text-xs font-semibold rounded-md bg-slate-700 text-slate-300 hover:bg-slate-600 transition-all">25%</button>
+                            <button onclick="setCanvasSize('50vw', this)" class="size-btn px-4 py-1.5 text-xs font-semibold rounded-md bg-slate-700 text-slate-300 hover:bg-slate-600 transition-all">50%</button>
+                        </div>
+
+                        <p id="canvas-info" class="text-xs text-slate-400 text-center italic"></p>
+                    </div>
+
+                    <div id="text-output-container" class="hidden w-full">
+                        <div id="text-output" class="p-4 bg-slate-800 rounded-lg border border-slate-700 mono text-blue-100 whitespace-pre-wrap break-all"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="toast" class="fixed bottom-5 right-5 bg-blue-600 text-white px-6 py-3 rounded-xl shadow-2xl transform translate-y-20 transition-transform duration-300">
+            Copié !
+        </div>
+    </div>
+
+    <script>
+        function switchTab(tab) {
+            ['decomp', 'comp'].forEach(s => {
+                document.getElementById(`section-${s}`).classList.add('hidden');
+                document.getElementById(`tab-${s}`).className = "pb-2 px-4 font-semibold transition-colors text-slate-400 hover:text-slate-200";
+            });
+            document.getElementById(`section-${tab}`).classList.remove('hidden');
+            document.getElementById(`tab-${tab}`).className = "pb-2 px-4 font-semibold transition-colors tab-active text-blue-400";
+        }
+
+        function showError(msg) {
+            const errDiv = document.getElementById('error-message');
+            const errText = document.getElementById('error-text');
+            const container = document.getElementById('input-container');
+            
+            errText.textContent = msg;
+            errDiv.classList.remove('hidden');
+            container.classList.add('error-shake', 'border-red-500');
+            
+            setTimeout(() => {
+                container.classList.remove('error-shake');
+            }, 500);
+        }
+
+        function hideError() {
+            document.getElementById('error-message').classList.add('hidden');
+            document.getElementById('input-container').classList.remove('border-red-500');
+        }
+
+        function setCanvasSize(widthStr, btnElement) {
+            const canvas = document.getElementById('compCanvas');
+            canvas.style.width = widthStr;
+            document.querySelectorAll('.size-btn').forEach(btn => btn.classList.remove('size-btn-active'));
+            btnElement.classList.add('size-btn-active');
+            updateCanvasInfoText();
+        }
+
+        function updateCanvasInfoText() {
+            const canvas = document.getElementById('compCanvas');
+            const info = document.getElementById('canvas-info');
+            const currentWidth = canvas.style.width || "10vw";
+            info.textContent = `Dimensions : ${canvas.width}x${canvas.height} px | Affichage : ${currentWidth} de la largeur page`;
+        }
+
+        let currentByteString = "";
+
+        async function handleFile(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            const extractPixels = document.getElementById('extractPixels').checked;
+            
+            if (extractPixels && file.type.startsWith('image/')) {
+                const img = new Image();
+                img.src = URL.createObjectURL(file);
+                img.onload = () => {
+                    const canvas = document.createElement('canvas');
+                    canvas.width = img.width;
+                    canvas.height = img.height;
+                    const ctx = canvas.getContext('2d');
+                    ctx.drawImage(img, 0, 0);
+                    const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+                    processUint8Array(imageData.data, file, true, {w: img.width, h: img.height});
+                };
+            } else {
+                const reader = new FileReader();
+                reader.onload = (e) => processUint8Array(new Uint8Array(e.target.result), file, false);
+                reader.readAsArrayBuffer(file);
+            }
+        }
+
+        function processUint8Array(uint8, file, isPixelData, dims = null) {
+            let binaryArr = [];
+            if (isPixelData && dims) {
+                currentByteString = `SIZE:${dims.w}x${dims.h}\n`;
+            } else {
+                currentByteString = "";
+            }
+
+            for (let i = 0; i < uint8.length; i++) {
+                binaryArr.push(uint8[i].toString(2).padStart(8, '0'));
+            }
+            currentByteString += binaryArr.join(' ');
+            
+            document.getElementById('byte-output').textContent = currentByteString;
+            document.getElementById('decomp-results').classList.remove('hidden');
+            
+            const output = document.getElementById('metadata-output');
+            const hexSig = Array.from(uint8.slice(0, 8)).map(b => b.toString(16).toUpperCase().padStart(2, '0')).join(' ');
+
+            output.innerHTML = `
+                <div class="flex justify-between border-b border-slate-700 pb-1"><span>Fichier :</span><span class="text-blue-300">${file.name}</span></div>
+                <div class="flex justify-between border-b border-slate-700 pb-1"><span>Mode :</span><span class="text-yellow-400">${isPixelData ? 'Pixels RGBA Bruts' : 'Binaire Pur'}</span></div>
+                ${isPixelData ? `<div class="flex justify-between border-b border-slate-700 pb-1"><span>Dimensions :</span><span class="text-green-400">${dims.w}x${dims.h}</span></div>` : ''}
+                <div class="flex justify-between"><span>Signature :</span><span class="text-slate-500 text-xs">${hexSig}...</span></div>
+            `;
+        }
+
+        function copyToClipboard() {
+            navigator.clipboard.writeText(currentByteString);
+            const toast = document.getElementById('toast');
+            toast.classList.remove('translate-y-20');
+            setTimeout(() => toast.classList.add('translate-y-20'), 2000);
+        }
+
+        function downloadBytes() {
+            const blob = new Blob([currentByteString], {type: "text/plain"});
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url; a.download = "byte_dump.txt"; a.click();
+        }
+
+        function getBytesFromInput() {
+            hideError();
+            const input = document.getElementById('byteInput').value.trim();
+            if (!input) {
+                showError("Veuillez entrer des données.");
+                return null;
+            }
+            // Nettoyer : on garde uniquement ce qui ressemble à des octets binaires après l'éventuel SIZE:
+            const cleanInput = input.replace(/^SIZE:\d+x\d+\s*/, "").replace(/[^01]/g, " ");
+            const tokens = cleanInput.trim().split(/\s+/).filter(t => t.length === 8);
+            
+            if (tokens.length === 0) {
+                showError("Aucun octet binaire valide détecté (format requis : 00101010).");
+                return null;
+            }
+            return tokens.map(t => parseInt(t, 2));
+        }
+
+        function renderTextFromBytes() {
+            const bytes = getBytesFromInput();
+            if (!bytes) return;
+            document.getElementById('composition-results').classList.remove('hidden');
+            document.getElementById('image-output-container').classList.add('hidden');
+            document.getElementById('text-output-container').classList.remove('hidden');
+            document.getElementById('render-title').textContent = "Texte (UTF-8)";
+            try {
+                document.getElementById('text-output').textContent = new TextDecoder().decode(new Uint8Array(bytes));
+            } catch(e) { 
+                document.getElementById('text-output').textContent = "Erreur de décodage binaire vers texte."; 
+            }
+        }
+
+        function renderImageFromBytes() {
+            const input = document.getElementById('byteInput').value.trim();
+            const bytes = getBytesFromInput();
+            if (!bytes) return;
+
+            const mode = document.getElementById('imageMode').value;
+            const canvas = document.getElementById('compCanvas');
+            const ctx = canvas.getContext('2d');
+            let pixelCount = 0;
+            let drawFunc = null;
+
+            // Vérification de la quantité minimale d'octets selon le mode
+            const bytesPerPixel = mode === 'rgba' ? 4 : mode === 'rgb' ? 3 : mode === 'grayscale' ? 1 : 0.125;
+            if (bytes.length < Math.ceil(bytesPerPixel)) {
+                showError(`Pas assez d'octets pour le mode ${mode.toUpperCase()} (min required: ${Math.ceil(bytesPerPixel)}).`);
+                return;
+            }
+
+            if(mode === 'rgba') {
+                pixelCount = Math.floor(bytes.length / 4);
+                drawFunc = (w, h) => {
+                    const img = ctx.createImageData(w, h);
+                    for(let i=0; i<pixelCount; i++) {
+                        const b=i*4; 
+                        img.data[i*4]=bytes[b]; 
+                        img.data[i*4+1]=bytes[b+1]; 
+                        img.data[i*4+2]=bytes[b+2]; 
+                        img.data[i*4+3]=bytes[b+3] !== undefined ? bytes[b+3] : 255;
+                    }
+                    return img;
+                };
+            } else if(mode === 'rgb') {
+                pixelCount = Math.floor(bytes.length / 3);
+                drawFunc = (w, h) => {
+                    const img = ctx.createImageData(w, h);
+                    for(let i=0; i<pixelCount; i++) {
+                        const b=i*3; img.data[i*4]=bytes[b]; img.data[i*4+1]=bytes[b+1]; img.data[i*4+2]=bytes[b+2]; img.data[i*4+3]=255;
+                    }
+                    return img;
+                };
+            } else if(mode === 'grayscale') {
+                pixelCount = bytes.length;
+                drawFunc = (w, h) => {
+                    const img = ctx.createImageData(w, h);
+                    for(let i=0; i<pixelCount; i++) {
+                        img.data[i*4]=img.data[i*4+1]=img.data[i*4+2]=bytes[i]; img.data[i*4+3]=255;
+                    }
+                    return img;
+                };
+            } else if(mode === 'binary') {
+                pixelCount = bytes.length * 8;
+                drawFunc = (w, h) => {
+                    const img = ctx.createImageData(w, h);
+                    for(let i=0; i<bytes.length; i++) {
+                        for(let b=0; b<8; b++) {
+                            const val = (bytes[i] >> (7-b)) & 1 ? 255 : 0;
+                            const idx = i*8+b; img.data[idx*4]=img.data[idx*4+1]=img.data[idx*4+2]=val; img.data[idx*4+3]=255;
+                        }
+                    }
+                    return img;
+                };
+            }
+
+            try {
+                document.getElementById('composition-results').classList.remove('hidden');
+                document.getElementById('text-output-container').classList.add('hidden');
+                document.getElementById('image-output-container').classList.remove('hidden');
+                document.getElementById('render-title').textContent = `Image ${mode.toUpperCase()}`;
+
+                let width, height;
+                const sizeMatch = input.match(/^SIZE:(\d+)x(\d+)/);
+                
+                if (sizeMatch) {
+                    width = parseInt(sizeMatch[1]);
+                    height = parseInt(sizeMatch[2]);
+                    // Vérification que les dimensions SIZE ne dépassent pas la capacité des octets fournis
+                    const capacity = mode === 'binary' ? bytes.length * 8 : Math.floor(bytes.length / bytesPerPixel);
+                    if (width * height > capacity) {
+                        showError("L'en-tête SIZE demande plus de pixels que les données ne peuvent en fournir.");
+                        // On continue quand même avec les dimensions automatiques
+                        width = Math.ceil(Math.sqrt(pixelCount));
+                        height = Math.ceil(pixelCount / width);
+                    }
+                } else {
+                    width = Math.ceil(Math.sqrt(pixelCount));
+                    height = Math.ceil(pixelCount / width);
+                }
+
+                canvas.width = width; 
+                canvas.height = height;
+                canvas.style.aspectRatio = `${width}/${height}`;
+                
+                ctx.putImageData(drawFunc(width, height), 0, 0);
+                updateCanvasInfoText();
+            } catch (err) {
+                showError("Erreur lors de la génération de l'image.");
+                console.error(err);
+            }
+        }
+    </script>
+</body>
+</html>
