@@ -86,16 +86,115 @@
             border: 2px solid #475569;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
         }
+
+        /* Styles pour l'inspecteur d'octet */
+        #byteInspector {
+            display: none;
+            backdrop-filter: blur(8px);
+        }
+
+        /* Toggle switch */
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 34px;
+            height: 18px;
+        }
+        .switch input { opacity: 0; width: 0; height: 0; }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-color: #334155;
+            transition: .3s;
+            border-radius: 34px;
+        }
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 12px; width: 12px;
+            left: 3px; bottom: 3px;
+            background-color: white;
+            transition: .3s;
+            border-radius: 50%;
+        }
+        input:checked + .slider { background-color: #3b82f6; }
+        input:checked + .slider:before { transform: translateX(16px); }
     </style>
 </head>
-<body class="min-h-screen p-4 md:p-8">
+<body class="min-h-screen p-4 md:p-8 relative">
+
+    <!-- Bouton Inspecteur (Coin Supérieur Droit) -->
+    <button onclick="toggleInspector()" class="fixed top-6 right-6 z-50 p-3 bg-blue-600 hover:bg-blue-500 rounded-full shadow-2xl transition-all group border border-blue-400/30">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+        <span class="absolute right-14 top-2 bg-slate-800 text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap uppercase tracking-wider">Inspecteur d'octet</span>
+    </button>
+
+    <!-- Bulle Inspecteur -->
+    <div id="byteInspector" class="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-black/60">
+        <div class="bg-slate-800 border border-slate-600 rounded-3xl shadow-2xl p-6 w-full max-w-sm transform transition-all scale-100">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-lg font-bold text-blue-400 uppercase tracking-tight">Inspecteur d'Octet</h2>
+                <button onclick="toggleInspector()" class="text-slate-400 hover:text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+
+            <div class="space-y-6">
+                <!-- Zone de saisie Octet -->
+                <div class="flex flex-col items-center">
+                    <label class="text-[10px] text-slate-500 font-bold uppercase mb-2">Valeur Binaire (8 bits)</label>
+                    <div class="flex items-center space-x-2">
+                        <button onclick="changeByteValue(-1)" class="p-2 bg-slate-700 hover:bg-slate-600 rounded-lg text-white transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path></svg>
+                        </button>
+                        <input type="text" id="inspectorInput" maxlength="8" oninput="updateFromBinary(this.value)" class="w-40 bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-center mono text-xl font-bold text-blue-300 focus:ring-2 focus:ring-blue-500 outline-none" value="01000001">
+                        <button onclick="changeByteValue(1)" class="p-2 bg-slate-700 hover:bg-slate-600 rounded-lg text-white transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Sorties de conversion -->
+                <div class="grid grid-cols-3 gap-3">
+                    <div class="bg-slate-900/50 p-4 rounded-2xl border border-slate-700 text-center">
+                        <span class="text-[10px] block text-slate-500 font-bold mb-1 uppercase">Decimal</span>
+                        <span id="inspectDec" class="mono text-lg text-white">65</span>
+                    </div>
+                    <div class="bg-slate-900/50 p-4 rounded-2xl border border-slate-700 text-center">
+                        <span class="text-[10px] block text-slate-500 font-bold mb-1 uppercase">Hex</span>
+                        <span id="inspectHex" class="mono text-lg text-purple-400">41</span>
+                    </div>
+                    <div class="bg-slate-900/50 p-4 rounded-2xl border border-slate-700 text-center">
+                        <span class="text-[10px] block text-slate-500 font-bold mb-1 uppercase">ASCII</span>
+                        <span id="inspectAscii" class="mono text-lg text-green-400">A</span>
+                    </div>
+                </div>
+                
+                <p class="text-[10px] text-slate-500 text-center italic">Le mode de rendu global impacte l'affichage ASCII ici.</p>
+            </div>
+        </div>
+    </div>
 
     <div class="max-w-5xl mx-auto">
-        <header class="mb-10 text-center">
+        <header class="mb-10 text-center flex flex-col items-center">
             <h1 class="text-4xl font-bold tracking-tight mb-2 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
                 Byte Sandbox
             </h1>
-            <p class="text-slate-400">Analyse de fichiers, texte et couleurs en flux binaire.</p>
+            <p class="text-slate-400 mb-6">Analyse de fichiers, texte et couleurs en flux binaire.</p>
+
+            <!-- Toggle ASCII GLOBAL -->
+            <div class="flex items-center space-x-4 bg-slate-800/80 px-4 py-2 rounded-full border border-slate-700 shadow-lg">
+                <span class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Table Rendu :</span>
+                <div class="flex items-center space-x-2">
+                    <span id="globalAsciiLabel" class="text-[11px] font-bold text-blue-400 uppercase min-w-[65px] text-right">Standard</span>
+                    <label class="switch">
+                        <input type="checkbox" id="globalAsciiToggle" onchange="toggleGlobalAscii()">
+                        <span class="slider"></span>
+                    </label>
+                    <span class="text-[11px] font-bold text-slate-400 uppercase">Étendu</span>
+                </div>
+            </div>
         </header>
 
         <div class="flex justify-center space-x-4 md:space-x-8 mb-8 border-b border-slate-700 overflow-x-auto">
@@ -271,8 +370,10 @@
         let hue = 0;
         let selectedColor = { r: 59, g: 130, b: 246, a: 255 };
         let currentByteString = "";
+        let currentActiveTab = 'decomp';
 
         function switchTab(tab) {
+            currentActiveTab = tab;
             ['decomp', 'comp', 'picker'].forEach(s => {
                 document.getElementById(`section-${s}`).classList.add('hidden');
                 document.getElementById(`tab-${s}`).className = "pb-2 px-4 font-semibold transition-colors text-slate-400 hover:text-slate-200 whitespace-nowrap";
@@ -281,6 +382,79 @@
             document.getElementById(`tab-${tab}`).className = "pb-2 px-4 font-semibold transition-colors tab-active text-blue-400 whitespace-nowrap";
             
             if (tab === 'picker') initColorPicker();
+        }
+
+        // --- GLOBAL SETTINGS ---
+
+        function toggleGlobalAscii() {
+            const isExtended = document.getElementById('globalAsciiToggle').checked;
+            const label = document.getElementById('globalAsciiLabel');
+            label.textContent = isExtended ? 'Étendu' : 'Standard';
+            label.className = isExtended ? 'text-[11px] font-bold text-purple-400 uppercase min-w-[65px] text-right' : 'text-[11px] font-bold text-blue-400 uppercase min-w-[65px] text-right';
+            
+            // Rafraîchir l'inspecteur d'octet si visible
+            updateFromBinary(document.getElementById('inspectorInput').value);
+            
+            // Rafraîchir la traduction de texte si on est dans l'onglet comp
+            if (currentActiveTab === 'comp') {
+                const results = document.getElementById('composition-results');
+                if (!results.classList.contains('hidden') && !document.getElementById('text-output-container').classList.contains('hidden')) {
+                    renderTextFromBytes();
+                }
+            }
+        }
+
+        function getCharFromByte(dec) {
+            const isExtended = document.getElementById('globalAsciiToggle').checked;
+            
+            if (dec >= 32 && dec <= 126) {
+                return String.fromCharCode(dec);
+            } else if (isExtended && dec >= 128) {
+                // Utilisation de Windows-1252 / ISO-8859-1 mapping
+                return String.fromCharCode(dec);
+            } else {
+                // Caractères spéciaux de contrôle visibles
+                const controlChars = {
+                    10: '↵', // LF
+                    13: '␍', // CR
+                    9: '⇥',  // Tab
+                    0: '␀',  // Null
+                    32: '␣'  // Space (déjà géré mais au cas où)
+                };
+                return controlChars[dec] || '∅';
+            }
+        }
+
+        // --- INSPECTOR LOGIC ---
+
+        function toggleInspector() {
+            const insp = document.getElementById('byteInspector');
+            insp.style.display = (insp.style.display === 'flex') ? 'none' : 'flex';
+            if (insp.style.display === 'flex') {
+                updateFromBinary(document.getElementById('inspectorInput').value);
+            }
+        }
+
+        function changeByteValue(delta) {
+            const input = document.getElementById('inspectorInput');
+            let val = parseInt(input.value, 2) || 0;
+            val = (val + delta + 256) % 256;
+            input.value = val.toString(2).padStart(8, '0');
+            updateFromBinary(input.value);
+        }
+
+        function updateFromBinary(bin) {
+            bin = bin.replace(/[^01]/g, '').slice(0, 8);
+            document.getElementById('inspectorInput').value = bin;
+            
+            if (bin.length === 8) {
+                const dec = parseInt(bin, 2);
+                const hex = dec.toString(16).toUpperCase().padStart(2, '0');
+                
+                document.getElementById('inspectDec').textContent = dec;
+                document.getElementById('inspectHex').textContent = hex;
+                document.getElementById('inspectAscii').textContent = getCharFromByte(dec);
+            }
         }
 
         // --- DECOMPOSITION LOGIC ---
@@ -299,9 +473,7 @@
             const file = event.target.files[0];
             if (!file) return;
 
-            // Clear text input if a file is uploaded
             document.getElementById('rawTextInput').value = "";
-
             const extractPixels = document.getElementById('extractPixels').checked;
             
             if (extractPixels && file.type.startsWith('image/')) {
@@ -387,11 +559,10 @@
             document.getElementById('image-output-container').classList.add('hidden');
             document.getElementById('text-output-container').classList.remove('hidden');
             document.getElementById('render-title').textContent = "Décodage Texte";
-            try {
-                document.getElementById('text-output').textContent = new TextDecoder().decode(new Uint8Array(bytes));
-            } catch(e) { 
-                document.getElementById('text-output').textContent = "Format UTF-8 invalide."; 
-            }
+            
+            // On utilise notre helper global pour le rendu joli
+            const prettyText = Array.from(bytes).map(b => getCharFromByte(b)).join('');
+            document.getElementById('text-output').textContent = prettyText;
         }
 
         function renderImageFromBytes() {
