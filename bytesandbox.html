@@ -611,8 +611,6 @@
             const method = document.getElementById('stegMethod').value;
             
             toggleSpinner('encodeSpinner', true);
-
-            // Petit délai pour laisser l'UI afficher le spinner
             await new Promise(r => setTimeout(r, 50));
 
             const w = stegSrcImg.width; const h = stegSrcImg.height;
@@ -620,71 +618,55 @@
             const pixels = newImg.data;
             const totalPixels = w * h;
 
-            // 1. Header (32 bits pour la longueur)
             const len = data.length;
             const lenBits = [];
             for(let i=0; i<32; i++) lenBits.push((len >> (31-i)) & 1);
             
-            // 2. Data Bits
             let allBits = [...lenBits];
             for(let i=0; i<len; i++) {
                 for(let b=0; b<8; b++) allBits.push((data[i] >> (7-b)) & 1);
             }
 
             if (method === 'lsb') {
-                if (allBits.length > totalPixels * 3) { alert("Données trop volumineuses pour LSB."); toggleSpinner('encodeSpinner', false); return; }
                 let bitIdx = 0;
-                for (let i = 0; i < totalPixels * 4; i++) {
-                    if ((i+1) % 4 === 0) continue; // Skip Alpha
+                for (let i = 0; i < totalPixels; i++) {
+                    // Safe Check: Strictly skip NON-OPAQUE pixels
+                    if (pixels[i*4 + 3] < 255) continue;
+
+                    for (let c = 0; c < 3; c++) {
+                        if (bitIdx >= allBits.length) break;
+                        let idx = i*4 + c;
+                        pixels[idx] = (pixels[idx] & 0xFE) | allBits[bitIdx++];
+                    }
                     if (bitIdx >= allBits.length) break;
-                    pixels[i] = (pixels[i] & 0xFE) | allBits[bitIdx++];
                 }
             } 
             else if (method === 'f5') {
-                // Simulation F5 (Matrix Encoding 1, 3, 2)
-                // Embed 2 bits in 3 pixels (change max 1 bit)
-                // Simple implementation on Green channel LSBs for stability
-                // Capacity: 2 bits per 3 pixels.
-                if (allBits.length > (totalPixels / 3) * 2) { alert("Données trop volumineuses pour F5."); toggleSpinner('encodeSpinner', false); return; }
-                
                 let bitIdx = 0;
-                // Groupe de 3 pixels
                 for (let i = 0; i < totalPixels; i+=3) {
                     if (i+2 >= totalPixels || bitIdx + 1 >= allBits.length) break;
                     
-                    // On prend le canal Vert de 3 pixels consécutifs
+                    // Simple skip if ANY pixel in triplet is NOT fully opaque
+                    if (pixels[i*4+3] < 255 || pixels[(i+1)*4+3] < 255 || pixels[(i+2)*4+3] < 255) continue;
+
                     let p1 = pixels[i*4 + 1];
                     let p2 = pixels[(i+1)*4 + 1];
                     let p3 = pixels[(i+2)*4 + 1];
                     
-                    let x1 = p1 & 1;
-                    let x2 = p2 & 1;
-                    let x3 = p3 & 1;
+                    let x1 = p1 & 1, x2 = p2 & 1, x3 = p3 & 1;
+                    let m1 = allBits[bitIdx], m2 = allBits[bitIdx+1];
                     
-                    let m1 = allBits[bitIdx];
-                    let m2 = allBits[bitIdx+1];
+                    let s1 = x1 ^ x3 ^ m1, s2 = x2 ^ x3 ^ m2;
                     
-                    // Syndrome (Hamming)
-                    // s1 = x1 ^ x3 ^ m1
-                    // s2 = x2 ^ x3 ^ m2
-                    let s1 = x1 ^ x3 ^ m1;
-                    let s2 = x2 ^ x3 ^ m2;
+                    if (s1 === 1 && s2 === 0) p1 ^= 1;
+                    else if (s1 === 0 && s2 === 1) p2 ^= 1;
+                    else if (s1 === 1 && s2 === 1) p3 ^= 1;
                     
-                    if (s1 === 0 && s2 === 0) { /* No change */ }
-                    else if (s1 === 1 && s2 === 0) { p1 ^= 1; }
-                    else if (s1 === 0 && s2 === 1) { p2 ^= 1; }
-                    else if (s1 === 1 && s2 === 1) { p3 ^= 1; }
-                    
-                    pixels[i*4 + 1] = p1;
-                    pixels[(i+1)*4 + 1] = p2;
-                    pixels[(i+2)*4 + 1] = p3;
-                    
+                    pixels[i*4 + 1] = p1; pixels[(i+1)*4 + 1] = p2; pixels[(i+2)*4 + 1] = p3;
                     bitIdx += 2;
                 }
             } 
             else if (method === 'dct') {
-                // DCT on Blue channel, 8x8 blocks
-                // Embed in coef (4,4) using simple parity/quantization
                 const blocksW = Math.floor(w/8);
                 const blocksH = Math.floor(h/8);
                 const maxBits = blocksW * blocksH;
@@ -696,7 +678,16 @@
                     for(let bx=0; bx<blocksW; bx++) {
                         if (bitIdx >= allBits.length) break;
                         
-                        // Extract Blue Channel Block
+                        // Check ALL pixels in block for opacity
+                        let unsafe = false;
+                        for(let y=0; y<8; y++) {
+                            for(let x=0; x<8; x++) {
+                                if (pixels[((by*8+y)*w + (bx*8+x))*4 + 3] < 255) { unsafe = true; break; }
+                            }
+                            if(unsafe) break;
+                        }
+                        if(unsafe) continue;
+
                         let block = new Float32Array(64);
                         for(let y=0; y<8; y++) {
                             for(let x=0; x<8; x++) {
@@ -705,18 +696,14 @@
                         }
                         
                         let dct = computeDCT(block);
-                        // Embed in (4,4) mid freq
                         let coef = dct[4*8+4];
-                        // Robust embedding: Quantize to even/odd steps of 20
-                        const Q = 30; // Large step for robustness against rounding
+                        const Q = 30;
                         let val = Math.round(coef / Q);
-                        if (val % 2 !== 0) val--; // Make even
-                        if (allBits[bitIdx] === 1) val += 1; // Make odd if bit is 1
+                        if (val % 2 !== 0) val--;
+                        if (allBits[bitIdx] === 1) val += 1;
                         
                         dct[4*8+4] = val * Q;
-                        
                         let idct = computeIDCT(dct);
-                        // Write back
                         for(let y=0; y<8; y++) {
                             for(let x=0; x<8; x++) {
                                 let val = Math.round(idct[x*8+y]);
@@ -747,50 +734,39 @@
             const w = stegDecImg.width; const h = stegDecImg.height;
             const totalPixels = w * h;
             let extractedBits = [];
-            
-            // Need to read Length first (32 bits)
             let len = 0;
 
             if (method === 'lsb') {
-                // Read 32 bits
-                for(let i=0; i<32; i++) {
-                    // Skip Alpha (every 4th byte is Alpha, index 3, 7...)
-                    // indices: 0, 1, 2, 4, 5, 6...
-                    let pixelIdx = i + Math.floor(i/3); 
-                    extractedBits.push(pixels[pixelIdx] & 1);
+                let allRawBits = [];
+                for(let i=0; i<totalPixels; i++) {
+                    if (pixels[i*4 + 3] < 255) continue; // Skip NON-OPAQUE
+                    for (let c=0; c<3; c++) allRawBits.push(pixels[i*4+c] & 1);
                 }
-                len = parseInt(extractedBits.join(''), 2);
-                extractedBits = [];
-                
-                // Read Data
-                for(let i=0; i<len*8; i++) {
-                    let offset = 32 + i;
-                    let pixelIdx = offset + Math.floor(offset/3);
-                    if (pixelIdx >= totalPixels * 4) break;
-                    extractedBits.push(pixels[pixelIdx] & 1);
+
+                if (allRawBits.length >= 32) {
+                    len = parseInt(allRawBits.slice(0,32).join(''), 2);
+                    if (allRawBits.length >= 32 + len*8) {
+                        extractedBits = allRawBits.slice(32, 32 + len*8);
+                    }
                 }
             }
             else if (method === 'f5') {
-                // Read 32 bits (requires 16 blocks of 3 pixels)
                 let bitIdx = 0;
                 let i = 0;
-                
                 const readF5Bits = (count) => {
                     let bits = [];
                     while(bits.length < count && i < totalPixels) {
                         if (i+2 >= totalPixels) break;
+                        if (pixels[i*4+3] < 255 || pixels[(i+1)*4+3] < 255 || pixels[(i+2)*4+3] < 255) { i+=3; continue; }
+                        
                         let x1 = pixels[i*4 + 1] & 1;
                         let x2 = pixels[(i+1)*4 + 1] & 1;
                         let x3 = pixels[(i+2)*4 + 1] & 1;
-                        
-                        // s1 = x1 ^ x3; s2 = x2 ^ x3
-                        bits.push(x1 ^ x3);
-                        bits.push(x2 ^ x3);
+                        bits.push(x1 ^ x3); bits.push(x2 ^ x3);
                         i+=3;
                     }
                     return bits;
                 };
-
                 let lenBits = readF5Bits(32);
                 len = parseInt(lenBits.slice(0,32).join(''), 2);
                 extractedBits = readF5Bits(len*8);
@@ -798,14 +774,19 @@
             else if (method === 'dct') {
                 const blocksW = Math.floor(w/8);
                 const blocksH = Math.floor(h/8);
-                
                 let bits = [];
-                let count = 0;
                 
-                // Read all blocks (up to max possible)
                 for(let by=0; by<blocksH; by++) {
                     for(let bx=0; bx<blocksW; bx++) {
-                        // Extract Blue
+                        let unsafe = false;
+                        for(let y=0; y<8; y++) {
+                            for(let x=0; x<8; x++) {
+                                if (pixels[((by*8+y)*w + (bx*8+x))*4 + 3] < 255) { unsafe = true; break; }
+                            }
+                            if(unsafe) break;
+                        }
+                        if(unsafe) continue;
+
                          let block = new Float32Array(64);
                         for(let y=0; y<8; y++) {
                             for(let x=0; x<8; x++) {
@@ -816,21 +797,18 @@
                         let coef = dct[4*8+4];
                         const Q = 30;
                         let val = Math.round(coef / Q);
-                        bits.push(Math.abs(val % 2)); // 0 if even, 1 if odd
-                        count++;
+                        bits.push(Math.abs(val % 2));
+                        
                         if(bits.length >= 32 && len === 0) {
                              len = parseInt(bits.slice(0,32).join(''), 2);
-                             bits = []; // Reset to start collecting body
-                        } else if (len > 0 && bits.length >= len*8) {
-                            break;
-                        }
+                             bits = []; 
+                        } else if (len > 0 && bits.length >= len*8) break;
                     }
                     if (len > 0 && bits.length >= len*8) break;
                 }
                 extractedBits = bits;
             }
 
-            // Convert bits to bytes
             let bytes = [];
             for(let i=0; i<extractedBits.length; i+=8) {
                 const byte = parseInt(extractedBits.slice(i, i+8).join(''), 2);
@@ -838,8 +816,6 @@
             }
             
             const u8 = new Uint8Array(bytes);
-            
-            // Display
             let binStr = "";
             for(let i=0; i<u8.length; i++) binStr += u8[i].toString(2).padStart(8,'0') + " ";
             document.getElementById('stegOutputBytes').textContent = binStr;
