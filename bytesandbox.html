@@ -192,7 +192,6 @@
                         <input type="checkbox" id="globalAsciiToggle" onchange="toggleGlobalAscii()">
                         <span class="slider"></span>
                     </label>
-                    <span class="text-[11px] font-bold text-slate-400 uppercase">Étendu</span>
                 </div>
             </div>
         </header>
@@ -389,7 +388,7 @@
         function toggleGlobalAscii() {
             const isExtended = document.getElementById('globalAsciiToggle').checked;
             const label = document.getElementById('globalAsciiLabel');
-            label.textContent = isExtended ? 'Étendu' : 'Standard';
+            label.textContent = isExtended ? 'Étendue' : 'Standard';
             label.className = isExtended ? 'text-[11px] font-bold text-purple-400 uppercase min-w-[65px] text-right' : 'text-[11px] font-bold text-blue-400 uppercase min-w-[65px] text-right';
             
             // Rafraîchir l'inspecteur d'octet si visible
