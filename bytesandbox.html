@@ -322,9 +322,19 @@
                 
                 <!-- Resultat Encode -->
                 <div id="stegEncodeResult" class="hidden mt-6 bg-slate-900 p-4 rounded-xl border border-slate-700 flex flex-col items-center">
-                    <h4 class="text-xs font-bold text-green-400 uppercase mb-4">Résultat (Clic droit > Enregistrer sous)</h4>
-                    <canvas id="stegResultCanvas" class="max-w-full h-auto mb-4 border-2 border-green-500/30"></canvas>
-                    <p class="text-[10px] text-slate-500 text-center max-w-md">Attention : Pour conserver les données cachées, l'image doit être enregistrée au format PNG (sans compression destructive).</p>
+                    <h4 class="text-xs font-bold text-green-400 uppercase mb-4">Résultat</h4>
+                    <div class="relative group mb-4">
+                        <canvas id="stegResultCanvas" class="max-w-full h-auto border-2 border-green-500/30"></canvas>
+                    </div>
+                    
+                    <div class="flex flex-col items-center space-y-3">
+                        <!-- Correction : Utilisation d'un lien stylisé en bouton pour éviter les crashs JS -->
+                        <a id="stegDownloadLink" href="#" download="stego_result.png" onclick="prepareDownload(this)" class="flex items-center px-4 py-2 bg-slate-700 hover:bg-slate-600 text-white rounded-lg transition-colors font-semibold text-xs uppercase border border-slate-600">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                            Télécharger l'image (.png)
+                        </a>
+                        <p class="text-[10px] text-slate-500 text-center max-w-md italic">Si le bouton ne répond pas, faites un clic droit sur l'image ci-dessus et "Enregistrer sous".</p>
+                    </div>
                 </div>
             </div>
 
@@ -556,6 +566,17 @@
             const tokens = clean.trim().split(/\s+/).filter(t => t.length === 8);
             if (tokens.length === 0) return null;
             return new Uint8Array(tokens.map(t => parseInt(t, 2)));
+        }
+
+        function prepareDownload(el) {
+            try {
+                const canvas = document.getElementById('stegResultCanvas');
+                if (canvas) {
+                    el.href = canvas.toDataURL('image/png');
+                }
+            } catch (e) {
+                console.error("Erreur lors de la génération de l'image :", e);
+            }
         }
 
         // --- DCT HELPERS ---
