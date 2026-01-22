@@ -12,7 +12,7 @@ headers.forEach(header => {
   // Parcours les liens
   links.forEach(link => {
     // Si l'URL du lien correspond à la page actuelle
-    if (link.getAttribute("href") === currentPage || link.getAttribute("href") == "https://wibigen.github.io/" {
+    if (link.getAttribute("href") === currentPage || link.getAttribute("href") == "https://wibigen.github.io" {
       // Ajoute la classe "active" au lien
       link.classList.add("active");
     }
