@@ -1,0 +1,427 @@
+import React, { useState, useEffect } from 'react';
+import { 
+  Cpu, 
+  Database, 
+  Play, 
+  RotateCcw, 
+  ChevronRight, 
+  Info, 
+  Terminal,
+  HardDrive,
+  Monitor,
+  Save,
+  HelpCircle,
+  X,
+  Layers,
+  Zap,
+  Palette
+} from 'lucide-react';
+
+const App = () => {
+  // --- ÉTATS DU SYSTÈME ---
+  const [registers, setRegisters] = useState({ A: 0, B: 0, C: 0, D: 0 });
+  const [ram, setRam] = useState(new Array(16).fill(0));
+  const [gpu, setGpu] = useState(new Array(256).fill(0));
+  const [disk, setDisk] = useState(() => {
+    const saved = localStorage.getItem('asm_sandbox_disk');
+    return saved ? JSON.parse(saved) : new Array(8).fill(0);
+  });
+
+  // Interface
+  const [command, setCommand] = useState('');
+  const [history, setHistory] = useState([]);
+  const [error, setError] = useState(null);
+  const [showMemo, setShowMemo] = useState(false);
+
+  useEffect(() => {
+    localStorage.setItem('asm_sandbox_disk', JSON.stringify(disk));
+  }, [disk]);
+
+  const executeCommand = (e) => {
+    e.preventDefault();
+    setError(null);
+    const input = command.toUpperCase().trim();
+    if (!input) return;
+
+    try {
+      const parts = input.split(/[\s,]+/).filter(p => p !== '');
+      const op = parts[0];
+      const arg1 = parts[1];
+      const arg2 = parts[2];
+
+      const newRegs = { ...registers };
+      const newRam = [...ram];
+      const newDisk = [...disk];
+      const newGpu = [...gpu];
+      let actionMsg = "";
+
+      const isReg = (r) => ['A', 'B', 'C', 'D'].includes(r);
+      const parseAddr = (a) => {
+        if (!a) return NaN;
+        if (a.startsWith('0X')) return parseInt(a.replace('0X', ''), 16);
+        return parseInt(a, 10);
+      };
+
+      switch (op) {
+        case 'MOV':
+          if (!isReg(arg1)) throw new Error("Cible invalide");
+          newRegs[arg1] = isReg(arg2) ? newRegs[arg2] : (parseInt(arg2) % 256);
+          actionMsg = `Transfert vers ${arg1}`;
+          break;
+        case 'STORE':
+          if (!isReg(arg1)) throw new Error("Source registre requise");
+          const sAddr = parseAddr(arg2);
+          if (isNaN(sAddr) || sAddr < 0 || sAddr > 15) throw new Error("Adresse RAM invalide (0x0-0xF)");
+          newRam[sAddr] = newRegs[arg1];
+          actionMsg = `RAM[0x${sAddr.toString(16)}] = ${newRegs[arg1]}`;
+          break;
+        case 'LOAD':
+          if (!isReg(arg1)) throw new Error("Cible registre requise");
+          const lAddr = parseAddr(arg2);
+          if (isNaN(lAddr) || lAddr < 0 || lAddr > 15) throw new Error("Adresse RAM invalide (0x0-0xF)");
+          newRegs[arg1] = newRam[lAddr];
+          actionMsg = `${arg1} = RAM[0x${lAddr.toString(16)}]`;
+          break;
+        case 'WRITE':
+          if (!isReg(arg1)) throw new Error("Source registre requise");
+          const dAddrW = parseAddr(arg2);
+          if (isNaN(dAddrW) || dAddrW < 0 || dAddrW > 7) throw new Error("Adresse DISK invalide (0x0-0x7)");
+          newDisk[dAddrW] = newRegs[arg1];
+          actionMsg = `DISK[${dAddrW}] = ${newRegs[arg1]}`;
+          break;
+        case 'READ':
+          if (!isReg(arg1)) throw new Error("Cible registre requise");
+          const dAddrR = parseAddr(arg2);
+          if (isNaN(dAddrR) || dAddrR < 0 || dAddrR > 7) throw new Error("Adresse DISK invalide (0x0-0x7)");
+          newRegs[arg1] = newDisk[dAddrR];
+          actionMsg = `${arg1} = DISK[${dAddrR}]`;
+          break;
+        case 'DRAW':
+          const gAddr = isReg(arg1) ? newRegs[arg1] : parseAddr(arg1);
+          const color = isReg(arg2) ? newRegs[arg2] : parseInt(arg2);
+          if (isNaN(gAddr) || gAddr < 0 || gAddr > 255) throw new Error("Adresse GPU invalide (0x00-0xFF)");
+          newGpu[gAddr] = color % 256;
+          actionMsg = `PIXEL[0x${gAddr.toString(16).toUpperCase()}] dessiné`;
+          break;
+        case 'ADD':
+          const aVal = isReg(arg2) ? newRegs[arg2] : parseInt(arg2);
+          newRegs[arg1] = (newRegs[arg1] + aVal) % 256;
+          actionMsg = `ALU: Addition dans ${arg1}`;
+          break;
+        case 'SUB':
+          const suVal = isReg(arg2) ? newRegs[arg2] : parseInt(arg2);
+          newRegs[arg1] = (newRegs[arg1] - suVal + 256) % 256;
+          actionMsg = `ALU: Soustraction dans ${arg1}`;
+          break;
+        case 'INC':
+          if (!isReg(arg1)) throw new Error("Registre requis");
+          newRegs[arg1] = (newRegs[arg1] + 1) % 256;
+          actionMsg = `INC ${arg1}`;
+          break;
+        case 'DEC':
+          if (!isReg(arg1)) throw new Error("Registre requis");
+          newRegs[arg1] = (newRegs[arg1] - 1 + 256) % 256;
+          actionMsg = `DEC ${arg1}`;
+          break;
+        default:
+          throw new Error("Instruction inconnue");
+      }
+
+      setRegisters(newRegs);
+      setRam(newRam);
+      setDisk(newDisk);
+      setGpu(newGpu);
+      setHistory([{ cmd: input, msg: actionMsg, time: new Date().toLocaleTimeString() }, ...history].slice(0, 10));
+      setCommand('');
+    } catch (err) {
+      setError(err.message);
+    }
+  };
+
+  const toBinary = (val) => val.toString(2).padStart(8, '0');
+  const toHex = (val) => '0x' + val.toString(16).toUpperCase().padStart(2, '0');
+
+  const getPixelColor = (val) => {
+    if (val === 0) return '#000000';
+    // Extraction des composantes RRRGGGBB
+    const r = Math.round(((val >> 5) & 0x07) * (255 / 7));
+    const g = Math.round(((val >> 2) & 0x07) * (255 / 7));
+    const b = Math.round((val & 0x03) * (255 / 3));
+    return `rgb(${r}, ${g}, ${b})`;
+  };
+
+  return (
+    <div className="min-h-screen bg-[#050505] text-slate-300 font-sans p-4 md:p-6 select-none overflow-x-hidden">
+      <div className="max-w-[1400px] mx-auto">
+        
+        {/* Header */}
+        <header className="flex justify-between items-center mb-6 border-b border-white/10 pb-4">
+          <div className="flex items-center gap-4">
+            <div className="bg-indigo-600 p-2 rounded shadow-lg shadow-indigo-500/40">
+              <Zap className="text-white w-6 h-6" />
+            </div>
+            <div>
+              <h1 className="text-xl font-black tracking-tighter uppercase italic text-white leading-none">ARCH-64 SANDBOX</h1>
+              <div className="flex gap-2 mt-1">
+                <span className="text-[9px] bg-emerald-500/10 text-emerald-500 px-1 rounded border border-emerald-500/20 uppercase font-mono">Core OK</span>
+                <span className="text-[9px] bg-pink-500/10 text-pink-500 px-1 rounded border border-pink-500/20 uppercase font-mono tracking-tighter">256 PX (16x16)</span>
+              </div>
+            </div>
+          </div>
+          <div className="flex gap-2">
+            <button 
+              onClick={() => setShowMemo(true)}
+              className="bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-md flex items-center gap-2 text-xs font-bold transition-all shadow-lg shadow-indigo-500/20"
+            >
+              <HelpCircle size={14} /> MÉMO ASM
+            </button>
+            <button 
+              onClick={() => { if(confirm("Réinitialiser le système ?")) window.location.reload(); }}
+              className="bg-white/5 hover:bg-red-500/20 px-3 py-2 rounded-md border border-white/10 transition-all text-slate-400"
+            >
+              <RotateCcw size={16} />
+            </button>
+          </div>
+        </header>
+
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+          
+          {/* CPU SECTION */}
+          <div className="lg:col-span-3 space-y-4">
+            <div className="bg-[#0f0f12] border border-white/10 rounded-xl p-5 shadow-2xl relative overflow-hidden">
+              <div className="absolute top-0 left-0 w-1 h-full bg-indigo-500"></div>
+              <h2 className="text-indigo-400 text-[10px] font-bold uppercase tracking-widest mb-6 flex items-center gap-2">
+                <Cpu size={14} /> UNITÉ CENTRALE
+              </h2>
+              
+              <div className="space-y-6">
+                {Object.entries(registers).map(([name, val]) => (
+                  <div key={name} className="relative group">
+                    <div className="flex justify-between items-end mb-2">
+                      <span className="text-sm font-black text-indigo-500/80 tracking-tighter">REG_{name}</span>
+                      <div className="flex gap-2 text-[9px] font-mono text-slate-500 uppercase">
+                        <span>{toHex(val)}</span>
+                        <span>{val}</span>
+                      </div>
+                    </div>
+                    <div className="flex gap-1 h-4">
+                      {toBinary(val).split('').map((bit, i) => (
+                        <div 
+                          key={i} 
+                          className={`flex-1 rounded-sm border transition-all duration-300 flex items-center justify-center text-[7px] font-mono ${bit === '1' ? 'bg-indigo-500 border-indigo-400 text-white shadow-[0_0_8px_rgba(99,102,241,0.3)]' : 'bg-black/40 border-white/5 text-slate-700'}`}
+                        >
+                          {bit}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="bg-[#0f0f12] border border-white/10 rounded-xl overflow-hidden shadow-2xl">
+              <div className="bg-white/5 px-4 py-2 border-b border-white/10 flex justify-between items-center">
+                <span className="text-[9px] font-mono font-bold text-emerald-500 uppercase tracking-tighter">System Log</span>
+                <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></div>
+              </div>
+              <div className="h-40 p-3 font-mono text-[10px] overflow-y-auto space-y-1 bg-black/40 scrollbar-thin scrollbar-thumb-indigo-900">
+                {history.map((h, i) => (
+                  <div key={i} className="animate-in slide-in-from-left-1 duration-200 border-l border-indigo-500/20 pl-2">
+                    <span className="text-emerald-500">❯</span> <span className="text-slate-200">{h.cmd}</span>
+                  </div>
+                ))}
+                {error && <div className="text-red-500 border-l border-red-500 pl-2 uppercase font-bold text-[9px]">ERROR: {error}</div>}
+                <div ref={(el) => el?.scrollIntoView({ behavior: 'smooth' })} />
+              </div>
+              <form onSubmit={executeCommand} className="p-3 bg-black/60 border-t border-white/10 flex gap-2">
+                <input 
+                  type="text" 
+                  value={command} 
+                  onChange={(e) => setCommand(e.target.value)}
+                  placeholder="Tapez une instruction..."
+                  className="flex-1 bg-transparent text-emerald-400 font-mono text-xs focus:outline-none placeholder:text-slate-800"
+                />
+                <button type="submit" className="text-emerald-500 hover:text-emerald-400 p-1"><Play size={14}/></button>
+              </form>
+            </div>
+          </div>
+
+          {/* GPU SECTION */}
+          <div className="lg:col-span-5 flex flex-col items-center">
+            <div className="bg-[#0f0f12] border border-white/10 rounded-xl p-6 shadow-2xl w-full flex flex-col">
+              <h2 className="text-pink-500 text-xs font-bold uppercase tracking-widest mb-6 flex items-center gap-2 justify-center">
+                <Monitor size={14} /> MONITEUR GPU 16x16
+              </h2>
+              
+              <div className="w-full max-w-[420px] mx-auto aspect-square bg-black rounded-lg border-4 border-white/5 shadow-2xl overflow-hidden relative">
+                <div 
+                  className="grid w-full h-full" 
+                  style={{ 
+                    gridTemplateColumns: 'repeat(16, minmax(0, 1fr))',
+                    gridTemplateRows: 'repeat(16, minmax(0, 1fr))'
+                  }}
+                >
+                  {gpu.map((val, idx) => (
+                    <div 
+                      key={idx} 
+                      className="w-full h-full"
+                      style={{ 
+                        backgroundColor: getPixelColor(val)
+                      }}
+                    ></div>
+                  ))}
+                </div>
+                <div className="absolute inset-0 pointer-events-none bg-[linear-gradient(rgba(18,16,16,0)_50%,rgba(0,0,0,0.1)_50%),linear-gradient(90deg,rgba(255,0,0,0.02),rgba(0,255,0,0.01),rgba(0,0,255,0.02))] bg-[length:100%_2px,3px_100%] opacity-50"></div>
+              </div>
+              
+              <div className="mt-6 grid grid-cols-2 gap-4 w-full max-w-[420px] mx-auto text-[9px] font-mono text-slate-500 uppercase tracking-widest text-center">
+                <div className="bg-white/5 p-2 rounded border border-white/5">Buffer: 256 octets</div>
+                <div className="bg-white/5 p-2 rounded border border-white/5">Format: RGB-332</div>
+              </div>
+            </div>
+          </div>
+
+          {/* MEMORY SECTION */}
+          <div className="lg:col-span-4 space-y-4">
+            <div className="bg-[#0f0f12] border border-white/10 rounded-xl p-5 shadow-2xl">
+              <h2 className="text-blue-400 text-[10px] font-bold uppercase tracking-widest mb-4 flex items-center gap-2">
+                <Database size={14} /> RAM SYSTÈME (16B)
+              </h2>
+              <div className="grid grid-cols-4 gap-2">
+                {ram.map((val, idx) => (
+                  <div key={idx} className={`p-2 border rounded transition-all ${val > 0 ? 'bg-blue-600/10 border-blue-500/40 shadow-[0_0_10px_rgba(59,130,246,0.1)]' : 'bg-black/20 border-white/5'}`}>
+                    <div className="text-[7px] font-mono text-slate-600 mb-0.5 uppercase">0x{idx.toString(16)}</div>
+                    <div className={`text-sm font-mono font-black ${val > 0 ? 'text-blue-400' : 'text-slate-800'}`}>
+                      {val.toString(16).toUpperCase().padStart(2, '0')}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="bg-[#0f0f12] border border-white/10 rounded-xl p-5 shadow-2xl">
+              <h2 className="text-amber-500 text-[10px] font-bold uppercase tracking-widest mb-4 flex items-center gap-2">
+                <HardDrive size={14} /> PERSISTENCE (DISK)
+              </h2>
+              <div className="grid grid-cols-2 gap-2">
+                {disk.map((val, idx) => (
+                  <div key={idx} className={`flex justify-between items-center p-2 border rounded ${val > 0 ? 'bg-amber-500/10 border-amber-500/40 text-amber-200' : 'bg-black/20 border-white/5 text-slate-800'}`}>
+                    <span className="text-[8px] font-mono uppercase italic text-slate-500">Sec_{idx}</span>
+                    <span className="text-xs font-mono font-bold">{val}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* MÉMO MODAL */}
+        {showMemo && (
+          <div className="fixed inset-0 bg-black/95 backdrop-blur-md z-50 flex items-center justify-center p-4">
+            <div className="bg-[#0f0f12] border border-white/20 w-full max-w-2xl max-h-[90vh] rounded-2xl flex flex-col shadow-2xl overflow-hidden">
+              <div className="p-6 border-b border-white/10 flex justify-between items-center bg-white/5">
+                <div className="flex items-center gap-3">
+                  <Layers className="text-indigo-500" />
+                  <h3 className="text-xl font-black text-white italic tracking-tighter uppercase">Architecture & Commandes</h3>
+                </div>
+                <button onClick={() => setShowMemo(false)} className="text-slate-500 hover:text-white transition-colors p-1">
+                  <X size={24} />
+                </button>
+              </div>
+              
+              <div className="flex-1 overflow-y-auto p-6 space-y-8 scrollbar-thin scrollbar-thumb-indigo-900">
+                
+                {/* INSTRUCTIONS PROCESSEUR */}
+                <section>
+                  <h4 className="text-indigo-400 text-xs font-bold uppercase mb-3 flex items-center gap-2 border-b border-indigo-500/20 pb-1 italic">
+                    <Cpu size={14}/> Instructions Processeur
+                  </h4>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    <div className="text-[11px] p-2 bg-white/5 rounded border border-white/5">
+                      <code className="text-indigo-300 font-bold block">MOV [Reg], [Val/Reg]</code>
+                      <span className="text-slate-500 italic">Ex: MOV A, 255 (Charge 255 dans A)</span>
+                    </div>
+                    <div className="text-[11px] p-2 bg-white/5 rounded border border-white/5">
+                      <code className="text-indigo-300 font-bold block">ADD/SUB [Reg], [Val/Reg]</code>
+                      <span className="text-slate-500 italic">Ex: ADD A, B (A = A + B)</span>
+                    </div>
+                    <div className="text-[11px] p-2 bg-white/5 rounded border border-white/5">
+                      <code className="text-indigo-300 font-bold block">INC/DEC [Reg]</code>
+                      <span className="text-slate-500 italic">Incrémenter ou décrémenter de 1</span>
+                    </div>
+                  </div>
+                </section>
+
+                {/* GESTION MÉMOIRE */}
+                <section>
+                  <h4 className="text-blue-400 text-xs font-bold uppercase mb-3 flex items-center gap-2 border-b border-blue-500/20 pb-1 italic">
+                    <Database size={14}/> Gestion Mémoire (RAM & DISK)
+                  </h4>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    <div className="text-[11px] p-2 bg-blue-500/5 rounded border border-blue-500/10">
+                      <code className="text-blue-300 font-bold block uppercase">STORE [Reg], [Addr]</code>
+                      <p className="text-slate-500">Écrit le contenu du registre dans la RAM (0x0 à 0xF).</p>
+                    </div>
+                    <div className="text-[11px] p-2 bg-blue-500/5 rounded border border-blue-500/10">
+                      <code className="text-blue-300 font-bold block uppercase">LOAD [Reg], [Addr]</code>
+                      <p className="text-slate-500">Lit la RAM vers un registre.</p>
+                    </div>
+                    <div className="text-[11px] p-2 bg-amber-500/5 rounded border border-amber-500/10">
+                      <code className="text-amber-300 font-bold block uppercase">WRITE [Reg], [Sector]</code>
+                      <p className="text-slate-500 italic">Écrit sur le DISK persistant (0-7).</p>
+                    </div>
+                    <div className="text-[11px] p-2 bg-amber-500/5 rounded border border-amber-500/10">
+                      <code className="text-amber-300 font-bold block uppercase">READ [Reg], [Sector]</code>
+                      <p className="text-slate-500 italic">Lit depuis le DISK vers un registre.</p>
+                    </div>
+                  </div>
+                </section>
+
+                {/* ACCÈS VIDÉO */}
+                <section>
+                  <h4 className="text-pink-500 text-xs font-bold uppercase mb-3 flex items-center gap-2 border-b border-pink-500/20 pb-1 italic">
+                    <Monitor size={14}/> Affichage Vidéo (VRAM)
+                  </h4>
+                  <div className="bg-white/5 p-3 rounded border border-white/5">
+                    <code className="text-pink-300 font-bold block mb-1 text-sm uppercase">DRAW [Addr], [Color]</code>
+                    <p className="text-[11px] text-slate-400 leading-relaxed mb-2">
+                      L'adresse va de 0 à 255. La couleur est un octet (0-255).
+                    </p>
+                    <div className="bg-black/40 p-2 rounded text-[10px] font-mono text-emerald-500 italic">
+                      Formule : (Ligne × 16) + Colonne = ADDR
+                    </div>
+                  </div>
+                </section>
+
+                {/* NUANCIER */}
+                <section className="bg-white/5 p-4 rounded-xl border border-white/10">
+                  <h4 className="text-white text-[10px] font-bold uppercase mb-4 opacity-50 flex items-center gap-2 tracking-widest">
+                    <Palette size={14}/> Nuancier RGB 3-3-2 Rapide
+                  </h4>
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-[10px] font-mono">
+                    <div className="flex items-center gap-2"><div className="w-4 h-4 rounded bg-black border border-white/10"></div> 0 : Noir</div>
+                    <div className="flex items-center gap-2"><div className="w-4 h-4 rounded bg-[#FF0000]"></div> 224 : Rouge</div>
+                    <div className="flex items-center gap-2"><div className="w-4 h-4 rounded bg-[#00FF00]"></div> 28 : Vert</div>
+                    <div className="flex items-center gap-2"><div className="w-4 h-4 rounded bg-[#0000FF]"></div> 3 : Bleu</div>
+                    <div className="flex items-center gap-2"><div className="w-4 h-4 rounded bg-[#FFFF00]"></div> 252 : Jaune</div>
+                    <div className="flex items-center gap-2"><div className="w-4 h-4 rounded bg-[#FFFFFF]"></div> 255 : Blanc</div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        )}
+
+        <footer className="mt-8 flex justify-between items-center text-[9px] font-mono text-slate-700 tracking-[0.2em] border-t border-white/5 pt-4 uppercase">
+          <div className="flex gap-6">
+            <span className="flex items-center gap-1.5"><span className="w-1 h-1 bg-emerald-500 rounded-full animate-pulse"></span>SYSTEM: RUNNING</span>
+            <span className="flex items-center gap-1.5"><span className="w-1 h-1 bg-pink-500 rounded-full"></span>VRAM: 256B OK</span>
+          </div>
+          <div className="hidden sm:block">KERNEL_CORE_X64 // BUILD_VER_2.1.1</div>
+        </footer>
+      </div>
+    </div>
+  );
+};
+
+export default App;
