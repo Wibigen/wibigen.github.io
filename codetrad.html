@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PolyGlot - Convertisseur de Code</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Google Fonts: Inter & JetBrains Mono -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; 
+        }
+        .font-mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+        
+        /* Scrollbar */
+        textarea::-webkit-scrollbar { width: 10px; height: 10px; }
+        textarea::-webkit-scrollbar-track { background: #1e293b; }
+        textarea::-webkit-scrollbar-thumb { background: #475569; border-radius: 5px; }
+        textarea::-webkit-scrollbar-thumb:hover { background: #64748b; }
+
+        /* Loader */
+        .loader {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #6366f1;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* API Mode Styles */
+        pre.api-response {
+            background-color: #0f172a;
+            color: #e2e8f0;
+            padding: 20px;
+            margin: 0;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 14px;
+            height: 100vh;
+            width: 100vw;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body class="text-slate-200 h-screen flex flex-col overflow-hidden">
+
+    <!-- Container principal (sera caché en mode API URL) -->
+    <div id="app-ui" class="flex flex-col h-full w-full">
+        <!-- Header -->
+        <header class="bg-slate-900 border-b border-slate-800 p-4 flex items-center justify-between shrink-0">
+            <div class="flex items-center gap-3">
+                <div class="bg-indigo-600 p-2 rounded-lg">
+                    <i data-lucide="code-2" class="text-white w-6 h-6"></i>
+                </div>
+                <div>
+                    <h1 class="font-bold text-xl tracking-tight text-white">PolyGlot</h1>
+                    <p class="text-xs text-slate-400">Convertisseur de syntaxe IA</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-4 text-sm text-slate-400">
+                <button onclick="toggleSettings()" class="flex items-center gap-2 hover:text-white transition-colors bg-slate-800 px-3 py-1.5 rounded-md border border-slate-700">
+                    <i data-lucide="settings" class="w-4 h-4"></i>
+                    <span id="apiKeyStatus">Configuration</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="flex-1 flex flex-col md:flex-row overflow-hidden relative">
+            
+            <!-- Settings Modal -->
+            <div id="settingsModal" class="absolute inset-0 z-50 bg-slate-900/90 backdrop-blur-sm flex items-center justify-center hidden">
+                <div class="bg-slate-800 border border-slate-700 p-6 rounded-xl shadow-2xl max-w-md w-full mx-4 max-h-[90vh] overflow-y-auto">
+                    <div class="flex justify-between items-center mb-4">
+                        <h2 class="text-lg font-bold text-white flex items-center gap-2">
+                            <i data-lucide="settings" class="w-5 h-5 text-indigo-400"></i> Configuration
+                        </h2>
+                        <button onclick="toggleSettings()" class="text-slate-400 hover:text-white"><i data-lucide="x" class="w-5 h-5"></i></button>
+                    </div>
+                    
+                    <!-- API Section -->
+                    <div class="mb-6">
+                        <p class="text-sm text-slate-300 mb-2">
+                            Clé API Google Gemini requise.
+                        </p>
+                        <label class="block text-xs font-semibold text-slate-500 uppercase mb-2">Clé API Gemini</label>
+                        <div class="relative mb-2">
+                            <input type="password" id="apiKeyInput" placeholder="AIzaSy..." class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2 text-sm text-white focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                            <button onclick="toggleShowKey()" class="absolute right-3 top-2.5 text-slate-500 hover:text-slate-300">
+                                <i data-lucide="eye" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <input type="checkbox" id="rememberKey" class="w-4 h-4 rounded border-slate-700 bg-slate-900 text-indigo-600 focus:ring-indigo-500">
+                            <label for="rememberKey" class="text-sm text-slate-400 cursor-pointer">Se souvenir de la clé</label>
+                        </div>
+                    </div>
+
+                    <!-- Webhook Section -->
+                    <div class="border-t border-slate-700 pt-4 mb-6">
+                        <h3 class="text-sm font-bold text-white mb-2 flex items-center gap-2">
+                            <i data-lucide="webhook" class="w-4 h-4 text-pink-400"></i> Webhook
+                        </h3>
+                        <input type="url" id="webhookUrlInput" placeholder="https://..." class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2 text-sm text-white focus:ring-2 focus:ring-pink-500 focus:outline-none mb-2">
+                    </div>
+
+                    <!-- API URL Info -->
+                    <div class="border-t border-slate-700 pt-4 mb-6 bg-slate-900/50 p-3 rounded">
+                        <h3 class="text-xs font-bold text-emerald-400 mb-1">Mode API URL (GET)</h3>
+                        <p class="text-[10px] text-slate-400 font-mono break-all">
+                            votre-site.com/#/CLE_API/SOURCE/CIBLE/votre_code_url_encodé
+                        </p>
+                    </div>
+
+                    <button onclick="saveSettings()" class="bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors w-full">Sauvegarder</button>
+                </div>
+            </div>
+
+            <!-- Left Panel: Input -->
+            <section class="flex-1 flex flex-col border-b md:border-b-0 md:border-r border-slate-700 min-h-[50%] md:min-h-0">
+                <div class="bg-slate-800/50 p-3 flex items-center justify-between border-b border-slate-700">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-semibold text-indigo-400 uppercase tracking-wider">Entrée</span>
+                        <select id="inputLang" class="bg-slate-900 border border-slate-700 text-sm rounded-md px-3 py-1.5 focus:outline-none focus:border-indigo-500 transition-colors">
+                            <option value="javascript">JavaScript</option>
+                            <option value="python">Python</option>
+                            <option value="java">Java</option>
+                            <option value="lua">Lua</option>
+                            <option value="csharp">C#</option>
+                            <option value="cpp">C++</option>
+                            <option value="php">PHP</option>
+                            <option value="ruby">Ruby</option>
+                            <option value="go">Go</option>
+                            <option value="rust">Rust</option>
+                            <option value="dart">Dart</option>
+                            <option value="haskell">Haskell</option>
+                            <option value="r">R Language</option>
+                            <option value="typescript">TypeScript</option>
+                            <option value="sql">SQL</option>
+                        </select>
+                    </div>
+                    <div class="flex gap-1">
+                        <input type="file" id="fileInput" class="hidden" onchange="handleFileUpload(event)">
+                        <button onclick="document.getElementById('fileInput').click()" class="p-2 hover:bg-slate-700 rounded-md text-slate-400 hover:text-white transition-colors" title="Ouvrir un fichier">
+                            <i data-lucide="file-up" class="w-4 h-4"></i>
+                        </button>
+                        <button onclick="clearEditor()" class="p-2 hover:bg-slate-700 rounded-md text-slate-400 hover:text-white transition-colors" title="Effacer">
+                            <i data-lucide="trash-2" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="relative flex-1 bg-[#1e1e1e]">
+                    <textarea id="inputCode" 
+                        class="w-full h-full bg-transparent text-slate-300 font-mono p-4 resize-none focus:outline-none text-sm leading-6"
+                        placeholder="// Collez votre code ou glissez un fichier..." 
+                        spellcheck="false"></textarea>
+                </div>
+            </section>
+
+            <!-- Middle Action Bar -->
+            <div class="bg-slate-900 flex md:flex-col items-center justify-center gap-4 p-2 md:p-4 z-10 border-b md:border-b-0 md:border-r border-slate-700 shadow-xl">
+                <button onclick="swapLanguages()" class="p-2 bg-slate-800 hover:bg-slate-700 rounded-full border border-slate-600 text-slate-300 transition-all hover:rotate-180" title="Inverser">
+                    <i data-lucide="arrow-right-left" class="w-5 h-5 md:rotate-90"></i>
+                </button>
+                <button id="convertBtn" onclick="convertCode()" class="group bg-indigo-600 hover:bg-indigo-500 text-white rounded-full p-3 md:p-4 shadow-lg transition-all active:scale-95">
+                    <i data-lucide="play" class="w-6 h-6 fill-current"></i>
+                </button>
+            </div>
+
+            <!-- Right Panel: Output -->
+            <section class="flex-1 flex flex-col min-h-[50%] md:min-h-0 bg-slate-900/50">
+                <div class="bg-slate-800/50 p-3 flex items-center justify-between border-b border-slate-700">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-semibold text-emerald-400 uppercase tracking-wider">Sortie</span>
+                        <select id="outputLang" class="bg-slate-900 border border-slate-700 text-sm rounded-md px-3 py-1.5 focus:outline-none focus:border-indigo-500 transition-colors">
+                            <option value="python">Python</option>
+                            <option value="javascript">JavaScript</option>
+                            <option value="lua">Lua</option>
+                            <option value="java">Java</option>
+                            <option value="csharp">C#</option>
+                            <option value="cpp">C++</option>
+                            <option value="rust">Rust</option>
+                            <option value="go">Go</option>
+                            <option value="dart">Dart</option>
+                            <option value="typescript">TypeScript</option>
+                        </select>
+                    </div>
+                    <div class="flex gap-1">
+                        <button onclick="sendToWebhook()" id="webhookBtn" class="hidden p-2 hover:bg-pink-900/50 text-pink-400 hover:text-pink-300 rounded-md transition-colors" title="Envoyer au Webhook">
+                            <i data-lucide="webhook" class="w-4 h-4"></i>
+                        </button>
+                        <div class="w-px h-6 bg-slate-700 mx-1"></div>
+                        <button onclick="downloadOutput()" class="p-2 hover:bg-slate-700 rounded-md text-slate-400 hover:text-white transition-colors" title="Télécharger le fichier">
+                            <i data-lucide="download" class="w-4 h-4"></i>
+                        </button>
+                        <button onclick="copyToClipboard('outputCode')" class="p-2 hover:bg-slate-700 rounded-md text-slate-400 hover:text-white transition-colors" title="Copier">
+                            <i data-lucide="copy" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="relative flex-1 bg-[#1e1e1e]">
+                    <div id="loadingOverlay" class="absolute inset-0 bg-slate-900/80 backdrop-blur-sm z-20 flex flex-col items-center justify-center hidden">
+                        <div class="loader mb-3"></div>
+                        <p class="text-sm text-slate-300 font-medium animate-pulse">Traduction IA...</p>
+                    </div>
+                    <textarea id="outputCode" readonly
+                        class="w-full h-full bg-slate-900/30 text-slate-300 font-mono p-4 resize-none focus:outline-none text-sm leading-6 border-l-4 border-transparent"
+                        placeholder="Le code converti apparaîtra ici..."></textarea>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-slate-900 border-t border-slate-800 py-2 px-4 text-center shrink-0 flex justify-between items-center text-[10px] text-slate-500">
+            <span>PolyGlot v3.0</span>
+            <span id="statusMsg" class="hidden text-emerald-400 font-bold uppercase tracking-widest">Action Réussie</span>
+            <span>Mode API & UI Disponible</span>
+        </footer>
+    </div>
+
+    <!-- API MODE DISPLAY (Hidden by default) -->
+    <div id="api-display" class="hidden w-full h-full bg-slate-900 flex items-center justify-center">
+        <div class="text-center">
+            <div class="loader mx-auto mb-4"></div>
+            <p class="text-slate-400 font-mono text-sm">Traitement de la requête...</p>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+
+        // --- GLOBAL & INIT ---
+        const appUi = document.getElementById('app-ui');
+        const apiDisplay = document.getElementById('api-display');
+        
+        const inputLang = document.getElementById('inputLang');
+        const outputLang = document.getElementById('outputLang');
+        const inputCode = document.getElementById('inputCode');
+        const outputCode = document.getElementById('outputCode');
+        const loadingOverlay = document.getElementById('loadingOverlay');
+        const settingsModal = document.getElementById('settingsModal');
+        const apiKeyInput = document.getElementById('apiKeyInput');
+        const apiKeyStatus = document.getElementById('apiKeyStatus');
+        const rememberKeyCheckbox = document.getElementById('rememberKey');
+        const webhookUrlInput = document.getElementById('webhookUrlInput');
+        const webhookBtn = document.getElementById('webhookBtn');
+        const statusMsg = document.getElementById('statusMsg');
+
+        const extensions = {
+            'javascript': 'js', 'python': 'py', 'java': 'java', 'lua': 'lua', 
+            'csharp': 'cs', 'cpp': 'cpp', 'php': 'php', 'ruby': 'rb', 
+            'go': 'go', 'rust': 'rs', 'dart': 'dart', 'haskell': 'hs', 
+            'r': 'r', 'typescript': 'ts', 'sql': 'sql'
+        };
+
+        let apiKey = localStorage.getItem('polyglot_api_key') || sessionStorage.getItem('polyglot_api_key') || '';
+        let webhookUrl = localStorage.getItem('polyglot_webhook') || '';
+
+        // 1. CHECK FOR API MODE ROUTING
+        window.addEventListener('load', handleRouting);
+        window.addEventListener('hashchange', handleRouting);
+
+        async function handleRouting() {
+            // Check Hash Route: #/KEY/SOURCE/TARGET/CODE
+            // Check Path Route: /KEY/SOURCE/TARGET/CODE (needs server rewrite)
+            
+            let pathSegments = [];
+            let isHashMode = false;
+
+            if (window.location.hash.startsWith('#/')) {
+                // Hash format: #/key/src/tgt/code...
+                pathSegments = window.location.hash.substring(2).split('/');
+                isHashMode = true;
+            } else if (window.location.pathname.length > 1 && !window.location.pathname.endsWith('.html')) {
+                // Path format: /key/src/tgt/code... (Careful: requires server config)
+                pathSegments = window.location.pathname.substring(1).split('/');
+            }
+
+            // Route signature: /KEY/SOURCE/TARGET/CODE (at least 4 segments)
+            // Note: Code might contain slashes, so we rejoin the rest
+            if (pathSegments.length >= 4) {
+                const urlKey = pathSegments[0];
+                const urlSrc = pathSegments[1];
+                const urlTgt = pathSegments[2];
+                // Rejoin everything after target as the code (decode it)
+                let rawCode = pathSegments.slice(3).join('/');
+                
+                try {
+                    rawCode = decodeURIComponent(rawCode);
+                } catch(e) { console.error("URL decoding failed", e); }
+
+                // ENTER API MODE
+                startApiMode(urlKey, urlSrc, urlTgt, rawCode);
+            } else {
+                // Normal UI Mode
+                initUiMode();
+            }
+        }
+
+        async function startApiMode(key, src, tgt, code) {
+            // Hide UI, Show API Loader
+            appUi.classList.add('hidden');
+            apiDisplay.classList.remove('hidden');
+            document.body.style.overflow = "auto"; // allow scrolling for long code
+
+            try {
+                // Call Gemini directly
+                const translated = await runGeminiTranslation(key, src, tgt, code);
+                
+                // Display RAW text
+                document.body.innerHTML = `<pre class="api-response">${escapeHtml(translated)}</pre>`;
+            } catch (err) {
+                document.body.innerHTML = `<pre class="api-response text-red-500">Error: ${err.message}</pre>`;
+            }
+        }
+
+        // --- CORE LOGIC ---
+
+        async function runGeminiTranslation(key, source, target, code) {
+            const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${key}`;
+            
+            const prompt = `Translate this code from ${source} to ${target}. Output ONLY the raw translated code without any markdown formatting, backticks or explanations. Code: \n${code}`;
+
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    contents: [{ parts: [{ text: prompt }] }]
+                })
+            });
+
+            const data = await response.json();
+            if (!response.ok) throw new Error(data.error?.message || 'API Error');
+
+            let result = data.candidates[0].content.parts[0].text;
+            // Clean up markdown just in case
+            return result.replace(/^```[a-z]*\n/i, '').replace(/\n```$/, '').trim();
+        }
+
+        function escapeHtml(text) {
+            return text
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#039;");
+        }
+
+        // --- UI FUNCTIONS ---
+
+        function initUiMode() {
+            if(apiKey) {
+                apiKeyInput.value = apiKey;
+                if(localStorage.getItem('polyglot_api_key')) rememberKeyCheckbox.checked = true;
+            }
+            if(webhookUrl) {
+                webhookUrlInput.value = webhookUrl;
+                webhookBtn.classList.remove('hidden');
+            }
+            updateStatusUI();
+        }
+
+        function updateStatusUI() {
+            const hasKey = !!apiKey;
+            const hasWebhook = !!webhookUrl;
+            
+            apiKeyStatus.textContent = hasKey ? "Connecté" : "Configuration";
+            apiKeyStatus.className = hasKey ? "text-emerald-400" : "text-slate-400";
+            
+            if(hasWebhook) webhookBtn.classList.remove('hidden');
+            else webhookBtn.classList.add('hidden');
+        }
+
+        function toggleSettings() { settingsModal.classList.toggle('hidden'); }
+        function toggleShowKey() { apiKeyInput.type = apiKeyInput.type === 'password' ? 'text' : 'password'; }
+
+        function showStatus(text, isError = false) {
+            statusMsg.textContent = text;
+            statusMsg.className = isError ? "text-red-400 font-bold uppercase tracking-widest" : "text-emerald-400 font-bold uppercase tracking-widest";
+            statusMsg.classList.remove('hidden');
+            setTimeout(() => statusMsg.classList.add('hidden'), 3000);
+        }
+
+        function saveSettings() {
+            const key = apiKeyInput.value.trim();
+            const hook = webhookUrlInput.value.trim();
+            
+            if(key) {
+                apiKey = key;
+                if(rememberKeyCheckbox.checked) {
+                    localStorage.setItem('polyglot_api_key', key);
+                    sessionStorage.removeItem('polyglot_api_key');
+                } else {
+                    sessionStorage.setItem('polyglot_api_key', key);
+                    localStorage.removeItem('polyglot_api_key');
+                }
+            }
+
+            webhookUrl = hook;
+            if(hook) localStorage.setItem('polyglot_webhook', hook);
+            else localStorage.removeItem('polyglot_webhook');
+
+            updateStatusUI();
+            toggleSettings();
+            showStatus("Paramètres sauvegardés");
+        }
+
+        async function convertCode() {
+            const code = inputCode.value.trim();
+            if (!code) return alert("Entrez du code.");
+            if (!apiKey) return toggleSettings();
+
+            loadingOverlay.classList.remove('hidden');
+
+            try {
+                const result = await runGeminiTranslation(apiKey, inputLang.value, outputLang.value, code);
+                outputCode.value = result;
+            } catch (error) {
+                outputCode.value = "Erreur: " + error.message;
+            } finally {
+                loadingOverlay.classList.add('hidden');
+            }
+        }
+
+        // Webhook & File Handlers (Keep previous logic)
+        async function sendToWebhook() {
+            if(!webhookUrl || !outputCode.value) return;
+            const payload = {
+                timestamp: new Date().toISOString(),
+                source: inputLang.value,
+                target: outputLang.value,
+                original: inputCode.value,
+                translated: outputCode.value
+            };
+            const originalIcon = webhookBtn.innerHTML;
+            webhookBtn.innerHTML = '<div class="loader w-4 h-4 border-2 border-pink-500"></div>';
+            webhookBtn.disabled = true;
+            try {
+                await fetch(webhookUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                showStatus("Envoyé au Bot !");
+            } catch (e) {
+                alert("Erreur Webhook: " + e.message);
+            } finally {
+                webhookBtn.innerHTML = originalIcon;
+                webhookBtn.disabled = false;
+            }
+        }
+
+        function handleFileUpload(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                inputCode.value = e.target.result;
+                const ext = file.name.split('.').pop().toLowerCase();
+                for (const [lang, lExt] of Object.entries(extensions)) {
+                    if (ext === lExt) { inputLang.value = lang; break; }
+                }
+            };
+            reader.readAsText(file);
+        }
+
+        function downloadOutput() {
+            const content = outputCode.value;
+            if(!content) return;
+            const ext = extensions[outputLang.value] || 'txt';
+            const blob = new Blob([content], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `translated_code.${ext}`;
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+
+        function swapLanguages() {
+            const tempVal = inputLang.value;
+            inputLang.value = outputLang.value;
+            outputLang.value = tempVal;
+            if (outputCode.value) {
+                inputCode.value = outputCode.value;
+                outputCode.value = "";
+            }
+        }
+
+        function clearEditor() {
+            if(confirm("Effacer tout ?")) {
+                inputCode.value = '';
+                outputCode.value = '';
+            }
+        }
+
+        function copyToClipboard(id) {
+            const el = document.getElementById(id);
+            if(!el.value) return;
+            el.select();
+            document.execCommand('copy');
+            showStatus("Copié !");
+        }
+    </script>
+</body>
+</html>
