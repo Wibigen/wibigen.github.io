@@ -1,91 +1,66 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PolyGlot API</title>
+    <title>PolyGlot API JSON</title>
     <style>
         body {
-            background-color: #0f172a;
-            color: #e2e8f0;
-            font-family: 'JetBrains Mono', monospace;
+            background-color: #000;
+            color: #fff;
+            font-family: monospace;
             margin: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            overflow: hidden;
-        }
-        pre {
+            padding: 20px;
             white-space: pre-wrap;
             word-wrap: break-word;
-            padding: 20px;
-            margin: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            box-sizing: border-box;
         }
-        .help {
-            text-align: center;
-            line-height: 1.6;
-            padding: 20px;
-        }
-        .code-format {
-            color: #6366f1;
-            font-weight: bold;
-            word-break: break-all;
-        }
-        .loader {
-            border: 3px solid #1e293b;
-            border-top: 3px solid #6366f1;
-            border-radius: 50%;
-            width: 30px;
-            height: 30px;
-            animation: spin 1s linear infinite;
-        }
-        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        .error { color: #ff5555; }
     </style>
 </head>
 <body>
-    <div id="content">
-        <div class="help">
-            <p>Envoyez des requêtes avec le format suivant :</p>
-            <p class="code-format">codegen.html#/{CLE_API}/{SOURCE}/{CIBLE}/{CODE}</p>
-            <p style="font-size: 0.8em; color: #64748b;">Exemple : codegen.html#/AIza.../python/javascript/print("Hello")</p>
-        </div>
-    </div>
+    <div id="output">{"status": "waiting", "message": "Send query via ?key=...&src=...&tgt=...&code=..."}</div>
 
     <script>
-        const contentDiv = document.getElementById('content');
+        const outputDiv = document.getElementById('output');
 
         /**
-         * Gère le routage via le hash pour éviter les 404 sur GitHub Pages
+         * Envoie une réponse de type JSON textuel
          */
-        async function handleRouting() {
-            const hash = window.location.hash;
-            
-            if (hash.startsWith('#/')) {
-                const segments = hash.substring(2).split('/');
-                
-                // Format attendu: #/KEY/SRC/TGT/CODE
-                if (segments.length >= 4) {
-                    const apiKey = segments[0];
-                    const src = segments[1];
-                    const tgt = segments[2];
-                    // On récupère tout ce qui suit comme étant le code
-                    const code = decodeURIComponent(segments.slice(3).join('/'));
+        function sendJsonResponse(data) {
+            outputDiv.textContent = JSON.stringify(data, null, 2);
+        }
 
-                    showLoading();
-                    
-                    try {
-                        const result = await translate(apiKey, src, tgt, code);
-                        renderResult(result);
-                    } catch (err) {
-                        renderResult("ERREUR API : " + err.message, true);
-                    }
-                    return;
-                }
+        async function handleRequest() {
+            // Lecture des paramètres de l'URL (?key=...&src=...)
+            const urlParams = new URLSearchParams(window.location.search);
+            
+            const apiKey = urlParams.get('key');
+            const src = urlParams.get('src');
+            const tgt = urlParams.get('tgt');
+            const code = urlParams.get('code');
+
+            // Si un des paramètres manque, on affiche l'aide
+            if (!apiKey || !src || !tgt || !code) {
+                return; // On laisse le message par défaut
+            }
+
+            sendJsonResponse({ status: "processing", message: "Contacting Gemini API..." });
+
+            try {
+                const translatedCode = await translate(apiKey, src, tgt, code);
+                
+                // On renvoie le résultat final en JSON
+                sendJsonResponse({
+                    status: "success",
+                    source: src,
+                    target: tgt,
+                    translation: translatedCode
+                });
+            } catch (err) {
+                sendJsonResponse({
+                    status: "error",
+                    message: err.message
+                });
             }
         }
 
@@ -105,28 +80,15 @@
             });
 
             const data = await response.json();
-            if (!response.ok) throw new Error(data.error?.message || 'Erreur API');
+            if (!response.ok) throw new Error(data.error?.message || 'Gemini API Error');
 
             let text = data.candidates[0].content.parts[0].text;
-            // Nettoyage de sécurité pour garantir du code brut
+            // Nettoyage pour ne garder que le code
             return text.replace(/^```[a-z]*\n/i, '').replace(/\n```$/, '').trim();
         }
 
-        function showLoading() {
-            contentDiv.innerHTML = '<div class="loader"></div>';
-        }
-
-        function renderResult(text, isError = false) {
-            document.body.innerHTML = ''; // Nettoyage total pour ne laisser que le résultat
-            const pre = document.createElement('pre');
-            if (isError) pre.style.color = '#ef4444';
-            pre.textContent = text;
-            document.body.appendChild(pre);
-        }
-
-        // Écouteurs d'événements pour le chargement et les changements d'URL
-        window.addEventListener('load', handleRouting);
-        window.addEventListener('hashchange', handleRouting);
+        // Lancement au chargement
+        window.onload = handleRequest;
     </script>
 </body>
 </html>
