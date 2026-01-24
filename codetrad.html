@@ -2,92 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PolyGlot API JSON</title>
-    <style>
-        body {
-            background-color: #000;
-            color: #fff;
-            font-family: monospace;
-            margin: 0;
-            padding: 20px;
-            white-space: pre-wrap;
-            word-wrap: break-word;
-        }
-        .error { color: #ff5555; }
-    </style>
+    <title>JSON API</title>
 </head>
-<body>
-    <div id="output">{"status": "waiting", "message": "Send query via ?key=...&src=...&tgt=...&code=..."}</div>
-
+<body style="background: #000; color: #fff; margin: 0; padding: 0; font-family: monospace;">
     <script>
-        const outputDiv = document.getElementById('output');
-
         /**
-         * Envoie une réponse de type JSON textuel
+         * Affiche uniquement le texte JSON brut sur la page
          */
-        function sendJsonResponse(data) {
-            outputDiv.textContent = JSON.stringify(data, null, 2);
+        function renderRawJson(data) {
+            document.body.innerText = JSON.stringify(data);
         }
 
         async function handleRequest() {
-            // Lecture des paramètres de l'URL (?key=...&src=...)
             const urlParams = new URLSearchParams(window.location.search);
-            
             const apiKey = urlParams.get('key');
             const src = urlParams.get('src');
             const tgt = urlParams.get('tgt');
             const code = urlParams.get('code');
 
-            // Si un des paramètres manque, on affiche l'aide
             if (!apiKey || !src || !tgt || !code) {
-                return; // On laisse le message par défaut
+                renderRawJson({ 
+                    status: "error", 
+                    message: "Missing parameters. Required: ?key=...&src=...&tgt=...&code=..." 
+                });
+                return;
             }
 
-            sendJsonResponse({ status: "processing", message: "Contacting Gemini API..." });
-
             try {
-                const translatedCode = await translate(apiKey, src, tgt, code);
-                
-                // On renvoie le résultat final en JSON
-                sendJsonResponse({
+                const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
+                const prompt = `Translate this code from ${src} to ${tgt}. Output ONLY the raw translated code without any markdown formatting, backticks or explanations. Code: \n${code}`;
+
+                const response = await fetch(url, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        contents: [{ parts: [{ text: prompt }] }]
+                    })
+                });
+
+                const data = await response.json();
+                if (!response.ok) throw new Error(data.error?.message || 'Gemini API Error');
+
+                let translatedCode = data.candidates[0].content.parts[0].text;
+                // Nettoyage final pour extraire le code pur
+                translatedCode = translatedCode.replace(/^```[a-z]*\n/i, '').replace(/\n```$/, '').trim();
+
+                renderRawJson({
                     status: "success",
                     source: src,
                     target: tgt,
                     translation: translatedCode
                 });
             } catch (err) {
-                sendJsonResponse({
+                renderRawJson({
                     status: "error",
                     message: err.message
                 });
             }
         }
 
-        /**
-         * Appel direct à l'API Gemini
-         */
-        async function translate(key, source, target, code) {
-            const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${key}`;
-            const prompt = `Translate this code from ${source} to ${target}. Output ONLY the raw translated code without any markdown formatting, backticks or explanations. Code: \n${code}`;
-
-            const response = await fetch(url, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    contents: [{ parts: [{ text: prompt }] }]
-                })
-            });
-
-            const data = await response.json();
-            if (!response.ok) throw new Error(data.error?.message || 'Gemini API Error');
-
-            let text = data.candidates[0].content.parts[0].text;
-            // Nettoyage pour ne garder que le code
-            return text.replace(/^```[a-z]*\n/i, '').replace(/\n```$/, '').trim();
-        }
-
-        // Lancement au chargement
         window.onload = handleRequest;
     </script>
 </body>
