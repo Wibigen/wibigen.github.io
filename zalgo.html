@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zalgo Architect // Surcharge Textuelle</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+        :root {
+            --neon-green: #00ff41;
+            --dark-bg: #0d0d0d;
+            --panel-bg: #151515;
+            --border-col: #333;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: #e0e0e0;
+            font-family: 'JetBrains Mono', monospace;
+            overflow-x: hidden;
+        }
+
+        .glitch-text {
+            position: relative;
+        }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1a1a1a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--neon-green);
+        }
+
+        .letter-box {
+            transition: all 0.2s;
+            cursor: pointer;
+            min-width: 1rem;
+            text-align: center;
+            border-bottom: 2px solid transparent;
+        }
+
+        .letter-box:hover {
+            color: var(--neon-green);
+            background-color: rgba(0, 255, 65, 0.1);
+        }
+
+        .letter-box.selected {
+            border-bottom: 2px solid var(--neon-green);
+            background-color: rgba(0, 255, 65, 0.15);
+            color: #fff;
+            box-shadow: 0 0 10px rgba(0, 255, 65, 0.2);
+        }
+
+        .symbol-checkbox:checked + div {
+            background-color: var(--neon-green);
+            color: black;
+            border-color: var(--neon-green);
+        }
+
+        /* Range slider styling */
+        input[type=range] {
+            -webkit-appearance: none; 
+            background: transparent; 
+        }
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 16px;
+            width: 16px;
+            background: var(--neon-green);
+            cursor: pointer;
+            margin-top: -6px; 
+            border-radius: 50%;
+        }
+        input[type=range]::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 4px;
+            cursor: pointer;
+            background: #333;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body class="h-screen flex flex-col md:flex-row overflow-hidden">
+
+    <!-- MAIN AREA -->
+    <div class="flex-1 flex flex-col p-6 h-full overflow-y-auto relative">
+        <header class="mb-8 border-b border-gray-800 pb-4 flex justify-between items-center">
+            <div>
+                <h1 class="text-2xl font-bold text-[#00ff41] tracking-tighter">ZALGO_ARCHITECT</h1>
+                <p class="text-xs text-gray-500">v.1.0 // TEXT OVERLOAD SYSTEM</p>
+            </div>
+            <button onclick="copyToClipboard()" class="bg-gray-800 hover:bg-[#00ff41] hover:text-black transition px-4 py-2 text-sm font-bold border border-gray-600 rounded">
+                COPIER LE RÉSULTAT
+            </button>
+        </header>
+
+        <!-- Input Section -->
+        <div class="mb-6">
+            <label class="block text-xs uppercase tracking-widest text-gray-500 mb-2">Texte Source</label>
+            <input type="text" id="sourceInput" placeholder="Entrez votre texte ici..." 
+                   class="w-full bg-[#111] border border-gray-700 p-4 text-lg focus:border-[#00ff41] focus:outline-none text-white font-mono rounded"
+                   value="Wibigen">
+        </div>
+
+        <!-- Visualization Area -->
+        <div class="flex-1 bg-[#111] border border-gray-700 rounded p-4 relative flex flex-col">
+            <label class="block text-xs uppercase tracking-widest text-gray-500 mb-4 sticky top-0 bg-[#111] z-10 py-2">
+                Décomposition (Cliquez sur une lettre)
+            </label>
+            
+            <div id="visualizer" class="flex flex-wrap gap-x-1 gap-y-12 items-baseline pt-12 px-4 text-4xl select-none justify-center">
+                <!-- Letters will be injected here -->
+            </div>
+        </div>
+        
+        <!-- Preview Output (Hidden logically, used for copy) -->
+        <textarea id="finalOutput" class="opacity-0 h-0 w-0"></textarea>
+    </div>
+
+    <!-- EDITOR SIDEBAR -->
+    <div id="editorPanel" class="w-full md:w-96 bg-[#151515] border-l border-gray-800 p-6 flex flex-col h-[50vh] md:h-full overflow-y-auto transform transition-transform duration-300 translate-y-full md:translate-y-0 md:translate-x-full absolute md:relative bottom-0 right-0 z-50 shadow-2xl">
+        
+        <div class="flex justify-between items-center mb-6">
+            <h2 class="text-xl font-bold text-white">Éditeur de lettre</h2>
+            <div id="currentLetterDisplay" class="text-3xl text-[#00ff41] font-bold border border-[#00ff41] px-3 py-1 rounded">?</div>
+        </div>
+
+        <div id="controlsContainer" class="opacity-50 pointer-events-none transition-opacity">
+            <p class="text-sm text-gray-400 mb-6 italic" id="selectPrompt">Sélectionnez une lettre à gauche pour commencer.</p>
+
+            <!-- SECTION HAUTE -->
+            <div class="mb-8 border-b border-gray-800 pb-6">
+                <div class="flex justify-between items-center mb-3">
+                    <h3 class="text-[#00ff41] text-sm uppercase font-bold tracking-wider">▲ Surcharge Haute</h3>
+                    <div class="flex items-center gap-2">
+                        <span class="text-xs text-gray-500">Densité:</span>
+                        <input type="number" id="topDensityInput" min="1" max="10" value="1" class="w-12 bg-gray-800 border border-gray-600 text-center text-xs p-1 rounded">
+                    </div>
+                </div>
+                <div class="grid grid-cols-5 gap-2" id="topSymbolsGrid">
+                    <!-- Checkboxes injected by JS -->
+                </div>
+            </div>
+
+            <!-- SECTION LATERALE -->
+            <div class="mb-8 border-b border-gray-800 pb-6">
+                <h3 class="text-cyan-400 text-sm uppercase font-bold tracking-wider mb-3">► Surcharge Latérale</h3>
+                <div class="grid grid-cols-5 gap-2" id="midSymbolsGrid">
+                    <!-- Checkboxes injected by JS -->
+                </div>
+            </div>
+
+            <!-- SECTION BASSE -->
+            <div class="mb-6">
+                <div class="flex justify-between items-center mb-3">
+                    <h3 class="text-red-500 text-sm uppercase font-bold tracking-wider">▼ Surcharge Basse</h3>
+                     <div class="flex items-center gap-2">
+                        <span class="text-xs text-gray-500">Densité:</span>
+                        <input type="number" id="bottomDensityInput" min="1" max="10" value="1" class="w-12 bg-gray-800 border border-gray-600 text-center text-xs p-1 rounded">
+                    </div>
+                </div>
+                <div class="grid grid-cols-5 gap-2" id="bottomSymbolsGrid">
+                    <!-- Checkboxes injected by JS -->
+                </div>
+            </div>
+            
+            <button onclick="resetCurrentLetter()" class="w-full mt-4 py-2 border border-red-900 text-red-500 hover:bg-red-900 hover:text-white transition text-xs uppercase tracking-widest rounded">
+                Réinitialiser la lettre
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // --- DATA ---
+        // Sélection de symboles Zalgo/Unicode efficaces
+        const SYMBOLS = {
+            up: [
+                { char: '\u0300', desc: 'Grave' }, { char: '\u0301', desc: 'Aigu' }, 
+                { char: '\u0302', desc: 'Circonflexe' }, { char: '\u0303', desc: 'Tilde' },
+                { char: '\u0307', desc: 'Point' }, { char: '\u0308', desc: 'Tréma' },
+                { char: '\u030A', desc: 'Rond' }, { char: '\u030B', desc: 'Double Aigu' },
+                { char: '\u030C', desc: 'Caron' }, { char: '\u030D', desc: 'Ligne Vert.' },
+                { char: '\u030E', desc: 'Double Vert.' }, { char: '\u030F', desc: 'Double Grave' },
+                { char: '\u0311', desc: 'Renversé' }, { char: '\u033D', desc: 'X Haut' },
+                { char: '\u033E', desc: 'Moustache' }, { char: '\u033F', desc: 'Double Ligne' },
+                { char: '\u0340', desc: 'Grave Ton' }, { char: '\u0341', desc: 'Aigu Ton' },
+                { char: '\u0342', desc: 'Circon. Grec' }, { char: '\u0343', desc: 'Koronis' },
+                { char: '\u0344', desc: 'Dialytika' }, { char: '\u0346', desc: 'Pont' },
+                { char: '\u034A', desc: 'Non-Join' }, { char: '\u034B', desc: 'Gomukhi' },
+                { char: '\u034C', desc: 'Almost' }, { char: '\u0350', desc: 'Flèche D.' },
+                { char: '\u0351', desc: 'Flèche G.' }, { char: '\u0352', desc: 'Fermion' },
+                { char: '\u0357', desc: 'Demi Rond D.' }, { char: '\u0358', desc: 'Demi Rond G.' },
+                { char: '\u035B', desc: 'Zigzag' }, { char: '\u035D', desc: 'Double Breve' },
+                { char: '\u035E', desc: 'Double Macron' }, { char: '\u0360', desc: 'Double Tilde' },
+                { char: '\u0361', desc: 'Tie' }
+            ],
+            mid: [
+                { char: '\u0334', desc: 'Tilde' }, { char: '\u0335', desc: 'Barre Courte' },
+                { char: '\u0336', desc: 'Barre Longue' }, { char: '\u0337', desc: 'Slash Court' },
+                { char: '\u0338', desc: 'Slash Long' }, { char: '\u20d2', desc: 'Ligne Vert.' },
+                { char: '\u20d3', desc: 'Ligne Court' }, { char: '\u20e0', desc: 'Interdit' },
+                { char: '\u20e2', desc: 'Ecran' }, { char: '\u20e3', desc: 'Keycap' }
+            ],
+            down: [
+                { char: '\u0316', desc: 'Grave Bas' }, { char: '\u0317', desc: 'Aigu Bas' },
+                { char: '\u0318', desc: 'Gauche Bas' }, { char: '\u0319', desc: 'Droit Bas' },
+                { char: '\u031C', desc: 'Gauche Rond' }, { char: '\u031D', desc: 'Droit Rond' },
+                { char: '\u031E', desc: 'Bas T' }, { char: '\u031F', desc: 'Plus Bas' },
+                { char: '\u0320', desc: 'Moins Bas' }, { char: '\u0321', desc: 'Palatal' },
+                { char: '\u0322', desc: 'Retroflex' }, { char: '\u0323', desc: 'Point Bas' },
+                { char: '\u0324', desc: 'Trema Bas' }, { char: '\u0325', desc: 'Rond Bas' },
+                { char: '\u0326', desc: 'Virgule' }, { char: '\u0327', desc: 'Cedille' },
+                { char: '\u0328', desc: 'Ogonek' }, { char: '\u0329', desc: 'Ligne Vert.' },
+                { char: '\u032A', desc: 'Pont Bas' }, { char: '\u032B', desc: 'Inv. Double' },
+                { char: '\u032C', desc: 'Caron Bas' }, { char: '\u032D', desc: 'Circon. Bas' },
+                { char: '\u032E', desc: 'Breve Bas' }, { char: '\u032F', desc: 'Inv. Breve' },
+                { char: '\u0330', desc: 'Tilde Bas' }, { char: '\u0331', desc: 'Macron Bas' },
+                { char: '\u0332', desc: 'Souligné' }, { char: '\u0333', desc: 'Double Soul.' },
+                { char: '\u0339', desc: 'Rond Droit' }, { char: '\u033A', desc: 'Inv. Pont' },
+                { char: '\u033B', desc: 'Carré Bas' }, { char: '\u033C', desc: 'Mouette' },
+                { char: '\u0345', desc: 'Iota' }, { char: '\u0347', desc: 'Egal Bas' },
+                { char: '\u0348', desc: 'Double Vert.' }, { char: '\u0349', desc: 'Gauche Angle' },
+                { char: '\u034D', desc: 'Gauche Droit' }, { char: '\u034E', desc: 'Haut Bas' },
+                { char: '\u0353', desc: 'X Bas' }, { char: '\u0354', desc: 'Flèche G.' },
+                { char: '\u0355', desc: 'Flèche D.' }, { char: '\u0356', desc: 'Droit Long' },
+                { char: '\u0359', desc: 'Asterisque' }, { char: '\u035A', desc: 'Double Rond' }
+            ]
+        };
+
+        // État global des lettres
+        // Structure: [ { char: 'W', up: ['\u0300'], mid: [], down: [], upDensity: 1, downDensity: 1 } ]
+        let textState = [];
+        let selectedIndex = -1;
+
+        // --- DOM ELEMENTS ---
+        const sourceInput = document.getElementById('sourceInput');
+        const visualizer = document.getElementById('visualizer');
+        const editorPanel = document.getElementById('editorPanel');
+        const controlsContainer = document.getElementById('controlsContainer');
+        const selectPrompt = document.getElementById('selectPrompt');
+        const currentLetterDisplay = document.getElementById('currentLetterDisplay');
+        const topSymbolsGrid = document.getElementById('topSymbolsGrid');
+        const midSymbolsGrid = document.getElementById('midSymbolsGrid');
+        const bottomSymbolsGrid = document.getElementById('bottomSymbolsGrid');
+        const topDensityInput = document.getElementById('topDensityInput');
+        const bottomDensityInput = document.getElementById('bottomDensityInput');
+
+        // --- INITIALIZATION ---
+        
+        function initStateFromInput() {
+            const val = sourceInput.value;
+            // On essaie de préserver les configurations si la lettre à l'index n'a pas changé
+            const newState = [];
+            for (let i = 0; i < val.length; i++) {
+                if (textState[i] && textState[i].char === val[i]) {
+                    newState.push(textState[i]);
+                } else {
+                    newState.push({
+                        char: val[i],
+                        up: [],
+                        mid: [],
+                        down: [],
+                        upDensity: 1,
+                        downDensity: 1
+                    });
+                }
+            }
+            textState = newState;
+            
+            // Si l'index sélectionné est hors limites, on désélectionne
+            if (selectedIndex >= textState.length) {
+                deselect();
+            }
+            
+            renderVisualizer();
+        }
+
+        // --- RENDERING ---
+
+        // Génère le HTML pour l'affichage principal
+        function renderVisualizer() {
+            visualizer.innerHTML = '';
+            
+            textState.forEach((item, index) => {
+                const span = document.createElement('span');
+                span.className = `letter-box p-2 rounded ${index === selectedIndex ? 'selected' : ''}`;
+                span.innerHTML = constructLetterHTML(item); // Utilisation de HTML pour le rendu visuel safe
+                span.onclick = () => selectLetter(index);
+                visualizer.appendChild(span);
+            });
+
+            // Met à jour la zone de copie cachée avec le texte brut
+            updateFinalOutput();
+        }
+
+        // Construit la chaîne surchargée pour une lettre donnée
+        function constructZalgoString(item) {
+            let str = item.char;
+            
+            // Ordre : Char + Mid + Up + Down (souvent le mieux supporté)
+            
+            // Middle
+            item.mid.forEach(s => str += s);
+            
+            // Up (multiplié par densité)
+            for(let i=0; i < item.upDensity; i++) {
+                item.up.forEach(s => str += s);
+            }
+
+            // Down (multiplié par densité)
+            for(let i=0; i < item.downDensity; i++) {
+                item.down.forEach(s => str += s);
+            }
+            
+            return str;
+        }
+
+        // Pour l'affichage HTML, on veut juste le texte brut car les navigateurs gèrent bien le rendu Unicode
+        function constructLetterHTML(item) {
+            return constructZalgoString(item); 
+        }
+
+        function updateFinalOutput() {
+            let fullStr = textState.map(item => constructZalgoString(item)).join('');
+            document.getElementById('finalOutput').value = fullStr;
+        }
+
+        // --- INTERACTION ---
+
+        function selectLetter(index) {
+            selectedIndex = index;
+            renderVisualizer(); // Update styles
+            openEditor(index);
+        }
+
+        function deselect() {
+            selectedIndex = -1;
+            renderVisualizer();
+            
+            // Hide/Disable UI
+            editorPanel.classList.add('translate-x-full', 'translate-y-full');
+            if(window.innerWidth >= 768) {
+                // Desktop: Keep panel visible but disabled styling
+                 editorPanel.classList.remove('translate-x-full', 'translate-y-full');
+                 controlsContainer.classList.add('opacity-50', 'pointer-events-none');
+                 selectPrompt.style.display = 'block';
+                 currentLetterDisplay.innerText = '?';
+            } else {
+                 // Mobile: Hide panel
+            }
+        }
+
+        function openEditor(index) {
+            const item = textState[index];
+            
+            // Show UI
+            editorPanel.classList.remove('translate-x-full', 'translate-y-full');
+            controlsContainer.classList.remove('opacity-50', 'pointer-events-none');
+            selectPrompt.style.display = 'none';
+            
+            // Update Header
+            currentLetterDisplay.innerText = item.char;
+            
+            // Update Inputs
+            topDensityInput.value = item.upDensity;
+            bottomDensityInput.value = item.downDensity;
+
+            // Render Grids
+            renderSymbolGrid(topSymbolsGrid, SYMBOLS.up, item.up, 'up');
+            renderSymbolGrid(midSymbolsGrid, SYMBOLS.mid, item.mid, 'mid');
+            renderSymbolGrid(bottomSymbolsGrid, SYMBOLS.down, item.down, 'down');
+        }
+
+        function renderSymbolGrid(container, symbolList, activeList, type) {
+            container.innerHTML = '';
+            symbolList.forEach(sym => {
+                const label = document.createElement('label');
+                label.className = 'cursor-pointer group relative';
+                
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.className = 'symbol-checkbox hidden';
+                checkbox.checked = activeList.includes(sym.char);
+                checkbox.onchange = (e) => toggleSymbol(type, sym.char, e.target.checked);
+                
+                const div = document.createElement('div');
+                div.className = 'w-10 h-10 flex items-center justify-center bg-[#222] border border-[#333] rounded hover:border-gray-500 transition text-lg';
+                // On affiche le symbole sur une base générique (pointillé cercle) pour qu'il soit visible
+                div.innerHTML = `&#9676;${sym.char}`;
+                
+                // Tooltip
+                const tooltip = document.createElement('span');
+                tooltip.className = 'absolute bottom-full left-1/2 transform -translate-x-1/2 bg-black text-xs text-white px-2 py-1 rounded opacity-0 group-hover:opacity-100 pointer-events-none whitespace-nowrap z-20 mb-1';
+                tooltip.innerText = sym.desc;
+
+                label.appendChild(checkbox);
+                label.appendChild(div);
+                label.appendChild(tooltip);
+                container.appendChild(label);
+            });
+        }
+
+        // --- LOGIC ---
+
+        function toggleSymbol(type, char, isChecked) {
+            if (selectedIndex === -1) return;
+            const item = textState[selectedIndex];
+            
+            if (isChecked) {
+                if (!item[type].includes(char)) item[type].push(char);
+            } else {
+                item[type] = item[type].filter(c => c !== char);
+            }
+            
+            renderVisualizer();
+        }
+
+        function updateDensity(type, val) {
+            if (selectedIndex === -1) return;
+            textState[selectedIndex][type] = parseInt(val);
+            renderVisualizer();
+        }
+
+        function resetCurrentLetter() {
+            if (selectedIndex === -1) return;
+            const item = textState[selectedIndex];
+            item.up = [];
+            item.mid = [];
+            item.down = [];
+            item.upDensity = 1;
+            item.downDensity = 1;
+            
+            // Refresh editor UI
+            openEditor(selectedIndex);
+            renderVisualizer();
+        }
+
+        async function copyToClipboard() {
+            updateFinalOutput();
+            const text = document.getElementById('finalOutput').value;
+            try {
+                await navigator.clipboard.writeText(text);
+                alert("Pseudo copié dans le presse-papier !");
+            } catch (err) {
+                console.error('Erreur copie', err);
+                // Fallback
+                const txtArea = document.getElementById('finalOutput');
+                txtArea.select();
+                document.execCommand('copy');
+                alert("Copié (méthode fallback)");
+            }
+        }
+
+        // --- LISTENERS ---
+
+        sourceInput.addEventListener('input', initStateFromInput);
+        
+        topDensityInput.addEventListener('input', (e) => updateDensity('upDensity', e.target.value));
+        bottomDensityInput.addEventListener('input', (e) => updateDensity('downDensity', e.target.value));
+
+        // Start
+        initStateFromInput();
+
+    </script>
+</body>
+</html>
