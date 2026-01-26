@@ -14,44 +14,52 @@
         canvas {
             image-rendering: pixelated;
             background-color: #000;
-            border: 2px solid #333;
-            max-width: 100%;
-            cursor: crosshair;
+            border: 2px solid #444;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            transition: transform 0.1s ease-out;
+            max-width: none; /* Permet au zoom de dépasser si besoin */
         }
-        .dark .bg-custom-app { background-color: #111827; }
-        .light .bg-custom-app { background-color: #f3f4f6; }
+        .canvas-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: auto;
+            background-image: radial-gradient(#333 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        .dark .bg-custom-app { background-color: #0f172a; }
+        .light .bg-custom-app { background-color: #f8fafc; }
     </style>
 </head>
 <body class="bg-custom-app text-gray-900 dark:text-gray-100 min-h-screen p-4 md:p-8 transition-colors duration-200 dark">
-    <div class="max-w-6xl mx-auto">
-        <header class="mb-8 border-b border-gray-300 dark:border-gray-700 pb-4 flex justify-between items-center">
+    <div class="max-w-7xl mx-auto">
+        <header class="mb-8 border-b border-gray-300 dark:border-gray-800 pb-4 flex justify-between items-center">
             <div>
-                <h1 class="text-3xl font-bold text-blue-600 dark:text-blue-400">MCG & PAL Decoder</h1>
-                <p class="text-gray-600 dark:text-gray-400 mt-2">Restauration d'images indexées de 1993</p>
+                <h1 class="text-3xl font-bold text-blue-500 dark:text-blue-400">MCG & PAL Decoder</h1>
+                <p class="text-gray-500 dark:text-gray-400 mt-2">Analyseur de formats graphiques 1993</p>
             </div>
-            <button id="themeToggle" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 text-sm">
+            <button id="themeToggle" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 text-sm hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors">
                 🌓 Mode
             </button>
         </header>
 
         <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
             <!-- Panneau de Configuration -->
-            <div class="lg:col-span-1 space-y-6 bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-200 dark:border-gray-700 overflow-y-auto max-h-screen">
+            <div class="lg:col-span-1 space-y-6 bg-white dark:bg-gray-900 p-6 rounded-xl shadow-2xl border border-gray-200 dark:border-gray-800 overflow-y-auto max-h-[85vh]">
                 
                 <section>
-                    <label class="block text-sm font-semibold mb-2 text-blue-600 dark:text-blue-300">1. Image (.MCG)</label>
-                    <input type="file" id="fileInput" accept=".MCG" class="block w-full text-xs text-gray-500 file:mr-3 file:py-2 file:px-4 file:rounded file:bg-blue-600 file:text-white cursor-pointer">
+                    <label class="block text-sm font-bold mb-2 text-blue-500 uppercase tracking-wider">1. Image (.MCG)</label>
+                    <input type="file" id="fileInput" accept=".MCG" class="block w-full text-xs text-gray-500 file:mr-3 file:py-2 file:px-4 file:rounded-full file:border-0 file:bg-blue-600 file:text-white hover:file:bg-blue-700 cursor-pointer transition-all">
                 </section>
 
-                <section class="border-t border-gray-200 dark:border-gray-700 pt-4">
-                    <label class="block text-sm font-semibold mb-2 text-green-600 dark:text-green-300">2. Palette (.PAL)</label>
-                    <input type="file" id="palInput" accept=".PAL" class="block w-full text-xs text-gray-500 file:mr-3 file:py-2 file:px-4 file:rounded file:bg-green-600 file:text-white cursor-pointer">
+                <section class="border-t border-gray-200 dark:border-gray-800 pt-4">
+                    <label class="block text-sm font-bold mb-2 text-green-500 uppercase tracking-wider">2. Palette (.PAL)</label>
+                    <input type="file" id="palInput" accept=".PAL" class="block w-full text-xs text-gray-500 file:mr-3 file:py-2 file:px-4 file:rounded-full file:border-0 file:bg-green-600 file:text-white hover:file:bg-green-700 cursor-pointer transition-all">
                     
                     <div class="mt-4 space-y-4">
-                        <!-- Ordre des Canaux -->
                         <div>
-                            <label class="block text-[10px] font-bold uppercase text-gray-500 mb-1">Ordre des Couleurs</label>
-                            <select id="palOrder" class="w-full bg-gray-50 dark:bg-gray-900 border border-gray-300 dark:border-gray-600 text-xs p-2 rounded">
+                            <label class="block text-[10px] font-bold uppercase text-gray-400 mb-1">Ordre des Canaux</label>
+                            <select id="palOrder" class="w-full bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 text-xs p-2 rounded outline-none focus:ring-2 ring-green-500">
                                 <option value="012">RGB (Normal)</option>
                                 <option value="210">BGR (Windows)</option>
                                 <option value="120">GBR</option>
@@ -60,55 +68,81 @@
                             </select>
                         </div>
 
-                        <!-- Espacement -->
                         <div class="grid grid-cols-2 gap-2">
                             <div>
-                                <label class="block text-[10px] font-bold uppercase text-gray-500 mb-1">Octets/Couleur</label>
-                                <select id="palStride" class="w-full bg-gray-50 dark:bg-gray-900 border border-gray-300 dark:border-gray-600 text-xs p-2 rounded">
+                                <label class="block text-[10px] font-bold uppercase text-gray-400 mb-1">Octets/Couleur</label>
+                                <select id="palStride" class="w-full bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 text-xs p-2 rounded">
                                     <option value="3">3 (RGB)</option>
                                     <option value="4">4 (RGBA)</option>
                                 </select>
                             </div>
                             <div>
-                                <label class="block text-[10px] font-bold uppercase text-gray-500 mb-1">Saut En-tête</label>
-                                <input type="number" id="palOffset" value="0" min="0" class="w-full bg-gray-50 dark:bg-gray-900 border border-gray-300 dark:border-gray-600 text-xs p-2 rounded">
+                                <label class="block text-[10px] font-bold uppercase text-gray-400 mb-1">Offset Fichier</label>
+                                <input type="number" id="palOffset" value="0" min="0" class="w-full bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 text-xs p-2 rounded">
                             </div>
                         </div>
 
-                        <!-- Décalage d'Index -->
                         <div>
-                            <label class="block text-[10px] font-bold uppercase text-gray-500 mb-1">Décalage Index Palette (+/-)</label>
-                            <input type="range" id="palShift" min="-255" max="255" value="0" class="w-full accent-green-600">
-                            <div id="palShiftVal" class="text-[10px] text-center text-gray-400">0</div>
+                            <div class="flex justify-between items-center mb-1">
+                                <label class="block text-[10px] font-bold uppercase text-gray-400">Décalage Index</label>
+                                <span id="palShiftVal" class="text-[10px] font-mono text-green-500">0</span>
+                            </div>
+                            <input type="range" id="palShift" min="-255" max="255" value="0" class="w-full h-1 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-green-500">
                         </div>
 
-                        <div class="flex items-center justify-between bg-gray-100 dark:bg-gray-900 p-2 rounded border border-gray-200 dark:border-gray-700">
-                            <span class="text-[10px] font-bold uppercase">VGA Fix (x4)</span>
-                            <input type="checkbox" id="vgaFixToggle" class="w-4 h-4 text-blue-600">
+                        <div class="flex flex-col space-y-2">
+                            <label class="flex items-center justify-between bg-gray-100 dark:bg-gray-800 p-2 rounded border border-gray-200 dark:border-gray-700 cursor-pointer">
+                                <span class="text-[10px] font-bold uppercase">VGA Fix (6-bit x4)</span>
+                                <input type="checkbox" id="vgaFixToggle" class="w-4 h-4 rounded text-blue-600">
+                            </label>
+                            <label class="flex items-center justify-between bg-gray-100 dark:bg-gray-800 p-2 rounded border border-gray-200 dark:border-gray-700 cursor-pointer">
+                                <span class="text-[10px] font-bold uppercase">Inverser Couleurs</span>
+                                <input type="checkbox" id="invertToggle" class="w-4 h-4 rounded text-red-600">
+                            </label>
                         </div>
                     </div>
                 </section>
 
-                <section class="pt-4 border-t border-gray-200 dark:border-gray-700">
-                    <label class="block text-sm font-semibold mb-3">Géométrie (Largeur)</label>
-                    <div class="flex items-center space-x-2 mb-2">
-                        <button id="decBtn" class="bg-gray-100 dark:bg-gray-700 p-2 rounded border border-gray-300 dark:border-gray-600">◀</button>
-                        <input type="number" id="widthInput" value="320" class="bg-gray-50 dark:bg-gray-900 border border-gray-300 dark:border-gray-600 text-center w-full py-2 rounded font-mono text-blue-600">
-                        <button id="incBtn" class="bg-gray-100 dark:bg-gray-700 p-2 rounded border border-gray-300 dark:border-gray-600">▶</button>
+                <section class="pt-4 border-t border-gray-200 dark:border-gray-800">
+                    <label class="block text-sm font-bold mb-3 uppercase tracking-wider text-orange-500">3. Affichage</label>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between items-center mb-1">
+                                <label class="text-[10px] font-bold uppercase text-gray-400">Largeur Image</label>
+                                <input type="number" id="widthInput" value="320" class="bg-transparent text-right w-16 text-blue-500 font-mono">
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <button id="decBtn" class="bg-gray-100 dark:bg-gray-800 px-3 py-1 rounded border border-gray-300 dark:border-gray-700 hover:bg-gray-200 dark:hover:bg-gray-700">◀</button>
+                                <input type="range" id="widthRange" min="8" max="1024" value="320" class="w-full h-1 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-blue-500">
+                                <button id="incBtn" class="bg-gray-100 dark:bg-gray-800 px-3 py-1 rounded border border-gray-300 dark:border-gray-700 hover:bg-gray-200 dark:hover:bg-gray-700">▶</button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between items-center mb-1">
+                                <label class="text-[10px] font-bold uppercase text-gray-400">Zoom (Agrandissement)</label>
+                                <span id="zoomVal" class="text-[10px] font-mono text-orange-500">2x</span>
+                            </div>
+                            <input type="range" id="zoomRange" min="1" max="8" step="0.5" value="2" class="w-full h-1 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-orange-500">
+                        </div>
                     </div>
-                    <input type="range" id="widthRange" min="8" max="1024" value="320" class="w-full h-2 bg-gray-200 dark:bg-gray-700 rounded-lg appearance-none cursor-pointer accent-blue-500">
                 </section>
 
-                <div id="palettePreview" class="grid grid-cols-8 gap-1 pt-4 border-t border-gray-200 dark:border-gray-700 hidden"></div>
+                <div id="palettePreview" class="grid grid-cols-8 gap-1 pt-4 border-t border-gray-200 dark:border-gray-800 hidden"></div>
 
-                <button id="downloadBtn" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded font-bold hidden shadow-lg">Exporter PNG</button>
+                <button id="downloadBtn" class="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white py-3 rounded-xl font-bold hidden shadow-xl transition-all active:scale-95">
+                    Exporter PNG Haute Qualité
+                </button>
             </div>
 
             <!-- Zone de Visualisation -->
-            <div class="lg:col-span-3 flex flex-col items-center bg-gray-200/50 dark:bg-black/30 p-4 rounded-lg min-h-[600px] justify-center border border-gray-300 dark:border-gray-800">
-                <canvas id="canvas"></canvas>
-                <div id="stats" class="mt-6 font-mono text-xs text-gray-600 dark:text-gray-500 bg-white dark:bg-gray-800 px-4 py-2 rounded shadow border border-gray-200 dark:border-gray-700">
-                    Charger les fichiers pour analyser...
+            <div class="lg:col-span-3 flex flex-col items-center bg-gray-100 dark:bg-black/40 rounded-2xl min-h-[70vh] border border-gray-300 dark:border-gray-800 relative overflow-hidden">
+                <div class="canvas-container w-full h-full p-8" id="canvasScroll">
+                    <canvas id="canvas"></canvas>
+                </div>
+                
+                <div id="stats" class="absolute bottom-4 right-4 font-mono text-[10px] text-gray-400 bg-black/80 backdrop-blur-md px-4 py-2 rounded-full border border-white/10 shadow-2xl">
+                    Prêt pour l'analyse
                 </div>
             </div>
         </div>
@@ -118,6 +152,7 @@
         const fileInput = document.getElementById('fileInput');
         const palInput = document.getElementById('palInput');
         const vgaFixToggle = document.getElementById('vgaFixToggle');
+        const invertToggle = document.getElementById('invertToggle');
         const palOrder = document.getElementById('palOrder');
         const palStride = document.getElementById('palStride');
         const palOffset = document.getElementById('palOffset');
@@ -125,6 +160,8 @@
         const palShiftVal = document.getElementById('palShiftVal');
         const widthRange = document.getElementById('widthRange');
         const widthInput = document.getElementById('widthInput');
+        const zoomRange = document.getElementById('zoomRange');
+        const zoomVal = document.getElementById('zoomVal');
         const decBtn = document.getElementById('decBtn');
         const incBtn = document.getElementById('incBtn');
         const canvas = document.getElementById('canvas');
@@ -166,21 +203,28 @@
             reader.readAsArrayBuffer(file);
         });
 
-        [vgaFixToggle, palOrder, palStride, palOffset, palShift].forEach(el => {
-            el.addEventListener('input', processPalette);
+        [vgaFixToggle, invertToggle, palOrder, palStride, palOffset, palShift, zoomRange].forEach(el => {
+            el.addEventListener('input', () => {
+                if (el === zoomRange) {
+                    zoomVal.textContent = zoomRange.value + 'x';
+                    applyZoom();
+                } else {
+                    processPalette();
+                }
+            });
         });
 
         function processPalette() {
             if (!originalPalData) return;
             palette = [];
             const multiplier = vgaFixToggle.checked ? 4 : 1;
+            const invert = invertToggle.checked;
             const offset = parseInt(palOffset.value) || 0;
             const stride = parseInt(palStride.value);
             const order = palOrder.value.split('').map(Number);
             const shift = parseInt(palShift.value);
             palShiftVal.textContent = shift;
 
-            // Création de la palette brute
             let tempPalette = [];
             for (let i = offset; i < originalPalData.length; i += stride) {
                 const chunk = [
@@ -189,20 +233,24 @@
                     originalPalData[i+2] || 0
                 ];
                 
-                // Réorganisation selon l'ordre choisi
-                const r = chunk[order[0]];
-                const g = chunk[order[1]];
-                const b = chunk[order[2]];
+                let r = chunk[order[0]] * multiplier;
+                let g = chunk[order[1]] * multiplier;
+                let b = chunk[order[2]] * multiplier;
+
+                if (invert) {
+                    r = 255 - r;
+                    g = 255 - g;
+                    b = 255 - b;
+                }
 
                 tempPalette.push([
-                    Math.min(255, r * multiplier),
-                    Math.min(255, g * multiplier),
-                    Math.min(255, b * multiplier)
+                    Math.max(0, Math.min(255, r)),
+                    Math.max(0, Math.min(255, g)),
+                    Math.max(0, Math.min(255, b))
                 ]);
-                if (tempPalette.length >= 512) break; // Sécurité
+                if (tempPalette.length >= 1024) break;
             }
 
-            // Application du décalage d'index
             palette = new Array(256).fill([0, 0, 0]);
             for (let i = 0; i < 256; i++) {
                 const targetIdx = i + shift;
@@ -213,6 +261,11 @@
 
             updatePaletteUI();
             renderImage();
+        }
+
+        function applyZoom() {
+            const scale = zoomRange.value;
+            canvas.style.transform = `scale(${scale})`;
         }
 
         function updateWidth(val) {
@@ -232,7 +285,7 @@
             palPreview.classList.remove('hidden');
             palette.slice(0, 32).forEach(rgb => {
                 const div = document.createElement('div');
-                div.className = 'w-full pt-[100%] rounded-sm border border-black/10 dark:border-white/10';
+                div.className = 'w-full pt-[100%] rounded-sm border border-black/20';
                 div.style.backgroundColor = `rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})`;
                 palPreview.appendChild(div);
             });
@@ -258,12 +311,13 @@
                 imageData.data[pxIdx + 3] = 255;
             }
             ctx.putImageData(imageData, 0, 0);
-            stats.textContent = `${width} x ${height} | ${rawData.length} octets`;
+            applyZoom();
+            stats.textContent = `${width}x${height} | Palette: ${palette.length} couleurs | Index max: ${Math.max(...rawData)}`;
         }
 
         downloadBtn.addEventListener('click', () => {
             const link = document.createElement('a');
-            link.download = `mcg_export.png`;
+            link.download = `mcg_decode_export.png`;
             link.href = canvas.toDataURL();
             link.click();
         });
