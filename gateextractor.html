@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertisseur MCG & PAL (1993)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+    <style>
+        canvas {
+            image-rendering: pixelated;
+            background-color: #000;
+            border: 2px solid #333;
+            max-width: 100%;
+            cursor: crosshair;
+        }
+        .dark .bg-custom-app { background-color: #111827; }
+        .light .bg-custom-app { background-color: #f3f4f6; }
+    </style>
+</head>
+<body class="bg-custom-app text-gray-900 dark:text-gray-100 min-h-screen p-4 md:p-8 transition-colors duration-200 dark">
+    <div class="max-w-6xl mx-auto">
+        <header class="mb-8 border-b border-gray-300 dark:border-gray-700 pb-4 flex justify-between items-center">
+            <div>
+                <h1 class="text-3xl font-bold text-blue-600 dark:text-blue-400">MCG & PAL Decoder</h1>
+                <p class="text-gray-600 dark:text-gray-400 mt-2">Restauration d'images indexées de 1993</p>
+            </div>
+            <button id="themeToggle" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 text-sm">
+                🌓 Mode
+            </button>
+        </header>
+
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+            <!-- Panneau de Configuration -->
+            <div class="lg:col-span-1 space-y-6 bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-200 dark:border-gray-700 overflow-y-auto max-h-screen">
+                
+                <section>
+                    <label class="block text-sm font-semibold mb-2 text-blue-600 dark:text-blue-300">1. Image (.MCG)</label>
+                    <input type="file" id="fileInput" accept=".MCG" class="block w-full text-xs text-gray-500 file:mr-3 file:py-2 file:px-4 file:rounded file:bg-blue-600 file:text-white cursor-pointer">
+                </section>
+
+                <section class="border-t border-gray-200 dark:border-gray-700 pt-4">
+                    <label class="block text-sm font-semibold mb-2 text-green-600 dark:text-green-300">2. Palette (.PAL)</label>
+                    <input type="file" id="palInput" accept=".PAL" class="block w-full text-xs text-gray-500 file:mr-3 file:py-2 file:px-4 file:rounded file:bg-green-600 file:text-white cursor-pointer">
+                    
+                    <div class="mt-4 space-y-4">
+                        <!-- Ordre des Canaux -->
+                        <div>
+                            <label class="block text-[10px] font-bold uppercase text-gray-500 mb-1">Ordre des Couleurs</label>
+                            <select id="palOrder" class="w-full bg-gray-50 dark:bg-gray-900 border border-gray-300 dark:border-gray-600 text-xs p-2 rounded">
+                                <option value="012">RGB (Normal)</option>
+                                <option value="210">BGR (Windows)</option>
+                                <option value="120">GBR</option>
+                                <option value="021">RBG</option>
+                                <option value="201">BRG</option>
+                            </select>
+                        </div>
+
+                        <!-- Espacement -->
+                        <div class="grid grid-cols-2 gap-2">
+                            <div>
+                                <label class="block text-[10px] font-bold uppercase text-gray-500 mb-1">Octets/Couleur</label>
+                                <select id="palStride" class="w-full bg-gray-50 dark:bg-gray-900 border border-gray-300 dark:border-gray-600 text-xs p-2 rounded">
+                                    <option value="3">3 (RGB)</option>
+                                    <option value="4">4 (RGBA)</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-[10px] font-bold uppercase text-gray-500 mb-1">Saut En-tête</label>
+                                <input type="number" id="palOffset" value="0" min="0" class="w-full bg-gray-50 dark:bg-gray-900 border border-gray-300 dark:border-gray-600 text-xs p-2 rounded">
+                            </div>
+                        </div>
+
+                        <!-- Décalage d'Index -->
+                        <div>
+                            <label class="block text-[10px] font-bold uppercase text-gray-500 mb-1">Décalage Index Palette (+/-)</label>
+                            <input type="range" id="palShift" min="-255" max="255" value="0" class="w-full accent-green-600">
+                            <div id="palShiftVal" class="text-[10px] text-center text-gray-400">0</div>
+                        </div>
+
+                        <div class="flex items-center justify-between bg-gray-100 dark:bg-gray-900 p-2 rounded border border-gray-200 dark:border-gray-700">
+                            <span class="text-[10px] font-bold uppercase">VGA Fix (x4)</span>
+                            <input type="checkbox" id="vgaFixToggle" class="w-4 h-4 text-blue-600">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="pt-4 border-t border-gray-200 dark:border-gray-700">
+                    <label class="block text-sm font-semibold mb-3">Géométrie (Largeur)</label>
+                    <div class="flex items-center space-x-2 mb-2">
+                        <button id="decBtn" class="bg-gray-100 dark:bg-gray-700 p-2 rounded border border-gray-300 dark:border-gray-600">◀</button>
+                        <input type="number" id="widthInput" value="320" class="bg-gray-50 dark:bg-gray-900 border border-gray-300 dark:border-gray-600 text-center w-full py-2 rounded font-mono text-blue-600">
+                        <button id="incBtn" class="bg-gray-100 dark:bg-gray-700 p-2 rounded border border-gray-300 dark:border-gray-600">▶</button>
+                    </div>
+                    <input type="range" id="widthRange" min="8" max="1024" value="320" class="w-full h-2 bg-gray-200 dark:bg-gray-700 rounded-lg appearance-none cursor-pointer accent-blue-500">
+                </section>
+
+                <div id="palettePreview" class="grid grid-cols-8 gap-1 pt-4 border-t border-gray-200 dark:border-gray-700 hidden"></div>
+
+                <button id="downloadBtn" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded font-bold hidden shadow-lg">Exporter PNG</button>
+            </div>
+
+            <!-- Zone de Visualisation -->
+            <div class="lg:col-span-3 flex flex-col items-center bg-gray-200/50 dark:bg-black/30 p-4 rounded-lg min-h-[600px] justify-center border border-gray-300 dark:border-gray-800">
+                <canvas id="canvas"></canvas>
+                <div id="stats" class="mt-6 font-mono text-xs text-gray-600 dark:text-gray-500 bg-white dark:bg-gray-800 px-4 py-2 rounded shadow border border-gray-200 dark:border-gray-700">
+                    Charger les fichiers pour analyser...
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const fileInput = document.getElementById('fileInput');
+        const palInput = document.getElementById('palInput');
+        const vgaFixToggle = document.getElementById('vgaFixToggle');
+        const palOrder = document.getElementById('palOrder');
+        const palStride = document.getElementById('palStride');
+        const palOffset = document.getElementById('palOffset');
+        const palShift = document.getElementById('palShift');
+        const palShiftVal = document.getElementById('palShiftVal');
+        const widthRange = document.getElementById('widthRange');
+        const widthInput = document.getElementById('widthInput');
+        const decBtn = document.getElementById('decBtn');
+        const incBtn = document.getElementById('incBtn');
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        const stats = document.getElementById('stats');
+        const downloadBtn = document.getElementById('downloadBtn');
+        const palPreview = document.getElementById('palettePreview');
+        const themeToggle = document.getElementById('themeToggle');
+
+        let rawData = null;
+        let originalPalData = null;
+        let palette = [];
+
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+            document.body.classList.toggle('light');
+        });
+
+        fileInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = (event) => {
+                rawData = new Uint8Array(event.target.result);
+                renderImage();
+                downloadBtn.classList.remove('hidden');
+            };
+            reader.readAsArrayBuffer(file);
+        });
+
+        palInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = (event) => {
+                originalPalData = new Uint8Array(event.target.result);
+                processPalette();
+            };
+            reader.readAsArrayBuffer(file);
+        });
+
+        [vgaFixToggle, palOrder, palStride, palOffset, palShift].forEach(el => {
+            el.addEventListener('input', processPalette);
+        });
+
+        function processPalette() {
+            if (!originalPalData) return;
+            palette = [];
+            const multiplier = vgaFixToggle.checked ? 4 : 1;
+            const offset = parseInt(palOffset.value) || 0;
+            const stride = parseInt(palStride.value);
+            const order = palOrder.value.split('').map(Number);
+            const shift = parseInt(palShift.value);
+            palShiftVal.textContent = shift;
+
+            // Création de la palette brute
+            let tempPalette = [];
+            for (let i = offset; i < originalPalData.length; i += stride) {
+                const chunk = [
+                    originalPalData[i] || 0,
+                    originalPalData[i+1] || 0,
+                    originalPalData[i+2] || 0
+                ];
+                
+                // Réorganisation selon l'ordre choisi
+                const r = chunk[order[0]];
+                const g = chunk[order[1]];
+                const b = chunk[order[2]];
+
+                tempPalette.push([
+                    Math.min(255, r * multiplier),
+                    Math.min(255, g * multiplier),
+                    Math.min(255, b * multiplier)
+                ]);
+                if (tempPalette.length >= 512) break; // Sécurité
+            }
+
+            // Application du décalage d'index
+            palette = new Array(256).fill([0, 0, 0]);
+            for (let i = 0; i < 256; i++) {
+                const targetIdx = i + shift;
+                if (targetIdx >= 0 && targetIdx < tempPalette.length) {
+                    palette[i] = tempPalette[targetIdx];
+                }
+            }
+
+            updatePaletteUI();
+            renderImage();
+        }
+
+        function updateWidth(val) {
+            val = Math.max(8, Math.min(1024, val));
+            widthInput.value = val;
+            widthRange.value = val;
+            renderImage();
+        }
+
+        widthRange.addEventListener('input', () => updateWidth(parseInt(widthRange.value)));
+        widthInput.addEventListener('change', () => updateWidth(parseInt(widthInput.value)));
+        decBtn.addEventListener('click', () => updateWidth(parseInt(widthInput.value) - 1));
+        incBtn.addEventListener('click', () => updateWidth(parseInt(widthInput.value) + 1));
+
+        function updatePaletteUI() {
+            palPreview.innerHTML = '';
+            palPreview.classList.remove('hidden');
+            palette.slice(0, 32).forEach(rgb => {
+                const div = document.createElement('div');
+                div.className = 'w-full pt-[100%] rounded-sm border border-black/10 dark:border-white/10';
+                div.style.backgroundColor = `rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})`;
+                palPreview.appendChild(div);
+            });
+        }
+
+        function renderImage() {
+            if (!rawData) return;
+            const width = parseInt(widthInput.value);
+            const height = Math.ceil(rawData.length / width);
+            canvas.width = width;
+            canvas.height = height;
+            const imageData = ctx.createImageData(width, height);
+
+            for (let i = 0; i < rawData.length; i++) {
+                const colorIndex = rawData[i];
+                const pxIdx = i * 4;
+                
+                const rgb = (palette && palette[colorIndex]) ? palette[colorIndex] : [colorIndex, colorIndex, colorIndex];
+                
+                imageData.data[pxIdx] = rgb[0];
+                imageData.data[pxIdx + 1] = rgb[1];
+                imageData.data[pxIdx + 2] = rgb[2];
+                imageData.data[pxIdx + 3] = 255;
+            }
+            ctx.putImageData(imageData, 0, 0);
+            stats.textContent = `${width} x ${height} | ${rawData.length} octets`;
+        }
+
+        downloadBtn.addEventListener('click', () => {
+            const link = document.createElement('a');
+            link.download = `mcg_export.png`;
+            link.href = canvas.toDataURL();
+            link.click();
+        });
+    </script>
+</body>
+</html>
