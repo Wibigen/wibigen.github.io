@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Map Explorer - Mode 13h Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #1a1a1a; color: #e0e0e0; font-family: monospace; overflow-x: hidden; }
+        canvas { image-rendering: pixelated; border: 2px solid #333; background-color: #000; max-width: 100%; }
+        .panel { background: #262626; border: 1px solid #444; padding: 15px; border-radius: 4px; }
+        input, select { background: #111; border: 1px solid #555; color: #0f0; padding: 4px; font-size: 12px; border-radius: 2px; }
+        label { display: block; font-size: 10px; color: #aaa; margin-bottom: 2px; text-transform: uppercase; font-weight: bold; }
+        .scroll-box { max-height: 70vh; overflow: auto; background: #111; border: 1px solid #000; }
+        .tab-active { background: #166534 !important; color: white !important; }
+        .tab-btn { background: #333; color: #888; transition: all 0.2s; }
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-thumb { background: #444; border-radius: 4px; }
+        ::-webkit-scrollbar-track { background: #222; }
+    </style>
+</head>
+<body class="p-4">
+    <div class="max-w-7xl mx-auto space-y-4">
+        <header class="flex flex-wrap justify-between items-end border-b border-green-900 pb-4 gap-4">
+            <div>
+                <h1 class="text-2xl font-bold text-green-500">RETRO MAP VISUALIZER <span class="text-[10px] text-green-700 ml-2">v2.1</span></h1>
+                <p class="text-xs text-green-800">Analyseur LEVEL1 / MAP1 / PAL (BRG Support)</p>
+            </div>
+            
+            <div class="flex flex-wrap gap-4">
+                <div class="flex flex-col">
+                    <label>Tuiles (LEVEL1)</label>
+                    <input type="file" id="tileFile" class="w-40">
+                </div>
+                <div class="flex flex-col">
+                    <label>Carte (MAP1)</label>
+                    <input type="file" id="mapFile" class="w-40">
+                </div>
+                <div class="flex flex-col">
+                    <label>Palette (.PAL)</label>
+                    <input type="file" id="palFile" class="w-40">
+                </div>
+            </div>
+        </header>
+
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+            <!-- Configuration Panel -->
+            <div class="space-y-4">
+                <div class="flex w-full rounded overflow-hidden">
+                    <button id="tabMap" class="tab-btn tab-active flex-1 py-2 text-xs font-bold uppercase">Carte</button>
+                    <button id="tabTiles" class="tab-btn flex-1 py-2 text-xs font-bold uppercase">Tileset</button>
+                </div>
+
+                <div class="panel">
+                    <h2 class="text-green-400 text-[10px] font-bold mb-3 uppercase tracking-tighter">Configuration Tuiles</h2>
+                    <div class="grid grid-cols-2 gap-2">
+                        <div>
+                            <label>Largeur (px)</label>
+                            <input type="number" id="tileW" value="8" class="w-full">
+                        </div>
+                        <div>
+                            <label>Hauteur (px)</label>
+                            <input type="number" id="tileH" value="8" class="w-full">
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                        <label>Offset départ (Bytes)</label>
+                        <input type="number" id="tileOffset" value="0" class="w-full">
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <h2 class="text-green-400 text-[10px] font-bold mb-3 uppercase tracking-tighter">Configuration Carte</h2>
+                    <div class="grid grid-cols-2 gap-2">
+                        <div>
+                            <label>Largeur (cols)</label>
+                            <input type="number" id="mapW" value="256" class="w-full">
+                        </div>
+                        <div>
+                            <label>Hauteur (rows)</label>
+                            <input type="number" id="mapH" value="256" class="w-full">
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                        <label>Encodage Case</label>
+                        <select id="mapBpp" class="w-full">
+                            <option value="1">1 Octet (0-255)</option>
+                            <option value="2">2 Octets (LE)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <h2 class="text-green-400 text-[10px] font-bold mb-3 uppercase tracking-tighter">Couleurs & Rendu</h2>
+                    <label>Source Palette</label>
+                    <select id="paletteSource" class="w-full mb-2">
+                        <option value="default">VGA Standard</option>
+                        <option value="custom">Fichier .PAL importé</option>
+                        <option value="grayscale">Gris (Debug)</option>
+                    </select>
+                    
+                    <div id="palOptions" class="hidden space-y-2 mb-2">
+                        <div>
+                            <label>Ordre Couleurs</label>
+                            <select id="palOrder" class="w-full">
+                                <option value="BRG">BRG (Blue-Red-Green)</option>
+                                <option value="RGB">RGB (Standard)</option>
+                                <option value="BGR">BGR</option>
+                                <option value="GRB">GRB</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>Amplitude</label>
+                            <select id="palFormat" class="w-full">
+                                <option value="64">VGA 6-bit (0-63)</option>
+                                <option value="256">Standard 8-bit (0-255)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <label>Zoom Visuel</label>
+                    <input type="range" id="zoomLevel" min="1" max="6" value="2" class="w-full">
+                </div>
+            </div>
+
+            <!-- Viewport Principal -->
+            <div class="lg:col-span-3 space-y-4">
+                <div id="viewContainerMap" class="scroll-box">
+                    <canvas id="mapCanvas"></canvas>
+                </div>
+                
+                <div id="viewContainerTiles" class="scroll-box hidden">
+                    <canvas id="tileCanvas"></canvas>
+                </div>
+
+                <div class="panel flex justify-between items-center text-[10px]">
+                    <div class="flex gap-4">
+                        <span>MAP: <span id="infoMap" class="text-green-500">Non chargée</span></span>
+                        <span>TILES: <span id="infoTiles" class="text-green-500">Non chargées</span></span>
+                        <span>PAL: <span id="infoPal" class="text-green-500">Défaut</span></span>
+                    </div>
+                    <div class="text-slate-500">Note: Palette configurée en BRG 3-octets/couleur</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let tileData = null;
+        let mapData = null;
+        let rawPalData = null; // Stockage binaire de la palette
+        let customPalette = null; // Palette traitée [R,G,B][]
+        const vgaPalette = [];
+        let currentView = 'map';
+
+        function initDefaultPalette() {
+            const baseColors = [
+                [0,0,0],[0,0,170],[0,170,0],[0,170,170],[170,0,0],[170,0,170],[170,85,0],[170,170,170],
+                [85,85,85],[85,85,255],[85,255,85],[85,255,255],[255,85,85],[255,85,255],[255,255,85],[255,255,255]
+            ];
+            for(let i=0; i<16; i++) vgaPalette[i] = baseColors[i];
+            for(let i=16; i<256; i++) {
+                vgaPalette[i] = [(i*7)%256, (i*17)%256, (i*31)%256];
+            }
+        }
+
+        // Fonction pour réorganiser les octets selon l'ordre choisi
+        function processPalette() {
+            if(!rawPalData) return;
+            const order = document.getElementById('palOrder').value;
+            customPalette = [];
+            
+            for(let i=0; i<256; i++) {
+                const b1 = rawPalData[i*3] || 0;
+                const b2 = rawPalData[i*3+1] || 0;
+                const b3 = rawPalData[i*3+2] || 0;
+                
+                let r, g, b;
+                switch(order) {
+                    case 'BRG': b = b1; r = b2; g = b3; break;
+                    case 'RGB': r = b1; g = b2; b = b3; break;
+                    case 'BGR': b = b1; g = b2; r = b3; break;
+                    case 'GRB': g = b1; r = b2; b = b3; break;
+                    default: r = b1; g = b2; b = b3;
+                }
+                customPalette.push([r, g, b]);
+            }
+        }
+
+        function getPixelColor(idx) {
+            const source = document.getElementById('paletteSource').value;
+            if(source === 'grayscale') return [idx, idx, idx];
+            
+            let pal = vgaPalette;
+            if(source === 'custom' && customPalette) {
+                pal = customPalette;
+            }
+
+            const color = pal[idx] || [0, 0, 0];
+            
+            const format = document.getElementById('palFormat').value;
+            if(source === 'custom' && format === '64') {
+                return [color[0] * 4, color[1] * 4, color[2] * 4];
+            }
+            return color;
+        }
+
+        async function loadBinary(file) {
+            return new Promise(resolve => {
+                const reader = new FileReader();
+                reader.onload = e => resolve(new Uint8Array(e.target.result));
+                reader.readAsArrayBuffer(file);
+            });
+        }
+
+        document.getElementById('tileFile').onchange = async (e) => {
+            tileData = await loadBinary(e.target.files[0]);
+            document.getElementById('infoTiles').textContent = tileData.length + " bytes";
+            renderAll();
+        };
+
+        document.getElementById('mapFile').onchange = async (e) => {
+            mapData = await loadBinary(e.target.files[0]);
+            document.getElementById('infoMap').textContent = mapData.length + " bytes";
+            renderAll();
+        };
+
+        document.getElementById('palFile').onchange = async (e) => {
+            rawPalData = await loadBinary(e.target.files[0]);
+            processPalette();
+            document.getElementById('paletteSource').value = 'custom';
+            document.getElementById('palOptions').classList.remove('hidden');
+            document.getElementById('infoPal').textContent = "Personnalisée (BRG)";
+            renderAll();
+        };
+
+        function setTab(view) {
+            currentView = view;
+            document.getElementById('tabMap').classList.toggle('tab-active', view === 'map');
+            document.getElementById('tabTiles').classList.toggle('tab-active', view === 'tiles');
+            document.getElementById('viewContainerMap').classList.toggle('hidden', view !== 'map');
+            document.getElementById('viewContainerTiles').classList.toggle('hidden', view !== 'tiles');
+            renderAll();
+        }
+
+        document.getElementById('tabMap').onclick = () => setTab('map');
+        document.getElementById('tabTiles').onclick = () => setTab('tiles');
+
+        function renderTiles() {
+            if(!tileData) return;
+            const canvas = document.getElementById('tileCanvas');
+            const ctx = canvas.getContext('2d');
+            const tw = parseInt(document.getElementById('tileW').value);
+            const th = parseInt(document.getElementById('tileH').value);
+            const offset = parseInt(document.getElementById('tileOffset').value);
+            const zoom = parseInt(document.getElementById('zoomLevel').value);
+
+            const tilesPerRow = 32;
+            const numTiles = Math.floor((tileData.length - offset) / (tw * th));
+            
+            canvas.width = tilesPerRow * tw;
+            canvas.height = Math.ceil(numTiles / tilesPerRow) * th;
+            canvas.style.width = (canvas.width * zoom) + "px";
+
+            const imgData = ctx.createImageData(canvas.width, canvas.height);
+            
+            for(let t=0; t<numTiles; t++) {
+                const tx = (t % tilesPerRow) * tw;
+                const ty = Math.floor(t / tilesPerRow) * th;
+                
+                for(let py=0; py<th; py++) {
+                    for(let px=0; px<tw; px++) {
+                        const dataIdx = offset + (t * tw * th) + (py * tw) + px;
+                        if(dataIdx >= tileData.length) continue;
+                        const [r, g, b] = getPixelColor(tileData[dataIdx]);
+                        const cIdx = ((ty + py) * canvas.width + (tx + px)) * 4;
+                        imgData.data[cIdx] = r;
+                        imgData.data[cIdx+1] = g;
+                        imgData.data[cIdx+2] = b;
+                        imgData.data[cIdx+3] = 255;
+                    }
+                }
+            }
+            ctx.putImageData(imgData, 0, 0);
+        }
+
+        function renderMap() {
+            if(!mapData || !tileData) return;
+            const canvas = document.getElementById('mapCanvas');
+            const ctx = canvas.getContext('2d');
+            const mw = parseInt(document.getElementById('mapW').value);
+            const mh = parseInt(document.getElementById('mapH').value);
+            const tw = parseInt(document.getElementById('tileW').value);
+            const th = parseInt(document.getElementById('tileH').value);
+            const bpp = parseInt(document.getElementById('mapBpp').value);
+            const zoom = parseInt(document.getElementById('zoomLevel').value);
+            const offsetTiles = parseInt(document.getElementById('tileOffset').value);
+
+            canvas.width = mw * tw;
+            canvas.height = mh * th;
+            canvas.style.width = (canvas.width * zoom) + "px";
+
+            const imgData = ctx.createImageData(canvas.width, canvas.height);
+
+            for(let my=0; my<mh; my++) {
+                for(let mx=0; mx<mw; mx++) {
+                    const mapIdx = (my * mw + mx) * bpp;
+                    if(mapIdx + bpp > mapData.length) break;
+
+                    let tileIdx = mapData[mapIdx];
+                    if(bpp === 2) tileIdx += mapData[mapIdx+1] << 8;
+
+                    const tileStart = offsetTiles + (tileIdx * tw * th);
+                    
+                    for(let py=0; py<th; py++) {
+                        for(let px=0; px<tw; px++) {
+                            const pixelIdx = tileStart + (py * tw) + px;
+                            if(pixelIdx >= tileData.length) continue;
+
+                            const [r, g, b] = getPixelColor(tileData[pixelIdx]);
+                            const cIdx = (((my * th) + py) * canvas.width + ((mx * tw) + px)) * 4;
+                            imgData.data[cIdx] = r;
+                            imgData.data[cIdx+1] = g;
+                            imgData.data[cIdx+2] = b;
+                            imgData.data[cIdx+3] = 255;
+                        }
+                    }
+                }
+            }
+            ctx.putImageData(imgData, 0, 0);
+        }
+
+        function renderAll() {
+            if(currentView === 'map') renderMap();
+            else renderTiles();
+        }
+
+        const inputs = ['tileW', 'tileH', 'tileOffset', 'mapW', 'mapH', 'mapBpp', 'paletteSource', 'zoomLevel', 'palFormat', 'palOrder'];
+        inputs.forEach(id => {
+            document.getElementById(id).oninput = () => {
+                if(id === 'paletteSource') {
+                    document.getElementById('palOptions').classList.toggle('hidden', document.getElementById(id).value !== 'custom');
+                }
+                if(id === 'palOrder') {
+                    processPalette();
+                }
+                renderAll();
+            };
+        });
+
+        initDefaultPalette();
+    </script>
+</body>
+</html>
