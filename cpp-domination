@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ : Le Maître Absolu du Code</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Google Fonts: Space Grotesk & Fira Code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Space Grotesk', 'sans-serif'],
+                        mono: ['Fira Code', 'monospace'],
+                    },
+                    colors: {
+                        cppblue: '#00599C',
+                        cppdark: '#0D1117',
+                        cppcyan: '#00B4D8',
+                        cppgray: '#161B22',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0D1117;
+            color: #E6EDF0;
+        }
+        .glow-hover:hover {
+            box-shadow: 0 0 20px rgba(0, 180, 216, 0.4);
+            border-color: #00B4D8;
+        }
+        .text-glow {
+            text-shadow: 0 0 10px rgba(0, 180, 216, 0.5);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0D1117;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1F2937;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #00B4D8;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden selection:bg-cppcyan selection:text-cppdark">
+
+    <!-- Header Navigation -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-cppdark/80 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 bg-gradient-to-br from-cppblue to-cppcyan rounded-lg flex items-center justify-center font-mono font-bold text-white text-xl shadow-lg shadow-cppblue/20 group-hover:scale-105 transition-transform">
+                    C++
+                </div>
+                <span class="font-mono text-xl font-semibold tracking-wider text-white group-hover:text-cppcyan transition-colors">
+                    std::supreme
+                </span>
+            </a>
+            
+            <nav class="hidden md:flex items-center space-x-8 font-mono text-sm">
+                <a href="#history" class="hover:text-cppcyan transition-colors">_histoire</a>
+                <a href="#creator" class="hover:text-cppcyan transition-colors">_createur</a>
+                <a href="#features" class="hover:text-cppcyan transition-colors">_atouts</a>
+                <a href="#vs" class="hover:text-cppcyan transition-colors">_suprématie</a>
+                <a href="#game" class="hover:text-cppcyan transition-colors text-cppcyan flex items-center gap-1"><i data-lucide="gamepad-2" class="w-4 h-4"></i> play_game()</a>
+            </nav>
+
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-white hover:text-cppcyan focus:outline-none">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden bg-cppdark border-b border-gray-800 px-6 py-4 md:hidden">
+            <nav class="flex flex-col space-y-4 font-mono text-sm">
+                <a href="#history" class="hover:text-cppcyan transition-colors">_histoire</a>
+                <a href="#creator" class="hover:text-cppcyan transition-colors">_createur</a>
+                <a href="#features" class="hover:text-cppcyan transition-colors">_atouts</a>
+                <a href="#vs" class="hover:text-cppcyan transition-colors">_suprématie</a>
+                <a href="#game" class="text-cppcyan flex items-center gap-2"><i data-lucide="gamepad-2" class="w-4 h-4"></i> play_game()</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center relative pt-24 px-6 overflow-hidden">
+        <!-- Matrix-like / Grid Background -->
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,#161b22_1px,transparent_1px),linear-gradient(to_bottom,#161b22_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-40"></div>
+        
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <div class="inline-flex items-center space-x-2 bg-cppblue/10 border border-cppblue/30 rounded-full px-4 py-1.5 mb-6 text-cppcyan font-mono text-sm">
+                <span class="flex h-2.5 w-2.5 relative">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cppcyan opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-cppcyan"></span>
+                </span>
+                <span>std::cout &lt;&lt; "La vitesse absolue." &lt;&lt; std::endl;</span>
+            </div>
+
+            <h1 class="text-5xl md:text-8xl font-bold tracking-tight mb-8">
+                L'indomptable <br/>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-cppblue via-cppcyan to-emerald-400 text-glow">
+                    C++
+                </span>
+            </h1>
+
+            <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-10 leading-relaxed">
+                Quand les autres langages cherchent des compromis, le C++ dicte les règles. Proche du métal, infiniment puissant, il régit les moteurs de jeu, les systèmes critiques et l'intelligence artificielle haute performance.
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#game" class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-cppblue to-cppcyan hover:from-cppcyan hover:to-cppblue text-white font-mono font-bold rounded-lg transition-all transform hover:-translate-y-1 shadow-lg shadow-cppblue/30 flex items-center justify-center gap-2">
+                    <i data-lucide="swords" class="w-5 h-5"></i> DÉTRUIRE LES FAIBLES
+                </a>
+                <a href="#features" class="w-full sm:w-auto px-8 py-4 bg-cppgray border border-gray-700 hover:border-cppcyan text-gray-300 hover:text-white font-mono rounded-lg transition-all flex items-center justify-center gap-2">
+                    _explorer_atouts()
+                </a>
+            </div>
+        </div>
+
+        <!-- Decorative Floating Code Snippet -->
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 opacity-20 hover:opacity-50 transition-opacity pointer-events-none">
+            <pre class="font-mono text-xs text-left bg-cppgray p-4 rounded-lg border border-gray-800">
+#include &lt;iostream&gt;
+int main() {
+    std::cout &lt;&lt; "Le monde nous appartient." &lt;&lt; std::endl;
+    return 0;
+}</pre>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section id="history" class="py-24 px-6 border-t border-gray-900 bg-cppgray/30 relative">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold font-mono tracking-tight text-white mb-4">_l'histoire_du_titan</h2>
+                <div class="h-1 w-20 bg-cppcyan mx-auto"></div>
+                <p class="text-gray-400 mt-4 max-w-2xl mx-auto">Né dans les laboratoires de Bell, forgé pour surpasser les limites du langage C.</p>
+            </div>
+
+            <!-- Timeline -->
+            <div class="space-y-12 relative before:absolute before:inset-0 before:left-4 md:before:left-1/2 before:w-0.5 before:bg-gray-800">
+                
+                <!-- Card 1 -->
+                <div class="relative flex flex-col md:flex-row items-center justify-between md:odd:flex-row-reverse group">
+                    <div class="absolute left-4 md:left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-cppdark border-4 border-cppblue z-10 flex items-center justify-center text-xs font-bold text-cppcyan">1</div>
+                    <div class="w-full md:w-[45%] ml-12 md:ml-0 p-6 bg-cppgray border border-gray-800 rounded-xl transition-all glow-hover">
+                        <span class="font-mono text-cppcyan text-sm block mb-2">[ 1979 ] Le Commencement</span>
+                        <h3 class="text-xl font-bold text-white mb-2">"C with Classes"</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Bjarne Stroustrup commence ses travaux chez Bell Labs. Inspiré par le langage Simula, il souhaite ajouter de la programmation orientée objet au langage C sans sacrifier sa légendaire rapidité d'exécution.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="relative flex flex-col md:flex-row items-center justify-between md:odd:flex-row-reverse group">
+                    <div class="absolute left-4 md:left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-cppdark border-4 border-emerald-500 z-10 flex items-center justify-center text-xs font-bold text-emerald-400">2</div>
+                    <div class="w-full md:w-[45%] ml-12 md:ml-0 p-6 bg-cppgray border border-gray-800 rounded-xl transition-all glow-hover">
+                        <span class="font-mono text-emerald-400 text-sm block mb-2">[ 1983 ] Le Baptême</span>
+                        <h3 class="text-xl font-bold text-white mb-2">La Naissance Officielle du C++</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Le langage prend officiellement le nom de <strong>C++</strong>. L'opérateur d'incrémentation <code>++</code> symbolise l'évolution directe du C. De nouvelles fonctionnalités fondamentales comme les fonctions virtuelles et les surcharges d'opérateurs voient le jour.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="relative flex flex-col md:flex-row items-center justify-between md:odd:flex-row-reverse group">
+                    <div class="absolute left-4 md:left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-cppdark border-4 border-purple-500 z-10 flex items-center justify-center text-xs font-bold text-purple-400">3</div>
+                    <div class="w-full md:w-[45%] ml-12 md:ml-0 p-6 bg-cppgray border border-gray-800 rounded-xl transition-all glow-hover">
+                        <span class="font-mono text-purple-400 text-sm block mb-2">[ 1998 ] L'Âge d'Or & Standardisation</span>
+                        <h3 class="text-xl font-bold text-white mb-2">C++98 & la STL</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Premier standard ISO majeur. C'est l'introduction de la Standard Template Library (STL), offrant des structures de données (vecteurs, listes) et des algorithmes d'une efficacité monumentale.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="relative flex flex-col md:flex-row items-center justify-between md:odd:flex-row-reverse group">
+                    <div class="absolute left-4 md:left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-cppdark border-4 border-cppcyan z-10 flex items-center justify-center text-xs font-bold text-cppcyan">4</div>
+                    <div class="w-full md:w-[45%] ml-12 md:ml-0 p-6 bg-cppgray border border-gray-800 rounded-xl transition-all glow-hover">
+                        <span class="font-mono text-cppcyan text-sm block mb-2">[ 2011 - Présent ] La Renaissance Moderne</span>
+                        <h3 class="text-xl font-bold text-white mb-2">C++11, C++20 & C++23</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            C++ subit une refonte spectaculaire. Smart pointers, inférence de type (<code>auto</code>), lambdas, coroutines et concepts transforment le C++ en un langage moderne tout en conservant ses performances maximales.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Creator Section -->
+    <section id="creator" class="py-24 px-6 border-t border-gray-900 bg-cppdark">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+                
+                <!-- Avatar / Illustration -->
+                <div class="md:col-span-5 flex justify-center">
+                    <div class="relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-cppblue to-cppcyan rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-1000"></div>
+                        <div class="relative bg-cppgray p-4 rounded-2xl border border-gray-800 text-center max-w-[320px]">
+                            <!-- SVG Representation of Bjarne Stroustrup with Geek/Pixel style glasses -->
+                            <svg class="mx-auto w-48 h-48 mb-4 text-gray-500" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="45" fill="#161B22" stroke="#00B4D8" stroke-width="2"/>
+                                <!-- Hair structure (balding/academic look with side hair) -->
+                                <path d="M25 40 C 25 20, 75 20, 75 40" stroke="#4B5563" stroke-width="6" fill="none"/>
+                                <path d="M20 45 C 18 55, 22 65, 23 70" stroke="#4B5563" stroke-width="4" fill="none"/>
+                                <path d="M80 45 C 82 55, 78 65, 77 70" stroke="#4B5563" stroke-width="4" fill="none"/>
+                                <!-- Head -->
+                                <path d="M32 40 C 32 30, 68 30, 68 40 C 68 65, 60 78, 50 78 C 40 78, 32 65, 32 40 Z" fill="#F3F4F6"/>
+                                <!-- Glasses (Geek/Tech Style) -->
+                                <rect x="34" y="42" width="13" height="10" rx="2" fill="none" stroke="#111827" stroke-width="3"/>
+                                <rect x="53" y="42" width="13" height="10" rx="2" fill="none" stroke="#111827" stroke-width="3"/>
+                                <line x1="47" y1="47" x2="53" y2="47" stroke="#111827" stroke-width="3"/>
+                                <!-- Beard/Stubble -->
+                                <path d="M35 60 C 35 73, 65 73, 65 60 C 65 77, 35 77, 35 60 Z" fill="#D1D5DB"/>
+                                <!-- Smile -->
+                                <path d="M43 62 Q 50 67, 57 62" stroke="#111827" stroke-width="2" fill="none"/>
+                            </svg>
+                            <h4 class="text-white font-mono font-bold text-lg">Bjarne Stroustrup</h4>
+                            <p class="text-cppcyan font-mono text-xs">Le Dieu Créateur</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Story Text -->
+                <div class="md:col-span-7">
+                    <span class="font-mono text-cppcyan text-sm tracking-widest block mb-2">[ LE MAESTRO ]</span>
+                    <h2 class="text-3xl md:text-5xl font-bold tracking-tight text-white mb-6">"Je voulais un outil pour tout contrôler"</h2>
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        Informaticien et chercheur danois né en 1950, Bjarne Stroustrup a conçu le C++ car il en avait assez de devoir choisir entre l'élégance intellectuelle des langages haut niveau (trop lents) et la puissance brute du C ou de l'Assembleur (trop complexes pour les grands projets).
+                    </p>
+                    <blockquote class="border-l-4 border-cppcyan pl-4 italic text-gray-400 font-mono text-sm mb-6">
+                        "C rend facile de se tirer dans le pied ; C++ rend cela plus difficile, mais quand vous le faites, il vous emporte toute la jambe."
+                    </blockquote>
+                    <p class="text-gray-400 text-sm">
+                        Aujourd'hui professeur d'université et chercheur émérite, il continue d'orienter le standard de l'outil informatique le plus redoutable de notre civilisation.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Atouts / Features Grid -->
+    <section id="features" class="py-24 px-6 border-t border-gray-900 bg-cppgray/20">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold font-mono text-white mb-4">_pourquoi_le_c++_domine</h2>
+                <div class="h-1 w-20 bg-cppcyan mx-auto"></div>
+                <p class="text-gray-400 mt-4 max-w-2xl mx-auto">Les piliers techniques qui lui confèrent une supériorité absolue.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Feature 1 -->
+                <div class="bg-cppgray border border-gray-800 p-8 rounded-2xl transition-all glow-hover">
+                    <div class="w-12 h-12 rounded-lg bg-cppblue/20 text-cppcyan flex items-center justify-center mb-6">
+                        <i data-lucide="zap" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Zéro Couche d'Abstraction</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Pas de machine virtuelle, pas d'interprète. Votre code C++ est compilé directement en instructions machines binaires hautement optimisées. La vitesse est pure.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-cppgray border border-gray-800 p-8 rounded-2xl transition-all glow-hover">
+                    <div class="w-12 h-12 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-6">
+                        <i data-lucide="database" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Gestion RAII de la Mémoire</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Le principe de <em>Resource Acquisition Is Initialization</em> assure que les ressources (mémoire, fichiers, sockets) soient nettoyées à l'instant précis où elles sortent de la portée. Pas de "Garbage Collector" qui ralentit l'application.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-cppgray border border-gray-800 p-8 rounded-2xl transition-all glow-hover">
+                    <div class="w-12 h-12 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center mb-6">
+                        <i data-lucide="cpu" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Multi-Paradigme Total</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Programmation procédurale, orientée objet, ou programmation générique par templates poussée à l'extrême : le C++ ne vous dicte pas votre manière de concevoir, il vous donne toutes les clés.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Compare Section -->
+    <section id="vs" class="py-24 px-6 border-t border-gray-900 bg-cppdark">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="font-mono text-rose-500 text-sm tracking-widest block mb-2">[ SANS CONCURRENCE ]</span>
+                <h2 class="text-3xl md:text-5xl font-bold tracking-tight text-white mb-4">La Déchéance des Autres Langages</h2>
+                <div class="h-1 w-20 bg-rose-500 mx-auto"></div>
+                <p class="text-gray-400 mt-4 max-w-2xl mx-auto">Pourquoi le C++ surclasse, écrase et relègue au second plan le reste de l'écosystème.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+                
+                <!-- JS Box -->
+                <div class="bg-[#1A1810] border border-yellow-600/30 p-6 rounded-xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="font-mono text-yellow-500 font-bold text-xl">JavaScript</span>
+                            <span class="px-2 py-1 bg-yellow-500/10 text-yellow-400 font-mono text-xs rounded">Lent / Bloqué</span>
+                        </div>
+                        <h4 class="text-white font-bold mb-3">L'illusion d'un langage système</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                            Surchargé par sa machine virtuelle V8, des prototypes confus et une latence de Garbage Collector catastrophique. Bon pour animer un bouton, inutile pour la haute technologie.
+                        </p>
+                    </div>
+                    <div class="border-t border-yellow-600/20 pt-4 font-mono text-xs text-yellow-400">
+                        C++ est <span class="font-bold text-white text-sm">100x plus rapide</span>
+                    </div>
+                </div>
+
+                <!-- Ruby Box -->
+                <div class="bg-[#1C1214] border border-rose-600/30 p-6 rounded-xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="font-mono text-rose-500 font-bold text-xl">Ruby</span>
+                            <span class="px-2 py-1 bg-rose-500/10 text-rose-400 font-mono text-xs rounded">Escargot</span>
+                        </div>
+                        <h4 class="text-white font-bold mb-3">Le dinosaure du web</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                            Une syntaxe prétendument élégante qui cache une lenteur d'exécution dramatique. Sa consommation de ressources mémoire est une insulte au matériel informatique moderne.
+                        </p>
+                    </div>
+                    <div class="border-t border-rose-600/20 pt-4 font-mono text-xs text-rose-400">
+                        C++ consomme <span class="font-bold text-white text-sm">99% moins de RAM</span>
+                    </div>
+                </div>
+
+                <!-- Rust Box -->
+                <div class="bg-[#1C1612] border border-amber-700/30 p-6 rounded-xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="font-mono text-amber-500 font-bold text-xl">Rust</span>
+                            <span class="px-2 py-1 bg-amber-500/10 text-amber-400 font-mono text-xs rounded">Fanatique</span>
+                        </div>
+                        <h4 class="text-white font-bold mb-3">Le compilateur paranoïaque</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                            Un "Borrow Checker" frustrant qui force à écrire du code illisible pour rassurer le compilateur. Absence d'un héritage de classes natif efficace et écosystème immature.
+                        </p>
+                    </div>
+                    <div class="border-t border-amber-700/20 pt-4 font-mono text-xs text-amber-400">
+                        C++ offre <span class="font-bold text-white text-sm">Liberté & Maturité</span>
+                    </div>
+                </div>
+
+                <!-- Lua Box -->
+                <div class="bg-[#12161C] border border-blue-500/30 p-6 rounded-xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="font-mono text-cyan-500 font-bold text-xl">Lua</span>
+                            <span class="px-2 py-1 bg-cyan-500/10 text-cyan-400 font-mono text-xs rounded">Simpliste</span>
+                        </div>
+                        <h4 class="text-white font-bold mb-3">Le sous-traitant du script</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                            Utile uniquement parce que les moteurs écrits en... C++ l'intègrent. Son manque de typage fort, ses index commençant à 1 et ses structures limitées à des "tables" le rendent ridicule face à la puissance d'une classe C++.
+                        </p>
+                    </div>
+                    <div class="border-t border-blue-500/20 pt-4 font-mono text-xs text-cyan-400">
+                        Lua dépend entièrement du <span class="font-bold text-white text-sm">C++</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Mini Game Section -->
+    <section id="game" class="py-24 px-6 border-t border-gray-900 bg-cppgray/10">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="font-mono text-cppcyan text-sm tracking-widest block mb-2">[ DEMO INTERACTIVE ]</span>
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">C++ Arcade: Compilateur Suprême</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">
+                    Pilotez le vaisseau C++. Tirez des <strong>pointeurs laser</strong> pour désintégrer les bugs et les langages inférieurs avant qu'ils ne ralentissent le système !
+                </p>
+            </div>
+
+            <!-- Game Board Container -->
+            <div class="bg-cppgray border-2 border-gray-800 rounded-2xl overflow-hidden p-6 shadow-2xl relative">
+                
+                <!-- Instructions / HUD Overlay -->
+                <div class="flex flex-col sm:flex-row justify-between items-center mb-4 gap-4 font-mono">
+                    <div class="flex items-center gap-6">
+                        <div class="text-gray-400">SCORE: <span id="score-val" class="text-cppcyan font-bold text-lg">0</span></div>
+                        <div class="text-gray-400">SYSTÈME RAM: <span id="ram-val" class="text-emerald-400 font-bold text-lg">100%</span></div>
+                    </div>
+                    <div class="text-xs text-gray-500 flex items-center gap-2">
+                        <span><span class="bg-gray-800 px-1.5 py-0.5 rounded text-white font-bold">&larr; / &rarr;</span> ou <span class="bg-gray-800 px-1.5 py-0.5 rounded text-white font-bold">Toucher</span> pour bouger</span>
+                        <span><span class="bg-gray-800 px-1.5 py-0.5 rounded text-white font-bold">ESPACE</span> pour tirer</span>
+                    </div>
+                </div>
+
+                <!-- Actual Canvas -->
+                <div class="relative w-full aspect-[16/9] max-h-[480px] bg-cppdark rounded-lg overflow-hidden border border-gray-800">
+                    <canvas id="game-canvas" class="w-full h-full block"></canvas>
+                    
+                    <!-- Game Over screen / Start Screen -->
+                    <div id="game-overlay" class="absolute inset-0 bg-cppdark/95 flex flex-col items-center justify-center text-center p-6 transition-all duration-300">
+                        <div class="mb-6">
+                            <div class="w-16 h-16 bg-gradient-to-br from-cppblue to-cppcyan rounded-2xl flex items-center justify-center font-mono font-bold text-white text-3xl mx-auto shadow-lg shadow-cppblue/50 animate-bounce mb-4">
+                                C++
+                            </div>
+                            <h3 id="overlay-title" class="text-2xl md:text-3xl font-bold text-white font-mono mb-2">C++ Compiler Strike</h3>
+                            <p id="overlay-text" class="text-gray-400 text-sm max-w-sm mx-auto mb-6">
+                                Détruisez JS, Rust, Ruby, et Lua pour prouver la suprématie du C++.
+                            </p>
+                        </div>
+                        <button id="start-btn" class="px-8 py-3 bg-gradient-to-r from-cppblue to-cppcyan hover:from-cppcyan hover:to-cppblue text-white font-mono font-bold rounded-lg transition-transform hover:scale-105 active:scale-95 shadow-md">
+                            DÉMARRER LA COMPILATION (PLAY)
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Game Touch Controls (visible on touch devices) -->
+                <div class="flex justify-between items-center mt-4 md:hidden">
+                    <div class="flex gap-2">
+                        <button id="touch-left" class="w-16 h-16 bg-gray-800 text-white rounded-lg flex items-center justify-center text-2xl active:bg-cppblue"><i data-lucide="arrow-left"></i></button>
+                        <button id="touch-right" class="w-16 h-16 bg-gray-800 text-white rounded-lg flex items-center justify-center text-2xl active:bg-cppblue"><i data-lucide="arrow-right"></i></button>
+                    </div>
+                    <button id="touch-shoot" class="w-24 h-16 bg-gradient-to-r from-rose-500 to-red-600 text-white rounded-lg font-mono font-bold text-sm active:from-red-600 active:to-rose-500">TIRER</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 border-t border-gray-900 bg-cppdark">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 bg-cppblue rounded flex items-center justify-center font-mono font-bold text-white">
+                    ++
+                </div>
+                <span class="font-mono text-gray-500 text-sm">std::cout &lt;&lt; "Fait par des passionnés du métal." &lt;&lt; std::endl;</span>
+            </div>
+            <div class="text-gray-600 text-xs font-mono">
+                &copy; 2026 C++ Overlord. Aucune garbage collection n'a été maltraitée durant la création de ce site.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Game & Page Logic Script -->
+    <script>
+        // Init Lucide icons
+        lucide.createIcons();
+
+        // Responsive Mobile Menu
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // ------------------ GAME ENGINE ------------------
+        const canvas = document.getElementById('game-canvas');
+        const ctx = canvas.getContext('2d');
+        const overlay = document.getElementById('game-overlay');
+        const startBtn = document.getElementById('start-btn');
+        const overlayTitle = document.getElementById('overlay-title');
+        const overlayText = document.getElementById('overlay-text');
+        
+        const scoreVal = document.getElementById('score-val');
+        const ramVal = document.getElementById('ram-val');
+
+        // Touch buttons
+        const btnLeft = document.getElementById('touch-left');
+        const btnRight = document.getElementById('touch-right');
+        const btnShoot = document.getElementById('touch-shoot');
+
+        // Setup dynamic canvas size
+        function resizeCanvas() {
+            // Get parent container width
+            const rect = canvas.parentNode.getBoundingClientRect();
+            canvas.width = rect.width;
+            canvas.height = rect.height;
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        let gameActive = false;
+        let score = 0;
+        let ram = 100;
+        let playerX = 0;
+        const playerWidth = 60;
+        const playerHeight = 40;
+        let bullets = [];
+        let enemies = [];
+        let keys = {};
+        let spawnTimer = 0;
+        let touchMoveDir = 0; // -1 for left, 1 for right, 0 for none
+
+        // Enemy language dictionary with logos/colors
+        const langTypes = [
+            { name: "JS", color: "#F7DF1E", text: "JS", speed: 2, points: 10, quote: "Undefined is not a function!" },
+            { name: "Ruby", color: "#E0115F", text: "Ruby", speed: 1.5, points: 15, quote: "Trop lent !" },
+            { name: "Rust", color: "#CE412B", text: "Rust", speed: 2.2, points: 25, quote: "Borrow check !" },
+            { name: "Lua", color: "#000080", text: "Lua", speed: 3, points: 20, quote: "Table overflow !" }
+        ];
+
+        // Controls setup
+        window.addEventListener('keydown', (e) => {
+            keys[e.code] = true;
+            if (e.code === "Space" && gameActive) {
+                shootBullet();
+                e.preventDefault();
+            }
+        });
+        window.addEventListener('keyup', (e) => {
+            keys[e.code] = false;
+        });
+
+        // Touch control handlers
+        btnLeft.addEventListener('touchstart', (e) => { e.preventDefault(); touchMoveDir = -1; });
+        btnLeft.addEventListener('touchend', () => { touchMoveDir = 0; });
+        btnRight.addEventListener('touchstart', (e) => { e.preventDefault(); touchMoveDir = 1; });
+        btnRight.addEventListener('touchend', () => { touchMoveDir = 0; });
+        btnShoot.addEventListener('touchstart', (e) => {
+            e.preventDefault();
+            if (gameActive) shootBullet();
+        });
+
+        function initGame() {
+            score = 0;
+            ram = 100;
+            playerX = canvas.width / 2 - playerWidth / 2;
+            bullets = [];
+            enemies = [];
+            scoreVal.innerText = score;
+            ramVal.innerText = ram + "%";
+            ramVal.className = "text-emerald-400 font-bold text-lg";
+            spawnTimer = 0;
+        }
+
+        function shootBullet() {
+            // Cool-down check
+            if (bullets.length > 10) return; 
+            bullets.push({
+                x: playerX + playerWidth / 2 - 3,
+                y: canvas.height - playerHeight - 15,
+                width: 6,
+                height: 15,
+                speed: 8
+            });
+        }
+
+        function spawnEnemy() {
+            const type = langTypes[Math.floor(Math.random() * langTypes.length)];
+            const width = 50;
+            const height = 30;
+            const x = Math.random() * (canvas.width - width);
+            enemies.push({
+                x: x,
+                y: -height,
+                width: width,
+                height: height,
+                type: type,
+                speed: type.speed + (score / 150) // Scale speed slowly with score
+            });
+        }
+
+        function checkCollision(rect1, rect2) {
+            return rect1.x < rect2.x + rect2.width &&
+                   rect1.x + rect1.width > rect2.x &&
+                   rect1.y < rect2.y + rect2.height &&
+                   rect1.y + rect1.height > rect2.y;
+        }
+
+        function update() {
+            if (!gameActive) return;
+
+            // Player movement
+            const speed = 7;
+            if (keys["ArrowLeft"] || touchMoveDir === -1) {
+                playerX = Math.max(0, playerX - speed);
+            }
+            if (keys["ArrowRight"] || touchMoveDir === 1) {
+                playerX = Math.min(canvas.width - playerWidth, playerX + speed);
+            }
+
+            // Move bullets
+            bullets.forEach((b, index) => {
+                b.y -= b.speed;
+                if (b.y < 0) {
+                    bullets.splice(index, 1);
+                }
+            });
+
+            // Enemy Spawner
+            spawnTimer++;
+            const currentSpawnRate = Math.max(25, 60 - Math.floor(score / 5));
+            if (spawnTimer >= currentSpawnRate) {
+                spawnEnemy();
+                spawnTimer = 0;
+            }
+
+            // Move enemies
+            enemies.forEach((e, index) => {
+                e.y += e.speed;
+                
+                // Reach bottom -> decrease RAM health
+                if (e.y > canvas.height) {
+                    enemies.splice(index, 1);
+                    ram -= 15;
+                    if (ram <= 0) {
+                        ram = 0;
+                        endGame();
+                    }
+                    updateHUD();
+                    return;
+                }
+
+                // Check collision with bullets
+                bullets.forEach((b, bIndex) => {
+                    if (checkCollision(b, e)) {
+                        bullets.splice(bIndex, 1);
+                        createExplosionEffect(e.x + e.width/2, e.y + e.height/2, e.type.color);
+                        enemies.splice(index, 1);
+                        score += e.type.points;
+                        updateHUD();
+                    }
+                });
+            });
+        }
+
+        // Particle FX system for sweet modern feel
+        let particles = [];
+        function createExplosionEffect(x, y, color) {
+            for(let i=0; i<8; i++) {
+                particles.push({
+                    x: x,
+                    y: y,
+                    vx: (Math.random() - 0.5) * 6,
+                    vy: (Math.random() - 0.5) * 6,
+                    radius: Math.random() * 3 + 2,
+                    alpha: 1,
+                    color: color
+                });
+            }
+        }
+
+        function updateAndDrawParticles() {
+            particles.forEach((p, idx) => {
+                p.x += p.vx;
+                p.y += p.vy;
+                p.alpha -= 0.04;
+                if(p.alpha <= 0) {
+                    particles.splice(idx, 1);
+                    return;
+                }
+                ctx.save();
+                ctx.globalAlpha = p.alpha;
+                ctx.fillStyle = p.color;
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.restore();
+            });
+        }
+
+        function updateHUD() {
+            scoreVal.innerText = score;
+            ramVal.innerText = ram + "%";
+            if (ram < 40) {
+                ramVal.className = "text-rose-500 font-bold text-lg animate-pulse";
+            } else if (ram < 70) {
+                ramVal.className = "text-yellow-500 font-bold text-lg";
+            } else {
+                ramVal.className = "text-emerald-400 font-bold text-lg";
+            }
+        }
+
+        function draw() {
+            // Clear screen
+            ctx.fillStyle = "#0D1117";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // Draw cyber grid background inside game
+            ctx.strokeStyle = "#161B22";
+            ctx.lineWidth = 1;
+            const gridSize = 40;
+            for(let x=0; x<canvas.width; x+=gridSize) {
+                ctx.beginPath();
+                ctx.moveTo(x, 0);
+                ctx.lineTo(x, canvas.height);
+                ctx.stroke();
+            }
+            for(let y=0; y<canvas.height; y+=gridSize) {
+                ctx.beginPath();
+                ctx.moveTo(0, y);
+                ctx.lineTo(canvas.width, y);
+                ctx.stroke();
+            }
+
+            // Draw player ship: styled as futuristic C++ logo / shield
+            const py = canvas.height - playerHeight - 10;
+            ctx.fillStyle = "#00599C";
+            ctx.beginPath();
+            ctx.moveTo(playerX, py + playerHeight);
+            ctx.lineTo(playerX + playerWidth / 2, py);
+            ctx.lineTo(playerX + playerWidth, py + playerHeight);
+            ctx.closePath();
+            ctx.fill();
+
+            // Inner styling for the C++ Ship
+            ctx.fillStyle = "#00B4D8";
+            ctx.beginPath();
+            ctx.moveTo(playerX + 15, py + playerHeight - 5);
+            ctx.lineTo(playerX + playerWidth / 2, py + 12);
+            ctx.lineTo(playerX + playerWidth - 15, py + playerHeight - 5);
+            ctx.closePath();
+            ctx.fill();
+
+            // Text "C++" inside the player
+            ctx.fillStyle = "#FFFFFF";
+            ctx.font = "bold 12px 'Fira Code', monospace";
+            ctx.fillText("C++", playerX + playerWidth / 2 - 10, py + playerHeight - 8);
+
+            // Draw bullets
+            ctx.fillStyle = "#00B4D8";
+            bullets.forEach(b => {
+                ctx.shadowBlur = 10;
+                ctx.shadowColor = "#00B4D8";
+                ctx.fillRect(b.x, b.y, b.width, b.height);
+                ctx.shadowBlur = 0; // reset
+            });
+
+            // Draw enemies (inferior languages)
+            enemies.forEach(e => {
+                ctx.fillStyle = e.type.color;
+                // Draw code block / rectangle
+                ctx.beginPath();
+                ctx.roundRect(e.x, e.y, e.width, e.height, 6);
+                ctx.fill();
+
+                // Draw text logo on the enemy box
+                ctx.fillStyle = "#FFFFFF";
+                if (e.type.name === "JS") ctx.fillStyle = "#000000"; // JS looks better with dark text
+                ctx.font = "bold 12px 'Fira Code', monospace";
+                ctx.textAlign = "center";
+                ctx.fillText(e.type.text, e.x + e.width / 2, e.y + e.height / 2 + 4);
+                ctx.textAlign = "left"; // Reset alignment
+            });
+
+            // Particles
+            updateAndDrawParticles();
+        }
+
+        function gameLoop() {
+            update();
+            draw();
+            if (gameActive) {
+                requestAnimationFrame(gameLoop);
+            }
+        }
+
+        function endGame() {
+            gameActive = false;
+            overlayTitle.innerText = "Compilation interrompue !";
+            overlayText.innerHTML = `La RAM a saturé sous le poids des langages inefficaces.<br/><span class="text-white font-bold">Votre Score : ${score}</span>`;
+            startBtn.innerText = "RECOMPILER LE CODE (REPLAY)";
+            overlay.classList.remove('opacity-0', 'pointer-events-none');
+        }
+
+        // Start button trigger
+        startBtn.addEventListener('click', () => {
+            overlay.classList.add('opacity-0', 'pointer-events-none');
+            initGame();
+            gameActive = true;
+            gameLoop();
+        });
+
+    </script>
+</body>
+</html>
