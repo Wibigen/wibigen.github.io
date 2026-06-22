@@ -25,6 +25,7 @@
                         cppdark: '#0D1117',
                         cppcyan: '#00B4D8',
                         cppgray: '#161B22',
+                        elixirpurple: '#A905FA'
                     }
                 }
             }
@@ -76,7 +77,7 @@
                 <a href="#history" class="hover:text-cppcyan transition-colors">_histoire</a>
                 <a href="#creator" class="hover:text-cppcyan transition-colors">_createur</a>
                 <a href="#features" class="hover:text-cppcyan transition-colors">_atouts</a>
-                <a href="#vs" class="hover:text-cppcyan transition-colors">_suprématie</a>
+                <a href="#vs" class="hover:text-cppcyan transition-colors">_comparatif</a>
                 <a href="#game" class="hover:text-cppcyan transition-colors text-cppcyan flex items-center gap-1"><i data-lucide="gamepad-2" class="w-4 h-4"></i> play_game()</a>
             </nav>
 
@@ -93,7 +94,7 @@
                 <a href="#history" class="hover:text-cppcyan transition-colors">_histoire</a>
                 <a href="#creator" class="hover:text-cppcyan transition-colors">_createur</a>
                 <a href="#features" class="hover:text-cppcyan transition-colors">_atouts</a>
-                <a href="#vs" class="hover:text-cppcyan transition-colors">_suprématie</a>
+                <a href="#vs" class="hover:text-cppcyan transition-colors">_comparatif</a>
                 <a href="#game" class="text-cppcyan flex items-center gap-2"><i data-lucide="gamepad-2" class="w-4 h-4"></i> play_game()</a>
             </nav>
         </div>
@@ -126,7 +127,7 @@
 
             <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
                 <a href="#game" class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-cppblue to-cppcyan hover:from-cppcyan hover:to-cppblue text-white font-mono font-bold rounded-lg transition-all transform hover:-translate-y-1 shadow-lg shadow-cppblue/30 flex items-center justify-center gap-2">
-                    <i data-lucide="swords" class="w-5 h-5"></i> DÉTRUIRE LES FAIBLES
+                    <i data-lucide="swords" class="w-5 h-5"></i> ENTOMBER LES BUGS
                 </a>
                 <a href="#features" class="w-full sm:w-auto px-8 py-4 bg-cppgray border border-gray-700 hover:border-cppcyan text-gray-300 hover:text-white font-mono rounded-lg transition-all flex items-center justify-center gap-2">
                     _explorer_atouts()
@@ -314,24 +315,24 @@ int main() {
     <section id="vs" class="py-24 px-6 border-t border-gray-900 bg-cppdark">
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-16">
-                <span class="font-mono text-rose-500 text-sm tracking-widest block mb-2">[ SANS CONCURRENCE ]</span>
-                <h2 class="text-3xl md:text-5xl font-bold tracking-tight text-white mb-4">La Déchéance des Autres Langages</h2>
-                <div class="h-1 w-20 bg-rose-500 mx-auto"></div>
-                <p class="text-gray-400 mt-4 max-w-2xl mx-auto">Pourquoi le C++ surclasse, écrase et relègue au second plan le reste de l'écosystème.</p>
+                <span class="font-mono text-cppcyan text-sm tracking-widest block mb-2">[ SANS CONCURRENCE REELLE ]</span>
+                <h2 class="text-3xl md:text-5xl font-bold tracking-tight text-white mb-4">C++ face à l'Écosystème</h2>
+                <div class="h-1 w-20 bg-cppcyan mx-auto"></div>
+                <p class="text-gray-400 mt-4 max-w-2xl mx-auto">Comment le C++ surclasse les technologies courantes, et comment il s'allie avec les meilleures.</p>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
                 
                 <!-- JS Box -->
-                <div class="bg-[#1A1810] border border-yellow-600/30 p-6 rounded-xl flex flex-col justify-between">
+                <div class="bg-[#1A1810] border border-yellow-600/30 p-6 rounded-xl flex flex-col justify-between transition-all glow-hover">
                     <div>
                         <div class="flex justify-between items-start mb-4">
                             <span class="font-mono text-yellow-500 font-bold text-xl">JavaScript</span>
                             <span class="px-2 py-1 bg-yellow-500/10 text-yellow-400 font-mono text-xs rounded">Lent / Bloqué</span>
                         </div>
-                        <h4 class="text-white font-bold mb-3">L'illusion d'un langage système</h4>
+                        <h4 class="text-white font-bold mb-3">L'illusion d'un langage rapide</h4>
                         <p class="text-gray-400 text-sm leading-relaxed mb-4">
-                            Surchargé par sa machine virtuelle V8, des prototypes confus et une latence de Garbage Collector catastrophique. Bon pour animer un bouton, inutile pour la haute technologie.
+                            Surchargé par sa machine virtuelle V8, des prototypes confus et une latence de Garbage Collector catastrophique. Bon pour animer un bouton ou faire de simples requêtes, inutile pour le calcul scientifique et la 3D.
                         </p>
                     </div>
                     <div class="border-t border-yellow-600/20 pt-4 font-mono text-xs text-yellow-400">
@@ -339,25 +340,8 @@ int main() {
                     </div>
                 </div>
 
-                <!-- Ruby Box -->
-                <div class="bg-[#1C1214] border border-rose-600/30 p-6 rounded-xl flex flex-col justify-between">
-                    <div>
-                        <div class="flex justify-between items-start mb-4">
-                            <span class="font-mono text-rose-500 font-bold text-xl">Ruby</span>
-                            <span class="px-2 py-1 bg-rose-500/10 text-rose-400 font-mono text-xs rounded">Escargot</span>
-                        </div>
-                        <h4 class="text-white font-bold mb-3">Le dinosaure du web</h4>
-                        <p class="text-gray-400 text-sm leading-relaxed mb-4">
-                            Une syntaxe prétendument élégante qui cache une lenteur d'exécution dramatique. Sa consommation de ressources mémoire est une insulte au matériel informatique moderne.
-                        </p>
-                    </div>
-                    <div class="border-t border-rose-600/20 pt-4 font-mono text-xs text-rose-400">
-                        C++ consomme <span class="font-bold text-white text-sm">99% moins de RAM</span>
-                    </div>
-                </div>
-
                 <!-- Rust Box -->
-                <div class="bg-[#1C1612] border border-amber-700/30 p-6 rounded-xl flex flex-col justify-between">
+                <div class="bg-[#1C1612] border border-amber-700/30 p-6 rounded-xl flex flex-col justify-between transition-all glow-hover">
                     <div>
                         <div class="flex justify-between items-start mb-4">
                             <span class="font-mono text-amber-500 font-bold text-xl">Rust</span>
@@ -365,28 +349,31 @@ int main() {
                         </div>
                         <h4 class="text-white font-bold mb-3">Le compilateur paranoïaque</h4>
                         <p class="text-gray-400 text-sm leading-relaxed mb-4">
-                            Un "Borrow Checker" frustrant qui force à écrire du code illisible pour rassurer le compilateur. Absence d'un héritage de classes natif efficace et écosystème immature.
+                            Un "Borrow Checker" d'une rigidité extrême qui force à écrire du code complexe pour rassurer le compilateur. L'absence d'un écosystème de classes natif mature ralentit le développement par rapport à la liberté de conception totale du C++.
                         </p>
                     </div>
                     <div class="border-t border-amber-700/20 pt-4 font-mono text-xs text-amber-400">
-                        C++ offre <span class="font-bold text-white text-sm">Liberté & Maturité</span>
+                        C++ offre <span class="font-bold text-white text-sm">Flexibilité & Maturité</span>
                     </div>
                 </div>
 
-                <!-- Lua Box -->
-                <div class="bg-[#12161C] border border-blue-500/30 p-6 rounded-xl flex flex-col justify-between">
+                <!-- Elixir Box (ELOGES !) -->
+                <div class="bg-[#191124] border border-purple-500/30 p-6 rounded-xl flex flex-col justify-between transition-all glow-hover">
                     <div>
                         <div class="flex justify-between items-start mb-4">
-                            <span class="font-mono text-cyan-500 font-bold text-xl">Lua</span>
-                            <span class="px-2 py-1 bg-cyan-500/10 text-cyan-400 font-mono text-xs rounded">Simpliste</span>
+                            <span class="font-mono text-purple-400 font-bold text-xl">Elixir</span>
+                            <span class="px-2 py-1 bg-purple-500/10 text-purple-300 font-mono text-xs rounded">Le Respecté</span>
                         </div>
-                        <h4 class="text-white font-bold mb-3">Le sous-traitant du script</h4>
+                        <h4 class="text-white font-bold mb-3">La Merveille de la Concurrence</h4>
                         <p class="text-gray-400 text-sm leading-relaxed mb-4">
-                            Utile uniquement parce que les moteurs écrits en... C++ l'intègrent. Son manque de typage fort, ses index commençant à 1 et ses structures limitées à des "tables" le rendent ridicule face à la puissance d'une classe C++.
+                            Elixir mérite nos éloges : son modèle d'acteurs léger, sa tolérance aux pannes inégalée et la puissance de la machine BEAM en font un chef-d'œuvre de la distribution. C'est l'un des rares langages que nous respectons profondément.
+                        </p>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                            Mieux encore, lorsque l'architecture hautement distribuée d'Elixir a besoin d'une vitesse de calcul brute inouïe, elle fait appel à des extensions (NIFs) écrites directement en... <strong>C++</strong> ! Une synergie parfaite.
                         </p>
                     </div>
-                    <div class="border-t border-blue-500/20 pt-4 font-mono text-xs text-cyan-400">
-                        Lua dépend entièrement du <span class="font-bold text-white text-sm">C++</span>
+                    <div class="border-t border-purple-500/20 pt-4 font-mono text-xs text-purple-400">
+                        Allié parfait : <span class="font-bold text-white text-sm">Elixir + NIFs C++</span>
                     </div>
                 </div>
 
@@ -401,7 +388,8 @@ int main() {
                 <span class="font-mono text-cppcyan text-sm tracking-widest block mb-2">[ DEMO INTERACTIVE ]</span>
                 <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">C++ Arcade: Compilateur Suprême</h2>
                 <p class="text-gray-400 max-w-2xl mx-auto">
-                    Pilotez le vaisseau C++. Tirez des <strong>pointeurs laser</strong> pour désintégrer les bugs et les langages inférieurs avant qu'ils ne ralentissent le système !
+                    Pilotez le vaisseau C++. Tirez des <strong>pointeurs laser</strong> pour désintégrer les bugs JS et Rust. 
+                    <br/><span class="text-purple-400 font-bold">Astuce :</span> Attrapez les potions d'<strong>Elixir</strong> violettes pour activer un incroyable <span class="underline">tir triple temporaire</span> !
                 </p>
             </div>
 
@@ -432,7 +420,7 @@ int main() {
                             </div>
                             <h3 id="overlay-title" class="text-2xl md:text-3xl font-bold text-white font-mono mb-2">C++ Compiler Strike</h3>
                             <p id="overlay-text" class="text-gray-400 text-sm max-w-sm mx-auto mb-6">
-                                Détruisez JS, Rust, Ruby, et Lua pour prouver la suprématie du C++.
+                                Éliminez les ralentissements JS et Rust, et profitez du super-pouvoir d'Elixir !
                             </p>
                         </div>
                         <button id="start-btn" class="px-8 py-3 bg-gradient-to-r from-cppblue to-cppcyan hover:from-cppcyan hover:to-cppblue text-white font-mono font-bold rounded-lg transition-transform hover:scale-105 active:scale-95 shadow-md">
@@ -499,7 +487,6 @@ int main() {
 
         // Setup dynamic canvas size
         function resizeCanvas() {
-            // Get parent container width
             const rect = canvas.parentNode.getBoundingClientRect();
             canvas.width = rect.width;
             canvas.height = rect.height;
@@ -515,16 +502,17 @@ int main() {
         const playerHeight = 40;
         let bullets = [];
         let enemies = [];
+        let elixirDrops = []; // Powerups!
         let keys = {};
         let spawnTimer = 0;
+        let elixirSpawnTimer = 0;
+        let elixirBuffTimer = 0; // Duration of active triple shot
         let touchMoveDir = 0; // -1 for left, 1 for right, 0 for none
 
-        // Enemy language dictionary with logos/colors
+        // Enemy language dictionary with logos/colors (Removed Lua & Ruby)
         const langTypes = [
-            { name: "JS", color: "#F7DF1E", text: "JS", speed: 2, points: 10, quote: "Undefined is not a function!" },
-            { name: "Ruby", color: "#E0115F", text: "Ruby", speed: 1.5, points: 15, quote: "Trop lent !" },
-            { name: "Rust", color: "#CE412B", text: "Rust", speed: 2.2, points: 25, quote: "Borrow check !" },
-            { name: "Lua", color: "#000080", text: "Lua", speed: 3, points: 20, quote: "Table overflow !" }
+            { name: "JS", color: "#F7DF1E", text: "JS", speed: 2.2, points: 10 },
+            { name: "Rust", color: "#CE412B", text: "Rust", speed: 2.5, points: 25 }
         ];
 
         // Controls setup
@@ -555,22 +543,54 @@ int main() {
             playerX = canvas.width / 2 - playerWidth / 2;
             bullets = [];
             enemies = [];
+            elixirDrops = [];
+            elixirBuffTimer = 0;
             scoreVal.innerText = score;
             ramVal.innerText = ram + "%";
             ramVal.className = "text-emerald-400 font-bold text-lg";
             spawnTimer = 0;
+            elixirSpawnTimer = 0;
         }
 
         function shootBullet() {
-            // Cool-down check
-            if (bullets.length > 10) return; 
-            bullets.push({
-                x: playerX + playerWidth / 2 - 3,
-                y: canvas.height - playerHeight - 15,
-                width: 6,
-                height: 15,
-                speed: 8
-            });
+            if (elixirBuffTimer > 0) {
+                // Triple shot! Straight laser + two angled lasers
+                bullets.push({
+                    x: playerX + playerWidth / 2 - 3,
+                    y: canvas.height - playerHeight - 15,
+                    width: 6,
+                    height: 15,
+                    speed: 10,
+                    angle: 0
+                });
+                bullets.push({
+                    x: playerX + 10,
+                    y: canvas.height - playerHeight - 10,
+                    width: 6,
+                    height: 15,
+                    speed: 9,
+                    angle: -0.25
+                });
+                bullets.push({
+                    x: playerX + playerWidth - 16,
+                    y: canvas.height - playerHeight - 10,
+                    width: 6,
+                    height: 15,
+                    speed: 9,
+                    angle: 0.25
+                });
+            } else {
+                // Classic standard single shot
+                if (bullets.length > 15) return; 
+                bullets.push({
+                    x: playerX + playerWidth / 2 - 3,
+                    y: canvas.height - playerHeight - 15,
+                    width: 6,
+                    height: 15,
+                    speed: 8,
+                    angle: 0
+                });
+            }
         }
 
         function spawnEnemy() {
@@ -584,7 +604,20 @@ int main() {
                 width: width,
                 height: height,
                 type: type,
-                speed: type.speed + (score / 150) // Scale speed slowly with score
+                speed: type.speed + (score / 200) // Scale speed slowly with score
+            });
+        }
+
+        function spawnElixir() {
+            const width = 30;
+            const height = 40;
+            const x = Math.random() * (canvas.width - width);
+            elixirDrops.push({
+                x: x,
+                y: -height,
+                width: width,
+                height: height,
+                speed: 1.8
             });
         }
 
@@ -598,6 +631,11 @@ int main() {
         function update() {
             if (!gameActive) return;
 
+            // Handle active Elixir buff duration
+            if (elixirBuffTimer > 0) {
+                elixirBuffTimer--;
+            }
+
             // Player movement
             const speed = 7;
             if (keys["ArrowLeft"] || touchMoveDir === -1) {
@@ -610,18 +648,41 @@ int main() {
             // Move bullets
             bullets.forEach((b, index) => {
                 b.y -= b.speed;
-                if (b.y < 0) {
+                b.x += b.angle * b.speed; // Account for diagonal triple shots
+                if (b.y < 0 || b.x < 0 || b.x > canvas.width) {
                     bullets.splice(index, 1);
                 }
             });
 
             // Enemy Spawner
             spawnTimer++;
-            const currentSpawnRate = Math.max(25, 60 - Math.floor(score / 5));
+            const currentSpawnRate = Math.max(20, 50 - Math.floor(score / 8));
             if (spawnTimer >= currentSpawnRate) {
                 spawnEnemy();
                 spawnTimer = 0;
             }
+
+            // Elixir Potion Spawner (Spawns periodically every ~300 frames)
+            elixirSpawnTimer++;
+            if (elixirSpawnTimer >= 320) {
+                spawnElixir();
+                elixirSpawnTimer = 0;
+            }
+
+            // Move Elixir power-ups
+            elixirDrops.forEach((d, index) => {
+                d.y += d.speed;
+
+                // Check collision with player
+                const playerRect = { x: playerX, y: canvas.height - playerHeight - 10, width: playerWidth, height: playerHeight };
+                if (checkCollision(d, playerRect)) {
+                    elixirDrops.splice(index, 1);
+                    elixirBuffTimer = 360; // ~6 seconds of triple shot power!
+                    createExplosionEffect(d.x + d.width/2, d.y + d.height/2, "#A905FA");
+                } else if (d.y > canvas.height) {
+                    elixirDrops.splice(index, 1);
+                }
+            });
 
             // Move enemies
             enemies.forEach((e, index) => {
@@ -723,6 +784,20 @@ int main() {
 
             // Draw player ship: styled as futuristic C++ logo / shield
             const py = canvas.height - playerHeight - 10;
+            
+            // Draw a temporary purple shield glow if Elixir buff is active
+            if (elixirBuffTimer > 0) {
+                ctx.strokeStyle = "#A905FA";
+                ctx.lineWidth = 3;
+                ctx.shadowBlur = 15;
+                ctx.shadowColor = "#A905FA";
+                ctx.beginPath();
+                ctx.arc(playerX + playerWidth/2, py + playerHeight/2, playerWidth * 0.7, 0, Math.PI * 2);
+                ctx.stroke();
+                ctx.shadowBlur = 0; // reset
+            }
+
+            // Main ship geometry
             ctx.fillStyle = "#00599C";
             ctx.beginPath();
             ctx.moveTo(playerX, py + playerHeight);
@@ -746,15 +821,42 @@ int main() {
             ctx.fillText("C++", playerX + playerWidth / 2 - 10, py + playerHeight - 8);
 
             // Draw bullets
-            ctx.fillStyle = "#00B4D8";
             bullets.forEach(b => {
+                ctx.fillStyle = elixirBuffTimer > 0 ? "#A905FA" : "#00B4D8";
                 ctx.shadowBlur = 10;
-                ctx.shadowColor = "#00B4D8";
+                ctx.shadowColor = elixirBuffTimer > 0 ? "#A905FA" : "#00B4D8";
                 ctx.fillRect(b.x, b.y, b.width, b.height);
                 ctx.shadowBlur = 0; // reset
             });
 
-            // Draw enemies (inferior languages)
+            // Draw Elixir falling potions (Buffs)
+            elixirDrops.forEach(d => {
+                ctx.fillStyle = "#A905FA";
+                ctx.shadowBlur = 15;
+                ctx.shadowColor = "#A905FA";
+                
+                // Draw bottle shape (little rounded rect + neck)
+                ctx.beginPath();
+                ctx.roundRect(d.x, d.y + 10, d.width, d.height - 10, 8); // body
+                ctx.roundRect(d.x + d.width/2 - 4, d.y, 8, 10, 2); // neck
+                ctx.fill();
+
+                // Draw a white glowing liquid level inside the bottle
+                ctx.fillStyle = "#FFFFFF";
+                ctx.beginPath();
+                ctx.arc(d.x + d.width/2, d.y + d.height - 12, 5, 0, Math.PI * 2);
+                ctx.fill();
+
+                // Text "EX"
+                ctx.fillStyle = "#FFFFFF";
+                ctx.font = "bold 9px sans-serif";
+                ctx.textAlign = "center";
+                ctx.fillText("EX", d.x + d.width/2, d.y + 24);
+                ctx.textAlign = "left";
+                ctx.shadowBlur = 0;
+            });
+
+            // Draw enemies (JS and Rust only)
             enemies.forEach(e => {
                 ctx.fillStyle = e.type.color;
                 // Draw code block / rectangle
@@ -770,6 +872,13 @@ int main() {
                 ctx.fillText(e.type.text, e.x + e.width / 2, e.y + e.height / 2 + 4);
                 ctx.textAlign = "left"; // Reset alignment
             });
+
+            // If Elixir buff is active, print nice visual indicator in top left corner of canvas
+            if (elixirBuffTimer > 0) {
+                ctx.fillStyle = "#A905FA";
+                ctx.font = "bold 14px 'Fira Code', monospace";
+                ctx.fillText("⚡ BUFF ELIXIR : TIR TRIPLE (" + Math.ceil(elixirBuffTimer / 60) + "s) ⚡", 15, 30);
+            }
 
             // Particles
             updateAndDrawParticles();
