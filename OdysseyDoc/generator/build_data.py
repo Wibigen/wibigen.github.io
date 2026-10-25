@@ -178,7 +178,7 @@ def pick(rs):
 
 def main():
     os.makedirs(DATA, exist_ok=True)
-    for d in ('e', 'src'):
+    for d in ('e', 'src', 'gh'):
         p = os.path.join(DATA, d)
         if os.path.isdir(p): shutil.rmtree(p)
         os.makedirs(p)
@@ -186,6 +186,8 @@ def main():
     recs = load_clang()
     print('USR uniques', len(recs))
     binary = json.load(open('binary.json'))
+    xrefs = {int(k): v for k, v in json.load(open('xrefs.json')).items()} if os.path.exists('xrefs.json') else {}
+    hookx = load_ghidra_export(binary)
 
     ents = []         # dicts
     by_usr = {}
@@ -582,6 +584,98 @@ def main():
         else:
             e['st'] = 0
 
+    # 7b) call graph, return-type provenance, hook data
+    off2ent = {}
+    for e in ents:
+        for b in e.get('bin', []):
+            off2ent.setdefault(b['off'], e['id'])
+    calls = collections.defaultdict(set)      # entity -> exact callee entities
+    amb = collections.defaultdict(set)        # entity -> frozenset of candidate entities
+    for off, v in xrefs.items():
+        src = off2ent.get(off)
+        if src is None:
+            continue
+        exact, groups = (v, []) if v and isinstance(v[0], int) else v
+        calls[src] |= {off2ent[c] for c in exact if c in off2ent}
+        for g in groups:
+            ids = frozenset(off2ent[c] for c in g if c in off2ent)
+            if len(ids) == 1:
+                calls[src] |= ids
+            elif ids:
+                amb[src].add(ids)
+    for off, info in hookx.items():          # Ghidra export call graph (exact)
+        src = off2ent.get(off)
+        if src is not None:
+            calls[src] |= {off2ent[c] for c in info.get('c', []) if c in off2ent}
+    # nerves: (anonymous namespace)::<Class>Nrv<State>::execute calls <Class>::exe<State>
+    # (anonymous-namespace functions have no Ghidra pseudo-code, so add these edges by convention)
+    fn_by_q = collections.defaultdict(list)
+    for e in ents:
+        if e['k'] in ('method', 'func') and e.get('bin'):
+            fn_by_q[e['q']].append(e['id'])
+    cls_names = collections.defaultdict(list)
+    for e in ents:
+        if e['k'] in ('class', 'struct', 'tclass', 'xclass'):
+            cls_names[e['n']].append(e['q'])
+    nrv_re = re.compile(r'(?:^|::)([A-Za-z_]\w*?)Nrv([A-Za-z_]\w*)::(execute|executeOnEnd)$')
+    nnerve = 0
+    for e in ents:
+        if e['k'] != 'method' or not e.get('bin'):
+            continue
+        m = nrv_re.search(e['q'])
+        if not m:
+            continue
+        cls, state, which = m.groups()
+        target = ('exe' if which == 'execute' else 'end') + state
+        prefix = e['q'][:e['q'].find('(anonymous@')] if '(anonymous@' in e['q'] else ''
+        cands = sorted(cls_names.get(cls, []), key=lambda q: (not q.startswith(prefix), len(q)))
+        for cq in cands:
+            hit = fn_by_q.get(cq + '::' + target)
+            if hit:
+                calls[e['id']].add(hit[0]); nnerve += 1
+                break
+    callers = collections.defaultdict(set)
+    callers_amb = collections.defaultdict(set)
+    for src, cs in calls.items():
+        cs.discard(src)
+        if cs:
+            ents[src]['calls'] = sorted(cs)
+            for c in cs:
+                callers[c].add(src)
+    for src, groups in amb.items():
+        gl = [sorted(g) for g in groups if not (g & calls[src])]
+        if gl:
+            ents[src]['callsAmb'] = sorted(gl)
+            for g in gl:
+                for c in g:
+                    callers_amb[c].add(src)
+    for c, srcs in callers.items():
+        ents[c]['callers'] = sorted(srcs)
+    for c, srcs in callers_amb.items():
+        rest = srcs - callers.get(c, set())
+        if rest:
+            ents[c]['callersAmb'] = sorted(rest)
+    print('call graph:', sum(len(e.get('calls', [])) for e in ents), 'exact edges,', nnerve, 'nerve edges,',
+          sum(len(e.get('callsAmb', [])) for e in ents), 'ambiguous call sites')
+    FNK = ('func', 'method', 'ctor', 'dtor', 'conv', 'tfunc', 'tmethod', 'sym')
+    for e in ents:
+        if e['k'] not in FNK:
+            continue
+        if e['k'] in ('ctor', 'dtor'):
+            e['rsrc'] = 'na'
+        elif not e.get('binonly'):
+            e['rsrc'] = 'verified' if e['st'] in (1, 2, 3) else 'declared'
+        elif e.get('ret'):
+            e['rsrc'] = 'mangled'
+        elif e.get('gret'):
+            e['rsrc'] = 'ghidra'
+        else:
+            e['rsrc'] = 'unknown'
+        for b in e.get('bin', []):
+            hx = hookx.get(b['off'])
+            if hx:
+                b['hk'] = {k: v for k, v in hx.items() if k != 'c'}
+
     # 8) unique slugs (URLs)
     slug_count = collections.Counter()
     for e in ents:
@@ -633,6 +727,15 @@ def main():
         with open(os.path.join(DATA, 'src', '%d.js' % file_idx[p]), 'w') as f:
             f.write('DOC.got("src/%d",%s);' % (file_idx[p], json.dumps(txt, ensure_ascii=False)))
 
+    def default_slug(e):
+        if e['k'] == 'unit':
+            return None
+        p = e.get('p')
+        if p is None:
+            return e['n']
+        pq = ents[p]['q'] if ents[p]['k'] != 'unit' else None
+        return (pq + '::' + e['n']) if pq else None
+
     idx_out = []
     for e in ents:
         flags = 0
@@ -642,7 +745,7 @@ def main():
         if 'virtual' in e.get('flags', []) or 'override' in e.get('flags', []): flags |= 8
         if 'static' in e.get('flags', []): flags |= 16
         if e.get('def'): flags |= 32
-        row = [e['slug'], KMAP[e['k']], e['n'], e.get('p') if e.get('p') is not None else -1,
+        row = [0 if e['slug'] == default_slug(e) else e['slug'], KMAP[e['k']], e['n'], e.get('p') if e.get('p') is not None else -1,
                e['st'], bundle_of[e['id']], flags, e.get('u', -1)]
         idx_out.append(row)
 
@@ -656,9 +759,9 @@ def main():
                      ('lib/NintendoSDK-NEX', 'open-ead/NintendoSDK-NEX'), ('lib/NintendoSDK', 'open-ead/nnheaders')]:
         subs[sp] = [repo, git_rev(os.path.join(R, sp))]
     meta = {'decomp_rev': git_rev(R), 'ghidra_rev': git_rev(G),
-            'decomp_repo': 'Wibigen/OdysseyDecomp', 'ghidra_repo': 'Wibigen/OdysseyDecomp-GhidraPseudoCodes',
+            'decomp_repo': 'MonsterDruide1/OdysseyDecomp', 'ghidra_repo': 'Wibigen/OdysseyDecomp-GhidraPseudoCodes',
             'stats': stats, 'bytes': sbytes, 'kinds': kcount, 'nbin': len(binary),
-            'kmap': list(KMAP.keys()), 'subs': subs}
+            'kmap': list(KMAP.keys()), 'subs': subs, 'hookx': bool(hookx), 'game': '1.0.0'}
     SN = ['Matching', 'NonMatchingMinor', 'NonMatchingMajor', 'NotDecompiled']
     ustats = [[u['id']] + [u['st'].get(k, 0) for k in SN] + [u['bytes'].get(k, 0) for k in SN]
               for u in units.values() if u['st']]
@@ -667,9 +770,10 @@ def main():
     nerv = [[e['id'], len(e['nerves'])] for e in ents if e.get('nerves')]
     addr = sorted([b['off'], e['id']] for e in ents for b in e.get('bin', []))
     with open(os.path.join(DATA, 'index.js'), 'w') as f:
-        f.write('DOC.got("index",')
-        json.dump({'meta': meta, 'e': idx_out, 'files': fl_out, 'addr': addr, 'ustats': ustats, 'inh': inh, 'nerv': nerv}, f, ensure_ascii=False, separators=(',', ':'))
-        f.write(');')
+        payload = json.dumps({'meta': meta, 'e': idx_out, 'files': fl_out, 'addr': addr, 'ustats': ustats,
+                              'inh': inh, 'nerv': nerv}, ensure_ascii=False, separators=(',', ':'))
+        # JSON.parse on a string literal is parsed much faster by JS engines than an object literal
+        f.write('DOC.got("index",JSON.parse(' + json.dumps(payload, ensure_ascii=False) + '));')
 
     # per-bundle details
     def ids_link(lst):
@@ -680,7 +784,7 @@ def main():
         for k in ('q', 'acc', 'cm', 'decl', 'def', 'ret', 'gret', 'params', 'flags', 'mangled', 'tp', 'size',
                   'align', 'bases', 'derived', 'complete', 'fwd', 'underlying', 'scoped', 'values', 'type',
                   'fields', 'friends', 'nerves', 'factory', 'overrides', 'overby', 'dem', 'files', 'inferred',
-                  'obj', 'binonly'):
+                  'obj', 'binonly', 'calls', 'callers', 'callsAmb', 'callersAmb', 'rsrc'):
             v = e.get(k)
             if v not in (None, [], {}, ''):
                 d[k] = v
@@ -713,6 +817,26 @@ def main():
             json.dump(m, f, ensure_ascii=False, separators=(',', ':'))
             f.write(');')
 
+    # Ghidra pseudo-code, one file per entity bundle (loaded only when a function page opens)
+    gh_bundles = collections.defaultdict(dict)
+    for e in ents:
+        for bb in e.get('bin', []):
+            for g in bb.get('gh', []):
+                gh_bundles[bundle_of[e['id']]][g[0]] = None
+    ngh = 0
+    for b, paths in gh_bundles.items():
+        texts = {}
+        for path in paths:
+            fp = os.path.join(G, path)
+            if os.path.isfile(fp):
+                texts[path] = open(fp, encoding='utf-8', errors='replace').read()
+        with open(os.path.join(DATA, 'gh', '%d.js' % b), 'w') as f:
+            f.write('DOC.got("gh/%d",' % b)
+            json.dump(texts, f, ensure_ascii=False, separators=(',', ':'))
+            f.write(');')
+        ngh += len(texts)
+    print('ghidra pseudo-code files bundled:', ngh)
+
     # strings and data symbols
     strings = []
     with open(os.path.join(R, 'data/data_strings.csv'), encoding='utf-8', errors='replace') as f:
@@ -735,6 +859,38 @@ def main():
                   f, ensure_ascii=False, separators=(',', ':'))
         f.write(');')
     print('ok', kcount)
+
+
+def load_ghidra_export(binary):
+    """Reads the optional ExportOdysseyDoc.java output (GHIDRA_EXPORT env var).
+    Returns {file_list offset: {'i', 'into', 'loop', 'c', 'es'}} with offsets converted to file_list space."""
+    path = os.environ.get('GHIDRA_EXPORT')
+    if not path or not os.path.isfile(path):
+        return {}
+    rows = []
+    with open(path, encoding='utf-8') as f:
+        for line in f:
+            line = line.strip()
+            if line:
+                rows.append(json.loads(line))
+    sizes = {b['off']: b['size'] for b in binary}
+    # find the address delta between the Ghidra program and file_list offsets
+    best, best_hits = None, -1
+    for delta in (0x100000, 0x7100000000, 0x7100100000, 0, 0x8000000000):
+        hits = sum(1 for r in rows[:5000] if sizes.get(int(r['a'], 16) - delta) == r['s'])
+        if hits > best_hits:
+            best, best_hits = delta, hits
+    print('ghidra export: %d functions, address delta %#x (%d size matches in sample)' % (len(rows), best, best_hits))
+    out = {}
+    for r in rows:
+        off = int(r['a'], 16) - best
+        if off not in sizes:
+            continue
+        out[off] = {'i': r.get('i', [])[:6], 'es': r['s'],
+                    'into': [[int(t, 16) - best, int(fr, 16) - best] for t, fr in r.get('into', [])],
+                    'loop': [int(x, 16) - best for x in r.get('loop', [])],
+                    'c': [int(x, 16) - best for x in r.get('c', [])]}
+    return out
 
 
 def ghidra_ret(sig):

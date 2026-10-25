@@ -131,5 +131,19 @@ const HL = (() => {
     return out;
   }
 
-  return { lines, block, type, ctxFromEntity, ctxFromText };
+  /** Fully qualifies the type names of a C++ type string, resolving them from the given context
+   *  ("const ActorInitInfo &" in al:: → "const al::ActorInitInfo &"). */
+  function qualify(str, ctx = ['']) {
+    if (!str || !IX.ready) return str;
+    const TYPEK = ['class', 'struct', 'union', 'tclass', 'xclass', 'enum', 'typedef', 'alias'];
+    return str.replace(/(::\s*)?\b([A-Za-z_]\w*)\b/g, (m, pre, id) => {
+      if (pre || KW.has(id) || BUILTIN_T.has(id)) return m;
+      const t = resolve(id, false, ctx);
+      if (t < 0 || !TYPEK.includes(IX.kind(t))) return m;
+      const q = IX.q(t);
+      return q.endsWith(id) && !q.includes('(anonymous@') ? q : m;
+    });
+  }
+
+  return { lines, block, type, ctxFromEntity, ctxFromText, qualify };
 })();

@@ -1,0 +1,1 @@
+DOC.got("gh/380",{"PlayerInfo/PlayerInfo.cpp":"// Nom démêlé : PlayerInfo::PlayerInfo\n// Symbole manglé : PlayerInfo\n// void __thiscall PlayerInfo::PlayerInfo(PlayerInfo *this); @ .text::0054a970\n\n\n/* PlayerInfo::PlayerInfo() */\n\nvoid __thiscall PlayerInfo::PlayerInfo(PlayerInfo *this)\n\n{\n  memset(this,0,0x149);\n  return;\n}\n\n"});

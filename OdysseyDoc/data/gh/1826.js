@@ -1,0 +1,1 @@
+DOC.got("gh/1826",{"al/IUseRanking/isAvailableRanking_.text_0045a2f4.cpp":"// Nom démêlé : al::IUseRanking::isAvailableRanking\n// Symbole manglé : isAvailableRanking\n// undefined8 al::IUseRanking::isAvailableRanking(void); @ .text::0045a2f4\n\n\n/* al::IUseRanking::isAvailableRanking() const */\n\nundefined8 al::IUseRanking::isAvailableRanking(void)\n\n{\n  return 0;\n}\n\n"});

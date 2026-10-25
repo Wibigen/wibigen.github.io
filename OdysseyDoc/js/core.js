@@ -56,6 +56,17 @@ const IX = {
   init(d) {
     this.meta = d.meta; this.E = d.e; this.K = d.meta.kmap; this.files = d.files; this.addr = d.addr;
     const n = this.E.length;
+    // rows store 0 instead of the slug when it is simply "<parent qname>::<name>"
+    const E = this.E;
+    const qOf = s => { const t = s.lastIndexOf('~'); if (t > 0 && /^~\d+$/.test(s.slice(t))) s = s.slice(0, t); return s.startsWith('file:') ? s.slice(5) : s; };
+    const calc = i => {
+      const r = E[i];
+      if (r[0] !== 0) return r[0];
+      const p = r[3];
+      r[0] = p >= 0 ? qOf(calc(p)) + '::' + r[2] : r[2];
+      return r[0];
+    };
+    for (let i = 0; i < n; i++) calc(i);
     this.kids = new Array(n);
     this.nameL = new Array(n); this.qL = new Array(n);
     const TYPE = new Set(['class', 'struct', 'union', 'tclass', 'xclass', 'enum', 'typedef', 'alias']);
@@ -201,14 +212,6 @@ const U = {
     }
     return `https://github.com/${m.decomp_repo}/blob/${m.decomp_rev}/${path}${line ? '#L' + line + (end && end !== line ? '-L' + end : '') : ''}`;
   },
-  ghidraUrl(path) {
-    const m = IX.meta;
-    return `https://github.com/${m.ghidra_repo}/blob/${m.ghidra_rev}/${path.split('/').map(encodeURIComponent).join('/')}`;
-  },
-  ghidraRaw(path) {
-    const m = IX.meta;
-    return `https://raw.githubusercontent.com/${m.ghidra_repo}/${m.ghidra_rev}/${path.split('/').map(encodeURIComponent).join('/')}`;
-  },
   objToCpp(obj) {
     let o = obj.replace(/\.o$/, '');
     const h = o.split('/')[0];
@@ -246,33 +249,9 @@ async function details(ids) {
 }
 async function sourceText(fi) { return DOC.load('src/' + fi); }
 
-/** Ghidra pseudo-code: local pack (data/ghidra-pack/...) or GitHub. */
-async function ghidraText(path) {
-  const key = 'gh/' + path;
-  if (key in DOC.cache) return DOC.cache[key];
-  try {
-    const h = cyrb53(path);
-    return await DOC.load(key, null, `data/ghidra-pack/${h.slice(0, 2)}/${h}.js`);
-  } catch (e) {
-    const r = await fetch(U.ghidraRaw(path));
-    if (!r.ok) throw new Error('HTTP ' + r.status);
-    const t = await r.text();
-    DOC.cache[key] = t;
-    return t;
-  }
-}
-
-/** cyrb53 hash (same as generator/build_ghidra_pack.py): Ghidra pack file names */
-function cyrb53(str, seed = 0) {
-  let h1 = 0xdeadbeef ^ seed, h2 = 0x41c6ce57 ^ seed;
-  for (let i = 0, ch; i < str.length; i++) {
-    ch = str.charCodeAt(i);
-    h1 = Math.imul(h1 ^ ch, 2654435761);
-    h2 = Math.imul(h2 ^ ch, 1597334677);
-  }
-  h1 = Math.imul(h1 ^ (h1 >>> 16), 2246822507);
-  h1 ^= Math.imul(h2 ^ (h2 >>> 13), 3266489909);
-  h2 = Math.imul(h2 ^ (h2 >>> 16), 2246822507);
-  h2 ^= Math.imul(h1 ^ (h1 >>> 13), 3266489909);
-  return (4294967296 * (2097151 & h2) + (h1 >>> 0)).toString(16);
+/** Ghidra pseudo-code, bundled locally in data/gh/<bundle>.js (same bundle number as the entity). */
+async function ghidraText(path, bundle) {
+  const b = await DOC.load('gh/' + bundle);
+  if (!(path in b)) throw new Error('missing ' + path);
+  return b[path];
 }

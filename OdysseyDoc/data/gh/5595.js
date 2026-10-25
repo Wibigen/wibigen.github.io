@@ -1,0 +1,1 @@
+DOC.got("gh/5595",{"sead/hostio/Node/getNodeClassType.cpp":"// Nom démêlé : sead::hostio::Node::getNodeClassType\n// Symbole manglé : getNodeClassType\n// undefined8 sead::hostio::Node::getNodeClassType(void); @ .text::006394c8\n\n\n/* sead::hostio::Node::getNodeClassType() const */\n\nundefined8 sead::hostio::Node::getNodeClassType(void)\n\n{\n  return 1;\n}\n\n"});

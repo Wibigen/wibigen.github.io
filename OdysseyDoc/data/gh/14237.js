@@ -1,0 +1,1 @@
+DOC.got("gh/14237",{"nn/atk/detail/fnd/Time/Current.cpp":"// Nom démêlé : nn::atk::detail::fnd::Time::Current\n// Symbole manglé : Current\n// void nn::atk::detail::fnd::Time::Current(void); @ .text::00bd557c\n\n\n/* nn::atk::detail::fnd::Time::Current() */\n\nvoid nn::atk::detail::fnd::Time::Current(void)\n\n{\n  (*(code *)PTR_GetSystemTick_01f4d778)();\n  return;\n}\n\n"});

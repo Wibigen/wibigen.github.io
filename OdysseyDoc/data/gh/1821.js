@@ -1,0 +1,1 @@
+DOC.got("gh/1821",{"al/IUsePadDataReader/close_.text_00b4dbe0.cpp":"// Nom démêlé : al::IUsePadDataReader::close\n// Symbole manglé : close\n// void al::IUsePadDataReader::close(void); @ .text::00b4dbe0\n\n\n/* al::IUsePadDataReader::close() */\n\nvoid al::IUsePadDataReader::close(void)\n\n{\n  return;\n}\n\n"});

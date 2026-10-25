@@ -1,6 +1,7 @@
 /* OdysseyDoc — startup and router (#/...). */
 'use strict';
 
+let lastEntity = null;
 const APP = (() => {
   const main = () => document.getElementById('main');
 
@@ -44,7 +45,8 @@ const APP = (() => {
       console.error(e);
       m.innerHTML = `<div class="note warn">Erreur : ${U.esc(e.message)}</div>`;
     }
-    TREE.reveal(cur);
+    lastEntity = cur;
+    if (TREE.ready) TREE.reveal(cur);
     const title = cur !== null ? IX.q(cur) : (r || 'Home');
     document.title = `${title} — OdysseyDoc`;
     window.scrollTo(0, 0);
@@ -66,6 +68,9 @@ const APP = (() => {
       if (b) { U.copy(b.dataset.copy); b.textContent = '✓'; setTimeout(() => (b.textContent = '⧉'), 900); }
     });
     SEARCH.setup();
+    const target = decodeURIComponent(location.hash.replace(/^#\/?(e\/)?/, ''));
+    const ld = document.getElementById('loading');
+    if (ld && target) ld.textContent = `Loading index, then opening ${target}…`;
     try {
       const d = await DOC.load('index');
       IX.init(d);
@@ -73,9 +78,11 @@ const APP = (() => {
       main().innerHTML = `<div class="note warn">Could not load <code>data/index.js</code>. Make sure the <code>data/</code> folder sits next to <code>index.html</code>.<br>${U.esc(e.message)}</div>`;
       return;
     }
-    TREE.setup();
     window.addEventListener('hashchange', route);
-    route();
+    // render the requested page first, then build the sidebar
+    await route();
+    TREE.setup();
+    TREE.reveal(lastEntity);
   }
 
   return { start };

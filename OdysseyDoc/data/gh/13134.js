@@ -1,0 +1,1 @@
+DOC.got("gh/13134",{"al/SeBarrierHole/SeBarrierHole.cpp":"// Nom démêlé : al::SeBarrierHole::SeBarrierHole\n// Symbole manglé : SeBarrierHole\n// void __thiscall al::SeBarrierHole::SeBarrierHole(SeBarrierHole *this); @ .text::00a71a58\n\n\n/* al::SeBarrierHole::SeBarrierHole() */\n\nvoid __thiscall al::SeBarrierHole::SeBarrierHole(SeBarrierHole *this)\n\n{\n  return;\n}\n\n"});

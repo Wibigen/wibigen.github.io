@@ -1,0 +1,1 @@
+DOC.got("gh/12881",{"IUseDemoSkip/updateOnlyDemoGraphics.cpp":"// Nom démêlé : IUseDemoSkip::updateOnlyDemoGraphics\n// Symbole manglé : updateOnlyDemoGraphics\n// void IUseDemoSkip::updateOnlyDemoGraphics(void); @ .text::001183d8\n\n\n/* IUseDemoSkip::updateOnlyDemoGraphics() */\n\nvoid IUseDemoSkip::updateOnlyDemoGraphics(void)\n\n{\n  return;\n}\n\n"});

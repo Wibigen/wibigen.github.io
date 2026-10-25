@@ -265,5 +265,5 @@ const TREE = (() => {
     show();
   }
 
-  return { setup, reveal, show };
+  return { setup, reveal, show, get ready() { return !!root; } };
 })();
