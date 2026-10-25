@@ -1,0 +1,1 @@
+DOC.got("gh/LoginLotteryDirector/updateHitInfo.cpp","// Nom démêlé : LoginLotteryDirector::updateHitInfo\n// Symbole manglé : updateHitInfo\n// void LoginLotteryDirector::updateHitInfo(void); @ .text::003b48b4\n\n\n/* LoginLotteryDirector::updateHitInfo() */\n\nvoid LoginLotteryDirector::updateHitInfo(void)\n\n{\n  return;\n}\n\n");

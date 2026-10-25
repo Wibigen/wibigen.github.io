@@ -1,0 +1,1 @@
+DOC.got("e/4068",{"33265":{"q":"nn::hid::DirectionState","decl":{"f":"lib/NintendoSDK/include/nn/hid.h","l":430,"sig":"struct DirectionState","end":432,"fi":133},"size":36,"align":4,"complete":true,"fields":[{"n":"mMtx","t":"f32[3][3]","off":0,"sz":36,"acc":"public","bits":null,"l":431,"cm":null,"ti":30838}]}});

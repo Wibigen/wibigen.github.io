@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Log/GetOutputFormat.cpp","// Nom démêlé : nn::nex::Log::GetOutputFormat\n// Symbole manglé : GetOutputFormat\n// undefined8 __thiscall nn::nex::Log::GetOutputFormat(Log *this); @ .text::00711630\n\n\n/* nn::nex::Log::GetOutputFormat() */\n\nundefined8 __thiscall nn::nex::Log::GetOutputFormat(Log *this)\n\n{\n  return *(undefined8 *)(this + 0x10);\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/BossKnuckle/isEnableSkipDemo_.text_00123918.cpp","// Nom démêlé : BossKnuckle::isEnableSkipDemo\n// Symbole manglé : isEnableSkipDemo\n// undefined8 BossKnuckle::isEnableSkipDemo(void); @ .text::00123918\n\n\n/* BossKnuckle::isEnableSkipDemo() const */\n\nundefined8 BossKnuckle::isEnableSkipDemo(void)\n\n{\n  return 1;\n}\n\n");

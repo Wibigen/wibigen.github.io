@@ -1,0 +1,1 @@
+DOC.got("gh/Wanwan/endHack_.text_002ab8d8.cpp","// Nom démêlé : Wanwan::endHack\n// Symbole manglé : endHack\n// void __thiscall Wanwan::endHack(Wanwan *this); @ .text::002ab8d8\n\n\n/* Wanwan::endHack() */\n\nvoid __thiscall Wanwan::endHack(Wanwan *this)\n\n{\n  al::JointSpringControllerHolder::offControlAll(*(JointSpringControllerHolder **)(this + 0x160));\n  return;\n}\n\n");

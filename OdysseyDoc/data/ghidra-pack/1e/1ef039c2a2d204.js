@@ -1,0 +1,1 @@
+DOC.got("gh/al/getSequenceHeap.cpp","// Nom démêlé : al::getSequenceHeap\n// Symbole manglé : getSequenceHeap\n// undefined8 al::getSequenceHeap(void); @ .text::00a36e40\n\n\n/* al::getSequenceHeap() */\n\nundefined8 al::getSequenceHeap(void)\n\n{\n  long *plVar1;\n  \n  plVar1 = (long *)alProjectInterface::getSystemKit();\n  return *(undefined8 *)(*plVar1 + 8);\n}\n\n");

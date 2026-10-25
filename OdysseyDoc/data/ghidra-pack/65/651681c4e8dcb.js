@@ -1,0 +1,1 @@
+DOC.got("gh/sead/TextWriter/TextWriter_.text_00c66c48.cpp","// Nom démêlé : sead::TextWriter::~TextWriter\n// Symbole manglé : ~TextWriter\n// void __thiscall sead::TextWriter::~TextWriter(TextWriter *this); @ .text::00c66c48\n\n\n/* sead::TextWriter::~TextWriter() */\n\nvoid __thiscall sead::TextWriter::~TextWriter(TextWriter *this)\n\n{\n  return;\n}\n\n");

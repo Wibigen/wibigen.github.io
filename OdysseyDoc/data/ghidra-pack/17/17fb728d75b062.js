@@ -1,0 +1,1 @@
+DOC.got("gh/al/FogParam/setMax.cpp","// Nom démêlé : al::FogParam::setMax\n// Symbole manglé : setMax\n// void __thiscall al::FogParam::setMax(FogParam *this,float param_1); @ .text::009a1f00\n\n\n/* al::FogParam::setMax(float) */\n\nvoid __thiscall al::FogParam::setMax(FogParam *this,float param_1)\n\n{\n  *(float *)(*(long *)(this + 0x60) + 0x6c) = param_1;\n  return;\n}\n\n");

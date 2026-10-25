@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/WaterMark/Trace_.text_00725c70.cpp","// Nom démêlé : nn::nex::WaterMark::Trace\n// Symbole manglé : Trace\n// void nn::nex::WaterMark::Trace(ulong param_1); @ .text::00725c70\n\n\n/* nn::nex::WaterMark::Trace(unsigned long) const */\n\nvoid nn::nex::WaterMark::Trace(ulong param_1)\n\n{\n  return;\n}\n\n");

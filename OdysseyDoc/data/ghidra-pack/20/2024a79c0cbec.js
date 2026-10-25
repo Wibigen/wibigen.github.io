@@ -1,0 +1,1 @@
+DOC.got("gh/JangoDirector/isEnableCap_.text_002300f4.cpp","// Nom démêlé : JangoDirector::isEnableCap\n// Symbole manglé : isEnableCap\n// undefined8 JangoDirector::isEnableCap(void); @ .text::002300f4\n\n\n/* JangoDirector::isEnableCap() const */\n\nundefined8 JangoDirector::isEnableCap(void)\n\n{\n  return 1;\n}\n\n");

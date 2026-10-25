@@ -1,0 +1,1 @@
+DOC.got("gh/GolemFunction/getArmorLegRNum.cpp","// Nom démêlé : GolemFunction::getArmorLegRNum\n// Symbole manglé : getArmorLegRNum\n// undefined8 GolemFunction::getArmorLegRNum(void); @ .text::001791c4\n\n\n/* GolemFunction::getArmorLegRNum() */\n\nundefined8 GolemFunction::getArmorLegRNum(void)\n\n{\n  return 3;\n}\n\n");

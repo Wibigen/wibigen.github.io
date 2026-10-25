@@ -1,0 +1,1 @@
+DOC.got("src/1991","#pragma once\n\nnamespace al {\nclass LiveActor;\nstruct ActorInitInfo;\n\nvoid registSupportFreezeSyncGroup(LiveActor* actor, const ActorInitInfo& info);\n}  // namespace al\n");

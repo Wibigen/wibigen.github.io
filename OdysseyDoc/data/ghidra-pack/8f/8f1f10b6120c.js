@@ -1,0 +1,1 @@
+DOC.got("gh/eui/ButtonBase/getClassName_.text_008f3754.cpp","// Nom démêlé : eui::ButtonBase::getClassName\n// Symbole manglé : getClassName\n// undefined8 eui::ButtonBase::getClassName(void); @ .text::008f3754\n\n\n/* eui::ButtonBase::getClassName() const */\n\nundefined8 eui::ButtonBase::getClassName(void)\n\n{\n  return 0x1965e79;\n}\n\n");

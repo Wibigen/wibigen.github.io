@@ -1,0 +1,1 @@
+DOC.got("gh/Breeda/isLast.cpp","// Nom démêlé : Breeda::isLast\n// Symbole manglé : isLast\n// bool __thiscall Breeda::isLast(Breeda *this); @ .text::0014a01c\n\n\n/* Breeda::isLast() const */\n\nbool __thiscall Breeda::isLast(Breeda *this)\n\n{\n  return *(int *)(this + 0x200) < 2;\n}\n\n");

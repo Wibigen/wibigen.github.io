@@ -1,0 +1,1 @@
+DOC.got("gh/al/getCollidedGroundPos_.text_009d93ac.cpp","// Nom démêlé : al::getCollidedGroundPos\n// Symbole manglé : getCollidedGroundPos\n// long al::getCollidedGroundPos(LiveActor *param_1); @ .text::009d93ac\n\n\n/* al::getCollidedGroundPos(al::LiveActor const*) */\n\nlong al::getCollidedGroundPos(LiveActor *param_1)\n\n{\n  return *(long *)(param_1 + 0x78) + 0xe4;\n}\n\n");

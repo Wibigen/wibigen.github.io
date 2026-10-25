@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerCollider2D3D/isEnableHoldUp.cpp","// Nom démêlé : PlayerCollider2D3D::isEnableHoldUp\n// Symbole manglé : isEnableHoldUp\n// undefined8 PlayerCollider2D3D::isEnableHoldUp(void); @ .text::00534608\n\n\n/* PlayerCollider2D3D::isEnableHoldUp() const */\n\nundefined8 PlayerCollider2D3D::isEnableHoldUp(void)\n\n{\n  return 0;\n}\n\n");

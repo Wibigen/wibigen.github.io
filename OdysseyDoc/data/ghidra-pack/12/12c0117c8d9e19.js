@@ -1,0 +1,1 @@
+DOC.got("gh/sead/Arena/Arena.cpp","// Nom démêlé : sead::Arena::Arena\n// Symbole manglé : Arena\n// void __thiscall sead::Arena::Arena(Arena *this); @ .text::0086febc\n\n\n/* sead::Arena::Arena() */\n\nvoid __thiscall sead::Arena::Arena(Arena *this)\n\n{\n  this[0x10] = (Arena)0x0;\n  *(undefined8 *)this = 0;\n  *(undefined8 *)(this + 8) = 0;\n  return;\n}\n\n");

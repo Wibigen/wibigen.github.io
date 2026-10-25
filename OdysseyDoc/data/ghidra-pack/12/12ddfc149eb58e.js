@@ -1,0 +1,1 @@
+DOC.got("gh/HomeCap/exeHide_.text_00499a84.cpp","// Nom démêlé : HomeCap::exeHide\n// Symbole manglé : exeHide\n// void HomeCap::exeHide(void); @ .text::00499a84\n\n\n/* HomeCap::exeHide() */\n\nvoid HomeCap::exeHide(void)\n\n{\n  return;\n}\n\n");

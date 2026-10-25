@@ -1,0 +1,1 @@
+DOC.got("gh/eui/Screen/Screen_.text_008ed970.cpp","// Nom démêlé : eui::Screen::~Screen\n// Symbole manglé : ~Screen\n// void __thiscall eui::Screen::~Screen(Screen *this); @ .text::008ed970\n\n\n/* eui::Screen::~Screen() */\n\nvoid __thiscall eui::Screen::~Screen(Screen *this)\n\n{\n  ~Screen(this);\n  operator_delete(this);\n  return;\n}\n\n");

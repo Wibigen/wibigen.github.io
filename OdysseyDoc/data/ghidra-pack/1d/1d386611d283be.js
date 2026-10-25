@@ -1,0 +1,1 @@
+DOC.got("gh/eui/Screen/doUpdate.cpp","// Nom démêlé : eui::Screen::doUpdate_\n// Symbole manglé : doUpdate_\n// void eui::Screen::doUpdate_(void); @ .text::008ee62c\n\n\n/* eui::Screen::doUpdate_() */\n\nvoid eui::Screen::doUpdate_(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/SphinxRide/setNerveFall.cpp","// Nom démêlé : SphinxRide::setNerveFall\n// Symbole manglé : setNerveFall\n// void __thiscall SphinxRide::setNerveFall(SphinxRide *this); @ .text::004d6664\n\n\n/* SphinxRide::setNerveFall() */\n\nvoid __thiscall SphinxRide::setNerveFall(SphinxRide *this)\n\n{\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1e6c4b0);\n  return;\n}\n\n");

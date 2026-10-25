@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/ConfigurationVariable/Read_.text_00726a80.cpp","// Nom démêlé : nn::nex::ConfigurationVariable::Read\n// Symbole manglé : Read\n// undefined8 nn::nex::ConfigurationVariable::Read(void); @ .text::00726a80\n\n\n/* nn::nex::ConfigurationVariable::Read() */\n\nundefined8 nn::nex::ConfigurationVariable::Read(void)\n\n{\n  return 0;\n}\n\n");

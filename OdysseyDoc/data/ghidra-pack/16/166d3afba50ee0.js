@@ -1,0 +1,1 @@
+DOC.got("gh/al/SeCategory/getVolume.cpp","// Nom démêlé : al::SeCategory::getVolume\n// Symbole manglé : getVolume\n// undefined4 __thiscall al::SeCategory::getVolume(SeCategory *this); @ .text::00ae53f8\n\n\n/* al::SeCategory::getVolume() const */\n\nundefined4 __thiscall al::SeCategory::getVolume(SeCategory *this)\n\n{\n  return **(undefined4 **)(this + 0x20);\n}\n\n");

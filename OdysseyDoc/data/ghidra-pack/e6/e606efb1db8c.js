@@ -1,0 +1,1 @@
+DOC.got("gh/al/powerIn.cpp","// Nom démêlé : al::powerIn\n// Symbole manglé : powerIn\n// void al::powerIn(float param_1,float param_2); @ .text::00a20c94\n\n\n/* al::powerIn(float, float) */\n\nvoid al::powerIn(float param_1,float param_2)\n\n{\n  (*(code *)PTR_powf_01f4d758)();\n  return;\n}\n\n");

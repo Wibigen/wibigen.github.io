@@ -1,0 +1,1 @@
+DOC.got("gh/Jango/isEnableCap.cpp","// Nom démêlé : Jango::isEnableCap\n// Symbole manglé : isEnableCap\n// uint __thiscall Jango::isEnableCap(Jango *this); @ .text::0022ea28\n\n\n/* Jango::isEnableCap() const */\n\nuint __thiscall Jango::isEnableCap(Jango *this)\n\n{\n  uint uVar1;\n  \n  uVar1 = al::isAlive(*(LiveActor **)(this + 0x148));\n  return ~uVar1 & 1;\n}\n\n");

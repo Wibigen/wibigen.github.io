@@ -1,0 +1,1 @@
+DOC.got("gh/HackCap/endHackThrow.cpp","// Nom démêlé : HackCap::endHackThrow\n// Symbole manglé : endHackThrow\n// void __thiscall HackCap::endHackThrow(HackCap *this); @ .text::00509c1c\n\n\n/* HackCap::endHackThrow() */\n\nvoid __thiscall HackCap::endHackThrow(HackCap *this)\n\n{\n  this[0x2a4] = (HackCap)0x0;\n  *(undefined8 *)(this + 0x508) = 0;\n  return;\n}\n\n");

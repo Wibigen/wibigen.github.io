@@ -1,0 +1,1 @@
+DOC.got("gh/Tiara/isEndTurn.cpp","// Nom démêlé : Tiara::isEndTurn\n// Symbole manglé : isEndTurn\n// uint __thiscall Tiara::isEndTurn(Tiara *this); @ .text::004e73d8\n\n\n/* Tiara::isEndTurn() const */\n\nuint __thiscall Tiara::isEndTurn(Tiara *this)\n\n{\n  uint uVar1;\n  \n  uVar1 = al::isNerve((IUseNerve *)this,(Nerve *)0x1e70328);\n  return ~uVar1 & 1;\n}\n\n");

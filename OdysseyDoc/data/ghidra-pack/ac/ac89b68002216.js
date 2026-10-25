@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Timeout/SetRTO.cpp","// Nom démêlé : nn::nex::Timeout::SetRTO\n// Symbole manglé : SetRTO\n// void __thiscall nn::nex::Timeout::SetRTO(Timeout *this,uint param_1); @ .text::00779f74\n\n\n/* nn::nex::Timeout::SetRTO(unsigned int) */\n\nvoid __thiscall nn::nex::Timeout::SetRTO(Timeout *this,uint param_1)\n\n{\n  *(uint *)(this + 8) = param_1;\n  return;\n}\n\n");

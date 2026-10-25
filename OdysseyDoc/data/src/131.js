@@ -1,0 +1,1 @@
+DOC.got("src/131","#pragma once\n\nnamespace nn::gfx {\n\ntemplate <typename TType, typename TVersion>\nclass ApiVariation {};\n\ntemplate <int T>\nclass ApiType {\n    static const int value = T;\n};\n\ntemplate <int T>\nclass ApiVersion {\n    static const int value = T;\n};\n\n}  // namespace nn::gfx\n");

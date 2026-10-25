@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerModelChangerYoshi/isChange_.text_0055e83c.cpp","// Nom démêlé : PlayerModelChangerYoshi::isChange\n// Symbole manglé : isChange\n// undefined8 PlayerModelChangerYoshi::isChange(void); @ .text::0055e83c\n\n\n/* PlayerModelChangerYoshi::isChange() const */\n\nundefined8 PlayerModelChangerYoshi::isChange(void)\n\n{\n  return 0;\n}\n\n");

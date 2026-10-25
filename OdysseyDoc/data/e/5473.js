@@ -1,0 +1,1 @@
+DOC.got("e/5473",{"48010":{"q":"sead::SharcArchiveRes::HandleInner","acc":"public","decl":{"f":"lib/sead/include/resource/seadSharcArchiveRes.h","l":52,"sig":"struct HandleInner","fi":1442},"complete":false,"fwd":[["lib/sead/include/resource/seadSharcArchiveRes.h",52]]}});

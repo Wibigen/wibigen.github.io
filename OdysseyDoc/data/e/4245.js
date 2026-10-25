@@ -1,0 +1,1 @@
+DOC.got("e/4245",{"33977":{"q":"nn::socket::ResourceStatistics","decl":{"f":"lib/NintendoSDK/include/nn/socket.h","l":13,"sig":"struct ResourceStatistics","fi":185},"complete":false,"fwd":[["lib/NintendoSDK/include/nn/socket.h",13]]}});

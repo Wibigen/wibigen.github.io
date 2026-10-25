@@ -1,0 +1,1 @@
+DOC.got("gh/Coin2DCity/exeWait_.text_002bddc4.cpp","// Nom démêlé : Coin2DCity::exeWait\n// Symbole manglé : exeWait\n// void __thiscall Coin2DCity::exeWait(Coin2DCity *this); @ .text::002bddc4\n\n\n/* Coin2DCity::exeWait() */\n\nvoid __thiscall Coin2DCity::exeWait(Coin2DCity *this)\n\n{\n  al::startVisAnim((LiveActor *)this,(char *)0x191db3d);\n  return;\n}\n\n");

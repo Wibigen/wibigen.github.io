@@ -1,0 +1,1 @@
+DOC.got("gh/HackCap/isSpinAttack.cpp","// Nom démêlé : HackCap::isSpinAttack\n// Symbole manglé : isSpinAttack\n// void __thiscall HackCap::isSpinAttack(HackCap *this); @ .text::004fd2c8\n\n\n/* HackCap::isSpinAttack() const */\n\nvoid __thiscall HackCap::isSpinAttack(HackCap *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1e75b88);\n  return;\n}\n\n");

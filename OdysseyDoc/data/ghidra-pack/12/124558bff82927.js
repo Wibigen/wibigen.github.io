@@ -1,0 +1,1 @@
+DOC.got("gh/DoorCity/listenSwitchOff.cpp","// Nom démêlé : DoorCity::listenSwitchOff\n// Symbole manglé : listenSwitchOff\n// void DoorCity::listenSwitchOff(void); @ .text::00360070\n\n\n/* DoorCity::listenSwitchOff() */\n\nvoid DoorCity::listenSwitchOff(void)\n\n{\n  return;\n}\n\n");

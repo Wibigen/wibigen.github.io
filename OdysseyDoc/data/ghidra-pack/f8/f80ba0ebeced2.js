@@ -1,0 +1,1 @@
+DOC.got("gh/RailDrawer/exeWait_.text_003f39f0.cpp","// Nom démêlé : RailDrawer::exeWait\n// Symbole manglé : exeWait\n// void RailDrawer::exeWait(void); @ .text::003f39f0\n\n\n/* RailDrawer::exeWait() */\n\nvoid RailDrawer::exeWait(void)\n\n{\n  return;\n}\n\n");

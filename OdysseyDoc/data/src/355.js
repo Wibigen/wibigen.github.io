@@ -1,0 +1,1 @@
+DOC.got("src/355","#pragma once\n\nnamespace al {\nclass AreaObj;\n\ntemplate <typename T>\nAreaObj* createAreaObjFunction(const char* areaObjName) {\n    return new T(areaObjName);\n}\n}  // namespace al\n");

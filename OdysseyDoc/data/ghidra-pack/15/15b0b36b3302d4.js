@@ -1,0 +1,1 @@
+DOC.got("gh/Curl_pgrsSetDownloadCounter.cpp","// Nom démêlé : Curl_pgrsSetDownloadCounter\n// Symbole manglé : Curl_pgrsSetDownloadCounter\n// void Curl_pgrsSetDownloadCounter(long param_1,undefined8 param_2); @ .text::00801764\n\n\nvoid Curl_pgrsSetDownloadCounter(long param_1,undefined8 param_2)\n\n{\n  *(undefined8 *)(param_1 + 0x740) = param_2;\n  return;\n}\n\n");

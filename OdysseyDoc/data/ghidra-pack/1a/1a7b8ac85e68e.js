@@ -1,0 +1,1 @@
+DOC.got("gh/RiseMapParts/isStop.cpp","// Nom démêlé : RiseMapParts::isStop\n// Symbole manglé : isStop\n// void __thiscall RiseMapParts::isStop(RiseMapParts *this); @ .text::003fbc4c\n\n\n/* RiseMapParts::isStop() const */\n\nvoid __thiscall RiseMapParts::isStop(RiseMapParts *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)&DAT_01f64b20);\n  return;\n}\n\n");

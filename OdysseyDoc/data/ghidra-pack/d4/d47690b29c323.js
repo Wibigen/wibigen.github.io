@@ -1,0 +1,1 @@
+DOC.got("gh/YoshiTongue/exeHit_.text_005a2c68.cpp","// Nom démêlé : YoshiTongue::exeHit\n// Symbole manglé : exeHit\n// void YoshiTongue::exeHit(void); @ .text::005a2c68\n\n\n/* YoshiTongue::exeHit() */\n\nvoid YoshiTongue::exeHit(void)\n\n{\n  return;\n}\n\n");

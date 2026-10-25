@@ -1,0 +1,1 @@
+DOC.got("e/4202",{"33741":{"q":"nn::os::TlsSlot","decl":{"f":"lib/NintendoSDK/include/nn/os.h","l":182,"sig":"struct TlsSlot","end":184,"fi":163},"size":4,"align":4,"complete":true,"fields":[{"n":"slot","t":"u32","off":0,"sz":4,"acc":"public","bits":null,"l":183,"cm":null,"ti":49376}]}});

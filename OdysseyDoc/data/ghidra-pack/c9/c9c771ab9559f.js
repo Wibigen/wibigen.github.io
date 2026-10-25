@@ -1,0 +1,1 @@
+DOC.got("gh/al/Sequence/kill_.text_00af20d0.cpp","// Nom démêlé : al::Sequence::kill\n// Symbole manglé : kill\n// void __thiscall al::Sequence::kill(Sequence *this); @ .text::00af20d0\n\n\n/* al::Sequence::kill() */\n\nvoid __thiscall al::Sequence::kill(Sequence *this)\n\n{\n  this[0xa8] = (Sequence)0x0;\n  return;\n}\n\n");

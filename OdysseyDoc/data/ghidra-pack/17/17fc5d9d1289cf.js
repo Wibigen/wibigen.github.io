@@ -1,0 +1,1 @@
+DOC.got("gh/PoleGrabCeil/exeWait_.text_003e627c.cpp","// Nom démêlé : PoleGrabCeil::exeWait\n// Symbole manglé : exeWait\n// void __thiscall PoleGrabCeil::exeWait(PoleGrabCeil *this); @ .text::003e627c\n\n\n/* PoleGrabCeil::exeWait() */\n\nvoid __thiscall PoleGrabCeil::exeWait(PoleGrabCeil *this)\n\n{\n  FUN__text__003e628c(this + 0x108,this);\n  return;\n}\n\n");

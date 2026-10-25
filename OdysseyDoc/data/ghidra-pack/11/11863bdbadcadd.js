@@ -1,0 +1,1 @@
+DOC.got("gh/al/SeAreaTriggeredPlayer/reset_.text_00ae19d4.cpp","// Nom démêlé : al::SeAreaTriggeredPlayer::reset\n// Symbole manglé : reset\n// void al::SeAreaTriggeredPlayer::reset(void); @ .text::00ae19d4\n\n\n/* al::SeAreaTriggeredPlayer::reset() */\n\nvoid al::SeAreaTriggeredPlayer::reset(void)\n\n{\n  return;\n}\n\n");

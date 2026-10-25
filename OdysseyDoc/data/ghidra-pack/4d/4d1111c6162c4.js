@@ -1,0 +1,1 @@
+DOC.got("gh/HackCap/isRescuePlayer.cpp","// Nom démêlé : HackCap::isRescuePlayer\n// Symbole manglé : isRescuePlayer\n// void __thiscall HackCap::isRescuePlayer(HackCap *this); @ .text::004fe1bc\n\n\n/* HackCap::isRescuePlayer() const */\n\nvoid __thiscall HackCap::isRescuePlayer(HackCap *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1e75b98);\n  return;\n}\n\n");

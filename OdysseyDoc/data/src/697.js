@@ -1,0 +1,1 @@
+DOC.got("src/697","#include \"Library/LiveActor/ActorFactory.h\"\n\nnamespace al {\nActorFactory::ActorFactory(const char* pName) : Factory(pName) {}\n}  // namespace al\n");

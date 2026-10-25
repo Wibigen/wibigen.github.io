@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Timeout/Timeout_.text_0078f69c.cpp","// Nom démêlé : nn::nex::Timeout::~Timeout\n// Symbole manglé : ~Timeout\n// void __thiscall nn::nex::Timeout::~Timeout(Timeout *this); @ .text::0078f69c\n\n\n/* nn::nex::Timeout::~Timeout() */\n\nvoid __thiscall nn::nex::Timeout::~Timeout(Timeout *this)\n\n{\n  return;\n}\n\n");

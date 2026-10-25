@@ -1,0 +1,1 @@
+DOC.got("gh/FUN_.text_0079389c.cpp","// Nom démêlé : FUN_.text__0079389c\n// Symbole manglé : FUN_.text__0079389c\n// undefined8 FUN_.text__0079389c(long param_1,long param_2); @ .text::0079389c\n\n\nundefined8 FUN__text__0079389c(long param_1,long param_2)\n\n{\n  FUN__text__00793694(param_1,param_1 + 4,param_1 + 8,param_1 + 0xc,param_2 + -4);\n  return 1;\n}\n\n");

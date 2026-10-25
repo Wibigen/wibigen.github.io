@@ -1,0 +1,1 @@
+DOC.got("gh/GunetterFunction/getRotateJointName.cpp","// Nom démêlé : GunetterFunction::getRotateJointName\n// Symbole manglé : getRotateJointName\n// undefined8 GunetterFunction::getRotateJointName(void); @ .text::0020d950\n\n\n/* GunetterFunction::getRotateJointName() */\n\nundefined8 GunetterFunction::getRotateJointName(void)\n\n{\n  return 0x1926337;\n}\n\n");

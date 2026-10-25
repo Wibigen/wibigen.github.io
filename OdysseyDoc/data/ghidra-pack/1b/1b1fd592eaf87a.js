@@ -1,0 +1,1 @@
+DOC.got("gh/nn/font/CharWriter/CharWriter_.text_00bec180.cpp","// Nom démêlé : nn::font::CharWriter::~CharWriter\n// Symbole manglé : ~CharWriter\n// void __thiscall nn::font::CharWriter::~CharWriter(CharWriter *this); @ .text::00bec180\n\n\n/* nn::font::CharWriter::~CharWriter() */\n\nvoid __thiscall nn::font::CharWriter::~CharWriter(CharWriter *this)\n\n{\n  return;\n}\n\n");

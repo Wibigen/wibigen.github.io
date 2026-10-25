@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Tokenizer/Trace_.text_00722608.cpp","// Nom démêlé : nn::nex::Tokenizer::Trace\n// Symbole manglé : Trace\n// void nn::nex::Tokenizer::Trace(ulong param_1); @ .text::00722608\n\n\n/* nn::nex::Tokenizer::Trace(unsigned long) */\n\nvoid nn::nex::Tokenizer::Trace(ulong param_1)\n\n{\n  return;\n}\n\n");

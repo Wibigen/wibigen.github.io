@@ -1,0 +1,1 @@
+DOC.got("gh/sead/TaskBase/prepare_.text_00835e54.cpp","// Nom démêlé : sead::TaskBase::prepare\n// Symbole manglé : prepare\n// void sead::TaskBase::prepare(void); @ .text::00835e54\n\n\n/* sead::TaskBase::prepare() */\n\nvoid sead::TaskBase::prepare(void)\n\n{\n  return;\n}\n\n");

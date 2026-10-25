@@ -1,0 +1,1 @@
+DOC.got("gh/KoopaFunction/getLevel1.cpp","// Nom démêlé : KoopaFunction::getLevel1\n// Symbole manglé : getLevel1\n// undefined8 KoopaFunction::getLevel1(void); @ .text::001936b0\n\n\n/* KoopaFunction::getLevel1() */\n\nundefined8 KoopaFunction::getLevel1(void)\n\n{\n  return 0;\n}\n\n");

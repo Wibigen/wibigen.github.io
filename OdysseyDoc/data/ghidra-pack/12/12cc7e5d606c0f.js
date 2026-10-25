@@ -1,0 +1,1 @@
+DOC.got("gh/GolemFunction/getIndirectLegLNum.cpp","// Nom démêlé : GolemFunction::getIndirectLegLNum\n// Symbole manglé : getIndirectLegLNum\n// undefined8 GolemFunction::getIndirectLegLNum(void); @ .text::001791dc\n\n\n/* GolemFunction::getIndirectLegLNum() */\n\nundefined8 GolemFunction::getIndirectLegLNum(void)\n\n{\n  return 6;\n}\n\n");

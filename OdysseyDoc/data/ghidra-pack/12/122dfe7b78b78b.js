@@ -1,0 +1,1 @@
+DOC.got("gh/StackerCap/setMove.cpp","// Nom démêlé : StackerCap::setMove\n// Symbole manglé : setMove\n// void __thiscall StackerCap::setMove(StackerCap *this); @ .text::001beac0\n\n\n/* StackerCap::setMove() */\n\nvoid __thiscall StackerCap::setMove(StackerCap *this)\n\n{\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1d7b820);\n  return;\n}\n\n");

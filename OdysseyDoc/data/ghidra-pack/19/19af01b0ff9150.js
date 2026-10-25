@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/HealthServiceDDLDeclarations/Init_.text_007b42bc.cpp","// Nom démêlé : nn::nex::HealthServiceDDLDeclarations::Init\n// Symbole manglé : Init\n// void nn::nex::HealthServiceDDLDeclarations::Init(void); @ .text::007b42bc\n\n\n/* nn::nex::HealthServiceDDLDeclarations::Init() */\n\nvoid nn::nex::HealthServiceDDLDeclarations::Init(void)\n\n{\n  return;\n}\n\n");

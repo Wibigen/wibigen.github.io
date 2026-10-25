@@ -1,0 +1,1 @@
+DOC.got("gh/al/createMakeHalfTextureUbo.cpp","// Nom démêlé : al::createMakeHalfTextureUbo\n// Symbole manglé : createMakeHalfTextureUbo\n// void al::createMakeHalfTextureUbo(void); @ .text::00b014e8\n\n\n/* al::createMakeHalfTextureUbo() */\n\nvoid al::createMakeHalfTextureUbo(void)\n\n{\n  createUniformBlock((UniformBlockLayout *)0x1a2d2d8,2,(Heap *)0x0,2);\n  return;\n}\n\n");

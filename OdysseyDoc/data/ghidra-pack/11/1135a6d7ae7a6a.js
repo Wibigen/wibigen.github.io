@@ -1,0 +1,1 @@
+DOC.got("gh/al/isSklAnimExist_.text_009d3e38.cpp","// Nom démêlé : al::isSklAnimExist\n// Symbole manglé : isSklAnimExist\n// bool al::isSklAnimExist(LiveActor *param_1); @ .text::009d3e38\n\n\n/* al::isSklAnimExist(al::LiveActor const*) */\n\nbool al::isSklAnimExist(LiveActor *param_1)\n\n{\n  return *(long *)(*(long *)(param_1 + 0x88) + 0x20) != 0;\n}\n\n");

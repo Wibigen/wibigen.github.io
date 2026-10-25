@@ -1,0 +1,1 @@
+DOC.got("gh/JokuHand/damage_.text_00237fcc.cpp","// Nom démêlé : JokuHand::damage\n// Symbole manglé : damage\n// void __thiscall JokuHand::damage(JokuHand *this); @ .text::00237fcc\n\n\n/* JokuHand::damage() */\n\nvoid __thiscall JokuHand::damage(JokuHand *this)\n\n{\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1d98488);\n  return;\n}\n\n");

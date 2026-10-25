@@ -1,0 +1,1 @@
+DOC.got("gh/al/startPadRumbleNormal.cpp","// Nom démêlé : al::startPadRumbleNormal\n// Symbole manglé : startPadRumbleNormal\n// void al::startPadRumbleNormal(LiveActor *param_1,int param_2); @ .text::0096b7fc\n\n\n/* al::startPadRumbleNormal(al::LiveActor const*, int) */\n\nvoid al::startPadRumbleNormal(LiveActor *param_1,int param_2)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/ShopLayoutFooter/end_.text_00307648.cpp","// Nom démêlé : ShopLayoutFooter::end\n// Symbole manglé : end\n// void __thiscall ShopLayoutFooter::end(ShopLayoutFooter *this); @ .text::00307648\n\n\n/* ShopLayoutFooter::end() */\n\nvoid __thiscall ShopLayoutFooter::end(ShopLayoutFooter *this)\n\n{\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1dcdb38);\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/KoopaHackStopCtrl/getSceneObjName_.text_00194268.cpp","// Nom démêlé : KoopaHackStopCtrl::getSceneObjName\n// Symbole manglé : getSceneObjName\n// undefined8 KoopaHackStopCtrl::getSceneObjName(void); @ .text::00194268\n\n\n/* KoopaHackStopCtrl::getSceneObjName() const */\n\nundefined8 KoopaHackStopCtrl::getSceneObjName(void)\n\n{\n  return 0x1922612;\n}\n\n");

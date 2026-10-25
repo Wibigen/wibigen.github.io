@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Plugin/ThreadAttach.cpp","// Nom démêlé : nn::nex::Plugin::ThreadAttach\n// Symbole manglé : ThreadAttach\n// void nn::nex::Plugin::ThreadAttach(void); @ .text::0073d844\n\n\n/* nn::nex::Plugin::ThreadAttach() */\n\nvoid nn::nex::Plugin::ThreadAttach(void)\n\n{\n  return;\n}\n\n");

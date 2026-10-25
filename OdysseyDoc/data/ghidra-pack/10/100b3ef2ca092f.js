@@ -1,0 +1,1 @@
+DOC.got("gh/wslay_event_get_status_code_sent.cpp","// Nom démêlé : wslay_event_get_status_code_sent\n// Symbole manglé : wslay_event_get_status_code_sent\n// undefined2 wslay_event_get_status_code_sent(long param_1); @ .text::007a2370\n\n\nundefined2 wslay_event_get_status_code_sent(long param_1)\n\n{\n  return *(undefined2 *)(param_1 + 0x14);\n}\n\n");

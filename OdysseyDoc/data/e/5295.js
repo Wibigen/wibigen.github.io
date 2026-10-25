@@ -1,0 +1,1 @@
+DOC.got("e/5295",{"45964":{"q":"sead::InfLoopChecker::InfLoopParam","acc":"public","decl":{"f":"lib/sead/include/framework/seadInfLoopChecker.h","l":16,"sig":"struct InfLoopParam","end":18,"fi":1346},"size":1,"align":1,"complete":true}});

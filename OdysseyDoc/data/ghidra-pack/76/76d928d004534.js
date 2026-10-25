@@ -1,0 +1,1 @@
+DOC.got("gh/SandGeyser/control_.text_00403c14.cpp","// Nom démêlé : SandGeyser::control\n// Symbole manglé : control\n// void SandGeyser::control(void); @ .text::00403c14\n\n\n/* SandGeyser::control() */\n\nvoid SandGeyser::control(void)\n\n{\n  return;\n}\n\n");

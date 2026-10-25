@@ -1,0 +1,1 @@
+DOC.got("src/772","#pragma once\n\n#include \"Library/MapObj/FixMapParts.h\"\n\nnamespace al {\nclass OneMeshFixMapParts : public FixMapParts {\npublic:\n    OneMeshFixMapParts(const char* name);\n\n    void init(const ActorInitInfo& info) override;\n};\n}  // namespace al\n");

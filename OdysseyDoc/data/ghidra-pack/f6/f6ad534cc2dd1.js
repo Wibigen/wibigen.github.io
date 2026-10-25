@@ -1,0 +1,1 @@
+DOC.got("gh/Pukupuku/isTriggerSwimDash.cpp","// Nom démêlé : Pukupuku::isTriggerSwimDash\n// Symbole manglé : isTriggerSwimDash\n// Pukupuku __thiscall Pukupuku::isTriggerSwimDash(Pukupuku *this); @ .text::00279544\n\n\n/* Pukupuku::isTriggerSwimDash() const */\n\nPukupuku __thiscall Pukupuku::isTriggerSwimDash(Pukupuku *this)\n\n{\n  return this[0x2d8];\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/Graph/Edge/getWeight_.text_00ac7214.cpp","// Nom démêlé : al::Graph::Edge::getWeight\n// Symbole manglé : getWeight\n// undefined4 __thiscall al::Graph::Edge::getWeight(Edge *this); @ .text::00ac7214\n\n\n/* al::Graph::Edge::getWeight() const */\n\nundefined4 __thiscall al::Graph::Edge::getWeight(Edge *this)\n\n{\n  return *(undefined4 *)(this + 0x18);\n}\n\n");

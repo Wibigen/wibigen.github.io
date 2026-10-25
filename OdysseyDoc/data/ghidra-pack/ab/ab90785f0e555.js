@@ -1,0 +1,1 @@
+DOC.got("gh/agl/ShaderSource/genCompileButton.cpp","// Nom démêlé : agl::ShaderSource::genCompileButton\n// Symbole manglé : genCompileButton\n// void agl::ShaderSource::genCompileButton(Context *param_1); @ .text::008c68bc\n\n\n/* agl::ShaderSource::genCompileButton(sead::hostio::Context*) */\n\nvoid agl::ShaderSource::genCompileButton(Context *param_1)\n\n{\n  return;\n}\n\n");

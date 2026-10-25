@@ -1,0 +1,1 @@
+DOC.got("e/1004",{"16216":{"q":"agl::shtxt::SyntaxLeash","decl":{"f":"lib/agl/include/shader_text/aglShaderTextExpressionEvaluator.h","l":15,"sig":"class SyntaxLeash","fi":314},"complete":false,"fwd":[["lib/agl/include/shader_text/aglShaderTextExpressionEvaluator.h",15]]}});

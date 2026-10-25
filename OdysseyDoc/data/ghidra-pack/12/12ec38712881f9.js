@@ -1,0 +1,1 @@
+DOC.got("gh/al/getLanguageCode.cpp","// Nom démêlé : al::getLanguageCode\n// Symbole manglé : getLanguageCode\n// undefined4 al::getLanguageCode(void); @ .text::00a38b70\n\n\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\n/* al::getLanguageCode() */\n\nundefined4 al::getLanguageCode(void)\n\n{\n  return _DAT_01ef4878;\n}\n\n");

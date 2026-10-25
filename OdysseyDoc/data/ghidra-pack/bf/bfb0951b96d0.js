@@ -1,0 +1,1 @@
+DOC.got("gh/GameDataFile/resetTempData.cpp","// Nom démêlé : GameDataFile::resetTempData\n// Symbole manglé : resetTempData\n// void GameDataFile::resetTempData(void); @ .text::0061c718\n\n\n/* GameDataFile::resetTempData() */\n\nvoid GameDataFile::resetTempData(void)\n\n{\n  return;\n}\n\n");

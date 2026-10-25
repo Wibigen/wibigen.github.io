@@ -1,0 +1,1 @@
+DOC.got("gh/BalloonIcon/offSnapShotMode_.text_002da470.cpp","// Nom démêlé : BalloonIcon::offSnapShotMode\n// Symbole manglé : offSnapShotMode\n// void BalloonIcon::offSnapShotMode(void); @ .text::002da470\n\n\n/* BalloonIcon::offSnapShotMode() */\n\nvoid BalloonIcon::offSnapShotMode(void)\n\n{\n  return;\n}\n\n");

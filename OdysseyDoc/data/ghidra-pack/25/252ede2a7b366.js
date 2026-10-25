@@ -1,0 +1,1 @@
+DOC.got("gh/al/SceneMsg/clear_.text_00aced64.cpp","// Nom démêlé : al::SceneMsg::clear\n// Symbole manglé : clear\n// void __thiscall al::SceneMsg::clear(SceneMsg *this); @ .text::00aced64\n\n\n/* al::SceneMsg::clear() */\n\nvoid __thiscall al::SceneMsg::clear(SceneMsg *this)\n\n{\n  *this = (SceneMsg)0x0;\n  return;\n}\n\n");

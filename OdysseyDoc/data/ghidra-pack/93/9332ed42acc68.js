@@ -1,0 +1,1 @@
+DOC.got("gh/HackCap/startPuppet.cpp","// Nom démêlé : HackCap::startPuppet\n// Symbole manglé : startPuppet\n// void __thiscall HackCap::startPuppet(HackCap *this); @ .text::004fdbb0\n\n\n/* HackCap::startPuppet() */\n\nvoid __thiscall HackCap::startPuppet(HackCap *this)\n\n{\n  *(undefined2 *)(this + 0x5f8) = 1;\n  this[0x5fa] = (HackCap)0x0;\n  return;\n}\n\n");

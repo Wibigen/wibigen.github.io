@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/HTTPURL/GetFragment.cpp","// Nom démêlé : nn::nex::HTTPURL::GetFragment\n// Symbole manglé : GetFragment\n// HTTPURL * __thiscall nn::nex::HTTPURL::GetFragment(HTTPURL *this); @ .text::0074aa90\n\n\n/* nn::nex::HTTPURL::GetFragment() const */\n\nHTTPURL * __thiscall nn::nex::HTTPURL::GetFragment(HTTPURL *this)\n\n{\n  return this + 0x80;\n}\n\n");

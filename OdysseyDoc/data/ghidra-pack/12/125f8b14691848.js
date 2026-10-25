@@ -1,0 +1,1 @@
+DOC.got("gh/sead/PrintStreamSrc/rewind_.text_00856ec8.cpp","// Nom démêlé : sead::PrintStreamSrc::rewind\n// Symbole manglé : rewind\n// void sead::PrintStreamSrc::rewind(void); @ .text::00856ec8\n\n\n/* sead::PrintStreamSrc::rewind() */\n\nvoid sead::PrintStreamSrc::rewind(void)\n\n{\n  return;\n}\n\n");

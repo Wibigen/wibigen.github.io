@@ -1,0 +1,1 @@
+DOC.got("src/42","#pragma once\n\n#include \"nn/g3d/ResSkeleton.h\"\n\nnamespace nn::g3d {\n\n// TODO\nclass SkeletonObj {\npublic:\n    const ResSkeleton* GetRes() const { return m_Res; }\n\nprivate:\n    const ResSkeleton* m_Res;\n    // TODO: the rest of the members\n};\n\n}  // namespace nn::g3d\n");

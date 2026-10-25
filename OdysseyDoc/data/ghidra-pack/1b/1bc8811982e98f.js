@@ -1,0 +1,1 @@
+DOC.got("gh/agl/DisplayList/calcRemainingSize.cpp","// Nom démêlé : agl::DisplayList::calcRemainingSize\n// Symbole manglé : calcRemainingSize\n// undefined8 agl::DisplayList::calcRemainingSize(void); @ .text::00879f64\n\n\n/* agl::DisplayList::calcRemainingSize() */\n\nundefined8 agl::DisplayList::calcRemainingSize(void)\n\n{\n  return 0;\n}\n\n");

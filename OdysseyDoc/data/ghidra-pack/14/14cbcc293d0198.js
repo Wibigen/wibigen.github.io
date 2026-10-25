@@ -1,0 +1,1 @@
+DOC.got("gh/al/HdrCompose/preDrawGraphics_.text_00aadd48.cpp","// Nom démêlé : al::HdrCompose::preDrawGraphics\n// Symbole manglé : preDrawGraphics\n// void al::HdrCompose::preDrawGraphics(void); @ .text::00aadd48\n\n\n/* al::HdrCompose::preDrawGraphics() */\n\nvoid al::HdrCompose::preDrawGraphics(void)\n\n{\n  return;\n}\n\n");

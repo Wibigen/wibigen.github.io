@@ -1,0 +1,1 @@
+DOC.got("gh/rs/getClothListSize.cpp","// Nom démêlé : rs::getClothListSize\n// Symbole manglé : getClothListSize\n// undefined4 rs::getClothListSize(long param_1); @ .text::0064c4d0\n\n\n/* rs::getClothListSize(GameDataHolderAccessor) */\n\nundefined4 rs::getClothListSize(long param_1)\n\n{\n  return *(undefined4 *)(param_1 + 0x110);\n}\n\n");

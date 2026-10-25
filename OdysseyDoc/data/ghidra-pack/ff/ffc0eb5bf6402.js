@@ -1,0 +1,1 @@
+DOC.got("gh/GameDataFile/getMiniGameNumMax.cpp","// Nom démêlé : GameDataFile::getMiniGameNumMax\n// Symbole manglé : getMiniGameNumMax\n// undefined8 GameDataFile::getMiniGameNumMax(void); @ .text::00624860\n\n\n/* GameDataFile::getMiniGameNumMax() const */\n\nundefined8 GameDataFile::getMiniGameNumMax(void)\n\n{\n  return 4;\n}\n\n");

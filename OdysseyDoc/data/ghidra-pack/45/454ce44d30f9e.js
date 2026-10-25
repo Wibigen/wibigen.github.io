@@ -1,0 +1,1 @@
+DOC.got("gh/Koopa/isTriggerSwing.cpp","// Nom démêlé : Koopa::isTriggerSwing\n// Symbole manglé : isTriggerSwing\n// void __thiscall Koopa::isTriggerSwing(Koopa *this); @ .text::00181390\n\n\n/* Koopa::isTriggerSwing() const */\n\nvoid __thiscall Koopa::isTriggerSwing(Koopa *this)\n\n{\n  rs::isTriggerHackSwing(*(IUsePlayerHack **)(this + 0x110));\n  return;\n}\n\n");

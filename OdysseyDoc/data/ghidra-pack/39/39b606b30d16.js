@@ -1,0 +1,1 @@
+DOC.got("gh/nn/atk/EffectAux/EffectAux_.text_00bc8020.cpp","// Nom démêlé : nn::atk::EffectAux::~EffectAux\n// Symbole manglé : ~EffectAux\n// void __thiscall nn::atk::EffectAux::~EffectAux(EffectAux *this); @ .text::00bc8020\n\n\n/* nn::atk::EffectAux::~EffectAux() */\n\nvoid __thiscall nn::atk::EffectAux::~EffectAux(EffectAux *this)\n\n{\n  return;\n}\n\n");

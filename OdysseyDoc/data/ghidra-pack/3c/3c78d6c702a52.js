@@ -1,0 +1,1 @@
+DOC.got("gh/sead/Viewport/Viewport_.text_00861e9c.cpp","// Nom démêlé : sead::Viewport::~Viewport\n// Symbole manglé : ~Viewport\n// void __thiscall sead::Viewport::~Viewport(Viewport *this); @ .text::00861e9c\n\n\n/* sead::Viewport::~Viewport() */\n\nvoid __thiscall sead::Viewport::~Viewport(Viewport *this)\n\n{\n  return;\n}\n\n");

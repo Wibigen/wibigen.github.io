@@ -1,0 +1,1 @@
+DOC.got("gh/al/isNormalNfc.cpp","// Nom démêlé : al::isNormalNfc\n// Symbole manglé : isNormalNfc\n// NfpInfo al::isNormalNfc(NfpInfo *param_1); @ .text::00a60368\n\n\n/* al::isNormalNfc(al::NfpInfo const&) */\n\nNfpInfo al::isNormalNfc(NfpInfo *param_1)\n\n{\n  return param_1[0x1e0];\n}\n\n");

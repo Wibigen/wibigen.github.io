@@ -1,0 +1,1 @@
+DOC.got("gh/AppearSwitchSave/isOn_.text_00316bac.cpp","// Nom démêlé : AppearSwitchSave::isOn\n// Symbole manglé : isOn\n// AppearSwitchSave __thiscall AppearSwitchSave::isOn(AppearSwitchSave *this); @ .text::00316bac\n\n\n/* AppearSwitchSave::isOn() const */\n\nAppearSwitchSave __thiscall AppearSwitchSave::isOn(AppearSwitchSave *this)\n\n{\n  return this[0x48];\n}\n\n");

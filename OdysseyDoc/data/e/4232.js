@@ -1,0 +1,1 @@
+DOC.got("e/4232",{"3389":{"q":"::NVNcolorState","decl":{"f":"lib/NintendoSDK/include/nvn/nvn.h","l":87,"sig":"struct","end":89,"fi":223},"size":4,"align":1,"complete":true,"fields":[{"n":"reserved","t":"unsigned char[4]","off":0,"sz":4,"acc":"public","tu":null,"bits":null,"l":88,"cm":null,"ti":null}]}});

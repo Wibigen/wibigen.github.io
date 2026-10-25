@@ -1,0 +1,1 @@
+DOC.got("gh/FigureWalkingJudge/exeWait_.text_004882e4.cpp","// Nom démêlé : FigureWalkingJudge::exeWait\n// Symbole manglé : exeWait\n// void FigureWalkingJudge::exeWait(void); @ .text::004882e4\n\n\n/* FigureWalkingJudge::exeWait() */\n\nvoid FigureWalkingJudge::exeWait(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("e/4482",{"36138":{"q":"nvn::QueueErrorInfo","decl":{"f":"lib/NintendoSDK/include/nvn/nvn_Cpp.h","l":107,"sig":"union QueueErrorInfo","fi":224},"complete":false,"fwd":[["lib/NintendoSDK/include/nvn/nvn_Cpp.h",107]]}});

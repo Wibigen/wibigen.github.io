@@ -1,0 +1,1 @@
+DOC.got("gh/KoopaHackStopCtrl/endStop.cpp","// Nom démêlé : KoopaHackStopCtrl::endStop\n// Symbole manglé : endStop\n// void KoopaHackStopCtrl::endStop(LiveActor *param_1); @ .text::00194044\n\n\n/* KoopaHackStopCtrl::endStop(al::LiveActor const*) */\n\nvoid KoopaHackStopCtrl::endStop(LiveActor *param_1)\n\n{\n  *(undefined8 *)(param_1 + 8) = 0;\n  return;\n}\n\n");

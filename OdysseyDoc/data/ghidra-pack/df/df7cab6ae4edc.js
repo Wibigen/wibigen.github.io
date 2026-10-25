@@ -1,0 +1,1 @@
+DOC.got("gh/al/Triangle/getPrevBaseMtx.cpp","// Nom démêlé : al::Triangle::getPrevBaseMtx\n// Symbole manglé : getPrevBaseMtx\n// long __thiscall al::Triangle::getPrevBaseMtx(Triangle *this); @ .text::009514a4\n\n\n/* al::Triangle::getPrevBaseMtx() const */\n\nlong __thiscall al::Triangle::getPrevBaseMtx(Triangle *this)\n\n{\n  return *(long *)this + 0xb8;\n}\n\n");

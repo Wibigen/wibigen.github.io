@@ -1,0 +1,1 @@
+DOC.got("gh/al/DemoDirector/endDemo_.text_00ace3e0.cpp","// Nom démêlé : al::DemoDirector::endDemo\n// Symbole manglé : endDemo\n// void al::DemoDirector::endDemo(char *param_1); @ .text::00ace3e0\n\n\n/* al::DemoDirector::endDemo(char const*) */\n\nvoid al::DemoDirector::endDemo(char *param_1)\n\n{\n  return;\n}\n\n");

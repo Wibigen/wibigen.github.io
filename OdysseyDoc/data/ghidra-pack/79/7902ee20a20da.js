@@ -1,0 +1,1 @@
+DOC.got("gh/KoopaCapPlayerBinder/exeWait_.text_0018998c.cpp","// Nom démêlé : KoopaCapPlayerBinder::exeWait\n// Symbole manglé : exeWait\n// void KoopaCapPlayerBinder::exeWait(void); @ .text::0018998c\n\n\n/* KoopaCapPlayerBinder::exeWait() */\n\nvoid KoopaCapPlayerBinder::exeWait(void)\n\n{\n  return;\n}\n\n");

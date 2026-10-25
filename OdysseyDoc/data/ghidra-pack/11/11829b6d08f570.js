@@ -1,0 +1,1 @@
+DOC.got("gh/al/TriangleDrawActor/initSampler.cpp","// Nom démêlé : al::TriangleDrawActor::initSampler\n// Symbole manglé : initSampler\n// void al::TriangleDrawActor::initSampler(void); @ .text::00a70b60\n\n\n/* al::TriangleDrawActor::initSampler() */\n\nvoid al::TriangleDrawActor::initSampler(void)\n\n{\n  return;\n}\n\n");

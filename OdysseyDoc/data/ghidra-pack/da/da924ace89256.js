@@ -1,0 +1,1 @@
+DOC.got("gh/eui/RootPane/RootPane_.text_008e9544.cpp","// Nom démêlé : eui::RootPane::~RootPane\n// Symbole manglé : ~RootPane\n// void __thiscall eui::RootPane::~RootPane(RootPane *this); @ .text::008e9544\n\n\n/* eui::RootPane::~RootPane() */\n\nvoid __thiscall eui::RootPane::~RootPane(RootPane *this)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/AmiiboNpcLayout/decide.cpp","// Nom démêlé : AmiiboNpcLayout::decide\n// Symbole manglé : decide\n// void __thiscall AmiiboNpcLayout::decide(AmiiboNpcLayout *this); @ .text::002d9408\n\n\n/* AmiiboNpcLayout::decide() */\n\nvoid __thiscall AmiiboNpcLayout::decide(AmiiboNpcLayout *this)\n\n{\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1dc0f78);\n  return;\n}\n\n");

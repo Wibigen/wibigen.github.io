@@ -1,0 +1,1 @@
+DOC.got("gh/Tiara/startTalk_.text_004e7348.cpp","// Nom démêlé : Tiara::startTalk\n// Symbole manglé : startTalk\n// void __thiscall Tiara::startTalk(Tiara *this); @ .text::004e7348\n\n\n/* Tiara::startTalk() */\n\nvoid __thiscall Tiara::startTalk(Tiara *this)\n\n{\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1e702a8);\n  return;\n}\n\n");

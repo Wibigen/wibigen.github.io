@@ -1,0 +1,1 @@
+DOC.got("gh/alsd/AudioPlayer/getSoundName_.text_00b93054.cpp","// Nom démêlé : alsd::AudioPlayer::getSoundName\n// Symbole manglé : getSoundName\n// undefined8 alsd::AudioPlayer::getSoundName(uint param_1); @ .text::00b93054\n\n\n/* alsd::AudioPlayer::getSoundName(unsigned int) const */\n\nundefined8 alsd::AudioPlayer::getSoundName(uint param_1)\n\n{\n  return 0;\n}\n\n");

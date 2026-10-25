@@ -1,0 +1,1 @@
+DOC.got("gh/wslay_queue_empty.cpp","// Nom démêlé : wslay_queue_empty\n// Symbole manglé : wslay_queue_empty\n// bool wslay_queue_empty(long *param_1); @ .text::007a2f0c\n\n\nbool wslay_queue_empty(long *param_1)\n\n{\n  return *param_1 == 0;\n}\n\n");

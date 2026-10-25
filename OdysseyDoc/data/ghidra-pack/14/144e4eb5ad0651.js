@@ -1,0 +1,1 @@
+DOC.got("gh/alsd/AudioPlayer/calc_.text_00b93048.cpp","// Nom démêlé : alsd::AudioPlayer::calc\n// Symbole manglé : calc\n// void alsd::AudioPlayer::calc(void); @ .text::00b93048\n\n\n/* alsd::AudioPlayer::calc() */\n\nvoid alsd::AudioPlayer::calc(void)\n\n{\n  return;\n}\n\n");

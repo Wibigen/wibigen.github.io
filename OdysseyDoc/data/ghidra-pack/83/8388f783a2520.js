@@ -1,0 +1,1 @@
+DOC.got("gh/StatueSnapMark/exeWait_.text_0042c1bc.cpp","// Nom démêlé : StatueSnapMark::exeWait\n// Symbole manglé : exeWait\n// void StatueSnapMark::exeWait(void); @ .text::0042c1bc\n\n\n/* StatueSnapMark::exeWait() */\n\nvoid StatueSnapMark::exeWait(void)\n\n{\n  return;\n}\n\n");

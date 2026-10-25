@@ -1,0 +1,1 @@
+DOC.got("gh/eui/AnimButton/FinishDrag.cpp","// Nom démêlé : eui::AnimButton::FinishDrag\n// Symbole manglé : FinishDrag\n// void eui::AnimButton::FinishDrag(Vector2 *param_1); @ .text::008f2e80\n\n\n/* eui::AnimButton::FinishDrag(sead::Vector2<float> const*) */\n\nvoid eui::AnimButton::FinishDrag(Vector2 *param_1)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/Curl_global_host_cache_dtor.cpp","// Nom démêlé : Curl_global_host_cache_dtor\n// Symbole manglé : Curl_global_host_cache_dtor\n// void Curl_global_host_cache_dtor(void); @ .text::007faf18\n\n\nvoid Curl_global_host_cache_dtor(void)\n\n{\n  if (DAT_02572660 == '\\x01') {\n    Curl_hash_clean(&DAT_02572668);\n    DAT_02572660 = '\\0';\n  }\n  return;\n}\n\n");

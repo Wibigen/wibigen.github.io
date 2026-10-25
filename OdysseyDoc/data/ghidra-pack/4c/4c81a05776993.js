@@ -1,0 +1,1 @@
+DOC.got("gh/agl/lght/SSII/SSII_.text_00caf890.cpp","// Nom démêlé : agl::lght::SSII::~SSII\n// Symbole manglé : ~SSII\n// void __thiscall agl::lght::SSII::~SSII(SSII *this); @ .text::00caf890\n\n\n/* agl::lght::SSII::~SSII() */\n\nvoid __thiscall agl::lght::SSII::~SSII(SSII *this)\n\n{\n  ~SSII(this);\n  operator_delete(this);\n  return;\n}\n\n");

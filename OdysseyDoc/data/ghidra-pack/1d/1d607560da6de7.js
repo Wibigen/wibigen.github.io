@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerCollider2D3D/setFlag2D.cpp","// Nom démêlé : PlayerCollider2D3D::setFlag2D\n// Symbole manglé : setFlag2D\n// bool PlayerCollider2D3D::setFlag2D(bool param_1); @ .text::0053419c\n\n\n/* PlayerCollider2D3D::setFlag2D(bool) */\n\nbool PlayerCollider2D3D::setFlag2D(bool param_1)\n\n{\n  return param_1;\n}\n\n");

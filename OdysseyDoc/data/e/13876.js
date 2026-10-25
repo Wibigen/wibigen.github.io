@@ -1,0 +1,1 @@
+DOC.got("e/13876",{"216":{"q":"nn::bcat::detail::DeliveryCacheProgressImpl","files":["lib/NintendoSDK/include/nn/bcat.h"]},"217":{"q":"nn::bcat::detail::ipc","files":["lib/NintendoSDK/include/nn/bcat.h"]}});

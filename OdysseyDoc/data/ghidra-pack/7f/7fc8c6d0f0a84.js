@@ -1,0 +1,1 @@
+DOC.got("gh/TalkMessage/isIconWait.cpp","// Nom démêlé : TalkMessage::isIconWait\n// Symbole manglé : isIconWait\n// void __thiscall TalkMessage::isIconWait(TalkMessage *this); @ .text::0030dba0\n\n\n/* TalkMessage::isIconWait() const */\n\nvoid __thiscall TalkMessage::isIconWait(TalkMessage *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1dcefa8);\n  return;\n}\n\n");

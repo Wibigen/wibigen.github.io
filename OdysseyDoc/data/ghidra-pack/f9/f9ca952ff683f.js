@@ -1,0 +1,1 @@
+DOC.got("gh/al/GpuPerf/update_.text_00b50218.cpp","// Nom démêlé : al::GpuPerf::update\n// Symbole manglé : update\n// void al::GpuPerf::update(void); @ .text::00b50218\n\n\n/* al::GpuPerf::update() */\n\nvoid al::GpuPerf::update(void)\n\n{\n  agl::fctr::GPUStressChecker::calc(*(GPUStressChecker **)PTR_sInstance_01f5f760);\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/easeInOut.cpp","// Nom démêlé : al::easeInOut\n// Symbole manglé : easeInOut\n// float al::easeInOut(float param_1); @ .text::00a20c60\n\n\n/* al::easeInOut(float) */\n\nfloat al::easeInOut(float param_1)\n\n{\n  return (param_1 * -2.0 + 3.0) * param_1 * param_1;\n}\n\n");

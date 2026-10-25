@@ -1,0 +1,1 @@
+DOC.got("e/13795",{"140":{"q":"ams::kvdb::detail::result","files":["lib/NintendoSDK/include/vapours/results/kvdb_results.hpp"]}});

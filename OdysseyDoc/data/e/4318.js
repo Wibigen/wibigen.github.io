@@ -1,0 +1,1 @@
+DOC.got("e/4318",{"34550":{"q":"nn::util::Float2","decl":{"f":"lib/NintendoSDK/include/nn/util/MathTypes.h","l":29,"sig":"struct Float2","end":37,"fi":200},"size":8,"align":4,"complete":true,"fwd":[["lib/NintendoSDK/include/nn/ui2d/detail/TexCoordArray.h",13]]}});

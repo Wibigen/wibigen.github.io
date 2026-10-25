@@ -1,0 +1,1 @@
+DOC.got("gh/al/stopCartCamera.cpp","// Nom démêlé : al::stopCartCamera\n// Symbole manglé : stopCartCamera\n// void al::stopCartCamera(CameraTicket *param_1); @ .text::0093e3d4\n\n\n/* al::stopCartCamera(al::CameraTicket const*) */\n\nvoid al::stopCartCamera(CameraTicket *param_1)\n\n{\n  CameraPoserCart::stop(*(CameraPoserCart **)param_1);\n  return;\n}\n\n");

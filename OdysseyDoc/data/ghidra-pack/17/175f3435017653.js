@@ -1,0 +1,1 @@
+DOC.got("gh/sead/GameFrameworkNx/initRun.cpp","// Nom démêlé : sead::GameFrameworkNx::initRun_\n// Symbole manglé : initRun_\n// void sead::GameFrameworkNx::initRun_(Heap *param_1); @ .text::00831b74\n\n\n/* sead::GameFrameworkNx::initRun_(sead::Heap*) */\n\nvoid sead::GameFrameworkNx::initRun_(Heap *param_1)\n\n{\n  return;\n}\n\n");

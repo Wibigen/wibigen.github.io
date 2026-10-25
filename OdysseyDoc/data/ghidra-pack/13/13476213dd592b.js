@@ -1,0 +1,1 @@
+DOC.got("gh/sead/FrameHeap/isResizable_.text_00843d78.cpp","// Nom démêlé : sead::FrameHeap::isResizable\n// Symbole manglé : isResizable\n// undefined8 sead::FrameHeap::isResizable(void); @ .text::00843d78\n\n\n/* sead::FrameHeap::isResizable() const */\n\nundefined8 sead::FrameHeap::isResizable(void)\n\n{\n  return 0;\n}\n\n");

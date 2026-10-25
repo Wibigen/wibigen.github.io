@@ -1,0 +1,1 @@
+DOC.got("src/2100","#pragma once\n\n#include \"Library/LiveActor/LiveActor.h\"\n\nclass VocalMike : public al::LiveActor {\npublic:\n    VocalMike(const char* actorName);\n\n    void init(const al::ActorInitInfo& info) override;\n    bool receiveMsg(const al::SensorMsg* message, al::HitSensor* other,\n                    al::HitSensor* self) override;\n};\n");

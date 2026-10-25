@@ -1,0 +1,1 @@
+DOC.got("src/1121","#include \"Library/Yaml/ByamlContainerHeader.h\"\n\n#include <byteswap.h>\n\nnamespace al {\ns32 ByamlContainerHeader::getType() const {\n    return mType;\n}\n\ns32 ByamlContainerHeader::getCount(bool isRev) const {\n    if (isRev)\n        return bswap_32_ignore_last(mType);\n\n    return (mType >> 8);\n}\n}  // namespace al\n");

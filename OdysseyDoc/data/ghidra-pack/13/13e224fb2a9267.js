@@ -1,0 +1,1 @@
+DOC.got("gh/rs/prepo/disableIsSavePrepo.cpp","// Nom démêlé : rs::prepo::disableIsSavePrepo\n// Symbole manglé : disableIsSavePrepo\n// void rs::prepo::disableIsSavePrepo(void); @ .text::00675aa0\n\n\n/* rs::prepo::disableIsSavePrepo() */\n\nvoid rs::prepo::disableIsSavePrepo(void)\n\n{\n  return;\n}\n\n");

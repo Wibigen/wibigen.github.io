@@ -1,0 +1,1 @@
+DOC.got("gh/sead/Thread/getPriority_.text_0085ac6c.cpp","// Nom démêlé : sead::Thread::getPriority\n// Symbole manglé : getPriority\n// undefined4 __thiscall sead::Thread::getPriority(Thread *this); @ .text::0085ac6c\n\n\n/* sead::Thread::getPriority() const */\n\nundefined4 __thiscall sead::Thread::getPriority(Thread *this)\n\n{\n  return *(undefined4 *)(this + 0xf8);\n}\n\n");

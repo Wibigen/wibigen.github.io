@@ -1,0 +1,1 @@
+DOC.got("gh/agl/Shader/getShaderMode.cpp","// Nom démêlé : agl::Shader::getShaderMode\n// Symbole manglé : getShaderMode\n// undefined8 agl::Shader::getShaderMode(void); @ .text::008807d8\n\n\n/* agl::Shader::getShaderMode() const */\n\nundefined8 agl::Shader::getShaderMode(void)\n\n{\n  return 4;\n}\n\n");

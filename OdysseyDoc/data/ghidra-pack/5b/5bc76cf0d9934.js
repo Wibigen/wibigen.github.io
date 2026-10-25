@@ -1,0 +1,1 @@
+DOC.got("gh/CollapseSandHill/exeWait_.text_003502ac.cpp","// Nom démêlé : CollapseSandHill::exeWait\n// Symbole manglé : exeWait\n// void CollapseSandHill::exeWait(void); @ .text::003502ac\n\n\n/* CollapseSandHill::exeWait() */\n\nvoid CollapseSandHill::exeWait(void)\n\n{\n  return;\n}\n\n");

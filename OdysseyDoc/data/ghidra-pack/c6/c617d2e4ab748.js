@@ -1,0 +1,1 @@
+DOC.got("gh/al/isValidRegisterInfo.cpp","// Nom démêlé : al::isValidRegisterInfo\n// Symbole manglé : isValidRegisterInfo\n// undefined8 al::isValidRegisterInfo(NfpInfo *param_1); @ .text::00a606e8\n\n\n/* al::isValidRegisterInfo(al::NfpInfo const&) */\n\nundefined8 al::isValidRegisterInfo(NfpInfo *param_1)\n\n{\n  return 0;\n}\n\n");

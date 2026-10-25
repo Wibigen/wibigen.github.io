@@ -1,0 +1,1 @@
+DOC.got("gh/al/CameraTargetBase/isInMoonGravity.cpp","// Nom démêlé : al::CameraTargetBase::isInMoonGravity\n// Symbole manglé : isInMoonGravity\n// undefined8 al::CameraTargetBase::isInMoonGravity(void); @ .text::0012719c\n\n\n/* al::CameraTargetBase::isInMoonGravity() const */\n\nundefined8 al::CameraTargetBase::isInMoonGravity(void)\n\n{\n  return 0;\n}\n\n");

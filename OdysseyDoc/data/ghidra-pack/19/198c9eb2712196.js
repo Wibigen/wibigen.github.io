@@ -1,0 +1,1 @@
+DOC.got("gh/KoopaStateDemoBattleStart/exeSkip_.text_0019e2ac.cpp","// Nom démêlé : KoopaStateDemoBattleStart::exeSkip\n// Symbole manglé : exeSkip\n// void KoopaStateDemoBattleStart::exeSkip(void); @ .text::0019e2ac\n\n\n/* KoopaStateDemoBattleStart::exeSkip() */\n\nvoid KoopaStateDemoBattleStart::exeSkip(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/NoteObjDirector/exeInit.cpp","// Nom démêlé : NoteObjDirector::exeInit\n// Symbole manglé : exeInit\n// void NoteObjDirector::exeInit(void); @ .text::003d24f8\n\n\n/* NoteObjDirector::exeInit() */\n\nvoid NoteObjDirector::exeInit(void)\n\n{\n  return;\n}\n\n");

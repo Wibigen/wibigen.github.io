@@ -1,0 +1,1 @@
+DOC.got("gh/EnemyCap/isBlowDown.cpp","// Nom démêlé : EnemyCap::isBlowDown\n// Symbole manglé : isBlowDown\n// void __thiscall EnemyCap::isBlowDown(EnemyCap *this); @ .text::001fd008\n\n\n/* EnemyCap::isBlowDown() const */\n\nvoid __thiscall EnemyCap::isBlowDown(EnemyCap *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1d8c700);\n  return;\n}\n\n");

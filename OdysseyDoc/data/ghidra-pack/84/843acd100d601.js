@@ -1,0 +1,1 @@
+DOC.got("gh/al/TriangleDrawActor/initFetchShader.cpp","// Nom démêlé : al::TriangleDrawActor::initFetchShader\n// Symbole manglé : initFetchShader\n// void al::TriangleDrawActor::initFetchShader(void); @ .text::00a70b5c\n\n\n/* al::TriangleDrawActor::initFetchShader() */\n\nvoid al::TriangleDrawActor::initFetchShader(void)\n\n{\n  return;\n}\n\n");

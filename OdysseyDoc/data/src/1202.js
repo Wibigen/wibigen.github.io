@@ -1,0 +1,1 @@
+DOC.got("src/1202","#include \"Project/Effect/EffectLight.h\"\n\n#include <math/seadMathCalcCommon.h>\n\nnamespace al {\nvoid EffectLight::set(const sead::Vector3f& pos, f32 intensity, const sead::Color4f& color,\n                      bool enabled) {\n    mPosition = pos;\n    mIntensity = intensity;\n    mColor = color;\n    mIsEnabled = enabled;\n}\n}  // namespace al\n");

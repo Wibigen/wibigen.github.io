@@ -1,0 +1,1 @@
+DOC.got("e/4380",{"34913":{"q":"nn::vi::Display","decl":{"f":"lib/sead/include/framework/nx/seadGameFrameworkNx.h","l":18,"sig":"class Display","fi":1341},"complete":false,"fwd":[["lib/NintendoSDK/include/nn/vi.h",47],["lib/sead/include/framework/nx/seadGameFrameworkNx.h",18]]}});

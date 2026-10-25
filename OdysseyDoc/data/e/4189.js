@@ -1,0 +1,1 @@
+DOC.got("e/4189",{"33661":{"q":"nn::os::LightEventType","decl":{"f":"lib/NintendoSDK/include/nn/os.h","l":47,"sig":"struct LightEventType","end":49,"fi":163},"size":12,"align":4,"complete":true,"fields":[{"n":"storage","t":"std::aligned_storage_t<12, 4>","off":0,"sz":12,"acc":"public","bits":null,"l":48,"cm":null,"ti":null}]}});

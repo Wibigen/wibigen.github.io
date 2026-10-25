@@ -1,0 +1,1 @@
+DOC.got("src/698","#pragma once\n\n#include \"Library/Factory/Factory.h\"\n\nnamespace al {\nclass LiveActor;\n\nusing ActorCreatorFunction = LiveActor* (*)(const char* actorName);\n\nclass ActorFactory : public Factory<ActorCreatorFunction> {\npublic:\n    ActorFactory(const char* pName);\n};\n}  // namespace al\n");

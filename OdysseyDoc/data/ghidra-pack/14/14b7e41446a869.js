@@ -1,0 +1,1 @@
+DOC.got("gh/curl_easy_strerror.cpp","// Nom démêlé : curl_easy_strerror\n// Symbole manglé : curl_easy_strerror\n// undefined8 curl_easy_strerror(uint param_1); @ .text::00804488\n\n\nundefined8 curl_easy_strerror(uint param_1)\n\n{\n  if (param_1 < 0x61) {\n    return *(undefined8 *)((long)(int)param_1 * 8 + 0x1ec9c30);\n  }\n  return 0x1958cf0;\n}\n\n");

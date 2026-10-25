@@ -1,0 +1,1 @@
+DOC.got("gh/TimeBalloon/getDataTypeNoticeIdDebug.cpp","// Nom démêlé : TimeBalloon::getDataTypeNoticeIdDebug\n// Symbole manglé : getDataTypeNoticeIdDebug\n// undefined8 TimeBalloon::getDataTypeNoticeIdDebug(void); @ .text::00468d54\n\n\n/* TimeBalloon::getDataTypeNoticeIdDebug() */\n\nundefined8 TimeBalloon::getDataTypeNoticeIdDebug(void)\n\n{\n  return 0x12d;\n}\n\n");

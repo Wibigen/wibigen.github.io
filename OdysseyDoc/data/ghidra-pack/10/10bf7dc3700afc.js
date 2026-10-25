@@ -1,0 +1,1 @@
+DOC.got("gh/al/isStopScene_.text_009f0af4.cpp","// Nom démêlé : al::isStopScene\n// Symbole manglé : isStopScene\n// bool al::isStopScene(SceneStopCtrl *param_1); @ .text::009f0af4\n\n\n/* al::isStopScene(al::SceneStopCtrl*) */\n\nbool al::isStopScene(SceneStopCtrl *param_1)\n\n{\n  if (*(int *)(param_1 + 4) != 0) {\n    return false;\n  }\n  return 0 < *(int *)param_1;\n}\n\n");

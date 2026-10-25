@@ -1,0 +1,1 @@
+DOC.got("gh/Killer/isHack_.text_00246724.cpp","// Nom démêlé : Killer::isHack\n// Symbole manglé : isHack\n// void __thiscall Killer::isHack(Killer *this); @ .text::00246724\n\n\n/* Killer::isHack() const */\n\nvoid __thiscall Killer::isHack(Killer *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1d9b230);\n  return;\n}\n\n");

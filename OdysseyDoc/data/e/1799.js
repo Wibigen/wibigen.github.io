@@ -1,0 +1,1 @@
+DOC.got("e/1799",{"20350":{"q":"al::ISeModifier","decl":{"f":"lib/al/Library/Se/SeFunction.h","l":9,"sig":"class ISeModifier","fi":1070},"complete":false,"fwd":[["lib/al/Library/Se/SeFunction.h",9]]}});

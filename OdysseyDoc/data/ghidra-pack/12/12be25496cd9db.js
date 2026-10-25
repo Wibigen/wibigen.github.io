@@ -1,0 +1,1 @@
+DOC.got("gh/sead/EnvUtil/getBuildPlatform.cpp","// Nom démêlé : sead::EnvUtil::getBuildPlatform\n// Symbole manglé : getBuildPlatform\n// undefined8 sead::EnvUtil::getBuildPlatform(void); @ .text::00c5eec8\n\n\n/* sead::EnvUtil::getBuildPlatform() */\n\nundefined8 sead::EnvUtil::getBuildPlatform(void)\n\n{\n  return 6;\n}\n\n");

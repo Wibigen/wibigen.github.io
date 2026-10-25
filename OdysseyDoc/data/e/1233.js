@@ -1,0 +1,1 @@
+DOC.got("e/1233",{"17491":{"q":"al::ArrowHitResultBuffer","decl":{"f":"lib/al/Library/Collision/CollisionParts.h","l":8,"sig":"class ArrowHitResultBuffer","fi":513},"complete":false,"fwd":[["lib/al/Library/Collision/CollisionParts.h",8],["lib/al/Library/Collision/ICollisionPartsKeeper.h",15]]}});

@@ -1,0 +1,1 @@
+DOC.got("e/4530",{"369":{"q":"(anonymous@src/MapObj/BlockBrickBig2D)::(anonymous)","decl":{"f":"src/MapObj/BlockBrickBig2D.cpp","l":18,"sig":"NERVES_MAKE_STRUCT(BlockBrickBig2D, Wait)","end":18,"fi":1805},"size":8,"align":8,"complete":true,"fields":[{"n":"Wait","t":"BlockBrickBig2DNrvWait","off":0,"sz":8,"acc":"public","bits":null,"l":18,"cm":null,"ti":612}]}});

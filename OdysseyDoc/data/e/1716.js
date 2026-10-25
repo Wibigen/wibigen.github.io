@@ -1,0 +1,1 @@
+DOC.got("e/1716",{"19961":{"q":"al::FontHolder","decl":{"f":"lib/al/Library/Layout/LayoutSystem.h","l":16,"sig":"class FontHolder","fi":678},"complete":false,"fwd":[["lib/al/Library/Layout/LayoutSystem.h",16],["lib/al/Library/System/GameSystemInfo.h",17]]}});

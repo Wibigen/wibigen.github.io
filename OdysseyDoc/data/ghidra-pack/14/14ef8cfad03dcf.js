@@ -1,0 +1,1 @@
+DOC.got("gh/Can/getFriction.cpp","// Nom démêlé : Can::getFriction\n// Symbole manglé : getFriction\n// undefined4 __thiscall Can::getFriction(Can *this); @ .text::0032ad3c\n\n\n/* Can::getFriction() const */\n\nundefined4 __thiscall Can::getFriction(Can *this)\n\n{\n  return *(undefined4 *)((ulong)(byte)this[0x119] * 4 + 0x19869b0);\n}\n\n");

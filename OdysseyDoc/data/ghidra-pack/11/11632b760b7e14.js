@@ -1,0 +1,1 @@
+DOC.got("gh/JangoDirector/placeCap.cpp","// Nom démêlé : JangoDirector::placeCap\n// Symbole manglé : placeCap\n// void __thiscall JangoDirector::placeCap(JangoDirector *this); @ .text::002300fc\n\n\n/* JangoDirector::placeCap() */\n\nvoid __thiscall JangoDirector::placeCap(JangoDirector *this)\n\n{\n  this[0x14] = (JangoDirector)0x1;\n  return;\n}\n\n");

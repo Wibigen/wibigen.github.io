@@ -1,0 +1,1 @@
+DOC.got("e/5100",{"43941":{"q":"sead::BaseVec3","decl":{"f":"lib/sead/include/math/seadMathBase.h","l":22,"sig":"template <typename T>\nstruct BaseVec3","end":34,"fi":1387},"tp":["typename T"],"complete":true}});

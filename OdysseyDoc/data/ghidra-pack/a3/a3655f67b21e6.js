@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/SecureStream/IsCapable_.text_007f6ea4.cpp","// Nom démêlé : nn::nex::SecureStream::IsCapable\n// Symbole manglé : IsCapable\n// undefined8 nn::nex::SecureStream::IsCapable(uint param_1); @ .text::007f6ea4\n\n\n/* nn::nex::SecureStream::IsCapable(unsigned int) */\n\nundefined8 nn::nex::SecureStream::IsCapable(uint param_1)\n\n{\n  return 0;\n}\n\n");

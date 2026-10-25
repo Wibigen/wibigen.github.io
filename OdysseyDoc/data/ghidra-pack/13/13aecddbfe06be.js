@@ -1,0 +1,1 @@
+DOC.got("gh/StateGateKeeperBattleEndDemo/control_.text_001c3618.cpp","// Nom démêlé : StateGateKeeperBattleEndDemo::control\n// Symbole manglé : control\n// void StateGateKeeperBattleEndDemo::control(void); @ .text::001c3618\n\n\n/* StateGateKeeperBattleEndDemo::control() */\n\nvoid StateGateKeeperBattleEndDemo::control(void)\n\n{\n  return;\n}\n\n");

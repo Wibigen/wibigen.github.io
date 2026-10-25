@@ -1,0 +1,1 @@
+DOC.got("gh/nn/ui2d/Pane/GetMaterialCount_.text_00c09088.cpp","// Nom démêlé : nn::ui2d::Pane::GetMaterialCount\n// Symbole manglé : GetMaterialCount\n// undefined8 nn::ui2d::Pane::GetMaterialCount(void); @ .text::00c09088\n\n\n/* nn::ui2d::Pane::GetMaterialCount() const */\n\nundefined8 nn::ui2d::Pane::GetMaterialCount(void)\n\n{\n  return 0;\n}\n\n");

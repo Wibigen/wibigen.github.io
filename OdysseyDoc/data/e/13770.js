@@ -1,0 +1,1 @@
+DOC.got("e/13770",{"117":{"q":"ams::dmnt::cheat","files":["lib/NintendoSDK/include/vapours/results/dmnt_results.hpp"]},"118":{"q":"ams::dmnt::detail","files":["lib/NintendoSDK/include/vapours/results/dmnt_results.hpp"]}});

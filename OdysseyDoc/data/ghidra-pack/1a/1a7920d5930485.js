@@ -1,0 +1,1 @@
+DOC.got("gh/al/isDead_.text_009d9980.cpp","// Nom démêlé : al::isDead\n// Symbole manglé : isDead\n// undefined1 al::isDead(LiveActor *param_1); @ .text::009d9980\n\n\n/* al::isDead(al::LiveActor const*) */\n\nundefined1 al::isDead(LiveActor *param_1)\n\n{\n  return **(undefined1 **)(param_1 + 0x100);\n}\n\n");

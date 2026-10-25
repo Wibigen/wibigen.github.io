@@ -1,0 +1,1 @@
+DOC.got("gh/TsukkunStateHack/exeCancel.cpp","// Nom démêlé : TsukkunStateHack::exeCancel\n// Symbole manglé : exeCancel\n// void TsukkunStateHack::exeCancel(void); @ .text::002a6fb8\n\n\n/* TsukkunStateHack::exeCancel() */\n\nvoid TsukkunStateHack::exeCancel(void)\n\n{\n  return;\n}\n\n");

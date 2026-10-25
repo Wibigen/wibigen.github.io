@@ -1,0 +1,1 @@
+DOC.got("gh/GameDataHolder/getSceneObjName_.text_006316c8.cpp","// Nom démêlé : GameDataHolder::getSceneObjName\n// Symbole manglé : getSceneObjName\n// undefined8 GameDataHolder::getSceneObjName(void); @ .text::006316c8\n\n\n/* GameDataHolder::getSceneObjName() const */\n\nundefined8 GameDataHolder::getSceneObjName(void)\n\n{\n  return 0x1950b7f;\n}\n\n");

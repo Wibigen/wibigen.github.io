@@ -1,0 +1,1 @@
+DOC.got("e/3682",{"31329":{"q":"nn::diag::LogMetaData","decl":{"f":"lib/NintendoSDK/include/nn/diag.h","l":12,"sig":"struct LogMetaData","fi":19},"complete":false,"fwd":[["lib/NintendoSDK/include/nn/diag.h",12]]}});

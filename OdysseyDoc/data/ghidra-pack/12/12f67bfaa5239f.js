@@ -1,0 +1,1 @@
+DOC.got("gh/al/calcTouchLayoutPos.cpp","// Nom démêlé : al::calcTouchLayoutPos\n// Symbole manglé : calcTouchLayoutPos\n// void al::calcTouchLayoutPos(Vector2 *param_1); @ .text::00961eb8\n\n\n/* al::calcTouchLayoutPos(sead::Vector2<float>*) */\n\nvoid al::calcTouchLayoutPos(Vector2 *param_1)\n\n{\n  return;\n}\n\n");

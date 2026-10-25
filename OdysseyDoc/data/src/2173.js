@@ -1,0 +1,1 @@
+DOC.got("src/2173","#pragma once\n\n#include <math/seadVector.h>\n\nclass PlayerConst;\n\nclass PlayerContinuousLongJump {\npublic:\n    PlayerContinuousLongJump(const PlayerConst* pConst);\n\n    void countUp();\n    void update();\n    const char* getLongJumpAnimName() const;\n\nprivate:\n    const PlayerConst* mConst;\n    s32 mCount = 0;\n    s32 mTimer = 0;\n};\n");

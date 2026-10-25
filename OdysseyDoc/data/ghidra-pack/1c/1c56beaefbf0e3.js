@@ -1,0 +1,1 @@
+DOC.got("gh/eui/AnimButton/ProcessCancel.cpp","// Nom démêlé : eui::AnimButton::ProcessCancel\n// Symbole manglé : ProcessCancel\n// undefined8 eui::AnimButton::ProcessCancel(void); @ .text::008f33a0\n\n\n/* eui::AnimButton::ProcessCancel() */\n\nundefined8 eui::AnimButton::ProcessCancel(void)\n\n{\n  return 1;\n}\n\n");

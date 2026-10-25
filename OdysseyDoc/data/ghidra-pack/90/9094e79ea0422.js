@@ -1,0 +1,1 @@
+DOC.got("gh/al/TriangleDrawActor/initIndexStream.cpp","// Nom démêlé : al::TriangleDrawActor::initIndexStream\n// Symbole manglé : initIndexStream\n// void al::TriangleDrawActor::initIndexStream(void); @ .text::00a70b68\n\n\n/* al::TriangleDrawActor::initIndexStream() */\n\nvoid al::TriangleDrawActor::initIndexStream(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/FUN_.text_00613f54.cpp","// Nom démêlé : FUN_.text__00613f54\n// Symbole manglé : FUN_.text__00613f54\n// E3Sequence * FUN_.text__00613f54(char *param_1); @ .text::00613f54\n\n\nE3Sequence * FUN__text__00613f54(char *param_1)\n\n{\n  E3Sequence *this;\n  \n  this = operator_new(0x348);\n  E3Sequence::E3Sequence(this,param_1);\n  return this;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("src/462","#include \"Library/Camera/CameraTargetBase.h\"\n\nnamespace al {\n\nCameraTargetBase::CameraTargetBase() = default;\n\n}  // namespace al\n");

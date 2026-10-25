@@ -1,0 +1,1 @@
+DOC.got("gh/nn/atk/detail/Voice/FreeAllWaveBuffer_.text_00bc537c.cpp","// Nom démêlé : nn::atk::detail::Voice::FreeAllWaveBuffer\n// Symbole manglé : FreeAllWaveBuffer\n// void nn::atk::detail::Voice::FreeAllWaveBuffer(void); @ .text::00bc537c\n\n\n/* nn::atk::detail::Voice::FreeAllWaveBuffer() */\n\nvoid nn::atk::detail::Voice::FreeAllWaveBuffer(void)\n\n{\n  return;\n}\n\n");

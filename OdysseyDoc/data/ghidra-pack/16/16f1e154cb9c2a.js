@@ -1,0 +1,1 @@
+DOC.got("gh/al/validateLodModel.cpp","// Nom démêlé : al::validateLodModel\n// Symbole manglé : validateLodModel\n// void al::validateLodModel(LiveActor *param_1); @ .text::009e251c\n\n\n/* al::validateLodModel(al::LiveActor*) */\n\nvoid al::validateLodModel(LiveActor *param_1)\n\n{\n  validateLodModel(*(ModelKeeper **)(param_1 + 0x88));\n  return;\n}\n\n");

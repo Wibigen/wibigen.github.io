@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Core/DeleteGlobals.cpp","// Nom démêlé : nn::nex::Core::DeleteGlobals\n// Symbole manglé : DeleteGlobals\n// void nn::nex::Core::DeleteGlobals(void); @ .text::007393e8\n\n\n/* nn::nex::Core::DeleteGlobals() */\n\nvoid nn::nex::Core::DeleteGlobals(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("e/5584",{"49233":{"q":"sead::detail::DummyClassForDelegate","decl":{"f":"lib/sead/include/prim/seadDelegate.h","l":494,"sig":"class DummyClassForDelegate","end":496,"fi":1414},"size":1,"align":1,"complete":true}});

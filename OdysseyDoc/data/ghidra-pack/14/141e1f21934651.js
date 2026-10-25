@@ -1,0 +1,1 @@
+DOC.got("gh/al/getKeyPoseCount.cpp","// Nom démêlé : al::getKeyPoseCount\n// Symbole manglé : getKeyPoseCount\n// undefined4 al::getKeyPoseCount(KeyPoseKeeper *param_1); @ .text::009b0024\n\n\n/* al::getKeyPoseCount(al::KeyPoseKeeper const*) */\n\nundefined4 al::getKeyPoseCount(KeyPoseKeeper *param_1)\n\n{\n  return *(undefined4 *)(param_1 + 8);\n}\n\n");

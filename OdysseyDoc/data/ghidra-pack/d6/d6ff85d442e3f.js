@@ -1,0 +1,1 @@
+DOC.got("gh/PictureStageChange/exeWait_.text_003e03d8.cpp","// Nom démêlé : PictureStageChange::exeWait\n// Symbole manglé : exeWait\n// void PictureStageChange::exeWait(void); @ .text::003e03d8\n\n\n/* PictureStageChange::exeWait() */\n\nvoid PictureStageChange::exeWait(void)\n\n{\n  return;\n}\n\n");

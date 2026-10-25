@@ -1,0 +1,1 @@
+DOC.got("gh/GameDataFile/talkKakku.cpp","// Nom démêlé : GameDataFile::talkKakku\n// Symbole manglé : talkKakku\n// void __thiscall GameDataFile::talkKakku(GameDataFile *this); @ .text::00624d5c\n\n\n/* GameDataFile::talkKakku() */\n\nvoid __thiscall GameDataFile::talkKakku(GameDataFile *this)\n\n{\n  this[0x840] = (GameDataFile)0x1;\n  return;\n}\n\n");

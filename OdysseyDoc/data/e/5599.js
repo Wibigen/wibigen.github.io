@@ -1,0 +1,1 @@
+DOC.got("e/5599",{"49265":{"q":"sead::hostio::PropertyEventListener","decl":{"f":"lib/sead/include/hostio/seadHostIOEventListener.h","l":91,"sig":"class PropertyEventListener : public LifeCheckable","end":99,"fi":1380},"size":1,"align":1,"bases":[["LifeCheckable","public",false,49259]],"derived":[49263],"complete":true}});

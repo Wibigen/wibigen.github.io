@@ -1,0 +1,1 @@
+DOC.got("gh/uhash_free.cpp","// Nom démêlé : uhash_free\n// Symbole manglé : uhash_free\n// undefined8 uhash_free(long param_1); @ .text::0072dc44\n\n\nundefined8 uhash_free(long param_1)\n\n{\n  if (param_1 != 0) {\n    free((void *)(param_1 - (ulong)*(byte *)(param_1 + -1)));\n  }\n  return 1;\n}\n\n");

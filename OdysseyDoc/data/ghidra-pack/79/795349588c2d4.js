@@ -1,0 +1,1 @@
+DOC.got("gh/eui/Screen/getLayoutName.cpp","// Nom démêlé : eui::Screen::getLayoutName_\n// Symbole manglé : getLayoutName_\n// undefined8 eui::Screen::getLayoutName_(void); @ .text::008ef4c8\n\n\n/* eui::Screen::getLayoutName_() const */\n\nundefined8 eui::Screen::getLayoutName_(void)\n\n{\n  return 0;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("e/4257",{"34048":{"q":"nn::time::PosixTime","decl":{"f":"lib/NintendoSDK/include/nn/time.h","l":65,"sig":"struct PosixTime","end":67,"fi":189},"size":8,"align":8,"complete":true,"fields":[{"n":"time","t":"u64","off":0,"sz":8,"acc":"public","bits":null,"l":66,"cm":null,"ti":49377}]}});

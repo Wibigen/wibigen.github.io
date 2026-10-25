@@ -1,0 +1,1 @@
+DOC.got("e/221",{"10297":{"q":"NpcEventSceneInfo","decl":{"f":"src/Npc/NpcEventDirector.h","l":25,"sig":"class NpcEventSceneInfo","fi":2067},"complete":false,"fwd":[["src/Npc/NpcEventDirector.h",25]]}});

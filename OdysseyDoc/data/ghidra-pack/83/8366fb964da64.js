@@ -1,0 +1,1 @@
+DOC.got("gh/ButtonMiiverse/setOff.cpp","// Nom démêlé : ButtonMiiverse::setOff\n// Symbole manglé : setOff\n// void __thiscall ButtonMiiverse::setOff(ButtonMiiverse *this); @ .text::002dbb84\n\n\n/* ButtonMiiverse::setOff() */\n\nvoid __thiscall ButtonMiiverse::setOff(ButtonMiiverse *this)\n\n{\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1dc2380);\n  return;\n}\n\n");

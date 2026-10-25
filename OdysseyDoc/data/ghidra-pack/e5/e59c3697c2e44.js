@@ -1,0 +1,1 @@
+DOC.got("gh/nn/atk/detail/MemoryFileStream/Flush_.text_00bbfbc8.cpp","// Nom démêlé : nn::atk::detail::MemoryFileStream::Flush\n// Symbole manglé : Flush\n// void nn::atk::detail::MemoryFileStream::Flush(void); @ .text::00bbfbc8\n\n\n/* nn::atk::detail::MemoryFileStream::Flush() */\n\nvoid nn::atk::detail::MemoryFileStream::Flush(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/nn/vfx/detail/OutputWarning.cpp","// Nom démêlé : nn::vfx::detail::OutputWarning\n// Symbole manglé : OutputWarning\n// void nn::vfx::detail::OutputWarning(char *param_1,...); @ .text::00c2c9c0\n\n\n/* nn::vfx::detail::OutputWarning(char const*, ...) */\n\nvoid nn::vfx::detail::OutputWarning(char *param_1,...)\n\n{\n  return;\n}\n\n");

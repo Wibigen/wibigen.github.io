@@ -1,0 +1,1 @@
+DOC.got("e/4428",{"3551":{"q":"::NVNvertexAttribState","decl":{"f":"lib/NintendoSDK/include/nvn/nvn.h","l":169,"sig":"struct","end":171,"fi":223},"size":4,"align":1,"complete":true,"fields":[{"n":"reserved","t":"char[4]","off":0,"sz":4,"acc":"public","tu":null,"bits":null,"l":170,"cm":null,"ti":null}]}});

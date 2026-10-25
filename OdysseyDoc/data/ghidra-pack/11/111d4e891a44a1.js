@@ -1,0 +1,1 @@
+DOC.got("gh/ShopStateInShop/exeBuyShine.cpp","// Nom démêlé : ShopStateInShop::exeBuyShine\n// Symbole manglé : exeBuyShine\n// void ShopStateInShop::exeBuyShine(void); @ .text::00419108\n\n\n/* ShopStateInShop::exeBuyShine() */\n\nvoid ShopStateInShop::exeBuyShine(void)\n\n{\n  return;\n}\n\n");

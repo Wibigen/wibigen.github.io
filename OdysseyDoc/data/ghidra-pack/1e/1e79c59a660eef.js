@@ -1,0 +1,1 @@
+DOC.got("gh/wslay_queue_tail.cpp","// Nom démêlé : wslay_queue_tail\n// Symbole manglé : wslay_queue_tail\n// undefined8 wslay_queue_tail(long param_1); @ .text::007a2f00\n\n\nundefined8 wslay_queue_tail(long param_1)\n\n{\n  return **(undefined8 **)(param_1 + 8);\n}\n\n");

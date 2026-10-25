@@ -1,0 +1,1 @@
+DOC.got("e/4263",{"34060":{"q":"nn::ui2d::BuildArgSet","decl":{"f":"lib/NintendoSDK/include/nn/ui2d/Pane.h","l":39,"sig":"struct BuildArgSet","fi":193},"complete":false,"fwd":[["lib/NintendoSDK/include/nn/ui2d/Pane.h",39],["lib/NintendoSDK/include/nn/ui2d/Parts.h",12]]}});

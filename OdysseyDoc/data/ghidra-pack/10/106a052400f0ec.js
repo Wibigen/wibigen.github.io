@@ -1,0 +1,1 @@
+DOC.got("gh/al/isModelAlphaMask.cpp","// Nom démêlé : al::isModelAlphaMask\n// Symbole manglé : isModelAlphaMask\n// bool al::isModelAlphaMask(LiveActor *param_1); @ .text::009dfb18\n\n\n/* al::isModelAlphaMask(al::LiveActor const*) */\n\nbool al::isModelAlphaMask(LiveActor *param_1)\n\n{\n  return *(float *)(*(long *)(*(long *)(param_1 + 0x88) + 0x10) + 0x178) < 1.0;\n}\n\n");

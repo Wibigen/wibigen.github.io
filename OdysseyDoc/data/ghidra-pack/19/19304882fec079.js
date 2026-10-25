@@ -1,0 +1,1 @@
+DOC.got("gh/KoopaPuppet/getTrans.cpp","// Nom démêlé : KoopaPuppet::getTrans\n// Symbole manglé : getTrans\n// void __thiscall KoopaPuppet::getTrans(KoopaPuppet *this); @ .text::00199790\n\n\n/* KoopaPuppet::getTrans() const */\n\nvoid __thiscall KoopaPuppet::getTrans(KoopaPuppet *this)\n\n{\n  al::getTrans(*(LiveActor **)this);\n  return;\n}\n\n");

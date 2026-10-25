@@ -1,0 +1,1 @@
+DOC.got("src/161","#pragma once\n\n#include <nn/types.h>\n\nextern \"C\" int _nnmusl_errno_from_result(nn::Result);\nextern \"C\" int __nnmusl_BroadcastConditionVariable(void*);\n");

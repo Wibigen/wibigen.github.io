@@ -1,0 +1,1 @@
+DOC.got("gh/HelpAmiiboFallCoin/isEnableUse_.text_00103a84.cpp","// Nom démêlé : HelpAmiiboFallCoin::isEnableUse\n// Symbole manglé : isEnableUse\n// undefined8 HelpAmiiboFallCoin::isEnableUse(void); @ .text::00103a84\n\n\n/* HelpAmiiboFallCoin::isEnableUse() */\n\nundefined8 HelpAmiiboFallCoin::isEnableUse(void)\n\n{\n  return 1;\n}\n\n");

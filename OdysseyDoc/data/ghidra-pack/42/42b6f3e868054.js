@@ -1,0 +1,1 @@
+DOC.got("gh/al/getVirtualDisplayHeight.cpp","// Nom démêlé : al::getVirtualDisplayHeight\n// Symbole manglé : getVirtualDisplayHeight\n// undefined8 al::getVirtualDisplayHeight(void); @ .text::00ad1444\n\n\n/* al::getVirtualDisplayHeight() */\n\nundefined8 al::getVirtualDisplayHeight(void)\n\n{\n  return 0x2d0;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/BgmChangeableParams/calcPitch.cpp","// Nom démêlé : al::BgmChangeableParams::calcPitch\n// Symbole manglé : calcPitch\n// void al::BgmChangeableParams::calcPitch(float param_1); @ .text::00b47b6c\n\n\n/* al::BgmChangeableParams::calcPitch(float) */\n\nvoid al::BgmChangeableParams::calcPitch(float param_1)\n\n{\n  exp2f(param_1 / 12.0);\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/DoorSnow/isDemoEnd.cpp","// Nom démêlé : DoorSnow::isDemoEnd\n// Symbole manglé : isDemoEnd\n// void __thiscall DoorSnow::isDemoEnd(DoorSnow *this); @ .text::0036064c\n\n\n/* DoorSnow::isDemoEnd() const */\n\nvoid __thiscall DoorSnow::isDemoEnd(DoorSnow *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1df0fb8);\n  return;\n}\n\n");

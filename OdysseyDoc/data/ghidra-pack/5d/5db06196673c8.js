@@ -1,0 +1,1 @@
+DOC.got("gh/al/drawLayoutKit.cpp","// Nom démêlé : al::drawLayoutKit\n// Symbole manglé : drawLayoutKit\n// void al::drawLayoutKit(Scene *param_1,char *param_2); @ .text::00ad0d3c\n\n\n/* al::drawLayoutKit(al::Scene const*, char const*) */\n\nvoid al::drawLayoutKit(Scene *param_1,char *param_2)\n\n{\n  executeDraw(*(LayoutKit **)(param_1 + 0x98),param_2);\n  return;\n}\n\n");

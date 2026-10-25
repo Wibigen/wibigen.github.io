@@ -1,0 +1,1 @@
+DOC.got("gh/al/EffectObj/kill_.text_00a68020.cpp","// Nom démêlé : al::EffectObj::kill\n// Symbole manglé : kill\n// void __thiscall al::EffectObj::kill(EffectObj *this); @ .text::00a68020\n\n\n/* al::EffectObj::kill() */\n\nvoid __thiscall al::EffectObj::kill(EffectObj *this)\n\n{\n  this[0x155] = (EffectObj)0x0;\n  LiveActor::kill((LiveActor *)this);\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/rs/isRideMotorcycle.cpp","// Nom démêlé : rs::isRideMotorcycle\n// Symbole manglé : isRideMotorcycle\n// undefined1 rs::isRideMotorcycle(long param_1); @ .text::006343c0\n\n\n/* rs::isRideMotorcycle(GameDataHolderAccessor) */\n\nundefined1 rs::isRideMotorcycle(long param_1)\n\n{\n  return *(undefined1 *)(*(long *)(param_1 + 0x20) + 0x7d1);\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/DemoChangeWorldScene/endDemoBegin.cpp","// Nom démêlé : DemoChangeWorldScene::endDemoBegin\n// Symbole manglé : endDemoBegin\n// void DemoChangeWorldScene::endDemoBegin(void); @ .text::005a706c\n\n\n/* DemoChangeWorldScene::endDemoBegin() */\n\nvoid DemoChangeWorldScene::endDemoBegin(void)\n\n{\n  return;\n}\n\n");

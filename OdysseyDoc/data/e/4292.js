@@ -1,0 +1,1 @@
+DOC.got("e/4292",{"3425":{"q":"::NVNdepthStencilState","decl":{"f":"lib/NintendoSDK/include/nvn/nvn.h","l":70,"sig":"struct","end":72,"fi":223},"size":8,"align":1,"complete":true,"fields":[{"n":"reserved","t":"char[8]","off":0,"sz":8,"acc":"public","tu":null,"bits":null,"l":71,"cm":null,"ti":null}]}});

@@ -1,0 +1,1 @@
+DOC.got("src/652","#pragma once\n\nnamespace al {\nclass IUseName {\npublic:\n    virtual const char* getName() const = 0;\n};\n}  // namespace al\n");

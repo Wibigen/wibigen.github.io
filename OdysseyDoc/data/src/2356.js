@@ -1,0 +1,1 @@
+DOC.got("src/2356","#pragma once\n\n#include \"Library/Area/AreaObjFactory.h\"\n\nclass ProjectAreaFactory : public al::AreaObjFactory {\npublic:\n    ProjectAreaFactory();\n};\n");

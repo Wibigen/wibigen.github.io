@@ -1,0 +1,1 @@
+DOC.got("gh/Pyramid/tryStartRiseDemo.cpp","// Nom démêlé : Pyramid::tryStartRiseDemo\n// Symbole manglé : tryStartRiseDemo\n// void __thiscall Pyramid::tryStartRiseDemo(Pyramid *this); @ .text::003e92b4\n\n\n/* Pyramid::tryStartRiseDemo() */\n\nvoid __thiscall Pyramid::tryStartRiseDemo(Pyramid *this)\n\n{\n  tryStartRiseDemo(this,true);\n  return;\n}\n\n");

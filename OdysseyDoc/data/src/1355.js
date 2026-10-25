@@ -1,0 +1,1 @@
+DOC.got("src/1355","#pragma once\n\n#include \"prim/seadRuntimeTypeInfo.h\"\n\nnamespace sead\n{\nclass TaskParameter\n{\n    SEAD_RTTI_BASE(TaskParameter)\n};\n}  // namespace sead\n");

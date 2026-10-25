@@ -1,0 +1,1 @@
+DOC.got("gh/sead/PrimitiveDrawer/getDrawMgr.cpp","// Nom démêlé : sead::PrimitiveDrawer::getDrawMgr_\n// Symbole manglé : getDrawMgr_\n// undefined8 sead::PrimitiveDrawer::getDrawMgr_(void); @ .text::0083d09c\n\n\n/* sead::PrimitiveDrawer::getDrawMgr_() */\n\nundefined8 sead::PrimitiveDrawer::getDrawMgr_(void)\n\n{\n  return *(undefined8 *)PTR_sInstance_01f5ab80;\n}\n\n");

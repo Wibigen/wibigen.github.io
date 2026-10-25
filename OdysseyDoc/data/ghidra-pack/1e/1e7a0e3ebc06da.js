@@ -1,0 +1,1 @@
+DOC.got("gh/al/BreakModel/exeWait_.text_00a63b14.cpp","// Nom démêlé : al::BreakModel::exeWait\n// Symbole manglé : exeWait\n// void al::BreakModel::exeWait(void); @ .text::00a63b14\n\n\n/* al::BreakModel::exeWait() */\n\nvoid al::BreakModel::exeWait(void)\n\n{\n  return;\n}\n\n");

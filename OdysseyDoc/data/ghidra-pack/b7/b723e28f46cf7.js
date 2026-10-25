@@ -1,0 +1,1 @@
+DOC.got("gh/agl/lyr/RenderStep/clear_.text_00ce91c0.cpp","// Nom démêlé : agl::lyr::RenderStep::clear\n// Symbole manglé : clear\n// void __thiscall agl::lyr::RenderStep::clear(RenderStep *this); @ .text::00ce91c0\n\n\n/* agl::lyr::RenderStep::clear() */\n\nvoid __thiscall agl::lyr::RenderStep::clear(RenderStep *this)\n\n{\n  *(undefined4 *)(this + 8) = 0;\n  return;\n}\n\n");

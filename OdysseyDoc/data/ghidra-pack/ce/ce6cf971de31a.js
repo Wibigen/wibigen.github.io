@@ -1,0 +1,1 @@
+DOC.got("gh/nn/vfx/Heap/Heap_.text_00987b04.cpp","// Nom démêlé : nn::vfx::Heap::~Heap\n// Symbole manglé : ~Heap\n// void __thiscall nn::vfx::Heap::~Heap(Heap *this); @ .text::00987b04\n\n\n/* nn::vfx::Heap::~Heap() */\n\nvoid __thiscall nn::vfx::Heap::~Heap(Heap *this)\n\n{\n  return;\n}\n\n");

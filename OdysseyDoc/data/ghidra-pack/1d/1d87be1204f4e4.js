@@ -1,0 +1,1 @@
+DOC.got("gh/sead/ArchiveFileDevice/doIsAvailable.cpp","// Nom démêlé : sead::ArchiveFileDevice::doIsAvailable_\n// Symbole manglé : doIsAvailable_\n// undefined8 sead::ArchiveFileDevice::doIsAvailable_(void); @ .text::0086a178\n\n\n/* sead::ArchiveFileDevice::doIsAvailable_() const */\n\nundefined8 sead::ArchiveFileDevice::doIsAvailable_(void)\n\n{\n  return 1;\n}\n\n");

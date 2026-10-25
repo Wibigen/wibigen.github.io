@@ -1,0 +1,1 @@
+DOC.got("gh/al/Triangle/isValid_.text_00950d4c.cpp","// Nom démêlé : al::Triangle::isValid\n// Symbole manglé : isValid\n// bool __thiscall al::Triangle::isValid(Triangle *this); @ .text::00950d4c\n\n\n/* al::Triangle::isValid() const */\n\nbool __thiscall al::Triangle::isValid(Triangle *this)\n\n{\n  return *(long *)(this + 8) != 0;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/rs/isSaveSwitch.cpp","// Nom démêlé : rs::isSaveSwitch\n// Symbole manglé : isSaveSwitch\n// void rs::isSaveSwitch(ActorInitInfo *param_1); @ .text::006bfa74\n\n\n/* rs::isSaveSwitch(al::ActorInitInfo const&) */\n\nvoid rs::isSaveSwitch(ActorInitInfo *param_1)\n\n{\n  al::isObjectNameSubStr(param_1,(char *)0x194ce81);\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/eui/LetterAnimControl/getClassName_.text_008f5ed0.cpp","// Nom démêlé : eui::LetterAnimControl::getClassName\n// Symbole manglé : getClassName\n// undefined8 eui::LetterAnimControl::getClassName(void); @ .text::008f5ed0\n\n\n/* eui::LetterAnimControl::getClassName() const */\n\nundefined8 eui::LetterAnimControl::getClassName(void)\n\n{\n  return 0x1965f41;\n}\n\n");

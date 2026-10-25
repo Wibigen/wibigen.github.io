@@ -1,0 +1,1 @@
+DOC.got("gh/TrampleBush/exeWait_.text_0043b440.cpp","// Nom démêlé : TrampleBush::exeWait\n// Symbole manglé : exeWait\n// void TrampleBush::exeWait(void); @ .text::0043b440\n\n\n/* TrampleBush::exeWait() */\n\nvoid TrampleBush::exeWait(void)\n\n{\n  return;\n}\n\n");

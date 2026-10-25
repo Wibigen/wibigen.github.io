@@ -1,0 +1,1 @@
+DOC.got("gh/GameDataFile/getKeyNum.cpp","// Nom démêlé : GameDataFile::getKeyNum\n// Symbole manglé : getKeyNum\n// undefined4 __thiscall GameDataFile::getKeyNum(GameDataFile *this); @ .text::0061f8fc\n\n\n/* GameDataFile::getKeyNum() const */\n\nundefined4 __thiscall GameDataFile::getKeyNum(GameDataFile *this)\n\n{\n  return *(undefined4 *)(this + 0x5b4);\n}\n\n");

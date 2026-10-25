@@ -1,0 +1,1 @@
+DOC.got("src/1535","#pragma once\n\n#include \"Library/LiveActor/LiveActor.h\"\n\nclass GolemClimbFootPrint : public al::LiveActor {\npublic:\n    GolemClimbFootPrint();\n\n    void init(const al::ActorInitInfo& info) override;\n    void appear() override;\n    void control() override;\n};\n");

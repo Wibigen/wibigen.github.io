@@ -1,0 +1,1 @@
+DOC.got("gh/al/getAreaObjScale.cpp","// Nom démêlé : al::getAreaObjScale\n// Symbole manglé : getAreaObjScale\n// long al::getAreaObjScale(AreaObj *param_1); @ .text::009052dc\n\n\n/* al::getAreaObjScale(al::AreaObj const*) */\n\nlong al::getAreaObjScale(AreaObj *param_1)\n\n{\n  return *(long *)(param_1 + 0x18) + 0x10;\n}\n\n");

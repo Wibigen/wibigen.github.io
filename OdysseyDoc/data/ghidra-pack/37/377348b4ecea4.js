@@ -1,0 +1,1 @@
+DOC.got("gh/Killer2D/control_.text_002475cc.cpp","// Nom démêlé : Killer2D::control\n// Symbole manglé : control\n// void Killer2D::control(void); @ .text::002475cc\n\n\n/* Killer2D::control() */\n\nvoid Killer2D::control(void)\n\n{\n  return;\n}\n\n");

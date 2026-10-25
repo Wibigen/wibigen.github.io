@@ -1,0 +1,1 @@
+DOC.got("gh/eui/ButtonGroup/ButtonGroup_.text_008f4364.cpp","// Nom démêlé : eui::ButtonGroup::~ButtonGroup\n// Symbole manglé : ~ButtonGroup\n// void __thiscall eui::ButtonGroup::~ButtonGroup(ButtonGroup *this); @ .text::008f4364\n\n\n/* eui::ButtonGroup::~ButtonGroup() */\n\nvoid __thiscall eui::ButtonGroup::~ButtonGroup(ButtonGroup *this)\n\n{\n  return;\n}\n\n");

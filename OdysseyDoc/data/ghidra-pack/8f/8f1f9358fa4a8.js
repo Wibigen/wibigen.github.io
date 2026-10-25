@@ -1,0 +1,1 @@
+DOC.got("gh/eui/ButtonBase/UpdateOn_.text_008f4130.cpp","// Nom démêlé : eui::ButtonBase::UpdateOn\n// Symbole manglé : UpdateOn\n// undefined8 eui::ButtonBase::UpdateOn(void); @ .text::008f4130\n\n\n/* eui::ButtonBase::UpdateOn() */\n\nundefined8 eui::ButtonBase::UpdateOn(void)\n\n{\n  return 1;\n}\n\n");

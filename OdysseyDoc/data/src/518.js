@@ -1,0 +1,1 @@
+DOC.got("src/518","#pragma once\n\nnamespace al {\nclass CollisionDirector;\n\nclass IUseCollision {\npublic:\n    virtual CollisionDirector* getCollisionDirector() const = 0;\n};\n}  // namespace al\n");

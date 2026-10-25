@@ -1,0 +1,1 @@
+DOC.got("gh/Curl_if2ip.cpp","// Nom démêlé : Curl_if2ip\n// Symbole manglé : Curl_if2ip\n// undefined8 Curl_if2ip(void); @ .text::0081a498\n\n\nundefined8 Curl_if2ip(void)\n\n{\n  return 0;\n}\n\n");

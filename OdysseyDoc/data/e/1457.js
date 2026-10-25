@@ -1,0 +1,1 @@
+DOC.got("e/1457",{"18759":{"q":"al::CameraTurnInfo","decl":{"f":"lib/al/Library/Camera/CameraPoser.h","l":30,"sig":"class CameraTurnInfo","fi":429},"complete":false,"fwd":[["lib/al/Library/Camera/CameraPoseUpdater.h",21],["lib/al/Library/Camera/CameraPoser.h",30]]}});

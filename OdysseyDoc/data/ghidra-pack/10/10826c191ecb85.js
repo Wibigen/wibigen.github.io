@@ -1,0 +1,1 @@
+DOC.got("gh/WorldMapCamera/exeWait_.text_00607810.cpp","// Nom démêlé : WorldMapCamera::exeWait\n// Symbole manglé : exeWait\n// void WorldMapCamera::exeWait(void); @ .text::00607810\n\n\n/* WorldMapCamera::exeWait() */\n\nvoid WorldMapCamera::exeWait(void)\n\n{\n  return;\n}\n\n");

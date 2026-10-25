@@ -1,0 +1,1 @@
+DOC.got("gh/nn/gfx/detail/Nvn/GetBufferAddress.cpp","// Nom démêlé : nn::gfx::detail::Nvn::GetBufferAddress\n// Symbole manglé : GetBufferAddress\n// void nn::gfx::detail::Nvn::GetBufferAddress(void); @ .text::00823968\n\n\n/* nn::gfx::detail::Nvn::GetBufferAddress(nn::gfx::GpuAddress) */\n\nvoid nn::gfx::detail::Nvn::GetBufferAddress(void)\n\n{\n  return;\n}\n\n");

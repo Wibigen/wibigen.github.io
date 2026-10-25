@@ -1,0 +1,1 @@
+DOC.got("gh/ShopStateInShop/exeBuyLifeMaxUpItem.cpp","// Nom démêlé : ShopStateInShop::exeBuyLifeMaxUpItem\n// Symbole manglé : exeBuyLifeMaxUpItem\n// void ShopStateInShop::exeBuyLifeMaxUpItem(void); @ .text::00419110\n\n\n/* ShopStateInShop::exeBuyLifeMaxUpItem() */\n\nvoid ShopStateInShop::exeBuyLifeMaxUpItem(void)\n\n{\n  return;\n}\n\n");

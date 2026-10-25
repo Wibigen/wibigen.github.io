@@ -1,0 +1,1 @@
+DOC.got("gh/al/HdrParam/getParamObj_.text_00ab2e2c.cpp","// Nom démêlé : al::HdrParam::getParamObj\n// Symbole manglé : getParamObj\n// undefined8 __thiscall al::HdrParam::getParamObj(HdrParam *this); @ .text::00ab2e2c\n\n\n/* al::HdrParam::getParamObj() */\n\nundefined8 __thiscall al::HdrParam::getParamObj(HdrParam *this)\n\n{\n  return *(undefined8 *)(this + 8);\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/isAnimCameraPlaying.cpp","// Nom démêlé : al::isAnimCameraPlaying\n// Symbole manglé : isAnimCameraPlaying\n// bool al::isAnimCameraPlaying(CameraTicket *param_1); @ .text::0093f2f0\n\n\n/* al::isAnimCameraPlaying(al::CameraTicket const*) */\n\nbool al::isAnimCameraPlaying(CameraTicket *param_1)\n\n{\n  return -1 < *(int *)(*(long *)param_1 + 0x18c);\n}\n\n");

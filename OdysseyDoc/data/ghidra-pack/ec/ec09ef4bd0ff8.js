@@ -1,0 +1,1 @@
+DOC.got("gh/al/isSensorNpc.cpp","// Nom démêlé : al::isSensorNpc\n// Symbole manglé : isSensorNpc\n// bool al::isSensorNpc(HitSensor *param_1); @ .text::009f2eb8\n\n\n/* al::isSensorNpc(al::HitSensor const*) */\n\nbool al::isSensorNpc(HitSensor *param_1)\n\n{\n  return *(int *)(param_1 + 8) == 6;\n}\n\n");

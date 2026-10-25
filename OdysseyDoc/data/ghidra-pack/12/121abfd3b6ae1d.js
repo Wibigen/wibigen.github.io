@@ -1,0 +1,1 @@
+DOC.got("gh/GameDataFunction/loseRace.cpp","// Nom démêlé : GameDataFunction::loseRace\n// Symbole manglé : loseRace\n// void GameDataFunction::loseRace(long param_1); @ .text::006299a0\n\n\n/* GameDataFunction::loseRace(GameDataHolderWriter) */\n\nvoid GameDataFunction::loseRace(long param_1)\n\n{\n  *(undefined4 *)(*(long *)(param_1 + 0x20) + 0xa48) = 2;\n  return;\n}\n\n");

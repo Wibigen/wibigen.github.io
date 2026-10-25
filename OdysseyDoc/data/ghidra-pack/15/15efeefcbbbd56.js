@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/EndPointGroup/Lock.cpp","// Nom démêlé : nn::nex::EndPointGroup::Lock\n// Symbole manglé : Lock\n// void nn::nex::EndPointGroup::Lock(void); @ .text::00752b38\n\n\n/* nn::nex::EndPointGroup::Lock() */\n\nvoid nn::nex::EndPointGroup::Lock(void)\n\n{\n  return;\n}\n\n");

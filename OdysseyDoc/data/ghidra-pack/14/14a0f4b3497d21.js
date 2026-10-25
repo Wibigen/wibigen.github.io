@@ -1,0 +1,1 @@
+DOC.got("gh/nn/ui2d/AnimTransform/UpdateFrame_.text_00bf8b98.cpp","// Nom démêlé : nn::ui2d::AnimTransform::UpdateFrame\n// Symbole manglé : UpdateFrame\n// void nn::ui2d::AnimTransform::UpdateFrame(float param_1); @ .text::00bf8b98\n\n\n/* nn::ui2d::AnimTransform::UpdateFrame(float) */\n\nvoid nn::ui2d::AnimTransform::UpdateFrame(float param_1)\n\n{\n  return;\n}\n\n");

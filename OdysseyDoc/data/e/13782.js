@@ -1,0 +1,1 @@
+DOC.got("e/13782",{"30055":{"q":"ams::exosphere::detail::result::ResultModuleId","decl":{"f":"lib/NintendoSDK/include/vapours/results/exosphere_results.hpp","l":26,"sig":"R_DEFINE_NAMESPACE_RESULT_MODULE(444)","fi":238},"underlying":"std::integral_constant<int, 444>"}});

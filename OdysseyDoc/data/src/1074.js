@@ -1,0 +1,1 @@
+DOC.got("src/1074","#include \"Library/Sequence/Sequence.h\"\n\nnamespace al {\n\nSequence::Sequence(const char* name) : NerveExecutor(name), mName(name) {}\n\nvoid Sequence::init(const SequenceInitInfo& initInfo) {}\n\nvoid Sequence::kill() {\n    mIsAlive = false;\n}\n\nbool Sequence::isDisposable() const {\n    return true;\n}\n\n}  // namespace al\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/agl/eft/Star/genMessage_.text_008b8858.cpp","// Nom démêlé : agl::eft::Star::genMessage\n// Symbole manglé : genMessage\n// void agl::eft::Star::genMessage(Context *param_1); @ .text::008b8858\n\n\n/* agl::eft::Star::genMessage(sead::hostio::Context*) */\n\nvoid agl::eft::Star::genMessage(Context *param_1)\n\n{\n  return;\n}\n\n");

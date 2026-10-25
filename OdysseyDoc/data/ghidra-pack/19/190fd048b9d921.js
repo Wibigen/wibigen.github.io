@@ -1,0 +1,1 @@
+DOC.got("gh/rs/isValidCollide2D.cpp","// Nom démêlé : rs::isValidCollide2D\n// Symbole manglé : isValidCollide2D\n// Collider2D3D rs::isValidCollide2D(Collider2D3D *param_1); @ .text::0064e728\n\n\n/* rs::isValidCollide2D(Collider2D3D const*) */\n\nCollider2D3D rs::isValidCollide2D(Collider2D3D *param_1)\n\n{\n  return *param_1;\n}\n\n");

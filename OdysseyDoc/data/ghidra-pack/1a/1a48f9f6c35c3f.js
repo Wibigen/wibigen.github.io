@@ -1,0 +1,1 @@
+DOC.got("gh/RankingNpc/RankingNpc_.text_004be3d8.cpp","// Nom démêlé : RankingNpc::~RankingNpc\n// Symbole manglé : ~RankingNpc\n// void __thiscall RankingNpc::~RankingNpc(RankingNpc *this); @ .text::004be3d8\n\n\n/* non-virtual thunk to RankingNpc::~RankingNpc() */\n\nvoid __thiscall RankingNpc::~RankingNpc(RankingNpc *this)\n\n{\n  return;\n}\n\n");

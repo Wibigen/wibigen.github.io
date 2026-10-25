@@ -1,0 +1,1 @@
+DOC.got("gh/MofumofuWarpHole/close.cpp","// Nom démêlé : MofumofuWarpHole::close\n// Symbole manglé : close\n// void __thiscall MofumofuWarpHole::close(MofumofuWarpHole *this); @ .text::001b702c\n\n\n/* MofumofuWarpHole::close() */\n\nvoid __thiscall MofumofuWarpHole::close(MofumofuWarpHole *this)\n\n{\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1d78e78);\n  return;\n}\n\n");

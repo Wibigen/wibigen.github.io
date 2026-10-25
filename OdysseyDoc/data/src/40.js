@@ -1,0 +1,1 @@
+DOC.got("src/40","/**\n * @file ResSkeletalAnim.h\n * @brief Resource file for skeletal animations.\n */\n\n#pragma once\n\nnamespace nn {\nnamespace g3d {\nclass ResSkeletalAnim {\npublic:\n    void Reset();\n};\n}  // namespace g3d\n}  // namespace nn\n");

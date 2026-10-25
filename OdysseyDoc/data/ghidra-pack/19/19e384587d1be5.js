@@ -1,0 +1,1 @@
+DOC.got("gh/Megane/isHack_.text_00263064.cpp","// Nom démêlé : Megane::isHack\n// Symbole manglé : isHack\n// bool __thiscall Megane::isHack(Megane *this); @ .text::00263064\n\n\n/* Megane::isHack() const */\n\nbool __thiscall Megane::isHack(Megane *this)\n\n{\n  return *(long *)(this + 0x130) != 0;\n}\n\n");

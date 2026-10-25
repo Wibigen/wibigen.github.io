@@ -1,0 +1,1 @@
+DOC.got("gh/al/CameraTargetBase/update_.text_001271cc.cpp","// Nom démêlé : al::CameraTargetBase::update\n// Symbole manglé : update\n// void al::CameraTargetBase::update(void); @ .text::001271cc\n\n\n/* al::CameraTargetBase::update() */\n\nvoid al::CameraTargetBase::update(void)\n\n{\n  return;\n}\n\n");

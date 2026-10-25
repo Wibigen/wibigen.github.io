@@ -1,0 +1,1 @@
+DOC.got("gh/agl/lyr/Layer/Layer_.text_00ce2f64.cpp","// Nom démêlé : agl::lyr::Layer::~Layer\n// Symbole manglé : ~Layer\n// void __thiscall agl::lyr::Layer::~Layer(Layer *this); @ .text::00ce2f64\n\n\n/* agl::lyr::Layer::~Layer() */\n\nvoid __thiscall agl::lyr::Layer::~Layer(Layer *this)\n\n{\n  ~Layer(this);\n  operator_delete(this);\n  return;\n}\n\n");

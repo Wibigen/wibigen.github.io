@@ -1,0 +1,1 @@
+DOC.got("gh/rs/getCapListSize.cpp","// Nom démêlé : rs::getCapListSize\n// Symbole manglé : getCapListSize\n// undefined4 rs::getCapListSize(long param_1); @ .text::0064c628\n\n\n/* rs::getCapListSize(GameDataHolderAccessor) */\n\nundefined4 rs::getCapListSize(long param_1)\n\n{\n  return *(undefined4 *)(param_1 + 0x120);\n}\n\n");

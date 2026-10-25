@@ -1,0 +1,1 @@
+DOC.got("gh/al/isInvalidClipping.cpp","// Nom démêlé : al::isInvalidClipping\n// Symbole manglé : isInvalidClipping\n// undefined1 al::isInvalidClipping(LiveActor *param_1); @ .text::009d79dc\n\n\n/* al::isInvalidClipping(al::LiveActor const*) */\n\nundefined1 al::isInvalidClipping(LiveActor *param_1)\n\n{\n  return *(undefined1 *)(*(long *)(param_1 + 0x100) + 2);\n}\n\n");

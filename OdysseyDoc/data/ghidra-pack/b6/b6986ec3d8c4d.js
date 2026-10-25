@@ -1,0 +1,1 @@
+DOC.got("gh/BombTailTail/startResetAttack_.text_001164c4.cpp","// Nom démêlé : BombTailTail::startResetAttack\n// Symbole manglé : startResetAttack\n// void BombTailTail::startResetAttack(void); @ .text::001164c4\n\n\n/* BombTailTail::startResetAttack() */\n\nvoid BombTailTail::startResetAttack(void)\n\n{\n  return;\n}\n\n");

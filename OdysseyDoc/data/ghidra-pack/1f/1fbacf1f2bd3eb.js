@@ -1,0 +1,1 @@
+DOC.got("gh/sead/TaskBase/exit.cpp","// Nom démêlé : sead::TaskBase::exit\n// Symbole manglé : exit\n// void sead::TaskBase::exit(void); @ .text::00835ec8\n\n\n/* sead::TaskBase::exit() */\n\nvoid sead::TaskBase::exit(void)\n\n{\n  return;\n}\n\n");

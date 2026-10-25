@@ -1,0 +1,1 @@
+DOC.got("gh/MofumofuBody/isWarpIn.cpp","// Nom démêlé : MofumofuBody::isWarpIn\n// Symbole manglé : isWarpIn\n// void __thiscall MofumofuBody::isWarpIn(MofumofuBody *this); @ .text::001b3340\n\n\n/* MofumofuBody::isWarpIn() const */\n\nvoid __thiscall MofumofuBody::isWarpIn(MofumofuBody *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1d780c0);\n  return;\n}\n\n");

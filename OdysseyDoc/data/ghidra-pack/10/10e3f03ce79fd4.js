@@ -1,0 +1,1 @@
+DOC.got("gh/EndingScene/isLoadEnd_.text_005a9f80.cpp","// Nom démêlé : EndingScene::isLoadEnd\n// Symbole manglé : isLoadEnd\n// EndingScene __thiscall EndingScene::isLoadEnd(EndingScene *this); @ .text::005a9f80\n\n\n/* EndingScene::isLoadEnd() const */\n\nEndingScene __thiscall EndingScene::isLoadEnd(EndingScene *this)\n\n{\n  return this[0x140];\n}\n\n");

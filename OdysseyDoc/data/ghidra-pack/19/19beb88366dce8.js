@@ -1,0 +1,1 @@
+DOC.got("gh/Dokan/exeWait_.text_00357d8c.cpp","// Nom démêlé : Dokan::exeWait\n// Symbole manglé : exeWait\n// void __thiscall Dokan::exeWait(Dokan *this); @ .text::00357d8c\n\n\n/* Dokan::exeWait() */\n\nvoid __thiscall Dokan::exeWait(Dokan *this)\n\n{\n  Dokan DVar1;\n  \n  DVar1 = this[0x161];\n  this[0x161] = (Dokan)0x0;\n  this[0x160] = DVar1;\n  return;\n}\n\n");

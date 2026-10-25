@@ -1,0 +1,1 @@
+DOC.got("gh/al/getWallCodeName_.text_0094badc.cpp","// Nom démêlé : al::getWallCodeName\n// Symbole manglé : getWallCodeName\n// void al::getWallCodeName(HitInfo *param_1); @ .text::0094badc\n\n\n/* al::getWallCodeName(al::HitInfo const*) */\n\nvoid al::getWallCodeName(HitInfo *param_1)\n\n{\n  getCollisionCodeName((Triangle *)param_1,(char *)0x196754c);\n  return;\n}\n\n");

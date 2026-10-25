@@ -1,0 +1,1 @@
+DOC.got("src/391","#pragma once\n\n#include <basis/seadTypes.h>\n\nnamespace al {\nstruct BgmDirectorInitInfo {\n    BgmDirectorInitInfo() {}\n\n    bool field_0 = false;\n    const char* field_8 = nullptr;\n};\n}  // namespace al\n");

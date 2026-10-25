@@ -1,0 +1,1 @@
+DOC.got("e/5585",{"49237":{"q":"sead::hostio::Context","decl":{"f":"lib/sead/include/hostio/seadHostIOReflexible.h","l":13,"sig":"class Context","fi":1383},"complete":false,"fwd":[["lib/sead/include/heap/seadHeap.h",25],["lib/sead/include/hostio/seadHostIOReflexible.h",13],["lib/sead/include/time/seadCalendarTime.h",10]]}});

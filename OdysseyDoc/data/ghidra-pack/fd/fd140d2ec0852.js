@@ -1,0 +1,1 @@
+DOC.got("gh/al/SineWave/calcIsInArea_.text_009a1d7c.cpp","// Nom démêlé : al::SineWave::calcIsInArea\n// Symbole manglé : calcIsInArea\n// undefined8 al::SineWave::calcIsInArea(Vector3 *param_1); @ .text::009a1d7c\n\n\n/* al::SineWave::calcIsInArea(sead::Vector3<float> const&) const */\n\nundefined8 al::SineWave::calcIsInArea(Vector3 *param_1)\n\n{\n  return 0;\n}\n\n");

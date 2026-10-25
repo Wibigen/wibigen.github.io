@@ -1,0 +1,1 @@
+DOC.got("src/540","#pragma once\n\n#include <basis/seadTypes.h>\n#include <math/seadVector.h>\n\nnamespace al {\nstruct PadDataPack {\n    s32 trig = 0;\n    s32 hold = 0;\n    sead::Vector2f leftStick = sead::Vector2f::zero;\n    sead::Vector2f pointer = sead::Vector2f::zero;\n};\n}  // namespace al\n");

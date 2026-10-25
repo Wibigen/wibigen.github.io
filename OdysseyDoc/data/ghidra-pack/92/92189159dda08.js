@@ -1,0 +1,1 @@
+DOC.got("gh/al/IUsePartsGraphics/endInit_.text_0099b24c.cpp","// Nom démêlé : al::IUsePartsGraphics::endInit\n// Symbole manglé : endInit\n// void al::IUsePartsGraphics::endInit(void); @ .text::0099b24c\n\n\n/* al::IUsePartsGraphics::endInit() */\n\nvoid al::IUsePartsGraphics::endInit(void)\n\n{\n  return;\n}\n\n");

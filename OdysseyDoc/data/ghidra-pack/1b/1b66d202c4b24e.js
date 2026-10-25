@@ -1,0 +1,1 @@
+DOC.got("gh/al/Scene/init_.text_00603fb8.cpp","// Nom démêlé : al::Scene::init\n// Symbole manglé : init\n// void al::Scene::init(SceneInitInfo *param_1); @ .text::00603fb8\n\n\n/* al::Scene::init(al::SceneInitInfo const&) */\n\nvoid al::Scene::init(SceneInitInfo *param_1)\n\n{\n  return;\n}\n\n");

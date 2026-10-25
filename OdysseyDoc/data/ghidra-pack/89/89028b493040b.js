@@ -1,0 +1,1 @@
+DOC.got("gh/rs/isDemoEnableSkip.cpp","// Nom démêlé : rs::isDemoEnableSkip\n// Symbole manglé : isDemoEnableSkip\n// bool rs::isDemoEnableSkip(Scene *param_1); @ .text::00651690\n\n\n/* rs::isDemoEnableSkip(al::Scene const*) */\n\nbool rs::isDemoEnableSkip(Scene *param_1)\n\n{\n  return *(long *)(*(long *)(*(long *)(param_1 + 0x90) + 0xd0) + 0x88) != 0;\n}\n\n");

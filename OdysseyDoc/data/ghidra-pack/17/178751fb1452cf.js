@@ -1,0 +1,1 @@
+DOC.got("gh/al/isSensorBindableGoal.cpp","// Nom démêlé : al::isSensorBindableGoal\n// Symbole manglé : isSensorBindableGoal\n// bool al::isSensorBindableGoal(HitSensor *param_1); @ .text::009fdaf4\n\n\n/* al::isSensorBindableGoal(al::HitSensor const*) */\n\nbool al::isSensorBindableGoal(HitSensor *param_1)\n\n{\n  return *(int *)(param_1 + 8) == 0x13;\n}\n\n");

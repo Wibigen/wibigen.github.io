@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/SystemComponent/EndTermination.cpp","// Nom démêlé : nn::nex::SystemComponent::EndTermination\n// Symbole manglé : EndTermination\n// undefined8 nn::nex::SystemComponent::EndTermination(void); @ .text::006ffc60\n\n\n/* nn::nex::SystemComponent::EndTermination() */\n\nundefined8 nn::nex::SystemComponent::EndTermination(void)\n\n{\n  return 1;\n}\n\n");

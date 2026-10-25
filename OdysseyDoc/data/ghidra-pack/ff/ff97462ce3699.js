@@ -1,0 +1,1 @@
+DOC.got("gh/Fukankun/calcTargetYUp.cpp","// Nom démêlé : Fukankun::calcTargetYUp\n// Symbole manglé : calcTargetYUp\n// float __thiscall Fukankun::calcTargetYUp(Fukankun *this); @ .text::00388fa4\n\n\n/* Fukankun::calcTargetYUp() */\n\nfloat __thiscall Fukankun::calcTargetYUp(Fukankun *this)\n\n{\n  return *(float *)(this + 0x1c0) + 0.0;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/rs/getCapList.cpp","// Nom démêlé : rs::getCapList\n// Symbole manglé : getCapList\n// long rs::getCapList(long param_1); @ .text::0064c620\n\n\n/* rs::getCapList(GameDataHolderAccessor) */\n\nlong rs::getCapList(long param_1)\n\n{\n  return param_1 + 0x120;\n}\n\n");

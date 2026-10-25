@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/HTTPURL/GetPath.cpp","// Nom démêlé : nn::nex::HTTPURL::GetPath\n// Symbole manglé : GetPath\n// HTTPURL * __thiscall nn::nex::HTTPURL::GetPath(HTTPURL *this); @ .text::0074aa78\n\n\n/* nn::nex::HTTPURL::GetPath() const */\n\nHTTPURL * __thiscall nn::nex::HTTPURL::GetPath(HTTPURL *this)\n\n{\n  return this + 0x50;\n}\n\n");

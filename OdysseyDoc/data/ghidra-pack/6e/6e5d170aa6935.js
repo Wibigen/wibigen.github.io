@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Core/CreateGlobals.cpp","// Nom démêlé : nn::nex::Core::CreateGlobals\n// Symbole manglé : CreateGlobals\n// void nn::nex::Core::CreateGlobals(void); @ .text::00738684\n\n\n/* nn::nex::Core::CreateGlobals() */\n\nvoid nn::nex::Core::CreateGlobals(void)\n\n{\n  return;\n}\n\n");

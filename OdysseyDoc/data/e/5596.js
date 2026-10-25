@@ -1,0 +1,1 @@
+DOC.got("e/5596",{"49262":{"q":"sead::hostio::NodeEvent","decl":{"f":"lib/sead/include/hostio/seadHostIOEventListener.h","l":15,"sig":"class NodeEvent","fi":1380},"complete":false,"fwd":[["lib/sead/include/hostio/seadHostIOEventListener.h",15]]}});

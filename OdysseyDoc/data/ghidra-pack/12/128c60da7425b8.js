@@ -1,0 +1,1 @@
+DOC.got("gh/al/getModelResource.cpp","// Nom démêlé : al::getModelResource\n// Symbole manglé : getModelResource\n// void al::getModelResource(LiveActor *param_1); @ .text::009efd80\n\n\n/* al::getModelResource(al::LiveActor const*) */\n\nvoid al::getModelResource(LiveActor *param_1)\n\n{\n  ModelKeeper::getModelResource(*(ModelKeeper **)(param_1 + 0x88));\n  return;\n}\n\n");

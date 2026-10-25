@@ -1,0 +1,1 @@
+DOC.got("src/1494","#pragma once\n\n#include \"Library/LiveActor/LiveActor.h\"\n\nclass ItemAmiiboKoopa : public al::LiveActor {\npublic:\n    ItemAmiiboKoopa(const char* actorName);\n    void init(const al::ActorInitInfo& info);\n    void appear();\n\n    void exeExpand();\n    void exeWait();\n\n    void attackSensor(al::HitSensor* self, al::HitSensor* other);\n};\n");

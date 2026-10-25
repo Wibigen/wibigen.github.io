@@ -1,0 +1,1 @@
+DOC.got("gh/Closet/exeSelect_.text_0034e7c4.cpp","// Nom démêlé : Closet::exeSelect\n// Symbole manglé : exeSelect\n// void Closet::exeSelect(void); @ .text::0034e7c4\n\n\n/* Closet::exeSelect() */\n\nvoid Closet::exeSelect(void)\n\n{\n  return;\n}\n\n");

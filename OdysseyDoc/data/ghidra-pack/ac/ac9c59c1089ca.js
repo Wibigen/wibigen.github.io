@@ -1,0 +1,1 @@
+DOC.got("gh/al/getViewNumMax_.text_0093b948.cpp","// Nom démêlé : al::getViewNumMax\n// Symbole manglé : getViewNumMax\n// undefined4 al::getViewNumMax(SceneCameraInfo *param_1); @ .text::0093b948\n\n\n/* al::getViewNumMax(al::SceneCameraInfo const*) */\n\nundefined4 al::getViewNumMax(SceneCameraInfo *param_1)\n\n{\n  return *(undefined4 *)param_1;\n}\n\n");

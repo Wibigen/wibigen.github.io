@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Property/GetID_.text_007be124.cpp","// Nom démêlé : nn::nex::Property::GetID\n// Symbole manglé : GetID\n// undefined4 __thiscall nn::nex::Property::GetID(Property *this); @ .text::007be124\n\n\n/* nn::nex::Property::GetID() const */\n\nundefined4 __thiscall nn::nex::Property::GetID(Property *this)\n\n{\n  return *(undefined4 *)(this + 0xc);\n}\n\n");

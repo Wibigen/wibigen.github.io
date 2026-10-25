@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/TraceLog/SetFlag.cpp","// Nom démêlé : nn::nex::TraceLog::SetFlag\n// Symbole manglé : SetFlag\n// void nn::nex::TraceLog::SetFlag(char *param_1); @ .text::0072270c\n\n\n/* nn::nex::TraceLog::SetFlag(char const*) */\n\nvoid nn::nex::TraceLog::SetFlag(char *param_1)\n\n{\n  return;\n}\n\n");

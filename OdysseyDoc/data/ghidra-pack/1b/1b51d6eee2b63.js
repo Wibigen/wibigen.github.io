@@ -1,0 +1,1 @@
+DOC.got("gh/InformationWindowCapMsgRequester/exeStop_.text_005ad380.cpp","// Nom démêlé : InformationWindowCapMsgRequester::exeStop\n// Symbole manglé : exeStop\n// void InformationWindowCapMsgRequester::exeStop(void); @ .text::005ad380\n\n\n/* InformationWindowCapMsgRequester::exeStop() */\n\nvoid InformationWindowCapMsgRequester::exeStop(void)\n\n{\n  return;\n}\n\n");

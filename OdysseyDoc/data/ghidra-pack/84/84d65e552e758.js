@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/TransportAdapter/Load.cpp","// Nom démêlé : nn::nex::TransportAdapter::Load\n// Symbole manglé : Load\n// void nn::nex::TransportAdapter::Load(void); @ .text::0078f830\n\n\n/* nn::nex::TransportAdapter::Load() */\n\nvoid nn::nex::TransportAdapter::Load(void)\n\n{\n  return;\n}\n\n");

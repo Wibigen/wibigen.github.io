@@ -1,0 +1,1 @@
+DOC.got("gh/FrogStateHack/isEndDie.cpp","// Nom démêlé : FrogStateHack::isEndDie\n// Symbole manglé : isEndDie\n// void __thiscall FrogStateHack::isEndDie(FrogStateHack *this); @ .text::0048eb98\n\n\n/* FrogStateHack::isEndDie() const */\n\nvoid __thiscall FrogStateHack::isEndDie(FrogStateHack *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1e58690);\n  return;\n}\n\n");

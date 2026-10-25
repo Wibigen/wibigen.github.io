@@ -1,0 +1,1 @@
+DOC.got("gh/GhostPlayer/control_.text_00497300.cpp","// Nom démêlé : GhostPlayer::control\n// Symbole manglé : control\n// void GhostPlayer::control(void); @ .text::00497300\n\n\n/* GhostPlayer::control() */\n\nvoid GhostPlayer::control(void)\n\n{\n  return;\n}\n\n");

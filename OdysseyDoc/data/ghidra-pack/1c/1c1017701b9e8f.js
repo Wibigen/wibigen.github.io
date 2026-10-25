@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/WaterMark/GetLow.cpp","// Nom démêlé : nn::nex::WaterMark::GetLow\n// Symbole manglé : GetLow\n// undefined4 __thiscall nn::nex::WaterMark::GetLow(WaterMark *this); @ .text::00725c54\n\n\n/* nn::nex::WaterMark::GetLow() const */\n\nundefined4 __thiscall nn::nex::WaterMark::GetLow(WaterMark *this)\n\n{\n  return *(undefined4 *)(this + 0x28);\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("src/2478","#pragma once\n\n#include \"Library/MapObj/BreakMapPartsBase.h\"\n\nnamespace al {\nclass SensorMsg;\nclass HitSensor;\n}  // namespace al\n\nnamespace rs {\nal::JudgeFuncPtr getBreakJudgeFunction(const char* name);\n}  // namespace rs\n");

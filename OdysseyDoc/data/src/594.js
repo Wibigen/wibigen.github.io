@@ -1,0 +1,1 @@
+DOC.got("src/594","#pragma once\n\nnamespace al {\nclass EventFlowEventData;\n\nclass IEventFlowQueryJudge {\npublic:\n    virtual const char* judgeQuery(const char* query) const = 0;\n};\n\n}  // namespace al\n");

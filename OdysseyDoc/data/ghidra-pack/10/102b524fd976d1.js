@@ -1,0 +1,1 @@
+DOC.got("gh/nn/atk/EffectAux/Finalize_.text_00bc8030.cpp","// Nom démêlé : nn::atk::EffectAux::Finalize\n// Symbole manglé : Finalize\n// void nn::atk::EffectAux::Finalize(void); @ .text::00bc8030\n\n\n/* nn::atk::EffectAux::Finalize() */\n\nvoid nn::atk::EffectAux::Finalize(void)\n\n{\n  return;\n}\n\n");

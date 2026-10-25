@@ -1,0 +1,1 @@
+DOC.got("gh/PoleClimbParts/exeWait_.text_003e5b5c.cpp","// Nom démêlé : PoleClimbParts::exeWait\n// Symbole manglé : exeWait\n// void PoleClimbParts::exeWait(void); @ .text::003e5b5c\n\n\n/* PoleClimbParts::exeWait() */\n\nvoid PoleClimbParts::exeWait(void)\n\n{\n  return;\n}\n\n");

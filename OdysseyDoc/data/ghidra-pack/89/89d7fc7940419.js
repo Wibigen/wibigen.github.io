@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/VersionInfo/Banner_.text_00747d58.cpp","// Nom démêlé : nn::nex::VersionInfo::Banner\n// Symbole manglé : Banner\n// void nn::nex::VersionInfo::Banner(char *param_1); @ .text::00747d58\n\n\n/* nn::nex::VersionInfo::Banner(char const*) */\n\nvoid nn::nex::VersionInfo::Banner(char *param_1)\n\n{\n  return;\n}\n\n");

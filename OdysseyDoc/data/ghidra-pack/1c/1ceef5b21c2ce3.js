@@ -1,0 +1,1 @@
+DOC.got("gh/agl/utl/Parameter_bool/size_.text_0089addc.cpp","// Nom démêlé : agl::utl::Parameter<bool>::size\n// Symbole manglé : size\n// undefined8 agl::utl::Parameter<bool>::size(void); @ .text::0089addc\n\n\n/* agl::utl::Parameter<bool>::size() const */\n\nundefined8 agl::utl::Parameter<bool>::size(void)\n\n{\n  return 1;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/SaveObjInfo/isOn_.text_0063be98.cpp","// Nom démêlé : SaveObjInfo::isOn\n// Symbole manglé : isOn\n// SaveObjInfo __thiscall SaveObjInfo::isOn(SaveObjInfo *this); @ .text::0063be98\n\n\n/* SaveObjInfo::isOn() const */\n\nSaveObjInfo __thiscall SaveObjInfo::isOn(SaveObjInfo *this)\n\n{\n  return this[8];\n}\n\n");

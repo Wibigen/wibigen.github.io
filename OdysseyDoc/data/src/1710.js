@@ -1,0 +1,1 @@
+DOC.got("src/1710","#pragma once\n\n#include \"Library/Nerve/NerveStateBase.h\"\n\nnamespace al {\nclass LiveActor;\n}  // namespace al\n\nclass CoinStateCountUp : public al::ActorStateBase {\npublic:\n    CoinStateCountUp(al::LiveActor* actor);\n    void appear() override;\n    void exeCountUp();\n    void exeGot();\n\nprivate:\n    f32 mTransY = 0.0f;\n};\n");

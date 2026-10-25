@@ -1,0 +1,1 @@
+DOC.got("gh/sead/FaderTaskBase/doCalc.cpp","// Nom démêlé : sead::FaderTaskBase::doCalc_\n// Symbole manglé : doCalc_\n// void sead::FaderTaskBase::doCalc_(void); @ .text::0086f9a8\n\n\n/* sead::FaderTaskBase::doCalc_() */\n\nvoid sead::FaderTaskBase::doCalc_(void)\n\n{\n  return;\n}\n\n");

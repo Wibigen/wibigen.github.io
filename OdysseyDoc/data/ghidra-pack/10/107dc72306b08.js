@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/QLOG.cpp","// Nom démêlé : nn::nex::_QLOG\n// Symbole manglé : _QLOG\n// void nn::nex::_QLOG(void...); @ .text::006ce6e4\n\n\n/* nn::nex::_QLOG(nn::nex::EventLog::LogLevel, char const*, ...) */\n\nvoid nn::nex::_QLOG(void...)\n\n{\n  return;\n}\n\n");

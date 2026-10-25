@@ -1,0 +1,1 @@
+DOC.got("gh/HelpAmiiboInvincibleAttack/getType_.text_001042fc.cpp","// Nom démêlé : HelpAmiiboInvincibleAttack::getType\n// Symbole manglé : getType\n// undefined8 HelpAmiiboInvincibleAttack::getType(void); @ .text::001042fc\n\n\n/* HelpAmiiboInvincibleAttack::getType() const */\n\nundefined8 HelpAmiiboInvincibleAttack::getType(void)\n\n{\n  return 2;\n}\n\n");

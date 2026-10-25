@@ -1,0 +1,1 @@
+DOC.got("gh/Curl_nnssl_connect.cpp","// Nom démêlé : Curl_nnssl_connect\n// Symbole manglé : Curl_nnssl_connect\n// undefined4 Curl_nnssl_connect(long param_1); @ .text::0081d3d4\n\n\nundefined4 Curl_nnssl_connect(long param_1)\n\n{\n  undefined4 uVar1;\n  \n  uVar1 = 0x60;\n  if (param_1 != 0) {\n    uVar1 = 4;\n  }\n  return uVar1;\n}\n\n");

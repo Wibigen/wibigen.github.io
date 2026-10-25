@@ -1,0 +1,1 @@
+DOC.got("e/13780",{"127":{"q":"ams::exosphere::detail","files":["lib/NintendoSDK/include/vapours/results/exosphere_results.hpp"]}});

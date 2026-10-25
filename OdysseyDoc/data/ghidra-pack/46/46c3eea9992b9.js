@@ -1,0 +1,1 @@
+DOC.got("gh/Tank/kill_.text_00287030.cpp","// Nom démêlé : Tank::kill\n// Symbole manglé : kill\n// void __thiscall Tank::kill(Tank *this); @ .text::00287030\n\n\n/* Tank::kill() */\n\nvoid __thiscall Tank::kill(Tank *this)\n\n{\n  al::showModelIfHide((LiveActor *)this);\n  al::LiveActor::kill((LiveActor *)this);\n  return;\n}\n\n");

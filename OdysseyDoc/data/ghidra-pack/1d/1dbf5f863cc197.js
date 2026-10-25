@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerActorBase/getPlayerInfo.cpp","// Nom démêlé : PlayerActorBase::getPlayerInfo\n// Symbole manglé : getPlayerInfo\n// undefined8 PlayerActorBase::getPlayerInfo(void); @ .text::0044f8f4\n\n\n/* PlayerActorBase::getPlayerInfo() const */\n\nundefined8 PlayerActorBase::getPlayerInfo(void)\n\n{\n  return 0;\n}\n\n");

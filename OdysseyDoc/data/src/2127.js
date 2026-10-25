@@ -1,0 +1,1 @@
+DOC.got("src/2127","#pragma once\n\nclass PlayerCollider;\n\nclass IUsePlayerCollision {\npublic:\n    virtual PlayerCollider* getPlayerCollider() const = 0;\n};\n");

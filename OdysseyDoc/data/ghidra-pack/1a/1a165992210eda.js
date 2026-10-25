@@ -1,0 +1,1 @@
+DOC.got("gh/al/isCorruptedSaveDataSequenceResult.cpp","// Nom démêlé : al::isCorruptedSaveDataSequenceResult\n// Symbole manglé : isCorruptedSaveDataSequenceResult\n// undefined8 al::isCorruptedSaveDataSequenceResult(void); @ .text::00acdb60\n\n\n/* al::isCorruptedSaveDataSequenceResult() */\n\nundefined8 al::isCorruptedSaveDataSequenceResult(void)\n\n{\n  return 0;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/BreedaWanwan/killCap.cpp","// Nom démêlé : BreedaWanwan::killCap\n// Symbole manglé : killCap\n// void __thiscall BreedaWanwan::killCap(BreedaWanwan *this); @ .text::0014e4b0\n\n\n/* BreedaWanwan::killCap() */\n\nvoid __thiscall BreedaWanwan::killCap(BreedaWanwan *this)\n\n{\n  al::LiveActorGroup::killAll(*(LiveActorGroup **)(this + 0x128));\n  return;\n}\n\n");

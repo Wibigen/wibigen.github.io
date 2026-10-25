@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerActorBase/startDemoPuppetable.cpp","// Nom démêlé : PlayerActorBase::startDemoPuppetable\n// Symbole manglé : startDemoPuppetable\n// void PlayerActorBase::startDemoPuppetable(void); @ .text::0044f8a4\n\n\n/* PlayerActorBase::startDemoPuppetable() */\n\nvoid PlayerActorBase::startDemoPuppetable(void)\n\n{\n  return;\n}\n\n");

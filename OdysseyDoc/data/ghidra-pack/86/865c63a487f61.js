@@ -1,0 +1,1 @@
+DOC.got("gh/ShineTowerRocket/exeWaitDemo.cpp","// Nom démêlé : ShineTowerRocket::exeWaitDemo\n// Symbole manglé : exeWaitDemo\n// void ShineTowerRocket::exeWaitDemo(void); @ .text::004109d4\n\n\n/* ShineTowerRocket::exeWaitDemo() */\n\nvoid ShineTowerRocket::exeWaitDemo(void)\n\n{\n  return;\n}\n\n");

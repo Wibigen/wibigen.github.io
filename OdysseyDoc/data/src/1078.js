@@ -1,0 +1,1 @@
+DOC.got("src/1078","#pragma once\n\nnamespace agl {\nclass TextureData;\n}  // namespace agl\n\nnamespace al {\nconst agl::TextureData* getWhite2DTexture();\n}  // namespace al\n");

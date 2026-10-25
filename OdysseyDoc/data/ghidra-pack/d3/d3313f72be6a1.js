@@ -1,0 +1,1 @@
+DOC.got("gh/CollectBgmPlayer/prepare.cpp","// Nom démêlé : CollectBgmPlayer::prepare\n// Symbole manglé : prepare\n// void CollectBgmPlayer::prepare(void); @ .text::00108a04\n\n\n/* CollectBgmPlayer::prepare() */\n\nvoid CollectBgmPlayer::prepare(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/rs/noticeDemoSkipEnd.cpp","// Nom démêlé : rs::noticeDemoSkipEnd\n// Symbole manglé : noticeDemoSkipEnd\n// void rs::noticeDemoSkipEnd(Scene *param_1); @ .text::0065180c\n\n\n/* rs::noticeDemoSkipEnd(al::Scene const*) */\n\nvoid rs::noticeDemoSkipEnd(Scene *param_1)\n\n{\n  *(undefined1 *)(*(long *)(*(long *)(param_1 + 0x90) + 0xd0) + 0x90) = 0;\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/nn/ui2d/Pane/Pane.cpp","// Nom démêlé : nn::ui2d::Pane::~Pane\n// Symbole manglé : ~Pane\n// void __thiscall nn::ui2d::Pane::~Pane(Pane *this); @ .text::00c07590\n\n\n/* nn::ui2d::Pane::~Pane() */\n\nvoid __thiscall nn::ui2d::Pane::~Pane(Pane *this)\n\n{\n  return;\n}\n\n");

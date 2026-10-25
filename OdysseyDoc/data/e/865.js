@@ -1,0 +1,1 @@
+DOC.got("e/865",{"15548":{"q":"agl::CubeMapFace","decl":{"f":"lib/agl/include/utility/aglDevTools.h","l":19,"sig":"class CubeMapFace","fi":319},"complete":false,"fwd":[["lib/agl/include/utility/aglDevTools.h",19]]}});

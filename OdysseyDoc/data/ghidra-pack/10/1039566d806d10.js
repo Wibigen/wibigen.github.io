@@ -1,0 +1,1 @@
+DOC.got("gh/al/Resource/getSize_.text_00aca3dc.cpp","// Nom démêlé : al::Resource::getSize\n// Symbole manglé : getSize\n// undefined4 __thiscall al::Resource::getSize(Resource *this); @ .text::00aca3dc\n\n\n/* al::Resource::getSize() const */\n\nundefined4 __thiscall al::Resource::getSize(Resource *this)\n\n{\n  return *(undefined4 *)(*(long *)this + 0x10);\n}\n\n");

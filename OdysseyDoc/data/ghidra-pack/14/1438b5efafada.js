@@ -1,0 +1,1 @@
+DOC.got("gh/al/CameraPoser/isZooming.cpp","// Nom démêlé : al::CameraPoser::isZooming\n// Symbole manglé : isZooming\n// undefined8 al::CameraPoser::isZooming(void); @ .text::001cc688\n\n\n/* al::CameraPoser::isZooming() const */\n\nundefined8 al::CameraPoser::isZooming(void)\n\n{\n  return 0;\n}\n\n");

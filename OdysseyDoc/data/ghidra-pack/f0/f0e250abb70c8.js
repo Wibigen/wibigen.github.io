@@ -1,0 +1,1 @@
+DOC.got("gh/TRex/endHackAttackWait.cpp","// Nom démêlé : TRex::endHackAttackWait\n// Symbole manglé : endHackAttackWait\n// void __thiscall TRex::endHackAttackWait(TRex *this); @ .text::00294ac8\n\n\n/* TRex::endHackAttackWait() */\n\nvoid __thiscall TRex::endHackAttackWait(TRex *this)\n\n{\n  al::invalidateHitSensor((LiveActor *)this,(char *)0x19294d4);\n  return;\n}\n\n");

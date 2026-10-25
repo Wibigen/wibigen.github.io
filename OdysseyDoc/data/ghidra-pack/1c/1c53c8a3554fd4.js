@@ -1,0 +1,1 @@
+DOC.got("gh/al/LutTexture/reinit_.text_00b0a204.cpp","// Nom démêlé : al::LutTexture::reinit\n// Symbole manglé : reinit\n// void __thiscall al::LutTexture::reinit(LutTexture *this); @ .text::00b0a204\n\n\n/* al::LutTexture::reinit() */\n\nvoid __thiscall al::LutTexture::reinit(LutTexture *this)\n\n{\n  initTexData(this);\n  initCore(this);\n  return;\n}\n\n");

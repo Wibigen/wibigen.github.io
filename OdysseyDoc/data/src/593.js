@@ -1,0 +1,1 @@
+DOC.got("src/593","#pragma once\n\nnamespace al {\nclass EventFlowEventData;\n\nclass IEventFlowEventReceiver {\npublic:\n    virtual bool receiveEvent(const EventFlowEventData* event) = 0;\n};\n\n}  // namespace al\n");

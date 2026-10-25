@@ -1,0 +1,1 @@
+DOC.got("gh/al/EnvTexId/isEnableTexId.cpp","// Nom démêlé : al::EnvTexId::isEnableTexId\n// Symbole manglé : isEnableTexId\n// bool al::EnvTexId::isEnableTexId(int param_1); @ .text::00b04018\n\n\n/* al::EnvTexId::isEnableTexId(int) */\n\nbool al::EnvTexId::isEnableTexId(int param_1)\n\n{\n  return param_1 != -1 && param_1 != -100;\n}\n\n");

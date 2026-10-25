@@ -1,0 +1,1 @@
+DOC.got("gh/KoopaShip/getWipeDemoHomeFlyAwayStep.cpp","// Nom démêlé : KoopaShip::getWipeDemoHomeFlyAwayStep\n// Symbole manglé : getWipeDemoHomeFlyAwayStep\n// undefined8 KoopaShip::getWipeDemoHomeFlyAwayStep(void); @ .text::003afee0\n\n\n/* KoopaShip::getWipeDemoHomeFlyAwayStep() */\n\nundefined8 KoopaShip::getWipeDemoHomeFlyAwayStep(void)\n\n{\n  return 0x3c;\n}\n\n");

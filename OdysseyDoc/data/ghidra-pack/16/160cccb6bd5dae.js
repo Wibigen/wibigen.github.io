@@ -1,0 +1,1 @@
+DOC.got("gh/eui/Screen/doInitialize.cpp","// Nom démêlé : eui::Screen::doInitialize_\n// Symbole manglé : doInitialize_\n// void eui::Screen::doInitialize_(Heap *param_1); @ .text::008ef840\n\n\n/* eui::Screen::doInitialize_(sead::Heap*) */\n\nvoid eui::Screen::doInitialize_(Heap *param_1)\n\n{\n  return;\n}\n\n");

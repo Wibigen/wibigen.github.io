@@ -1,0 +1,1 @@
+DOC.got("e/3981",{"32795":{"q":"nn::gfx::detail::ColorTargetViewImpl","decl":{"f":"lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h","l":212,"sig":"template <typename TTarget>\nclass ColorTargetViewImpl","fi":51},"tp":["typename TTarget"],"derived":[32242],"complete":false,"fwd":[["lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h",212]]}});

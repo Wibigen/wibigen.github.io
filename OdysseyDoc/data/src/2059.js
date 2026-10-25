@@ -1,0 +1,1 @@
+DOC.got("src/2059","#pragma once\n\n#include \"Library/Nerve/NerveStateBase.h\"\n\nclass BirdStateWaitBase : public al::ActorStateBase {\npublic:\n    using al::ActorStateBase::ActorStateBase;\n\n    virtual const char* getDefaultWaitActionName() = 0;\n};\n\nstatic_assert(sizeof(BirdStateWaitBase) == 0x20);\n");

@@ -1,0 +1,1 @@
+DOC.got("src/73","#pragma once\n\n#include <nn/nn_BitTypes.h>\n\nnamespace nn::gfx {\n\nstruct CommandBufferInfoData {\n    Bit8 commandBufferType;\n    char reserved2;\n    Bit16 queueCapability;\n    char reserved[28];\n};\n\n}  // namespace nn::gfx");

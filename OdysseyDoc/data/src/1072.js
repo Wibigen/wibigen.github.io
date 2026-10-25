@@ -1,0 +1,1 @@
+DOC.got("src/1072","#include \"Library/Sequence/IUseSceneCreator.h\"\n\nnamespace al {\n\nIUseSceneCreator::~IUseSceneCreator() {\n    ;\n}\n\n}  // namespace al\n");

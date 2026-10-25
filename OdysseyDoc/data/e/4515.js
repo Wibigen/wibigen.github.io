@@ -1,0 +1,1 @@
+DOC.got("e/4515",{"36646":{"q":"nvn::TextureSparseTileLayout","decl":{"f":"lib/NintendoSDK/include/nvn/nvn_Cpp.h","l":111,"sig":"struct TextureSparseTileLayout","fi":224},"complete":false,"fwd":[["lib/NintendoSDK/include/nvn/nvn_Cpp.h",111]]}});

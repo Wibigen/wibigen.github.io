@@ -1,0 +1,1 @@
+DOC.got("gh/TalkNpcFreeze/movement_.text_004e1888.cpp","// Nom démêlé : TalkNpcFreeze::movement\n// Symbole manglé : movement\n// void TalkNpcFreeze::movement(void); @ .text::004e1888\n\n\n/* TalkNpcFreeze::movement() */\n\nvoid TalkNpcFreeze::movement(void)\n\n{\n  return;\n}\n\n");

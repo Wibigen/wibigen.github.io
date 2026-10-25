@@ -1,0 +1,1 @@
+DOC.got("e/4378",{"34905":{"q":"nn::vfx::detail::BufferSizeCalculator","decl":{"f":"lib/NintendoSDK/include/nn/vfx/Resource.h","l":19,"sig":"struct BufferSizeCalculator","fi":218},"complete":false,"fwd":[["lib/NintendoSDK/include/nn/vfx/Resource.h",19]]}});

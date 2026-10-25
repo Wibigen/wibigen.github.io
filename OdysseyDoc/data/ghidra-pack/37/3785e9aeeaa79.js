@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerJudgeDead/reset_.text_00558e68.cpp","// Nom démêlé : PlayerJudgeDead::reset\n// Symbole manglé : reset\n// void PlayerJudgeDead::reset(void); @ .text::00558e68\n\n\n/* PlayerJudgeDead::reset() */\n\nvoid PlayerJudgeDead::reset(void)\n\n{\n  return;\n}\n\n");

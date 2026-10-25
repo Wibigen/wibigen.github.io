@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerModelChangerYoshi/is2DModel_.text_0055e844.cpp","// Nom démêlé : PlayerModelChangerYoshi::is2DModel\n// Symbole manglé : is2DModel\n// undefined8 PlayerModelChangerYoshi::is2DModel(void); @ .text::0055e844\n\n\n/* PlayerModelChangerYoshi::is2DModel() const */\n\nundefined8 PlayerModelChangerYoshi::is2DModel(void)\n\n{\n  return 0;\n}\n\n");

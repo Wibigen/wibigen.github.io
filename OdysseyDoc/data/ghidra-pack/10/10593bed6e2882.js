@@ -1,0 +1,1 @@
+DOC.got("gh/CapThrower/isValidCamera.cpp","// Nom démêlé : CapThrower::isValidCamera\n// Symbole manglé : isValidCamera\n// bool __thiscall CapThrower::isValidCamera(CapThrower *this); @ .text::00151da4\n\n\n/* CapThrower::isValidCamera() const */\n\nbool __thiscall CapThrower::isValidCamera(CapThrower *this)\n\n{\n  return **(char **)(this + 0x100) == '\\0';\n}\n\n");

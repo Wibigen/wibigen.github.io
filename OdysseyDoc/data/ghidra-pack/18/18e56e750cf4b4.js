@@ -1,0 +1,1 @@
+DOC.got("gh/RaceLayout/startResult.cpp","// Nom démêlé : RaceLayout::startResult\n// Symbole manglé : startResult\n// void __thiscall RaceLayout::startResult(RaceLayout *this); @ .text::00300624\n\n\n/* RaceLayout::startResult() */\n\nvoid __thiscall RaceLayout::startResult(RaceLayout *this)\n\n{\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1dcc038);\n  return;\n}\n\n");

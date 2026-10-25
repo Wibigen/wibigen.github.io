@@ -1,0 +1,1 @@
+DOC.got("gh/al/SwitchDitherMapParts/exeWait_.text_00a1ada0.cpp","// Nom démêlé : al::SwitchDitherMapParts::exeWait\n// Symbole manglé : exeWait\n// void al::SwitchDitherMapParts::exeWait(void); @ .text::00a1ada0\n\n\n/* al::SwitchDitherMapParts::exeWait() */\n\nvoid al::SwitchDitherMapParts::exeWait(void)\n\n{\n  return;\n}\n\n");

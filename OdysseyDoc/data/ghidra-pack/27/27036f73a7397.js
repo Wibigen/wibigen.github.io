@@ -1,0 +1,1 @@
+DOC.got("gh/GameSystem/GameSystem_.text_0063582c.cpp","// Nom démêlé : GameSystem::~GameSystem\n// Symbole manglé : ~GameSystem\n// void __thiscall GameSystem::~GameSystem(GameSystem *this); @ .text::0063582c\n\n\n/* GameSystem::~GameSystem() */\n\nvoid __thiscall GameSystem::~GameSystem(GameSystem *this)\n\n{\n  ~GameSystem(this);\n  operator_delete(this);\n  return;\n}\n\n");

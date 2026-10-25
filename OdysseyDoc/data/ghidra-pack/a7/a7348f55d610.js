@@ -1,0 +1,1 @@
+DOC.got("gh/HelpAmiiboCountUpCoin/exeEnd.cpp","// Nom démêlé : HelpAmiiboCountUpCoin::exeEnd\n// Symbole manglé : exeEnd\n// void HelpAmiiboCountUpCoin::exeEnd(void); @ .text::00102348\n\n\n/* HelpAmiiboCountUpCoin::exeEnd() */\n\nvoid HelpAmiiboCountUpCoin::exeEnd(void)\n\n{\n  return;\n}\n\n");

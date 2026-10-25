@@ -1,0 +1,1 @@
+DOC.got("gh/al/getQuat_.text_009ef5bc.cpp","// Nom démêlé : al::getQuat\n// Symbole manglé : getQuat\n// void al::getQuat(LiveActor *param_1); @ .text::009ef5bc\n\n\n/* al::getQuat(al::LiveActor const*) */\n\nvoid al::getQuat(LiveActor *param_1)\n\n{\n  (**(code **)(**(long **)(param_1 + 0x50) + 0x28))();\n  return;\n}\n\n");

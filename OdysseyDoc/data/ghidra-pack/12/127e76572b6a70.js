@@ -1,0 +1,1 @@
+DOC.got("gh/sead/DebugFontMgrNvn/end_.text_00839938.cpp","// Nom démêlé : sead::DebugFontMgrNvn::end\n// Symbole manglé : end\n// void sead::DebugFontMgrNvn::end(DrawContext *param_1); @ .text::00839938\n\n\n/* sead::DebugFontMgrNvn::end(sead::DrawContext*) const */\n\nvoid sead::DebugFontMgrNvn::end(DrawContext *param_1)\n\n{\n  return;\n}\n\n");

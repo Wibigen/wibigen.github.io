@@ -1,0 +1,1 @@
+DOC.got("gh/al/VignettingParam/getParamName_.text_00abfda8.cpp","// Nom démêlé : al::VignettingParam::getParamName\n// Symbole manglé : getParamName\n// undefined8 al::VignettingParam::getParamName(void); @ .text::00abfda8\n\n\n/* al::VignettingParam::getParamName() const */\n\nundefined8 al::VignettingParam::getParamName(void)\n\n{\n  return 0x197233f;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/IBalloonFindMyBalloon/setPlayerRank_.text_00453064.cpp","// Nom démêlé : IBalloonFindMyBalloon::setPlayerRank\n// Symbole manglé : setPlayerRank\n// int IBalloonFindMyBalloon::setPlayerRank(int param_1); @ .text::00453064\n\n\n/* IBalloonFindMyBalloon::setPlayerRank(int) */\n\nint IBalloonFindMyBalloon::setPlayerRank(int param_1)\n\n{\n  return param_1;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/isValidInfo.cpp","// Nom démêlé : al::isValidInfo\n// Symbole manglé : isValidInfo\n// bool al::isValidInfo(PlacementInfo *param_1); @ .text::00a9e5c0\n\n\n/* al::isValidInfo(al::PlacementInfo const&) */\n\nbool al::isValidInfo(PlacementInfo *param_1)\n\n{\n  return *(long *)param_1 != 0;\n}\n\n");

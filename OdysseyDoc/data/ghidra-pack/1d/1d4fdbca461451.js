@@ -1,0 +1,1 @@
+DOC.got("gh/LavaFryingPan/exeRotate_.text_003b197c.cpp","// Nom démêlé : LavaFryingPan::exeRotate\n// Symbole manglé : exeRotate\n// void LavaFryingPan::exeRotate(void); @ .text::003b197c\n\n\n/* LavaFryingPan::exeRotate() */\n\nvoid LavaFryingPan::exeRotate(void)\n\n{\n  return;\n}\n\n");

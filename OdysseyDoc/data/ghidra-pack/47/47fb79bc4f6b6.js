@@ -1,0 +1,1 @@
+DOC.got("gh/nn/atk/detail/fnd/HeapBase/LockHeap.cpp","// Nom démêlé : nn::atk::detail::fnd::HeapBase::LockHeap\n// Symbole manglé : LockHeap\n// void nn::atk::detail::fnd::HeapBase::LockHeap(void); @ .text::00bc97d4\n\n\n/* nn::atk::detail::fnd::HeapBase::LockHeap() */\n\nvoid nn::atk::detail::fnd::HeapBase::LockHeap(void)\n\n{\n  return;\n}\n\n");

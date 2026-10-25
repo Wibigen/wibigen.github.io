@@ -1,0 +1,1 @@
+DOC.got("gh/alsd/AudioSystemNin/clearEffect.cpp","// Nom démêlé : alsd::AudioSystemNin::clearEffect\n// Symbole manglé : clearEffect\n// void alsd::AudioSystemNin::clearEffect(void); @ .text::00b42bb0\n\n\n/* alsd::AudioSystemNin::clearEffect(alsd::AudioGlobal::AuxBus, int) */\n\nvoid alsd::AudioSystemNin::clearEffect(void)\n\n{\n  return;\n}\n\n");

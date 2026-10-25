@@ -1,0 +1,1 @@
+DOC.got("gh/HintPhoto/exeWait_.text_003a1cc4.cpp","// Nom démêlé : HintPhoto::exeWait\n// Symbole manglé : exeWait\n// void HintPhoto::exeWait(void); @ .text::003a1cc4\n\n\n/* HintPhoto::exeWait() */\n\nvoid HintPhoto::exeWait(void)\n\n{\n  return;\n}\n\n");

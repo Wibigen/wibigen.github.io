@@ -1,0 +1,1 @@
+DOC.got("gh/eui/Screen/createRestAnimators.cpp","// Nom démêlé : eui::Screen::createRestAnimators_\n// Symbole manglé : createRestAnimators_\n// void eui::Screen::createRestAnimators_(void); @ .text::008f0c1c\n\n\n/* eui::Screen::createRestAnimators_() */\n\nvoid eui::Screen::createRestAnimators_(void)\n\n{\n  return;\n}\n\n");

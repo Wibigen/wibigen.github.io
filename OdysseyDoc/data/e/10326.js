@@ -1,0 +1,1 @@
+DOC.got("e/10326",{"7031":{"q":"GLSLCspirvSpecializationInfo_rec","decl":{"f":"lib/NintendoSDK/include/nvnTool/nvnTool_GlslcInterface.h","l":367,"sig":"struct GLSLCspirvSpecializationInfo_rec","end":369,"fi":230},"size":1,"align":1,"complete":true}});

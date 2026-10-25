@@ -1,0 +1,1 @@
+DOC.got("e/4018",{"33032":{"q":"nn::gfx::detail::RootSignatureImpl","decl":{"f":"lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h","l":179,"sig":"template <typename TTarget>\nclass RootSignatureImpl","fi":51},"tp":["typename TTarget"],"complete":false,"fwd":[["lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h",179]]}});

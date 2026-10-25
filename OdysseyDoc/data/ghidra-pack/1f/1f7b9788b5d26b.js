@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Pacer/ResetStats.cpp","// Nom démêlé : nn::nex::Pacer::ResetStats\n// Symbole manglé : ResetStats\n// void __thiscall nn::nex::Pacer::ResetStats(Pacer *this); @ .text::0073d330\n\n\n/* nn::nex::Pacer::ResetStats() */\n\nvoid __thiscall nn::nex::Pacer::ResetStats(Pacer *this)\n\n{\n  this[0xb0] = (Pacer)0x0;\n  return;\n}\n\n");

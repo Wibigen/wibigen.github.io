@@ -1,0 +1,1 @@
+DOC.got("gh/al/isSensorEnemy.cpp","// Nom démêlé : al::isSensorEnemy\n// Symbole manglé : isSensorEnemy\n// bool al::isSensorEnemy(HitSensor *param_1); @ .text::009f2c10\n\n\n/* al::isSensorEnemy(al::HitSensor const*) */\n\nbool al::isSensorEnemy(HitSensor *param_1)\n\n{\n  return *(int *)(param_1 + 8) - 8U < 3;\n}\n\n");

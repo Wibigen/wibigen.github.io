@@ -1,0 +1,1 @@
+DOC.got("gh/CounterParts/exeWait_.text_002e97dc.cpp","// Nom démêlé : CounterParts::exeWait\n// Symbole manglé : exeWait\n// void CounterParts::exeWait(void); @ .text::002e97dc\n\n\n/* CounterParts::exeWait() */\n\nvoid CounterParts::exeWait(void)\n\n{\n  return;\n}\n\n");

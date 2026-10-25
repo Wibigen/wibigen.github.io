@@ -1,0 +1,1 @@
+DOC.got("src/926","#pragma once\n\n#include \"Library/Anim/DitherAnimator.h\"\n\nnamespace al {\nclass LiveActor;\nclass Resource;\n\nclass FarDistanceDitherAnimator : public DitherAnimator {\npublic:\n    static FarDistanceDitherAnimator* tryCreate(LiveActor*, const Resource*, const char*);\n};\n\n}  // namespace al\n");

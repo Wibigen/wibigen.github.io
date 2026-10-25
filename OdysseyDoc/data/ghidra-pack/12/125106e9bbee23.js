@@ -1,0 +1,1 @@
+DOC.got("gh/nn/gfx/detail/IsThinBinaryAvailable.cpp","// Nom démêlé : nn::gfx::detail::IsThinBinaryAvailable\n// Symbole manglé : IsThinBinaryAvailable\n// undefined8 nn::gfx::detail::IsThinBinaryAvailable(void); @ .text::00824a7c\n\n\n/* nn::gfx::detail::IsThinBinaryAvailable() */\n\nundefined8 nn::gfx::detail::IsThinBinaryAvailable(void)\n\n{\n  return 1;\n}\n\n");

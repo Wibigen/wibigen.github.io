@@ -1,0 +1,1 @@
+DOC.got("gh/al/ByamlHashPair/getType_.text_00b2d7c0.cpp","// Nom démêlé : al::ByamlHashPair::getType\n// Symbole manglé : getType\n// ByamlHashPair __thiscall al::ByamlHashPair::getType(ByamlHashPair *this); @ .text::00b2d7c0\n\n\n/* al::ByamlHashPair::getType() const */\n\nByamlHashPair __thiscall al::ByamlHashPair::getType(ByamlHashPair *this)\n\n{\n  return this[3];\n}\n\n");

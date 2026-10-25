@@ -1,0 +1,1 @@
+DOC.got("gh/StageEventDemoBase/init_.text_001d5548.cpp","// Nom démêlé : StageEventDemoBase::init\n// Symbole manglé : init\n// void StageEventDemoBase::init(ActorInitInfo *param_1); @ .text::001d5548\n\n\n/* StageEventDemoBase::init(al::ActorInitInfo const&) */\n\nvoid StageEventDemoBase::init(ActorInitInfo *param_1)\n\n{\n  return;\n}\n\n");

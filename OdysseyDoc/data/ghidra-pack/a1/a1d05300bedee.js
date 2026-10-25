@@ -1,0 +1,1 @@
+DOC.got("gh/JangoDirector/removeCap.cpp","// Nom démêlé : JangoDirector::removeCap\n// Symbole manglé : removeCap\n// void __thiscall JangoDirector::removeCap(JangoDirector *this); @ .text::00230108\n\n\n/* JangoDirector::removeCap() */\n\nvoid __thiscall JangoDirector::removeCap(JangoDirector *this)\n\n{\n  this[0x14] = (JangoDirector)0x0;\n  return;\n}\n\n");

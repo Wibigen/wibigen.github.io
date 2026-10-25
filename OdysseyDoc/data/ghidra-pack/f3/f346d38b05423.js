@@ -1,0 +1,1 @@
+DOC.got("gh/ItemGenerator/isNone_.text_00654f4c.cpp","// Nom démêlé : ItemGenerator::isNone\n// Symbole manglé : isNone\n// bool __thiscall ItemGenerator::isNone(ItemGenerator *this); @ .text::00654f4c\n\n\n/* ItemGenerator::isNone() const */\n\nbool __thiscall ItemGenerator::isNone(ItemGenerator *this)\n\n{\n  return *(int *)(this + 0x1c) == -1;\n}\n\n");

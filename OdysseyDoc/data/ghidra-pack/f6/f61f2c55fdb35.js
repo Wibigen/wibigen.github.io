@@ -1,0 +1,1 @@
+DOC.got("gh/alBgmFunction/calcBeatRate.cpp","// Nom démêlé : alBgmFunction::calcBeatRate\n// Symbole manglé : calcBeatRate\n// float alBgmFunction::calcBeatRate(float param_1); @ .text::0091bb88\n\n\n/* alBgmFunction::calcBeatRate(float) */\n\nfloat alBgmFunction::calcBeatRate(float param_1)\n\n{\n  return param_1 - (float)(int)param_1;\n}\n\n");

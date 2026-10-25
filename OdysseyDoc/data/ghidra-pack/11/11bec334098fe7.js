@@ -1,0 +1,1 @@
+DOC.got("gh/al/squareIn.cpp","// Nom démêlé : al::squareIn\n// Symbole manglé : squareIn\n// float al::squareIn(float param_1); @ .text::00a20c7c\n\n\n/* al::squareIn(float) */\n\nfloat al::squareIn(float param_1)\n\n{\n  return param_1 * param_1;\n}\n\n");

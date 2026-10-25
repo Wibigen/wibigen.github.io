@@ -1,0 +1,1 @@
+DOC.got("src/1804","#pragma once\n\n#include <basis/seadTypes.h>\n\nclass BlinkRateCalculator {\npublic:\n    BlinkRateCalculator(s32 maxFrames);\n    BlinkRateCalculator();\n    void reset();\n    void update();\n\nprivate:\n    s32 mMaxFrames = 50;\n    s32 mCurrentFrame = 0;\n    f32 mCurrentRate = 0.0f;\n    f32 mRateThreshold = 0.498f;\n};\n");

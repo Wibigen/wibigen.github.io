@@ -1,0 +1,1 @@
+DOC.got("e/12184",{"8168":{"q":"GamePadPlayStyleInfo","decl":{"f":"src/Util/StageInputFunction.h","l":13,"sig":"class GamePadPlayStyleInfo","fi":2532},"complete":false,"fwd":[["src/Layout/StageSceneLayout.h",20],["src/Util/StageInputFunction.h",13]]}});

@@ -1,0 +1,1 @@
+DOC.got("gh/al/ParameterStringRef/size_.text_009d0e3c.cpp","// Nom démêlé : al::ParameterStringRef::size\n// Symbole manglé : size\n// undefined8 al::ParameterStringRef::size(void); @ .text::009d0e3c\n\n\n/* al::ParameterStringRef::size() const */\n\nundefined8 al::ParameterStringRef::size(void)\n\n{\n  return 8;\n}\n\n");

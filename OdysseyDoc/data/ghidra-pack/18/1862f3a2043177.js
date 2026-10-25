@@ -1,0 +1,1 @@
+DOC.got("gh/al/RollingCubeMapParts/exeWait_.text_00a174c4.cpp","// Nom démêlé : al::RollingCubeMapParts::exeWait\n// Symbole manglé : exeWait\n// void al::RollingCubeMapParts::exeWait(void); @ .text::00a174c4\n\n\n/* al::RollingCubeMapParts::exeWait() */\n\nvoid al::RollingCubeMapParts::exeWait(void)\n\n{\n  return;\n}\n\n");

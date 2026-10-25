@@ -1,0 +1,1 @@
+DOC.got("gh/alsd/AudioPlayerMulti/isNwEnabled.cpp","// Nom démêlé : alsd::AudioPlayerMulti::isNwEnabled_\n// Symbole manglé : isNwEnabled_\n// undefined8 alsd::AudioPlayerMulti::isNwEnabled_(void); @ .text::00b40ae0\n\n\n/* alsd::AudioPlayerMulti::isNwEnabled_() const */\n\nundefined8 alsd::AudioPlayerMulti::isNwEnabled_(void)\n\n{\n  return 1;\n}\n\n");

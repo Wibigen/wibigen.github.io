@@ -1,0 +1,1 @@
+DOC.got("gh/al/SkyDirector/initProjectResource_.text_00a50e80.cpp","// Nom démêlé : al::SkyDirector::initProjectResource\n// Symbole manglé : initProjectResource\n// void al::SkyDirector::initProjectResource(void); @ .text::00a50e80\n\n\n/* al::SkyDirector::initProjectResource() */\n\nvoid al::SkyDirector::initProjectResource(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("src/215","#pragma once\n\n#include <nn/types.h>\n#include <type_traits>\n\nnamespace nn::util {\n\ntemplate <class T, size_t Size, size_t Alignment>\nstruct TypedStorage {\n    alignas(Alignment) char storage[Size];\n};\n\n}  // namespace nn::util");

@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerModelChangerYoshi/isMini_.text_0055e834.cpp","// Nom démêlé : PlayerModelChangerYoshi::isMini\n// Symbole manglé : isMini\n// undefined8 PlayerModelChangerYoshi::isMini(void); @ .text::0055e834\n\n\n/* PlayerModelChangerYoshi::isMini() const */\n\nundefined8 PlayerModelChangerYoshi::isMini(void)\n\n{\n  return 0;\n}\n\n");

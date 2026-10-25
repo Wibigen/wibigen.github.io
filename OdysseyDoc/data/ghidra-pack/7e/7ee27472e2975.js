@@ -1,0 +1,1 @@
+DOC.got("gh/GameDataFunction/isRaceWin.cpp","// Nom démêlé : GameDataFunction::isRaceWin\n// Symbole manglé : isRaceWin\n// bool GameDataFunction::isRaceWin(long param_1); @ .text::0062990c\n\n\n/* GameDataFunction::isRaceWin(GameDataHolderAccessor) */\n\nbool GameDataFunction::isRaceWin(long param_1)\n\n{\n  return *(int *)(*(long *)(param_1 + 0x20) + 0xa48) == 1;\n}\n\n");

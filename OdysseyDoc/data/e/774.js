@@ -1,0 +1,1 @@
+DOC.got("e/774",{"14919":{"q":"TimeBalloon::BalloonDataMetaBinary","decl":{"f":"src/ModeBalloon/TimeBalloonData.h","l":38,"sig":"struct BalloonDataMetaBinary","fi":2037},"complete":false,"fwd":[["src/ModeBalloon/TimeBalloonData.h",38]]}});

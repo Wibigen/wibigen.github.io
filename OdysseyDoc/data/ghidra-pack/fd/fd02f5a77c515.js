@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerJudgeTalkGround/update_.text_0055bca4.cpp","// Nom démêlé : PlayerJudgeTalkGround::update\n// Symbole manglé : update\n// void PlayerJudgeTalkGround::update(void); @ .text::0055bca4\n\n\n/* PlayerJudgeTalkGround::update() */\n\nvoid PlayerJudgeTalkGround::update(void)\n\n{\n  return;\n}\n\n");

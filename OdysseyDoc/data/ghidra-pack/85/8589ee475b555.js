@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/SystemInfo/IsRunning98.cpp","// Nom démêlé : nn::nex::SystemInfo::IsRunning98\n// Symbole manglé : IsRunning98\n// undefined8 nn::nex::SystemInfo::IsRunning98(void); @ .text::0072152c\n\n\n/* nn::nex::SystemInfo::IsRunning98() */\n\nundefined8 nn::nex::SystemInfo::IsRunning98(void)\n\n{\n  return 0;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/getRandom.cpp","// Nom démêlé : al::getRandom\n// Symbole manglé : getRandom\n// float al::getRandom(void); @ .text::00a227d0\n\n\n/* al::getRandom() */\n\nfloat al::getRandom(void)\n\n{\n  uint uVar1;\n  \n  uVar1 = sead::Random::getU32(*(Random **)PTR_sInstance_01f5b258);\n  return (float)(uVar1 >> 9 | 0x3f800000) + -1.0;\n}\n\n");

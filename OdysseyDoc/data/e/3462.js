@@ -1,0 +1,1 @@
+DOC.got("e/3462",{"30587":{"q":"ams::sf::ResultRequestDeferred","decl":{"f":"lib/NintendoSDK/include/vapours/results/sf_results.hpp","l":54,"sig":"R_DEFINE_ABSTRACT_ERROR_RANGE(RequestDeferred, 811, 819)","end":54,"fi":257},"size":1,"align":1,"bases":[["::nn::result::detail::ErrorRange<detail::result::ResultModuleId::value, 811, 819 + 1>","public",false,null]],"complete":true}});

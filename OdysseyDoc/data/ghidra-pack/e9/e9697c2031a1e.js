@@ -1,0 +1,1 @@
+DOC.got("gh/StageSceneStateYukimaruRace/init_.text_006043e0.cpp","// Nom démêlé : StageSceneStateYukimaruRace::init\n// Symbole manglé : init\n// void StageSceneStateYukimaruRace::init(void); @ .text::006043e0\n\n\n/* StageSceneStateYukimaruRace::init() */\n\nvoid StageSceneStateYukimaruRace::init(void)\n\n{\n  return;\n}\n\n");

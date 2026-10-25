@@ -1,0 +1,1 @@
+DOC.got("gh/al/getBlack2DSampler.cpp","// Nom démêlé : al::getBlack2DSampler\n// Symbole manglé : getBlack2DSampler\n// undefined8 al::getBlack2DSampler(void); @ .text::00b095e8\n\n\n/* al::getBlack2DSampler() */\n\nundefined8 al::getBlack2DSampler(void)\n\n{\n  return *(undefined8 *)(*(long *)PTR_sInstance_01f5b548 + 0x38);\n}\n\n");

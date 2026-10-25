@@ -1,0 +1,1 @@
+DOC.got("gh/SphinxRide/isRidePlayer.cpp","// Nom démêlé : SphinxRide::isRidePlayer\n// Symbole manglé : isRidePlayer\n// bool __thiscall SphinxRide::isRidePlayer(SphinxRide *this); @ .text::004d83ec\n\n\n/* SphinxRide::isRidePlayer() const */\n\nbool __thiscall SphinxRide::isRidePlayer(SphinxRide *this)\n\n{\n  return *(long *)(this + 0x118) != 0;\n}\n\n");

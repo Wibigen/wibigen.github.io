@@ -1,0 +1,1 @@
+DOC.got("gh/al/Parameter_int/ptr_.text_003d5f8c.cpp","// Nom démêlé : al::Parameter<int>::ptr\n// Symbole manglé : ptr\n// Parameter<int> * __thiscall al::Parameter<int>::ptr(Parameter<int> *this); @ .text::003d5f8c\n\n\n/* al::Parameter<int>::ptr() const */\n\nParameter<int> * __thiscall al::Parameter<int>::ptr(Parameter<int> *this)\n\n{\n  return this + 0x6c;\n}\n\n");

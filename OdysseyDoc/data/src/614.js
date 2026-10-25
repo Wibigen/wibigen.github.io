@@ -1,0 +1,1 @@
+DOC.got("src/614","#pragma once\n\n#include \"Library/Execute/ExecutorActorExecuteBase.h\"\n\nnamespace al {\n\nclass ExecutorActorDraw : public ExecutorActorExecuteBase {\npublic:\n    ExecutorActorDraw(const char* name);\n    void execute() const override;\n};\n\nstatic_assert(sizeof(ExecutorActorDraw) == 0x20);\n\n}  // namespace al\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/setClipControl.cpp","// Nom démêlé : al::setClipControl\n// Symbole manglé : setClipControl\n// void al::setClipControl(void); @ .text::00ac0a84\n\n\n/* al::setClipControl() */\n\nvoid al::setClipControl(void)\n\n{\n  return;\n}\n\n");

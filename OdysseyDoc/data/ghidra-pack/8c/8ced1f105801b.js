@@ -1,0 +1,1 @@
+DOC.got("gh/al/Parameter_float/size_.text_003d5f2c.cpp","// Nom démêlé : al::Parameter<float>::size\n// Symbole manglé : size\n// undefined8 al::Parameter<float>::size(void); @ .text::003d5f2c\n\n\n/* al::Parameter<float>::size() const */\n\nundefined8 al::Parameter<float>::size(void)\n\n{\n  return 4;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/CarryMeat/isFirstDemo_.text_001f0198.cpp","// Nom démêlé : CarryMeat::isFirstDemo\n// Symbole manglé : isFirstDemo\n// undefined8 __thiscall CarryMeat::isFirstDemo(CarryMeat *this); @ .text::001f0198\n\n\n/* non-virtual thunk to CarryMeat::isFirstDemo() const */\n\nundefined8 __thiscall CarryMeat::isFirstDemo(CarryMeat *this)\n\n{\n  return 1;\n}\n\n");

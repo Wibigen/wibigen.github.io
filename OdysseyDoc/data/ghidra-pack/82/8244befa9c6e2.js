@@ -1,0 +1,1 @@
+DOC.got("gh/al/ShadowMaskCube/getShadowMaskType_.text_00b21dec.cpp","// Nom démêlé : al::ShadowMaskCube::getShadowMaskType\n// Symbole manglé : getShadowMaskType\n// undefined8 al::ShadowMaskCube::getShadowMaskType(void); @ .text::00b21dec\n\n\n/* al::ShadowMaskCube::getShadowMaskType() const */\n\nundefined8 al::ShadowMaskCube::getShadowMaskType(void)\n\n{\n  return 3;\n}\n\n");

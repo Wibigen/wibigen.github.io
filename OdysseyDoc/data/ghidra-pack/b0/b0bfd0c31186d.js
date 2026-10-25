@@ -1,0 +1,1 @@
+DOC.got("gh/Curl_isPipeliningEnabled.cpp","// Nom démêlé : Curl_isPipeliningEnabled\n// Symbole manglé : Curl_isPipeliningEnabled\n// void Curl_isPipeliningEnabled(long param_1); @ .text::0080af58\n\n\nvoid Curl_isPipeliningEnabled(long param_1)\n\n{\n  Curl_multi_pipeline_enabled(*(undefined8 *)(param_1 + 0x60));\n  return;\n}\n\n");

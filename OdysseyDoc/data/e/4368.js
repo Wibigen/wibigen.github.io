@@ -1,0 +1,1 @@
+DOC.got("e/4368",{"34861":{"q":"nn::util::neon::MatrixRowMajor4x4fType","decl":{"f":"lib/NintendoSDK/include/nn/util/MathTypes.h","l":15,"sig":"struct MatrixRowMajor4x4fType","end":17,"fi":200},"size":64,"align":4,"complete":true,"fields":[{"n":"m","t":"f32[4][4]","off":0,"sz":64,"acc":"public","bits":null,"l":16,"cm":null,"ti":30838}]}});

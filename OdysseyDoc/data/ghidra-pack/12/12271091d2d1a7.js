@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/DateTime/GetYear.cpp","// Nom démêlé : nn::nex::DateTime::GetYear\n// Symbole manglé : GetYear\n// ulong __thiscall nn::nex::DateTime::GetYear(DateTime *this); @ .text::0070e620\n\n\n/* nn::nex::DateTime::GetYear() const */\n\nulong __thiscall nn::nex::DateTime::GetYear(DateTime *this)\n\n{\n  return *(ulong *)this >> 0x1a & 0x3fff;\n}\n\n");

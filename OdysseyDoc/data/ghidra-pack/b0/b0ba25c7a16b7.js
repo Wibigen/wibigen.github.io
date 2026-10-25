@@ -1,0 +1,1 @@
+DOC.got("gh/KoopaShell/isDeactive.cpp","// Nom démêlé : KoopaShell::isDeactive\n// Symbole manglé : isDeactive\n// void __thiscall KoopaShell::isDeactive(KoopaShell *this); @ .text::0019b99c\n\n\n/* KoopaShell::isDeactive() const */\n\nvoid __thiscall KoopaShell::isDeactive(KoopaShell *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1d73168);\n  return;\n}\n\n");

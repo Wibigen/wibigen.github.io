@@ -1,0 +1,1 @@
+DOC.got("gh/alsd/AudioSystemNin/setOutputMode.cpp","// Nom démêlé : alsd::AudioSystemNin::setOutputMode\n// Symbole manglé : setOutputMode\n// undefined8 alsd::AudioSystemNin::setOutputMode(void); @ .text::00b42b90\n\n\n/* alsd::AudioSystemNin::setOutputMode(alsd::AudioGlobal::OutputMode) */\n\nundefined8 alsd::AudioSystemNin::setOutputMode(void)\n\n{\n  return 0;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/eui/Screen/isPlayPartsInOut.cpp","// Nom démêlé : eui::Screen::isPlayPartsInOut_\n// Symbole manglé : isPlayPartsInOut_\n// undefined8 eui::Screen::isPlayPartsInOut_(void); @ .text::008ef4e8\n\n\n/* eui::Screen::isPlayPartsInOut_() const */\n\nundefined8 eui::Screen::isPlayPartsInOut_(void)\n\n{\n  return 0;\n}\n\n");

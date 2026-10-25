@@ -1,0 +1,1 @@
+DOC.got("gh/MapMini/end_.text_002f72e8.cpp","// Nom démêlé : MapMini::end\n// Symbole manglé : end\n// void __thiscall MapMini::end(MapMini *this); @ .text::002f72e8\n\n\n/* MapMini::end() */\n\nvoid __thiscall MapMini::end(MapMini *this)\n\n{\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1dc9118);\n  return;\n}\n\n");

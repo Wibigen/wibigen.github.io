@@ -1,0 +1,1 @@
+DOC.got("gh/TRexFootIK/update_.text_0029b85c.cpp","// Nom démêlé : TRexFootIK::update\n// Symbole manglé : update\n// void __thiscall TRexFootIK::update(TRexFootIK *this); @ .text::0029b85c\n\n\n/* TRexFootIK::update() */\n\nvoid __thiscall TRexFootIK::update(TRexFootIK *this)\n\n{\n  al::NerveKeeper::update(*(NerveKeeper **)(this + 0x50));\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/Bird/isWait_.text_0047eec4.cpp","// Nom démêlé : Bird::isWait\n// Symbole manglé : isWait\n// void __thiscall Bird::isWait(Bird *this); @ .text::0047eec4\n\n\n/* Bird::isWait() const */\n\nvoid __thiscall Bird::isWait(Bird *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1e54590);\n  return;\n}\n\n");

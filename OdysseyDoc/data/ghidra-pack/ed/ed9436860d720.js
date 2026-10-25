@@ -1,0 +1,1 @@
+DOC.got("gh/nn/atk/detail/MemoryFileStream/CanRead.cpp","// Nom démêlé : nn::atk::detail::MemoryFileStream::CanRead\n// Symbole manglé : CanRead\n// undefined8 nn::atk::detail::MemoryFileStream::CanRead(void); @ .text::00bbfba8\n\n\n/* nn::atk::detail::MemoryFileStream::CanRead() const */\n\nundefined8 nn::atk::detail::MemoryFileStream::CanRead(void)\n\n{\n  return 1;\n}\n\n");

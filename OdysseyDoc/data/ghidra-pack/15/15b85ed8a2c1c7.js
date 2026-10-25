@@ -1,0 +1,1 @@
+DOC.got("gh/StageSceneLayout/end_.text_0030ccb8.cpp","// Nom démêlé : StageSceneLayout::end\n// Symbole manglé : end\n// void __thiscall StageSceneLayout::end(StageSceneLayout *this); @ .text::0030ccb8\n\n\n/* StageSceneLayout::end() */\n\nvoid __thiscall StageSceneLayout::end(StageSceneLayout *this)\n\n{\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1dce738);\n  return;\n}\n\n");

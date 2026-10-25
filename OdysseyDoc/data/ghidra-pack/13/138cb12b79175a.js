@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/VersionInfo/V1.cpp","// Nom démêlé : nn::nex::VersionInfo::V1\n// Symbole manglé : V1\n// undefined8 nn::nex::VersionInfo::V1(void); @ .text::00747d14\n\n\n/* nn::nex::VersionInfo::V1() */\n\nundefined8 nn::nex::VersionInfo::V1(void)\n\n{\n  return 4;\n}\n\n");

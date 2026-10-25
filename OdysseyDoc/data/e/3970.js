@@ -1,0 +1,1 @@
+DOC.got("e/3970",{"32741":{"q":"nn::gfx::detail::BlendStateImpl","decl":{"f":"lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h","l":197,"sig":"template <typename TTarget>\nclass BlendStateImpl","fi":51},"tp":["typename TTarget"],"derived":[32213],"complete":false,"fwd":[["lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h",197]]}});

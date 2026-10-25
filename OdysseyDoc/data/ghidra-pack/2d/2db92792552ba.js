@@ -1,0 +1,1 @@
+DOC.got("gh/FrailBox/attackSensor_.text_00386acc.cpp","// Nom démêlé : FrailBox::attackSensor\n// Symbole manglé : attackSensor\n// void FrailBox::attackSensor(HitSensor *param_1,HitSensor *param_2); @ .text::00386acc\n\n\n/* FrailBox::attackSensor(al::HitSensor*, al::HitSensor*) */\n\nvoid FrailBox::attackSensor(HitSensor *param_1,HitSensor *param_2)\n\n{\n  return;\n}\n\n");

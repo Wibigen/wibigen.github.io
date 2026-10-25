@@ -1,0 +1,1 @@
+DOC.got("gh/ImomuPartsController/getTailJointIndex.cpp","// Nom démêlé : ImomuPartsController::getTailJointIndex\n// Symbole manglé : getTailJointIndex\n// undefined8 ImomuPartsController::getTailJointIndex(void); @ .text::0022c9bc\n\n\n/* ImomuPartsController::getTailJointIndex() const */\n\nundefined8 ImomuPartsController::getTailJointIndex(void)\n\n{\n  return 0xe;\n}\n\n");

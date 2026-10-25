@@ -1,0 +1,1 @@
+DOC.got("gh/Tank/startRevivePrepare.cpp","// Nom démêlé : Tank::startRevivePrepare\n// Symbole manglé : startRevivePrepare\n// void __thiscall Tank::startRevivePrepare(Tank *this); @ .text::00287f88\n\n\n/* Tank::startRevivePrepare() */\n\nvoid __thiscall Tank::startRevivePrepare(Tank *this)\n\n{\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1da9440);\n  return;\n}\n\n");

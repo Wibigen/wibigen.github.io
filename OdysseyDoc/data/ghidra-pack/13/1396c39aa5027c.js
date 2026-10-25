@@ -1,0 +1,1 @@
+DOC.got("gh/al/getEventName.cpp","// Nom démêlé : al::getEventName\n// Symbole manglé : getEventName\n// undefined8 al::getEventName(EventFlowEventData *param_1); @ .text::00990e14\n\n\n/* al::getEventName(al::EventFlowEventData const*) */\n\nundefined8 al::getEventName(EventFlowEventData *param_1)\n\n{\n  return *(undefined8 *)param_1;\n}\n\n");

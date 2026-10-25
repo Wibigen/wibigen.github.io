@@ -1,0 +1,1 @@
+DOC.got("gh/Coin2DCity/exeLight.cpp","// Nom démêlé : Coin2DCity::exeLight\n// Symbole manglé : exeLight\n// void Coin2DCity::exeLight(void); @ .text::002bddd0\n\n\n/* Coin2DCity::exeLight() */\n\nvoid Coin2DCity::exeLight(void)\n\n{\n  return;\n}\n\n");

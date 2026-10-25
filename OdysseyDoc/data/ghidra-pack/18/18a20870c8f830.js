@@ -1,0 +1,1 @@
+DOC.got("gh/al/DitherAnimator/isValidNearClip.cpp","// Nom démêlé : al::DitherAnimator::isValidNearClip\n// Symbole manglé : isValidNearClip\n// undefined8 al::DitherAnimator::isValidNearClip(void); @ .text::0022df38\n\n\n/* al::DitherAnimator::isValidNearClip() const */\n\nundefined8 al::DitherAnimator::isValidNearClip(void)\n\n{\n  return 0;\n}\n\n");

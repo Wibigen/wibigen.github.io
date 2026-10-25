@@ -1,0 +1,1 @@
+DOC.got("gh/LayoutButton/isVisible.cpp","// Nom démêlé : LayoutButton::isVisible\n// Symbole manglé : isVisible\n// LayoutButton __thiscall LayoutButton::isVisible(LayoutButton *this); @ .text::004758c8\n\n\n/* LayoutButton::isVisible() */\n\nLayoutButton __thiscall LayoutButton::isVisible(LayoutButton *this)\n\n{\n  return this[0x10];\n}\n\n");

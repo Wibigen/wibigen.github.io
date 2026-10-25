@@ -1,0 +1,1 @@
+DOC.got("e/547",{"13183":{"q":"PropellerRotateInfo","decl":{"f":"src/MapObj/KoopaShip.h","l":12,"sig":"class PropellerRotateInfo","fi":1899},"complete":false,"fwd":[["src/MapObj/KoopaShip.h",12],["src/MapObj/PropellerRotateCtrl.h",9]]}});

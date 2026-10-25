@@ -1,0 +1,1 @@
+DOC.got("gh/agl/ResShaderBinary/modifyBinaryEndian.cpp","// Nom démêlé : agl::ResShaderBinary::modifyBinaryEndian\n// Symbole manglé : modifyBinaryEndian\n// void agl::ResShaderBinary::modifyBinaryEndian(void); @ .text::008b6a74\n\n\n/* agl::ResShaderBinary::modifyBinaryEndian() */\n\nvoid agl::ResShaderBinary::modifyBinaryEndian(void)\n\n{\n  return;\n}\n\n");

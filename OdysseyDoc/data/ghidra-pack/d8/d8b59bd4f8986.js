@@ -1,0 +1,1 @@
+DOC.got("gh/agl/sdw/SSAO/SSAO_.text_00cc6180.cpp","// Nom démêlé : agl::sdw::SSAO::~SSAO\n// Symbole manglé : ~SSAO\n// void __thiscall agl::sdw::SSAO::~SSAO(SSAO *this); @ .text::00cc6180\n\n\n/* agl::sdw::SSAO::~SSAO() */\n\nvoid __thiscall agl::sdw::SSAO::~SSAO(SSAO *this)\n\n{\n  ~SSAO(this);\n  operator_delete(this);\n  return;\n}\n\n");

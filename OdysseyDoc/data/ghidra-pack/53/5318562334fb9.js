@@ -1,0 +1,1 @@
+DOC.got("gh/al/ShaderMirrorDirector/startRendering.cpp","// Nom démêlé : al::ShaderMirrorDirector::startRendering\n// Symbole manglé : startRendering\n// void al::ShaderMirrorDirector::startRendering(void); @ .text::00b07ed8\n\n\n/* al::ShaderMirrorDirector::startRendering() */\n\nvoid al::ShaderMirrorDirector::startRendering(void)\n\n{\n  return;\n}\n\n");

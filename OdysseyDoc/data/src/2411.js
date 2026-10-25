@@ -1,0 +1,1 @@
+DOC.got("src/2411","#pragma once\n\n#include <basis/seadTypes.h>\n\nclass ApplicationFunction {\npublic:\n    static void initialize(s32 argc, char** argv);\n};\n");

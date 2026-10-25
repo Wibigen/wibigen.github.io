@@ -1,0 +1,1 @@
+DOC.got("src/2183","#pragma once\n\n#include <basis/seadTypes.h>\n\nclass PlayerCounterGetCoin {\npublic:\n    PlayerCounterGetCoin();\n\n    f32 getCoinBoostRate() const;\n    void countUp();\n    void update();\n\nprivate:\n    s32 mTimer = 0;\n    s32 mDuration = 0;\n};\n");

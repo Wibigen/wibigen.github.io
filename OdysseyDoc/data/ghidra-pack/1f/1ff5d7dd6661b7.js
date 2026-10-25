@@ -1,0 +1,1 @@
+DOC.got("gh/LavaFryingPan/exeDelay_.text_003b1974.cpp","// Nom démêlé : LavaFryingPan::exeDelay\n// Symbole manglé : exeDelay\n// void LavaFryingPan::exeDelay(void); @ .text::003b1974\n\n\n/* LavaFryingPan::exeDelay() */\n\nvoid LavaFryingPan::exeDelay(void)\n\n{\n  return;\n}\n\n");

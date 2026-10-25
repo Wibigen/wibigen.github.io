@@ -1,0 +1,1 @@
+DOC.got("gh/FUN_.text_00665c44.cpp","// Nom démêlé : FUN_.text__00665c44\n// Symbole manglé : FUN_.text__00665c44\n// uint FUN_.text__00665c44(Triangle *param_1); @ .text::00665c44\n\n\nuint FUN__text__00665c44(Triangle *param_1)\n\n{\n  uint uVar1;\n  \n  uVar1 = rs::isCollisionCodePole(param_1);\n  return ~uVar1 & 1;\n}\n\n");

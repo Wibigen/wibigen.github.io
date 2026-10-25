@@ -1,0 +1,1 @@
+DOC.got("gh/RaceTimeFunction/getRaceTimeMaxCsec.cpp","// Nom démêlé : RaceTimeFunction::getRaceTimeMaxCsec\n// Symbole manglé : getRaceTimeMaxCsec\n// undefined8 RaceTimeFunction::getRaceTimeMaxCsec(void); @ .text::006bf0d8\n\n\n/* RaceTimeFunction::getRaceTimeMaxCsec() */\n\nundefined8 RaceTimeFunction::getRaceTimeMaxCsec(void)\n\n{\n  return 359999;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/StageScene/isPause.cpp","// Nom démêlé : StageScene::isPause\n// Symbole manglé : isPause\n// bool __thiscall StageScene::isPause(StageScene *this); @ .text::005ccae4\n\n\n/* StageScene::isPause() const */\n\nbool __thiscall StageScene::isPause(StageScene *this)\n\n{\n  return *(char *)(*(long *)(this + 0x180) + 0x10) == '\\0';\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/isNodeName.cpp","// Nom démêlé : al::isNodeName\n// Symbole manglé : isNodeName\n// void al::isNodeName(EventFlowNode *param_1,char *param_2); @ .text::0098fa68\n\n\n/* al::isNodeName(al::EventFlowNode const*, char const*) */\n\nvoid al::isNodeName(EventFlowNode *param_1,char *param_2)\n\n{\n  isEqualString(*(char **)(param_1 + 0x28),param_2);\n  return;\n}\n\n");

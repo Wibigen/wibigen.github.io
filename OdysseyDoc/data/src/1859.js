@@ -1,0 +1,1 @@
+DOC.got("src/1859","#pragma once\n\n#include \"Library/Obj/EffectObj.h\"\n\nclass EffectObjAlpha : public al::EffectObj {\npublic:\n    EffectObjAlpha(const char* name);\n\n    void init(const al::ActorInitInfo& info) override;\n    void onAlpha();\n    void offAlpha();\n\nprivate:\n    f32 mAlpha = 1.0f;\n};\n\nstatic_assert(sizeof(EffectObjAlpha) == 0x160);\n");

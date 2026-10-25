@@ -1,0 +1,1 @@
+DOC.got("src/2119","#pragma once\n\n#include \"Util/HackerJudge.h\"\n\nclass IUsePlayerHack;\n\nclass HackerJudgeStartJump : public HackerJudge {\npublic:\n    HackerJudgeStartJump(IUsePlayerHack**);\n    void reset() override;\n    void update() override;\n    bool judge() const override;\n};\n\nstatic_assert(sizeof(HackerJudgeStartJump) == 0x10);\n");

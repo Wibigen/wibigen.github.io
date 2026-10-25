@@ -1,0 +1,1 @@
+DOC.got("src/595","#pragma once\n\nnamespace al {\nclass EventFlowDataHolder;\n\nclass IUseEventFlowData {\npublic:\n    virtual EventFlowDataHolder* getEventFlowDataHolder() const = 0;\n};\n}  // namespace al\n");

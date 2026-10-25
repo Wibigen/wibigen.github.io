@@ -1,0 +1,1 @@
+DOC.got("gh/CapAppearMapParts/exeWaitForever.cpp","// Nom démêlé : CapAppearMapParts::exeWaitForever\n// Symbole manglé : exeWaitForever\n// void CapAppearMapParts::exeWaitForever(void); @ .text::00330898\n\n\n/* CapAppearMapParts::exeWaitForever() */\n\nvoid CapAppearMapParts::exeWaitForever(void)\n\n{\n  return;\n}\n\n");

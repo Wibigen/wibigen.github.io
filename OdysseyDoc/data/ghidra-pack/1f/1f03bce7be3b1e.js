@@ -1,0 +1,1 @@
+DOC.got("gh/eui/PrintPaneTree.cpp","// Nom démêlé : eui::PrintPaneTree\n// Symbole manglé : PrintPaneTree\n// void eui::PrintPaneTree(Pane *param_1,int param_2); @ .text::008e03f8\n\n\n/* eui::PrintPaneTree(nn::ui2d::Pane const*, int) */\n\nvoid eui::PrintPaneTree(Pane *param_1,int param_2)\n\n{\n  return;\n}\n\n");

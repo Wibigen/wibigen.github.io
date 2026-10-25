@@ -1,0 +1,1 @@
+DOC.got("gh/al/ModelCtrl/hide_.text_00a413f4.cpp","// Nom démêlé : al::ModelCtrl::hide\n// Symbole manglé : hide\n// void al::ModelCtrl::hide(void); @ .text::00a413f4\n\n\n/* al::ModelCtrl::hide() */\n\nvoid al::ModelCtrl::hide(void)\n\n{\n  return;\n}\n\n");

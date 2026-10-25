@@ -1,0 +1,1 @@
+DOC.got("gh/CameraDemoKeyMoveMapParts/exeStandBy_.text_00329a2c.cpp","// Nom démêlé : CameraDemoKeyMoveMapParts::exeStandBy\n// Symbole manglé : exeStandBy\n// void CameraDemoKeyMoveMapParts::exeStandBy(void); @ .text::00329a2c\n\n\n/* CameraDemoKeyMoveMapParts::exeStandBy() */\n\nvoid CameraDemoKeyMoveMapParts::exeStandBy(void)\n\n{\n  return;\n}\n\n");

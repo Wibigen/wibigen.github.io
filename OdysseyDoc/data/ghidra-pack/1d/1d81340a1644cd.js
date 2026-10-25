@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Job/TestSuspendedJobState.cpp","// Nom démêlé : nn::nex::Job::TestSuspendedJobState\n// Symbole manglé : TestSuspendedJobState\n// void nn::nex::Job::TestSuspendedJobState(void); @ .text::006ffdf8\n\n\n/* nn::nex::Job::TestSuspendedJobState() */\n\nvoid nn::nex::Job::TestSuspendedJobState(void)\n\n{\n  return;\n}\n\n");

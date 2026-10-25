@@ -1,0 +1,1 @@
+DOC.got("e/5104",{"43945":{"q":"sead::BaseVec4::(anonymous)","acc":"public","decl":{"f":"lib/sead/include/math/seadMathBase.h","l":39,"sig":"union","end":49,"fi":1387},"complete":true,"fields":[{"n":"e","t":"std::array<T, 4>","off":null,"sz":null,"acc":"public","bits":null,"l":48,"cm":null,"ti":null}]}});

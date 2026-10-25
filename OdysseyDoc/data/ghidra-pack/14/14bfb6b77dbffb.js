@@ -1,0 +1,1 @@
+DOC.got("gh/Bull/getSensorNameSendAttack.cpp","// Nom démêlé : Bull::getSensorNameSendAttack\n// Symbole manglé : getSensorNameSendAttack\n// undefined8 Bull::getSensorNameSendAttack(void); @ .text::001e94a8\n\n\n/* Bull::getSensorNameSendAttack() */\n\nundefined8 Bull::getSensorNameSendAttack(void)\n\n{\n  return 0x19255d8;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/Breeda/isPanic.cpp","// Nom démêlé : Breeda::isPanic\n// Symbole manglé : isPanic\n// bool __thiscall Breeda::isPanic(Breeda *this); @ .text::0014a4f0\n\n\n/* Breeda::isPanic() const */\n\nbool __thiscall Breeda::isPanic(Breeda *this)\n\n{\n  if (2 < *(int *)(this + 0x200)) {\n    return *(int *)(this + 0x208) == 1;\n  }\n  return false;\n}\n\n");

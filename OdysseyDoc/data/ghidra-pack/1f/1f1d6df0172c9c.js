@@ -1,0 +1,1 @@
+DOC.got("gh/rs/initLinkBossShine.cpp","// Nom démêlé : rs::initLinkBossShine\n// Symbole manglé : initLinkBossShine\n// void rs::initLinkBossShine(ActorInitInfo *param_1); @ .text::00655b30\n\n\n/* rs::initLinkBossShine(al::ActorInitInfo const&) */\n\nvoid rs::initLinkBossShine(ActorInitInfo *param_1)\n\n{\n  tryInitLinkShine(param_1,(char *)0x191dc60,0);\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Event/GetContext.cpp","// Nom démêlé : nn::nex::Event::GetContext\n// Symbole manglé : GetContext\n// undefined4 __thiscall nn::nex::Event::GetContext(Event *this); @ .text::0070ff18\n\n\n/* nn::nex::Event::GetContext() */\n\nundefined4 __thiscall nn::nex::Event::GetContext(Event *this)\n\n{\n  return *(undefined4 *)(this + 0x14);\n}\n\n");

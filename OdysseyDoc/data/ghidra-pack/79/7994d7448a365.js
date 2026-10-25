@@ -1,0 +1,1 @@
+DOC.got("gh/KoopaCap/isEndFlyBack.cpp","// Nom démêlé : KoopaCap::isEndFlyBack\n// Symbole manglé : isEndFlyBack\n// void __thiscall KoopaCap::isEndFlyBack(KoopaCap *this); @ .text::001852f8\n\n\n/* KoopaCap::isEndFlyBack() const */\n\nvoid __thiscall KoopaCap::isEndFlyBack(KoopaCap *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1d6c920);\n  return;\n}\n\n");

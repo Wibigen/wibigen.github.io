@@ -1,0 +1,1 @@
+DOC.got("e/4046",{"33145":{"q":"nn::gfx::nngfxToolShaderCompilerShaderReflection","decl":{"f":"lib/NintendoSDK/include/nn/gfx/gfx_ResShaderData.h","l":18,"sig":"struct nngfxToolShaderCompilerShaderReflection","fi":98},"complete":false,"fwd":[["lib/NintendoSDK/include/nn/gfx/gfx_ResShaderData.h",18]]}});

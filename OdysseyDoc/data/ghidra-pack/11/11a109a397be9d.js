@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/ObjectThreadRoot/CheckStack.cpp","// Nom démêlé : nn::nex::ObjectThreadRoot::CheckStack\n// Symbole manglé : CheckStack\n// undefined8 nn::nex::ObjectThreadRoot::CheckStack(void); @ .text::0071671c\n\n\n/* nn::nex::ObjectThreadRoot::CheckStack() */\n\nundefined8 nn::nex::ObjectThreadRoot::CheckStack(void)\n\n{\n  return 1;\n}\n\n");

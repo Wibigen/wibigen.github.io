@@ -1,0 +1,1 @@
+DOC.got("gh/al/SwitchKeyMoveMapParts/exeStandBy_.text_0042e118.cpp","// Nom démêlé : al::SwitchKeyMoveMapParts::exeStandBy\n// Symbole manglé : exeStandBy\n// void al::SwitchKeyMoveMapParts::exeStandBy(void); @ .text::0042e118\n\n\n/* al::SwitchKeyMoveMapParts::exeStandBy() */\n\nvoid al::SwitchKeyMoveMapParts::exeStandBy(void)\n\n{\n  return;\n}\n\n");

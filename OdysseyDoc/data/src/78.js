@@ -1,0 +1,1 @@
+DOC.got("src/78","#pragma once\n\n#include <nn/nn_BitTypes.h>\n\nnamespace nn::gfx {\nstruct DescriptorPoolInfoData {\n    Bit8 descriptorPoolType;\n    char reserved2[3];\n    uint32_t slotCount;\n    char reserved[24];\n};\n}  // namespace nn::gfx");

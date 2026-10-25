@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/SpinTest/SpinTest_.text_0071b268.cpp","// Nom démêlé : nn::nex::SpinTest::~SpinTest\n// Symbole manglé : ~SpinTest\n// void __thiscall nn::nex::SpinTest::~SpinTest(SpinTest *this); @ .text::0071b268\n\n\n/* nn::nex::SpinTest::~SpinTest() */\n\nvoid __thiscall nn::nex::SpinTest::~SpinTest(SpinTest *this)\n\n{\n  return;\n}\n\n");

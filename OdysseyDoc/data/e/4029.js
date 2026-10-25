@@ -1,0 +1,1 @@
+DOC.got("e/4029",{"33074":{"q":"nn::gfx::detail::SwapChainImpl","decl":{"f":"lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h","l":233,"sig":"template <typename TTarget>\nclass SwapChainImpl","fi":51},"tp":["typename TTarget"],"derived":[32484],"complete":false,"fwd":[["lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h",233]]}});

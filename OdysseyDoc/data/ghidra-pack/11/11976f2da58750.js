@@ -1,0 +1,1 @@
+DOC.got("gh/RaceLayout/exeWait_.text_00300728.cpp","// Nom démêlé : RaceLayout::exeWait\n// Symbole manglé : exeWait\n// void RaceLayout::exeWait(void); @ .text::00300728\n\n\n/* RaceLayout::exeWait() */\n\nvoid RaceLayout::exeWait(void)\n\n{\n  return;\n}\n\n");

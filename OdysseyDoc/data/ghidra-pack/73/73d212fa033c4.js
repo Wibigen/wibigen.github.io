@@ -1,0 +1,1 @@
+DOC.got("gh/agl/utl/INamedObj/getGroupName_.text_00c9ee60.cpp","// Nom démêlé : agl::utl::INamedObj::getGroupName\n// Symbole manglé : getGroupName\n// undefined * agl::utl::INamedObj::getGroupName(void); @ .text::00c9ee60\n\n\n/* agl::utl::INamedObj::getGroupName() const */\n\nundefined * agl::utl::INamedObj::getGroupName(void)\n\n{\n  return PTR_01f53fd8;\n}\n\n");

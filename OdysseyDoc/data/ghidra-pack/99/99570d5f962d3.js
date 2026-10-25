@@ -1,0 +1,1 @@
+DOC.got("gh/JugemFishingFloatOffsetCtrl/exeWait_.text_0023c964.cpp","// Nom démêlé : JugemFishingFloatOffsetCtrl::exeWait\n// Symbole manglé : exeWait\n// void JugemFishingFloatOffsetCtrl::exeWait(void); @ .text::0023c964\n\n\n/* JugemFishingFloatOffsetCtrl::exeWait() */\n\nvoid JugemFishingFloatOffsetCtrl::exeWait(void)\n\n{\n  return;\n}\n\n");

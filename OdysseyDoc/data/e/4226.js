@@ -1,0 +1,1 @@
+DOC.got("e/4226",{"33875":{"q":"nn::ro::ModuleId","decl":{"f":"lib/NintendoSDK/include/nn/ro.h","l":80,"sig":"struct ModuleId","end":82,"fi":181},"size":32,"align":1,"complete":true,"fields":[{"n":"build_id","t":"u8[32]","off":0,"sz":32,"acc":"public","bits":null,"l":81,"cm":null,"ti":49378}]}});

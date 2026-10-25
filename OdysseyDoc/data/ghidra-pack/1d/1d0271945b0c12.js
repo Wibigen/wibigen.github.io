@@ -1,0 +1,1 @@
+DOC.got("gh/al/getBlackCubeTexture.cpp","// Nom démêlé : al::getBlackCubeTexture\n// Symbole manglé : getBlackCubeTexture\n// long al::getBlackCubeTexture(void); @ .text::00b096c4\n\n\n/* al::getBlackCubeTexture() */\n\nlong al::getBlackCubeTexture(void)\n\n{\n  return *(long *)(*(long *)PTR_sInstance_01f5b548 + 0x50) + 0x10;\n}\n\n");

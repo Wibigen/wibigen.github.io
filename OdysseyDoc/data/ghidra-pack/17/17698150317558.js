@@ -1,0 +1,1 @@
+DOC.got("gh/BombTailBomb/isChanceBomb.cpp","// Nom démêlé : BombTailBomb::isChanceBomb\n// Symbole manglé : isChanceBomb\n// bool __thiscall BombTailBomb::isChanceBomb(BombTailBomb *this); @ .text::0010f0c4\n\n\n/* BombTailBomb::isChanceBomb() const */\n\nbool __thiscall BombTailBomb::isChanceBomb(BombTailBomb *this)\n\n{\n  return *(int *)(this + 0x140) == 2;\n}\n\n");

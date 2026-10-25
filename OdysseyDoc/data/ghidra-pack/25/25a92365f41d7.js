@@ -1,0 +1,1 @@
+DOC.got("gh/sead/MainThread/destroy_.text_0085af58.cpp","// Nom démêlé : sead::MainThread::destroy\n// Symbole manglé : destroy\n// void sead::MainThread::destroy(void); @ .text::0085af58\n\n\n/* sead::MainThread::destroy() */\n\nvoid sead::MainThread::destroy(void)\n\n{\n  return;\n}\n\n");

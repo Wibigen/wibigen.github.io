@@ -1,0 +1,1 @@
+DOC.got("gh/HackCap/isEnableRescuePlayer.cpp","// Nom démêlé : HackCap::isEnableRescuePlayer\n// Symbole manglé : isEnableRescuePlayer\n// undefined8 HackCap::isEnableRescuePlayer(void); @ .text::004fe1b4\n\n\n/* HackCap::isEnableRescuePlayer() const */\n\nundefined8 HackCap::isEnableRescuePlayer(void)\n\n{\n  return 0;\n}\n\n");

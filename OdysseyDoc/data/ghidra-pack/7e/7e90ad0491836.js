@@ -1,0 +1,1 @@
+DOC.got("gh/ItemGenerator/isLifeMaxUp.cpp","// Nom démêlé : ItemGenerator::isLifeMaxUp\n// Symbole manglé : isLifeMaxUp\n// bool __thiscall ItemGenerator::isLifeMaxUp(ItemGenerator *this); @ .text::00654f88\n\n\n/* ItemGenerator::isLifeMaxUp() const */\n\nbool __thiscall ItemGenerator::isLifeMaxUp(ItemGenerator *this)\n\n{\n  return *(int *)(this + 0x1c) == 0xf;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("e/4093",{"33333":{"q":"nn::hid::VibrationDeviceHandle::(anonymous)","acc":"public","decl":{"f":"lib/NintendoSDK/include/nn/hid.h","l":487,"sig":"union","end":494,"fi":133},"size":4,"align":4,"complete":true,"fields":[{"n":"typeValue","t":"u32","off":0,"sz":4,"acc":"public","bits":null,"l":488,"cm":null,"ti":49376}]}});

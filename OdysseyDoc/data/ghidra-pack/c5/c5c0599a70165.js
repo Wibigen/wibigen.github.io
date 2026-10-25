@@ -1,0 +1,1 @@
+DOC.got("gh/al/SeKeeper/validate_.text_00ae8700.cpp","// Nom démêlé : al::SeKeeper::validate\n// Symbole manglé : validate\n// void __thiscall al::SeKeeper::validate(SeKeeper *this); @ .text::00ae8700\n\n\n/* al::SeKeeper::validate() */\n\nvoid __thiscall al::SeKeeper::validate(SeKeeper *this)\n\n{\n  this[0x28] = (SeKeeper)0x0;\n  return;\n}\n\n");

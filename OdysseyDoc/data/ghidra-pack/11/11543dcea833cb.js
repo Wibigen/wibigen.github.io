@@ -1,0 +1,1 @@
+DOC.got("gh/SnowWorldBigIcicle/exeFallWait_.text_0042593c.cpp","// Nom démêlé : SnowWorldBigIcicle::exeFallWait\n// Symbole manglé : exeFallWait\n// void SnowWorldBigIcicle::exeFallWait(void); @ .text::0042593c\n\n\n/* SnowWorldBigIcicle::exeFallWait() */\n\nvoid SnowWorldBigIcicle::exeFallWait(void)\n\n{\n  return;\n}\n\n");

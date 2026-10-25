@@ -1,0 +1,1 @@
+DOC.got("gh/AmiiboNpc/control_.text_0047adcc.cpp","// Nom démêlé : AmiiboNpc::control\n// Symbole manglé : control\n// void AmiiboNpc::control(void); @ .text::0047adcc\n\n\n/* AmiiboNpc::control() */\n\nvoid AmiiboNpc::control(void)\n\n{\n  return;\n}\n\n");

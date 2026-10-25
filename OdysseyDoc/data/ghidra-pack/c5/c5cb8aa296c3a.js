@@ -1,0 +1,1 @@
+DOC.got("gh/RotateTarget/saveKill.cpp","// Nom démêlé : RotateTarget::saveKill\n// Symbole manglé : saveKill\n// void __thiscall RotateTarget::saveKill(RotateTarget *this); @ .text::003ffca0\n\n\n/* RotateTarget::saveKill() */\n\nvoid __thiscall RotateTarget::saveKill(RotateTarget *this)\n\n{\n  rs::onSaveObjInfo(*(SaveObjInfo **)(this + 0x128));\n  return;\n}\n\n");

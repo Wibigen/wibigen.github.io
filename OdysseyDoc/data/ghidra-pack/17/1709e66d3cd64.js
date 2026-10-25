@@ -1,0 +1,1 @@
+DOC.got("gh/GameDataFile/isEmpty_.text_0061b570.cpp","// Nom démêlé : GameDataFile::isEmpty\n// Symbole manglé : isEmpty\n// GameDataFile __thiscall GameDataFile::isEmpty(GameDataFile *this); @ .text::0061b570\n\n\n/* GameDataFile::isEmpty() const */\n\nGameDataFile __thiscall GameDataFile::isEmpty(GameDataFile *this)\n\n{\n  return this[0x5f8];\n}\n\n");

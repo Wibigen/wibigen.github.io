@@ -1,0 +1,1 @@
+DOC.got("gh/al/JointSimpleIK/getCtrlTypeName_.text_009ad6ec.cpp","// Nom démêlé : al::JointSimpleIK::getCtrlTypeName\n// Symbole manglé : getCtrlTypeName\n// undefined8 al::JointSimpleIK::getCtrlTypeName(void); @ .text::009ad6ec\n\n\n/* al::JointSimpleIK::getCtrlTypeName() const */\n\nundefined8 al::JointSimpleIK::getCtrlTypeName(void)\n\n{\n  return 0x196c082;\n}\n\n");

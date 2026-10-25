@@ -1,0 +1,1 @@
+DOC.got("gh/al/TriangleDrawActor/initMaterial.cpp","// Nom démêlé : al::TriangleDrawActor::initMaterial\n// Symbole manglé : initMaterial\n// void al::TriangleDrawActor::initMaterial(void); @ .text::00a70b64\n\n\n/* al::TriangleDrawActor::initMaterial() */\n\nvoid al::TriangleDrawActor::initMaterial(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/ElectricWireRailKeeper/exeWait_.text_00370378.cpp","// Nom démêlé : ElectricWireRailKeeper::exeWait\n// Symbole manglé : exeWait\n// void ElectricWireRailKeeper::exeWait(void); @ .text::00370378\n\n\n/* ElectricWireRailKeeper::exeWait() */\n\nvoid ElectricWireRailKeeper::exeWait(void)\n\n{\n  return;\n}\n\n");

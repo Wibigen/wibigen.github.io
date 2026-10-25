@@ -1,0 +1,1 @@
+DOC.got("gh/al/LiveActorKit/initShadowDirector.cpp","// Nom démêlé : al::LiveActorKit::initShadowDirector\n// Symbole manglé : initShadowDirector\n// void al::LiveActorKit::initShadowDirector(void); @ .text::00a103a8\n\n\n/* al::LiveActorKit::initShadowDirector() */\n\nvoid al::LiveActorKit::initShadowDirector(void)\n\n{\n  return;\n}\n\n");

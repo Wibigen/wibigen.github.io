@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/ProfilingUnit/Enable.cpp","// Nom démêlé : nn::nex::ProfilingUnit::Enable\n// Symbole manglé : Enable\n// void nn::nex::ProfilingUnit::Enable(void); @ .text::0071712c\n\n\n/* nn::nex::ProfilingUnit::Enable() */\n\nvoid nn::nex::ProfilingUnit::Enable(void)\n\n{\n  *PTR_01f583e0 = 1;\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/MofumofuBody/exeAllLightDownPrepare.cpp","// Nom démêlé : MofumofuBody::exeAllLightDownPrepare\n// Symbole manglé : exeAllLightDownPrepare\n// void MofumofuBody::exeAllLightDownPrepare(void); @ .text::001b39d8\n\n\n/* MofumofuBody::exeAllLightDownPrepare() */\n\nvoid MofumofuBody::exeAllLightDownPrepare(void)\n\n{\n  return;\n}\n\n");

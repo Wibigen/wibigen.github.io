@@ -1,0 +1,1 @@
+DOC.got("gh/Curl_ssl_init.cpp","// Nom démêlé : Curl_ssl_init\n// Symbole manglé : Curl_ssl_init\n// undefined8 Curl_ssl_init(void); @ .text::0080e1a0\n\n\nundefined8 Curl_ssl_init(void)\n\n{\n  undefined8 uVar1;\n  \n  if ((DAT_0257269c & 1) != 0) {\n    return 1;\n  }\n  DAT_0257269c = 1;\n  uVar1 = Curl_nnssl_init();\n  return uVar1;\n}\n\n");

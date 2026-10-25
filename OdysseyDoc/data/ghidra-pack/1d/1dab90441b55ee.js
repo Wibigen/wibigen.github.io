@@ -1,0 +1,1 @@
+DOC.got("gh/PackunFire/onChokeCapEnd.cpp","// Nom démêlé : PackunFire::onChokeCapEnd\n// Symbole manglé : onChokeCapEnd\n// void __thiscall PackunFire::onChokeCapEnd(PackunFire *this); @ .text::0026e7ec\n\n\n/* PackunFire::onChokeCapEnd() */\n\nvoid __thiscall PackunFire::onChokeCapEnd(PackunFire *this)\n\n{\n  *(undefined8 *)(this + 0x238) = 0;\n  return;\n}\n\n");

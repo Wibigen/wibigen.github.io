@@ -1,0 +1,1 @@
+DOC.got("gh/sead/ParseFailed.cpp","// Nom démêlé : sead::ParseFailed_\n// Symbole manglé : ParseFailed_\n// void sead::ParseFailed_(char **param_1,int param_2); @ .text::0084653c\n\n\n/* sead::ParseFailed_(char**, int) */\n\nvoid sead::ParseFailed_(char **param_1,int param_2)\n\n{\n  return;\n}\n\n");

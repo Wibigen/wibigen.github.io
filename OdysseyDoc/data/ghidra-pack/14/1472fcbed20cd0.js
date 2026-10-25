@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/SocketDriver/Socket/SetUri.cpp","// Nom démêlé : nn::nex::SocketDriver::Socket::SetUri\n// Symbole manglé : SetUri\n// void nn::nex::SocketDriver::Socket::SetUri(String *param_1); @ .text::007adf18\n\n\n/* nn::nex::SocketDriver::Socket::SetUri(nn::nex::String const&) */\n\nvoid nn::nex::SocketDriver::Socket::SetUri(String *param_1)\n\n{\n  return;\n}\n\n");

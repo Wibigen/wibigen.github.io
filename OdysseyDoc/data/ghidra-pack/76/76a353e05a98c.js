@@ -1,0 +1,1 @@
+DOC.got("gh/CapThrowerCap/exeBoundAttack.cpp","// Nom démêlé : CapThrowerCap::exeBoundAttack\n// Symbole manglé : exeBoundAttack\n// void CapThrowerCap::exeBoundAttack(void); @ .text::00154b58\n\n\n/* CapThrowerCap::exeBoundAttack() */\n\nvoid CapThrowerCap::exeBoundAttack(void)\n\n{\n  return;\n}\n\n");

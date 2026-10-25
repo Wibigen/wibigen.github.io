@@ -1,0 +1,1 @@
+DOC.got("src/56","#pragma once\n\n#include <nn/types.h>\n\nnamespace nn::gfx::detail {\n\ntemplate <class TImpl>\nclass RequiredMemory {\nprotected:\n    static size_t GetRequiredMemorySize(...);\n    static void SetMemory(void*, size_t);\n    static void* GetMemory();\n};\n\n}  // namespace nn::gfx::detail\n");

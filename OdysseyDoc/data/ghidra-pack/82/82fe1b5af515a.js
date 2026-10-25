@@ -1,0 +1,1 @@
+DOC.got("gh/GolemClimbThrustPoint/exeWaitOpen.cpp","// Nom démêlé : GolemClimbThrustPoint::exeWaitOpen\n// Symbole manglé : exeWaitOpen\n// void GolemClimbThrustPoint::exeWaitOpen(void); @ .text::00176960\n\n\n/* GolemClimbThrustPoint::exeWaitOpen() */\n\nvoid GolemClimbThrustPoint::exeWaitOpen(void)\n\n{\n  return;\n}\n\n");

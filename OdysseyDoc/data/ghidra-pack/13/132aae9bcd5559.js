@@ -1,0 +1,1 @@
+DOC.got("gh/AnagramAlphabet/exeWait_.text_00314c2c.cpp","// Nom démêlé : AnagramAlphabet::exeWait\n// Symbole manglé : exeWait\n// void AnagramAlphabet::exeWait(void); @ .text::00314c2c\n\n\n/* AnagramAlphabet::exeWait() */\n\nvoid AnagramAlphabet::exeWait(void)\n\n{\n  return;\n}\n\n");

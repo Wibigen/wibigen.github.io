@@ -1,0 +1,1 @@
+DOC.got("gh/LMS_CloseProject.cpp","// Nom démêlé : LMS_CloseProject\n// Symbole manglé : LMS_CloseProject\n// void LMS_CloseProject(long param_1); @ .text::00c70bb8\n\n\nvoid LMS_CloseProject(long param_1)\n\n{\n  if (*(long *)(param_1 + 0x18) != 0) {\n    LMSi_Free();\n  }\n  LMSi_Free(param_1);\n  return;\n}\n\n");

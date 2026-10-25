@@ -1,0 +1,1 @@
+DOC.got("gh/FukankunZoomCapMessageSun/exeWait_.text_0038aa24.cpp","// Nom démêlé : FukankunZoomCapMessageSun::exeWait\n// Symbole manglé : exeWait\n// void FukankunZoomCapMessageSun::exeWait(void); @ .text::0038aa24\n\n\n/* FukankunZoomCapMessageSun::exeWait() */\n\nvoid FukankunZoomCapMessageSun::exeWait(void)\n\n{\n  return;\n}\n\n");

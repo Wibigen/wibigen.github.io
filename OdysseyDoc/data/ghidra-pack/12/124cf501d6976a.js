@@ -1,0 +1,1 @@
+DOC.got("gh/SaveDataAccessSequence/exeIdle.cpp","// Nom démêlé : SaveDataAccessSequence::exeIdle\n// Symbole manglé : exeIdle\n// void SaveDataAccessSequence::exeIdle(void); @ .text::0063aa04\n\n\n/* SaveDataAccessSequence::exeIdle() */\n\nvoid SaveDataAccessSequence::exeIdle(void)\n\n{\n  return;\n}\n\n");

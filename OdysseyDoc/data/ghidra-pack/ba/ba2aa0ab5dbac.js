@@ -1,0 +1,1 @@
+DOC.got("gh/al/drawKit.cpp","// Nom démêlé : al::drawKit\n// Symbole manglé : drawKit\n// void al::drawKit(Scene *param_1,char *param_2); @ .text::00ad0d2c\n\n\n/* al::drawKit(al::Scene const*, char const*) */\n\nvoid al::drawKit(Scene *param_1,char *param_2)\n\n{\n  executeDraw(*(LiveActorKit **)(param_1 + 0x90),param_2);\n  return;\n}\n\n");

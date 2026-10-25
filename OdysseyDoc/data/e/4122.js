@@ -1,0 +1,1 @@
+DOC.got("e/4122",{"33387":{"q":"nn::hid::detail::SharedMemoryType","decl":{"f":"lib/NintendoSDK/include/nn/hid.h","l":958,"sig":"struct SharedMemoryType","end":960,"fi":133},"size":64,"align":1,"complete":true,"fields":[{"n":"padding","t":"u8[64]","off":0,"sz":64,"acc":"public","bits":null,"l":959,"cm":null,"ti":49378}]}});

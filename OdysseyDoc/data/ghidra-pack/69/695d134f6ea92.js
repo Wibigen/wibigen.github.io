@@ -1,0 +1,1 @@
+DOC.got("gh/ElectricExplosion/exeWait_.text_001fc478.cpp","// Nom démêlé : ElectricExplosion::exeWait\n// Symbole manglé : exeWait\n// void ElectricExplosion::exeWait(void); @ .text::001fc478\n\n\n/* ElectricExplosion::exeWait() */\n\nvoid ElectricExplosion::exeWait(void)\n\n{\n  return;\n}\n\n");

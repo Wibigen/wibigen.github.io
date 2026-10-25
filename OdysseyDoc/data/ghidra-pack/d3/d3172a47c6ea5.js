@@ -1,0 +1,1 @@
+DOC.got("gh/GolemClimb/exeTest.cpp","// Nom démêlé : GolemClimb::exeTest\n// Symbole manglé : exeTest\n// void GolemClimb::exeTest(void); @ .text::001741f0\n\n\n/* GolemClimb::exeTest() */\n\nvoid GolemClimb::exeTest(void)\n\n{\n  return;\n}\n\n");

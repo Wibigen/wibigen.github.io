@@ -1,0 +1,1 @@
+DOC.got("gh/sead/FrameHeap/getSize_.text_00842fd8.cpp","// Nom démêlé : sead::FrameHeap::getSize\n// Symbole manglé : getSize\n// undefined8 __thiscall sead::FrameHeap::getSize(FrameHeap *this); @ .text::00842fd8\n\n\n/* sead::FrameHeap::getSize() const */\n\nundefined8 __thiscall sead::FrameHeap::getSize(FrameHeap *this)\n\n{\n  return *(undefined8 *)(this + 0x40);\n}\n\n");

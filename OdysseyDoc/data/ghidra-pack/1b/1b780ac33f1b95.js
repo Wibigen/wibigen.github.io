@@ -1,0 +1,1 @@
+DOC.got("gh/FUN_.text_00273028.cpp","// Nom démêlé : FUN_.text__00273028\n// Symbole manglé : FUN_.text__00273028\n// void FUN_.text__00273028(void); @ .text::00273028\n\n\nvoid FUN__text__00273028(void)\n\n{\n  al::AnimScaleParam::AnimScaleParam((AnimScaleParam *)&DAT_01f62cbc);\n  return;\n}\n\n");

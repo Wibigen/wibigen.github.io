@@ -1,0 +1,1 @@
+DOC.got("gh/GolemClimb/getDemoSkip.cpp","// Nom démêlé : GolemClimb::getDemoSkip\n// Symbole manglé : getDemoSkip\n// GolemClimb * __thiscall GolemClimb::getDemoSkip(GolemClimb *this); @ .text::0017594c\n\n\n/* GolemClimb::getDemoSkip() */\n\nGolemClimb * __thiscall GolemClimb::getDemoSkip(GolemClimb *this)\n\n{\n  return this + 0x110;\n}\n\n");

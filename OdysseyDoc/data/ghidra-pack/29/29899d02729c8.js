@@ -1,0 +1,1 @@
+DOC.got("gh/Jango/control_.text_0022ea24.cpp","// Nom démêlé : Jango::control\n// Symbole manglé : control\n// void Jango::control(void); @ .text::0022ea24\n\n\n/* Jango::control() */\n\nvoid Jango::control(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/MD5/init_.text_0072c2c4.cpp","// Nom démêlé : nn::nex::MD5::init\n// Symbole manglé : init\n// void __thiscall nn::nex::MD5::init(MD5 *this); @ .text::0072c2c4\n\n\n/* nn::nex::MD5::init() */\n\nvoid __thiscall nn::nex::MD5::init(MD5 *this)\n\n{\n  this[0x70] = (MD5)0x0;\n  nn::crypto::detail::Md5Impl::Initialize();\n  return;\n}\n\n");

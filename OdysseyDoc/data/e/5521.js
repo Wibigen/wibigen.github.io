@@ -1,0 +1,1 @@
+DOC.got("e/5521",{"48483":{"q":"sead::TaskMgr::TaskCreateContextMgr","acc":"public","decl":{"f":"lib/sead/include/framework/seadTaskMgr.h","l":34,"sig":"class TaskCreateContextMgr","fi":1354},"complete":false,"fwd":[["lib/sead/include/framework/seadTaskMgr.h",34]]}});

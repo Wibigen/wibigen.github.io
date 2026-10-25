@@ -1,0 +1,1 @@
+DOC.got("gh/al/ActorPoseKeeperBase/getScale_.text_009ee0a0.cpp","// Nom démêlé : al::ActorPoseKeeperBase::getScale\n// Symbole manglé : getScale\n// undefined * al::ActorPoseKeeperBase::getScale(void); @ .text::009ee0a0\n\n\n/* al::ActorPoseKeeperBase::getScale() const */\n\nundefined * al::ActorPoseKeeperBase::getScale(void)\n\n{\n  return PTR_01f4ee08;\n}\n\n");

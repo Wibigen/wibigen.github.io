@@ -1,0 +1,1 @@
+DOC.got("gh/agl/lght/SSII/drawDebug_.text_00cb43f0.cpp","// Nom démêlé : agl::lght::SSII::drawDebug\n// Symbole manglé : drawDebug\n// void agl::lght::SSII::drawDebug(DrawContext *param_1,int param_2); @ .text::00cb43f0\n\n\n/* agl::lght::SSII::drawDebug(agl::DrawContext*, int) const */\n\nvoid agl::lght::SSII::drawDebug(DrawContext *param_1,int param_2)\n\n{\n  return;\n}\n\n");

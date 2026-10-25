@@ -1,0 +1,1 @@
+DOC.got("e/13881",{"31323":{"q":"nn::detail::UnexpectedDefaultImpl","decl":{"f":"lib/NintendoSDK/include/nn/util.h","l":72,"sig":"void UnexpectedDefaultImpl(const char*, const char*, int)","fi":198},"ret":"void","params":[["const char *","",null,null],["const char *","",null,null],["int","",null,null]],"mangled":"_ZN2nn6detail21UnexpectedDefaultImplEPKcS2_i"}});

@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Platform/GetTick.cpp","// Nom démêlé : nn::nex::Platform::GetTick\n// Symbole manglé : GetTick\n// void nn::nex::Platform::GetTick(void); @ .text::007169d0\n\n\n/* nn::nex::Platform::GetTick() */\n\nvoid nn::nex::Platform::GetTick(void)\n\n{\n  (*(code *)PTR_GetSystemTick_01f4d778)();\n  return;\n}\n\n");

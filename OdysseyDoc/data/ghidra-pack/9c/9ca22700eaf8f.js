@@ -1,0 +1,1 @@
+DOC.got("gh/IBalloonFindSearchBalloon/broke_.text_00455088.cpp","// Nom démêlé : IBalloonFindSearchBalloon::broke\n// Symbole manglé : broke\n// void IBalloonFindSearchBalloon::broke(void); @ .text::00455088\n\n\n/* IBalloonFindSearchBalloon::broke() */\n\nvoid IBalloonFindSearchBalloon::broke(void)\n\n{\n  return;\n}\n\n");

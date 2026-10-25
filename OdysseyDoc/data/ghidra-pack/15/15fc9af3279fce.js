@@ -1,0 +1,1 @@
+DOC.got("gh/CoinStack/CoinStack_.text_002c584c.cpp","// Nom démêlé : CoinStack::~CoinStack\n// Symbole manglé : ~CoinStack\n// void __thiscall CoinStack::~CoinStack(CoinStack *this); @ .text::002c584c\n\n\n/* CoinStack::~CoinStack() */\n\nvoid __thiscall CoinStack::~CoinStack(CoinStack *this)\n\n{\n  return;\n}\n\n");

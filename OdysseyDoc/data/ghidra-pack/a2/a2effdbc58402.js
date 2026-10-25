@@ -1,0 +1,1 @@
+DOC.got("gh/al/SeCategory/getName_.text_00ae540c.cpp","// Nom démêlé : al::SeCategory::getName\n// Symbole manglé : getName\n// undefined8 __thiscall al::SeCategory::getName(SeCategory *this); @ .text::00ae540c\n\n\n/* al::SeCategory::getName() const */\n\nundefined8 __thiscall al::SeCategory::getName(SeCategory *this)\n\n{\n  return **(undefined8 **)(this + 0x10);\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("src/944","#include \"Library/Placement/PlacementInfo.h\"\n\nnamespace al {\nPlacementInfo::PlacementInfo() = default;\n\nvoid PlacementInfo::set(const ByamlIter& placement_iter, const ByamlIter& zone_iter) {\n    mPlacementIter = placement_iter;\n    mZoneIter = zone_iter;\n}\n}  // namespace al\n");

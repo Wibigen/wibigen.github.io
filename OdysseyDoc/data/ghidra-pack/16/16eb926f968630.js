@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/ThreadVariableRoot/ClearValue_.text_00726b60.cpp","// Nom démêlé : nn::nex::ThreadVariableRoot::ClearValue\n// Symbole manglé : ClearValue\n// void nn::nex::ThreadVariableRoot::ClearValue(void); @ .text::00726b60\n\n\n/* nn::nex::ThreadVariableRoot::ClearValue() */\n\nvoid nn::nex::ThreadVariableRoot::ClearValue(void)\n\n{\n  return;\n}\n\n");

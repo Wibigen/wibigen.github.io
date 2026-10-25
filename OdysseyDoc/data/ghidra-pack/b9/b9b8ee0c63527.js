@@ -1,0 +1,1 @@
+DOC.got("gh/sead/FaderTaskBase/fadein.cpp","// Nom démêlé : sead::FaderTaskBase::fadein_\n// Symbole manglé : fadein_\n// void __thiscall sead::FaderTaskBase::fadein_(FaderTaskBase *this); @ .text::0086ee30\n\n\n/* sead::FaderTaskBase::fadein_() */\n\nvoid __thiscall sead::FaderTaskBase::fadein_(FaderTaskBase *this)\n\n{\n  this[0x354] = (FaderTaskBase)0x1;\n  return;\n}\n\n");

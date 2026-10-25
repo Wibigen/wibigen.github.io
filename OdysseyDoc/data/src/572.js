@@ -1,0 +1,1 @@
+DOC.got("src/572","#pragma once\n\nnamespace al {\nclass EventFlowNode;\n\ntemplate <typename T>\nEventFlowNode* createEventFlowNode(const char* eventFlowNodeName) {\n    return new T(eventFlowNodeName);\n}\n}  // namespace al\n");

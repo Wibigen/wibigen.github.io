@@ -1,0 +1,1 @@
+DOC.got("gh/al/getColliderFixReaction.cpp","// Nom démêlé : al::getColliderFixReaction\n// Symbole manglé : getColliderFixReaction\n// long al::getColliderFixReaction(LiveActor *param_1); @ .text::009d848c\n\n\n/* al::getColliderFixReaction(al::LiveActor const*) */\n\nlong al::getColliderFixReaction(LiveActor *param_1)\n\n{\n  return *(long *)(param_1 + 0x78) + 0x58;\n}\n\n");

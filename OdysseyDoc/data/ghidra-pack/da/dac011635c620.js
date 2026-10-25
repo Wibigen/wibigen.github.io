@@ -1,0 +1,1 @@
+DOC.got("gh/CapAccelerator/exeWait_.text_0032f6dc.cpp","// Nom démêlé : CapAccelerator::exeWait\n// Symbole manglé : exeWait\n// void CapAccelerator::exeWait(void); @ .text::0032f6dc\n\n\n/* CapAccelerator::exeWait() */\n\nvoid CapAccelerator::exeWait(void)\n\n{\n  return;\n}\n\n");

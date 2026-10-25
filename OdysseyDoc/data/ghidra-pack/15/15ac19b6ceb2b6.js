@@ -1,0 +1,1 @@
+DOC.got("gh/al/FogParam/getParamObj_.text_009a5728.cpp","// Nom démêlé : al::FogParam::getParamObj\n// Symbole manglé : getParamObj\n// undefined8 __thiscall al::FogParam::getParamObj(FogParam *this); @ .text::009a5728\n\n\n/* al::FogParam::getParamObj() const */\n\nundefined8 __thiscall al::FogParam::getParamObj(FogParam *this)\n\n{\n  return *(undefined8 *)(this + 8);\n}\n\n");

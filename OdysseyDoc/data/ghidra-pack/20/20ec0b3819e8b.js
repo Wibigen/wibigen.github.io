@@ -1,0 +1,1 @@
+DOC.got("gh/Tank/isHacking.cpp","// Nom démêlé : Tank::isHacking\n// Symbole manglé : isHacking\n// void __thiscall Tank::isHacking(Tank *this); @ .text::00287fec\n\n\n/* Tank::isHacking() const */\n\nvoid __thiscall Tank::isHacking(Tank *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1da9420);\n  return;\n}\n\n");

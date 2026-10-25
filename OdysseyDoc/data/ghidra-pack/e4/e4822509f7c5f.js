@@ -1,0 +1,1 @@
+DOC.got("gh/al/GBufferArray/getGBufLightBuffer.cpp","// Nom démêlé : al::GBufferArray::getGBufLightBuffer\n// Symbole manglé : getGBufLightBuffer\n// void al::GBufferArray::getGBufLightBuffer(void); @ .text::00afeb48\n\n\n/* al::GBufferArray::getGBufLightBuffer() const */\n\nvoid al::GBufferArray::getGBufLightBuffer(void)\n\n{\n  return;\n}\n\n");

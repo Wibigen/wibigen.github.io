@@ -1,0 +1,1 @@
+DOC.got("gh/CounterParts/isWait_.text_002e9620.cpp","// Nom démêlé : CounterParts::isWait\n// Symbole manglé : isWait\n// void __thiscall CounterParts::isWait(CounterParts *this); @ .text::002e9620\n\n\n/* CounterParts::isWait() const */\n\nvoid __thiscall CounterParts::isWait(CounterParts *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1dc5628);\n  return;\n}\n\n");

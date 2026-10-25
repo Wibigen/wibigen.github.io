@@ -1,0 +1,1 @@
+DOC.got("gh/nn/ui2d/DrawInfo/DrawInfo_.text_00bfebf8.cpp","// Nom démêlé : nn::ui2d::DrawInfo::~DrawInfo\n// Symbole manglé : ~DrawInfo\n// void __thiscall nn::ui2d::DrawInfo::~DrawInfo(DrawInfo *this); @ .text::00bfebf8\n\n\n/* nn::ui2d::DrawInfo::~DrawInfo() */\n\nvoid __thiscall nn::ui2d::DrawInfo::~DrawInfo(DrawInfo *this)\n\n{\n  return;\n}\n\n");

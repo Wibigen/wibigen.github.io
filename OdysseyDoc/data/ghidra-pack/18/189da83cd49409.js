@@ -1,0 +1,1 @@
+DOC.got("gh/HackMapParts/isHack_.text_003a00dc.cpp","// Nom démêlé : HackMapParts::isHack\n// Symbole manglé : isHack\n// void __thiscall HackMapParts::isHack(HackMapParts *this); @ .text::003a00dc\n\n\n/* HackMapParts::isHack() const */\n\nvoid __thiscall HackMapParts::isHack(HackMapParts *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1e04e68);\n  return;\n}\n\n");

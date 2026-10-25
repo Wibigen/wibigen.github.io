@@ -1,0 +1,1 @@
+DOC.got("gh/al/getSamplerLocationMaterialLight.cpp","// Nom démêlé : al::getSamplerLocationMaterialLight\n// Symbole manglé : getSamplerLocationMaterialLight\n// undefined * al::getSamplerLocationMaterialLight(void); @ .text::00b00960\n\n\n/* al::getSamplerLocationMaterialLight() */\n\nundefined * al::getSamplerLocationMaterialLight(void)\n\n{\n  return &DAT_026975f0;\n}\n\n");

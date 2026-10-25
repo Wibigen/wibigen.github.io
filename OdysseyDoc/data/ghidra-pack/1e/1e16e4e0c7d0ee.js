@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerActorBase/isEnableDemo.cpp","// Nom démêlé : PlayerActorBase::isEnableDemo\n// Symbole manglé : isEnableDemo\n// undefined8 PlayerActorBase::isEnableDemo(void); @ .text::0044f894\n\n\n/* PlayerActorBase::isEnableDemo() */\n\nundefined8 PlayerActorBase::isEnableDemo(void)\n\n{\n  return 0;\n}\n\n");

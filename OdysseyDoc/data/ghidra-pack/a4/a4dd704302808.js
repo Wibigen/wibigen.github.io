@@ -1,0 +1,1 @@
+DOC.got("gh/sead/GraphicsNvn/setCullingModeImpl.cpp","// Nom démêlé : sead::GraphicsNvn::setCullingModeImpl\n// Symbole manglé : setCullingModeImpl\n// void sead::GraphicsNvn::setCullingModeImpl(void); @ .text::0083afbc\n\n\n/* sead::GraphicsNvn::setCullingModeImpl(sead::Graphics::CullingMode) */\n\nvoid sead::GraphicsNvn::setCullingModeImpl(void)\n\n{\n  return;\n}\n\n");

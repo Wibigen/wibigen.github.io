@@ -1,0 +1,1 @@
+DOC.got("gh/eui/TapButton/On_.text_008f7440.cpp","// Nom démêlé : eui::TapButton::On\n// Symbole manglé : On\n// void eui::TapButton::On(void); @ .text::008f7440\n\n\n/* eui::TapButton::On() */\n\nvoid eui::TapButton::On(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/qResult/Equals.cpp","// Nom démêlé : nn::nex::qResult::Equals\n// Symbole manglé : Equals\n// bool __thiscall nn::nex::qResult::Equals(qResult *this,int *param_1); @ .text::00718c74\n\n\n/* nn::nex::qResult::Equals(int const&) const */\n\nbool __thiscall nn::nex::qResult::Equals(qResult *this,int *param_1)\n\n{\n  return *(int *)this == *param_1;\n}\n\n");

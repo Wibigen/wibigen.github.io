@@ -1,0 +1,1 @@
+DOC.got("gh/Bird/appear_.text_0047c960.cpp","// Nom démêlé : Bird::appear\n// Symbole manglé : appear\n// void __thiscall Bird::appear(Bird *this); @ .text::0047c960\n\n\n/* Bird::appear() */\n\nvoid __thiscall Bird::appear(Bird *this)\n\n{\n  al::LiveActor::appear((LiveActor *)this);\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1e54428);\n  return;\n}\n\n");

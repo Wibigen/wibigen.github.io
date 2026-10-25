@@ -1,0 +1,1 @@
+DOC.got("gh/al/RaceJudge/isGoal_.text_00b70060.cpp","// Nom démêlé : al::RaceJudge::isGoal\n// Symbole manglé : isGoal\n// bool __thiscall al::RaceJudge::isGoal(RaceJudge *this); @ .text::00b70060\n\n\n/* al::RaceJudge::isGoal() const */\n\nbool __thiscall al::RaceJudge::isGoal(RaceJudge *this)\n\n{\n  return *(int *)(this + 0x2c) <= *(int *)(this + 0x30);\n}\n\n");

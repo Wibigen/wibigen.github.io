@@ -1,0 +1,1 @@
+DOC.got("gh/sead/TextStreamFormat/flush_.text_0085a2b0.cpp","// Nom démêlé : sead::TextStreamFormat::flush\n// Symbole manglé : flush\n// void sead::TextStreamFormat::flush(StreamSrc *param_1); @ .text::0085a2b0\n\n\n/* sead::TextStreamFormat::flush(sead::StreamSrc*) */\n\nvoid sead::TextStreamFormat::flush(StreamSrc *param_1)\n\n{\n  return;\n}\n\n");

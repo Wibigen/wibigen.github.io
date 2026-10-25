@@ -1,0 +1,1 @@
+DOC.got("gh/al/EffectSystem/isEnableBatchCompute.cpp","// Nom démêlé : al::EffectSystem::isEnableBatchCompute\n// Symbole manglé : isEnableBatchCompute\n// undefined8 al::EffectSystem::isEnableBatchCompute(void); @ .text::00986eb0\n\n\n/* al::EffectSystem::isEnableBatchCompute() */\n\nundefined8 al::EffectSystem::isEnableBatchCompute(void)\n\n{\n  return 1;\n}\n\n");

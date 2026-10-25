@@ -1,0 +1,1 @@
+DOC.got("gh/agl/env/EnvObj/initialize_.text_00ce2db0.cpp","// Nom démêlé : agl::env::EnvObj::initialize\n// Symbole manglé : initialize\n// int agl::env::EnvObj::initialize(int param_1,Heap *param_2); @ .text::00ce2db0\n\n\n/* agl::env::EnvObj::initialize(int, sead::Heap*) */\n\nint agl::env::EnvObj::initialize(int param_1,Heap *param_2)\n\n{\n  return param_1;\n}\n\n");

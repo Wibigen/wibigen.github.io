@@ -1,0 +1,1 @@
+DOC.got("gh/FUN_.text_00a70bf8.cpp","// Nom démêlé : FUN_.text__00a70bf8\n// Symbole manglé : FUN_.text__00a70bf8\n// void FUN_.text__00a70bf8(void); @ .text::00a70bf8\n\n\nvoid FUN__text__00a70bf8(void)\n\n{\n  al::EnvTexInfo::EnvTexInfo((EnvTexInfo *)&DAT_02576d68);\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/KeyMoveMapParts/exeStandBy_.text_00a158a8.cpp","// Nom démêlé : al::KeyMoveMapParts::exeStandBy\n// Symbole manglé : exeStandBy\n// void al::KeyMoveMapParts::exeStandBy(void); @ .text::00a158a8\n\n\n/* al::KeyMoveMapParts::exeStandBy() */\n\nvoid al::KeyMoveMapParts::exeStandBy(void)\n\n{\n  return;\n}\n\n");

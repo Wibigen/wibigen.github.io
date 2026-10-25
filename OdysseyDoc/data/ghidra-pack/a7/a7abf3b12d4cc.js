@@ -1,0 +1,1 @@
+DOC.got("gh/al/TriangleDrawActor/draw_.text_00a702c8.cpp","// Nom démêlé : al::TriangleDrawActor::draw\n// Symbole manglé : draw\n// void al::TriangleDrawActor::draw(void); @ .text::00a702c8\n\n\n/* al::TriangleDrawActor::draw() const */\n\nvoid al::TriangleDrawActor::draw(void)\n\n{\n  return;\n}\n\n");

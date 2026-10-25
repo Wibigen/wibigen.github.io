@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/QueuingSocket/QueueSize.cpp","// Nom démêlé : nn::nex::QueuingSocket::QueueSize\n// Symbole manglé : QueueSize\n// undefined8 nn::nex::QueuingSocket::QueueSize(void); @ .text::0078f334\n\n\n/* nn::nex::QueuingSocket::QueueSize() const */\n\nundefined8 nn::nex::QueuingSocket::QueueSize(void)\n\n{\n  return 0;\n}\n\n");

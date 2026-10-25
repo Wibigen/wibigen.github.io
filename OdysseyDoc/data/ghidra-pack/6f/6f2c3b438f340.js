@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Plugin/ThreadDetach.cpp","// Nom démêlé : nn::nex::Plugin::ThreadDetach\n// Symbole manglé : ThreadDetach\n// void nn::nex::Plugin::ThreadDetach(void); @ .text::0073d848\n\n\n/* nn::nex::Plugin::ThreadDetach() */\n\nvoid nn::nex::Plugin::ThreadDetach(void)\n\n{\n  return;\n}\n\n");

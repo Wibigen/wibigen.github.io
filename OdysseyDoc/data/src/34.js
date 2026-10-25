@@ -1,0 +1,1 @@
+DOC.got("src/34","#pragma once\n\n#include <nn/types.h>\n\nnamespace nn {\nnamespace g3d {\n\nclass BindFuncTable;\n\nclass ResLightAnim {\npublic:\n    s32 Bind(nn::g3d::BindFuncTable const&);\n};\n}  // namespace g3d\n}  // namespace nn\n");

@@ -1,0 +1,1 @@
+DOC.got("e/2101",{"22191":{"q":"al::SafeString","decl":{"f":"lib/al/Project/Bgm/BgmInfo.h","l":9,"sig":"class SafeString","fi":1172},"complete":false,"fwd":[["lib/al/Project/Bgm/BgmInfo.h",9]]}});

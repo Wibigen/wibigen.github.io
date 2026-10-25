@@ -1,0 +1,1 @@
+DOC.got("gh/Curl_resolver_getsock.cpp","// Nom démêlé : Curl_resolver_getsock\n// Symbole manglé : Curl_resolver_getsock\n// undefined8 Curl_resolver_getsock(void); @ .text::0081035c\n\n\nundefined8 Curl_resolver_getsock(void)\n\n{\n  return 0;\n}\n\n");

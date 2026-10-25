@@ -1,0 +1,1 @@
+DOC.got("gh/TRex/getPlayerCollider_.text_0029a068.cpp","// Nom démêlé : TRex::getPlayerCollider\n// Symbole manglé : getPlayerCollider\n// undefined8 __thiscall TRex::getPlayerCollider(TRex *this); @ .text::0029a068\n\n\n/* TRex::getPlayerCollider() const */\n\nundefined8 __thiscall TRex::getPlayerCollider(TRex *this)\n\n{\n  return *(undefined8 *)(this + 0x1c0);\n}\n\n");

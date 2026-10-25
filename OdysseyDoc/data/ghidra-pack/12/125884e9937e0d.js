@@ -1,0 +1,1 @@
+DOC.got("gh/rs/getClothList.cpp","// Nom démêlé : rs::getClothList\n// Symbole manglé : getClothList\n// long rs::getClothList(long param_1); @ .text::0064c4c8\n\n\n/* rs::getClothList(GameDataHolderAccessor) */\n\nlong rs::getClothList(long param_1)\n\n{\n  return param_1 + 0x110;\n}\n\n");

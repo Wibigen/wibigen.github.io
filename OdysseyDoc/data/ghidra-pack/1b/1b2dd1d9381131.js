@@ -1,0 +1,1 @@
+DOC.got("gh/eui/Screen/getViewerType.cpp","// Nom démêlé : eui::Screen::getViewerType\n// Symbole manglé : getViewerType\n// undefined8 eui::Screen::getViewerType(void); @ .text::008ede84\n\n\n/* eui::Screen::getViewerType() const */\n\nundefined8 eui::Screen::getViewerType(void)\n\n{\n  return 0;\n}\n\n");

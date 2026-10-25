@@ -1,0 +1,1 @@
+DOC.got("src/2444","#include \"System/ProjectInterface.h\"\n\n#include \"System/Application.h\"\n\nal::SystemKit* alProjectInterface::getSystemKit() {\n    return Application::instance()->getSystemKit();\n}\n");

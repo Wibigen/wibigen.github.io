@@ -1,0 +1,1 @@
+DOC.got("gh/YoshiEgg/isBreak_.text_00596168.cpp","// Nom démêlé : YoshiEgg::isBreak\n// Symbole manglé : isBreak\n// void __thiscall YoshiEgg::isBreak(YoshiEgg *this); @ .text::00596168\n\n\n/* YoshiEgg::isBreak() const */\n\nvoid __thiscall YoshiEgg::isBreak(YoshiEgg *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1e82210);\n  return;\n}\n\n");

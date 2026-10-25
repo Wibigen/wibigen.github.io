@@ -1,0 +1,1 @@
+DOC.got("src/1092","#pragma once\n\n#include \"Library/HostIO/IUseName.h\"\n\nnamespace al {\nclass StageSwitchKeeper;\n\nclass IUseStageSwitch : virtual public IUseName {\npublic:\n    virtual StageSwitchKeeper* getStageSwitchKeeper() const = 0;\n    virtual void initStageSwitchKeeper() = 0;\n};\n\n}  // namespace al\n");

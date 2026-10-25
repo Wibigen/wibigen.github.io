@@ -1,0 +1,1 @@
+DOC.got("gh/rs/isTypeWear.cpp","// Nom démêlé : rs::isTypeWear\n// Symbole manglé : isTypeWear\n// bool rs::isTypeWear(ShopItemInfo *param_1); @ .text::0064cd40\n\n\n/* rs::isTypeWear(ShopItem::ShopItemInfo const*) */\n\nbool rs::isTypeWear(ShopItemInfo *param_1)\n\n{\n  return (*(uint *)(param_1 + 0x84) | 1) == 1;\n}\n\n");

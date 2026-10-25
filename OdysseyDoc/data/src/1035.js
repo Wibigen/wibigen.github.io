@@ -1,0 +1,1 @@
+DOC.got("src/1035","#pragma once\n\nnamespace al {\nclass SceneObjHolder;\n\nclass IUseSceneObjHolder {\npublic:\n    virtual SceneObjHolder* getSceneObjHolder() const = 0;\n\nprivate:\n    static const char* sSceneObjName;\n};\n}  // namespace al\n");

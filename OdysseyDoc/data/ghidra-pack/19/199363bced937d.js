@@ -1,0 +1,1 @@
+DOC.got("gh/CarryMeat/isFirstDemo_.text_001f0190.cpp","// Nom démêlé : CarryMeat::isFirstDemo\n// Symbole manglé : isFirstDemo\n// undefined8 CarryMeat::isFirstDemo(void); @ .text::001f0190\n\n\n/* CarryMeat::isFirstDemo() const */\n\nundefined8 CarryMeat::isFirstDemo(void)\n\n{\n  return 1;\n}\n\n");

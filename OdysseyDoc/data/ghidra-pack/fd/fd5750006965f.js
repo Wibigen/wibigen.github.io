@@ -1,0 +1,1 @@
+DOC.got("gh/al/Parameter_bool/size_.text_0099e15c.cpp","// Nom démêlé : al::Parameter<bool>::size\n// Symbole manglé : size\n// undefined8 al::Parameter<bool>::size(void); @ .text::0099e15c\n\n\n/* al::Parameter<bool>::size() const */\n\nundefined8 al::Parameter<bool>::size(void)\n\n{\n  return 1;\n}\n\n");

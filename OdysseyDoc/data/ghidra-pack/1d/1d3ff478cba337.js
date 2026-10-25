@@ -1,0 +1,1 @@
+DOC.got("gh/Curl_set_dns_local_ip4.cpp","// Nom démêlé : Curl_set_dns_local_ip4\n// Symbole manglé : Curl_set_dns_local_ip4\n// undefined8 Curl_set_dns_local_ip4(void); @ .text::00810548\n\n\nundefined8 Curl_set_dns_local_ip4(void)\n\n{\n  return 4;\n}\n\n");

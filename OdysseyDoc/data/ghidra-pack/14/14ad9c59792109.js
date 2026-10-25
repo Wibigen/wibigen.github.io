@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/HighLevelStream/DoWork_.text_0078f7cc.cpp","// Nom démêlé : nn::nex::HighLevelStream::DoWork\n// Symbole manglé : DoWork\n// void nn::nex::HighLevelStream::DoWork(Time *param_1); @ .text::0078f7cc\n\n\n/* nn::nex::HighLevelStream::DoWork(nn::nex::Time const*) */\n\nvoid nn::nex::HighLevelStream::DoWork(Time *param_1)\n\n{\n  return;\n}\n\n");

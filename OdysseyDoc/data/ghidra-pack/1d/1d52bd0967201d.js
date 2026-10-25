@@ -1,0 +1,1 @@
+DOC.got("gh/al/getConnectBaseQuat.cpp","// Nom démêlé : al::getConnectBaseQuat\n// Symbole manglé : getConnectBaseQuat\n// void al::getConnectBaseQuat(MtxConnector *param_1); @ .text::009591b4\n\n\n/* al::getConnectBaseQuat(al::MtxConnector const*) */\n\nvoid al::getConnectBaseQuat(MtxConnector *param_1)\n\n{\n  MtxConnector::getBaseQuat(param_1);\n  return;\n}\n\n");

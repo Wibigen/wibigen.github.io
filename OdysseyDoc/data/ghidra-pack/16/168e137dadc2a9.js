@@ -1,0 +1,1 @@
+DOC.got("gh/GameDataFile/isKidsMode.cpp","// Nom démêlé : GameDataFile::isKidsMode\n// Symbole manglé : isKidsMode\n// GameDataFile __thiscall GameDataFile::isKidsMode(GameDataFile *this); @ .text::0061b280\n\n\n/* GameDataFile::isKidsMode() const */\n\nGameDataFile __thiscall GameDataFile::isKidsMode(GameDataFile *this)\n\n{\n  return this[0x828];\n}\n\n");

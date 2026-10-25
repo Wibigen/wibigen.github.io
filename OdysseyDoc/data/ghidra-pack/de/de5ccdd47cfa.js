@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerJudgeDrawForward/reset_.text_0055946c.cpp","// Nom démêlé : PlayerJudgeDrawForward::reset\n// Symbole manglé : reset\n// void PlayerJudgeDrawForward::reset(void); @ .text::0055946c\n\n\n/* PlayerJudgeDrawForward::reset() */\n\nvoid PlayerJudgeDrawForward::reset(void)\n\n{\n  return;\n}\n\n");

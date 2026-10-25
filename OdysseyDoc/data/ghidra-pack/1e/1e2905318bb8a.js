@@ -1,0 +1,1 @@
+DOC.got("gh/al/isNeedRegisterNickName.cpp","// Nom démêlé : al::isNeedRegisterNickName\n// Symbole manglé : isNeedRegisterNickName\n// bool al::isNeedRegisterNickName(NfpInfo *param_1); @ .text::00a606d8\n\n\n/* al::isNeedRegisterNickName(al::NfpInfo const&) */\n\nbool al::isNeedRegisterNickName(NfpInfo *param_1)\n\n{\n  return param_1[0x13c] == (NfpInfo)0x0;\n}\n\n");

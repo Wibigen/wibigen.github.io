@@ -1,0 +1,1 @@
+DOC.got("gh/Tank/preInitHandleByMofumofu.cpp","// Nom démêlé : Tank::preInitHandleByMofumofu\n// Symbole manglé : preInitHandleByMofumofu\n// void __thiscall Tank::preInitHandleByMofumofu(Tank *this); @ .text::00287e40\n\n\n/* Tank::preInitHandleByMofumofu() */\n\nvoid __thiscall Tank::preInitHandleByMofumofu(Tank *this)\n\n{\n  this[400] = (Tank)0x1;\n  return;\n}\n\n");

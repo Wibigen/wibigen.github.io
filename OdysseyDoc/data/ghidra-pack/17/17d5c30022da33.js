@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerPuppet/isBindEndJump.cpp","// Nom démêlé : PlayerPuppet::isBindEndJump\n// Symbole manglé : isBindEndJump\n// PlayerPuppet __thiscall PlayerPuppet::isBindEndJump(PlayerPuppet *this); @ .text::0055fc50\n\n\n/* PlayerPuppet::isBindEndJump() const */\n\nPlayerPuppet __thiscall PlayerPuppet::isBindEndJump(PlayerPuppet *this)\n\n{\n  return this[0xa9];\n}\n\n");

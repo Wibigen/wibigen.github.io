@@ -1,0 +1,1 @@
+DOC.got("gh/GolemClimb/isMoon_.text_001759f4.cpp","// Nom démêlé : GolemClimb::isMoon\n// Symbole manglé : isMoon\n// GolemClimb __thiscall GolemClimb::isMoon(GolemClimb *this); @ .text::001759f4\n\n\n/* non-virtual thunk to GolemClimb::isMoon() */\n\nGolemClimb __thiscall GolemClimb::isMoon(GolemClimb *this)\n\n{\n  return this[0x240];\n}\n\n");

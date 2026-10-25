@@ -1,0 +1,1 @@
+DOC.got("gh/al/CameraTargetBase/isCollideGround_.text_0013b0d4.cpp","// Nom démêlé : al::CameraTargetBase::isCollideGround\n// Symbole manglé : isCollideGround\n// undefined8 al::CameraTargetBase::isCollideGround(void); @ .text::0013b0d4\n\n\n/* al::CameraTargetBase::isCollideGround() const */\n\nundefined8 al::CameraTargetBase::isCollideGround(void)\n\n{\n  return 0;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/initRandomSeed.cpp","// Nom démêlé : al::initRandomSeed\n// Symbole manglé : initRandomSeed\n// void al::initRandomSeed(uint param_1); @ .text::00a23958\n\n\n/* al::initRandomSeed(unsigned int) */\n\nvoid al::initRandomSeed(uint param_1)\n\n{\n  sead::Random::init(*(Random **)PTR_sInstance_01f5b258,param_1);\n  return;\n}\n\n");

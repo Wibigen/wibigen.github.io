@@ -1,0 +1,1 @@
+DOC.got("gh/eui/DecisionButton/getClassName_.text_008f53cc.cpp","// Nom démêlé : eui::DecisionButton::getClassName\n// Symbole manglé : getClassName\n// undefined8 eui::DecisionButton::getClassName(void); @ .text::008f53cc\n\n\n/* eui::DecisionButton::getClassName() const */\n\nundefined8 eui::DecisionButton::getClassName(void)\n\n{\n  return 0x1965e9d;\n}\n\n");

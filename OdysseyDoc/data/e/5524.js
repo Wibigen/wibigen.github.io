@@ -1,0 +1,1 @@
+DOC.got("e/5524",{"48499":{"q":"sead::TaskUserID","decl":{"f":"lib/sead/include/framework/seadTaskID.h","l":57,"sig":"class TaskUserID","end":61,"fi":1353},"size":4,"align":4,"complete":true,"fields":[{"n":"mID","t":"s32","off":0,"sz":4,"acc":"public","bits":null,"l":60,"cm":null,"ti":43737}]}});

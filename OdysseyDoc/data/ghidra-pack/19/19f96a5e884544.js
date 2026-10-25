@@ -1,0 +1,1 @@
+DOC.got("gh/HakoniwaSequence/exeChangeLanguage.cpp","// Nom démêlé : HakoniwaSequence::exeChangeLanguage\n// Symbole manglé : exeChangeLanguage\n// void HakoniwaSequence::exeChangeLanguage(void); @ .text::00610a5c\n\n\n/* HakoniwaSequence::exeChangeLanguage() */\n\nvoid HakoniwaSequence::exeChangeLanguage(void)\n\n{\n  return;\n}\n\n");

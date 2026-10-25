@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerJudgeDrawForward/update_.text_00559470.cpp","// Nom démêlé : PlayerJudgeDrawForward::update\n// Symbole manglé : update\n// void PlayerJudgeDrawForward::update(void); @ .text::00559470\n\n\n/* PlayerJudgeDrawForward::update() */\n\nvoid PlayerJudgeDrawForward::update(void)\n\n{\n  return;\n}\n\n");

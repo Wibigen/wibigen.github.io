@@ -1,0 +1,1 @@
+DOC.got("gh/GolemClimb/isInFootR.cpp","// Nom démêlé : GolemClimb::isInFootR\n// Symbole manglé : isInFootR\n// bool __thiscall GolemClimb::isInFootR(GolemClimb *this); @ .text::00175964\n\n\n/* GolemClimb::isInFootR() */\n\nbool __thiscall GolemClimb::isInFootR(GolemClimb *this)\n\n{\n  return 0 < *(int *)(this + 0x1ac);\n}\n\n");

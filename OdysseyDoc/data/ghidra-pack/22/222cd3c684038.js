@@ -1,0 +1,1 @@
+DOC.got("gh/agl/utl/INamedObj/INamedObj_.text_00c9edec.cpp","// Nom démêlé : agl::utl::INamedObj::~INamedObj\n// Symbole manglé : ~INamedObj\n// void __thiscall agl::utl::INamedObj::~INamedObj(INamedObj *this); @ .text::00c9edec\n\n\n/* agl::utl::INamedObj::~INamedObj() */\n\nvoid __thiscall agl::utl::INamedObj::~INamedObj(INamedObj *this)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/eui/Screen/createSoundLink2User.cpp","// Nom démêlé : eui::Screen::createSoundLink2User_\n// Symbole manglé : createSoundLink2User_\n// void eui::Screen::createSoundLink2User_(Heap *param_1); @ .text::008f0d2c\n\n\n/* eui::Screen::createSoundLink2User_(sead::Heap*) */\n\nvoid eui::Screen::createSoundLink2User_(Heap *param_1)\n\n{\n  return;\n}\n\n");

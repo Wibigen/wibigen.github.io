@@ -1,0 +1,1 @@
+DOC.got("gh/KoopaChurch/exeEnd_.text_0018bdb4.cpp","// Nom démêlé : KoopaChurch::exeEnd\n// Symbole manglé : exeEnd\n// void KoopaChurch::exeEnd(void); @ .text::0018bdb4\n\n\n/* KoopaChurch::exeEnd() */\n\nvoid KoopaChurch::exeEnd(void)\n\n{\n  return;\n}\n\n");

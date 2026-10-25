@@ -1,0 +1,1 @@
+DOC.got("gh/al/NerveStateBase/init_.text_00114384.cpp","// Nom démêlé : al::NerveStateBase::init\n// Symbole manglé : init\n// void al::NerveStateBase::init(void); @ .text::00114384\n\n\n/* al::NerveStateBase::init() */\n\nvoid al::NerveStateBase::init(void)\n\n{\n  return;\n}\n\n");

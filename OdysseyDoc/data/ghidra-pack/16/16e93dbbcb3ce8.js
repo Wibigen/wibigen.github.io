@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/DateTime/Trace_.text_0070e69c.cpp","// Nom démêlé : nn::nex::DateTime::Trace\n// Symbole manglé : Trace\n// void nn::nex::DateTime::Trace(ulong param_1); @ .text::0070e69c\n\n\n/* nn::nex::DateTime::Trace(unsigned long) */\n\nvoid nn::nex::DateTime::Trace(ulong param_1)\n\n{\n  return;\n}\n\n");

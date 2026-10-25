@@ -1,0 +1,1 @@
+DOC.got("gh/TalkNpcSwitchWaitActionObj/getName_.text_004e4580.cpp","// Nom démêlé : TalkNpcSwitchWaitActionObj::getName\n// Symbole manglé : getName\n// undefined8 TalkNpcSwitchWaitActionObj::getName(void); @ .text::004e4580\n\n\n/* TalkNpcSwitchWaitActionObj::getName() const */\n\nundefined8 TalkNpcSwitchWaitActionObj::getName(void)\n\n{\n  return 0x194101d;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("e/4117",{"33378":{"q":"nn::hid::detail::NpadSharedMemoryFormat","decl":{"f":"lib/NintendoSDK/include/nn/hid.h","l":905,"sig":"struct NpadSharedMemoryFormat","end":907,"fi":133},"size":204800,"align":8,"complete":true,"fields":[{"n":"mEntries","t":"NpadSharedMemoryEntry[10]","off":0,"sz":204800,"acc":"public","bits":null,"l":906,"cm":null,"ti":33377}]}});

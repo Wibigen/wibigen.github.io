@@ -1,0 +1,1 @@
+DOC.got("gh/InformAfterGameClearScene/exeCollectBgm.cpp","// Nom démêlé : InformAfterGameClearScene::exeCollectBgm\n// Symbole manglé : exeCollectBgm\n// void InformAfterGameClearScene::exeCollectBgm(void); @ .text::005aae44\n\n\n/* InformAfterGameClearScene::exeCollectBgm() */\n\nvoid InformAfterGameClearScene::exeCollectBgm(void)\n\n{\n  return;\n}\n\n");

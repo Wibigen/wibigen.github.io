@@ -1,0 +1,1 @@
+DOC.got("gh/RaceManRace/exeGoalNpcLoseWait.cpp","// Nom démêlé : RaceManRace::exeGoalNpcLoseWait\n// Symbole manglé : exeGoalNpcLoseWait\n// void RaceManRace::exeGoalNpcLoseWait(void); @ .text::004b88e4\n\n\n/* RaceManRace::exeGoalNpcLoseWait() */\n\nvoid RaceManRace::exeGoalNpcLoseWait(void)\n\n{\n  return;\n}\n\n");

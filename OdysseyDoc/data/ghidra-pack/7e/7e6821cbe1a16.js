@@ -1,0 +1,1 @@
+DOC.got("gh/BullStateHack/tryCancelDashCharge.cpp","// Nom démêlé : BullStateHack::tryCancelDashCharge\n// Symbole manglé : tryCancelDashCharge\n// undefined8 BullStateHack::tryCancelDashCharge(void); @ .text::001ebba0\n\n\n/* BullStateHack::tryCancelDashCharge() */\n\nundefined8 BullStateHack::tryCancelDashCharge(void)\n\n{\n  return 0;\n}\n\n");

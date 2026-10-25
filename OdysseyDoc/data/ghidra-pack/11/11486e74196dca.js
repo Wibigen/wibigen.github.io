@@ -1,0 +1,1 @@
+DOC.got("gh/rs/isMainShine_.text_00655cb8.cpp","// Nom démêlé : rs::isMainShine\n// Symbole manglé : isMainShine\n// Shine rs::isMainShine(Shine *param_1); @ .text::00655cb8\n\n\n/* rs::isMainShine(Shine const*) */\n\nShine rs::isMainShine(Shine *param_1)\n\n{\n  return param_1[0x294];\n}\n\n");

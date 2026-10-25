@@ -1,0 +1,1 @@
+DOC.got("e/2453",{"24313":{"q":"al::SphereCheckInfo","decl":{"f":"lib/al/Library/Collision/ICollisionPartsKeeper.h","l":11,"sig":"class SphereCheckInfo","fi":517},"complete":false,"fwd":[["lib/al/Library/Collision/ICollisionPartsKeeper.h",11]]}});

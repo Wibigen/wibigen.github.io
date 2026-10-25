@@ -1,0 +1,1 @@
+DOC.got("gh/al/BloomParam/isEnable_.text_009bc544.cpp","// Nom démêlé : al::BloomParam::isEnable\n// Symbole manglé : isEnable\n// BloomParam __thiscall al::BloomParam::isEnable(BloomParam *this); @ .text::009bc544\n\n\n/* al::BloomParam::isEnable() const */\n\nBloomParam __thiscall al::BloomParam::isEnable(BloomParam *this)\n\n{\n  return this[0x28];\n}\n\n");

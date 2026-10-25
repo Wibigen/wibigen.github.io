@@ -1,0 +1,1 @@
+DOC.got("gh/StackerCap/startRest.cpp","// Nom démêlé : StackerCap::startRest\n// Symbole manglé : startRest\n// void __thiscall StackerCap::startRest(StackerCap *this); @ .text::001bf558\n\n\n/* StackerCap::startRest() */\n\nvoid __thiscall StackerCap::startRest(StackerCap *this)\n\n{\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1d7b800);\n  return;\n}\n\n");

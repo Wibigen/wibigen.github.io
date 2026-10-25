@@ -1,0 +1,1 @@
+DOC.got("e/4321",{"34553":{"q":"nn::util::Float3","decl":{"f":"lib/NintendoSDK/include/nn/util/MathTypes.h","l":39,"sig":"struct Float3","end":48,"fi":200},"size":12,"align":4,"complete":true}});

@@ -1,0 +1,1 @@
+DOC.got("gh/al/ParameterString32/getParamType_.text_00b4f744.cpp","// Nom démêlé : al::ParameterString32::getParamType\n// Symbole manglé : getParamType\n// undefined8 al::ParameterString32::getParamType(void); @ .text::00b4f744\n\n\n/* al::ParameterString32::getParamType() const */\n\nundefined8 al::ParameterString32::getParamType(void)\n\n{\n  return 0xc;\n}\n\n");

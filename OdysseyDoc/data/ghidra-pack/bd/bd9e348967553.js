@@ -1,0 +1,1 @@
+DOC.got("gh/CoinStack/getAbove.cpp","// Nom démêlé : CoinStack::getAbove\n// Symbole manglé : getAbove\n// undefined8 __thiscall CoinStack::getAbove(CoinStack *this); @ .text::002c5580\n\n\n/* CoinStack::getAbove() */\n\nundefined8 __thiscall CoinStack::getAbove(CoinStack *this)\n\n{\n  return *(undefined8 *)(this + 0x140);\n}\n\n");

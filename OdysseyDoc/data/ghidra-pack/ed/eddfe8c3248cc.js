@@ -1,0 +1,1 @@
+DOC.got("gh/Bubble/exeHackDemo.cpp","// Nom démêlé : Bubble::exeHackDemo\n// Symbole manglé : exeHackDemo\n// void Bubble::exeHackDemo(void); @ .text::001e6fd0\n\n\n/* Bubble::exeHackDemo() */\n\nvoid Bubble::exeHackDemo(void)\n\n{\n  return;\n}\n\n");

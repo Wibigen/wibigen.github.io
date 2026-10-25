@@ -1,0 +1,1 @@
+DOC.got("gh/GameDataFunction/getHomeTrans.cpp","// Nom démêlé : GameDataFunction::getHomeTrans\n// Symbole manglé : getHomeTrans\n// long GameDataFunction::getHomeTrans(long param_1); @ .text::0062c2b4\n\n\n/* GameDataFunction::getHomeTrans(GameDataHolderAccessor) */\n\nlong GameDataFunction::getHomeTrans(long param_1)\n\n{\n  return *(long *)(param_1 + 0x20) + 0xa7c;\n}\n\n");

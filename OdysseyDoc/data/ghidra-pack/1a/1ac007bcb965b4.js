@@ -1,0 +1,1 @@
+DOC.got("gh/al/AreaObj/getName_.text_0010544c.cpp","// Nom démêlé : al::AreaObj::getName\n// Symbole manglé : getName\n// undefined8 __thiscall al::AreaObj::getName(AreaObj *this); @ .text::0010544c\n\n\n/* al::AreaObj::getName() const */\n\nundefined8 __thiscall al::AreaObj::getName(AreaObj *this)\n\n{\n  return *(undefined8 *)(this + 0x10);\n}\n\n");

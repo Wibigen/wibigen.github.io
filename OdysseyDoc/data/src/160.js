@@ -1,0 +1,1 @@
+DOC.got("src/160","#pragma once\n\n#include <nn/types.h>\n\nnamespace nn {\n\ntypedef u8 Bit8;\ntypedef u16 Bit16;\ntypedef u32 Bit32;\ntypedef u64 Bit64;\n\n}  // namespace nn");

@@ -1,0 +1,1 @@
+DOC.got("gh/GiantWanderBoss/getSceneObjName_.text_0016703c.cpp","// Nom démêlé : GiantWanderBoss::getSceneObjName\n// Symbole manglé : getSceneObjName\n// undefined8 GiantWanderBoss::getSceneObjName(void); @ .text::0016703c\n\n\n/* GiantWanderBoss::getSceneObjName() const */\n\nundefined8 GiantWanderBoss::getSceneObjName(void)\n\n{\n  return 0x1920578;\n}\n\n");

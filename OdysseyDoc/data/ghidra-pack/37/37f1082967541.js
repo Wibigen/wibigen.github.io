@@ -1,0 +1,1 @@
+DOC.got("gh/nn/ui2d/TextureInfo/TextureInfo.cpp","// Nom démêlé : nn::ui2d::TextureInfo::~TextureInfo\n// Symbole manglé : ~TextureInfo\n// void __thiscall nn::ui2d::TextureInfo::~TextureInfo(TextureInfo *this); @ .text::008e333c\n\n\n/* nn::ui2d::TextureInfo::~TextureInfo() */\n\nvoid __thiscall nn::ui2d::TextureInfo::~TextureInfo(TextureInfo *this)\n\n{\n  return;\n}\n\n");

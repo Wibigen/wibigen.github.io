@@ -1,0 +1,1 @@
+DOC.got("gh/al/KeyMoveCameraFix/start_.text_00a81cd8.cpp","// Nom démêlé : al::KeyMoveCameraFix::start\n// Symbole manglé : start\n// void al::KeyMoveCameraFix::start(CameraStartInfo *param_1); @ .text::00a81cd8\n\n\n/* al::KeyMoveCameraFix::start(al::CameraStartInfo const&) */\n\nvoid al::KeyMoveCameraFix::start(CameraStartInfo *param_1)\n\n{\n  return;\n}\n\n");

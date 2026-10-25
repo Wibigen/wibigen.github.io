@@ -1,0 +1,1 @@
+DOC.got("e/4613",{"379":{"q":"(anonymous@src/MapObj/FukankunZoomObj)::(anonymous)","decl":{"f":"src/MapObj/FukankunZoomObj.cpp","l":15,"sig":"NERVES_MAKE_STRUCT(FukankunZoomObj, Wait)","end":15,"fi":1876},"size":8,"align":8,"complete":true,"fields":[{"n":"Wait","t":"FukankunZoomObjNrvWait","off":0,"sz":8,"acc":"public","bits":null,"l":15,"cm":null,"ti":1427}]}});

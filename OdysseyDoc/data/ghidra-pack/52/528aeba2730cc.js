@@ -1,0 +1,1 @@
+DOC.got("gh/BrosWeaponBase/getBreakStep.cpp","// Nom démêlé : BrosWeaponBase::getBreakStep\n// Symbole manglé : getBreakStep\n// undefined8 BrosWeaponBase::getBreakStep(void); @ .text::001db5dc\n\n\n/* BrosWeaponBase::getBreakStep() const */\n\nundefined8 BrosWeaponBase::getBreakStep(void)\n\n{\n  return 0;\n}\n\n");

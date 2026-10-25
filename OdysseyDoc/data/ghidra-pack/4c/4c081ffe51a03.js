@@ -1,0 +1,1 @@
+DOC.got("gh/StageSceneStateRacePause/exeDecideEnd_.text_005ee72c.cpp","// Nom démêlé : StageSceneStateRacePause::exeDecideEnd\n// Symbole manglé : exeDecideEnd\n// void StageSceneStateRacePause::exeDecideEnd(void); @ .text::005ee72c\n\n\n/* StageSceneStateRacePause::exeDecideEnd() */\n\nvoid StageSceneStateRacePause::exeDecideEnd(void)\n\n{\n  return;\n}\n\n");

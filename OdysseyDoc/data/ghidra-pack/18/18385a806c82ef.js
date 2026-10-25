@@ -1,0 +1,1 @@
+DOC.got("gh/al/ActorPoseKeeperBase/getRotate_.text_009ee094.cpp","// Nom démêlé : al::ActorPoseKeeperBase::getRotate\n// Symbole manglé : getRotate\n// undefined * al::ActorPoseKeeperBase::getRotate(void); @ .text::009ee094\n\n\n/* al::ActorPoseKeeperBase::getRotate() const */\n\nundefined * al::ActorPoseKeeperBase::getRotate(void)\n\n{\n  return PTR_01f4ebc8;\n}\n\n");

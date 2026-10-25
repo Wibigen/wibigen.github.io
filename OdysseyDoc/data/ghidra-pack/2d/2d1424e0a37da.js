@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Event/Event_.text_0070fb1c.cpp","// Nom démêlé : nn::nex::Event::~Event\n// Symbole manglé : ~Event\n// void __thiscall nn::nex::Event::~Event(Event *this); @ .text::0070fb1c\n\n\n/* nn::nex::Event::~Event() */\n\nvoid __thiscall nn::nex::Event::~Event(Event *this)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/eui/ButtonBase/StartDown_.text_008f4158.cpp","// Nom démêlé : eui::ButtonBase::StartDown\n// Symbole manglé : StartDown\n// void eui::ButtonBase::StartDown(void); @ .text::008f4158\n\n\n/* eui::ButtonBase::StartDown() */\n\nvoid eui::ButtonBase::StartDown(void)\n\n{\n  return;\n}\n\n");

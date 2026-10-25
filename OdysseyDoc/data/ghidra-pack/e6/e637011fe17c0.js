@@ -1,0 +1,1 @@
+DOC.got("gh/TaxiStop/exeWarpDemo.cpp","// Nom démêlé : TaxiStop::exeWarpDemo\n// Symbole manglé : exeWarpDemo\n// void __thiscall TaxiStop::exeWarpDemo(TaxiStop *this); @ .text::00434534\n\n\n/* TaxiStop::exeWarpDemo() */\n\nvoid __thiscall TaxiStop::exeWarpDemo(TaxiStop *this)\n\n{\n  rs::updateEventFlow(*(EventFlowExecutor **)(this + 0x118));\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/agl/ComputeShader/getShaderType_.text_00880804.cpp","// Nom démêlé : agl::ComputeShader::getShaderType\n// Symbole manglé : getShaderType\n// undefined8 agl::ComputeShader::getShaderType(void); @ .text::00880804\n\n\n/* agl::ComputeShader::getShaderType() const */\n\nundefined8 agl::ComputeShader::getShaderType(void)\n\n{\n  return 3;\n}\n\n");

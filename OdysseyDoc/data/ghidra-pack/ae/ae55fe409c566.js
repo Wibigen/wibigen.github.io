@@ -1,0 +1,1 @@
+DOC.got("gh/Senobi/getStretchJointLocalOffset.cpp","// Nom démêlé : Senobi::getStretchJointLocalOffset\n// Symbole manglé : getStretchJointLocalOffset\n// undefined8 Senobi::getStretchJointLocalOffset(void); @ .text::0027e424\n\n\n/* Senobi::getStretchJointLocalOffset() */\n\nundefined8 Senobi::getStretchJointLocalOffset(void)\n\n{\n  return 0x19a46d8;\n}\n\n");

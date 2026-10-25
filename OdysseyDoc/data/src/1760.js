@@ -1,0 +1,1 @@
+DOC.got("src/1760","#pragma once\n\n#include \"Library/Layout/LayoutActor.h\"\n\nstruct MapData;\n\nclass MapTerrainLayout : public al::LayoutActor {\npublic:\n    MapTerrainLayout(const char* name);\n\n    bool tryChangePrintWorld(s32 worldId);\n    f32 getPaneSize() const;\n\nprivate:\n    MapData* mMapData = nullptr;\n};\n");

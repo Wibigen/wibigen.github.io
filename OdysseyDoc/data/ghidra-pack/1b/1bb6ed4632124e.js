@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerConst/getPushPower.cpp","// Nom démêlé : PlayerConst::getPushPower\n// Symbole manglé : getPushPower\n// undefined4 __thiscall PlayerConst::getPushPower(PlayerConst *this); @ .text::0053ce8c\n\n\n/* PlayerConst::getPushPower() const */\n\nundefined4 __thiscall PlayerConst::getPushPower(PlayerConst *this)\n\n{\n  return *(undefined4 *)(this + 0x10);\n}\n\n");

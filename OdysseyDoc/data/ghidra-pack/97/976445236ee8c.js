@@ -1,0 +1,1 @@
+DOC.got("gh/al/getALCommon.cpp","// Nom démêlé : al::getALCommon\n// Symbole manglé : getALCommon\n// undefined8 al::getALCommon(void); @ .text::0096fdec\n\n\n/* al::getALCommon() */\n\nundefined8 al::getALCommon(void)\n\n{\n  return 0x196767f;\n}\n\n");

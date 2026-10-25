@@ -1,0 +1,1 @@
+DOC.got("src/2250","#pragma once\n\n#include \"Player/IJudge.h\"\n\nclass PlayerStateWait;\n\nclass PlayerJudgeSleep : public IJudge {\npublic:\n    PlayerJudgeSleep(const PlayerStateWait* stateWait);\n    void reset() override {};\n    void update() override {};\n    bool judge() const override;\n\nprivate:\n    const PlayerStateWait* mStateWait;\n};\n");

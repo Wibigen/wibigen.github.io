@@ -1,0 +1,1 @@
+DOC.got("src/221","/**\n * @file xcd.h\n * @brief Utility classes for controller devices\n */\n\n#pragma once\n\n#include <nn/types.h>\n\nnamespace nn {\nnamespace xcd {\n\ntypedef u64 DeviceHandle;\n\n}  // namespace xcd\n}  // namespace nn\n");

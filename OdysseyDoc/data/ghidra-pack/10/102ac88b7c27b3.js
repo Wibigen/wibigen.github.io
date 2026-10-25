@@ -1,0 +1,1 @@
+DOC.got("gh/al/Scene/drawSub.cpp","// Nom démêlé : al::Scene::drawSub\n// Symbole manglé : drawSub\n// void al::Scene::drawSub(void); @ .text::005a7734\n\n\n/* al::Scene::drawSub() const */\n\nvoid al::Scene::drawSub(void)\n\n{\n  return;\n}\n\n");

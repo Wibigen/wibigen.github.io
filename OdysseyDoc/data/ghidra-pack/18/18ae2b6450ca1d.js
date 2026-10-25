@@ -1,0 +1,1 @@
+DOC.got("gh/al/SeShapeInfo/dummy_.text_00add904.cpp","// Nom démêlé : al::SeShapeInfo::dummy\n// Symbole manglé : dummy\n// void al::SeShapeInfo::dummy(void); @ .text::00add904\n\n\n/* al::SeShapeInfo::dummy() */\n\nvoid al::SeShapeInfo::dummy(void)\n\n{\n  return;\n}\n\n");

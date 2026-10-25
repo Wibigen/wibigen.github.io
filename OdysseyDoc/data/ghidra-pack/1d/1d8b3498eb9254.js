@@ -1,0 +1,1 @@
+DOC.got("gh/nn/atk/SoundArchive/FileAccessBegin.cpp","// Nom démêlé : nn::atk::SoundArchive::FileAccessBegin\n// Symbole manglé : FileAccessBegin\n// void nn::atk::SoundArchive::FileAccessBegin(void); @ .text::00b3e610\n\n\n/* nn::atk::SoundArchive::FileAccessBegin() const */\n\nvoid nn::atk::SoundArchive::FileAccessBegin(void)\n\n{\n  return;\n}\n\n");

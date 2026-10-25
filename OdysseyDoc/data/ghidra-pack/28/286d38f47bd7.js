@@ -1,0 +1,1 @@
+DOC.got("gh/sead/ExpHeap/isResizable.cpp","// Nom démêlé : sead::ExpHeap::isResizable\n// Symbole manglé : isResizable\n// undefined8 sead::ExpHeap::isResizable(void); @ .text::00842a58\n\n\n/* sead::ExpHeap::isResizable() const */\n\nundefined8 sead::ExpHeap::isResizable(void)\n\n{\n  return 1;\n}\n\n");

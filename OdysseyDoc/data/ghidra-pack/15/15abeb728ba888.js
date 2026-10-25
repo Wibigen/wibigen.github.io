@@ -1,0 +1,1 @@
+DOC.got("gh/agl/ShaderProgram/dump_.text_0087fda0.cpp","// Nom démêlé : agl::ShaderProgram::dump\n// Symbole manglé : dump\n// void agl::ShaderProgram::dump(void); @ .text::0087fda0\n\n\n/* agl::ShaderProgram::dump() const */\n\nvoid agl::ShaderProgram::dump(void)\n\n{\n  return;\n}\n\n");

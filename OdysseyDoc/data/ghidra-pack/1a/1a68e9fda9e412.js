@@ -1,0 +1,1 @@
+DOC.got("gh/TalkNpcFreeze/calcAnim_.text_004e188c.cpp","// Nom démêlé : TalkNpcFreeze::calcAnim\n// Symbole manglé : calcAnim\n// void TalkNpcFreeze::calcAnim(void); @ .text::004e188c\n\n\n/* TalkNpcFreeze::calcAnim() */\n\nvoid TalkNpcFreeze::calcAnim(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/agl/utl/IParameterObj/preCopy.cpp","// Nom démêlé : agl::utl::IParameterObj::preCopy_\n// Symbole manglé : preCopy_\n// undefined8 agl::utl::IParameterObj::preCopy_(void); @ .text::008a0b00\n\n\n/* agl::utl::IParameterObj::preCopy_() */\n\nundefined8 agl::utl::IParameterObj::preCopy_(void)\n\n{\n  return 1;\n}\n\n");

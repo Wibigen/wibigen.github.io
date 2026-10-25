@@ -1,0 +1,1 @@
+DOC.got("gh/nn/ui2d/TexMap/TexMap.cpp","// Nom démêlé : nn::ui2d::TexMap::TexMap\n// Symbole manglé : TexMap\n// void __thiscall nn::ui2d::TexMap::TexMap(TexMap *this); @ .text::00c0b940\n\n\n/* nn::ui2d::TexMap::TexMap() */\n\nvoid __thiscall nn::ui2d::TexMap::TexMap(TexMap *this)\n\n{\n  *(undefined8 *)(this + 8) = 0;\n  *this = (TexMap)0x90;\n  return;\n}\n\n");

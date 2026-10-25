@@ -1,0 +1,1 @@
+DOC.got("gh/Curl_add_buffer_init.cpp","// Nom démêlé : Curl_add_buffer_init\n// Symbole manglé : Curl_add_buffer_init\n// void Curl_add_buffer_init(void); @ .text::00817778\n\n\nvoid Curl_add_buffer_init(void)\n\n{\n  Curl_SigloCalloc(1,0x18);\n  return;\n}\n\n");

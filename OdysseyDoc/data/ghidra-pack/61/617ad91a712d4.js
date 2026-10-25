@@ -1,0 +1,1 @@
+DOC.got("gh/agl/lyr/Layer/isForceInvisible.cpp","// Nom démêlé : agl::lyr::Layer::isForceInvisible\n// Symbole manglé : isForceInvisible\n// undefined8 agl::lyr::Layer::isForceInvisible(void); @ .text::00ce5f5c\n\n\n/* agl::lyr::Layer::isForceInvisible() const */\n\nundefined8 agl::lyr::Layer::isForceInvisible(void)\n\n{\n  return 0;\n}\n\n");

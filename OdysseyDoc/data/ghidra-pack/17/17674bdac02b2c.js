@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Plugin/Destroy_.text_0073d84c.cpp","// Nom démêlé : nn::nex::Plugin::Destroy\n// Symbole manglé : Destroy\n// void nn::nex::Plugin::Destroy(void); @ .text::0073d84c\n\n\n/* nn::nex::Plugin::Destroy() */\n\nvoid nn::nex::Plugin::Destroy(void)\n\n{\n  return;\n}\n\n");

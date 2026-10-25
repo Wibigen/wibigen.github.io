@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerJudgeStartSquat/reset_.text_0055b8ec.cpp","// Nom démêlé : PlayerJudgeStartSquat::reset\n// Symbole manglé : reset\n// void PlayerJudgeStartSquat::reset(void); @ .text::0055b8ec\n\n\n/* PlayerJudgeStartSquat::reset() */\n\nvoid PlayerJudgeStartSquat::reset(void)\n\n{\n  return;\n}\n\n");

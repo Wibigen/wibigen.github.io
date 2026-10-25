@@ -1,0 +1,1 @@
+DOC.got("src/895","#pragma once\n\n#include <prim/seadSafeString.h>\n\nnamespace al {\nclass HtmlViewer {\npublic:\n    void call(const char*, sead::BufferedSafeStringBase<char>*) const;\n};\n}  // namespace al\n");

@@ -1,0 +1,1 @@
+DOC.got("src/2518","#pragma once\n\n#include <basis/seadTypes.h>\n\nnamespace al {\nclass LiveActor;\n}\n\nnamespace Player2DDokanActionFunction {\nbool isPlayer2DActionDokanInPlayingGreater(const al::LiveActor* actor, s32 frame);\nbool isPlayer2DActionDokanOutPlayingLessEqual(const al::LiveActor* actor, s32 frame);\n}  // namespace Player2DDokanActionFunction\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerModelChangerYoshi/showShadowMask_.text_0055e858.cpp","// Nom démêlé : PlayerModelChangerYoshi::showShadowMask\n// Symbole manglé : showShadowMask\n// void PlayerModelChangerYoshi::showShadowMask(void); @ .text::0055e858\n\n\n/* PlayerModelChangerYoshi::showShadowMask() */\n\nvoid PlayerModelChangerYoshi::showShadowMask(void)\n\n{\n  return;\n}\n\n");

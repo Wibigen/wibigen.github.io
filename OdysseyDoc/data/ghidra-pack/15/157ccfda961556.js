@@ -1,0 +1,1 @@
+DOC.got("gh/al/getHitTargetNum.cpp","// Nom démêlé : al::getHitTargetNum\n// Symbole manglé : getHitTargetNum\n// undefined4 al::getHitTargetNum(ScreenPointer *param_1); @ .text::00ad46bc\n\n\n/* al::getHitTargetNum(al::ScreenPointer*) */\n\nundefined4 al::getHitTargetNum(ScreenPointer *param_1)\n\n{\n  return *(undefined4 *)(param_1 + 8);\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/ShineChipWatcher/getCompleteNum.cpp","// Nom démêlé : ShineChipWatcher::getCompleteNum\n// Symbole manglé : getCompleteNum\n// undefined8 ShineChipWatcher::getCompleteNum(void); @ .text::002d49c4\n\n\n/* ShineChipWatcher::getCompleteNum() */\n\nundefined8 ShineChipWatcher::getCompleteNum(void)\n\n{\n  return 5;\n}\n\n");

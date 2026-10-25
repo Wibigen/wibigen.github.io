@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/SystemComponent/GetType_.text_00748168.cpp","// Nom démêlé : nn::nex::SystemComponent::GetType\n// Symbole manglé : GetType\n// undefined8 nn::nex::SystemComponent::GetType(void); @ .text::00748168\n\n\n/* nn::nex::SystemComponent::GetType() const */\n\nundefined8 nn::nex::SystemComponent::GetType(void)\n\n{\n  return 0x1953d9a;\n}\n\n");

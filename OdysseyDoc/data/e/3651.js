@@ -1,0 +1,1 @@
+DOC.got("e/3651",{"31127":{"q":"nn::audio::DelayType","decl":{"f":"lib/NintendoSDK/include/nn/audio.h","l":127,"sig":"struct DelayType","end":129,"fi":16},"size":8,"align":8,"complete":true,"fields":[{"n":"_0","t":"u64 *","off":0,"sz":8,"acc":"public","bits":null,"l":128,"cm":null,"ti":49377}]}});

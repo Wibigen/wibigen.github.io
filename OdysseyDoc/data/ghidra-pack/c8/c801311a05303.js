@@ -1,0 +1,1 @@
+DOC.got("gh/al/SeEmitter/getName_.text_00b81bc4.cpp","// Nom démêlé : al::SeEmitter::getName\n// Symbole manglé : getName\n// undefined8 __thiscall al::SeEmitter::getName(SeEmitter *this); @ .text::00b81bc4\n\n\n/* al::SeEmitter::getName() const */\n\nundefined8 __thiscall al::SeEmitter::getName(SeEmitter *this)\n\n{\n  return **(undefined8 **)(this + 0x10);\n}\n\n");

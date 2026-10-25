@@ -1,0 +1,1 @@
+DOC.got("e/1060",{"16679":{"q":"al::(anonymous@lib/al/Library/MapObj/ChildStep)::(anonymous)","decl":{"f":"lib/al/Library/MapObj/ChildStep.cpp","l":14,"sig":"NERVES_MAKE_STRUCT(ChildStep, Wait)","end":14,"fi":751},"size":8,"align":8,"complete":true,"fields":[{"n":"Wait","t":"ChildStepNrvWait","off":0,"sz":8,"acc":"public","bits":null,"l":14,"cm":null,"ti":16681}]}});

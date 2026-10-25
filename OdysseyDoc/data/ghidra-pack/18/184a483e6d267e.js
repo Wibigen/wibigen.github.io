@@ -1,0 +1,1 @@
+DOC.got("gh/RootTask/enter.cpp","// Nom démêlé : RootTask::enter\n// Symbole manglé : enter\n// void RootTask::enter(void); @ .text::006392c4\n\n\n/* RootTask::enter() */\n\nvoid RootTask::enter(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("src/90","#pragma once\n\n#include <nn/gfx/detail/gfx_Misc.h>\n#include <nn/nn_BitTypes.h>\n\nnamespace nn::gfx {\n\nstruct MemoryPoolInfoData {\n    Bit32 memoryPoolProperty;\n    uint32_t memorySize;\n    detail::Ptr<void> pMemory;\n    char reserved[16];\n};\n\n}  // namespace nn::gfx");

@@ -1,0 +1,1 @@
+DOC.got("src/485","#pragma once\n\nnamespace al {\nclass CameraPoser;\n\ntemplate <typename T>\nCameraPoser* createCameraPoserFunction(const char* cameraPoserName) {\n    return new T(cameraPoserName);\n}\n}  // namespace al\n");

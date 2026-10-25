@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/zerohex.cpp","// Nom démêlé : nn::nex::zerohex\n// Symbole manglé : zerohex\n// void nn::nex::zerohex(StringStream *param_1); @ .text::007205e4\n\n\n/* nn::nex::zerohex(nn::nex::StringStream&) */\n\nvoid nn::nex::zerohex(StringStream *param_1)\n\n{\n  param_1[0x120] = (StringStream)0x1;\n  param_1[0x123] = (StringStream)0x1;\n  return;\n}\n\n");

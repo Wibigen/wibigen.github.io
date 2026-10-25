@@ -1,0 +1,1 @@
+DOC.got("gh/LavaWave/getTypeName_.text_003b4048.cpp","// Nom démêlé : LavaWave::getTypeName\n// Symbole manglé : getTypeName\n// undefined8 __thiscall LavaWave::getTypeName(LavaWave *this); @ .text::003b4048\n\n\n/* non-virtual thunk to LavaWave::getTypeName() const */\n\nundefined8 __thiscall LavaWave::getTypeName(LavaWave *this)\n\n{\n  return 0x191d502;\n}\n\n");

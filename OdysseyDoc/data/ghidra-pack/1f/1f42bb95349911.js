@@ -1,0 +1,1 @@
+DOC.got("gh/agl/DisplayList/resume_.text_00879f60.cpp","// Nom démêlé : agl::DisplayList::resume\n// Symbole manglé : resume\n// void agl::DisplayList::resume(void *param_1,ulong param_2); @ .text::00879f60\n\n\n/* agl::DisplayList::resume(void*, unsigned long) */\n\nvoid agl::DisplayList::resume(void *param_1,ulong param_2)\n\n{\n  return;\n}\n\n");

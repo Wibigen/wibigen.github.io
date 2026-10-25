@@ -1,0 +1,1 @@
+DOC.got("gh/CitySignal/movement_.text_0034c644.cpp","// Nom démêlé : CitySignal::movement\n// Symbole manglé : movement\n// void CitySignal::movement(void); @ .text::0034c644\n\n\n/* CitySignal::movement() */\n\nvoid CitySignal::movement(void)\n\n{\n  return;\n}\n\n");

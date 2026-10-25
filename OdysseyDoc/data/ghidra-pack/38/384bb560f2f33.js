@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/StepSequenceJob/AddStepActivity.cpp","// Nom démêlé : nn::nex::StepSequenceJob::AddStepActivity\n// Symbole manglé : AddStepActivity\n// void nn::nex::StepSequenceJob::AddStepActivity(void); @ .text::00744de4\n\n\n/* nn::nex::StepSequenceJob::AddStepActivity() */\n\nvoid nn::nex::StepSequenceJob::AddStepActivity(void)\n\n{\n  return;\n}\n\n");

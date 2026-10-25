@@ -1,0 +1,1 @@
+DOC.got("gh/nn/font/ScalableFont/GetType_.text_00befdd4.cpp","// Nom démêlé : nn::font::ScalableFont::GetType\n// Symbole manglé : GetType\n// undefined8 nn::font::ScalableFont::GetType(void); @ .text::00befdd4\n\n\n/* nn::font::ScalableFont::GetType() const */\n\nundefined8 nn::font::ScalableFont::GetType(void)\n\n{\n  return 2;\n}\n\n");

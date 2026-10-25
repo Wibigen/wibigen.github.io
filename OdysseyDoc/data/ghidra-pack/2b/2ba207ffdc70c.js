@@ -1,0 +1,1 @@
+DOC.got("gh/ElectricWireKoopa/exeWait_.text_0036e550.cpp","// Nom démêlé : ElectricWireKoopa::exeWait\n// Symbole manglé : exeWait\n// void ElectricWireKoopa::exeWait(void); @ .text::0036e550\n\n\n/* ElectricWireKoopa::exeWait() */\n\nvoid ElectricWireKoopa::exeWait(void)\n\n{\n  return;\n}\n\n");

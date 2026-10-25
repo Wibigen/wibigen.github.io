@@ -1,0 +1,1 @@
+DOC.got("gh/FukuwaraiFaceParts/control_.text_00492ac0.cpp","// Nom démêlé : FukuwaraiFaceParts::control\n// Symbole manglé : control\n// void FukuwaraiFaceParts::control(void); @ .text::00492ac0\n\n\n/* FukuwaraiFaceParts::control() */\n\nvoid FukuwaraiFaceParts::control(void)\n\n{\n  return;\n}\n\n");

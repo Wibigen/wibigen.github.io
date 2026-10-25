@@ -1,0 +1,1 @@
+DOC.got("e/4277",{"34198":{"q":"nn::ui2d::ResParts","decl":{"f":"lib/NintendoSDK/include/nn/ui2d/Parts.h","l":13,"sig":"struct ResParts","fi":194},"complete":false,"fwd":[["lib/NintendoSDK/include/nn/ui2d/Parts.h",13]]}});

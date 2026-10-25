@@ -1,0 +1,1 @@
+DOC.got("gh/Candlestand/isBurnUp.cpp","// Nom démêlé : Candlestand::isBurnUp\n// Symbole manglé : isBurnUp\n// void __thiscall Candlestand::isBurnUp(Candlestand *this); @ .text::0032cde4\n\n\n/* Candlestand::isBurnUp() const */\n\nvoid __thiscall Candlestand::isBurnUp(Candlestand *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)&DAT_01f636e0);\n  return;\n}\n\n");

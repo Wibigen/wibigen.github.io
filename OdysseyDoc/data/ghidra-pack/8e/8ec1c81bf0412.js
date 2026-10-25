@@ -1,0 +1,1 @@
+DOC.got("gh/al/CameraTargetBase/isInWater.cpp","// Nom démêlé : al::CameraTargetBase::isInWater\n// Symbole manglé : isInWater\n// undefined8 al::CameraTargetBase::isInWater(void); @ .text::0013b0dc\n\n\n/* al::CameraTargetBase::isInWater() const */\n\nundefined8 al::CameraTargetBase::isInWater(void)\n\n{\n  return 0;\n}\n\n");

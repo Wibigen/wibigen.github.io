@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/ConsoleIO/GetChar.cpp","// Nom démêlé : nn::nex::ConsoleIO::GetChar\n// Symbole manglé : GetChar\n// undefined8 nn::nex::ConsoleIO::GetChar(bool param_1); @ .text::0070d9dc\n\n\n/* nn::nex::ConsoleIO::GetChar(bool) */\n\nundefined8 nn::nex::ConsoleIO::GetChar(bool param_1)\n\n{\n  return 0;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/Mofumofu/isEnableSkipDemo_.text_001a82a8.cpp","// Nom démêlé : Mofumofu::isEnableSkipDemo\n// Symbole manglé : isEnableSkipDemo\n// undefined8 Mofumofu::isEnableSkipDemo(void); @ .text::001a82a8\n\n\n/* Mofumofu::isEnableSkipDemo() const */\n\nundefined8 Mofumofu::isEnableSkipDemo(void)\n\n{\n  return 1;\n}\n\n");

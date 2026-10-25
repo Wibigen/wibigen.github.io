@@ -1,0 +1,1 @@
+DOC.got("gh/ProjectItemDirector/endInit_.text_005c1848.cpp","// Nom démêlé : ProjectItemDirector::endInit\n// Symbole manglé : endInit\n// void ProjectItemDirector::endInit(void); @ .text::005c1848\n\n\n/* ProjectItemDirector::endInit() */\n\nvoid ProjectItemDirector::endInit(void)\n\n{\n  return;\n}\n\n");

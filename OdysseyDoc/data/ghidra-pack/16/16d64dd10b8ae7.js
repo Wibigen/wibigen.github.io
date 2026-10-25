@@ -1,0 +1,1 @@
+DOC.got("gh/sead/Job/Job_.text_00cee064.cpp","// Nom démêlé : sead::Job::~Job\n// Symbole manglé : ~Job\n// void __thiscall sead::Job::~Job(Job *this); @ .text::00cee064\n\n\n/* sead::Job::~Job() */\n\nvoid __thiscall sead::Job::~Job(Job *this)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/PrintErrorContentsInfo.cpp","// Nom démêlé : PrintErrorContentsInfo\n// Symbole manglé : PrintErrorContentsInfo\n// void PrintErrorContentsInfo(void); @ .text::00720c9c\n\n\n/* WARNING: Unknown calling convention -- yet parameter storage is locked */\n/* PrintErrorContentsInfo() */\n\nvoid PrintErrorContentsInfo(void)\n\n{\n  return;\n}\n\n");

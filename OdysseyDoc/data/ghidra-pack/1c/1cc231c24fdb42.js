@@ -1,0 +1,1 @@
+DOC.got("gh/GiantWanderBoss/isEnableSkipDemo_.text_00167048.cpp","// Nom démêlé : GiantWanderBoss::isEnableSkipDemo\n// Symbole manglé : isEnableSkipDemo\n// undefined8 GiantWanderBoss::isEnableSkipDemo(void); @ .text::00167048\n\n\n/* GiantWanderBoss::isEnableSkipDemo() const */\n\nundefined8 GiantWanderBoss::isEnableSkipDemo(void)\n\n{\n  return 1;\n}\n\n");

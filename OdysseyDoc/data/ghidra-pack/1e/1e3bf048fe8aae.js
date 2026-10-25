@@ -1,0 +1,1 @@
+DOC.got("gh/al/isEnablePadWaveRumble.cpp","// Nom démêlé : al::isEnablePadWaveRumble\n// Symbole manglé : isEnablePadWaveRumble\n// undefined8 al::isEnablePadWaveRumble(PadRumbleDirector *param_1); @ .text::0096b84c\n\n\n/* al::isEnablePadWaveRumble(al::PadRumbleDirector const*) */\n\nundefined8 al::isEnablePadWaveRumble(PadRumbleDirector *param_1)\n\n{\n  return 1;\n}\n\n");

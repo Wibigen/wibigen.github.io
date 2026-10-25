@@ -1,0 +1,1 @@
+DOC.got("gh/al/AreaObjDirector/endInit_.text_00903ee0.cpp","// Nom démêlé : al::AreaObjDirector::endInit\n// Symbole manglé : endInit\n// void al::AreaObjDirector::endInit(void); @ .text::00903ee0\n\n\n/* al::AreaObjDirector::endInit() */\n\nvoid al::AreaObjDirector::endInit(void)\n\n{\n  return;\n}\n\n");

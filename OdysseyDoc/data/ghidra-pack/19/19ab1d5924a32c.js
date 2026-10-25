@@ -1,0 +1,1 @@
+DOC.got("gh/al/ParameterC4f/getParamType_.text_003d5edc.cpp","// Nom démêlé : al::ParameterC4f::getParamType\n// Symbole manglé : getParamType\n// undefined8 al::ParameterC4f::getParamType(void); @ .text::003d5edc\n\n\n/* al::ParameterC4f::getParamType() const */\n\nundefined8 al::ParameterC4f::getParamType(void)\n\n{\n  return 10;\n}\n\n");

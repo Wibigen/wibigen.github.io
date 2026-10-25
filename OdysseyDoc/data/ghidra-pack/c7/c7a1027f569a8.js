@@ -1,0 +1,1 @@
+DOC.got("gh/al/MaterialLightDirector/getName_.text_009c118c.cpp","// Nom démêlé : al::MaterialLightDirector::getName\n// Symbole manglé : getName\n// undefined8 al::MaterialLightDirector::getName(void); @ .text::009c118c\n\n\n/* al::MaterialLightDirector::getName() const */\n\nundefined8 al::MaterialLightDirector::getName(void)\n\n{\n  return 0x196c6cb;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("src/532","#pragma once\n\n#include <basis/seadTypes.h>\n\nnamespace al {\nstruct PadDataPack;\n\nclass IUsePadDataWriter {\npublic:\n    virtual void write(const PadDataPack& frameData) = 0;\n    virtual void open() = 0;\n    virtual void close() = 0;\n};\n}  // namespace al\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Key/ToString_.text_0073ba94.cpp","// Nom démêlé : nn::nex::Key::ToString\n// Symbole manglé : ToString\n// void nn::nex::Key::ToString(void); @ .text::0073ba94\n\n\n/* nn::nex::Key::ToString() const */\n\nvoid nn::nex::Key::ToString(void)\n\n{\n  Key *in_x0;\n  String *in_x8;\n  \n  String::String(in_x8);\n  ExtractToString(in_x0,in_x8);\n  return;\n}\n\n");

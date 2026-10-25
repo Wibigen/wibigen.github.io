@@ -1,0 +1,1 @@
+DOC.got("gh/ScenarioStartCamera/getMaxPlayStep.cpp","// Nom démêlé : ScenarioStartCamera::getMaxPlayStep\n// Symbole manglé : getMaxPlayStep\n// undefined8 ScenarioStartCamera::getMaxPlayStep(void); @ .text::001d0344\n\n\n/* ScenarioStartCamera::getMaxPlayStep() */\n\nundefined8 ScenarioStartCamera::getMaxPlayStep(void)\n\n{\n  return 0x1e0;\n}\n\n");

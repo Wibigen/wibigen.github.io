@@ -1,0 +1,1 @@
+DOC.got("gh/BossMagma/isEnableSkipDemo_.text_0012f810.cpp","// Nom démêlé : BossMagma::isEnableSkipDemo\n// Symbole manglé : isEnableSkipDemo\n// undefined8 BossMagma::isEnableSkipDemo(void); @ .text::0012f810\n\n\n/* BossMagma::isEnableSkipDemo() const */\n\nundefined8 BossMagma::isEnableSkipDemo(void)\n\n{\n  return 1;\n}\n\n");

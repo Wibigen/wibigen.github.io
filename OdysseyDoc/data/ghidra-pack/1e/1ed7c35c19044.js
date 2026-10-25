@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Platform/GetProcessID.cpp","// Nom démêlé : nn::nex::Platform::GetProcessID\n// Symbole manglé : GetProcessID\n// undefined8 nn::nex::Platform::GetProcessID(void); @ .text::00717088\n\n\n/* nn::nex::Platform::GetProcessID() */\n\nundefined8 nn::nex::Platform::GetProcessID(void)\n\n{\n  return 0;\n}\n\n");

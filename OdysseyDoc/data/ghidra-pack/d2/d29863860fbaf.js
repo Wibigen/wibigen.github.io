@@ -1,0 +1,1 @@
+DOC.got("gh/FUN_.text_00ce7128.cpp","// Nom démêlé : FUN_.text__00ce7128\n// Symbole manglé : FUN_.text__00ce7128\n// int FUN_.text__00ce7128(void); @ .text::00ce7128\n\n\nint FUN__text__00ce7128(void)\n\n{\n  uint uVar1;\n  \n  uVar1 = sead::Random::getU32(*(Random **)PTR_sInstance_01f5b258);\n  return (uVar1 & 2) - 1;\n}\n\n");

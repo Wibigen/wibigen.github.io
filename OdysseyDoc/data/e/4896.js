@@ -1,0 +1,1 @@
+DOC.got("e/4896",{"398":{"q":"(anonymous@src/MapObj/TestMusaGraph)::(anonymous)","decl":{"f":"src/MapObj/TestMusaGraph.cpp","l":15,"sig":"NERVES_MAKE_STRUCT(TestMusaGraph, Wait)","end":15,"fi":1996},"size":8,"align":8,"complete":true,"fields":[{"n":"Wait","t":"TestMusaGraphNrvWait","off":0,"sz":8,"acc":"public","bits":null,"l":15,"cm":null,"ti":3005}]}});

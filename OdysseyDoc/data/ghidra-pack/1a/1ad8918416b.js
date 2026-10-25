@@ -1,0 +1,1 @@
+DOC.got("gh/al/calcFriction.cpp","// Nom démêlé : al::calcFriction\n// Symbole manglé : calcFriction\n// float al::calcFriction(float param_1,float param_2); @ .text::00a23ccc\n\n\n/* al::calcFriction(float, float) */\n\nfloat al::calcFriction(float param_1,float param_2)\n\n{\n  return (param_1 + param_2) / param_2;\n}\n\n");

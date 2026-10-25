@@ -1,0 +1,1 @@
+DOC.got("e/13907",{"247":{"q":"nn::nlibsdk::heap","files":["lib/NintendoSDK/include/nn/mem.h"]}});

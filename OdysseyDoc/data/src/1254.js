@@ -1,0 +1,1 @@
+DOC.got("src/1254","#pragma once\n\n#include \"Project/Play/Graphics/IUseGridMesh.h\"\n\nnamespace al {\nclass GridMeshXZ : public IUseGridMesh {};\n}  // namespace al\n");

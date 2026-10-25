@@ -1,0 +1,1 @@
+DOC.got("gh/al/ByamlData/getValue_.text_00b2d828.cpp","// Nom démêlé : al::ByamlData::getValue\n// Symbole manglé : getValue\n// undefined4 __thiscall al::ByamlData::getValue(ByamlData *this); @ .text::00b2d828\n\n\n/* al::ByamlData::getValue() const */\n\nundefined4 __thiscall al::ByamlData::getValue(ByamlData *this)\n\n{\n  return *(undefined4 *)this;\n}\n\n");

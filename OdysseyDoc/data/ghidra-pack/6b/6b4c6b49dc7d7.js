@@ -1,0 +1,1 @@
+DOC.got("gh/sead/Thread/initStackCheck.cpp","// Nom démêlé : sead::Thread::initStackCheck_\n// Symbole manglé : initStackCheck_\n// void sead::Thread::initStackCheck_(void); @ .text::0085b078\n\n\n/* sead::Thread::initStackCheck_() */\n\nvoid sead::Thread::initStackCheck_(void)\n\n{\n  return;\n}\n\n");

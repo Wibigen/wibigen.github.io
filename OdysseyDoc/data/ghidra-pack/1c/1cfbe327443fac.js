@@ -1,0 +1,1 @@
+DOC.got("gh/ShibakenMoveAnimCtrl/exeWalkSniff.cpp","// Nom démêlé : ShibakenMoveAnimCtrl::exeWalkSniff\n// Symbole manglé : exeWalkSniff\n// void ShibakenMoveAnimCtrl::exeWalkSniff(void); @ .text::004ca8c8\n\n\n/* ShibakenMoveAnimCtrl::exeWalkSniff() */\n\nvoid ShibakenMoveAnimCtrl::exeWalkSniff(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/WorldList/getWorldNum_.text_0063fd10.cpp","// Nom démêlé : WorldList::getWorldNum\n// Symbole manglé : getWorldNum\n// undefined4 __thiscall WorldList::getWorldNum(WorldList *this); @ .text::0063fd10\n\n\n/* WorldList::getWorldNum() const */\n\nundefined4 __thiscall WorldList::getWorldNum(WorldList *this)\n\n{\n  return *(undefined4 *)this;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/getCollidedWallPos_.text_009d93b8.cpp","// Nom démêlé : al::getCollidedWallPos\n// Symbole manglé : getCollidedWallPos\n// long al::getCollidedWallPos(LiveActor *param_1); @ .text::009d93b8\n\n\n/* al::getCollidedWallPos(al::LiveActor const*) */\n\nlong al::getCollidedWallPos(LiveActor *param_1)\n\n{\n  return *(long *)(param_1 + 0x78) + 0x18c;\n}\n\n");

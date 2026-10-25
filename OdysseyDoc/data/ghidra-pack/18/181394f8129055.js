@@ -1,0 +1,1 @@
+DOC.got("gh/TrampleSwitchTimer/exeFreeze_.text_0043c3c0.cpp","// Nom démêlé : TrampleSwitchTimer::exeFreeze\n// Symbole manglé : exeFreeze\n// void TrampleSwitchTimer::exeFreeze(void); @ .text::0043c3c0\n\n\n/* TrampleSwitchTimer::exeFreeze() */\n\nvoid TrampleSwitchTimer::exeFreeze(void)\n\n{\n  return;\n}\n\n");

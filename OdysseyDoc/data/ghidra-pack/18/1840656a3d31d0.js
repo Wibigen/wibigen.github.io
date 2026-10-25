@@ -1,0 +1,1 @@
+DOC.got("gh/HipDropTile/exeWait_.text_003a4dc8.cpp","// Nom démêlé : HipDropTile::exeWait\n// Symbole manglé : exeWait\n// void HipDropTile::exeWait(void); @ .text::003a4dc8\n\n\n/* HipDropTile::exeWait() */\n\nvoid HipDropTile::exeWait(void)\n\n{\n  return;\n}\n\n");

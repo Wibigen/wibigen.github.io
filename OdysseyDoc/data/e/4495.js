@@ -1,0 +1,1 @@
+DOC.got("e/4495",{"36332":{"q":"nvn::SeparateSamplerHandle","decl":{"f":"lib/NintendoSDK/include/nvn/nvn_Cpp.h","l":119,"sig":"struct SeparateSamplerHandle","end":121,"fi":224},"size":8,"align":8,"complete":true,"fields":[{"n":"value","t":"uint64_t","off":0,"sz":8,"acc":"public","bits":null,"l":120,"cm":null,"ti":null}]}});

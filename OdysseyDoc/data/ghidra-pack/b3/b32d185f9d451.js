@@ -1,0 +1,1 @@
+DOC.got("gh/sead/UnitHeap/genInformation_.text_00c5d970.cpp","// Nom démêlé : sead::UnitHeap::genInformation_\n// Symbole manglé : genInformation_\n// void sead::UnitHeap::genInformation_(Context *param_1); @ .text::00c5d970\n\n\n/* sead::UnitHeap::genInformation_(sead::hostio::Context*) */\n\nvoid sead::UnitHeap::genInformation_(Context *param_1)\n\n{\n  return;\n}\n\n");

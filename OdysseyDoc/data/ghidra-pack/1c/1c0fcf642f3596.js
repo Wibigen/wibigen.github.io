@@ -1,0 +1,1 @@
+DOC.got("gh/MiniGameMenu/exeDecide_.text_002fb254.cpp","// Nom démêlé : MiniGameMenu::exeDecide\n// Symbole manglé : exeDecide\n// void MiniGameMenu::exeDecide(void); @ .text::002fb254\n\n\n/* MiniGameMenu::exeDecide() */\n\nvoid MiniGameMenu::exeDecide(void)\n\n{\n  return;\n}\n\n");

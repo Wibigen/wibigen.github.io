@@ -1,0 +1,1 @@
+DOC.got("gh/BazookaElectric/exeWaitPossession.cpp","// Nom démêlé : BazookaElectric::exeWaitPossession\n// Symbole manglé : exeWaitPossession\n// void BazookaElectric::exeWaitPossession(void); @ .text::00319770\n\n\n/* BazookaElectric::exeWaitPossession() */\n\nvoid BazookaElectric::exeWaitPossession(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/nn/atk/EffectBase/EffectBase_.text_00bc867c.cpp","// Nom démêlé : nn::atk::EffectBase::~EffectBase\n// Symbole manglé : ~EffectBase\n// void __thiscall nn::atk::EffectBase::~EffectBase(EffectBase *this); @ .text::00bc867c\n\n\n/* nn::atk::EffectBase::~EffectBase() */\n\nvoid __thiscall nn::atk::EffectBase::~EffectBase(EffectBase *this)\n\n{\n  return;\n}\n\n");

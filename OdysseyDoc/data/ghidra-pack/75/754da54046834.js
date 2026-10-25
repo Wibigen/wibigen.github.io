@@ -1,0 +1,1 @@
+DOC.got("gh/al/getCameraCodeName.cpp","// Nom démêlé : al::getCameraCodeName\n// Symbole manglé : getCameraCodeName\n// void al::getCameraCodeName(Triangle *param_1); @ .text::0094bab8\n\n\n/* al::getCameraCodeName(al::Triangle const&) */\n\nvoid al::getCameraCodeName(Triangle *param_1)\n\n{\n  getCollisionCodeName(param_1,(char *)0x1967555);\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/TreasureBoxSequential/exeOpenEnd.cpp","// Nom démêlé : TreasureBoxSequential::exeOpenEnd\n// Symbole manglé : exeOpenEnd\n// void TreasureBoxSequential::exeOpenEnd(void); @ .text::0043fb64\n\n\n/* TreasureBoxSequential::exeOpenEnd() */\n\nvoid TreasureBoxSequential::exeOpenEnd(void)\n\n{\n  return;\n}\n\n");

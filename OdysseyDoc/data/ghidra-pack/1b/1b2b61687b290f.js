@@ -1,0 +1,1 @@
+DOC.got("gh/CounterLifeUp/exeWait_.text_002e8c6c.cpp","// Nom démêlé : CounterLifeUp::exeWait\n// Symbole manglé : exeWait\n// void CounterLifeUp::exeWait(void); @ .text::002e8c6c\n\n\n/* CounterLifeUp::exeWait() */\n\nvoid CounterLifeUp::exeWait(void)\n\n{\n  return;\n}\n\n");

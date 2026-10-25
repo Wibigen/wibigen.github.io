@@ -1,0 +1,1 @@
+DOC.got("src/356","#pragma once\n\nnamespace al {\nclass AreaShape;\n\ntemplate <typename T>\nAreaShape* createAreaShapeFunction() {\n    return new T();\n}\n}  // namespace al\n");

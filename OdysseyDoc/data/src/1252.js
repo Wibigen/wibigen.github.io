@@ -1,0 +1,1 @@
+DOC.got("src/1252","#pragma once\n\n#include <heap/seadHeapMgr.h>\n\nnamespace al {\n\nclass SceneHeapSetter : public sead::ScopedCurrentHeapSetter {\npublic:\n    explicit SceneHeapSetter();\n\n    sead::Heap* getSceneHeap() const { return mSceneHeap; }\n\nprivate:\n    sead::Heap* mSceneHeap = nullptr;\n};\n\n}  // namespace al\n");

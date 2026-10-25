@@ -1,0 +1,1 @@
+DOC.got("gh/al/ByamlWriterContainer/addBool_.text_00b32b0c.cpp","// Nom démêlé : al::ByamlWriterContainer::addBool\n// Symbole manglé : addBool\n// bool al::ByamlWriterContainer::addBool(bool param_1); @ .text::00b32b0c\n\n\n/* al::ByamlWriterContainer::addBool(bool) */\n\nbool al::ByamlWriterContainer::addBool(bool param_1)\n\n{\n  return param_1;\n}\n\n");

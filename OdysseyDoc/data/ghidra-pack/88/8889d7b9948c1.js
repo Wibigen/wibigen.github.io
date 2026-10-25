@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/ProfilingUnit/Disable.cpp","// Nom démêlé : nn::nex::ProfilingUnit::Disable\n// Symbole manglé : Disable\n// void nn::nex::ProfilingUnit::Disable(void); @ .text::00717140\n\n\n/* nn::nex::ProfilingUnit::Disable() */\n\nvoid nn::nex::ProfilingUnit::Disable(void)\n\n{\n  *PTR_01f583e0 = 0;\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/Statue/exeRevive_.text_0042bd38.cpp","// Nom démêlé : Statue::exeRevive\n// Symbole manglé : exeRevive\n// void __thiscall Statue::exeRevive(Statue *this); @ .text::0042bd38\n\n\n/* Statue::exeRevive() */\n\nvoid __thiscall Statue::exeRevive(Statue *this)\n\n{\n  al::updateNerveStateAndNextNerve((IUseNerve *)this,(Nerve *)0x1e37620);\n  return;\n}\n\n");

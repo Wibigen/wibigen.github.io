@@ -1,0 +1,1 @@
+DOC.got("src/94","#pragma once\n\n#include <nn/gfx/detail/gfx_DataContainer.h>\n#include <nn/gfx/gfx_QueueInfoData.h>\n\nnamespace nn::gfx {\n\nclass QueueInfo : public detail::DataContainer<QueueInfoData> {\npublic:\n    QueueInfo();\n    void SetDefault();\n    void SetCapability(int);\n    int GetCapability() const;\n};\n\n}  // namespace nn::gfx");

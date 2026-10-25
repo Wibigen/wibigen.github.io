@@ -1,0 +1,1 @@
+DOC.got("gh/sead/PrintStreamSrc/isEOF_.text_00857078.cpp","// Nom démêlé : sead::PrintStreamSrc::isEOF\n// Symbole manglé : isEOF\n// undefined8 sead::PrintStreamSrc::isEOF(void); @ .text::00857078\n\n\n/* sead::PrintStreamSrc::isEOF() */\n\nundefined8 sead::PrintStreamSrc::isEOF(void)\n\n{\n  return 0;\n}\n\n");

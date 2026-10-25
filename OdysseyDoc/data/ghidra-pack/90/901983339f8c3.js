@@ -1,0 +1,1 @@
+DOC.got("gh/al/SeDemoProcInfo/dummy_.text_00af1194.cpp","// Nom démêlé : al::SeDemoProcInfo::dummy\n// Symbole manglé : dummy\n// void al::SeDemoProcInfo::dummy(void); @ .text::00af1194\n\n\n/* al::SeDemoProcInfo::dummy() */\n\nvoid al::SeDemoProcInfo::dummy(void)\n\n{\n  return;\n}\n\n");

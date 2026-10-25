@@ -1,0 +1,1 @@
+DOC.got("src/2023","#pragma once\n\n#include \"Library/LiveActor/LiveActor.h\"\n\nclass WorldMapEarth : public al::LiveActor {\npublic:\n    WorldMapEarth(const char* name);\n    void init(const al::ActorInitInfo& info) override;\n    void control() override;\n};\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/Shine/setShopShine.cpp","// Nom démêlé : Shine::setShopShine\n// Symbole manglé : setShopShine\n// void __thiscall Shine::setShopShine(Shine *this); @ .text::002d06e8\n\n\n/* Shine::setShopShine() */\n\nvoid __thiscall Shine::setShopShine(Shine *this)\n\n{\n  this[0x2a8] = (Shine)0x1;\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/KoopaCap/isSpinMove.cpp","// Nom démêlé : KoopaCap::isSpinMove\n// Symbole manglé : isSpinMove\n// void __thiscall KoopaCap::isSpinMove(KoopaCap *this); @ .text::001852b8\n\n\n/* KoopaCap::isSpinMove() const */\n\nvoid __thiscall KoopaCap::isSpinMove(KoopaCap *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1d6c8d8);\n  return;\n}\n\n");

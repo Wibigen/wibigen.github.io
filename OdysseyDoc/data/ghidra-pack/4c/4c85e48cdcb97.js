@@ -1,0 +1,1 @@
+DOC.got("gh/DamageBall/setLife.cpp","// Nom démêlé : DamageBall::setLife\n// Symbole manglé : setLife\n// void __thiscall DamageBall::setLife(DamageBall *this,int param_1); @ .text::00351f0c\n\n\n/* DamageBall::setLife(int) */\n\nvoid __thiscall DamageBall::setLife(DamageBall *this,int param_1)\n\n{\n  *(int *)(this + 0x118) = param_1;\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/AppearSwitchTimer/exeOffWait.cpp","// Nom démêlé : AppearSwitchTimer::exeOffWait\n// Symbole manglé : exeOffWait\n// void AppearSwitchTimer::exeOffWait(void); @ .text::00317d20\n\n\n/* AppearSwitchTimer::exeOffWait() */\n\nvoid AppearSwitchTimer::exeOffWait(void)\n\n{\n  return;\n}\n\n");

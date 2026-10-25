@@ -1,0 +1,1 @@
+DOC.got("src/2531","#pragma once\n\nnamespace rs {\nbool isModeE3Rom();\nbool isModeE3MovieRom();\nbool isModeE3LiveRom();\nbool isModeDiverRom();\nbool isModeJungleGymRom();\nbool isModeDiverOrJungleGymRom();\nbool isModeMovieRom();\nbool isModeEpdMovieRom();\n}  // namespace rs\n");

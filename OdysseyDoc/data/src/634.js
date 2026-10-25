@@ -1,0 +1,1 @@
+DOC.got("src/634","#pragma once\n\nnamespace al {\n\nclass IUseExecutor {\npublic:\n    virtual void execute() = 0;\n\n    virtual void draw() const {}\n};\n\nstatic_assert(sizeof(IUseExecutor) == 0x8);\n\n}  // namespace al\n");

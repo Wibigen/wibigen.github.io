@@ -1,0 +1,1 @@
+DOC.got("gh/alsd/AudioSystemNin/genMessage_.text_00b42a68.cpp","// Nom démêlé : alsd::AudioSystemNin::genMessage\n// Symbole manglé : genMessage\n// void alsd::AudioSystemNin::genMessage(Context *param_1); @ .text::00b42a68\n\n\n/* alsd::AudioSystemNin::genMessage(sead::hostio::Context*) */\n\nvoid alsd::AudioSystemNin::genMessage(Context *param_1)\n\n{\n  return;\n}\n\n");

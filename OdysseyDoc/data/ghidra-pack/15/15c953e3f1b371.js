@@ -1,0 +1,1 @@
+DOC.got("gh/GameDataFile/getShopNpcIconNumMax.cpp","// Nom démêlé : GameDataFile::getShopNpcIconNumMax\n// Symbole manglé : getShopNpcIconNumMax\n// undefined8 GameDataFile::getShopNpcIconNumMax(void); @ .text::00624c38\n\n\n/* GameDataFile::getShopNpcIconNumMax() const */\n\nundefined8 GameDataFile::getShopNpcIconNumMax(void)\n\n{\n  return 4;\n}\n\n");

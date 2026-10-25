@@ -1,0 +1,1 @@
+DOC.got("gh/al/HtmlViewer/HtmlViewer.cpp","// Nom démêlé : al::HtmlViewer::HtmlViewer\n// Symbole manglé : HtmlViewer\n// void __thiscall al::HtmlViewer::HtmlViewer(HtmlViewer *this); @ .text::00a5b93c\n\n\n/* al::HtmlViewer::HtmlViewer() */\n\nvoid __thiscall al::HtmlViewer::HtmlViewer(HtmlViewer *this)\n\n{\n  return;\n}\n\n");

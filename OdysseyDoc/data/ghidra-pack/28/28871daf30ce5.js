@@ -1,0 +1,1 @@
+DOC.got("gh/al/ByamlWriterContainer/isContainer_.text_00b32b04.cpp","// Nom démêlé : al::ByamlWriterContainer::isContainer\n// Symbole manglé : isContainer\n// undefined8 al::ByamlWriterContainer::isContainer(void); @ .text::00b32b04\n\n\n/* al::ByamlWriterContainer::isContainer() const */\n\nundefined8 al::ByamlWriterContainer::isContainer(void)\n\n{\n  return 1;\n}\n\n");

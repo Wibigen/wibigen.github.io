@@ -1,0 +1,1 @@
+DOC.got("gh/al/Sequence/init_.text_00af223c.cpp","// Nom démêlé : al::Sequence::init\n// Symbole manglé : init\n// void al::Sequence::init(SequenceInitInfo *param_1); @ .text::00af223c\n\n\n/* al::Sequence::init(al::SequenceInitInfo const&) */\n\nvoid al::Sequence::init(SequenceInitInfo *param_1)\n\n{\n  return;\n}\n\n");

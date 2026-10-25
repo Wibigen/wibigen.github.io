@@ -1,0 +1,1 @@
+DOC.got("e/2147",{"22458":{"q":"al::SeInterpolateTypeId","decl":{"f":"lib/al/Library/Se/Function/SeDbFunction.h","l":11,"sig":"class SeInterpolateTypeId","fi":1065},"complete":false,"fwd":[["lib/al/Library/Se/Function/SeDbFunction.h",11]]}});

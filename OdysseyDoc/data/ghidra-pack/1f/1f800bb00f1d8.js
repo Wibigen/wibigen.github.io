@@ -1,0 +1,1 @@
+DOC.got("gh/GolemClimb/endShout.cpp","// Nom démêlé : GolemClimb::endShout\n// Symbole manglé : endShout\n// void GolemClimb::endShout(void); @ .text::001751ac\n\n\n/* GolemClimb::endShout() */\n\nvoid GolemClimb::endShout(void)\n\n{\n  return;\n}\n\n");

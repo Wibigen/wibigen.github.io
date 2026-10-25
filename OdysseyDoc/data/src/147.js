@@ -1,0 +1,1 @@
+DOC.got("src/147","#pragma once\n\n#include <nn/types.h>\n\nnamespace nn::irsensor {\nstruct ImageTransferProcessorState {\n    s64 samplingNumber;\n    s32 ambientNoiseLevel;\n    u8 reserved[4];\n};\n}  // namespace nn::irsensor\n");

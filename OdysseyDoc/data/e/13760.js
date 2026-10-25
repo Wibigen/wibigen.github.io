@@ -1,0 +1,1 @@
+DOC.got("e/13760",{"108":{"q":"ams::capsrv::detail","files":["lib/NintendoSDK/include/vapours/results/capsrv_results.hpp"]}});

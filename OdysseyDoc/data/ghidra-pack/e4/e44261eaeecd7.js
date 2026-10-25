@@ -1,0 +1,1 @@
+DOC.got("gh/eui/Screen/doCloseStart.cpp","// Nom démêlé : eui::Screen::doCloseStart_\n// Symbole manglé : doCloseStart_\n// void eui::Screen::doCloseStart_(void); @ .text::008ef84c\n\n\n/* eui::Screen::doCloseStart_() */\n\nvoid eui::Screen::doCloseStart_(void)\n\n{\n  return;\n}\n\n");

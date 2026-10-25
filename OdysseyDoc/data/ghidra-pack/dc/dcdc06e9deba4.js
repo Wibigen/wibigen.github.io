@@ -1,0 +1,1 @@
+DOC.got("gh/Koopa/appear_.text_0017e15c.cpp","// Nom démêlé : Koopa::appear\n// Symbole manglé : appear\n// void __thiscall Koopa::appear(Koopa *this); @ .text::0017e15c\n\n\n/* Koopa::appear() */\n\nvoid __thiscall Koopa::appear(Koopa *this)\n\n{\n  al::LiveActor::appear((LiveActor *)this);\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1d6b430);\n  return;\n}\n\n");

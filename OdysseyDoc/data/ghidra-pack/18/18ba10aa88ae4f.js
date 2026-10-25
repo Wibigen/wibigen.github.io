@@ -1,0 +1,1 @@
+DOC.got("gh/agl/lyr/Layer/postCalcCommandImpl.cpp","// Nom démêlé : agl::lyr::Layer::postCalcCommandImpl\n// Symbole manglé : postCalcCommandImpl\n// void agl::lyr::Layer::postCalcCommandImpl(void); @ .text::00ce5f30\n\n\n/* agl::lyr::Layer::postCalcCommandImpl() */\n\nvoid agl::lyr::Layer::postCalcCommandImpl(void)\n\n{\n  return;\n}\n\n");

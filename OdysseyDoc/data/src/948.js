@@ -1,0 +1,1 @@
+DOC.got("src/948","#pragma once\n\n#include \"Library/Area/AreaObj.h\"\n\nnamespace al {\nclass SePlayArea : public AreaObj {\npublic:\n    SePlayArea(const char* name);\n\n    void init(const AreaInitInfo& info) override;\n\nprivate:\n    const char* mSePlayName = nullptr;\n};\n}  // namespace al\n");

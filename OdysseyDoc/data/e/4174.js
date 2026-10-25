@@ -1,0 +1,1 @@
+DOC.got("e/4174",{"33527":{"q":"nn::nfp::DeviceHandle","decl":{"f":"lib/NintendoSDK/include/nn/nfp/nfp_types.h","l":7,"sig":"struct DeviceHandle","end":9,"fi":157},"size":8,"align":8,"complete":true,"fwd":[["lib/NintendoSDK/include/nn/nfp/nfp.h",17]],"fields":[{"n":"m_Id","t":"u64","off":0,"sz":8,"acc":"public","bits":null,"l":8,"cm":null,"ti":49377}]}});

@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/FileStorageDevice/Delete.cpp","// Nom démêlé : nn::nex::FileStorageDevice::Delete\n// Symbole manglé : Delete\n// undefined8 nn::nex::FileStorageDevice::Delete(String *param_1); @ .text::00739a90\n\n\n/* nn::nex::FileStorageDevice::Delete(nn::nex::String const&) */\n\nundefined8 nn::nex::FileStorageDevice::Delete(String *param_1)\n\n{\n  return 0;\n}\n\n");

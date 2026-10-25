@@ -1,0 +1,1 @@
+DOC.got("gh/al/CameraTargetBase/isWallCatch.cpp","// Nom démêlé : al::CameraTargetBase::isWallCatch\n// Symbole manglé : isWallCatch\n// undefined8 al::CameraTargetBase::isWallCatch(void); @ .text::001271b4\n\n\n/* al::CameraTargetBase::isWallCatch() const */\n\nundefined8 al::CameraTargetBase::isWallCatch(void)\n\n{\n  return 0;\n}\n\n");

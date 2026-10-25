@@ -1,0 +1,1 @@
+DOC.got("gh/GameDataFunction/isRaceWin_.text_00629920.cpp","// Nom démêlé : GameDataFunction::isRaceWin\n// Symbole manglé : isRaceWin\n// undefined8 GameDataFunction::isRaceWin(void); @ .text::00629920\n\n\n/* GameDataFunction::isRaceWin(GameDataHolderAccessor, int) */\n\nundefined8 GameDataFunction::isRaceWin(void)\n\n{\n  return 0;\n}\n\n");

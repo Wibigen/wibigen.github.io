@@ -1,0 +1,1 @@
+DOC.got("gh/al/LiveActor/draw_.text_00a0da64.cpp","// Nom démêlé : al::LiveActor::draw\n// Symbole manglé : draw\n// void al::LiveActor::draw(void); @ .text::00a0da64\n\n\n/* al::LiveActor::draw() const */\n\nvoid al::LiveActor::draw(void)\n\n{\n  return;\n}\n\n");

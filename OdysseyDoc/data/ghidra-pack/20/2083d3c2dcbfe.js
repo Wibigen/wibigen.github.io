@@ -1,0 +1,1 @@
+DOC.got("gh/al/ActionAnimCtrl/trySetFrame.cpp","// Nom démêlé : al::ActionAnimCtrl::trySetFrame\n// Symbole manglé : trySetFrame\n// bool al::ActionAnimCtrl::trySetFrame(float param_1); @ .text::00b360dc\n\n\n/* al::ActionAnimCtrl::trySetFrame(float) */\n\nbool al::ActionAnimCtrl::trySetFrame(float param_1)\n\n{\n  long in_x0;\n  \n  return *(long *)(in_x0 + 0x20) != 0;\n}\n\n");

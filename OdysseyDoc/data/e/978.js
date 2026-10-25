@@ -1,0 +1,1 @@
+DOC.got("e/978",{"16108":{"q":"agl::env::TypeInfo","decl":{"f":"lib/agl/include/environment/aglEnvObj.h","l":7,"sig":"struct TypeInfo","end":9,"fi":302},"size":2,"align":2,"complete":true,"fields":[{"n":"id","t":"s16","off":0,"sz":2,"acc":"public","bits":null,"l":8,"cm":null,"ti":43736}]}});

@@ -1,0 +1,1 @@
+DOC.got("e/4375",{"349":{"q":"(anonymous@src/Item/CoinCollectDummy)::(anonymous)","decl":{"f":"src/Item/CoinCollectDummy.cpp","l":18,"sig":"NERVES_MAKE_STRUCT(CoinCollectDummy, Hint)","end":18,"fi":1683},"size":8,"align":8,"complete":true,"fields":[{"n":"Hint","t":"CoinCollectDummyNrvHint","off":0,"sz":8,"acc":"public","bits":null,"l":18,"cm":null,"ti":992}]}});

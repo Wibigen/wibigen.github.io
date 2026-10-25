@@ -1,0 +1,1 @@
+DOC.got("gh/al/sign_.text_00a20ae4.cpp","// Nom démêlé : al::sign\n// Symbole manglé : sign\n// uint al::sign(int param_1); @ .text::00a20ae4\n\n\n/* al::sign(int) */\n\nuint al::sign(int param_1)\n\n{\n  uint uVar1;\n  \n  uVar1 = (uint)(param_1 != 0);\n  if (param_1 < 0) {\n    uVar1 = 0xffffffff;\n  }\n  return uVar1;\n}\n\n");

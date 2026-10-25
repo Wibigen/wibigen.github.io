@@ -1,0 +1,1 @@
+DOC.got("e/3984",{"32804":{"q":"nn::gfx::detail::CommandBufferImpl","decl":{"f":"lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h","l":173,"sig":"template <typename TTarget>\nclass CommandBufferImpl","fi":51},"tp":["typename TTarget"],"derived":[32252],"complete":false,"fwd":[["lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h",173]]}});

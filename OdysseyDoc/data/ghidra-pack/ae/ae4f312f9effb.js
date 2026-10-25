@@ -1,0 +1,1 @@
+DOC.got("gh/JangoDirector/getSceneObjName_.text_00230110.cpp","// Nom démêlé : JangoDirector::getSceneObjName\n// Symbole manglé : getSceneObjName\n// undefined8 JangoDirector::getSceneObjName(void); @ .text::00230110\n\n\n/* JangoDirector::getSceneObjName() const */\n\nundefined8 JangoDirector::getSceneObjName(void)\n\n{\n  return 0x1926d1c;\n}\n\n");

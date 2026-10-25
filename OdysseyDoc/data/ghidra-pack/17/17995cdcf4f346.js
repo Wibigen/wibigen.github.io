@@ -1,0 +1,1 @@
+DOC.got("gh/Gotogoton/exeEnd_.text_0020902c.cpp","// Nom démêlé : Gotogoton::exeEnd\n// Symbole manglé : exeEnd\n// void Gotogoton::exeEnd(void); @ .text::0020902c\n\n\n/* Gotogoton::exeEnd() */\n\nvoid Gotogoton::exeEnd(void)\n\n{\n  return;\n}\n\n");

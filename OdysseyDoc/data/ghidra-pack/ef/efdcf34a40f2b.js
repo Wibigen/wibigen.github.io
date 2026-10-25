@@ -1,0 +1,1 @@
+DOC.got("gh/sead/ListImpl/checkLinks.cpp","// Nom démêlé : sead::ListImpl::checkLinks\n// Symbole manglé : checkLinks\n// undefined8 sead::ListImpl::checkLinks(void); @ .text::0082e20c\n\n\n/* sead::ListImpl::checkLinks() const */\n\nundefined8 sead::ListImpl::checkLinks(void)\n\n{\n  return 1;\n}\n\n");

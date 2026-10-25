@@ -1,0 +1,1 @@
+DOC.got("src/44","#pragma once\n\nnamespace nn::g3d {\n\nclass WorldMtxManip;\n\nclass ICalculateWorldCallback {\npublic:\n    // TODO\n    struct CallbackArg;\n\n    virtual ~ICalculateWorldCallback() = 0;\n    virtual void Exec(CallbackArg& arg, WorldMtxManip& manip) = 0;\n};\n\n}  // namespace nn::g3d\n");

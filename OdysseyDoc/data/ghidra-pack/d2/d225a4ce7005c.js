@@ -1,0 +1,1 @@
+DOC.got("gh/al/offAreaTarget.cpp","// Nom démêlé : al::offAreaTarget\n// Symbole manglé : offAreaTarget\n// void al::offAreaTarget(LiveActor *param_1); @ .text::009d9a58\n\n\n/* al::offAreaTarget(al::LiveActor*) */\n\nvoid al::offAreaTarget(LiveActor *param_1)\n\n{\n  *(undefined1 *)(*(long *)(param_1 + 0x100) + 10) = 0;\n  return;\n}\n\n");

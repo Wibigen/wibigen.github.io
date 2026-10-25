@@ -1,0 +1,1 @@
+DOC.got("gh/EquipmentInfo/isNoCapThrow.cpp","// Nom démêlé : EquipmentInfo::isNoCapThrow\n// Symbole manglé : isNoCapThrow\n// uint __thiscall EquipmentInfo::isNoCapThrow(EquipmentInfo *this); @ .text::004f96a0\n\n\n/* EquipmentInfo::isNoCapThrow() const */\n\nuint __thiscall EquipmentInfo::isNoCapThrow(EquipmentInfo *this)\n\n{\n  return *(uint *)(this + 8) & 1;\n}\n\n");

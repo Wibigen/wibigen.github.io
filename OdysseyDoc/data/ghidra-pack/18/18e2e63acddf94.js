@@ -1,0 +1,1 @@
+DOC.got("gh/agl/lyr/Layer/initializeImpl_.text_00ce5f28.cpp","// Nom démêlé : agl::lyr::Layer::initializeImpl\n// Symbole manglé : initializeImpl\n// void agl::lyr::Layer::initializeImpl(Heap *param_1); @ .text::00ce5f28\n\n\n/* agl::lyr::Layer::initializeImpl(sead::Heap*) */\n\nvoid agl::lyr::Layer::initializeImpl(Heap *param_1)\n\n{\n  return;\n}\n\n");

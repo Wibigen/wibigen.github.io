@@ -1,0 +1,1 @@
+DOC.got("gh/agl/RenderBuffer/checkRenderState.cpp","// Nom démêlé : agl::RenderBuffer::checkRenderState\n// Symbole manglé : checkRenderState\n// undefined8 agl::RenderBuffer::checkRenderState(void); @ .text::0087b320\n\n\n/* agl::RenderBuffer::checkRenderState() */\n\nundefined8 agl::RenderBuffer::checkRenderState(void)\n\n{\n  return 1;\n}\n\n");

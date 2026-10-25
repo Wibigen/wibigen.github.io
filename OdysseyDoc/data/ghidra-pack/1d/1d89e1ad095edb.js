@@ -1,0 +1,1 @@
+DOC.got("gh/MiniGameCueLayout/exeWait_.text_002fa218.cpp","// Nom démêlé : MiniGameCueLayout::exeWait\n// Symbole manglé : exeWait\n// void MiniGameCueLayout::exeWait(void); @ .text::002fa218\n\n\n/* MiniGameCueLayout::exeWait() */\n\nvoid MiniGameCueLayout::exeWait(void)\n\n{\n  return;\n}\n\n");

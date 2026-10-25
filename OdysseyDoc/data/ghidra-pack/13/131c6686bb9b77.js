@@ -1,0 +1,1 @@
+DOC.got("gh/al/Scene/kill_.text_00ace5fc.cpp","// Nom démêlé : al::Scene::kill\n// Symbole manglé : kill\n// void __thiscall al::Scene::kill(Scene *this); @ .text::00ace5fc\n\n\n/* al::Scene::kill() */\n\nvoid __thiscall al::Scene::kill(Scene *this)\n\n{\n  this[0x28] = (Scene)0x0;\n  return;\n}\n\n");

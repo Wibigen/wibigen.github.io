@@ -1,0 +1,1 @@
+DOC.got("gh/TimeBalloonDataAccessor/exeWait_.text_00460554.cpp","// Nom démêlé : TimeBalloonDataAccessor::exeWait\n// Symbole manglé : exeWait\n// void TimeBalloonDataAccessor::exeWait(void); @ .text::00460554\n\n\n/* TimeBalloonDataAccessor::exeWait() */\n\nvoid TimeBalloonDataAccessor::exeWait(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/CollectBgmSpeaker/exePlayBgm.cpp","// Nom démêlé : CollectBgmSpeaker::exePlayBgm\n// Symbole manglé : exePlayBgm\n// void CollectBgmSpeaker::exePlayBgm(void); @ .text::003505c8\n\n\n/* CollectBgmSpeaker::exePlayBgm() */\n\nvoid CollectBgmSpeaker::exePlayBgm(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/isEndAnimCamera.cpp","// Nom démêlé : al::isEndAnimCamera\n// Symbole manglé : isEndAnimCamera\n// void al::isEndAnimCamera(CameraTicket *param_1); @ .text::0093f2e8\n\n\n/* al::isEndAnimCamera(al::CameraTicket const*) */\n\nvoid al::isEndAnimCamera(CameraTicket *param_1)\n\n{\n  CameraPoserAnim::isAnimEnd(*(CameraPoserAnim **)param_1);\n  return;\n}\n\n");

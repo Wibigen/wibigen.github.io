@@ -1,0 +1,1 @@
+DOC.got("gh/al/DepthShadowMapDirector/init_.text_00b17ce8.cpp","// Nom démêlé : al::DepthShadowMapDirector::init\n// Symbole manglé : init\n// void al::DepthShadowMapDirector::init(void); @ .text::00b17ce8\n\n\n/* al::DepthShadowMapDirector::init() */\n\nvoid al::DepthShadowMapDirector::init(void)\n\n{\n  return;\n}\n\n");

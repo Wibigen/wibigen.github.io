@@ -1,0 +1,1 @@
+DOC.got("gh/sead/UnitHeap/isAdjustable_.text_00c5d9a0.cpp","// Nom démêlé : sead::UnitHeap::isAdjustable\n// Symbole manglé : isAdjustable\n// undefined8 sead::UnitHeap::isAdjustable(void); @ .text::00c5d9a0\n\n\n/* sead::UnitHeap::isAdjustable() const */\n\nundefined8 sead::UnitHeap::isAdjustable(void)\n\n{\n  return 0;\n}\n\n");

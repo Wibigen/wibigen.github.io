@@ -1,0 +1,1 @@
+DOC.got("gh/TiaraEyes/exeControlled.cpp","// Nom démêlé : TiaraEyes::exeControlled\n// Symbole manglé : exeControlled\n// void TiaraEyes::exeControlled(void); @ .text::004e82e8\n\n\n/* TiaraEyes::exeControlled() */\n\nvoid TiaraEyes::exeControlled(void)\n\n{\n  return;\n}\n\n");

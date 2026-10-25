@@ -1,0 +1,1 @@
+DOC.got("gh/curl_share_init.cpp","// Nom démêlé : curl_share_init\n// Symbole manglé : curl_share_init\n// void curl_share_init(void); @ .text::00803760\n\n\nvoid curl_share_init(void)\n\n{\n  uint *puVar1;\n  \n  puVar1 = (uint *)Curl_SigloCalloc(1,0x48);\n  if (puVar1 != (uint *)0x0) {\n    *puVar1 = *puVar1 | 2;\n  }\n  return;\n}\n\n");

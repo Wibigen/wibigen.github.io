@@ -1,0 +1,1 @@
+DOC.got("gh/BossStateTalkDemo/exeSkip.cpp","// Nom démêlé : BossStateTalkDemo::exeSkip\n// Symbole manglé : exeSkip\n// void BossStateTalkDemo::exeSkip(void); @ .text::00147184\n\n\n/* BossStateTalkDemo::exeSkip() */\n\nvoid BossStateTalkDemo::exeSkip(void)\n\n{\n  return;\n}\n\n");

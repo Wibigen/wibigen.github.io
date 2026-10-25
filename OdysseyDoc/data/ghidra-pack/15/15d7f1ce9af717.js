@@ -1,0 +1,1 @@
+DOC.got("gh/Curl_resolver_global_cleanup.cpp","// Nom démêlé : Curl_resolver_global_cleanup\n// Symbole manglé : Curl_resolver_global_cleanup\n// void Curl_resolver_global_cleanup(void); @ .text::00810000\n\n\nvoid Curl_resolver_global_cleanup(void)\n\n{\n  return;\n}\n\n");

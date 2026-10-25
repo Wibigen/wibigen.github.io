@@ -1,0 +1,1 @@
+DOC.got("src/144","#pragma once\n\nnamespace nn::irsensor {\nenum HandAnalysisMode {\n    HandAnalysisMode_None,\n    HandAnalysisMode_Silhouette,\n    HandAnalysisMode_Image,\n    HandAnalysisMode_SilhouetteAndImage,\n    HandAnalysisMode_SilhouetteOnly,  // [4.0.0+]\n};\n}  // namespace nn::irsensor\n");

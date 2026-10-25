@@ -1,0 +1,1 @@
+DOC.got("src/137","#pragma once\n\n#include <nn/irs/MomentStatistic.h>\n#include <nn/irs/Rect.h>\n\nnamespace nn::irsensor {\nstruct ClusteringData {\n    MomentStatistic momentStatistic;\n    s32 pixelCount;\n    Rect bounds;\n};\n}  // namespace nn::irsensor\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/nn/vfx/detail/OutputLog.cpp","// Nom démêlé : nn::vfx::detail::OutputLog\n// Symbole manglé : OutputLog\n// void nn::vfx::detail::OutputLog(char *param_1,...); @ .text::00c2ccc4\n\n\n/* nn::vfx::detail::OutputLog(char const*, ...) */\n\nvoid nn::vfx::detail::OutputLog(char *param_1,...)\n\n{\n  return;\n}\n\n");

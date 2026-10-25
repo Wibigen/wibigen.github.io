@@ -1,0 +1,1 @@
+DOC.got("e/13793",{"30396":{"q":"ams::i2c::detail::result::ResultModuleId","decl":{"f":"lib/NintendoSDK/include/vapours/results/i2c_results.hpp","l":25,"sig":"R_DEFINE_NAMESPACE_RESULT_MODULE(101)","fi":242},"underlying":"std::integral_constant<int, 101>"}});

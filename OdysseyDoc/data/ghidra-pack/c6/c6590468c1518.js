@@ -1,0 +1,1 @@
+DOC.got("gh/sead/DebugFontMgrNvn/getHeight_.text_008398ec.cpp","// Nom démêlé : sead::DebugFontMgrNvn::getHeight\n// Symbole manglé : getHeight\n// undefined1  [16] sead::DebugFontMgrNvn::getHeight(void); @ .text::008398ec\n\n\n/* sead::DebugFontMgrNvn::getHeight() const */\n\nundefined1  [16] sead::DebugFontMgrNvn::getHeight(void)\n\n{\n  return ZEXT816(0x41800000);\n}\n\n");

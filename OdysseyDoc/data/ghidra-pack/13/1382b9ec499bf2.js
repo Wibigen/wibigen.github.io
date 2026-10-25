@@ -1,0 +1,1 @@
+DOC.got("gh/Bubble/killAll_.text_001e04d0.cpp","// Nom démêlé : Bubble::killAll\n// Symbole manglé : killAll\n// void __thiscall Bubble::killAll(Bubble *this); @ .text::001e04d0\n\n\n/* Bubble::killAll() */\n\nvoid __thiscall Bubble::killAll(Bubble *this)\n\n{\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1d86d60);\n  return;\n}\n\n");

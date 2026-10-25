@@ -1,0 +1,1 @@
+DOC.got("gh/eui/ScreenFactory/ScreenFactory.cpp","// Nom démêlé : eui::ScreenFactory::~ScreenFactory\n// Symbole manglé : ~ScreenFactory\n// void __thiscall eui::ScreenFactory::~ScreenFactory(ScreenFactory *this); @ .text::009bbf90\n\n\n/* eui::ScreenFactory::~ScreenFactory() */\n\nvoid __thiscall eui::ScreenFactory::~ScreenFactory(ScreenFactory *this)\n\n{\n  return;\n}\n\n");

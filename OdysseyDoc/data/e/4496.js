@@ -1,0 +1,1 @@
+DOC.got("e/4496",{"36333":{"q":"nvn::SeparateTextureHandle","decl":{"f":"lib/NintendoSDK/include/nvn/nvn_Cpp.h","l":122,"sig":"struct SeparateTextureHandle","end":124,"fi":224},"size":8,"align":8,"complete":true,"fields":[{"n":"value","t":"uint64_t","off":0,"sz":8,"acc":"public","bits":null,"l":123,"cm":null,"ti":null}]}});

@@ -1,0 +1,1 @@
+DOC.got("gh/agl/utl/ParameterCurve_4u/size_.text_0089f284.cpp","// Nom démêlé : agl::utl::ParameterCurve<4u>::size\n// Symbole manglé : size\n// undefined8 agl::utl::ParameterCurve<4u>::size(void); @ .text::0089f284\n\n\n/* agl::utl::ParameterCurve<4u>::size() const */\n\nundefined8 agl::utl::ParameterCurve<4u>::size(void)\n\n{\n  return 0x200;\n}\n\n");

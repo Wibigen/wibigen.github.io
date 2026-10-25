@@ -1,0 +1,1 @@
+DOC.got("e/13857",{"200":{"q":"ams::updater::detail::result","files":["lib/NintendoSDK/include/vapours/results/updater_results.hpp"]}});

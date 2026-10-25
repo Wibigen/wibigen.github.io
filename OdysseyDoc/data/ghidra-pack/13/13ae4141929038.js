@@ -1,0 +1,1 @@
+DOC.got("gh/al/AudioRequestKeeperSyncedBgm/update_.text_00b40704.cpp","// Nom démêlé : al::AudioRequestKeeperSyncedBgm::update\n// Symbole manglé : update\n// void al::AudioRequestKeeperSyncedBgm::update(void); @ .text::00b40704\n\n\n/* al::AudioRequestKeeperSyncedBgm::update() */\n\nvoid al::AudioRequestKeeperSyncedBgm::update(void)\n\n{\n  return;\n}\n\n");

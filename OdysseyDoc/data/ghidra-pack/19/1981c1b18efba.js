@@ -1,0 +1,1 @@
+DOC.got("gh/sead/Event/wait_.text_00c64480.cpp","// Nom démêlé : sead::Event::wait\n// Symbole manglé : wait\n// void __thiscall sead::Event::wait(Event *this); @ .text::00c64480\n\n\n/* sead::Event::wait() */\n\nvoid __thiscall sead::Event::wait(Event *this)\n\n{\n  nn::os::WaitLightEvent((LightEventType *)(this + 0x20));\n  return;\n}\n\n");

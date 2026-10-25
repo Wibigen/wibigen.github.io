@@ -1,0 +1,1 @@
+DOC.got("src/663","#pragma once\n\n#include \"Library/HostIO/IUseName.h\"\n\nnamespace al {\nclass LayoutKeeper;\n\nclass IUseLayout : virtual public IUseName {\npublic:\n    virtual LayoutKeeper* getLayoutKeeper() const = 0;\n};\n}  // namespace al\n");

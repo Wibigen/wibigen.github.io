@@ -1,0 +1,1 @@
+DOC.got("e/13869",{"30952":{"q":"nn::aoc::ListAddOnContent","decl":{"f":"lib/NintendoSDK/include/nn/aoc.h","l":7,"sig":"int ListAddOnContent(int*, int, int)","fi":3},"ret":"int","params":[["int *","",null,null],["int","",null,null],["int","",null,null]],"mangled":"_ZN2nn3aoc16ListAddOnContentEPiii"}});

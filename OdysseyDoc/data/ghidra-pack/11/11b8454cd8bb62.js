@@ -1,0 +1,1 @@
+DOC.got("gh/MapLayout/isEnd_.text_002f2988.cpp","// Nom démêlé : MapLayout::isEnd\n// Symbole manglé : isEnd\n// bool __thiscall MapLayout::isEnd(MapLayout *this); @ .text::002f2988\n\n\n/* MapLayout::isEnd() const */\n\nbool __thiscall MapLayout::isEnd(MapLayout *this)\n\n{\n  return this[0x128] == (MapLayout)0x0;\n}\n\n");

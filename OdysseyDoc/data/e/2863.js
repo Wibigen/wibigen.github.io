@@ -1,0 +1,1 @@
+DOC.got("e/2863",{"300":{"q":"(anonymous@lib/al/Library/MapObj/SurfMapParts)::(anonymous)","decl":{"f":"lib/al/Library/MapObj/SurfMapParts.cpp","l":18,"sig":"NERVES_MAKE_STRUCT(SurfMapParts, Wait)","end":18,"fi":789},"size":8,"align":8,"complete":true,"fields":[{"n":"Wait","t":"SurfMapPartsNrvWait","off":0,"sz":8,"acc":"public","bits":null,"l":18,"cm":null,"ti":2964}]}});

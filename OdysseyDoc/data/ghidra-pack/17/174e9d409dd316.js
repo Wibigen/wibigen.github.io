@@ -1,0 +1,1 @@
+DOC.got("gh/al/StageInfo/getZoneIter.cpp","// Nom démêlé : al::StageInfo::getZoneIter\n// Symbole manglé : getZoneIter\n// long __thiscall al::StageInfo::getZoneIter(StageInfo *this); @ .text::00b26a28\n\n\n/* al::StageInfo::getZoneIter() const */\n\nlong __thiscall al::StageInfo::getZoneIter(StageInfo *this)\n\n{\n  return *(long *)(this + 8) + 0x10;\n}\n\n");

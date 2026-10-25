@@ -1,0 +1,1 @@
+DOC.got("src/876","#pragma once\n\nnamespace al {\nclass NerveKeeper;\n\nclass IUseNerve {\npublic:\n    inline IUseNerve() {}\n\n    virtual NerveKeeper* getNerveKeeper() const = 0;\n};\n}  // namespace al\n");

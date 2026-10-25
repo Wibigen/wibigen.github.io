@@ -1,0 +1,1 @@
+DOC.got("src/177","#pragma once\n\nnamespace nn::os {\n\ntypedef void (*ThreadFunction)(void*);\n\n}  // namespace nn::os");

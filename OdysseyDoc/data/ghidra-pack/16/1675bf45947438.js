@@ -1,0 +1,1 @@
+DOC.got("gh/SneakingMan/adjustPosByCollision.cpp","// Nom démêlé : SneakingMan::adjustPosByCollision\n// Symbole manglé : adjustPosByCollision\n// void SneakingMan::adjustPosByCollision(void); @ .text::00421350\n\n\n/* SneakingMan::adjustPosByCollision() */\n\nvoid SneakingMan::adjustPosByCollision(void)\n\n{\n  return;\n}\n\n");

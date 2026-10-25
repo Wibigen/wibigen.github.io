@@ -1,0 +1,1 @@
+DOC.got("src/2492","#pragma once\n\n#include <prim/seadSafeString.h>\n\nnamespace al {\nclass HtmlViewer;\n}\nclass GameDataHolderAccessor;\n\nnamespace HelpFunction {\nvoid callHelp(const al::HtmlViewer*, GameDataHolderAccessor, bool, bool, bool,\n              sead::BufferedSafeString*);\n}\n");

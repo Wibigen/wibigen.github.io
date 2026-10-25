@@ -1,0 +1,1 @@
+DOC.got("gh/Curl_HMAC_update.cpp","// Nom démêlé : Curl_HMAC_update\n// Symbole manglé : Curl_HMAC_update\n// undefined8 Curl_HMAC_update(long *param_1); @ .text::00820378\n\n\nundefined8 Curl_HMAC_update(long *param_1)\n\n{\n  (**(code **)(*param_1 + 8))(param_1[1]);\n  return 0;\n}\n\n");

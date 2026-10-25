@@ -1,0 +1,1 @@
+DOC.got("e/5150",{"44503":{"q":"sead::ConstPtrArray","decl":{"f":"lib/sead/include/container/seadPtrArray.h","l":387,"sig":"template <typename T>\nclass ConstPtrArray : public PtrArray<T>","end":389,"fi":1306},"tp":["typename T"],"bases":[["PtrArray<T>","public",false,47387]],"complete":true}});

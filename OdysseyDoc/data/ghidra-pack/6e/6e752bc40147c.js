@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/VersionInfo/VersionMinor.cpp","// Nom démêlé : nn::nex::VersionInfo::VersionMinor\n// Symbole manglé : VersionMinor\n// undefined8 nn::nex::VersionInfo::VersionMinor(void); @ .text::00747d40\n\n\n/* nn::nex::VersionInfo::VersionMinor() */\n\nundefined8 nn::nex::VersionInfo::VersionMinor(void)\n\n{\n  return 0x20fa7;\n}\n\n");

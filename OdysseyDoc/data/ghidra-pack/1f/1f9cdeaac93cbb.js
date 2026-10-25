@@ -1,0 +1,1 @@
+DOC.got("gh/CapManHeroBase/control_.text_001d10b0.cpp","// Nom démêlé : CapManHeroBase::control\n// Symbole manglé : control\n// void CapManHeroBase::control(void); @ .text::001d10b0\n\n\n/* CapManHeroBase::control() */\n\nvoid CapManHeroBase::control(void)\n\n{\n  return;\n}\n\n");

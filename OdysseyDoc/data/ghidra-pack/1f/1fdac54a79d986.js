@@ -1,0 +1,1 @@
+DOC.got("gh/GolemClimb/isPrepareShout.cpp","// Nom démêlé : GolemClimb::isPrepareShout\n// Symbole manglé : isPrepareShout\n// bool __thiscall GolemClimb::isPrepareShout(GolemClimb *this); @ .text::0017593c\n\n\n/* GolemClimb::isPrepareShout() const */\n\nbool __thiscall GolemClimb::isPrepareShout(GolemClimb *this)\n\n{\n  return 0 < *(int *)(this + 0x1a4);\n}\n\n");

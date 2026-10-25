@@ -1,0 +1,1 @@
+DOC.got("src/1039","#include \"Library/Scene/SceneFactory.h\"\n\nnamespace alSceneFunction {\nSceneFactory::SceneFactory(const char* factoryName) : Factory(factoryName) {}\n}  // namespace alSceneFunction\n");

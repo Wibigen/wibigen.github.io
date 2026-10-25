@@ -1,0 +1,1 @@
+DOC.got("gh/al/SeShape/SeShape_.text_00aed2c8.cpp","// Nom démêlé : al::SeShape::~SeShape\n// Symbole manglé : ~SeShape\n// void __thiscall al::SeShape::~SeShape(SeShape *this); @ .text::00aed2c8\n\n\n/* al::SeShape::~SeShape() */\n\nvoid __thiscall al::SeShape::~SeShape(SeShape *this)\n\n{\n  return;\n}\n\n");

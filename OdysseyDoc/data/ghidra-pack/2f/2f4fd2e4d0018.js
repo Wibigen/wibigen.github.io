@@ -1,0 +1,1 @@
+DOC.got("gh/al/KeyMoveFollowTarget/init_.text_00a6b8d8.cpp","// Nom démêlé : al::KeyMoveFollowTarget::init\n// Symbole manglé : init\n// void al::KeyMoveFollowTarget::init(ActorInitInfo *param_1); @ .text::00a6b8d8\n\n\n/* al::KeyMoveFollowTarget::init(al::ActorInitInfo const&) */\n\nvoid al::KeyMoveFollowTarget::init(ActorInitInfo *param_1)\n\n{\n  return;\n}\n\n");

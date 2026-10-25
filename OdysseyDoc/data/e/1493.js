@@ -1,0 +1,1 @@
+DOC.got("e/1493",{"19006":{"q":"al::CollisionCodeList","decl":{"f":"lib/al/Library/Effect/EffectSystem.h","l":22,"sig":"class CollisionCodeList","fi":566},"complete":false,"fwd":[["lib/al/Library/Effect/EffectSystem.h",22]]}});

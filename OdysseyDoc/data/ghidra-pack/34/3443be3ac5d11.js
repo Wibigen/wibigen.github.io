@@ -1,0 +1,1 @@
+DOC.got("gh/KoopaLv1/exeHitPunch.cpp","// Nom démêlé : KoopaLv1::exeHitPunch\n// Symbole manglé : exeHitPunch\n// void __thiscall KoopaLv1::exeHitPunch(KoopaLv1 *this); @ .text::00196af0\n\n\n/* KoopaLv1::exeHitPunch() */\n\nvoid __thiscall KoopaLv1::exeHitPunch(KoopaLv1 *this)\n\n{\n  al::updateNerveStateAndNextNerve((IUseNerve *)this,(Nerve *)0x1d71260);\n  return;\n}\n\n");

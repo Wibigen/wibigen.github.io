@@ -1,0 +1,1 @@
+DOC.got("gh/GunetterKeyMover/isLoop.cpp","// Nom démêlé : GunetterKeyMover::isLoop\n// Symbole manglé : isLoop\n// bool __thiscall GunetterKeyMover::isLoop(GunetterKeyMover *this); @ .text::0020eb20\n\n\n/* GunetterKeyMover::isLoop() const */\n\nbool __thiscall GunetterKeyMover::isLoop(GunetterKeyMover *this)\n\n{\n  return *(int *)(this + 0x14) == 0;\n}\n\n");

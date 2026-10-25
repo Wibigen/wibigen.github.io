@@ -1,0 +1,1 @@
+DOC.got("gh/al/FogParam/getColor_.text_009a1e14.cpp","// Nom démêlé : al::FogParam::getColor\n// Symbole manglé : getColor\n// long __thiscall al::FogParam::getColor(FogParam *this); @ .text::009a1e14\n\n\n/* al::FogParam::getColor() const */\n\nlong __thiscall al::FogParam::getColor(FogParam *this)\n\n{\n  return *(long *)(this + 0x48) + 0x6c;\n}\n\n");

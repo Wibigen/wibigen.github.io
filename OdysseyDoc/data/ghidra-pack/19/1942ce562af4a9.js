@@ -1,0 +1,1 @@
+DOC.got("gh/nn/g3d/ResModel/Reset_.text_008267fc.cpp","// Nom démêlé : nn::g3d::ResModel::Reset\n// Symbole manglé : Reset\n// void __thiscall nn::g3d::ResModel::Reset(ResModel *this); @ .text::008267fc\n\n\n/* nn::g3d::ResModel::Reset() */\n\nvoid __thiscall nn::g3d::ResModel::Reset(ResModel *this)\n\n{\n  Reset(this,0);\n  return;\n}\n\n");

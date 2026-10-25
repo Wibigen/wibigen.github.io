@@ -1,0 +1,1 @@
+DOC.got("gh/HomeCapFunction/getAimChairOffset.cpp","// Nom démêlé : HomeCapFunction::getAimChairOffset\n// Symbole manglé : getAimChairOffset\n// undefined8 HomeCapFunction::getAimChairOffset(void); @ .text::00499d64\n\n\n/* HomeCapFunction::getAimChairOffset() */\n\nundefined8 HomeCapFunction::getAimChairOffset(void)\n\n{\n  return 0x19d0688;\n}\n\n");

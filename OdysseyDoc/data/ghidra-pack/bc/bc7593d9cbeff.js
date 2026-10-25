@@ -1,0 +1,1 @@
+DOC.got("gh/sead/GameFramework/initHostIO.cpp","// Nom démêlé : sead::GameFramework::initHostIO_\n// Symbole manglé : initHostIO_\n// void sead::GameFramework::initHostIO_(void); @ .text::0083379c\n\n\n/* sead::GameFramework::initHostIO_() */\n\nvoid sead::GameFramework::initHostIO_(void)\n\n{\n  return;\n}\n\n");

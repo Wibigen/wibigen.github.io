@@ -1,0 +1,1 @@
+DOC.got("e/3852",{"31927":{"q":"nn::gfx::RasterizerStateImplData","decl":{"f":"lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h","l":97,"sig":"template <typename TTarget>\nstruct RasterizerStateImplData","fi":51},"tp":["typename TTarget"],"complete":false,"fwd":[["lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h",97]]}});

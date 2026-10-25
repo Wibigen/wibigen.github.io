@@ -1,0 +1,1 @@
+DOC.got("src/731","#pragma once\n\nnamespace al {\nclass LiveActor;\n\ntemplate <typename T>\nLiveActor* createActorFunction(const char* actorName) {\n    return new T(actorName);\n}\n}  // namespace al\n");

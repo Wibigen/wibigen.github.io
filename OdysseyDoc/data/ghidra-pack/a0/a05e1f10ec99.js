@@ -1,0 +1,1 @@
+DOC.got("gh/CandlestandBgmDirector/exeWaitActive.cpp","// Nom démêlé : CandlestandBgmDirector::exeWaitActive\n// Symbole manglé : exeWaitActive\n// void CandlestandBgmDirector::exeWaitActive(void); @ .text::0032d998\n\n\n/* CandlestandBgmDirector::exeWaitActive() */\n\nvoid CandlestandBgmDirector::exeWaitActive(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/Parameter_bool/ptr_.text_0099e14c.cpp","// Nom démêlé : al::Parameter<bool>::ptr\n// Symbole manglé : ptr\n// Parameter<bool> * __thiscall al::Parameter<bool>::ptr(Parameter<bool> *this); @ .text::0099e14c\n\n\n/* al::Parameter<bool>::ptr() const */\n\nParameter<bool> * __thiscall al::Parameter<bool>::ptr(Parameter<bool> *this)\n\n{\n  return this + 0x6c;\n}\n\n");

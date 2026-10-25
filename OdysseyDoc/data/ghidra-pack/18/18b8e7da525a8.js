@@ -1,0 +1,1 @@
+DOC.got("gh/TRex/getRightFootIK.cpp","// Nom démêlé : TRex::getRightFootIK\n// Symbole manglé : getRightFootIK\n// undefined8 __thiscall TRex::getRightFootIK(TRex *this); @ .text::002913f4\n\n\n/* TRex::getRightFootIK() const */\n\nundefined8 __thiscall TRex::getRightFootIK(TRex *this)\n\n{\n  return *(undefined8 *)(*(long *)(this + 0x118) + 8);\n}\n\n");

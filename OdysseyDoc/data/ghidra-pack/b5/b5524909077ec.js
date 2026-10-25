@@ -1,0 +1,1 @@
+DOC.got("gh/VolleyballLayout/setBestToday_.text_004ec558.cpp","// Nom démêlé : VolleyballLayout::setBestToday\n// Symbole manglé : setBestToday\n// uint VolleyballLayout::setBestToday(uint param_1); @ .text::004ec558\n\n\n/* VolleyballLayout::setBestToday(unsigned int) */\n\nuint VolleyballLayout::setBestToday(uint param_1)\n\n{\n  return param_1;\n}\n\n");

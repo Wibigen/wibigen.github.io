@@ -1,0 +1,1 @@
+DOC.got("gh/rs/calcHaveGiftNum_.text_0064cbf8.cpp","// Nom démêlé : rs::calcHaveGiftNum\n// Symbole manglé : calcHaveGiftNum\n// void rs::calcHaveGiftNum(long param_1); @ .text::0064cbf8\n\n\n/* rs::calcHaveGiftNum(GameDataHolderAccessor) */\n\nvoid rs::calcHaveGiftNum(long param_1)\n\n{\n  GameDataFile::calcHaveGiftNum(*(GameDataFile **)(param_1 + 0x20));\n  return;\n}\n\n");

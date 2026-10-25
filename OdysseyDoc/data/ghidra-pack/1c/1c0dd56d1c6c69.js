@@ -1,0 +1,1 @@
+DOC.got("gh/BarrierField/exeAppearBreedaMoonWorld.cpp","// Nom démêlé : BarrierField::exeAppearBreedaMoonWorld\n// Symbole manglé : exeAppearBreedaMoonWorld\n// void BarrierField::exeAppearBreedaMoonWorld(void); @ .text::0010a038\n\n\n/* BarrierField::exeAppearBreedaMoonWorld() */\n\nvoid BarrierField::exeAppearBreedaMoonWorld(void)\n\n{\n  return;\n}\n\n");

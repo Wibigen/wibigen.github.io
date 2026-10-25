@@ -1,0 +1,1 @@
+DOC.got("gh/al/getPictureFont.cpp","// Nom démêlé : al::getPictureFont\n// Symbole manglé : getPictureFont\n// void al::getPictureFont(LayoutSystem *param_1); @ .text::00a3c048\n\n\n/* al::getPictureFont(al::LayoutSystem const*) */\n\nvoid al::getPictureFont(LayoutSystem *param_1)\n\n{\n  LayoutSystem::tryFindFont(param_1,(char *)0x196db57);\n  return;\n}\n\n");

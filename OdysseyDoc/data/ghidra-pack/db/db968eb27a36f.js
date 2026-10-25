@@ -1,0 +1,1 @@
+DOC.got("gh/al/AreaCameraSwitcher/updateEmptyTarget.cpp","// Nom démêlé : al::AreaCameraSwitcher::updateEmptyTarget\n// Symbole manglé : updateEmptyTarget\n// void al::AreaCameraSwitcher::updateEmptyTarget(void); @ .text::00b490e4\n\n\n/* al::AreaCameraSwitcher::updateEmptyTarget() */\n\nvoid al::AreaCameraSwitcher::updateEmptyTarget(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/Tank/endDemoWait.cpp","// Nom démêlé : Tank::endDemoWait\n// Symbole manglé : endDemoWait\n// void __thiscall Tank::endDemoWait(Tank *this); @ .text::00287e80\n\n\n/* Tank::endDemoWait() */\n\nvoid __thiscall Tank::endDemoWait(Tank *this)\n\n{\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1da9410);\n  return;\n}\n\n");

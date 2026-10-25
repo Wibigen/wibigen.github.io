@@ -1,0 +1,1 @@
+DOC.got("gh/al/SeadAudioPlayer/init_.text_00b3d150.cpp","// Nom démêlé : al::SeadAudioPlayer::init\n// Symbole manglé : init\n// void al::SeadAudioPlayer::init(void); @ .text::00b3d150\n\n\n/* al::SeadAudioPlayer::init() */\n\nvoid al::SeadAudioPlayer::init(void)\n\n{\n  return;\n}\n\n");

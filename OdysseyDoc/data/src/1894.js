@@ -1,0 +1,1 @@
+DOC.got("src/1894","#pragma once\n\n#include \"Library/LiveActor/LiveActor.h\"\n\nclass HomeInside : public al::LiveActor {\npublic:\n    HomeInside(const char* name);\n\n    void init(const al::ActorInitInfo& info) override;\n};\n\nstatic_assert(sizeof(HomeInside) == 0x108);\n");

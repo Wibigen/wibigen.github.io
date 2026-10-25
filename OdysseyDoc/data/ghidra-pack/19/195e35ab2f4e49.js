@@ -1,0 +1,1 @@
+DOC.got("gh/EffectObjAlpha/offAlpha.cpp","// Nom démêlé : EffectObjAlpha::offAlpha\n// Symbole manglé : offAlpha\n// void EffectObjAlpha::offAlpha(void); @ .text::0036612c\n\n\n/* EffectObjAlpha::offAlpha() */\n\nvoid EffectObjAlpha::offAlpha(void)\n\n{\n  return;\n}\n\n");

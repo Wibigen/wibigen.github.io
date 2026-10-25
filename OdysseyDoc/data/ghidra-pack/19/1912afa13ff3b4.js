@@ -1,0 +1,1 @@
+DOC.got("gh/al/FluidSimulateWave/isDoubleBufDisp.cpp","// Nom démêlé : al::FluidSimulateWave::isDoubleBufDisp\n// Symbole manglé : isDoubleBufDisp\n// undefined8 al::FluidSimulateWave::isDoubleBufDisp(void); @ .text::0099b244\n\n\n/* al::FluidSimulateWave::isDoubleBufDisp() const */\n\nundefined8 al::FluidSimulateWave::isDoubleBufDisp(void)\n\n{\n  return 0;\n}\n\n");

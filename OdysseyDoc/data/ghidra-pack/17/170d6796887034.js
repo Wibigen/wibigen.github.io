@@ -1,0 +1,1 @@
+DOC.got("gh/al/LayoutActor/control_.text_002d8e94.cpp","// Nom démêlé : al::LayoutActor::control\n// Symbole manglé : control\n// void al::LayoutActor::control(void); @ .text::002d8e94\n\n\n/* al::LayoutActor::control() */\n\nvoid al::LayoutActor::control(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("e/13774",{"121":{"q":"ams::erpt::detail","files":["lib/NintendoSDK/include/vapours/results/erpt_results.hpp"]}});

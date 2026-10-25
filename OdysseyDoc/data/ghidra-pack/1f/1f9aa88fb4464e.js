@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/DataStoreDDLDeclarations/Init_.text_006e7288.cpp","// Nom démêlé : nn::nex::DataStoreDDLDeclarations::Init\n// Symbole manglé : Init\n// void nn::nex::DataStoreDDLDeclarations::Init(void); @ .text::006e7288\n\n\n/* nn::nex::DataStoreDDLDeclarations::Init() */\n\nvoid nn::nex::DataStoreDDLDeclarations::Init(void)\n\n{\n  return;\n}\n\n");

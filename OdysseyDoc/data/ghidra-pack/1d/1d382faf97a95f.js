@@ -1,0 +1,1 @@
+DOC.got("gh/JokuBomb/exeWait_.text_00236e7c.cpp","// Nom démêlé : JokuBomb::exeWait\n// Symbole manglé : exeWait\n// void JokuBomb::exeWait(void); @ .text::00236e7c\n\n\n/* JokuBomb::exeWait() */\n\nvoid JokuBomb::exeWait(void)\n\n{\n  return;\n}\n\n");

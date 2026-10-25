@@ -1,0 +1,1 @@
+DOC.got("e/2448",{"24293":{"q":"al::SnapShotCameraSceneInfo","decl":{"f":"lib/al/Library/Camera/CameraPoser.h","l":44,"sig":"struct SnapShotCameraSceneInfo","fi":429},"complete":false,"fwd":[["lib/al/Library/Camera/CameraPoser.h",44],["lib/al/Library/Camera/CameraPoserSceneInfo.h",15],["lib/al/Library/Camera/SnapShotCameraCtrl.h",17]]}});

@@ -1,0 +1,1 @@
+DOC.got("src/102","#pragma once\n\n#include <nn/util/util_BinTypes.h>\n\nnamespace nn::gfx {\n\nstruct ResUserDataData {\n    nn::util::BinPtrToString pName;\n    nn::util::BinPtr pData;\n    uint32_t count;\n    uint8_t type;\n    char reserved[43];\n};\n\n}  // namespace nn::gfx\n");

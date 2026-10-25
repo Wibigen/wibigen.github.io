@@ -1,0 +1,1 @@
+DOC.got("gh/sead/DebugFontMgrJis1Nvn/end_.text_00838db4.cpp","// Nom démêlé : sead::DebugFontMgrJis1Nvn::end\n// Symbole manglé : end\n// void sead::DebugFontMgrJis1Nvn::end(DrawContext *param_1); @ .text::00838db4\n\n\n/* sead::DebugFontMgrJis1Nvn::end(sead::DrawContext*) const */\n\nvoid sead::DebugFontMgrJis1Nvn::end(DrawContext *param_1)\n\n{\n  return;\n}\n\n");

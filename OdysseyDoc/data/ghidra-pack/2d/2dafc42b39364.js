@@ -1,0 +1,1 @@
+DOC.got("gh/al/ModelDrawerBase/isDraw.cpp","// Nom démêlé : al::ModelDrawerBase::isDraw\n// Symbole manglé : isDraw\n// bool __thiscall al::ModelDrawerBase::isDraw(ModelDrawerBase *this); @ .text::00a42564\n\n\n/* al::ModelDrawerBase::isDraw() const */\n\nbool __thiscall al::ModelDrawerBase::isDraw(ModelDrawerBase *this)\n\n{\n  return 0 < *(int *)(this + 0x3c);\n}\n\n");

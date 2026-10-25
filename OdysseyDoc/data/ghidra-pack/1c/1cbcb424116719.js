@@ -1,0 +1,1 @@
+DOC.got("gh/al/powerOut.cpp","// Nom démêlé : al::powerOut\n// Symbole manglé : powerOut\n// void al::powerOut(float param_1,float param_2); @ .text::00a20c98\n\n\n/* al::powerOut(float, float) */\n\nvoid al::powerOut(float param_1,float param_2)\n\n{\n  powf(param_1,1.0 / param_2);\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/isNewNerve.cpp","// Nom démêlé : al::isNewNerve\n// Symbole manglé : isNewNerve\n// uint al::isNewNerve(IUseNerve *param_1); @ .text::00a59e60\n\n\n/* al::isNewNerve(al::IUseNerve const*) */\n\nuint al::isNewNerve(IUseNerve *param_1)\n\n{\n  long lVar1;\n  \n  lVar1 = (*(code *)**(undefined8 **)param_1)();\n  return *(uint *)(lVar1 + 0x18) >> 0x1f;\n}\n\n");

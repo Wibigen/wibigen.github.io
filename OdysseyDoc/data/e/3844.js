@@ -1,0 +1,1 @@
+DOC.got("e/3844",{"31904":{"q":"nn::gfx::OutOfMemoryEventArg","decl":{"f":"lib/NintendoSDK/include/nn/gfx/gfx_Common.h","l":16,"sig":"struct OutOfMemoryEventArg","end":18,"fi":74},"size":8,"align":8,"complete":true,"fields":[{"n":"minRequiredSize","t":"size_t","off":0,"sz":8,"acc":"public","bits":null,"l":17,"cm":null,"ti":49363}]}});

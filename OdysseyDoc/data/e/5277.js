@@ -1,0 +1,1 @@
+DOC.got("e/5277",{"45851":{"q":"sead::HeapMgr::FreeCallbackArg","acc":"private","decl":{"f":"lib/sead/include/heap/seadHeapMgr.h","l":21,"sig":"struct FreeCallbackArg","fi":1377},"complete":false,"fwd":[["lib/sead/include/heap/seadHeapMgr.h",21]]}});

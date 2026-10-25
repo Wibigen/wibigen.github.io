@@ -1,0 +1,1 @@
+DOC.got("src/967","#pragma once\n\n#include \"Library/Camera/CameraPoserFactory.h\"\n\nnamespace al {\nclass SimpleCameraPoserFactory : public CameraPoserFactory {\npublic:\n    SimpleCameraPoserFactory(const char* factoryName);\n};\n}  // namespace al\n");

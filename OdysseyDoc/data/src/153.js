@@ -1,0 +1,1 @@
+DOC.got("src/153","#pragma once\n\n#include <nn/types.h>\n\nnamespace nn::irsensor {\nstruct TeraPluginProcessorState {\n    s64 samplingNumber;\n    s64 timeStamp;\n    s32 ambientNoiseLevel;\n    u8 pluginData[0x12c];\n};\n}  // namespace nn::irsensor\n");

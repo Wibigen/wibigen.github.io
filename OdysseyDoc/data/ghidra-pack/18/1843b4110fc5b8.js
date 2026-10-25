@@ -1,0 +1,1 @@
+DOC.got("gh/CoinFunction/getAppearAboveVelocity.cpp","// Nom démêlé : CoinFunction::getAppearAboveVelocity\n// Symbole manglé : getAppearAboveVelocity\n// undefined8 CoinFunction::getAppearAboveVelocity(void); @ .text::002bc9b0\n\n\n/* CoinFunction::getAppearAboveVelocity() */\n\nundefined8 CoinFunction::getAppearAboveVelocity(void)\n\n{\n  return 0x19aa2d0;\n}\n\n");

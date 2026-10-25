@@ -1,0 +1,1 @@
+DOC.got("gh/sead/NullFaderTask/draw_.text_0086fa90.cpp","// Nom démêlé : sead::NullFaderTask::draw\n// Symbole manglé : draw\n// void sead::NullFaderTask::draw(void); @ .text::0086fa90\n\n\n/* sead::NullFaderTask::draw() */\n\nvoid sead::NullFaderTask::draw(void)\n\n{\n  return;\n}\n\n");

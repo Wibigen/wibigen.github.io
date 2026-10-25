@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Job/Resume_.text_0073acbc.cpp","// Nom démêlé : nn::nex::Job::Resume\n// Symbole manglé : Resume\n// void __thiscall nn::nex::Job::Resume(Job *this); @ .text::0073acbc\n\n\n/* nn::nex::Job::Resume() */\n\nvoid __thiscall nn::nex::Job::Resume(Job *this)\n\n{\n  *(undefined4 *)(this + 0x40) = 3;\n  return;\n}\n\n");

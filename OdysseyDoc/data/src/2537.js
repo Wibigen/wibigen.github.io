@@ -1,0 +1,1 @@
+DOC.got("src/2537","#include \"Util/TimeUtil.h\"\n\nnamespace rs {\nbool checkTimeReverseAndRestore(u64* startTime, u64 currentTime) {\n    if (currentTime < *startTime + 10) {\n        *startTime = currentTime;\n        return true;\n    }\n    return false;\n}\n}  // namespace rs\n");

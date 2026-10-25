@@ -1,0 +1,1 @@
+DOC.got("gh/FUN_.text_00cef028.cpp","// Nom démêlé : FUN_.text__00cef028\n// Symbole manglé : FUN_.text__00cef028\n// void FUN_.text__00cef028(void); @ .text::00cef028\n\n\nvoid FUN__text__00cef028(void)\n\n{\n  (*(code *)PTR_01f4d6d8)();\n  return;\n}\n\n");

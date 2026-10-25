@@ -1,0 +1,1 @@
+DOC.got("gh/SignBoardBlow/exeWait_.text_0041b280.cpp","// Nom démêlé : SignBoardBlow::exeWait\n// Symbole manglé : exeWait\n// void SignBoardBlow::exeWait(void); @ .text::0041b280\n\n\n/* SignBoardBlow::exeWait() */\n\nvoid SignBoardBlow::exeWait(void)\n\n{\n  return;\n}\n\n");

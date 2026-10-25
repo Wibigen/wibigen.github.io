@@ -1,0 +1,1 @@
+DOC.got("gh/FUN_.text_0021c0e0.cpp","// Nom démêlé : FUN_.text__0021c0e0\n// Symbole manglé : FUN_.text__0021c0e0\n// uint FUN_.text__0021c0e0(long param_1,char *param_2); @ .text::0021c0e0\n\n\nuint FUN__text__0021c0e0(long param_1,char *param_2)\n\n{\n  uint uVar1;\n  \n  uVar1 = al::isActionOneTime(*(LiveActor **)(param_1 + 8),param_2);\n  return ~uVar1 & 1;\n}\n\n");

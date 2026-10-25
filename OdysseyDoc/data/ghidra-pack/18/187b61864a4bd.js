@@ -1,0 +1,1 @@
+DOC.got("gh/eui/Screen/requestCapture.cpp","// Nom démêlé : eui::Screen::requestCapture_\n// Symbole manglé : requestCapture_\n// void __thiscall eui::Screen::requestCapture_(Screen *this); @ .text::008efa54\n\n\n/* eui::Screen::requestCapture_() */\n\nvoid __thiscall eui::Screen::requestCapture_(Screen *this)\n\n{\n  this[0xec] = (Screen)0x1;\n  return;\n}\n\n");

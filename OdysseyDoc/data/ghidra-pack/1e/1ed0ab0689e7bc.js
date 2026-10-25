@@ -1,0 +1,1 @@
+DOC.got("gh/BossMagmaBulletDropper/exeWait_.text_001385e0.cpp","// Nom démêlé : BossMagmaBulletDropper::exeWait\n// Symbole manglé : exeWait\n// void BossMagmaBulletDropper::exeWait(void); @ .text::001385e0\n\n\n/* BossMagmaBulletDropper::exeWait() */\n\nvoid BossMagmaBulletDropper::exeWait(void)\n\n{\n  return;\n}\n\n");

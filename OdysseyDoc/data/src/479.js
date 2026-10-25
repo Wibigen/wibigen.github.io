@@ -1,0 +1,1 @@
+DOC.got("src/479","#include \"Library/Camera/CameraViewCtrlScene.h\"\n\nnamespace al {\n\nSceneCameraViewCtrl::SceneCameraViewCtrl() = default;\n\nSceneCameraCtrl::SceneCameraCtrl() = default;\n\nvoid SceneCameraCtrl::init(s32 viewNum) {\n    mViewNum = viewNum;\n    mViewArray = new SceneCameraViewCtrl[viewNum];\n}\n\n}  // namespace al\n");

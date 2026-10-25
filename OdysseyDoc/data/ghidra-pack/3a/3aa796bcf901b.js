@@ -1,0 +1,1 @@
+DOC.got("gh/al/LightningController/exeWait_.text_00a6bde8.cpp","// Nom démêlé : al::LightningController::exeWait\n// Symbole manglé : exeWait\n// void al::LightningController::exeWait(void); @ .text::00a6bde8\n\n\n/* al::LightningController::exeWait() */\n\nvoid al::LightningController::exeWait(void)\n\n{\n  return;\n}\n\n");

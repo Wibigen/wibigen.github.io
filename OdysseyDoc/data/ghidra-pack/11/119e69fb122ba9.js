@@ -1,0 +1,1 @@
+DOC.got("gh/agl/AppendRootNodeToOR.cpp","// Nom démêlé : agl::AppendRootNodeToOR\n// Symbole manglé : AppendRootNodeToOR\n// void agl::AppendRootNodeToOR(Node *param_1); @ .text::0087a534\n\n\n/* agl::AppendRootNodeToOR(sead::hostio::Node*) */\n\nvoid agl::AppendRootNodeToOR(Node *param_1)\n\n{\n  return;\n}\n\n");

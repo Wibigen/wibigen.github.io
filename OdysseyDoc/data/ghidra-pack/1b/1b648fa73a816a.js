@@ -1,0 +1,1 @@
+DOC.got("gh/al/RotateMapParts/exeStandBy_.text_00a18620.cpp","// Nom démêlé : al::RotateMapParts::exeStandBy\n// Symbole manglé : exeStandBy\n// void al::RotateMapParts::exeStandBy(void); @ .text::00a18620\n\n\n/* al::RotateMapParts::exeStandBy() */\n\nvoid al::RotateMapParts::exeStandBy(void)\n\n{\n  return;\n}\n\n");

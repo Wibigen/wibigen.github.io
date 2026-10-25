@@ -1,0 +1,1 @@
+DOC.got("gh/Koopa2D/getDiskColliderDepth.cpp","// Nom démêlé : Koopa2D::getDiskColliderDepth\n// Symbole manglé : getDiskColliderDepth\n// undefined1  [16] Koopa2D::getDiskColliderDepth(void); @ .text::00182200\n\n\n/* Koopa2D::getDiskColliderDepth() const */\n\nundefined1  [16] Koopa2D::getDiskColliderDepth(void)\n\n{\n  return ZEXT816(0x41c80000);\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/agl/pfx/Bloom/calcGPU_.text_00c82cac.cpp","// Nom démêlé : agl::pfx::Bloom::calcGPU\n// Symbole manglé : calcGPU\n// int agl::pfx::Bloom::calcGPU(int param_1); @ .text::00c82cac\n\n\n/* agl::pfx::Bloom::calcGPU(int) const */\n\nint agl::pfx::Bloom::calcGPU(int param_1)\n\n{\n  return param_1;\n}\n\n");

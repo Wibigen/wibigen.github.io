@@ -1,0 +1,1 @@
+DOC.got("src/1090","#pragma once\n\nnamespace al {\nclass ShadowMaskBase;\n\nclass ShadowMaskDirector {\npublic:\n    void registerShadowMask(ShadowMaskBase*);\n\nprivate:\n    void* _0[0x8D8 / 8];\n};\n\nstatic_assert(sizeof(ShadowMaskDirector) == 0x8D8);\n\n}  // namespace al\n");

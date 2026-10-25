@@ -1,0 +1,1 @@
+DOC.got("gh/al/isGoingToEnd.cpp","// Nom démêlé : al::isGoingToEnd\n// Symbole manglé : isGoingToEnd\n// KeyPoseKeeper al::isGoingToEnd(KeyPoseKeeper *param_1); @ .text::009b01f4\n\n\n/* al::isGoingToEnd(al::KeyPoseKeeper const*) */\n\nKeyPoseKeeper al::isGoingToEnd(KeyPoseKeeper *param_1)\n\n{\n  return param_1[0x14];\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("src/1098","#pragma once\n\n#include <prim/seadSafeString.h>\n\nnamespace al {\n\nvoid makeStageDataArchivePath(sead::BufferedSafeString* archivePath, const char* stageName,\n                              const char* resourceType);\n\n}\n");

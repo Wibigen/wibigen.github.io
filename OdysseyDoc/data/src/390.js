@@ -1,0 +1,1 @@
+DOC.got("src/390","#pragma once\n\nnamespace al {\n\nclass BgmDirector {\npublic:\n    BgmDirector();\n};\n}  // namespace al\n");

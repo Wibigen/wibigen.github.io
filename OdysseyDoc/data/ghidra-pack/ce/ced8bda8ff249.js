@@ -1,0 +1,1 @@
+DOC.got("gh/sead/HeapMgr/initHostIO_.text_00845a00.cpp","// Nom démêlé : sead::HeapMgr::initHostIO\n// Symbole manglé : initHostIO\n// void sead::HeapMgr::initHostIO(void); @ .text::00845a00\n\n\n/* sead::HeapMgr::initHostIO() */\n\nvoid sead::HeapMgr::initHostIO(void)\n\n{\n  return;\n}\n\n");

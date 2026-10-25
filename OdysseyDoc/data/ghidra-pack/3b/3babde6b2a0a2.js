@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Platform/YieldThread.cpp","// Nom démêlé : nn::nex::Platform::YieldThread\n// Symbole manglé : YieldThread\n// void nn::nex::Platform::YieldThread(void); @ .text::007170b0\n\n\n/* nn::nex::Platform::YieldThread() */\n\nvoid nn::nex::Platform::YieldThread(void)\n\n{\n  return;\n}\n\n");

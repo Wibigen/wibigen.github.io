@@ -1,0 +1,1 @@
+DOC.got("e/3612",{"30943":{"q":"nn::account::NetworkServiceAccountId","decl":{"f":"lib/NintendoSDK/include/nn/account.h","l":16,"sig":"struct NetworkServiceAccountId","end":18,"fi":0},"size":8,"align":8,"complete":true,"fields":[{"n":"m_Id","t":"u64","off":0,"sz":8,"acc":"public","bits":null,"l":17,"cm":null,"ti":49377}]}});

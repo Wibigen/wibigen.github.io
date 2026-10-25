@@ -1,0 +1,1 @@
+DOC.got("gh/al/ByamlIter/isValid_.text_00b2be98.cpp","// Nom démêlé : al::ByamlIter::isValid\n// Symbole manglé : isValid\n// bool __thiscall al::ByamlIter::isValid(ByamlIter *this); @ .text::00b2be98\n\n\n/* al::ByamlIter::isValid() const */\n\nbool __thiscall al::ByamlIter::isValid(ByamlIter *this)\n\n{\n  return *(long *)this != 0;\n}\n\n");

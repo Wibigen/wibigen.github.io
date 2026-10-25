@@ -1,0 +1,1 @@
+DOC.got("gh/al/StarrySky/update_.text_00b0bb48.cpp","// Nom démêlé : al::StarrySky::update\n// Symbole manglé : update\n// void al::StarrySky::update(GraphicsUpdateInfo *param_1); @ .text::00b0bb48\n\n\n/* al::StarrySky::update(al::GraphicsUpdateInfo const&) */\n\nvoid al::StarrySky::update(GraphicsUpdateInfo *param_1)\n\n{\n  return;\n}\n\n");

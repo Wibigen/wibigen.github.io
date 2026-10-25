@@ -1,0 +1,1 @@
+DOC.got("gh/al/getCurrentHeap_.text_00a378a0.cpp","// Nom démêlé : al::getCurrentHeap\n// Symbole manglé : getCurrentHeap\n// void al::getCurrentHeap(void); @ .text::00a378a0\n\n\n/* al::getCurrentHeap() */\n\nvoid al::getCurrentHeap(void)\n\n{\n  sead::HeapMgr::getCurrentHeap(*(HeapMgr **)PTR_sInstancePtr_01f547a8);\n  return;\n}\n\n");

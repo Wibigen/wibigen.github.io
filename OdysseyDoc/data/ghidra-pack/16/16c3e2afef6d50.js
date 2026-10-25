@@ -1,0 +1,1 @@
+DOC.got("gh/Behavior/Behavior.cpp","// Nom démêlé : Behavior::~Behavior\n// Symbole manglé : ~Behavior\n// void __thiscall Behavior::~Behavior(Behavior *this); @ .text::0048a3cc\n\n\n/* Behavior::~Behavior() */\n\nvoid __thiscall Behavior::~Behavior(Behavior *this)\n\n{\n  return;\n}\n\n");

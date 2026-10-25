@@ -1,0 +1,1 @@
+DOC.got("gh/CollectionList/exeWait_.text_003508e8.cpp","// Nom démêlé : CollectionList::exeWait\n// Symbole manglé : exeWait\n// void CollectionList::exeWait(void); @ .text::003508e8\n\n\n/* CollectionList::exeWait() */\n\nvoid CollectionList::exeWait(void)\n\n{\n  return;\n}\n\n");

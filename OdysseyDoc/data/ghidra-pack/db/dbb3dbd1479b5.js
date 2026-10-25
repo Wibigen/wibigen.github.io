@@ -1,0 +1,1 @@
+DOC.got("gh/JangoCap/demoEnd.cpp","// Nom démêlé : JangoCap::demoEnd\n// Symbole manglé : demoEnd\n// void __thiscall JangoCap::demoEnd(JangoCap *this); @ .text::0022f858\n\n\n/* JangoCap::demoEnd() */\n\nvoid __thiscall JangoCap::demoEnd(JangoCap *this)\n\n{\n  BalloonIcon::startUpdateDraw(*(BalloonIcon **)(this + 0x118));\n  return;\n}\n\n");

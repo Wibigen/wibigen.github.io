@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/SecureStream/GetURLType_.text_007f6000.cpp","// Nom démêlé : nn::nex::SecureStream::GetURLType\n// Symbole manglé : GetURLType\n// undefined8 nn::nex::SecureStream::GetURLType(void); @ .text::007f6000\n\n\n/* nn::nex::SecureStream::GetURLType() */\n\nundefined8 nn::nex::SecureStream::GetURLType(void)\n\n{\n  return 0x1956631;\n}\n\n");

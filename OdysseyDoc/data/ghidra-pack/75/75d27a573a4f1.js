@@ -1,0 +1,1 @@
+DOC.got("gh/al/setCpuPerformance.cpp","// Nom démêlé : al::setCpuPerformance\n// Symbole manglé : setCpuPerformance\n// void al::setCpuPerformance(void); @ .text::00b28460\n\n\n/* al::setCpuPerformance(al::CpuPerformance, nn::oe::PerformanceMode) */\n\nvoid al::setCpuPerformance(void)\n\n{\n  return;\n}\n\n");

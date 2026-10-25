@@ -1,0 +1,1 @@
+DOC.got("gh/LMS_GetAttrNum.cpp","// Nom démêlé : LMS_GetAttrNum\n// Symbole manglé : LMS_GetAttrNum\n// undefined4 LMS_GetAttrNum(long param_1); @ .text::00c71280\n\n\nundefined4 LMS_GetAttrNum(long param_1)\n\n{\n  if (*(int *)(param_1 + 0x2c) != -1) {\n    return **(undefined4 **)(*(long *)(param_1 + 0x18) + (long)*(int *)(param_1 + 0x2c) * 0x18);\n  }\n  return 0;\n}\n\n");

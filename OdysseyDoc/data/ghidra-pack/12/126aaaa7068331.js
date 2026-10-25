@@ -1,0 +1,1 @@
+DOC.got("gh/nn/atk/EffectAux/Initialize_.text_00bc8028.cpp","// Nom démêlé : nn::atk::EffectAux::Initialize\n// Symbole manglé : Initialize\n// undefined8 nn::atk::EffectAux::Initialize(void); @ .text::00bc8028\n\n\n/* nn::atk::EffectAux::Initialize() */\n\nundefined8 nn::atk::EffectAux::Initialize(void)\n\n{\n  return 1;\n}\n\n");

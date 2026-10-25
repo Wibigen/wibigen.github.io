@@ -1,0 +1,1 @@
+DOC.got("gh/al/ShaderCubeMapKeeper/isDrawCubeMap.cpp","// Nom démêlé : al::ShaderCubeMapKeeper::isDrawCubeMap\n// Symbole manglé : isDrawCubeMap\n// undefined8 al::ShaderCubeMapKeeper::isDrawCubeMap(void); @ .text::00b02ab8\n\n\n/* al::ShaderCubeMapKeeper::isDrawCubeMap() const */\n\nundefined8 al::ShaderCubeMapKeeper::isDrawCubeMap(void)\n\n{\n  return 0;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/HelpAmiiboLifeMaxUpItem/isEnableUse_.text_001043e0.cpp","// Nom démêlé : HelpAmiiboLifeMaxUpItem::isEnableUse\n// Symbole manglé : isEnableUse\n// undefined8 HelpAmiiboLifeMaxUpItem::isEnableUse(void); @ .text::001043e0\n\n\n/* HelpAmiiboLifeMaxUpItem::isEnableUse() */\n\nundefined8 HelpAmiiboLifeMaxUpItem::isEnableUse(void)\n\n{\n  return 1;\n}\n\n");

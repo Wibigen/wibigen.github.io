@@ -1,0 +1,1 @@
+DOC.got("gh/MofumofuWarpHole/exeHideWait.cpp","// Nom démêlé : MofumofuWarpHole::exeHideWait\n// Symbole manglé : exeHideWait\n// void MofumofuWarpHole::exeHideWait(void); @ .text::001b71f4\n\n\n/* MofumofuWarpHole::exeHideWait() */\n\nvoid MofumofuWarpHole::exeHideWait(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/getPaneName.cpp","// Nom démêlé : al::getPaneName\n// Symbole manglé : getPaneName\n// Pane * al::getPaneName(Pane *param_1); @ .text::009b97c4\n\n\n/* al::getPaneName(nn::ui2d::Pane const*) */\n\nPane * al::getPaneName(Pane *param_1)\n\n{\n  return param_1 + 0xb8;\n}\n\n");

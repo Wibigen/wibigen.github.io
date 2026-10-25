@@ -1,0 +1,1 @@
+DOC.got("gh/rs/getDemoDirector.cpp","// Nom démêlé : rs::getDemoDirector\n// Symbole manglé : getDemoDirector\n// undefined8 rs::getDemoDirector(Scene *param_1); @ .text::005d33f8\n\n\n/* rs::getDemoDirector(al::Scene const*) */\n\nundefined8 rs::getDemoDirector(Scene *param_1)\n\n{\n  return *(undefined8 *)(*(long *)(param_1 + 0x90) + 0xd0);\n}\n\n");

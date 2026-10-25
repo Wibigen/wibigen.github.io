@@ -1,0 +1,1 @@
+DOC.got("gh/al/ByamlWriterData/makeIndex.cpp","// Nom démêlé : al::ByamlWriterData::makeIndex\n// Symbole manglé : makeIndex\n// void al::ByamlWriterData::makeIndex(void); @ .text::00b32ad8\n\n\n/* al::ByamlWriterData::makeIndex() */\n\nvoid al::ByamlWriterData::makeIndex(void)\n\n{\n  return;\n}\n\n");

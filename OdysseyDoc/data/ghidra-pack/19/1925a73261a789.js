@@ -1,0 +1,1 @@
+DOC.got("gh/rs/getGamePadSystem.cpp","// Nom démêlé : rs::getGamePadSystem\n// Symbole manglé : getGamePadSystem\n// undefined8 rs::getGamePadSystem(PlayerInitInfo *param_1); @ .text::0066f3e0\n\n\n/* rs::getGamePadSystem(PlayerInitInfo const&) */\n\nundefined8 rs::getGamePadSystem(PlayerInitInfo *param_1)\n\n{\n  return *(undefined8 *)param_1;\n}\n\n");

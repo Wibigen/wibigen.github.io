@@ -1,0 +1,1 @@
+DOC.got("gh/ShineTowerNpc/noBalloon.cpp","// Nom démêlé : ShineTowerNpc::noBalloon\n// Symbole manglé : noBalloon\n// void __thiscall ShineTowerNpc::noBalloon(ShineTowerNpc *this); @ .text::004cdcac\n\n\n/* ShineTowerNpc::noBalloon() */\n\nvoid __thiscall ShineTowerNpc::noBalloon(ShineTowerNpc *this)\n\n{\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1e6a878);\n  return;\n}\n\n");

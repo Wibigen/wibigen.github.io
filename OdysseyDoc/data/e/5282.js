@@ -1,0 +1,1 @@
+DOC.got("e/5282",{"45903":{"q":"sead::HostIOMgr::Parameter","acc":"public","decl":{"f":"lib/sead/include/hostio/seadHostIOMgr.h","l":9,"sig":"struct Parameter","end":11,"fi":1381},"size":1,"align":1,"complete":true}});

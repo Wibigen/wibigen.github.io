@@ -1,0 +1,1 @@
+DOC.got("gh/Kakku/endFall.cpp","// Nom démêlé : Kakku::endFall\n// Symbole manglé : endFall\n// void Kakku::endFall(void); @ .text::0023fc70\n\n\n/* Kakku::endFall() */\n\nvoid Kakku::endFall(void)\n\n{\n  return;\n}\n\n");

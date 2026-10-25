@@ -1,0 +1,1 @@
+DOC.got("gh/al/ByamlWriterData/calcPackSize_.text_00b32adc.cpp","// Nom démêlé : al::ByamlWriterData::calcPackSize\n// Symbole manglé : calcPackSize\n// undefined8 al::ByamlWriterData::calcPackSize(void); @ .text::00b32adc\n\n\n/* al::ByamlWriterData::calcPackSize() const */\n\nundefined8 al::ByamlWriterData::calcPackSize(void)\n\n{\n  return 4;\n}\n\n");

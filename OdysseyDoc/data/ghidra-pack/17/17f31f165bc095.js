@@ -1,0 +1,1 @@
+DOC.got("gh/sead/Thread/getMessageQueue.cpp","// Nom démêlé : sead::Thread::getMessageQueue\n// Symbole manglé : getMessageQueue\n// Thread * __thiscall sead::Thread::getMessageQueue(Thread *this); @ .text::0082f5a8\n\n\n/* sead::Thread::getMessageQueue() const */\n\nThread * __thiscall sead::Thread::getMessageQueue(Thread *this)\n\n{\n  return this + 0x38;\n}\n\n");

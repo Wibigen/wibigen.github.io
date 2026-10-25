@@ -1,0 +1,1 @@
+DOC.got("gh/IcicleFall/isFallEnd.cpp","// Nom démêlé : IcicleFall::isFallEnd\n// Symbole manglé : isFallEnd\n// void __thiscall IcicleFall::isFallEnd(IcicleFall *this); @ .text::003a9aa4\n\n\n/* IcicleFall::isFallEnd() const */\n\nvoid __thiscall IcicleFall::isFallEnd(IcicleFall *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1e09e38);\n  return;\n}\n\n");

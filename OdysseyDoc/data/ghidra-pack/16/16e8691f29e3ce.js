@@ -1,0 +1,1 @@
+DOC.got("gh/Byugo/isMoveAtWait.cpp","// Nom démêlé : Byugo::isMoveAtWait\n// Symbole manglé : isMoveAtWait\n// bool __thiscall Byugo::isMoveAtWait(Byugo *this); @ .text::001eda60\n\n\n/* Byugo::isMoveAtWait() const */\n\nbool __thiscall Byugo::isMoveAtWait(Byugo *this)\n\n{\n  return *(ushort *)(this + 0x170) < 0x100 && (*(ushort *)(this + 0x170) & 0xff) != 0;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("src/824","#pragma once\n\nnamespace al {\nclass MessageSystem;\n\nclass IUseMessageSystem {\npublic:\n    virtual const MessageSystem* getMessageSystem() const = 0;\n};\n}  // namespace al\n");

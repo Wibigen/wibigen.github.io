@@ -1,0 +1,1 @@
+DOC.got("gh/nn/ui2d/ArcExtractor/Relocate_.text_00bfb2b4.cpp","// Nom démêlé : nn::ui2d::ArcExtractor::Relocate\n// Symbole manglé : Relocate\n// void nn::ui2d::ArcExtractor::Relocate(void *param_1); @ .text::00bfb2b4\n\n\n/* nn::ui2d::ArcExtractor::Relocate(void const*) */\n\nvoid nn::ui2d::ArcExtractor::Relocate(void *param_1)\n\n{\n  return;\n}\n\n");

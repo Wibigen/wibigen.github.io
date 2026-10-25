@@ -1,0 +1,1 @@
+DOC.got("gh/al/isExistItemKeeper.cpp","// Nom démêlé : al::isExistItemKeeper\n// Symbole manglé : isExistItemKeeper\n// bool al::isExistItemKeeper(LiveActor *param_1); @ .text::009a76c0\n\n\n/* al::isExistItemKeeper(al::LiveActor const*) */\n\nbool al::isExistItemKeeper(LiveActor *param_1)\n\n{\n  return *(long *)(param_1 + 0x68) != 0;\n}\n\n");

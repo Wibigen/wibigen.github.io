@@ -1,0 +1,1 @@
+DOC.got("gh/TRexFootIK/isInvalid.cpp","// Nom démêlé : TRexFootIK::isInvalid\n// Symbole manglé : isInvalid\n// void __thiscall TRexFootIK::isInvalid(TRexFootIK *this); @ .text::0029b864\n\n\n/* TRexFootIK::isInvalid() const */\n\nvoid __thiscall TRexFootIK::isInvalid(TRexFootIK *this)\n\n{\n  al::isNerve((IUseNerve *)(this + 0x30),(Nerve *)0x1dacff8);\n  return;\n}\n\n");

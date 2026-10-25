@@ -1,0 +1,1 @@
+DOC.got("src/1033","#pragma once\n\nnamespace al {\n\nclass GameDataHolderBase {};\n\n}  // namespace al\n");

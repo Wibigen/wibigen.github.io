@@ -1,0 +1,1 @@
+DOC.got("gh/sead/ArchiveRes/getLoadDataAlignment.cpp","// Nom démêlé : sead::ArchiveRes::getLoadDataAlignment\n// Symbole manglé : getLoadDataAlignment\n// undefined8 sead::ArchiveRes::getLoadDataAlignment(void); @ .text::008532c0\n\n\n/* sead::ArchiveRes::getLoadDataAlignment() const */\n\nundefined8 sead::ArchiveRes::getLoadDataAlignment(void)\n\n{\n  return 0x80;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/isMclAnimEnd.cpp","// Nom démêlé : al::isMclAnimEnd\n// Symbole manglé : isMclAnimEnd\n// void al::isMclAnimEnd(LiveActor *param_1); @ .text::009d48b4\n\n\n/* al::isMclAnimEnd(al::LiveActor const*) */\n\nvoid al::isMclAnimEnd(LiveActor *param_1)\n\n{\n  AnimPlayerSimple::isAnimEnd(*(AnimPlayerSimple **)(*(long *)(param_1 + 0x88) + 0x38));\n  return;\n}\n\n");

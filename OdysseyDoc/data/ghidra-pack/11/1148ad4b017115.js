@@ -1,0 +1,1 @@
+DOC.got("gh/BossForest/isEnableSkipDemo.cpp","// Nom démêlé : BossForest::isEnableSkipDemo\n// Symbole manglé : isEnableSkipDemo\n// undefined8 BossForest::isEnableSkipDemo(void); @ .text::001179ec\n\n\n/* BossForest::isEnableSkipDemo() const */\n\nundefined8 BossForest::isEnableSkipDemo(void)\n\n{\n  return 1;\n}\n\n");

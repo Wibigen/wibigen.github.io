@@ -1,0 +1,1 @@
+DOC.got("src/2242","#pragma once\n\n#include <container/seadPtrArray.h>\n\n#include \"Player/IJudge.h\"\n\nclass PlayerJudgeOr : public IJudge {\npublic:\n    PlayerJudgeOr(s32 maxJudges);\n\n    void addJudge(IJudge* judge);\n    bool judge() const override;\n\n    void reset() override {}\n\n    void update() override {}\n\nprivate:\n    sead::PtrArray<IJudge> mJudges;\n};\n");

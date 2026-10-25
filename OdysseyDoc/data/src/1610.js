@@ -1,0 +1,1 @@
+DOC.got("src/1610","#pragma once\n\nclass GotogotonMark {\npublic:\n    GotogotonMark();\n\n    bool isMatch(const GotogotonMark* other) const;\n};\n");

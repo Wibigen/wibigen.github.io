@@ -1,0 +1,1 @@
+DOC.got("gh/Curl_llist_count.cpp","// Nom démêlé : Curl_llist_count\n// Symbole manglé : Curl_llist_count\n// undefined8 Curl_llist_count(long param_1); @ .text::0081a6f0\n\n\nundefined8 Curl_llist_count(long param_1)\n\n{\n  return *(undefined8 *)(param_1 + 0x18);\n}\n\n");

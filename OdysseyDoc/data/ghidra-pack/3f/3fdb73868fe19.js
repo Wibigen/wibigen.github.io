@@ -1,0 +1,1 @@
+DOC.got("gh/al/getAnimCameraStep.cpp","// Nom démêlé : al::getAnimCameraStep\n// Symbole manglé : getAnimCameraStep\n// undefined4 al::getAnimCameraStep(CameraTicket *param_1); @ .text::0093f318\n\n\n/* al::getAnimCameraStep(al::CameraTicket const*) */\n\nundefined4 al::getAnimCameraStep(CameraTicket *param_1)\n\n{\n  return *(undefined4 *)(*(long *)param_1 + 0x18c);\n}\n\n");

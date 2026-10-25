@@ -1,0 +1,1 @@
+DOC.got("gh/al/RippleCtrl/getTypeName_.text_0099e0ec.cpp","// Nom démêlé : al::RippleCtrl::getTypeName\n// Symbole manglé : getTypeName\n// undefined8 al::RippleCtrl::getTypeName(void); @ .text::0099e0ec\n\n\n/* al::RippleCtrl::getTypeName() const */\n\nundefined8 al::RippleCtrl::getTypeName(void)\n\n{\n  return 0x19283cc;\n}\n\n");

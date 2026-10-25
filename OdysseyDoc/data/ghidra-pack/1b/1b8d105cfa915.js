@@ -1,0 +1,1 @@
+DOC.got("gh/alsd/AudioPlayer/AudioPlayer.cpp","// Nom démêlé : alsd::AudioPlayer::~AudioPlayer\n// Symbole manglé : ~AudioPlayer\n// void __thiscall alsd::AudioPlayer::~AudioPlayer(AudioPlayer *this); @ .text::00b93038\n\n\n/* alsd::AudioPlayer::~AudioPlayer() */\n\nvoid __thiscall alsd::AudioPlayer::~AudioPlayer(AudioPlayer *this)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/EventFlowMovement/init_.text_004f0e08.cpp","// Nom démêlé : al::EventFlowMovement::init\n// Symbole manglé : init\n// void al::EventFlowMovement::init(ActorInitInfo *param_1); @ .text::004f0e08\n\n\n/* al::EventFlowMovement::init(al::ActorInitInfo const&) */\n\nvoid al::EventFlowMovement::init(ActorInitInfo *param_1)\n\n{\n  return;\n}\n\n");

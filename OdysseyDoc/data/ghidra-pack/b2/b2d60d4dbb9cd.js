@@ -1,0 +1,1 @@
+DOC.got("gh/al/MaterialLightDirector/isEnable_.text_009c0f24.cpp","// Nom démêlé : al::MaterialLightDirector::isEnable\n// Symbole manglé : isEnable\n// undefined8 al::MaterialLightDirector::isEnable(void); @ .text::009c0f24\n\n\n/* al::MaterialLightDirector::isEnable() const */\n\nundefined8 al::MaterialLightDirector::isEnable(void)\n\n{\n  return 1;\n}\n\n");

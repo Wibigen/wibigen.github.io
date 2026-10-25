@@ -1,0 +1,1 @@
+DOC.got("src/1178","#pragma once\n\n#include \"Library/Collision/KCollisionServer.h\"\n\nnamespace al {\n\nclass CameraCollisionPartsFilter : public CollisionPartsFilterBase {\npublic:\n    CameraCollisionPartsFilter();\n\n    bool isInvalidParts(const CollisionParts&) const override;\n};\n\nstatic_assert(sizeof(CameraCollisionPartsFilter) == 0x8);\n\n}  // namespace al\n");

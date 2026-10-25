@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerCollider2D3D/isPressedCeil.cpp","// Nom démêlé : PlayerCollider2D3D::isPressedCeil\n// Symbole manglé : isPressedCeil\n// undefined8 PlayerCollider2D3D::isPressedCeil(void); @ .text::00534610\n\n\n/* PlayerCollider2D3D::isPressedCeil() const */\n\nundefined8 PlayerCollider2D3D::isPressedCeil(void)\n\n{\n  return 0;\n}\n\n");

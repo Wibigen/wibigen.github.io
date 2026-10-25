@@ -1,0 +1,1 @@
+DOC.got("gh/nn/atk/DeviceOutRecorder/OnExit_.text_00bcc3b4.cpp","// Nom démêlé : nn::atk::DeviceOutRecorder::OnExit\n// Symbole manglé : OnExit\n// void nn::atk::DeviceOutRecorder::OnExit(void); @ .text::00bcc3b4\n\n\n/* nn::atk::DeviceOutRecorder::OnExit() */\n\nvoid nn::atk::DeviceOutRecorder::OnExit(void)\n\n{\n  return;\n}\n\n");

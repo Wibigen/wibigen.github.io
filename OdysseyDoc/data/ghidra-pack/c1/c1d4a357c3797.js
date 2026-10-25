@@ -1,0 +1,1 @@
+DOC.got("gh/SneakingMan/addSinPosToSide.cpp","// Nom démêlé : SneakingMan::addSinPosToSide\n// Symbole manglé : addSinPosToSide\n// void SneakingMan::addSinPosToSide(float param_1,float param_2); @ .text::0042134c\n\n\n/* SneakingMan::addSinPosToSide(float, float) */\n\nvoid SneakingMan::addSinPosToSide(float param_1,float param_2)\n\n{\n  return;\n}\n\n");

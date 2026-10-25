@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Timeout/GetRTO.cpp","// Nom démêlé : nn::nex::Timeout::GetRTO\n// Symbole manglé : GetRTO\n// undefined4 __thiscall nn::nex::Timeout::GetRTO(Timeout *this); @ .text::0077c298\n\n\n/* nn::nex::Timeout::GetRTO() */\n\nundefined4 __thiscall nn::nex::Timeout::GetRTO(Timeout *this)\n\n{\n  return *(undefined4 *)(this + 8);\n}\n\n");

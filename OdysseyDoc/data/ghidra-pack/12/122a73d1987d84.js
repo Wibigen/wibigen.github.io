@@ -1,0 +1,1 @@
+DOC.got("gh/sead/operator-_.text_00871e64.cpp","// Nom démêlé : sead::operator-\n// Symbole manglé : operator-\n// long sead::operator-(long param_1,long param_2); @ .text::00871e64\n\n\n/* sead::TEMPNAMEPLACEHOLDERVALUE(sead::DateTimeUtc, sead::DateSpan) */\n\nlong sead::operator-(long param_1,long param_2)\n\n{\n  return param_1 - param_2;\n}\n\n");

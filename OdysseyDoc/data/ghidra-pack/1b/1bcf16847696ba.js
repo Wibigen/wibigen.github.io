@@ -1,0 +1,1 @@
+DOC.got("gh/LavaFryingPan/exeWaitDown.cpp","// Nom démêlé : LavaFryingPan::exeWaitDown\n// Symbole manglé : exeWaitDown\n// void LavaFryingPan::exeWaitDown(void); @ .text::003b1984\n\n\n/* LavaFryingPan::exeWaitDown() */\n\nvoid LavaFryingPan::exeWaitDown(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerJudgeRecoveryLifeFast/update_.text_0055af54.cpp","// Nom démêlé : PlayerJudgeRecoveryLifeFast::update\n// Symbole manglé : update\n// void PlayerJudgeRecoveryLifeFast::update(void); @ .text::0055af54\n\n\n/* PlayerJudgeRecoveryLifeFast::update() */\n\nvoid PlayerJudgeRecoveryLifeFast::update(void)\n\n{\n  return;\n}\n\n");

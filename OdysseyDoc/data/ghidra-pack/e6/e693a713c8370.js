@@ -1,0 +1,1 @@
+DOC.got("gh/al/getGravity_.text_009ee64c.cpp","// Nom démêlé : al::getGravity\n// Symbole manglé : getGravity\n// void al::getGravity(LiveActor *param_1); @ .text::009ee64c\n\n\n/* al::getGravity(al::LiveActor const*) */\n\nvoid al::getGravity(LiveActor *param_1)\n\n{\n  (**(code **)(**(long **)(param_1 + 0x50) + 0x30))();\n  return;\n}\n\n");

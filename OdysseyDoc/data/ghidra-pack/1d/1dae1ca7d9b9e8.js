@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/SigloAccount/GetUserHandle.cpp","// Nom démêlé : nn::nex::SigloAccount::GetUserHandle\n// Symbole manglé : GetUserHandle\n// undefined4 * nn::nex::SigloAccount::GetUserHandle(void); @ .text::0071b1cc\n\n\n/* nn::nex::SigloAccount::GetUserHandle() */\n\nundefined4 * nn::nex::SigloAccount::GetUserHandle(void)\n\n{\n  return &DAT_01f6b208;\n}\n\n");

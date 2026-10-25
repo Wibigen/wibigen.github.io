@@ -1,0 +1,1 @@
+DOC.got("e/3749",{"31581":{"q":"nn::gfx::ApiVariation","decl":{"f":"lib/NintendoSDK/include/nn/gfx/gfx_VariationBase.h","l":6,"sig":"template <typename TType, typename TVersion>\nclass ApiVariation","end":6,"fi":131},"tp":["typename TType","typename TVersion"],"complete":true,"fwd":[["lib/NintendoSDK/include/nn/gfx/gfx_Device.h",14]]}});

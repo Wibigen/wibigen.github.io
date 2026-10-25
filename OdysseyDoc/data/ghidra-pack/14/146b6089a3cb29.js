@@ -1,0 +1,1 @@
+DOC.got("gh/Senobi/getStretchSensorNum.cpp","// Nom démêlé : Senobi::getStretchSensorNum\n// Symbole manglé : getStretchSensorNum\n// undefined8 Senobi::getStretchSensorNum(void); @ .text::0027e41c\n\n\n/* Senobi::getStretchSensorNum() */\n\nundefined8 Senobi::getStretchSensorNum(void)\n\n{\n  return 8;\n}\n\n");

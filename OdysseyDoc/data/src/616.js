@@ -1,0 +1,1 @@
+DOC.got("src/616","#pragma once\n\n#include \"Library/Execute/ExecutorActorExecuteBase.h\"\n\nnamespace al {\n\nclass ExecutorActorMovement : public ExecutorActorExecuteBase {\npublic:\n    ExecutorActorMovement(const char* name);\n    void execute() const override;\n};\n\nstatic_assert(sizeof(ExecutorActorMovement) == 0x20);\n\n}  // namespace al\n");

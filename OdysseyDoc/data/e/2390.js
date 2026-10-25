@@ -1,0 +1,1 @@
+DOC.got("e/2390",{"23940":{"q":"al::SensorSortCmpFuncBase","decl":{"f":"lib/al/Library/LiveActor/ActorSensorUtil.h","l":17,"sig":"class SensorSortCmpFuncBase","fi":729},"complete":false,"fwd":[["lib/al/Library/LiveActor/ActorSensorUtil.h",17]]}});

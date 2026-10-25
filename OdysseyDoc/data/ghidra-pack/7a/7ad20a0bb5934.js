@@ -1,0 +1,1 @@
+DOC.got("gh/EventDemoCtrl/endDemo_.text_002b09f0.cpp","// Nom démêlé : EventDemoCtrl::endDemo\n// Symbole manglé : endDemo\n// void __thiscall EventDemoCtrl::endDemo(EventDemoCtrl *this); @ .text::002b09f0\n\n\n/* EventDemoCtrl::endDemo() */\n\nvoid __thiscall EventDemoCtrl::endDemo(EventDemoCtrl *this)\n\n{\n  FUN__text__002b09f8(*(undefined8 *)(this + 8));\n  return;\n}\n\n");

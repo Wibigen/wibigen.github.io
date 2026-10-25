@@ -1,0 +1,1 @@
+DOC.got("gh/al/isPlaced_.text_00a9e5c4.cpp","// Nom démêlé : al::isPlaced\n// Symbole manglé : isPlaced\n// void al::isPlaced(ActorInitInfo *param_1); @ .text::00a9e5c4\n\n\n/* al::isPlaced(al::ActorInitInfo const&) */\n\nvoid al::isPlaced(ActorInitInfo *param_1)\n\n{\n  ByamlIter::isValid(*(ByamlIter **)(param_1 + 8));\n  return;\n}\n\n");

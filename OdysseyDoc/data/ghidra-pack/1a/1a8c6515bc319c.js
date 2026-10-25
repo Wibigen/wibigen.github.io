@@ -1,0 +1,1 @@
+DOC.got("gh/RunAwayNpc/receiveEvent_.text_004bf44c.cpp","// Nom démêlé : RunAwayNpc::receiveEvent\n// Symbole manglé : receiveEvent\n// undefined8 RunAwayNpc::receiveEvent(EventFlowEventData *param_1); @ .text::004bf44c\n\n\n/* RunAwayNpc::receiveEvent(al::EventFlowEventData const*) */\n\nundefined8 RunAwayNpc::receiveEvent(EventFlowEventData *param_1)\n\n{\n  return 0;\n}\n\n");

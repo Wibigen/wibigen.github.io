@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/RootTransport/GetRelay.cpp","// Nom démêlé : nn::nex::RootTransport::GetRelay\n// Symbole manglé : GetRelay\n// undefined8 nn::nex::RootTransport::GetRelay(void); @ .text::007644ac\n\n\n/* nn::nex::RootTransport::GetRelay() */\n\nundefined8 nn::nex::RootTransport::GetRelay(void)\n\n{\n  return 0;\n}\n\n");

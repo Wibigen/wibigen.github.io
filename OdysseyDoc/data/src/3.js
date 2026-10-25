@@ -1,0 +1,1 @@
+DOC.got("src/3","#pragma once\n\n#include <nn/types.h>\n\nnamespace nn::aoc {\n\nint ListAddOnContent(int*, int, int);\n\n}  // namespace nn::aoc\n");

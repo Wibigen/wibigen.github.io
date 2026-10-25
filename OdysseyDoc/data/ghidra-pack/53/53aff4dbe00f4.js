@@ -1,0 +1,1 @@
+DOC.got("gh/Can/isChargeCount.cpp","// Nom démêlé : Can::isChargeCount\n// Symbole manglé : isChargeCount\n// bool __thiscall Can::isChargeCount(Can *this); @ .text::0032b734\n\n\n/* Can::isChargeCount() const */\n\nbool __thiscall Can::isChargeCount(Can *this)\n\n{\n  return 9 < *(int *)(this + 0x158);\n}\n\n");

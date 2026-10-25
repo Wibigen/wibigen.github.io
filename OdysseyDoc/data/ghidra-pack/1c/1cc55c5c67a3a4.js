@@ -1,0 +1,1 @@
+DOC.got("gh/GhostPlayer/isPlayDone.cpp","// Nom démêlé : GhostPlayer::isPlayDone\n// Symbole manglé : isPlayDone\n// bool __thiscall GhostPlayer::isPlayDone(GhostPlayer *this); @ .text::004972dc\n\n\n/* GhostPlayer::isPlayDone() const */\n\nbool __thiscall GhostPlayer::isPlayDone(GhostPlayer *this)\n\n{\n  return *(int *)(this + 0x170) <= *(int *)(this + 0x110);\n}\n\n");

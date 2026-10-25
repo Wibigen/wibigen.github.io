@@ -1,0 +1,1 @@
+DOC.got("gh/nn/font/CharWriter/EndPrint_.text_00bec6bc.cpp","// Nom démêlé : nn::font::CharWriter::EndPrint\n// Symbole manglé : EndPrint\n// void nn::font::CharWriter::EndPrint(void); @ .text::00bec6bc\n\n\n/* nn::font::CharWriter::EndPrint() const */\n\nvoid nn::font::CharWriter::EndPrint(void)\n\n{\n  return;\n}\n\n");

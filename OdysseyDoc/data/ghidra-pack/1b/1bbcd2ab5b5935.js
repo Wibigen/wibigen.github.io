@@ -1,0 +1,1 @@
+DOC.got("gh/al/ActorPoseKeeperBase/getMtx.cpp","// Nom démêlé : al::ActorPoseKeeperBase::getMtx\n// Symbole manglé : getMtx\n// undefined * al::ActorPoseKeeperBase::getMtx(void); @ .text::009ee0e8\n\n\n/* al::ActorPoseKeeperBase::getMtx() const */\n\nundefined * al::ActorPoseKeeperBase::getMtx(void)\n\n{\n  return PTR_01f4ec78;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("src/1107","#pragma once\n\nnamespace al {\nclass StageSwitchListener {\npublic:\n    virtual void listenOn() = 0;\n    virtual void listenOff() = 0;\n};\n}  // namespace al\n");

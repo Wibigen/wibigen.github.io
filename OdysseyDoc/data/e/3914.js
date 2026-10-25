@@ -1,0 +1,1 @@
+DOC.got("e/3914",{"32395":{"q":"nn::gfx::TInteroperation","decl":{"f":"lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h","l":70,"sig":"template <typename TTarget>\nclass TInteroperation","fi":51},"tp":["typename TTarget"],"complete":false,"fwd":[["lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h",70]]}});

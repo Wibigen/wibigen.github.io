@@ -1,0 +1,1 @@
+DOC.got("gh/al/getBlackCubeSampler.cpp","// Nom démêlé : al::getBlackCubeSampler\n// Symbole manglé : getBlackCubeSampler\n// undefined8 al::getBlackCubeSampler(void); @ .text::00b09638\n\n\n/* al::getBlackCubeSampler() */\n\nundefined8 al::getBlackCubeSampler(void)\n\n{\n  return *(undefined8 *)(*(long *)PTR_sInstance_01f5b548 + 0x50);\n}\n\n");

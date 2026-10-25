@@ -1,0 +1,1 @@
+DOC.got("gh/MenuSelectParts/exeDecideEnd_.text_002f9f08.cpp","// Nom démêlé : MenuSelectParts::exeDecideEnd\n// Symbole manglé : exeDecideEnd\n// void MenuSelectParts::exeDecideEnd(void); @ .text::002f9f08\n\n\n/* MenuSelectParts::exeDecideEnd() */\n\nvoid MenuSelectParts::exeDecideEnd(void)\n\n{\n  return;\n}\n\n");

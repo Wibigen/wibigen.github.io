@@ -1,0 +1,1 @@
+DOC.got("gh/sead/Event/resetSignal.cpp","// Nom démêlé : sead::Event::resetSignal\n// Symbole manglé : resetSignal\n// void __thiscall sead::Event::resetSignal(Event *this); @ .text::00c644bc\n\n\n/* sead::Event::resetSignal() */\n\nvoid __thiscall sead::Event::resetSignal(Event *this)\n\n{\n  nn::os::ClearLightEvent((LightEventType *)(this + 0x20));\n  return;\n}\n\n");

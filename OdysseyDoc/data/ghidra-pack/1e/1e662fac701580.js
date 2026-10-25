@@ -1,0 +1,1 @@
+DOC.got("gh/al/AreaObj/invalidate_.text_00903d00.cpp","// Nom démêlé : al::AreaObj::invalidate\n// Symbole manglé : invalidate\n// void __thiscall al::AreaObj::invalidate(AreaObj *this); @ .text::00903d00\n\n\n/* al::AreaObj::invalidate() */\n\nvoid __thiscall al::AreaObj::invalidate(AreaObj *this)\n\n{\n  this[0x6c] = (AreaObj)0x0;\n  return;\n}\n\n");

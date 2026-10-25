@@ -1,0 +1,1 @@
+DOC.got("gh/StageSceneStatePauseMenu/isEndToHelp.cpp","// Nom démêlé : StageSceneStatePauseMenu::isEndToHelp\n// Symbole manglé : isEndToHelp\n// undefined8 StageSceneStatePauseMenu::isEndToHelp(void); @ .text::005ea598\n\n\n/* StageSceneStatePauseMenu::isEndToHelp() const */\n\nundefined8 StageSceneStatePauseMenu::isEndToHelp(void)\n\n{\n  return 0;\n}\n\n");

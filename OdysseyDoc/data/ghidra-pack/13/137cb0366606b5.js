@@ -1,0 +1,1 @@
+DOC.got("gh/al/EventFlowNode/start_.text_002b5f8c.cpp","// Nom démêlé : al::EventFlowNode::start\n// Symbole manglé : start\n// void __thiscall al::EventFlowNode::start(EventFlowNode *this); @ .text::002b5f8c\n\n\n/* al::EventFlowNode::start() */\n\nvoid __thiscall al::EventFlowNode::start(EventFlowNode *this)\n\n{\n  this[0x30] = (EventFlowNode)0x1;\n  return;\n}\n\n");

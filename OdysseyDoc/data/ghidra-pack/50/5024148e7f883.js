@@ -1,0 +1,1 @@
+DOC.got("gh/sead/ArchiveFileDevice/doFlush.cpp","// Nom démêlé : sead::ArchiveFileDevice::doFlush_\n// Symbole manglé : doFlush_\n// undefined8 sead::ArchiveFileDevice::doFlush_(FileHandle *param_1); @ .text::00869d40\n\n\n/* sead::ArchiveFileDevice::doFlush_(sead::FileHandle*) */\n\nundefined8 sead::ArchiveFileDevice::doFlush_(FileHandle *param_1)\n\n{\n  return 0;\n}\n\n");

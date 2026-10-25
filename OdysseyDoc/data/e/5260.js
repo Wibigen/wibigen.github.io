@@ -1,0 +1,1 @@
+DOC.got("e/5260",{"45677":{"q":"sead::GraphicsNvn::NvnDebugCallbackParam","acc":"public","decl":{"f":"lib/sead/include/gfx/nin/seadGraphicsNvn.h","l":19,"sig":"struct NvnDebugCallbackParam","fi":1358},"complete":false,"fwd":[["lib/sead/include/gfx/nin/seadGraphicsNvn.h",19]]}});

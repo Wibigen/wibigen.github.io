@@ -1,0 +1,1 @@
+DOC.got("src/2198","#include \"Player/PlayerInfo.h\"\n\nPlayerInfo::PlayerInfo() = default;\n");

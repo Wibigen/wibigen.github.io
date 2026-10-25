@@ -1,0 +1,1 @@
+DOC.got("e/1975",{"21317":{"q":"al::NameToCameraParamTransferFunc","decl":{"f":"lib/al/Library/Camera/CameraDirector.h","l":27,"sig":"class NameToCameraParamTransferFunc","fi":409},"complete":false,"fwd":[["lib/al/Library/Camera/CameraDirector.h",27],["lib/al/Library/Camera/CameraParamTransfer.h",9]]}});

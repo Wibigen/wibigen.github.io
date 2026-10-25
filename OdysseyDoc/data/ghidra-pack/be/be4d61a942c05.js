@@ -1,0 +1,1 @@
+DOC.got("gh/al/isHideModel.cpp","// Nom démêlé : al::isHideModel\n// Symbole manglé : isHideModel\n// undefined1 al::isHideModel(LiveActor *param_1); @ .text::009df5d8\n\n\n/* al::isHideModel(al::LiveActor const*) */\n\nundefined1 al::isHideModel(LiveActor *param_1)\n\n{\n  return *(undefined1 *)(*(long *)(param_1 + 0x100) + 5);\n}\n\n");

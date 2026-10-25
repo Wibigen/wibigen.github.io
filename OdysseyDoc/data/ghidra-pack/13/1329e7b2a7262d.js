@@ -1,0 +1,1 @@
+DOC.got("gh/al/WindowConfirmWait/exePageOutEnd.cpp","// Nom démêlé : al::WindowConfirmWait::exePageOutEnd\n// Symbole manglé : exePageOutEnd\n// void al::WindowConfirmWait::exePageOutEnd(void); @ .text::00a9ccf0\n\n\n/* al::WindowConfirmWait::exePageOutEnd() */\n\nvoid al::WindowConfirmWait::exePageOutEnd(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("src/2009","#pragma once\n\n#include \"Library/LiveActor/LiveActor.h\"\n\nclass TransparentWall : public al::LiveActor {\npublic:\n    TransparentWall(const char* name);\n\n    void init(const al::ActorInitInfo& info) override;\n    bool receiveMsg(const al::SensorMsg* message, al::HitSensor* other,\n                    al::HitSensor* self) override;\n};\n");

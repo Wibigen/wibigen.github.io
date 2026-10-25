@@ -1,0 +1,1 @@
+DOC.got("gh/sead/ArchiveFileDevice/doClose.cpp","// Nom démêlé : sead::ArchiveFileDevice::doClose_\n// Symbole manglé : doClose_\n// undefined8 sead::ArchiveFileDevice::doClose_(FileHandle *param_1); @ .text::00869d38\n\n\n/* sead::ArchiveFileDevice::doClose_(sead::FileHandle*) */\n\nundefined8 sead::ArchiveFileDevice::doClose_(FileHandle *param_1)\n\n{\n  return 1;\n}\n\n");

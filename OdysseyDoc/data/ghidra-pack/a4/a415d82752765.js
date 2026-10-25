@@ -1,0 +1,1 @@
+DOC.got("gh/eui/ControlBase/ControlBase_.text_008f4f8c.cpp","// Nom démêlé : eui::ControlBase::~ControlBase\n// Symbole manglé : ~ControlBase\n// void __thiscall eui::ControlBase::~ControlBase(ControlBase *this); @ .text::008f4f8c\n\n\n/* eui::ControlBase::~ControlBase() */\n\nvoid __thiscall eui::ControlBase::~ControlBase(ControlBase *this)\n\n{\n  return;\n}\n\n");

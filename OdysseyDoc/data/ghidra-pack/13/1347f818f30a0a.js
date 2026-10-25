@@ -1,0 +1,1 @@
+DOC.got("gh/sead/FixedSizeJQ/begin_.text_00cee624.cpp","// Nom démêlé : sead::FixedSizeJQ::begin\n// Symbole manglé : begin\n// void sead::FixedSizeJQ::begin(void); @ .text::00cee624\n\n\n/* sead::FixedSizeJQ::begin() */\n\nvoid sead::FixedSizeJQ::begin(void)\n\n{\n  return;\n}\n\n");

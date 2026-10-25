@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerJudgeRecoveryLifeFast/reset_.text_0055af50.cpp","// Nom démêlé : PlayerJudgeRecoveryLifeFast::reset\n// Symbole manglé : reset\n// void PlayerJudgeRecoveryLifeFast::reset(void); @ .text::0055af50\n\n\n/* PlayerJudgeRecoveryLifeFast::reset() */\n\nvoid PlayerJudgeRecoveryLifeFast::reset(void)\n\n{\n  return;\n}\n\n");

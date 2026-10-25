@@ -1,0 +1,1 @@
+DOC.got("e/13827",{"170":{"q":"ams::psc::detail::result","files":["lib/NintendoSDK/include/vapours/results/psc_results.hpp"]}});

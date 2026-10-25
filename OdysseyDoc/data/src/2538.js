@@ -1,0 +1,1 @@
+DOC.got("src/2538","#pragma once\n\n#include <basis/seadTypes.h>\n\nnamespace rs {\nbool checkTimeReverseAndRestore(u64* startTime, u64 currentTime);\n}\n");

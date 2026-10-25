@@ -1,0 +1,1 @@
+DOC.got("gh/agl/utl/DevTools/isRotateUDReverse.cpp","// Nom démêlé : agl::utl::DevTools::isRotateUDReverse\n// Symbole manglé : isRotateUDReverse\n// undefined1 agl::utl::DevTools::isRotateUDReverse(void); @ .text::00890d68\n\n\n/* agl::utl::DevTools::isRotateUDReverse() */\n\nundefined1 agl::utl::DevTools::isRotateUDReverse(void)\n\n{\n  return DAT_025744e4;\n}\n\n");

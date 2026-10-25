@@ -1,0 +1,1 @@
+DOC.got("src/1161","#pragma once\n\nnamespace al {\nstruct AnimPlayerInitInfo {\n    char _0[0x20];\n};\n}  // namespace al\n");

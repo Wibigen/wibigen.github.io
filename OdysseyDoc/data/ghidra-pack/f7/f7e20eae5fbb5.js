@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerSubjectiveWatchCheckObj/control_.text_003e4598.cpp","// Nom démêlé : PlayerSubjectiveWatchCheckObj::control\n// Symbole manglé : control\n// void PlayerSubjectiveWatchCheckObj::control(void); @ .text::003e4598\n\n\n/* PlayerSubjectiveWatchCheckObj::control() */\n\nvoid PlayerSubjectiveWatchCheckObj::control(void)\n\n{\n  return;\n}\n\n");

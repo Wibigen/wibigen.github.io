@@ -1,0 +1,1 @@
+DOC.got("gh/al/OrthoDepthTexture/getName_.text_00a90a00.cpp","// Nom démêlé : al::OrthoDepthTexture::getName\n// Symbole manglé : getName\n// undefined8 al::OrthoDepthTexture::getName(void); @ .text::00a90a00\n\n\n/* al::OrthoDepthTexture::getName() const */\n\nundefined8 al::OrthoDepthTexture::getName(void)\n\n{\n  return 0x196fcbe;\n}\n\n");

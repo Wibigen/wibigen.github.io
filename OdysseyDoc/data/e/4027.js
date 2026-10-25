@@ -1,0 +1,1 @@
+DOC.got("e/4027",{"33062":{"q":"nn::gfx::detail::ShaderImpl","decl":{"f":"lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h","l":182,"sig":"template <typename TTarget>\nclass ShaderImpl","fi":51},"tp":["typename TTarget"],"derived":[32471],"complete":false,"fwd":[["lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h",182]]}});

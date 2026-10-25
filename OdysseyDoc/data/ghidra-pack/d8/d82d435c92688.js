@@ -1,0 +1,1 @@
+DOC.got("gh/al/isShadowMaskLbufScale.cpp","// Nom démêlé : al::isShadowMaskLbufScale\n// Symbole manglé : isShadowMaskLbufScale\n// bool al::isShadowMaskLbufScale(int param_1); @ .text::00b1e5ec\n\n\n/* al::isShadowMaskLbufScale(int) */\n\nbool al::isShadowMaskLbufScale(int param_1)\n\n{\n  return param_1 == 2;\n}\n\n");

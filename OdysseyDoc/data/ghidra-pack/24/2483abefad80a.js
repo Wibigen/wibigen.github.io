@@ -1,0 +1,1 @@
+DOC.got("gh/Kakku/getPlayerCollider_.text_002413ec.cpp","// Nom démêlé : Kakku::getPlayerCollider\n// Symbole manglé : getPlayerCollider\n// undefined8 __thiscall Kakku::getPlayerCollider(Kakku *this); @ .text::002413ec\n\n\n/* Kakku::getPlayerCollider() const */\n\nundefined8 __thiscall Kakku::getPlayerCollider(Kakku *this)\n\n{\n  return *(undefined8 *)(this + 0x1e8);\n}\n\n");

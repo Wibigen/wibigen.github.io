@@ -1,0 +1,1 @@
+DOC.got("gh/sead/BinaryStreamFormat/flush_.text_008709c0.cpp","// Nom démêlé : sead::BinaryStreamFormat::flush\n// Symbole manglé : flush\n// void sead::BinaryStreamFormat::flush(StreamSrc *param_1); @ .text::008709c0\n\n\n/* sead::BinaryStreamFormat::flush(sead::StreamSrc*) */\n\nvoid sead::BinaryStreamFormat::flush(StreamSrc *param_1)\n\n{\n  return;\n}\n\n");

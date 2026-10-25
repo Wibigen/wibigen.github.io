@@ -1,0 +1,1 @@
+DOC.got("gh/al/isShadowMaskShadow.cpp","// Nom démêlé : al::isShadowMaskShadow\n// Symbole manglé : isShadowMaskShadow\n// bool al::isShadowMaskShadow(int param_1); @ .text::00b1e604\n\n\n/* al::isShadowMaskShadow(int) */\n\nbool al::isShadowMaskShadow(int param_1)\n\n{\n  return param_1 == 0;\n}\n\n");

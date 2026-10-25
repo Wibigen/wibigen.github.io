@@ -1,0 +1,1 @@
+DOC.got("gh/BalloonEmote/exeSleep_.text_002d9b34.cpp","// Nom démêlé : BalloonEmote::exeSleep\n// Symbole manglé : exeSleep\n// void BalloonEmote::exeSleep(void); @ .text::002d9b34\n\n\n/* BalloonEmote::exeSleep() */\n\nvoid BalloonEmote::exeSleep(void)\n\n{\n  return;\n}\n\n");

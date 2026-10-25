@@ -1,0 +1,1 @@
+DOC.got("gh/al/MaterialLightDirector/endInit_.text_009c0b84.cpp","// Nom démêlé : al::MaterialLightDirector::endInit\n// Symbole manglé : endInit\n// void al::MaterialLightDirector::endInit(void); @ .text::009c0b84\n\n\n/* al::MaterialLightDirector::endInit() */\n\nvoid al::MaterialLightDirector::endInit(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/CapMessageDirector/getSceneObjName_.text_00337b10.cpp","// Nom démêlé : CapMessageDirector::getSceneObjName\n// Symbole manglé : getSceneObjName\n// undefined8 CapMessageDirector::getSceneObjName(void); @ .text::00337b10\n\n\n/* CapMessageDirector::getSceneObjName() const */\n\nundefined8 CapMessageDirector::getSceneObjName(void)\n\n{\n  return 0x192f288;\n}\n\n");

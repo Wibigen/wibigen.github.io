@@ -1,0 +1,1 @@
+DOC.got("gh/Senobi/calcAnim_.text_0027eff4.cpp","// Nom démêlé : Senobi::calcAnim\n// Symbole manglé : calcAnim\n// void __thiscall Senobi::calcAnim(Senobi *this); @ .text::0027eff4\n\n\n/* Senobi::calcAnim() */\n\nvoid __thiscall Senobi::calcAnim(Senobi *this)\n\n{\n  al::LiveActor::calcAnim((LiveActor *)this);\n  FUN__text__0027f018(this);\n  return;\n}\n\n");

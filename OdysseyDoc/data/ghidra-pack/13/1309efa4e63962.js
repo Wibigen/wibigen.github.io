@@ -1,0 +1,1 @@
+DOC.got("gh/HackCap/getPadRumblePort.cpp","// Nom démêlé : HackCap::getPadRumblePort\n// Symbole manglé : getPadRumblePort\n// undefined4 __thiscall HackCap::getPadRumblePort(HackCap *this); @ .text::004fe4fc\n\n\n/* HackCap::getPadRumblePort() const */\n\nundefined4 __thiscall HackCap::getPadRumblePort(HackCap *this)\n\n{\n  return **(undefined4 **)(this + 0x178);\n}\n\n");

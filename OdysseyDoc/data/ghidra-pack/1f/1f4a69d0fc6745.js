@@ -1,0 +1,1 @@
+DOC.got("gh/al/isAreaTarget.cpp","// Nom démêlé : al::isAreaTarget\n// Symbole manglé : isAreaTarget\n// undefined1 al::isAreaTarget(LiveActor *param_1); @ .text::009d9a3c\n\n\n/* al::isAreaTarget(al::LiveActor const*) */\n\nundefined1 al::isAreaTarget(LiveActor *param_1)\n\n{\n  return *(undefined1 *)(*(long *)(param_1 + 0x100) + 10);\n}\n\n");

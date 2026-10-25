@@ -1,0 +1,1 @@
+DOC.got("gh/FUN_.text_0083b130.cpp","// Nom démêlé : FUN_.text__0083b130\n// Symbole manglé : FUN_.text__0083b130\n// void FUN_.text__0083b130(void); @ .text::0083b130\n\n\nvoid FUN__text__0083b130(void)\n\n{\n  undefined8 uVar1;\n  \n  uVar1 = nn::os::GetSystemTick();\n  *(undefined8 *)PTR_sBaseTime_01f5ad90 = uVar1;\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/RaceManGoal/getRaceFirstJointName.cpp","// Nom démêlé : RaceManGoal::getRaceFirstJointName\n// Symbole manglé : getRaceFirstJointName\n// undefined8 RaceManGoal::getRaceFirstJointName(void); @ .text::004b765c\n\n\n/* RaceManGoal::getRaceFirstJointName() */\n\nundefined8 RaceManGoal::getRaceFirstJointName(void)\n\n{\n  return 0x193e1ca;\n}\n\n");

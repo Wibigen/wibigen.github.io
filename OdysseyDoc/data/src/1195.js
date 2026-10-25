@@ -1,0 +1,1 @@
+DOC.got("src/1195","#include \"Project/Controller/PadRumbleKeeper.h\"\n\nnamespace al {\n\nPadRumbleKeeper::PadRumbleKeeper(s32 port) : mPort(port) {}\n\n}  // namespace al\n");

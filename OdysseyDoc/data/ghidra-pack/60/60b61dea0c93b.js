@@ -1,0 +1,1 @@
+DOC.got("gh/al/CloudRenderKeeper/getName_.text_00af930c.cpp","// Nom démêlé : al::CloudRenderKeeper::getName\n// Symbole manglé : getName\n// undefined8 al::CloudRenderKeeper::getName(void); @ .text::00af930c\n\n\n/* al::CloudRenderKeeper::getName() const */\n\nundefined8 al::CloudRenderKeeper::getName(void)\n\n{\n  return 0x1974442;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/TimeFlagTelop/restart.cpp","// Nom démêlé : TimeFlagTelop::restart\n// Symbole manglé : restart\n// void __thiscall TimeFlagTelop::restart(TimeFlagTelop *this); @ .text::0043921c\n\n\n/* TimeFlagTelop::restart() */\n\nvoid __thiscall TimeFlagTelop::restart(TimeFlagTelop *this)\n\n{\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1e3d6b8);\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/KoopaFunction/isLevel1.cpp","// Nom démêlé : KoopaFunction::isLevel1\n// Symbole manglé : isLevel1\n// bool KoopaFunction::isLevel1(KoopaNumberCounter *param_1); @ .text::001936c8\n\n\n/* KoopaFunction::isLevel1(KoopaNumberCounter const*) */\n\nbool KoopaFunction::isLevel1(KoopaNumberCounter *param_1)\n\n{\n  return *(int *)param_1 == 0;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("src/938","#pragma once\n\n#include \"Library/LiveActor/LiveActor.h\"\n\nnamespace al {\n\nclass SilhouetteModel : public LiveActor {\npublic:\n    SilhouetteModel(LiveActor* parent, const ActorInitInfo& initInfo, const char* category);\n    void movement() override;\n};\n\n}  // namespace al\n");

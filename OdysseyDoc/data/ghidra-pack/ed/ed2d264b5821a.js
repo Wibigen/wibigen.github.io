@@ -1,0 +1,1 @@
+DOC.got("gh/sead/Framework/initRun_.text_00832e2c.cpp","// Nom démêlé : sead::Framework::initRun_\n// Symbole manglé : initRun_\n// void sead::Framework::initRun_(Heap *param_1); @ .text::00832e2c\n\n\n/* sead::Framework::initRun_(sead::Heap*) */\n\nvoid sead::Framework::initRun_(Heap *param_1)\n\n{\n  return;\n}\n\n");

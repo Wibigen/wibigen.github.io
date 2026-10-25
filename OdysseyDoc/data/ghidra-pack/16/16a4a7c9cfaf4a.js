@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Event/SetType.cpp","// Nom démêlé : nn::nex::Event::SetType\n// Symbole manglé : SetType\n// void __thiscall nn::nex::Event::SetType(Event *this,uint param_1); @ .text::0070fb38\n\n\n/* nn::nex::Event::SetType(unsigned int) */\n\nvoid __thiscall nn::nex::Event::SetType(Event *this,uint param_1)\n\n{\n  *(uint *)(this + 0x10) = param_1;\n  return;\n}\n\n");

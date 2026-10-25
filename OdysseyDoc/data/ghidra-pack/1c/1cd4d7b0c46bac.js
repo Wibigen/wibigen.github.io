@@ -1,0 +1,1 @@
+DOC.got("gh/PulseSwitch/exeOff_.text_003e893c.cpp","// Nom démêlé : PulseSwitch::exeOff\n// Symbole manglé : exeOff\n// void PulseSwitch::exeOff(void); @ .text::003e893c\n\n\n/* PulseSwitch::exeOff() */\n\nvoid PulseSwitch::exeOff(void)\n\n{\n  return;\n}\n\n");

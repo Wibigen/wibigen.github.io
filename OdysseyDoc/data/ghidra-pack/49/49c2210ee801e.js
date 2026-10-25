@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerJudgeLongFall/update_.text_0055a0b0.cpp","// Nom démêlé : PlayerJudgeLongFall::update\n// Symbole manglé : update\n// void PlayerJudgeLongFall::update(void); @ .text::0055a0b0\n\n\n/* PlayerJudgeLongFall::update() */\n\nvoid PlayerJudgeLongFall::update(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/KoopaPuppet/hideModel.cpp","// Nom démêlé : KoopaPuppet::hideModel\n// Symbole manglé : hideModel\n// void __thiscall KoopaPuppet::hideModel(KoopaPuppet *this); @ .text::001997e8\n\n\n/* KoopaPuppet::hideModel() */\n\nvoid __thiscall KoopaPuppet::hideModel(KoopaPuppet *this)\n\n{\n  Koopa::hideBindModel(*(Koopa **)this);\n  return;\n}\n\n");

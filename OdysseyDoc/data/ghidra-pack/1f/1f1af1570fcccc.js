@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Protocol/Clone_.text_006ffc84.cpp","// Nom démêlé : nn::nex::Protocol::Clone\n// Symbole manglé : Clone\n// undefined8 nn::nex::Protocol::Clone(void); @ .text::006ffc84\n\n\n/* nn::nex::Protocol::Clone() const */\n\nundefined8 nn::nex::Protocol::Clone(void)\n\n{\n  return 0;\n}\n\n");

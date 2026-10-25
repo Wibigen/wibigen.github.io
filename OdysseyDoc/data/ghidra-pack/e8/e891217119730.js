@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/QueuingSocket/OutputFlooded.cpp","// Nom démêlé : nn::nex::QueuingSocket::OutputFlooded\n// Symbole manglé : OutputFlooded\n// undefined8 nn::nex::QueuingSocket::OutputFlooded(void); @ .text::0078f344\n\n\n/* nn::nex::QueuingSocket::OutputFlooded() */\n\nundefined8 nn::nex::QueuingSocket::OutputFlooded(void)\n\n{\n  return 0;\n}\n\n");

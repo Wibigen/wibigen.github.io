@@ -1,0 +1,1 @@
+DOC.got("gh/Peach/startWaitKoopaShip.cpp","// Nom démêlé : Peach::startWaitKoopaShip\n// Symbole manglé : startWaitKoopaShip\n// void __thiscall Peach::startWaitKoopaShip(Peach *this); @ .text::004ad620\n\n\n/* Peach::startWaitKoopaShip() */\n\nvoid __thiscall Peach::startWaitKoopaShip(Peach *this)\n\n{\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1e60d18);\n  return;\n}\n\n");

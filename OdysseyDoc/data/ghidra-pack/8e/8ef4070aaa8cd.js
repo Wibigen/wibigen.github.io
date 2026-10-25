@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerActorBase/getPlayerCollision.cpp","// Nom démêlé : PlayerActorBase::getPlayerCollision\n// Symbole manglé : getPlayerCollision\n// undefined8 PlayerActorBase::getPlayerCollision(void); @ .text::0044f884\n\n\n/* PlayerActorBase::getPlayerCollision() const */\n\nundefined8 PlayerActorBase::getPlayerCollision(void)\n\n{\n  return 0;\n}\n\n");

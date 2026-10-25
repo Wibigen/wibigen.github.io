@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Job/Job_.text_00747ff4.cpp","// Nom démêlé : nn::nex::Job::~Job\n// Symbole manglé : ~Job\n// void __thiscall nn::nex::Job::~Job(Job *this); @ .text::00747ff4\n\n\n/* nn::nex::Job::~Job() */\n\nvoid __thiscall nn::nex::Job::~Job(Job *this)\n\n{\n  *(undefined **)this = PTR_01f580f0 + 0x10;\n  return;\n}\n\n");

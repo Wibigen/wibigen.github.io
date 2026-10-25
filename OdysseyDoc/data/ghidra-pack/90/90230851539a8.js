@@ -1,0 +1,1 @@
+DOC.got("gh/CounterLife/exeNone_.text_002e5878.cpp","// Nom démêlé : CounterLife::exeNone\n// Symbole manglé : exeNone\n// void CounterLife::exeNone(void); @ .text::002e5878\n\n\n/* CounterLife::exeNone() */\n\nvoid CounterLife::exeNone(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/isPadEnableLeftStick.cpp","// Nom démêlé : al::isPadEnableLeftStick\n// Symbole manglé : isPadEnableLeftStick\n// undefined8 al::isPadEnableLeftStick(int param_1); @ .text::009633fc\n\n\n/* al::isPadEnableLeftStick(int) */\n\nundefined8 al::isPadEnableLeftStick(int param_1)\n\n{\n  return 0;\n}\n\n");

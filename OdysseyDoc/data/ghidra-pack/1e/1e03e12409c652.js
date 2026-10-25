@@ -1,0 +1,1 @@
+DOC.got("gh/nn/ui2d/TextureInfo/GetFormat.cpp","// Nom démêlé : nn::ui2d::TextureInfo::GetFormat\n// Symbole manglé : GetFormat\n// undefined8 nn::ui2d::TextureInfo::GetFormat(void); @ .text::008e3314\n\n\n/* nn::ui2d::TextureInfo::GetFormat() const */\n\nundefined8 nn::ui2d::TextureInfo::GetFormat(void)\n\n{\n  return 0;\n}\n\n");

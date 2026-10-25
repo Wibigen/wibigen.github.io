@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/ConsoleIO/GetCStr.cpp","// Nom démêlé : nn::nex::ConsoleIO::GetCStr\n// Symbole manglé : GetCStr\n// void nn::nex::ConsoleIO::GetCStr(char *param_1,uint param_2); @ .text::0070d9e4\n\n\n/* nn::nex::ConsoleIO::GetCStr(char*, unsigned int) */\n\nvoid nn::nex::ConsoleIO::GetCStr(char *param_1,uint param_2)\n\n{\n  return;\n}\n\n");

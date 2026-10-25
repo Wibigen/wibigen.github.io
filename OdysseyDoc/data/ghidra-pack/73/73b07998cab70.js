@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Job/AddActivity.cpp","// Nom démêlé : nn::nex::Job::AddActivity\n// Symbole manglé : AddActivity\n// void nn::nex::Job::AddActivity(char *param_1); @ .text::0073abbc\n\n\n/* nn::nex::Job::AddActivity(char const*) */\n\nvoid nn::nex::Job::AddActivity(char *param_1)\n\n{\n  return;\n}\n\n");

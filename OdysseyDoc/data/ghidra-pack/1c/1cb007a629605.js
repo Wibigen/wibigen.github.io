@@ -1,0 +1,1 @@
+DOC.got("gh/ProjectGraphicsObjShadowMaskCube/updateMulti.cpp","// Nom démêlé : ProjectGraphicsObjShadowMaskCube::updateMulti\n// Symbole manglé : updateMulti\n// void ProjectGraphicsObjShadowMaskCube::updateMulti(void); @ .text::003e8154\n\n\n/* ProjectGraphicsObjShadowMaskCube::updateMulti() */\n\nvoid ProjectGraphicsObjShadowMaskCube::updateMulti(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("src/877","#pragma once\n\nnamespace al {\nclass NerveKeeper;\n\nclass Nerve {\npublic:\n    virtual void execute(NerveKeeper* keeper) const = 0;\n\n    virtual void executeOnEnd(NerveKeeper* keeper) const {}\n};\n}  // namespace al\n");

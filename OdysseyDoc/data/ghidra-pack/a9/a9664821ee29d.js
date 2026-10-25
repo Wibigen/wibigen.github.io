@@ -1,0 +1,1 @@
+DOC.got("gh/Tire/control_.text_00439784.cpp","// Nom démêlé : Tire::control\n// Symbole manglé : control\n// void Tire::control(void); @ .text::00439784\n\n\n/* Tire::control() */\n\nvoid Tire::control(void)\n\n{\n  return;\n}\n\n");

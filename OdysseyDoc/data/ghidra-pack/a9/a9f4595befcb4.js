@@ -1,0 +1,1 @@
+DOC.got("gh/DoorSnow/exeWait_.text_00360444.cpp","// Nom démêlé : DoorSnow::exeWait\n// Symbole manglé : exeWait\n// void DoorSnow::exeWait(void); @ .text::00360444\n\n\n/* DoorSnow::exeWait() */\n\nvoid DoorSnow::exeWait(void)\n\n{\n  return;\n}\n\n");

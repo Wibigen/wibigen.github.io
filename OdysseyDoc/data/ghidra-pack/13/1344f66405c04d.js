@@ -1,0 +1,1 @@
+DOC.got("gh/QuestObj/initAfterPlacement_.text_003e9d7c.cpp","// Nom démêlé : QuestObj::initAfterPlacement\n// Symbole manglé : initAfterPlacement\n// void QuestObj::initAfterPlacement(void); @ .text::003e9d7c\n\n\n/* QuestObj::initAfterPlacement() */\n\nvoid QuestObj::initAfterPlacement(void)\n\n{\n  return;\n}\n\n");

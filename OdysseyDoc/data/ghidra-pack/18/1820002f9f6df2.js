@@ -1,0 +1,1 @@
+DOC.got("gh/MofumofuBody/isLightDown.cpp","// Nom démêlé : MofumofuBody::isLightDown\n// Symbole manglé : isLightDown\n// bool __thiscall MofumofuBody::isLightDown(MofumofuBody *this); @ .text::001b2788\n\n\n/* MofumofuBody::isLightDown() const */\n\nbool __thiscall MofumofuBody::isLightDown(MofumofuBody *this)\n\n{\n  return *(int *)(this + 0x150) == 1;\n}\n\n");

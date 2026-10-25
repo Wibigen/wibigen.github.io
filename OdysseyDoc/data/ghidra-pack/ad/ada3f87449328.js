@@ -1,0 +1,1 @@
+DOC.got("gh/al/DemoSyncedSeCtrl/finalize_.text_009735bc.cpp","// Nom démêlé : al::DemoSyncedSeCtrl::finalize\n// Symbole manglé : finalize\n// void al::DemoSyncedSeCtrl::finalize(void); @ .text::009735bc\n\n\n/* al::DemoSyncedSeCtrl::finalize() */\n\nvoid al::DemoSyncedSeCtrl::finalize(void)\n\n{\n  return;\n}\n\n");

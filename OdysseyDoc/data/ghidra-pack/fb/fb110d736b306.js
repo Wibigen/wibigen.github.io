@@ -1,0 +1,1 @@
+DOC.got("gh/wslay_event_get_queued_msg_count.cpp","// Nom démêlé : wslay_event_get_queued_msg_count\n// Symbole manglé : wslay_event_get_queued_msg_count\n// undefined8 wslay_event_get_queued_msg_count(long param_1); @ .text::007a2378\n\n\nundefined8 wslay_event_get_queued_msg_count(long param_1)\n\n{\n  return *(undefined8 *)(param_1 + 0x90);\n}\n\n");

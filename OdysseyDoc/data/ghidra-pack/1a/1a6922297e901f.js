@@ -1,0 +1,1 @@
+DOC.got("gh/CoinCollectWatcher/getSceneObjName_.text_002c2cbc.cpp","// Nom démêlé : CoinCollectWatcher::getSceneObjName\n// Symbole manglé : getSceneObjName\n// undefined8 CoinCollectWatcher::getSceneObjName(void); @ .text::002c2cbc\n\n\n/* CoinCollectWatcher::getSceneObjName() const */\n\nundefined8 CoinCollectWatcher::getSceneObjName(void)\n\n{\n  return 0x192aa3a;\n}\n\n");

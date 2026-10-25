@@ -1,0 +1,1 @@
+DOC.got("gh/sead/Mutex/lock_.text_0085a69c.cpp","// Nom démêlé : sead::Mutex::lock\n// Symbole manglé : lock\n// void __thiscall sead::Mutex::lock(Mutex *this); @ .text::0085a69c\n\n\n/* sead::Mutex::lock() */\n\nvoid __thiscall sead::Mutex::lock(Mutex *this)\n\n{\n  nn::os::LockMutex((MutexType *)(this + 0x20));\n  return;\n}\n\n");

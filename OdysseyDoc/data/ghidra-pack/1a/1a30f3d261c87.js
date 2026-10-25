@@ -1,0 +1,1 @@
+DOC.got("gh/al/isDepthFuncReverse.cpp","// Nom démêlé : al::isDepthFuncReverse\n// Symbole manglé : isDepthFuncReverse\n// undefined8 al::isDepthFuncReverse(void); @ .text::00973c14\n\n\n/* al::isDepthFuncReverse() */\n\nundefined8 al::isDepthFuncReverse(void)\n\n{\n  return 0;\n}\n\n");

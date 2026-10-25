@@ -1,0 +1,1 @@
+DOC.got("src/47","#pragma once\n\n#include <nn/types.h>\n\nnamespace nn::gfx::detail {\n\ntypedef u64 NvnHandle;\n\n};");

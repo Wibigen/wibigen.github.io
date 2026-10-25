@@ -1,0 +1,1 @@
+DOC.got("src/1077","#pragma once\n\n#include <heap/seadDisposer.h>\n\n#include \"Library/HostIO/HioNode.h\"\n\nnamespace al {\n\nclass ShaderHolder : public HioNode {\n    SEAD_SINGLETON_DISPOSER(ShaderHolder)\npublic:\n    // incomplete\nprivate:\n    // missing\n};\n\n}  // namespace al\n");

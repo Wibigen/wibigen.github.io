@@ -1,0 +1,1 @@
+DOC.got("gh/Bird/endGatheringFallDown.cpp","// Nom démêlé : Bird::endGatheringFallDown\n// Symbole manglé : endGatheringFallDown\n// void __thiscall Bird::endGatheringFallDown(Bird *this); @ .text::0047e648\n\n\n/* Bird::endGatheringFallDown() */\n\nvoid __thiscall Bird::endGatheringFallDown(Bird *this)\n\n{\n  al::setModelAlphaMask((LiveActor *)this,1.0);\n  return;\n}\n\n");

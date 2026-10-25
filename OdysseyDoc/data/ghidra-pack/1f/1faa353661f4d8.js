@@ -1,0 +1,1 @@
+DOC.got("gh/rs/getPuppetGravity.cpp","// Nom démêlé : rs::getPuppetGravity\n// Symbole manglé : getPuppetGravity\n// void rs::getPuppetGravity(IUsePlayerPuppet *param_1); @ .text::0066ea30\n\n\n/* rs::getPuppetGravity(IUsePlayerPuppet const*) */\n\nvoid rs::getPuppetGravity(IUsePlayerPuppet *param_1)\n\n{\n  (**(code **)(*(long *)param_1 + 0x48))();\n  return;\n}\n\n");

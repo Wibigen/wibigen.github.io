@@ -1,0 +1,1 @@
+DOC.got("src/2087","#pragma once\n\n#include <prim/seadEnum.h>\n\nSEAD_ENUM(SessionMusicianType\n    , Drum\n    , Bass\n    , Guitar\n    , Trumpet\n    , Vocal\n    , Saxophone\n    , Trombone\n)\n");

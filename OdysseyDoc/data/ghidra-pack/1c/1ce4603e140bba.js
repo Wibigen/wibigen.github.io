@@ -1,0 +1,1 @@
+DOC.got("gh/StateCarCalcCourse/tryRestartCurve.cpp","// Nom démêlé : StateCarCalcCourse::tryRestartCurve\n// Symbole manglé : tryRestartCurve\n// undefined8 StateCarCalcCourse::tryRestartCurve(void); @ .text::0042a100\n\n\n/* StateCarCalcCourse::tryRestartCurve() */\n\nundefined8 StateCarCalcCourse::tryRestartCurve(void)\n\n{\n  return 1;\n}\n\n");

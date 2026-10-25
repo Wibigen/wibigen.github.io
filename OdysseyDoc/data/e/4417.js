@@ -1,0 +1,1 @@
+DOC.got("e/4417",{"3532":{"q":"::NVNtextureBuilder","decl":{"f":"lib/NintendoSDK/include/nvn/nvn.h","l":223,"sig":"struct","end":225,"fi":223},"size":128,"align":1,"complete":true,"fields":[{"n":"reserved","t":"char[128]","off":0,"sz":128,"acc":"public","tu":null,"bits":null,"l":224,"cm":null,"ti":null}]}});

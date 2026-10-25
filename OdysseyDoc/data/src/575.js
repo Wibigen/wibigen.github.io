@@ -1,0 +1,1 @@
+DOC.got("src/575","#pragma once\n\nnamespace al {\nclass ByamlIter;\nclass EventFlowNodeInitInfo;\n\nclass EventFlowEventData {\npublic:\n    EventFlowEventData(const char* name, const EventFlowNodeInitInfo& info);\n\nprivate:\n    const char* mName;\n    ByamlIter* mParamIter = nullptr;\n};\n\nstatic_assert(sizeof(EventFlowEventData) == 0x10);\n\n}  // namespace al\n");

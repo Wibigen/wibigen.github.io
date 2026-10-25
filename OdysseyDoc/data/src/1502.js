@@ -1,0 +1,1 @@
+DOC.got("src/1502","#pragma once\n\n#include <math/seadVector.h>\n\n#include \"Library/Area/AreaObj.h\"\n\nclass ForceRecoveryKidsArea : public al::AreaObj {\npublic:\n    ForceRecoveryKidsArea(const char* name);\n\n    void init(const al::AreaInitInfo& info) override;\n\nprivate:\n    sead::Vector3f mRecoveryPos = {0.0f, 0.0f, 0.0f};\n    sead::Vector3f mRecoveryUp;\n};\n");

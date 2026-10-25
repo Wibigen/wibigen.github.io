@@ -1,0 +1,1 @@
+DOC.got("gh/TimeBalloon/getProtectCoinNum.cpp","// Nom démêlé : TimeBalloon::getProtectCoinNum\n// Symbole manglé : getProtectCoinNum\n// undefined8 TimeBalloon::getProtectCoinNum(void); @ .text::0046be00\n\n\n/* TimeBalloon::getProtectCoinNum() */\n\nundefined8 TimeBalloon::getProtectCoinNum(void)\n\n{\n  return 0x14;\n}\n\n");

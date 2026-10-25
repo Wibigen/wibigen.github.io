@@ -1,0 +1,1 @@
+DOC.got("e/3964",{"32709":{"q":"nn::gfx::ViewportScissorStateImplData","decl":{"f":"lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h","l":112,"sig":"template <typename TTarget>\nstruct ViewportScissorStateImplData","fi":51},"tp":["typename TTarget"],"complete":false,"fwd":[["lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h",112]]}});

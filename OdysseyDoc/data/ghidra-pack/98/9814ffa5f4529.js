@@ -1,0 +1,1 @@
+DOC.got("gh/MapSeaOfTreeIcon/end_.text_002f8844.cpp","// Nom démêlé : MapSeaOfTreeIcon::end\n// Symbole manglé : end\n// void __thiscall MapSeaOfTreeIcon::end(MapSeaOfTreeIcon *this); @ .text::002f8844\n\n\n/* MapSeaOfTreeIcon::end() */\n\nvoid __thiscall MapSeaOfTreeIcon::end(MapSeaOfTreeIcon *this)\n\n{\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1dc9528);\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("e/3845",{"31905":{"q":"nn::gfx::PipelineImplData","decl":{"f":"lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h","l":115,"sig":"template <typename TTarget>\nstruct PipelineImplData","fi":51},"tp":["typename TTarget"],"complete":false,"fwd":[["lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h",115]]}});

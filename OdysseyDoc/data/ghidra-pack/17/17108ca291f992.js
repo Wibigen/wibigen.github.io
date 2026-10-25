@@ -1,0 +1,1 @@
+DOC.got("gh/QuestInfoHolder/getSceneObjName_.text_005c3bac.cpp","// Nom démêlé : QuestInfoHolder::getSceneObjName\n// Symbole manglé : getSceneObjName\n// undefined8 QuestInfoHolder::getSceneObjName(void); @ .text::005c3bac\n\n\n/* QuestInfoHolder::getSceneObjName() const */\n\nundefined8 QuestInfoHolder::getSceneObjName(void)\n\n{\n  return 0x194af0f;\n}\n\n");

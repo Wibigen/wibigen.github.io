@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Sha1/Sha1.cpp","// Nom démêlé : nn::nex::Sha1::Sha1\n// Symbole manglé : Sha1\n// void __thiscall nn::nex::Sha1::Sha1(Sha1 *this); @ .text::0072ee70\n\n\n/* nn::nex::Sha1::Sha1() */\n\nvoid __thiscall nn::nex::Sha1::Sha1(Sha1 *this)\n\n{\n  *(undefined8 *)this = 0;\n  return;\n}\n\n");

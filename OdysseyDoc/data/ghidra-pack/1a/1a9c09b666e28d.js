@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Platform/Instance.cpp","// Nom démêlé : nn::nex::Platform::Instance\n// Symbole manglé : Instance\n// undefined8 nn::nex::Platform::Instance(void); @ .text::00716a10\n\n\n/* nn::nex::Platform::Instance() */\n\nundefined8 nn::nex::Platform::Instance(void)\n\n{\n  return *(undefined8 *)PTR__Instance_01f583c0;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/Curl_ssl_shutdown.cpp","// Nom démêlé : Curl_ssl_shutdown\n// Symbole manglé : Curl_ssl_shutdown\n// undefined8 Curl_ssl_shutdown(void); @ .text::0080e738\n\n\nundefined8 Curl_ssl_shutdown(void)\n\n{\n  return 0x50;\n}\n\n");

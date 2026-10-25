@@ -1,0 +1,1 @@
+DOC.got("gh/HelpAmiiboFallCoin/exeWait_.text_00103b94.cpp","// Nom démêlé : HelpAmiiboFallCoin::exeWait\n// Symbole manglé : exeWait\n// void HelpAmiiboFallCoin::exeWait(void); @ .text::00103b94\n\n\n/* HelpAmiiboFallCoin::exeWait() */\n\nvoid HelpAmiiboFallCoin::exeWait(void)\n\n{\n  return;\n}\n\n");

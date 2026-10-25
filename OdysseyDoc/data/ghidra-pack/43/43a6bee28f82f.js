@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerJudgeEnablePeachAmiibo/update_.text_005594f8.cpp","// Nom démêlé : PlayerJudgeEnablePeachAmiibo::update\n// Symbole manglé : update\n// void PlayerJudgeEnablePeachAmiibo::update(void); @ .text::005594f8\n\n\n/* PlayerJudgeEnablePeachAmiibo::update() */\n\nvoid PlayerJudgeEnablePeachAmiibo::update(void)\n\n{\n  return;\n}\n\n");

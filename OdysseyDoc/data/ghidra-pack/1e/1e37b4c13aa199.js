@@ -1,0 +1,1 @@
+DOC.got("gh/agl/utl/IParameterObj/preWrite.cpp","// Nom démêlé : agl::utl::IParameterObj::preWrite_\n// Symbole manglé : preWrite_\n// undefined8 agl::utl::IParameterObj::preWrite_(void); @ .text::008a0ae8\n\n\n/* agl::utl::IParameterObj::preWrite_() const */\n\nundefined8 agl::utl::IParameterObj::preWrite_(void)\n\n{\n  return 1;\n}\n\n");

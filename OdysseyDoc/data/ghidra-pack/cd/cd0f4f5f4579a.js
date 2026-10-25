@@ -1,0 +1,1 @@
+DOC.got("gh/al/PrePassLightBase/exeWait_.text_009cfe14.cpp","// Nom démêlé : al::PrePassLightBase::exeWait\n// Symbole manglé : exeWait\n// void al::PrePassLightBase::exeWait(void); @ .text::009cfe14\n\n\n/* al::PrePassLightBase::exeWait() */\n\nvoid al::PrePassLightBase::exeWait(void)\n\n{\n  return;\n}\n\n");

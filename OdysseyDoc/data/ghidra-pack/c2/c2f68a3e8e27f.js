@@ -1,0 +1,1 @@
+DOC.got("gh/WindBlowPuzzle/control_.text_0044aa40.cpp","// Nom démêlé : WindBlowPuzzle::control\n// Symbole manglé : control\n// void WindBlowPuzzle::control(void); @ .text::0044aa40\n\n\n/* WindBlowPuzzle::control() */\n\nvoid WindBlowPuzzle::control(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/BlockBrick/exeItemEmpty.cpp","// Nom démêlé : BlockBrick::exeItemEmpty\n// Symbole manglé : exeItemEmpty\n// void BlockBrick::exeItemEmpty(void); @ .text::0031bf68\n\n\n/* BlockBrick::exeItemEmpty() */\n\nvoid BlockBrick::exeItemEmpty(void)\n\n{\n  return;\n}\n\n");

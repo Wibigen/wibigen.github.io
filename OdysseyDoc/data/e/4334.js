@@ -1,0 +1,1 @@
+DOC.got("e/4334",{"3464":{"q":"::NVNmemoryPool","decl":{"f":"lib/NintendoSDK/include/nvn/nvn.h","l":153,"sig":"struct","end":155,"fi":223},"size":256,"align":1,"complete":true,"fields":[{"n":"reserved","t":"char[256]","off":0,"sz":256,"acc":"public","tu":null,"bits":null,"l":154,"cm":null,"ti":null}]}});

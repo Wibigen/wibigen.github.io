@@ -1,0 +1,1 @@
+DOC.got("src/2535","#pragma once\n\nnamespace al {\nclass LiveActor;\nstruct ActorInitInfo;\n}  // namespace al\n\nnamespace rs {\nbool isOnSwitchLinkSave(const al::LiveActor* actor, const al::ActorInitInfo& actorInitInfo);\nbool isSaveSwitch(const al::ActorInitInfo& actorInitInfo);\n}  // namespace rs\n");

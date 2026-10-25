@@ -1,0 +1,1 @@
+DOC.got("gh/FukuwaraiWatcher/control_.text_004953b4.cpp","// Nom démêlé : FukuwaraiWatcher::control\n// Symbole manglé : control\n// void FukuwaraiWatcher::control(void); @ .text::004953b4\n\n\n/* FukuwaraiWatcher::control() */\n\nvoid FukuwaraiWatcher::control(void)\n\n{\n  return;\n}\n\n");

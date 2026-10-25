@@ -1,0 +1,1 @@
+DOC.got("e/203",{"10276":{"q":"NpcEventBalloonRequestInfo","decl":{"f":"src/Util/NpcEventFlowUtil.h","l":21,"sig":"struct NpcEventBalloonRequestInfo","fi":2507},"complete":false,"fwd":[["src/Util/NpcEventFlowUtil.h",21]]}});

@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/DateTime/GetHour.cpp","// Nom démêlé : nn::nex::DateTime::GetHour\n// Symbole manglé : GetHour\n// uint __thiscall nn::nex::DateTime::GetHour(DateTime *this); @ .text::0070e644\n\n\n/* nn::nex::DateTime::GetHour() const */\n\nuint __thiscall nn::nex::DateTime::GetHour(DateTime *this)\n\n{\n  return *(uint *)this >> 0xc & 0x1f;\n}\n\n");

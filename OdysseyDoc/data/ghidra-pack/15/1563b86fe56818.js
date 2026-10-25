@@ -1,0 +1,1 @@
+DOC.got("gh/al/getCaseEventNum.cpp","// Nom démêlé : al::getCaseEventNum\n// Symbole manglé : getCaseEventNum\n// undefined4 al::getCaseEventNum(EventFlowNode *param_1); @ .text::0098c6d4\n\n\n/* al::getCaseEventNum(al::EventFlowNode const*) */\n\nundefined4 al::getCaseEventNum(EventFlowNode *param_1)\n\n{\n  return **(undefined4 **)(param_1 + 0x48);\n}\n\n");

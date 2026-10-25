@@ -1,0 +1,1 @@
+DOC.got("e/9766",{"6767":{"q":"FireSurfaceFinder","decl":{"f":"src/Item/LifeUpItem.h","l":16,"sig":"class FireSurfaceFinder","fi":1717},"complete":false,"fwd":[["src/Item/LifeUpItem.h",16]]}});

@@ -1,0 +1,1 @@
+DOC.got("gh/WanwanStateHack/exeSwoon_.text_002ae080.cpp","// Nom démêlé : WanwanStateHack::exeSwoon\n// Symbole manglé : exeSwoon\n// void WanwanStateHack::exeSwoon(void); @ .text::002ae080\n\n\n/* WanwanStateHack::exeSwoon() */\n\nvoid WanwanStateHack::exeSwoon(void)\n\n{\n  return;\n}\n\n");

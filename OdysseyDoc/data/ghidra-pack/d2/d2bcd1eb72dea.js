@@ -1,0 +1,1 @@
+DOC.got("gh/Bull/exeHack_.text_001ea8a0.cpp","// Nom démêlé : Bull::exeHack\n// Symbole manglé : exeHack\n// void __thiscall Bull::exeHack(Bull *this); @ .text::001ea8a0\n\n\n/* Bull::exeHack() */\n\nvoid __thiscall Bull::exeHack(Bull *this)\n\n{\n  al::updateNerveStateAndNextNerve((IUseNerve *)this,(Nerve *)0x1d87d18);\n  return;\n}\n\n");

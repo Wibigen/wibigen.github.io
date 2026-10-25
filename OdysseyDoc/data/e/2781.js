@@ -1,0 +1,1 @@
+DOC.got("e/2781",{"298":{"q":"(anonymous@lib/al/Library/MapObj/ConveyerStep)::(anonymous)","decl":{"f":"lib/al/Library/MapObj/ConveyerStep.cpp","l":21,"sig":"NERVES_MAKE_STRUCT(ConveyerStep, Wait)","end":21,"fi":757},"size":8,"align":8,"complete":true,"fields":[{"n":"Wait","t":"ConveyerStepNrvWait","off":0,"sz":8,"acc":"public","bits":null,"l":21,"cm":null,"ti":1139}]}});

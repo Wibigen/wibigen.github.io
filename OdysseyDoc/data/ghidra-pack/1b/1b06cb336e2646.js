@@ -1,0 +1,1 @@
+DOC.got("gh/HackCapStateThrowStay/exeStay.cpp","// Nom démêlé : HackCapStateThrowStay::exeStay\n// Symbole manglé : exeStay\n// void HackCapStateThrowStay::exeStay(void); @ .text::0050c044\n\n\n/* HackCapStateThrowStay::exeStay() */\n\nvoid HackCapStateThrowStay::exeStay(void)\n\n{\n  return;\n}\n\n");

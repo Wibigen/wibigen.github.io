@@ -1,0 +1,1 @@
+DOC.got("gh/MiniGameRankingLayout/clearImageData.cpp","// Nom démêlé : MiniGameRankingLayout::clearImageData\n// Symbole manglé : clearImageData\n// void MiniGameRankingLayout::clearImageData(void); @ .text::002fd41c\n\n\n/* MiniGameRankingLayout::clearImageData() */\n\nvoid MiniGameRankingLayout::clearImageData(void)\n\n{\n  return;\n}\n\n");

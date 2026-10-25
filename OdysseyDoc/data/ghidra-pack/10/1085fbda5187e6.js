@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/HTTPURL/GetHost.cpp","// Nom démêlé : nn::nex::HTTPURL::GetHost\n// Symbole manglé : GetHost\n// HTTPURL * __thiscall nn::nex::HTTPURL::GetHost(HTTPURL *this); @ .text::0074aa68\n\n\n/* nn::nex::HTTPURL::GetHost() const */\n\nHTTPURL * __thiscall nn::nex::HTTPURL::GetHost(HTTPURL *this)\n\n{\n  return this + 0x38;\n}\n\n");

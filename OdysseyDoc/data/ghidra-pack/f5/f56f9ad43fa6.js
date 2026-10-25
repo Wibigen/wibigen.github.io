@@ -1,0 +1,1 @@
+DOC.got("gh/al/getSide.cpp","// Nom démêlé : al::getSide\n// Symbole manglé : getSide\n// void al::getSide(Vector3 *param_1,ActorInitInfo *param_2); @ .text::00a9fa44\n\n\n/* al::getSide(sead::Vector3<float>*, al::ActorInitInfo const&) */\n\nvoid al::getSide(Vector3 *param_1,ActorInitInfo *param_2)\n\n{\n  tryGetSide(param_1,*(PlacementInfo **)(param_2 + 8));\n  return;\n}\n\n");

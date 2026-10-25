@@ -1,0 +1,1 @@
+DOC.got("e/5245",{"45507":{"q":"sead::FreeList::Node","acc":"private","decl":{"f":"lib/sead/include/container/seadFreeList.h","l":25,"sig":"struct Node","end":28,"fi":1300},"size":8,"align":8,"complete":true,"fields":[{"n":"nextFree","t":"Node *","off":0,"sz":8,"acc":"public","bits":null,"l":27,"cm":null,"ti":45507}]}});

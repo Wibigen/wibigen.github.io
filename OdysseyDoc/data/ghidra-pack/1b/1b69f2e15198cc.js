@@ -1,0 +1,1 @@
+DOC.got("gh/agl/DisplayList/genMessage_.text_00879f74.cpp","// Nom démêlé : agl::DisplayList::genMessage\n// Symbole manglé : genMessage\n// void agl::DisplayList::genMessage(Context *param_1); @ .text::00879f74\n\n\n/* agl::DisplayList::genMessage(sead::hostio::Context*) */\n\nvoid agl::DisplayList::genMessage(Context *param_1)\n\n{\n  return;\n}\n\n");

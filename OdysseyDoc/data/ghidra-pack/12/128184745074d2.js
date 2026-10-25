@@ -1,0 +1,1 @@
+DOC.got("gh/DokanMaze/setIsExitOnly.cpp","// Nom démêlé : DokanMaze::setIsExitOnly\n// Symbole manglé : setIsExitOnly\n// void __thiscall DokanMaze::setIsExitOnly(DokanMaze *this); @ .text::0035a704\n\n\n/* DokanMaze::setIsExitOnly() */\n\nvoid __thiscall DokanMaze::setIsExitOnly(DokanMaze *this)\n\n{\n  this[0x166] = (DokanMaze)0x1;\n  return;\n}\n\n");

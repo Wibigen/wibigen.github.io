@@ -1,0 +1,1 @@
+DOC.got("gh/sead/Task/draw_.text_0083520c.cpp","// Nom démêlé : sead::Task::draw\n// Symbole manglé : draw\n// void sead::Task::draw(void); @ .text::0083520c\n\n\n/* sead::Task::draw() */\n\nvoid sead::Task::draw(void)\n\n{\n  return;\n}\n\n");

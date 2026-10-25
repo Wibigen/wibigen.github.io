@@ -1,0 +1,1 @@
+DOC.got("gh/ShopCamera/exeNone_.text_00413e58.cpp","// Nom démêlé : ShopCamera::exeNone\n// Symbole manglé : exeNone\n// void ShopCamera::exeNone(void); @ .text::00413e58\n\n\n/* ShopCamera::exeNone() */\n\nvoid ShopCamera::exeNone(void)\n\n{\n  return;\n}\n\n");

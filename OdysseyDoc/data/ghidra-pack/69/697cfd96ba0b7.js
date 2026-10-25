@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/EndPoint/SignalFaultEvent_.text_0078f7c8.cpp","// Nom démêlé : nn::nex::EndPoint::SignalFaultEvent\n// Symbole manglé : SignalFaultEvent\n// void nn::nex::EndPoint::SignalFaultEvent(void); @ .text::0078f7c8\n\n\n/* nn::nex::EndPoint::SignalFaultEvent(nn::nex::NetFaultReason, bool) */\n\nvoid nn::nex::EndPoint::SignalFaultEvent(void)\n\n{\n  return;\n}\n\n");

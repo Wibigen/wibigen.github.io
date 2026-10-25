@@ -1,0 +1,1 @@
+DOC.got("e/3620",{"30963":{"q":"nn::atk::SoundArchive::SequenceSoundInfo","acc":"public","decl":{"f":"lib/NintendoSDK/include/nn/atk.h","l":10,"sig":"struct SequenceSoundInfo","fi":5},"complete":false,"fwd":[["lib/NintendoSDK/include/nn/atk.h",10]]}});

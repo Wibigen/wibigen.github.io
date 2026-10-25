@@ -1,0 +1,1 @@
+DOC.got("gh/Peach/exeWaitDemo_.text_004ad9a4.cpp","// Nom démêlé : Peach::exeWaitDemo\n// Symbole manglé : exeWaitDemo\n// void Peach::exeWaitDemo(void); @ .text::004ad9a4\n\n\n/* Peach::exeWaitDemo() */\n\nvoid Peach::exeWaitDemo(void)\n\n{\n  return;\n}\n\n");

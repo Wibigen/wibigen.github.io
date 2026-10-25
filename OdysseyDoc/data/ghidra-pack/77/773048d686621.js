@@ -1,0 +1,1 @@
+DOC.got("gh/al/getLodLevelNoClamp.cpp","// Nom démêlé : al::getLodLevelNoClamp\n// Symbole manglé : getLodLevelNoClamp\n// void al::getLodLevelNoClamp(LiveActor *param_1); @ .text::009e24c4\n\n\n/* al::getLodLevelNoClamp(al::LiveActor const*) */\n\nvoid al::getLodLevelNoClamp(LiveActor *param_1)\n\n{\n  getLodLevelNoClamp(*(ModelKeeper **)(param_1 + 0x88));\n  return;\n}\n\n");

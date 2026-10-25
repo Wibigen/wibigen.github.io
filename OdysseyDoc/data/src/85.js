@@ -1,0 +1,1 @@
+DOC.got("src/85","#pragma once\n\n#include <nn/gfx/detail/gfx_DataContainer.h>\n#include <nn/types.h>\n\nnamespace nn::gfx {\nstruct GpuAddressData {\n    uint64_t value;\n    uint64_t impl;\n};\n\nclass GpuAddress : public detail::DataContainer<GpuAddressData> {\npublic:\n    GpuAddress();\n    void Offset(ptrdiff_t);\n};\n}  // namespace nn::gfx");

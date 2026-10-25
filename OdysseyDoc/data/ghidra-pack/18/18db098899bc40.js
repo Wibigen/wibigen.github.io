@@ -1,0 +1,1 @@
+DOC.got("gh/nn/atk/EffectAux/OnChangeOutputMode.cpp","// Nom démêlé : nn::atk::EffectAux::OnChangeOutputMode\n// Symbole manglé : OnChangeOutputMode\n// void nn::atk::EffectAux::OnChangeOutputMode(void); @ .text::00bc8034\n\n\n/* nn::atk::EffectAux::OnChangeOutputMode() */\n\nvoid nn::atk::EffectAux::OnChangeOutputMode(void)\n\n{\n  return;\n}\n\n");

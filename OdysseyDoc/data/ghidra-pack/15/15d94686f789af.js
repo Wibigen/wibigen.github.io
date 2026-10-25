@@ -1,0 +1,1 @@
+DOC.got("gh/ShineChipLayoutParts/exeWait_.text_00302324.cpp","// Nom démêlé : ShineChipLayoutParts::exeWait\n// Symbole manglé : exeWait\n// void ShineChipLayoutParts::exeWait(void); @ .text::00302324\n\n\n/* ShineChipLayoutParts::exeWait() */\n\nvoid ShineChipLayoutParts::exeWait(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/Sequence/getCurrentScene_.text_00af2248.cpp","// Nom démêlé : al::Sequence::getCurrentScene\n// Symbole manglé : getCurrentScene\n// undefined8 al::Sequence::getCurrentScene(void); @ .text::00af2248\n\n\n/* al::Sequence::getCurrentScene() const */\n\nundefined8 al::Sequence::getCurrentScene(void)\n\n{\n  return 0;\n}\n\n");

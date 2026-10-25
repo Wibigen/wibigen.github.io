@@ -1,0 +1,1 @@
+DOC.got("gh/HomeShip/exeWait_.text_003a96a8.cpp","// Nom démêlé : HomeShip::exeWait\n// Symbole manglé : exeWait\n// void HomeShip::exeWait(void); @ .text::003a96a8\n\n\n/* HomeShip::exeWait() */\n\nvoid HomeShip::exeWait(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/sead/Heap/checkAccessThread.cpp","// Nom démêlé : sead::Heap::checkAccessThread_\n// Symbole manglé : checkAccessThread_\n// void sead::Heap::checkAccessThread_(void); @ .text::008445e0\n\n\n/* sead::Heap::checkAccessThread_() const */\n\nvoid sead::Heap::checkAccessThread_(void)\n\n{\n  return;\n}\n\n");

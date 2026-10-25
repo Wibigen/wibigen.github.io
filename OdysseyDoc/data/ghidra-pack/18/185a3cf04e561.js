@@ -1,0 +1,1 @@
+DOC.got("gh/al/modf.cpp","// Nom démêlé : al::modf\n// Symbole manglé : modf\n// void al::modf(float param_1,float param_2); @ .text::00a23c94\n\n\n/* al::modf(float, float) */\n\nvoid al::modf(float param_1,float param_2)\n\n{\n  (*(code *)PTR_fmodf_01f4e430)();\n  return;\n}\n\n");

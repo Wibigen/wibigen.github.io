@@ -1,0 +1,1 @@
+DOC.got("gh/Curl_posttransfer.cpp","// Nom démêlé : Curl_posttransfer\n// Symbole manglé : Curl_posttransfer\n// undefined8 Curl_posttransfer(void); @ .text::008058e8\n\n\nundefined8 Curl_posttransfer(void)\n\n{\n  return 0;\n}\n\n");

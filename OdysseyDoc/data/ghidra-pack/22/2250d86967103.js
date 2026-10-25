@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerModelChanger2D3D/isHiddenModel.cpp","// Nom démêlé : PlayerModelChanger2D3D::isHiddenModel\n// Symbole manglé : isHiddenModel\n// undefined8 PlayerModelChanger2D3D::isHiddenModel(void); @ .text::0055dc78\n\n\n/* PlayerModelChanger2D3D::isHiddenModel() const */\n\nundefined8 PlayerModelChanger2D3D::isHiddenModel(void)\n\n{\n  return 0;\n}\n\n");

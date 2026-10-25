@@ -1,0 +1,1 @@
+DOC.got("gh/KoopaPuppet/isBindWait_.text_00199720.cpp","// Nom démêlé : KoopaPuppet::isBindWait\n// Symbole manglé : isBindWait\n// void __thiscall KoopaPuppet::isBindWait(KoopaPuppet *this); @ .text::00199720\n\n\n/* KoopaPuppet::isBindWait() const */\n\nvoid __thiscall KoopaPuppet::isBindWait(KoopaPuppet *this)\n\n{\n  Koopa::isBindWait(*(Koopa **)this);\n  return;\n}\n\n");

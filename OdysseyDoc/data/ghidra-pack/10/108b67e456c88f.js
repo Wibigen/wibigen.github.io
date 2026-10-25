@@ -1,0 +1,1 @@
+DOC.got("gh/sead/CoreInfo/dump_.text_00865de8.cpp","// Nom démêlé : sead::CoreInfo::dump\n// Symbole manglé : dump\n// void sead::CoreInfo::dump(void); @ .text::00865de8\n\n\n/* sead::CoreInfo::dump() */\n\nvoid sead::CoreInfo::dump(void)\n\n{\n  return;\n}\n\n");

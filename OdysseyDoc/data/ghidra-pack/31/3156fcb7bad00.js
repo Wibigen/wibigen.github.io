@@ -1,0 +1,1 @@
+DOC.got("gh/ShineFunction/getMovePointLinkName.cpp","// Nom démêlé : ShineFunction::getMovePointLinkName\n// Symbole manglé : getMovePointLinkName\n// undefined8 ShineFunction::getMovePointLinkName(void); @ .text::002d3354\n\n\n/* ShineFunction::getMovePointLinkName() */\n\nundefined8 ShineFunction::getMovePointLinkName(void)\n\n{\n  return 0x192b27c;\n}\n\n");

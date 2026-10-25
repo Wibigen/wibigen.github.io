@@ -1,0 +1,1 @@
+DOC.got("gh/ShopCamera/exeWait_.text_00413df0.cpp","// Nom démêlé : ShopCamera::exeWait\n// Symbole manglé : exeWait\n// void ShopCamera::exeWait(void); @ .text::00413df0\n\n\n/* ShopCamera::exeWait() */\n\nvoid ShopCamera::exeWait(void)\n\n{\n  return;\n}\n\n");

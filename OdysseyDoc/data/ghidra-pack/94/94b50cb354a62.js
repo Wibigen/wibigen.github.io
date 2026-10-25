@@ -1,0 +1,1 @@
+DOC.got("gh/al/ByamlIter/ByamlIter.cpp","// Nom démêlé : al::ByamlIter::ByamlIter\n// Symbole manglé : ByamlIter\n// void __thiscall al::ByamlIter::ByamlIter(ByamlIter *this); @ .text::00b2be2c\n\n\n/* al::ByamlIter::ByamlIter() */\n\nvoid __thiscall al::ByamlIter::ByamlIter(ByamlIter *this)\n\n{\n  *(undefined8 *)this = 0;\n  *(undefined8 *)(this + 8) = 0;\n  return;\n}\n\n");

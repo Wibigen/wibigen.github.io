@@ -1,0 +1,1 @@
+DOC.got("src/1570","#pragma once\n\nclass IUseDemoSkip {\npublic:\n    virtual bool isFirstDemo() const = 0;\n    virtual bool isEnableSkipDemo() const = 0;\n    virtual void skipDemo() = 0;\n\n    virtual void updateOnlyDemoGraphics() {}\n};\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/BarrelStack2D/exeWait_.text_00318e88.cpp","// Nom démêlé : BarrelStack2D::exeWait\n// Symbole manglé : exeWait\n// void BarrelStack2D::exeWait(void); @ .text::00318e88\n\n\n/* BarrelStack2D::exeWait() */\n\nvoid BarrelStack2D::exeWait(void)\n\n{\n  return;\n}\n\n");

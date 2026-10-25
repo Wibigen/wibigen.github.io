@@ -1,0 +1,1 @@
+DOC.got("e/3617",{"30953":{"q":"nn::applet::AppletResourceUserId","decl":{"f":"lib/NintendoSDK/include/nn/irs/sys.h","l":4,"sig":"struct AppletResourceUserId","fi":154},"complete":false,"fwd":[["lib/NintendoSDK/include/nn/irs/sys.h",4]]}});

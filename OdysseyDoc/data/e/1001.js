@@ -1,0 +1,1 @@
+DOC.got("e/1001",{"16194":{"q":"agl::shtxt::MacroDeployInfo","decl":{"f":"lib/agl/include/shader_text/aglShaderTextPreprocessor.h","l":14,"sig":"class MacroDeployInfo","fi":316},"complete":false,"fwd":[["lib/agl/include/shader_text/aglShaderTextPreprocessor.h",14]]}});

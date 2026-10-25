@@ -1,0 +1,1 @@
+DOC.got("gh/agl/VertexShader/getShaderType.cpp","// Nom démêlé : agl::VertexShader::getShaderType\n// Symbole manglé : getShaderType\n// undefined8 agl::VertexShader::getShaderType(void); @ .text::008807d0\n\n\n/* agl::VertexShader::getShaderType() const */\n\nundefined8 agl::VertexShader::getShaderType(void)\n\n{\n  return 0;\n}\n\n");

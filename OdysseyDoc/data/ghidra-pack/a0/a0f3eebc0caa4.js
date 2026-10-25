@@ -1,0 +1,1 @@
+DOC.got("gh/DemoStateHackFirst/isEnableSkipDemo_.text_001d4674.cpp","// Nom démêlé : DemoStateHackFirst::isEnableSkipDemo\n// Symbole manglé : isEnableSkipDemo\n// undefined8 DemoStateHackFirst::isEnableSkipDemo(void); @ .text::001d4674\n\n\n/* DemoStateHackFirst::isEnableSkipDemo() const */\n\nundefined8 DemoStateHackFirst::isEnableSkipDemo(void)\n\n{\n  return 1;\n}\n\n");

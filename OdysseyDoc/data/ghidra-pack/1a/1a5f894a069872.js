@@ -1,0 +1,1 @@
+DOC.got("gh/al/AnimResInfo/isLoop_.text_00b3b868.cpp","// Nom démêlé : al::AnimResInfo::isLoop\n// Symbole manglé : isLoop\n// AnimResInfo __thiscall al::AnimResInfo::isLoop(AnimResInfo *this); @ .text::00b3b868\n\n\n/* al::AnimResInfo::isLoop() const */\n\nAnimResInfo __thiscall al::AnimResInfo::isLoop(AnimResInfo *this)\n\n{\n  return this[0x14];\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/Kuribo2D/isWait_.text_0024a274.cpp","// Nom démêlé : Kuribo2D::isWait\n// Symbole manglé : isWait\n// void __thiscall Kuribo2D::isWait(Kuribo2D *this); @ .text::0024a274\n\n\n/* Kuribo2D::isWait() const */\n\nvoid __thiscall Kuribo2D::isWait(Kuribo2D *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1d9ca48);\n  return;\n}\n\n");

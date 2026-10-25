@@ -1,0 +1,1 @@
+DOC.got("gh/Hosui/endReset_.text_0021aa28.cpp","// Nom démêlé : Hosui::endReset\n// Symbole manglé : endReset\n// void __thiscall Hosui::endReset(Hosui *this); @ .text::0021aa28\n\n\n/* Hosui::endReset() */\n\nvoid __thiscall Hosui::endReset(Hosui *this)\n\n{\n  al::showModelIfHide((LiveActor *)this);\n  al::showModelIfHide(*(LiveActor **)(this + 0x120));\n  return;\n}\n\n");

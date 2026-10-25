@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/qResult/GetFacility.cpp","// Nom démêlé : nn::nex::qResult::GetFacility\n// Symbole manglé : GetFacility\n// ushort __thiscall nn::nex::qResult::GetFacility(qResult *this); @ .text::0070f8d4\n\n\n/* nn::nex::qResult::GetFacility() const */\n\nushort __thiscall nn::nex::qResult::GetFacility(qResult *this)\n\n{\n  return *(ushort *)(this + 2) & 0x7ff;\n}\n\n");

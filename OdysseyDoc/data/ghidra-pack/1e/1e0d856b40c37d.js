@@ -1,0 +1,1 @@
+DOC.got("gh/al/isOffDrawScreenCover.cpp","// Nom démêlé : al::isOffDrawScreenCover\n// Symbole manglé : isOffDrawScreenCover\n// bool al::isOffDrawScreenCover(Scene *param_1); @ .text::00ad0e78\n\n\n/* al::isOffDrawScreenCover(al::Scene const*) */\n\nbool al::isOffDrawScreenCover(Scene *param_1)\n\n{\n  return **(int **)(param_1 + 0xb8) == 0;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/BrosHackBase/attachAttack.cpp","// Nom démêlé : BrosHackBase::attachAttack\n// Symbole manglé : attachAttack\n// void BrosHackBase::attachAttack(void); @ .text::001db5f0\n\n\n/* BrosHackBase::attachAttack() */\n\nvoid BrosHackBase::attachAttack(void)\n\n{\n  return;\n}\n\n");

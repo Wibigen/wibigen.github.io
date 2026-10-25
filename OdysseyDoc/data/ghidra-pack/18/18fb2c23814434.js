@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Chrono/Chrono_.text_00737180.cpp","// Nom démêlé : nn::nex::Chrono::~Chrono\n// Symbole manglé : ~Chrono\n// void __thiscall nn::nex::Chrono::~Chrono(Chrono *this); @ .text::00737180\n\n\n/* nn::nex::Chrono::~Chrono() */\n\nvoid __thiscall nn::nex::Chrono::~Chrono(Chrono *this)\n\n{\n  *(undefined **)this = PTR_01f58668 + 0x10;\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/TsukkunHole/exeWait_.text_004413dc.cpp","// Nom démêlé : TsukkunHole::exeWait\n// Symbole manglé : exeWait\n// void TsukkunHole::exeWait(void); @ .text::004413dc\n\n\n/* TsukkunHole::exeWait() */\n\nvoid TsukkunHole::exeWait(void)\n\n{\n  return;\n}\n\n");

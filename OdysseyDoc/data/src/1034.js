@@ -1,0 +1,1 @@
+DOC.got("src/1034","#pragma once\n\nnamespace al {\nstruct ActorInitInfo;\n\nclass ISceneObj {\npublic:\n    virtual const char* getSceneObjName() const { return \"\"; }\n\n    virtual ~ISceneObj() = default;\n\n    virtual void initAfterPlacementSceneObj(const ActorInitInfo& info) {}\n\n    virtual void initSceneObj() {}\n};\n\n}  // namespace al\n");

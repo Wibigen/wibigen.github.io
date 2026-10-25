@@ -1,0 +1,1 @@
+DOC.got("gh/al/isAlive_.text_009d996c.cpp","// Nom démêlé : al::isAlive\n// Symbole manglé : isAlive\n// bool al::isAlive(LiveActor *param_1); @ .text::009d996c\n\n\n/* al::isAlive(al::LiveActor const*) */\n\nbool al::isAlive(LiveActor *param_1)\n\n{\n  return **(char **)(param_1 + 0x100) == '\\0';\n}\n\n");

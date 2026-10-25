@@ -1,0 +1,1 @@
+DOC.got("gh/FukuwaraiNpc/isEnd_.text_00494bfc.cpp","// Nom démêlé : FukuwaraiNpc::isEnd\n// Symbole manglé : isEnd\n// void __thiscall FukuwaraiNpc::isEnd(FukuwaraiNpc *this); @ .text::00494bfc\n\n\n/* FukuwaraiNpc::isEnd() const */\n\nvoid __thiscall FukuwaraiNpc::isEnd(FukuwaraiNpc *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1e59b08);\n  return;\n}\n\n");

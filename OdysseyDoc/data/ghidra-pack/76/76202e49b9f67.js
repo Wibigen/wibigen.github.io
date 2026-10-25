@@ -1,0 +1,1 @@
+DOC.got("gh/Senobi/exeEnemy_.text_0027f3f4.cpp","// Nom démêlé : Senobi::exeEnemy\n// Symbole manglé : exeEnemy\n// void __thiscall Senobi::exeEnemy(Senobi *this); @ .text::0027f3f4\n\n\n/* Senobi::exeEnemy() */\n\nvoid __thiscall Senobi::exeEnemy(Senobi *this)\n\n{\n  al::updateNerveStateAndNextNerve((IUseNerve *)this,(Nerve *)0x1da7478);\n  return;\n}\n\n");

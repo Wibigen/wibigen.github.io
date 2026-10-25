@@ -1,0 +1,1 @@
+DOC.got("gh/sead/GraphicsNvn/setDepthFuncImpl.cpp","// Nom démêlé : sead::GraphicsNvn::setDepthFuncImpl\n// Symbole manglé : setDepthFuncImpl\n// void sead::GraphicsNvn::setDepthFuncImpl(void); @ .text::0083afac\n\n\n/* sead::GraphicsNvn::setDepthFuncImpl(sead::Graphics::DepthFunc) */\n\nvoid sead::GraphicsNvn::setDepthFuncImpl(void)\n\n{\n  return;\n}\n\n");

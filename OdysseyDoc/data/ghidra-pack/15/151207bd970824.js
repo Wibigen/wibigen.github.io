@@ -1,0 +1,1 @@
+DOC.got("gh/KoopaPuppet/change2D.cpp","// Nom démêlé : KoopaPuppet::change2D\n// Symbole manglé : change2D\n// void __thiscall KoopaPuppet::change2D(KoopaPuppet *this); @ .text::00199728\n\n\n/* KoopaPuppet::change2D() */\n\nvoid __thiscall KoopaPuppet::change2D(KoopaPuppet *this)\n\n{\n  Koopa::changeBind2D(*(Koopa **)this);\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("src/1073","#pragma once\n\nnamespace al {\nclass SceneCreator;\n\nclass IUseSceneCreator {\npublic:\n    virtual ~IUseSceneCreator();\n\n    virtual void setSceneCreator(SceneCreator* creator) = 0;\n    virtual SceneCreator* getSceneCreator() const = 0;\n};\n}  // namespace al\n");

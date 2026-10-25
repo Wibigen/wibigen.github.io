@@ -1,0 +1,1 @@
+DOC.got("gh/al/Triangle/getSensor.cpp","// Nom démêlé : al::Triangle::getSensor\n// Symbole manglé : getSensor\n// undefined8 __thiscall al::Triangle::getSensor(Triangle *this); @ .text::00951480\n\n\n/* al::Triangle::getSensor() const */\n\nundefined8 __thiscall al::Triangle::getSensor(Triangle *this)\n\n{\n  return *(undefined8 *)(*(long *)this + 0x138);\n}\n\n");

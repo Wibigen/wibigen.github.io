@@ -1,0 +1,1 @@
+DOC.got("gh/MoonBasementPillar/initAfterPlacement_.text_003c4254.cpp","// Nom démêlé : MoonBasementPillar::initAfterPlacement\n// Symbole manglé : initAfterPlacement\n// void MoonBasementPillar::initAfterPlacement(void); @ .text::003c4254\n\n\n/* MoonBasementPillar::initAfterPlacement() */\n\nvoid MoonBasementPillar::initAfterPlacement(void)\n\n{\n  return;\n}\n\n");

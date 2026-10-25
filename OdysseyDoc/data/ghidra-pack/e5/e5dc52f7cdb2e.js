@@ -1,0 +1,1 @@
+DOC.got("gh/wslay_queue_new.cpp","// Nom démêlé : wslay_queue_new\n// Symbole manglé : wslay_queue_new\n// void wslay_queue_new(void); @ .text::007a2db0\n\n\nvoid wslay_queue_new(void)\n\n{\n  undefined8 *puVar1;\n  \n  puVar1 = (undefined8 *)wslay_malloc(0x10);\n  if (puVar1 != (undefined8 *)0x0) {\n    *puVar1 = 0;\n    puVar1[1] = 0;\n  }\n  return;\n}\n\n");

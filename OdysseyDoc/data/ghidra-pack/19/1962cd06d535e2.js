@@ -1,0 +1,1 @@
+DOC.got("gh/Mofumofu/skipDemo_.text_001a89dc.cpp","// Nom démêlé : Mofumofu::skipDemo\n// Symbole manglé : skipDemo\n// void __thiscall Mofumofu::skipDemo(Mofumofu *this); @ .text::001a89dc\n\n\n/* non-virtual thunk to Mofumofu::skipDemo() */\n\nvoid __thiscall Mofumofu::skipDemo(Mofumofu *this)\n\n{\n  skipDemo(this + -0x108);\n  return;\n}\n\n");

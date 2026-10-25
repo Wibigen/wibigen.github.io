@@ -1,0 +1,1 @@
+DOC.got("e/2542",{"24712":{"q":"al::VisitCellCallBack","decl":{"f":"lib/al/Library/Math/MathUtil.h","l":12,"sig":"class VisitCellCallBack","fi":813},"complete":false,"fwd":[["lib/al/Library/Math/MathUtil.h",12]]}});

@@ -1,0 +1,1 @@
+DOC.got("gh/CheckpointFlag/initAfterPlacement_.text_00349a44.cpp","// Nom démêlé : CheckpointFlag::initAfterPlacement\n// Symbole manglé : initAfterPlacement\n// void CheckpointFlag::initAfterPlacement(void); @ .text::00349a44\n\n\n/* CheckpointFlag::initAfterPlacement() */\n\nvoid CheckpointFlag::initAfterPlacement(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerConst/getGravity.cpp","// Nom démêlé : PlayerConst::getGravity\n// Symbole manglé : getGravity\n// undefined4 __thiscall PlayerConst::getGravity(PlayerConst *this); @ .text::0053ce7c\n\n\n/* PlayerConst::getGravity() const */\n\nundefined4 __thiscall PlayerConst::getGravity(PlayerConst *this)\n\n{\n  return *(undefined4 *)(this + 8);\n}\n\n");

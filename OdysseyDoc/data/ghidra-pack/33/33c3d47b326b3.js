@@ -1,0 +1,1 @@
+DOC.got("gh/sead/PerfJobQueue/attachProcessMeter.cpp","// Nom démêlé : sead::PerfJobQueue::attachProcessMeter\n// Symbole manglé : attachProcessMeter\n// void sead::PerfJobQueue::attachProcessMeter(void); @ .text::00cef018\n\n\n/* sead::PerfJobQueue::attachProcessMeter() */\n\nvoid sead::PerfJobQueue::attachProcessMeter(void)\n\n{\n  return;\n}\n\n");

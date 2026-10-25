@@ -1,0 +1,1 @@
+DOC.got("src/1334","#pragma once\n\n#include \"filedevice/nin/seadNinFileDeviceBaseNin.h\"\n\nnamespace sead\n{\nclass NinSDFileDevice : public NinFileDeviceBase\n{\n    SEAD_RTTI_OVERRIDE(NinSDFileDevice, NinFileDeviceBase)\n\npublic:\n    NinSDFileDevice();\n\n    bool doIsAvailable_() const override;\n};\n}  // namespace sead\n");

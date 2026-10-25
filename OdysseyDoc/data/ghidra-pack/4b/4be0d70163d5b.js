@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerJudgeCapCatchPop/reset_.text_00558cf8.cpp","// Nom démêlé : PlayerJudgeCapCatchPop::reset\n// Symbole manglé : reset\n// void PlayerJudgeCapCatchPop::reset(void); @ .text::00558cf8\n\n\n/* PlayerJudgeCapCatchPop::reset() */\n\nvoid PlayerJudgeCapCatchPop::reset(void)\n\n{\n  return;\n}\n\n");

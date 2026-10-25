@@ -1,0 +1,1 @@
+DOC.got("gh/HipDropSwitch/isOnWait.cpp","// Nom démêlé : HipDropSwitch::isOnWait\n// Symbole manglé : isOnWait\n// void __thiscall HipDropSwitch::isOnWait(HipDropSwitch *this); @ .text::003a3ad8\n\n\n/* HipDropSwitch::isOnWait() const */\n\nvoid __thiscall HipDropSwitch::isOnWait(HipDropSwitch *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1e06ad8);\n  return;\n}\n\n");

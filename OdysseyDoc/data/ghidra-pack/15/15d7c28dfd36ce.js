@@ -1,0 +1,1 @@
+DOC.got("gh/AnimSequencer/isEnd_.text_00644b04.cpp","// Nom démêlé : AnimSequencer::isEnd\n// Symbole manglé : isEnd\n// uint __thiscall AnimSequencer::isEnd(AnimSequencer *this); @ .text::00644b04\n\n\n/* AnimSequencer::isEnd() const */\n\nuint __thiscall AnimSequencer::isEnd(AnimSequencer *this)\n\n{\n  return *(uint *)(this + 0x18) >> 0x1f;\n}\n\n");

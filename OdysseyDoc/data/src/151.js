@@ -1,0 +1,1 @@
+DOC.got("src/151","#pragma once\n\n#include <nn/types.h>\n\nnamespace nn::irsensor {\nstruct Rect {\n    u16 x = 0;\n    u16 y = 0;\n    u16 width = 320;\n    u16 height = 240;\n};\n}  // namespace nn::irsensor\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/TimeBalloonDataAccessor/exeErrorConnection.cpp","// Nom démêlé : TimeBalloonDataAccessor::exeErrorConnection\n// Symbole manglé : exeErrorConnection\n// void TimeBalloonDataAccessor::exeErrorConnection(void); @ .text::00460558\n\n\n/* TimeBalloonDataAccessor::exeErrorConnection() */\n\nvoid TimeBalloonDataAccessor::exeErrorConnection(void)\n\n{\n  return;\n}\n\n");

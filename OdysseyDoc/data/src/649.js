@@ -1,0 +1,1 @@
+DOC.got("src/649","#pragma once\n\n#include <basis/seadTypes.h>\n\n#include \"Project/HitSensor/HitSensor.h\"\n\nnamespace al {\nclass LiveActor;\n}\n\nnamespace alSensorFunction {\n\nvoid updateHitSensorsAll(al::LiveActor*);\nvoid clearHitSensors(al::LiveActor*);\n\nal::HitSensorType findSensorTypeByName(const char*);\n\n}  // namespace alSensorFunction\n");

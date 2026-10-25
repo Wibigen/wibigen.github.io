@@ -1,0 +1,1 @@
+DOC.got("e/1002",{"16195":{"q":"agl::shtxt::MacroReplaceInfo","decl":{"f":"lib/agl/include/shader_text/aglShaderTextPreprocessor.h","l":15,"sig":"class MacroReplaceInfo","fi":316},"complete":false,"fwd":[["lib/agl/include/shader_text/aglShaderTextPreprocessor.h",15]]}});

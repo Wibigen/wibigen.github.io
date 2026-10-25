@@ -1,0 +1,1 @@
+DOC.got("gh/al/isCollidedGround_.text_009d8654.cpp","// Nom démêlé : al::isCollidedGround\n// Symbole manglé : isCollidedGround\n// bool al::isCollidedGround(LiveActor *param_1); @ .text::009d8654\n\n\n/* al::isCollidedGround(al::LiveActor const*) */\n\nbool al::isCollidedGround(LiveActor *param_1)\n\n{\n  return 0.0 <= *(float *)(*(long *)(param_1 + 0x78) + 0x110);\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("e/4450",{"35739":{"q":"nvn::DrawTextureRegion","decl":{"f":"lib/NintendoSDK/include/nvn/nvn_Cpp.h","l":108,"sig":"struct DrawTextureRegion","fi":224},"complete":false,"fwd":[["lib/NintendoSDK/include/nvn/nvn_Cpp.h",108]]}});

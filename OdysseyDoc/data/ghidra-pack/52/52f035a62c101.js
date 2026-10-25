@@ -1,0 +1,1 @@
+DOC.got("gh/al/getSensorRadius_.text_009f20f0.cpp","// Nom démêlé : al::getSensorRadius\n// Symbole manglé : getSensorRadius\n// undefined4 al::getSensorRadius(HitSensor *param_1); @ .text::009f20f0\n\n\n/* al::getSensorRadius(al::HitSensor const*) */\n\nundefined4 al::getSensorRadius(HitSensor *param_1)\n\n{\n  return *(undefined4 *)(param_1 + 0x18);\n}\n\n");

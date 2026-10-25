@@ -1,0 +1,1 @@
+DOC.got("gh/FUN_.text_005d0dfc.cpp","// Nom démêlé : FUN_.text__005d0dfc\n// Symbole manglé : FUN_.text__005d0dfc\n// uint FUN_.text__005d0dfc(long param_1); @ .text::005d0dfc\n\n\nuint FUN__text__005d0dfc(long param_1)\n\n{\n  uint uVar1;\n  \n  uVar1 = al::DemoDirector::isActiveDemo(*(DemoDirector **)(param_1 + 8));\n  return ~uVar1 & 1;\n}\n\n");

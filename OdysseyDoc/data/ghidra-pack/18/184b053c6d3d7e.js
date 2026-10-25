@@ -1,0 +1,1 @@
+DOC.got("gh/KoopaPuppet/end_.text_001996d0.cpp","// Nom démêlé : KoopaPuppet::end\n// Symbole manglé : end\n// void __thiscall KoopaPuppet::end(KoopaPuppet *this); @ .text::001996d0\n\n\n/* KoopaPuppet::end() */\n\nvoid __thiscall KoopaPuppet::end(KoopaPuppet *this)\n\n{\n  Koopa::endBind(*(Koopa **)this);\n  *(undefined8 *)(this + 8) = 0;\n  return;\n}\n\n");

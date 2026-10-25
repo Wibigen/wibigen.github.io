@@ -1,0 +1,1 @@
+DOC.got("src/568","#pragma once\n\nnamespace al {\nclass EffectKeeper;\n\nclass IUseEffectKeeper {\npublic:\n    virtual EffectKeeper* getEffectKeeper() const = 0;\n};\n}  // namespace al\n");

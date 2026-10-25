@@ -1,0 +1,1 @@
+DOC.got("gh/al/getUp_.text_009ef6f0.cpp","// Nom démêlé : al::getUp\n// Symbole manglé : getUp\n// void al::getUp(LiveActor *param_1); @ .text::009ef6f0\n\n\n/* al::getUp(al::LiveActor const*) */\n\nvoid al::getUp(LiveActor *param_1)\n\n{\n  (**(code **)(**(long **)(param_1 + 0x50) + 0x20))();\n  return;\n}\n\n");

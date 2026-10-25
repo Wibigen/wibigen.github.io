@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OdysseyDoc — Super Mario Odyssey code documentation</title>
+  <meta name="description" content="Complete documentation of the decompiled Super Mario Odyssey code (OdysseyDecomp + Ghidra pseudo-code).">
+  <link rel="icon" href="data/img/icon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="topbar">
+    <button id="menu-btn" aria-label="Menu">☰</button>
+    <a id="brand" href="#/"><img class="logo" src="data/img/icon.png" alt="">OdysseyDoc <small>SMO 1.0.0</small></a>
+    <div id="search-wrap">
+      <input id="search" type="text" autocomplete="off" spellcheck="false" placeholder="Search a class, function, file, address…">
+      <span id="search-kbd">Ctrl K</span>
+      <div id="search-results"></div>
+    </div>
+    <nav id="top-links">
+      <a class="top-btn opt" href="#/classes">Classes</a>
+      <a class="top-btn opt" href="#/progress">Progress</a>
+      <a class="top-btn opt" href="#/about">Legend</a>
+      <button class="top-btn" id="theme-btn" title="Light / dark theme">◐</button>
+    </nav>
+  </header>
+
+  <aside id="sidebar">
+    <div id="side-tabs">
+      <button data-tab="dirs" class="on">Folders</button>
+      <button data-tab="ns">Namespaces</button>
+      <button data-tab="pages">Pages</button>
+    </div>
+    <input id="side-filter" type="text" placeholder="Filter the tree…" autocomplete="off">
+    <div id="tree"></div>
+  </aside>
+
+  <main id="main"><div id="loading">Loading index (≈ 10 MB)…</div></main>
+
+  <script src="js/core.js"></script>
+  <script src="js/highlight.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/tree.js"></script>
+  <script src="js/pages.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

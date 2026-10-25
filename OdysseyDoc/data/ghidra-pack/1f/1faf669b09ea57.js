@@ -1,0 +1,1 @@
+DOC.got("gh/TimeBalloonDataHolder/tryReadMyData.cpp","// Nom démêlé : TimeBalloonDataHolder::tryReadMyData\n// Symbole manglé : tryReadMyData\n// undefined8 TimeBalloonDataHolder::tryReadMyData(void); @ .text::00468b94\n\n\n/* TimeBalloonDataHolder::tryReadMyData() */\n\nundefined8 TimeBalloonDataHolder::tryReadMyData(void)\n\n{\n  return 1;\n}\n\n");

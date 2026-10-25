@@ -1,0 +1,1 @@
+DOC.got("gh/al/DirLightParam/getParamName_.text_009bd570.cpp","// Nom démêlé : al::DirLightParam::getParamName\n// Symbole manglé : getParamName\n// undefined8 al::DirLightParam::getParamName(void); @ .text::009bd570\n\n\n/* al::DirLightParam::getParamName() const */\n\nundefined8 al::DirLightParam::getParamName(void)\n\n{\n  return 0x196c468;\n}\n\n");

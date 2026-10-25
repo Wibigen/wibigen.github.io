@@ -1,0 +1,1 @@
+DOC.got("gh/KaronWing/exeHack_.text_0024414c.cpp","// Nom démêlé : KaronWing::exeHack\n// Symbole manglé : exeHack\n// void __thiscall KaronWing::exeHack(KaronWing *this); @ .text::0024414c\n\n\n/* KaronWing::exeHack() */\n\nvoid __thiscall KaronWing::exeHack(KaronWing *this)\n\n{\n  al::updateNerveStateAndNextNerve((IUseNerve *)this,(Nerve *)0x1d9a920);\n  return;\n}\n\n");

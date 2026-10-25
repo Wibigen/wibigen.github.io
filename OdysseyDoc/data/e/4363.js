@@ -1,0 +1,1 @@
+DOC.got("e/4363",{"34854":{"q":"nn::util::detail::SizedInt","decl":{"f":"lib/NintendoSDK/include/nn/util/detail/util_TypeTraits.h","l":8,"sig":"template <int N>\nstruct SizedInt","fi":202},"tp":["int N"],"complete":false,"fwd":[["lib/NintendoSDK/include/nn/util/detail/util_TypeTraits.h",8]]}});

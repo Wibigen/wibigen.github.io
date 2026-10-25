@@ -1,0 +1,1 @@
+DOC.got("gh/al/calcSpeedMax.cpp","// Nom démêlé : al::calcSpeedMax\n// Symbole manglé : calcSpeedMax\n// float al::calcSpeedMax(float param_1,float param_2); @ .text::00a23ca4\n\n\n/* al::calcSpeedMax(float, float) */\n\nfloat al::calcSpeedMax(float param_1,float param_2)\n\n{\n  return (param_1 * param_2) / (1.0 - param_2);\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/getTrans_.text_009ee66c.cpp","// Nom démêlé : al::getTrans\n// Symbole manglé : getTrans\n// long al::getTrans(LiveActor *param_1); @ .text::009ee66c\n\n\n/* al::getTrans(al::LiveActor const*) */\n\nlong al::getTrans(LiveActor *param_1)\n\n{\n  return *(long *)(param_1 + 0x50) + 8;\n}\n\n");

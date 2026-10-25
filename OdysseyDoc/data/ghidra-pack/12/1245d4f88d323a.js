@@ -1,0 +1,1 @@
+DOC.got("gh/al/isActiveDemo_.text_00ad0efc.cpp","// Nom démêlé : al::isActiveDemo\n// Symbole manglé : isActiveDemo\n// void al::isActiveDemo(Scene *param_1); @ .text::00ad0efc\n\n\n/* al::isActiveDemo(al::Scene const*) */\n\nvoid al::isActiveDemo(Scene *param_1)\n\n{\n  DemoDirector::isActiveDemo(*(DemoDirector **)(*(long *)(param_1 + 0x90) + 0xd0));\n  return;\n}\n\n");

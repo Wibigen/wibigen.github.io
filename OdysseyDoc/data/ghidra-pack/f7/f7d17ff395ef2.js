@@ -1,0 +1,1 @@
+DOC.got("gh/al/DemoGraphicsController/endInit_.text_00b4f2cc.cpp","// Nom démêlé : al::DemoGraphicsController::endInit\n// Symbole manglé : endInit\n// void al::DemoGraphicsController::endInit(void); @ .text::00b4f2cc\n\n\n/* al::DemoGraphicsController::endInit() */\n\nvoid al::DemoGraphicsController::endInit(void)\n\n{\n  return;\n}\n\n");

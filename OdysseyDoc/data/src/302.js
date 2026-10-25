@@ -1,0 +1,1 @@
+DOC.got("src/302","#pragma once\n\n#include <basis/seadTypes.h>\n\nnamespace agl::env {\n\nstruct TypeInfo {\n    s16 id;\n};\n\n// TODO\nclass EnvObj {};\n\n}  // namespace agl::env\n");

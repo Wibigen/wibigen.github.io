@@ -1,0 +1,1 @@
+DOC.got("gh/YoshiJudgeWallHitDown/reset_.text_00597698.cpp","// Nom démêlé : YoshiJudgeWallHitDown::reset\n// Symbole manglé : reset\n// void YoshiJudgeWallHitDown::reset(void); @ .text::00597698\n\n\n/* YoshiJudgeWallHitDown::reset() */\n\nvoid YoshiJudgeWallHitDown::reset(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/SineWave/getName_.text_009a1da4.cpp","// Nom démêlé : al::SineWave::getName\n// Symbole manglé : getName\n// undefined8 al::SineWave::getName(void); @ .text::009a1da4\n\n\n/* al::SineWave::getName() const */\n\nundefined8 al::SineWave::getName(void)\n\n{\n  return 0x196b6b5;\n}\n\n");

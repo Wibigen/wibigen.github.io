@@ -1,0 +1,1 @@
+DOC.got("gh/MotorcyclePlayerAnimator/exeRideStartR.cpp","// Nom démêlé : MotorcyclePlayerAnimator::exeRideStartR\n// Symbole manglé : exeRideStartR\n// void MotorcyclePlayerAnimator::exeRideStartR(void); @ .text::003cf450\n\n\n/* MotorcyclePlayerAnimator::exeRideStartR() */\n\nvoid MotorcyclePlayerAnimator::exeRideStartR(void)\n\n{\n  return;\n}\n\n");

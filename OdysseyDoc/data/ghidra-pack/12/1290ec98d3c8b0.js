@@ -1,0 +1,1 @@
+DOC.got("gh/Shine/exeBossDemo.cpp","// Nom démêlé : Shine::exeBossDemo\n// Symbole manglé : exeBossDemo\n// void Shine::exeBossDemo(void); @ .text::002d1d6c\n\n\n/* Shine::exeBossDemo() */\n\nvoid Shine::exeBossDemo(void)\n\n{\n  return;\n}\n\n");

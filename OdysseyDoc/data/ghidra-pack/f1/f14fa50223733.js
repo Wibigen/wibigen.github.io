@@ -1,0 +1,1 @@
+DOC.got("gh/al/EventFlowNode/control_.text_002b10c8.cpp","// Nom démêlé : al::EventFlowNode::control\n// Symbole manglé : control\n// void al::EventFlowNode::control(void); @ .text::002b10c8\n\n\n/* al::EventFlowNode::control() */\n\nvoid al::EventFlowNode::control(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/TextureReplaceScreen/exeWait_.text_0043878c.cpp","// Nom démêlé : TextureReplaceScreen::exeWait\n// Symbole manglé : exeWait\n// void TextureReplaceScreen::exeWait(void); @ .text::0043878c\n\n\n/* TextureReplaceScreen::exeWait() */\n\nvoid TextureReplaceScreen::exeWait(void)\n\n{\n  return;\n}\n\n");

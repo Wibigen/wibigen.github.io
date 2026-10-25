@@ -1,0 +1,1 @@
+DOC.got("gh/KuriboMini/exeBind_.text_0025688c.cpp","// Nom démêlé : KuriboMini::exeBind\n// Symbole manglé : exeBind\n// void KuriboMini::exeBind(void); @ .text::0025688c\n\n\n/* KuriboMini::exeBind() */\n\nvoid KuriboMini::exeBind(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/eui/Screen/isForceGlbMtxDirty.cpp","// Nom démêlé : eui::Screen::isForceGlbMtxDirty_\n// Symbole manglé : isForceGlbMtxDirty_\n// undefined8 eui::Screen::isForceGlbMtxDirty_(void); @ .text::008ef854\n\n\n/* eui::Screen::isForceGlbMtxDirty_() const */\n\nundefined8 eui::Screen::isForceGlbMtxDirty_(void)\n\n{\n  return 0;\n}\n\n");

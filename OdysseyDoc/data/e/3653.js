@@ -1,0 +1,1 @@
+DOC.got("e/3653",{"31129":{"q":"nn::audio::DeviceSinkType::DownMixParameter","acc":"public","decl":{"f":"lib/NintendoSDK/include/nn/audio.h","l":150,"sig":"struct DownMixParameter","fi":16},"complete":false,"fwd":[["lib/NintendoSDK/include/nn/audio.h",150]]}});

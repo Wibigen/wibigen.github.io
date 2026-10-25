@@ -1,0 +1,1 @@
+DOC.got("e/4379",{"34906":{"q":"nn::vfx::detail::ResNameTableRecord","decl":{"f":"lib/NintendoSDK/include/nn/vfx/Resource.h","l":20,"sig":"struct ResNameTableRecord","fi":218},"complete":false,"fwd":[["lib/NintendoSDK/include/nn/vfx/Resource.h",20]]}});

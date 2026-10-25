@@ -1,0 +1,1 @@
+DOC.got("gh/al/LiveActor/getName.cpp","// Nom démêlé : al::LiveActor::getName\n// Symbole manglé : getName\n// undefined8 __thiscall al::LiveActor::getName(LiveActor *this); @ .text::00104c3c\n\n\n/* al::LiveActor::getName() const */\n\nundefined8 __thiscall al::LiveActor::getName(LiveActor *this)\n\n{\n  return *(undefined8 *)(this + 0x48);\n}\n\n");

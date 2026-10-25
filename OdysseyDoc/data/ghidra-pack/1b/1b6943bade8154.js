@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/DateTime/GetMonth.cpp","// Nom démêlé : nn::nex::DateTime::GetMonth\n// Symbole manglé : GetMonth\n// uint __thiscall nn::nex::DateTime::GetMonth(DateTime *this); @ .text::0070e62c\n\n\n/* nn::nex::DateTime::GetMonth() const */\n\nuint __thiscall nn::nex::DateTime::GetMonth(DateTime *this)\n\n{\n  return *(uint *)this >> 0x16 & 0xf;\n}\n\n");

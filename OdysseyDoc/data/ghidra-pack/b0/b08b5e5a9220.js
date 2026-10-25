@@ -1,0 +1,1 @@
+DOC.got("gh/al/ShadowKeeper/isHide_.text_00b1f38c.cpp","// Nom démêlé : al::ShadowKeeper::isHide\n// Symbole manglé : isHide\n// undefined8 al::ShadowKeeper::isHide(void); @ .text::00b1f38c\n\n\n/* al::ShadowKeeper::isHide() const */\n\nundefined8 al::ShadowKeeper::isHide(void)\n\n{\n  return 0;\n}\n\n");

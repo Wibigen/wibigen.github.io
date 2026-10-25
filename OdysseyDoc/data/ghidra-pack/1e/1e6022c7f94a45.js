@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/StreamManager/EmulateSymmetricNAT.cpp","// Nom démêlé : nn::nex::StreamManager::EmulateSymmetricNAT\n// Symbole manglé : EmulateSymmetricNAT\n// void nn::nex::StreamManager::EmulateSymmetricNAT(void); @ .text::007c6498\n\n\n/* nn::nex::StreamManager::EmulateSymmetricNAT() */\n\nvoid nn::nex::StreamManager::EmulateSymmetricNAT(void)\n\n{\n  return;\n}\n\n");

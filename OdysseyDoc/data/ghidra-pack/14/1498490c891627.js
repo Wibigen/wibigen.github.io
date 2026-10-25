@@ -1,0 +1,1 @@
+DOC.got("gh/BossForest/getFieldWalls.cpp","// Nom démêlé : BossForest::getFieldWalls\n// Symbole manglé : getFieldWalls\n// BossForest * __thiscall BossForest::getFieldWalls(BossForest *this); @ .text::00117bc4\n\n\n/* BossForest::getFieldWalls() */\n\nBossForest * __thiscall BossForest::getFieldWalls(BossForest *this)\n\n{\n  return this + 0x2d8;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/RouletteSwitch/exeWait_.text_004007c0.cpp","// Nom démêlé : RouletteSwitch::exeWait\n// Symbole manglé : exeWait\n// void RouletteSwitch::exeWait(void); @ .text::004007c0\n\n\n/* RouletteSwitch::exeWait() */\n\nvoid RouletteSwitch::exeWait(void)\n\n{\n  return;\n}\n\n");

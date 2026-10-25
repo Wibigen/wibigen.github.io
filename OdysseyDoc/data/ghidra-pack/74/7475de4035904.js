@@ -1,0 +1,1 @@
+DOC.got("gh/al/Rail/Rail.cpp","// Nom démêlé : al::Rail::Rail\n// Symbole manglé : Rail\n// void __thiscall al::Rail::Rail(Rail *this); @ .text::00ac1f40\n\n\n/* al::Rail::Rail() */\n\nvoid __thiscall al::Rail::Rail(Rail *this)\n\n{\n  this[0x18] = (Rail)0x0;\n  *(undefined8 *)(this + 8) = 0;\n  *(undefined8 *)(this + 0x10) = 0;\n  *(undefined8 *)this = 0;\n  return;\n}\n\n");

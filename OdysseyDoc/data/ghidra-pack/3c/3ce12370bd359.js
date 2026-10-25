@@ -1,0 +1,1 @@
+DOC.got("gh/al/DemoDirector/endInit_.text_00acdef8.cpp","// Nom démêlé : al::DemoDirector::endInit\n// Symbole manglé : endInit\n// void al::DemoDirector::endInit(ActorInitInfo *param_1); @ .text::00acdef8\n\n\n/* al::DemoDirector::endInit(al::ActorInitInfo const&) */\n\nvoid al::DemoDirector::endInit(ActorInitInfo *param_1)\n\n{\n  return;\n}\n\n");

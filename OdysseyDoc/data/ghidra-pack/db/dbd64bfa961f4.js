@@ -1,0 +1,1 @@
+DOC.got("gh/al/Projection/getOffset_.text_00ac0a58.cpp","// Nom démêlé : al::Projection::getOffset\n// Symbole manglé : getOffset\n// Projection * __thiscall al::Projection::getOffset(Projection *this); @ .text::00ac0a58\n\n\n/* al::Projection::getOffset() const */\n\nProjection * __thiscall al::Projection::getOffset(Projection *this)\n\n{\n  return this + 0xb4;\n}\n\n");

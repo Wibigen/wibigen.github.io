@@ -1,0 +1,1 @@
+DOC.got("gh/al/SeListener/getMatrix_.text_00b80b4c.cpp","// Nom démêlé : al::SeListener::getMatrix\n// Symbole manglé : getMatrix\n// SeListener * __thiscall al::SeListener::getMatrix(SeListener *this); @ .text::00b80b4c\n\n\n/* al::SeListener::getMatrix() const */\n\nSeListener * __thiscall al::SeListener::getMatrix(SeListener *this)\n\n{\n  return this + 0x28;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/Tank/isSwoon_.text_00287de0.cpp","// Nom démêlé : Tank::isSwoon\n// Symbole manglé : isSwoon\n// void __thiscall Tank::isSwoon(Tank *this); @ .text::00287de0\n\n\n/* Tank::isSwoon() const */\n\nvoid __thiscall Tank::isSwoon(Tank *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1da9430);\n  return;\n}\n\n");

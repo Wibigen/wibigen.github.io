@@ -1,0 +1,1 @@
+DOC.got("gh/curl_escape.cpp","// Nom démêlé : curl_escape\n// Symbole manglé : curl_escape\n// void curl_escape(undefined8 param_1,undefined4 param_2); @ .text::0081441c\n\n\nvoid curl_escape(undefined8 param_1,undefined4 param_2)\n\n{\n  curl_easy_escape(param_1,param_1,param_2);\n  return;\n}\n\n");

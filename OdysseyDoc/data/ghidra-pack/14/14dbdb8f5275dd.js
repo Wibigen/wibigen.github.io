@@ -1,0 +1,1 @@
+DOC.got("gh/al/FogParam/getMax.cpp","// Nom démêlé : al::FogParam::getMax\n// Symbole manglé : getMax\n// undefined4 __thiscall al::FogParam::getMax(FogParam *this); @ .text::009a1e38\n\n\n/* al::FogParam::getMax() const */\n\nundefined4 __thiscall al::FogParam::getMax(FogParam *this)\n\n{\n  return *(undefined4 *)(*(long *)(this + 0x60) + 0x6c);\n}\n\n");

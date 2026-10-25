@@ -1,0 +1,1 @@
+DOC.got("gh/GolemClimb/getActor_.text_0017597c.cpp","// Nom démêlé : GolemClimb::getActor\n// Symbole manglé : getActor\n// GolemClimb * __thiscall GolemClimb::getActor(GolemClimb *this); @ .text::0017597c\n\n\n/* non-virtual thunk to GolemClimb::getActor() */\n\nGolemClimb * __thiscall GolemClimb::getActor(GolemClimb *this)\n\n{\n  return this + -0x108;\n}\n\n");

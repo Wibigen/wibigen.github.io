@@ -1,0 +1,1 @@
+DOC.got("gh/nn/vfx/detail/GetDynamicHeap.cpp","// Nom démêlé : nn::vfx::detail::GetDynamicHeap\n// Symbole manglé : GetDynamicHeap\n// undefined8 nn::vfx::detail::GetDynamicHeap(void); @ .text::00c2c980\n\n\n/* nn::vfx::detail::GetDynamicHeap() */\n\nundefined8 nn::vfx::detail::GetDynamicHeap(void)\n\n{\n  return *(undefined8 *)PTR_g_pDynamicHeap_01f60410;\n}\n\n");

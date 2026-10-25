@@ -1,0 +1,1 @@
+DOC.got("gh/agl/UniformBlock/getBlockSizeMax.cpp","// Nom démêlé : agl::UniformBlock::getBlockSizeMax_\n// Symbole manglé : getBlockSizeMax_\n// undefined8 agl::UniformBlock::getBlockSizeMax_(void); @ .text::00884220\n\n\n/* agl::UniformBlock::getBlockSizeMax_() const */\n\nundefined8 agl::UniformBlock::getBlockSizeMax_(void)\n\n{\n  return 0x10000;\n}\n\n");

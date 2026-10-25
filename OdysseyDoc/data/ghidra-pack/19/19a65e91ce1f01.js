@@ -1,0 +1,1 @@
+DOC.got("gh/sead/Thread/Thread_.text_0085ab7c.cpp","// Nom démêlé : sead::Thread::~Thread\n// Symbole manglé : ~Thread\n// void __thiscall sead::Thread::~Thread(Thread *this); @ .text::0085ab7c\n\n\n/* sead::Thread::~Thread() */\n\nvoid __thiscall sead::Thread::~Thread(Thread *this)\n\n{\n  ~Thread(this);\n  operator_delete(this);\n  return;\n}\n\n");

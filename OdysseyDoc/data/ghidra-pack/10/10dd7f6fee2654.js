@@ -1,0 +1,1 @@
+DOC.got("gh/nn/g3d/MaterialAnimObj/ClearResult_.text_00c1916c.cpp","// Nom démêlé : nn::g3d::MaterialAnimObj::ClearResult\n// Symbole manglé : ClearResult\n// void nn::g3d::MaterialAnimObj::ClearResult(void); @ .text::00c1916c\n\n\n/* nn::g3d::MaterialAnimObj::ClearResult() */\n\nvoid nn::g3d::MaterialAnimObj::ClearResult(void)\n\n{\n  return;\n}\n\n");

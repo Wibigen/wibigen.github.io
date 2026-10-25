@@ -1,0 +1,1 @@
+DOC.got("e/3712",{"31440":{"q":"nn::g3d::CameraAnimResult","decl":{"f":"lib/al/Library/Camera/CameraPoserAnim.h","l":8,"sig":"class CameraAnimResult","fi":432},"complete":false,"fwd":[["lib/al/Library/Camera/CameraPoserAnim.h",8]]}});

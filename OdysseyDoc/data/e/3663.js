@@ -1,0 +1,1 @@
+DOC.got("e/3663",{"31210":{"q":"nn::audio::SubMixType","decl":{"f":"lib/NintendoSDK/include/nn/audio.h","l":135,"sig":"struct SubMixType","end":137,"fi":16},"size":8,"align":8,"complete":true,"fields":[{"n":"_0","t":"u64 *","off":0,"sz":8,"acc":"public","bits":null,"l":136,"cm":null,"ti":49377}]}});

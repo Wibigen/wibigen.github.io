@@ -1,0 +1,1 @@
+DOC.got("gh/agl/lyr/Layer/isRenderStepGPUCalc.cpp","// Nom démêlé : agl::lyr::Layer::isRenderStepGPUCalc\n// Symbole manglé : isRenderStepGPUCalc\n// undefined8 agl::lyr::Layer::isRenderStepGPUCalc(int param_1); @ .text::00ce5f4c\n\n\n/* agl::lyr::Layer::isRenderStepGPUCalc(int) const */\n\nundefined8 agl::lyr::Layer::isRenderStepGPUCalc(int param_1)\n\n{\n  return 0;\n}\n\n");

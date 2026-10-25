@@ -1,0 +1,1 @@
+DOC.got("e/5077",{"43815":{"q":"sead::ArchiveFileDevice::ArchiveFileHandle","acc":"protected","decl":{"f":"lib/sead/include/filedevice/seadArchiveFileDevice.h","l":24,"sig":"struct ArchiveFileHandle","fi":1336},"complete":false,"fwd":[["lib/sead/include/filedevice/seadArchiveFileDevice.h",24]]}});

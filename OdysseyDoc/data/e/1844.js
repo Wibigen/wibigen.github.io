@@ -1,0 +1,1 @@
+DOC.got("e/1844",{"20499":{"q":"al::JointDirectionInfo","decl":{"f":"lib/al/Library/Joint/JointControllerKeeper.h","l":9,"sig":"class JointDirectionInfo","fi":655},"complete":false,"fwd":[["lib/al/Library/Joint/JointControllerKeeper.h",9]]}});

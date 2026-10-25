@@ -1,0 +1,1 @@
+DOC.got("gh/rs/isModeE3Rom.cpp","// Nom démêlé : rs::isModeE3Rom\n// Symbole manglé : isModeE3Rom\n// undefined8 rs::isModeE3Rom(void); @ .text::006bf9d8\n\n\n/* rs::isModeE3Rom() */\n\nundefined8 rs::isModeE3Rom(void)\n\n{\n  return 0;\n}\n\n");

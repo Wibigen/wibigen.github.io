@@ -1,0 +1,1 @@
+DOC.got("e/3940",{"32591":{"q":"nn::gfx::TextureImplData","decl":{"f":"lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h","l":121,"sig":"template <typename TTarget>\nstruct TextureImplData","fi":51},"tp":["typename TTarget"],"complete":false,"fwd":[["lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h",121]]}});

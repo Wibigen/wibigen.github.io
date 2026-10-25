@@ -1,0 +1,1 @@
+DOC.got("gh/KoopaCapScaleAnimator/exeStop_.text_0018b0b8.cpp","// Nom démêlé : KoopaCapScaleAnimator::exeStop\n// Symbole manglé : exeStop\n// void KoopaCapScaleAnimator::exeStop(void); @ .text::0018b0b8\n\n\n/* KoopaCapScaleAnimator::exeStop() */\n\nvoid KoopaCapScaleAnimator::exeStop(void)\n\n{\n  return;\n}\n\n");

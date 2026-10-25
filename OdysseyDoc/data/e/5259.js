@@ -1,0 +1,1 @@
+DOC.got("e/5259",{"45675":{"q":"sead::GraphicsNvn::CreateArg","acc":"public","decl":{"f":"lib/sead/include/gfx/nin/seadGraphicsNvn.h","l":18,"sig":"class CreateArg","fi":1358},"complete":false,"fwd":[["lib/sead/include/gfx/nin/seadGraphicsNvn.h",18]]}});

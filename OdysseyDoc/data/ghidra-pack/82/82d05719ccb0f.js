@@ -1,0 +1,1 @@
+DOC.got("gh/rs/calcHaveCapNum_.text_0064cacc.cpp","// Nom démêlé : rs::calcHaveCapNum\n// Symbole manglé : calcHaveCapNum\n// void rs::calcHaveCapNum(long param_1); @ .text::0064cacc\n\n\n/* rs::calcHaveCapNum(GameDataHolderAccessor) */\n\nvoid rs::calcHaveCapNum(long param_1)\n\n{\n  GameDataFile::calcHaveCapNum(*(GameDataFile **)(param_1 + 0x20));\n  return;\n}\n\n");

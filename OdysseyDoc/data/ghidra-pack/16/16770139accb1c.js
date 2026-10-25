@@ -1,0 +1,1 @@
+DOC.got("gh/CapSwitch/listenStart_.text_00341e00.cpp","// Nom démêlé : CapSwitch::listenStart\n// Symbole manglé : listenStart\n// void __thiscall CapSwitch::listenStart(CapSwitch *this); @ .text::00341e00\n\n\n/* CapSwitch::listenStart() */\n\nvoid __thiscall CapSwitch::listenStart(CapSwitch *this)\n\n{\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1de3e98);\n  return;\n}\n\n");

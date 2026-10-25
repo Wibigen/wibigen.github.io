@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/SigloAccount/CloseUser.cpp","// Nom démêlé : nn::nex::SigloAccount::CloseUser\n// Symbole manglé : CloseUser\n// void nn::nex::SigloAccount::CloseUser(void); @ .text::0071b1c0\n\n\n/* nn::nex::SigloAccount::CloseUser() */\n\nvoid nn::nex::SigloAccount::CloseUser(void)\n\n{\n  nn::account::CloseUser((UserHandle *)&DAT_01f6b208);\n  return;\n}\n\n");

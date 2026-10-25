@@ -1,0 +1,1 @@
+DOC.got("gh/Stacker/updateCapOnHead.cpp","// Nom démêlé : Stacker::updateCapOnHead\n// Symbole manglé : updateCapOnHead\n// void __thiscall Stacker::updateCapOnHead(Stacker *this); @ .text::001bd4a8\n\n\n/* Stacker::updateCapOnHead() */\n\nvoid __thiscall Stacker::updateCapOnHead(Stacker *this)\n\n{\n  this[400] = (Stacker)0x1;\n  return;\n}\n\n");

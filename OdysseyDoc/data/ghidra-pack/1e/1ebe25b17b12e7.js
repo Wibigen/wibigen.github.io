@@ -1,0 +1,1 @@
+DOC.got("gh/sead/Controller/isConnected_.text_00870f30.cpp","// Nom démêlé : sead::Controller::isConnected\n// Symbole manglé : isConnected\n// undefined8 sead::Controller::isConnected(void); @ .text::00870f30\n\n\n/* sead::Controller::isConnected() const */\n\nundefined8 sead::Controller::isConnected(void)\n\n{\n  return 1;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerInput/getSeparatePlay1P.cpp","// Nom démêlé : PlayerInput::getSeparatePlay1P\n// Symbole manglé : getSeparatePlay1P\n// void PlayerInput::getSeparatePlay1P(void); @ .text::0054cf14\n\n\n/* PlayerInput::getSeparatePlay1P() */\n\nvoid PlayerInput::getSeparatePlay1P(void)\n\n{\n  al::getPlayerControllerPort(0);\n  return;\n}\n\n");

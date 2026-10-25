@@ -1,0 +1,1 @@
+DOC.got("gh/al/CameraPoser/init_.text_001d10a8.cpp","// Nom démêlé : al::CameraPoser::init\n// Symbole manglé : init\n// void al::CameraPoser::init(void); @ .text::001d10a8\n\n\n/* al::CameraPoser::init() */\n\nvoid al::CameraPoser::init(void)\n\n{\n  return;\n}\n\n");

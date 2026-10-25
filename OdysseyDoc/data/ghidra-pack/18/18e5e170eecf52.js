@@ -1,0 +1,1 @@
+DOC.got("gh/nnDetailNintendoSdkRuntimeObjectFile.cpp","// Nom démêlé : __nnDetailNintendoSdkRuntimeObjectFile\n// Symbole manglé : __nnDetailNintendoSdkRuntimeObjectFile\n// void __nnDetailNintendoSdkRuntimeObjectFile(void); @ .text::001001b0\n\n\nvoid __nnDetailNintendoSdkRuntimeObjectFile(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/BlockEmpty/exeWait_.text_0031d128.cpp","// Nom démêlé : BlockEmpty::exeWait\n// Symbole manglé : exeWait\n// void BlockEmpty::exeWait(void); @ .text::0031d128\n\n\n/* BlockEmpty::exeWait() */\n\nvoid BlockEmpty::exeWait(void)\n\n{\n  return;\n}\n\n");

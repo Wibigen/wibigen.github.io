@@ -1,0 +1,1 @@
+DOC.got("gh/rs/isAliveShine.cpp","// Nom démêlé : rs::isAliveShine\n// Symbole manglé : isAliveShine\n// bool rs::isAliveShine(Shine *param_1); @ .text::00655cb4\n\n\n/* rs::isAliveShine(Shine const*) */\n\nbool rs::isAliveShine(Shine *param_1)\n\n{\n  return **(char **)(param_1 + 0x100) == '\\0';\n}\n\n");

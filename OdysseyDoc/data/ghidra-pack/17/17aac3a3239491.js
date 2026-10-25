@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/FileStorageUnit/Truncate_.text_00739a10.cpp","// Nom démêlé : nn::nex::FileStorageUnit::Truncate\n// Symbole manglé : Truncate\n// void nn::nex::FileStorageUnit::Truncate(void); @ .text::00739a10\n\n\n/* nn::nex::FileStorageUnit::Truncate() */\n\nvoid nn::nex::FileStorageUnit::Truncate(void)\n\n{\n  return;\n}\n\n");

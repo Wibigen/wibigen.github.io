@@ -1,0 +1,1 @@
+DOC.got("gh/TestPacketReader/clear_.text_00437818.cpp","// Nom démêlé : TestPacketReader::clear\n// Symbole manglé : clear\n// void __thiscall TestPacketReader::clear(TestPacketReader *this); @ .text::00437818\n\n\n/* TestPacketReader::clear() */\n\nvoid __thiscall TestPacketReader::clear(TestPacketReader *this)\n\n{\n  *(undefined8 *)(this + 0xc) = 0;\n  return;\n}\n\n");

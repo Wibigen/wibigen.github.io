@@ -1,0 +1,1 @@
+DOC.got("gh/rs/getRequestActor.cpp","// Nom démêlé : rs::getRequestActor\n// Symbole manglé : getRequestActor\n// undefined8 rs::getRequestActor(Scene *param_1); @ .text::00651644\n\n\n/* rs::getRequestActor(al::Scene const*) */\n\nundefined8 rs::getRequestActor(Scene *param_1)\n\n{\n  return *(undefined8 *)(*(long *)(*(long *)(param_1 + 0x90) + 0xd0) + 0x28);\n}\n\n");

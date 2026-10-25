@@ -1,0 +1,1 @@
+DOC.got("gh/AirCurrent/start_.text_00312e28.cpp","// Nom démêlé : AirCurrent::start\n// Symbole manglé : start\n// void __thiscall AirCurrent::start(AirCurrent *this); @ .text::00312e28\n\n\n/* AirCurrent::start() */\n\nvoid __thiscall AirCurrent::start(AirCurrent *this)\n\n{\n  al::startNerveAction((LiveActor *)this,(char *)0x1928ee2);\n  return;\n}\n\n");

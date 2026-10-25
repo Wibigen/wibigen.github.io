@@ -1,0 +1,1 @@
+DOC.got("gh/LMS_GetAttributeText.cpp","// Nom démêlé : LMS_GetAttributeText\n// Symbole manglé : LMS_GetAttributeText\n// long LMS_GetAttributeText(long param_1,int param_2); @ .text::00c709c8\n\n\nlong LMS_GetAttributeText(long param_1,int param_2)\n\n{\n  return *(long *)(*(long *)(param_1 + 0x18) + (long)*(int *)(param_1 + 0x28) * 0x18) +\n         (long)param_2;\n}\n\n");

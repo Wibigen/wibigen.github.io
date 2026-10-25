@@ -1,0 +1,1 @@
+DOC.got("src/298","#pragma once\n\n#include <basis/seadTypes.h>\n\nnamespace agl::driver {\n\nclass NVNimage_ {\npublic:\n    NVNimage_();\n    NVNimage_(const NVNimage_& other);\n    ~NVNimage_();\n\n    NVNimage_ operator=(const NVNimage_& other);\n    void updateImageId(s32 id);\n\nprivate:\n    u64 mImageId;\n};\n\n}  // namespace agl::driver\n");

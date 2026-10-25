@@ -1,0 +1,1 @@
+DOC.got("gh/sead/Stream/Stream_.text_00857d7c.cpp","// Nom démêlé : sead::Stream::~Stream\n// Symbole manglé : ~Stream\n// void __thiscall sead::Stream::~Stream(Stream *this); @ .text::00857d7c\n\n\n/* sead::Stream::~Stream() */\n\nvoid __thiscall sead::Stream::~Stream(Stream *this)\n\n{\n  return;\n}\n\n");

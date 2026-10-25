@@ -1,0 +1,1 @@
+DOC.got("gh/CapSlotReel/isStopped.cpp","// Nom démêlé : CapSlotReel::isStopped\n// Symbole manglé : isStopped\n// void __thiscall CapSlotReel::isStopped(CapSlotReel *this); @ .text::00341684\n\n\n/* CapSlotReel::isStopped() const */\n\nvoid __thiscall CapSlotReel::isStopped(CapSlotReel *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1de3900);\n  return;\n}\n\n");

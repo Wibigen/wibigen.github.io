@@ -1,0 +1,1 @@
+DOC.got("gh/al/Projection/getNear_.text_00ac0300.cpp","// Nom démêlé : al::Projection::getNear\n// Symbole manglé : getNear\n// undefined4 __thiscall al::Projection::getNear(Projection *this); @ .text::00ac0300\n\n\n/* al::Projection::getNear() const */\n\nundefined4 __thiscall al::Projection::getNear(Projection *this)\n\n{\n  return *(undefined4 *)(this + 0x98);\n}\n\n");

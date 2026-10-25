@@ -1,0 +1,1 @@
+DOC.got("gh/al/isNeedRestore.cpp","// Nom démêlé : al::isNeedRestore\n// Symbole manglé : isNeedRestore\n// NfpInfo al::isNeedRestore(NfpInfo *param_1); @ .text::00a606c8\n\n\n/* al::isNeedRestore(al::NfpInfo const&) */\n\nNfpInfo al::isNeedRestore(NfpInfo *param_1)\n\n{\n  return param_1[0x1e5];\n}\n\n");

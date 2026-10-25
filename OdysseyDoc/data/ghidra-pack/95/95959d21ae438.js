@@ -1,0 +1,1 @@
+DOC.got("gh/LMS_GetAttributeSize.cpp","// Nom démêlé : LMS_GetAttributeSize\n// Symbole manglé : LMS_GetAttributeSize\n// undefined4 LMS_GetAttributeSize(long param_1); @ .text::00c70984\n\n\nundefined4 LMS_GetAttributeSize(long param_1)\n\n{\n  return *(undefined4 *)\n          (*(long *)(*(long *)(param_1 + 0x18) + (long)*(int *)(param_1 + 0x28) * 0x18) + 4);\n}\n\n");

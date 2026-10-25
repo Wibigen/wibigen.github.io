@@ -1,0 +1,1 @@
+DOC.got("gh/TalkNpcSwitchActionPlayer/getName_.text_004e456c.cpp","// Nom démêlé : TalkNpcSwitchActionPlayer::getName\n// Symbole manglé : getName\n// undefined8 TalkNpcSwitchActionPlayer::getName(void); @ .text::004e456c\n\n\n/* TalkNpcSwitchActionPlayer::getName() const */\n\nundefined8 TalkNpcSwitchActionPlayer::getName(void)\n\n{\n  return 0x194101d;\n}\n\n");

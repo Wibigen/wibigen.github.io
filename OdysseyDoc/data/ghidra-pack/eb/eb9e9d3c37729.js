@@ -1,0 +1,1 @@
+DOC.got("gh/rs/isModeEpdMovieRom.cpp","// Nom démêlé : rs::isModeEpdMovieRom\n// Symbole manglé : isModeEpdMovieRom\n// undefined8 rs::isModeEpdMovieRom(void); @ .text::006bfa10\n\n\n/* rs::isModeEpdMovieRom() */\n\nundefined8 rs::isModeEpdMovieRom(void)\n\n{\n  return 0;\n}\n\n");

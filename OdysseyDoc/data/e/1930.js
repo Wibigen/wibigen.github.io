@@ -1,0 +1,1 @@
+DOC.got("e/1930",{"21089":{"q":"al::MessageTagDataBase","decl":{"f":"lib/al/Library/Message/MessageTagDataHolder.h","l":8,"sig":"class MessageTagDataBase","fi":828},"complete":false,"fwd":[["lib/al/Library/Message/MessageTagDataHolder.h",8]]}});

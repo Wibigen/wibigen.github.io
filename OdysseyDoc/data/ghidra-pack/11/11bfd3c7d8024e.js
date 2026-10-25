@@ -1,0 +1,1 @@
+DOC.got("gh/al/ShadowMaskDrawer/draw_.text_00b25fdc.cpp","// Nom démêlé : al::ShadowMaskDrawer::draw\n// Symbole manglé : draw\n// void al::ShadowMaskDrawer::draw(void); @ .text::00b25fdc\n\n\n/* al::ShadowMaskDrawer::draw() const */\n\nvoid al::ShadowMaskDrawer::draw(void)\n\n{\n  return;\n}\n\n");

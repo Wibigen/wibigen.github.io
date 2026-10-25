@@ -1,0 +1,1 @@
+DOC.got("gh/WhipTargetInfo/isValid_.text_00593ec0.cpp","// Nom démêlé : WhipTargetInfo::isValid\n// Symbole manglé : isValid\n// bool __thiscall WhipTargetInfo::isValid(WhipTargetInfo *this); @ .text::00593ec0\n\n\n/* WhipTargetInfo::isValid() const */\n\nbool __thiscall WhipTargetInfo::isValid(WhipTargetInfo *this)\n\n{\n  return *(long *)(this + 8) != 0;\n}\n\n");

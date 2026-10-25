@@ -1,0 +1,1 @@
+DOC.got("gh/KoopaFireBeam/exeAppearSign_.text_00191aac.cpp","// Nom démêlé : KoopaFireBeam::exeAppearSign\n// Symbole manglé : exeAppearSign\n// void KoopaFireBeam::exeAppearSign(void); @ .text::00191aac\n\n\n/* KoopaFireBeam::exeAppearSign() */\n\nvoid KoopaFireBeam::exeAppearSign(void)\n\n{\n  return;\n}\n\n");

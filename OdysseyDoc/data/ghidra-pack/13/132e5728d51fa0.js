@@ -1,0 +1,1 @@
+DOC.got("gh/PlayRecorder/exeRecord.cpp","// Nom démêlé : PlayRecorder::exeRecord\n// Symbole manglé : exeRecord\n// void PlayRecorder::exeRecord(void); @ .text::003e5818\n\n\n/* PlayRecorder::exeRecord() */\n\nvoid PlayRecorder::exeRecord(void)\n\n{\n  return;\n}\n\n");

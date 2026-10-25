@@ -1,0 +1,1 @@
+DOC.got("gh/FishingFish/endHitPull.cpp","// Nom démêlé : FishingFish::endHitPull\n// Symbole manglé : endHitPull\n// void __thiscall FishingFish::endHitPull(FishingFish *this); @ .text::00383308\n\n\n/* FishingFish::endHitPull() */\n\nvoid __thiscall FishingFish::endHitPull(FishingFish *this)\n\n{\n  *(undefined8 *)(this + 0x120) = 0;\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/clearMclAnim.cpp","// Nom démêlé : al::clearMclAnim\n// Symbole manglé : clearMclAnim\n// void al::clearMclAnim(LiveActor *param_1); @ .text::009d4894\n\n\n/* al::clearMclAnim(al::LiveActor*) */\n\nvoid al::clearMclAnim(LiveActor *param_1)\n\n{\n  AnimPlayerSimple::clearAnim(*(AnimPlayerSimple **)(*(long *)(param_1 + 0x88) + 0x38));\n  return;\n}\n\n");

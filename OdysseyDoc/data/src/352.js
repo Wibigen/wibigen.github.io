@@ -1,0 +1,1 @@
+DOC.got("src/352","#pragma once\n\n#include \"Library/Factory/Factory.h\"\n\nnamespace al {\nclass AreaShape;\n\nusing AreaShapeCreatorFunction = AreaShape* (*)();\n\nclass AreaShapeFactory : public Factory<AreaShapeCreatorFunction> {\npublic:\n    AreaShapeFactory(const char* factoryName);\n};\n}  // namespace al\n");

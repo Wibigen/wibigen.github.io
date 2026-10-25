@@ -1,0 +1,1 @@
+DOC.got("gh/nn/atk/detail/Voice/Voice.cpp","// Nom démêlé : nn::atk::detail::Voice::Voice\n// Symbole manglé : Voice\n// void __thiscall nn::atk::detail::Voice::Voice(Voice *this); @ .text::00bc517c\n\n\n/* nn::atk::detail::Voice::Voice() */\n\nvoid __thiscall nn::atk::detail::Voice::Voice(Voice *this)\n\n{\n  *(undefined8 *)(this + 0xd0) = 0;\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/sead/PrintOutput/PrintOutput_.text_0084aeac.cpp","// Nom démêlé : sead::PrintOutput::~PrintOutput\n// Symbole manglé : ~PrintOutput\n// void __thiscall sead::PrintOutput::~PrintOutput(PrintOutput *this); @ .text::0084aeac\n\n\n/* sead::PrintOutput::~PrintOutput() */\n\nvoid __thiscall sead::PrintOutput::~PrintOutput(PrintOutput *this)\n\n{\n  return;\n}\n\n");

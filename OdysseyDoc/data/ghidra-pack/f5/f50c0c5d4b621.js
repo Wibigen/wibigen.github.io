@@ -1,0 +1,1 @@
+DOC.got("gh/al/getScale_.text_009ee678.cpp","// Nom démêlé : al::getScale\n// Symbole manglé : getScale\n// void al::getScale(LiveActor *param_1); @ .text::009ee678\n\n\n/* al::getScale(al::LiveActor const*) */\n\nvoid al::getScale(LiveActor *param_1)\n\n{\n  (**(code **)(**(long **)(param_1 + 0x50) + 8))();\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/Bubble/endHackMove.cpp","// Nom démêlé : Bubble::endHackMove\n// Symbole manglé : endHackMove\n// void __thiscall Bubble::endHackMove(Bubble *this); @ .text::001e5454\n\n\n/* Bubble::endHackMove() */\n\nvoid __thiscall Bubble::endHackMove(Bubble *this)\n\n{\n  al::setQuat((LiveActor *)this,(Quat *)(this + 0x1f8));\n  return;\n}\n\n");

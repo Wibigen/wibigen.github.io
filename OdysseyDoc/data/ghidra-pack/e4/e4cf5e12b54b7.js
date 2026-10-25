@@ -1,0 +1,1 @@
+DOC.got("gh/DoorCity/onStageSwitch.cpp","// Nom démêlé : DoorCity::onStageSwitch\n// Symbole manglé : onStageSwitch\n// void __thiscall DoorCity::onStageSwitch(DoorCity *this); @ .text::00360064\n\n\n/* DoorCity::onStageSwitch() */\n\nvoid __thiscall DoorCity::onStageSwitch(DoorCity *this)\n\n{\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1df0b78);\n  return;\n}\n\n");

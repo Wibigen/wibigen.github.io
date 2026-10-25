@@ -1,0 +1,1 @@
+DOC.got("e/3918",{"32428":{"q":"nn::gfx::TPipeline","decl":{"f":"lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h","l":22,"sig":"template <typename TTarget>\nclass TPipeline","fi":51},"tp":["typename TTarget"],"complete":false,"fwd":[["lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h",22]]}});

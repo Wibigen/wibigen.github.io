@@ -1,0 +1,1 @@
+DOC.got("gh/MoviePlayer/isPlay_.text_006573a4.cpp","// Nom démêlé : MoviePlayer::isPlay\n// Symbole manglé : isPlay\n// undefined1 __thiscall MoviePlayer::isPlay(MoviePlayer *this); @ .text::006573a4\n\n\n/* MoviePlayer::isPlay() const */\n\nundefined1 __thiscall MoviePlayer::isPlay(MoviePlayer *this)\n\n{\n  return *(undefined1 *)(*(long *)(this + 0x28) + 0x2f0);\n}\n\n");

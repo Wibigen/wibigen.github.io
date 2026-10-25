@@ -1,0 +1,1 @@
+DOC.got("src/187","#pragma once\n\n#include <nn/types.h>\n\nnamespace nn::svc {\nstruct Handle {\n    u32 handle;\n\n    Handle(u32 h) { handle = h; }\n\n    Handle() : Handle(0) {}\n\n    operator u32() const { return handle; }\n};\n\n}  // namespace nn::svc\n");

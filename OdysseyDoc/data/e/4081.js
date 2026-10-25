@@ -1,0 +1,1 @@
+DOC.got("e/4081",{"33309":{"q":"nn::hid::NpadJoyLeftState","decl":{"f":"lib/NintendoSDK/include/nn/hid.h","l":424,"sig":"struct NpadJoyLeftState : NpadBaseState","end":424,"fi":133},"size":40,"align":8,"bases":[["NpadBaseState","public",false,33298]],"complete":true}});

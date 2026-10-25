@@ -1,0 +1,1 @@
+DOC.got("gh/al/BalloonMessage/exeHide_.text_00a97a24.cpp","// Nom démêlé : al::BalloonMessage::exeHide\n// Symbole manglé : exeHide\n// void al::BalloonMessage::exeHide(void); @ .text::00a97a24\n\n\n/* al::BalloonMessage::exeHide() */\n\nvoid al::BalloonMessage::exeHide(void)\n\n{\n  return;\n}\n\n");

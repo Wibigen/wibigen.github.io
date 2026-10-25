@@ -1,0 +1,1 @@
+DOC.got("gh/GolemClimb/getFootRootR.cpp","// Nom démêlé : GolemClimb::getFootRootR\n// Symbole manglé : getFootRootR\n// undefined8 __thiscall GolemClimb::getFootRootR(GolemClimb *this); @ .text::00175914\n\n\n/* GolemClimb::getFootRootR() const */\n\nundefined8 __thiscall GolemClimb::getFootRootR(GolemClimb *this)\n\n{\n  return *(undefined8 *)(this + 800);\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/umac_delete.cpp","// Nom démêlé : umac_delete\n// Symbole manglé : umac_delete\n// undefined8 umac_delete(long param_1); @ .text::0072ec24\n\n\nundefined8 umac_delete(long param_1)\n\n{\n  if (param_1 != 0) {\n    free((void *)(param_1 - (ulong)*(byte *)(param_1 + -1)));\n  }\n  return 1;\n}\n\n");

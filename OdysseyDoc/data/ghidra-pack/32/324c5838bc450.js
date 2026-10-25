@@ -1,0 +1,1 @@
+DOC.got("gh/rs/isGetYoshiFruit.cpp","// Nom démêlé : rs::isGetYoshiFruit\n// Symbole manglé : isGetYoshiFruit\n// SaveObjInfo rs::isGetYoshiFruit(SaveObjInfo *param_1); @ .text::0063407c\n\n\n/* rs::isGetYoshiFruit(SaveObjInfo const*) */\n\nSaveObjInfo rs::isGetYoshiFruit(SaveObjInfo *param_1)\n\n{\n  return param_1[8];\n}\n\n");

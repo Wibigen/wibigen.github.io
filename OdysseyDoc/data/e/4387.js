@@ -1,0 +1,1 @@
+DOC.got("e/4387",{"34939":{"q":"nn::vi::LayerCreationSettings::(anonymous)","acc":"private","decl":{"f":"lib/NintendoSDK/include/nn/vi.h","l":67,"sig":"union","end":73,"fi":220},"size":4,"align":4,"complete":true,"fields":[{"n":"rawFlags","t":"u32","off":0,"sz":4,"acc":"public","bits":null,"l":68,"cm":null,"ti":49376}]}});

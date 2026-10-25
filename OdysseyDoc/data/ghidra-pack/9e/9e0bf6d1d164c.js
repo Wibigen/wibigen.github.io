@@ -1,0 +1,1 @@
+DOC.got("gh/sead/FontBase/FontBase.cpp","// Nom démêlé : sead::FontBase::~FontBase\n// Symbole manglé : ~FontBase\n// void __thiscall sead::FontBase::~FontBase(FontBase *this); @ .text::00c65bec\n\n\n/* sead::FontBase::~FontBase() */\n\nvoid __thiscall sead::FontBase::~FontBase(FontBase *this)\n\n{\n  return;\n}\n\n");

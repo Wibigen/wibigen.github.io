@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/SystemInfo/IsRunningLinux.cpp","// Nom démêlé : nn::nex::SystemInfo::IsRunningLinux\n// Symbole manglé : IsRunningLinux\n// undefined8 nn::nex::SystemInfo::IsRunningLinux(void); @ .text::00721534\n\n\n/* nn::nex::SystemInfo::IsRunningLinux() */\n\nundefined8 nn::nex::SystemInfo::IsRunningLinux(void)\n\n{\n  return 0;\n}\n\n");

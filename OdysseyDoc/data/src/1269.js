@@ -1,0 +1,1 @@
+DOC.got("src/1269","#include \"Project/SaveData/SaveDataSequenceFormat.h\"\n\nnamespace al {\n\nSaveDataSequenceFormat::SaveDataSequenceFormat() = default;\n\ns32 SaveDataSequenceFormat::threadFunc(const char* filename) {\n    return -1;\n}\n\nvoid SaveDataSequenceFormat::start(s32 a, s32 b) {\n    _8 = a;\n    _c = b;\n}\n\n}  // namespace al\n");

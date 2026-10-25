@@ -1,0 +1,1 @@
+DOC.got("gh/al/SubCameraRenderer/exeCapture.cpp","// Nom démêlé : al::SubCameraRenderer::exeCapture\n// Symbole manglé : exeCapture\n// void al::SubCameraRenderer::exeCapture(void); @ .text::0097ce50\n\n\n/* al::SubCameraRenderer::exeCapture() */\n\nvoid al::SubCameraRenderer::exeCapture(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/agl/fx/OfxBase/genMessageSimple.cpp","// Nom démêlé : agl::fx::OfxBase::genMessageSimple\n// Symbole manglé : genMessageSimple\n// void agl::fx::OfxBase::genMessageSimple(Context *param_1); @ .text::00ccf0e0\n\n\n/* agl::fx::OfxBase::genMessageSimple(sead::hostio::Context*) */\n\nvoid agl::fx::OfxBase::genMessageSimple(Context *param_1)\n\n{\n  return;\n}\n\n");

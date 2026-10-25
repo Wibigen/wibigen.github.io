@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/MemoryManager/BeginProtection.cpp","// Nom démêlé : nn::nex::MemoryManager::BeginProtection\n// Symbole manglé : BeginProtection\n// void nn::nex::MemoryManager::BeginProtection(void); @ .text::00726b3c\n\n\n/* nn::nex::MemoryManager::BeginProtection() */\n\nvoid nn::nex::MemoryManager::BeginProtection(void)\n\n{\n  return;\n}\n\n");

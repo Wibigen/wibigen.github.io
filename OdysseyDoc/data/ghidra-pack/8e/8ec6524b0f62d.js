@@ -1,0 +1,1 @@
+DOC.got("gh/Curl_resolver_global_init.cpp","// Nom démêlé : Curl_resolver_global_init\n// Symbole manglé : Curl_resolver_global_init\n// undefined8 Curl_resolver_global_init(void); @ .text::0080fff8\n\n\nundefined8 Curl_resolver_global_init(void)\n\n{\n  return 0;\n}\n\n");

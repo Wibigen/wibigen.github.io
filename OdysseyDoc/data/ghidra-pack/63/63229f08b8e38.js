@@ -1,0 +1,1 @@
+DOC.got("gh/HackerJudgeStartRun/update_.text_0050ec58.cpp","// Nom démêlé : HackerJudgeStartRun::update\n// Symbole manglé : update\n// void HackerJudgeStartRun::update(void); @ .text::0050ec58\n\n\n/* HackerJudgeStartRun::update() */\n\nvoid HackerJudgeStartRun::update(void)\n\n{\n  return;\n}\n\n");

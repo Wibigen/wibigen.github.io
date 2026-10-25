@@ -1,0 +1,1 @@
+DOC.got("gh/DemoScene/initLayout.cpp","// Nom démêlé : DemoScene::initLayout\n// Symbole manglé : initLayout\n// void DemoScene::initLayout(LayoutInitInfo *param_1); @ .text::005a84a0\n\n\n/* DemoScene::initLayout(al::LayoutInitInfo const&) */\n\nvoid DemoScene::initLayout(LayoutInitInfo *param_1)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("e/4330",{"346":{"q":"(anonymous@src/Item/CoinCirclePlacement)::(anonymous)","decl":{"f":"src/Item/CoinCirclePlacement.cpp","l":20,"sig":"NERVES_MAKE_STRUCT(CoinCirclePlacement, Move)","end":20,"fi":1677},"size":8,"align":8,"complete":true,"fields":[{"n":"Move","t":"CoinCirclePlacementNrvMove","off":0,"sz":8,"acc":"public","bits":null,"l":20,"cm":null,"ti":984}]}});

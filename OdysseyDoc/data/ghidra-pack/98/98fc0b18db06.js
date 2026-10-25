@@ -1,0 +1,1 @@
+DOC.got("gh/sead/JobQueue/begin_.text_00ca2bec.cpp","// Nom démêlé : sead::JobQueue::begin\n// Symbole manglé : begin\n// void sead::JobQueue::begin(void); @ .text::00ca2bec\n\n\n/* sead::JobQueue::begin() */\n\nvoid sead::JobQueue::begin(void)\n\n{\n  return;\n}\n\n");

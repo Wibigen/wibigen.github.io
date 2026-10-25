@@ -1,0 +1,1 @@
+DOC.got("gh/SphinxRideEvent/judgeQuery_.text_004d9b04.cpp","// Nom démêlé : SphinxRideEvent::judgeQuery\n// Symbole manglé : judgeQuery\n// undefined8 SphinxRideEvent::judgeQuery(char *param_1); @ .text::004d9b04\n\n\n/* SphinxRideEvent::judgeQuery(char const*) const */\n\nundefined8 SphinxRideEvent::judgeQuery(char *param_1)\n\n{\n  return 0;\n}\n\n");

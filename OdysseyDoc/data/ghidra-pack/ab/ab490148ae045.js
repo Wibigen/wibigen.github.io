@@ -1,0 +1,1 @@
+DOC.got("gh/TestMusaBlockGenerator/exeWait_.text_00436ac0.cpp","// Nom démêlé : TestMusaBlockGenerator::exeWait\n// Symbole manglé : exeWait\n// void TestMusaBlockGenerator::exeWait(void); @ .text::00436ac0\n\n\n/* TestMusaBlockGenerator::exeWait() */\n\nvoid TestMusaBlockGenerator::exeWait(void)\n\n{\n  return;\n}\n\n");

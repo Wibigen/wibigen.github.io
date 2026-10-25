@@ -1,0 +1,1 @@
+DOC.got("e/4223",{"3386":{"q":"::NVNchannelMaskState","decl":{"f":"lib/NintendoSDK/include/nvn/nvn.h","l":74,"sig":"struct","end":76,"fi":223},"size":4,"align":1,"complete":true,"fields":[{"n":"reserved","t":"char[4]","off":0,"sz":4,"acc":"public","tu":null,"bits":null,"l":75,"cm":null,"ti":null}]}});

@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Inet/Initialize_.text_007a4820.cpp","// Nom démêlé : nn::nex::Inet::Initialize\n// Symbole manglé : Initialize\n// undefined8 nn::nex::Inet::Initialize(void); @ .text::007a4820\n\n\n/* nn::nex::Inet::Initialize() */\n\nundefined8 nn::nex::Inet::Initialize(void)\n\n{\n  return 1;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/sead/Graphics/initHostIO_.text_0085e4cc.cpp","// Nom démêlé : sead::Graphics::initHostIO\n// Symbole manglé : initHostIO\n// void sead::Graphics::initHostIO(void); @ .text::0085e4cc\n\n\n/* sead::Graphics::initHostIO() */\n\nvoid sead::Graphics::initHostIO(void)\n\n{\n  return;\n}\n\n");

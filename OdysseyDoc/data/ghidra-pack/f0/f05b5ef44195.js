@@ -1,0 +1,1 @@
+DOC.got("gh/EquipmentInfo/isForceDash.cpp","// Nom démêlé : EquipmentInfo::isForceDash\n// Symbole manglé : isForceDash\n// byte __thiscall EquipmentInfo::isForceDash(EquipmentInfo *this); @ .text::004f96ac\n\n\n/* EquipmentInfo::isForceDash() const */\n\nbyte __thiscall EquipmentInfo::isForceDash(EquipmentInfo *this)\n\n{\n  return (byte)this[8] >> 1 & 1;\n}\n\n");

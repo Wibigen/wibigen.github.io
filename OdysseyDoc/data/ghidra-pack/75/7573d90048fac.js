@@ -1,0 +1,1 @@
+DOC.got("gh/agl/Shader/Shader.cpp","// Nom démêlé : agl::Shader::~Shader\n// Symbole manglé : ~Shader\n// void __thiscall agl::Shader::~Shader(Shader *this); @ .text::0087cbac\n\n\n/* agl::Shader::~Shader() */\n\nvoid __thiscall agl::Shader::~Shader(Shader *this)\n\n{\n  return;\n}\n\n");

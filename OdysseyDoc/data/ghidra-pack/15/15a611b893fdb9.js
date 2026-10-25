@@ -1,0 +1,1 @@
+DOC.got("gh/nn/vfx/Primitive/GetIndexFormat_.text_00c2fe2c.cpp","// Nom démêlé : nn::vfx::Primitive::GetIndexFormat\n// Symbole manglé : GetIndexFormat\n// undefined8 nn::vfx::Primitive::GetIndexFormat(void); @ .text::00c2fe2c\n\n\n/* nn::vfx::Primitive::GetIndexFormat() const */\n\nundefined8 nn::vfx::Primitive::GetIndexFormat(void)\n\n{\n  return 2;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("src/531","#pragma once\n\n#include <basis/seadTypes.h>\n\nnamespace al {\nstruct PadDataPack;\n\nclass IUsePadDataReader {\npublic:\n    virtual void read(PadDataPack* frameData) = 0;\n    virtual bool isEnd() const = 0;\n    virtual u32 getCursorFrame() const = 0;\n    virtual s32 getRemainFrame() const = 0;\n\n    virtual void close() {}\n};\n}  // namespace al\n");

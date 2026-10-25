@@ -1,0 +1,1 @@
+DOC.got("gh/nn/gfx/detail/UseMiddleWare.cpp","// Nom démêlé : nn::gfx::detail::UseMiddleWare\n// Symbole manglé : UseMiddleWare\n// void nn::gfx::detail::UseMiddleWare(void); @ .text::00824650\n\n\n/* nn::gfx::detail::UseMiddleWare() */\n\nvoid nn::gfx::detail::UseMiddleWare(void)\n\n{\n  nn::util::ReferSymbol((void *)0x1d4d0a3);\n  return;\n}\n\n");

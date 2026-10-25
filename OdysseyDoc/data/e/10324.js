@@ -1,0 +1,1 @@
+DOC.got("e/10324",{"7029":{"q":"GLSLCspecializationBatch_rec","decl":{"f":"lib/NintendoSDK/include/nvnTool/nvnTool_GlslcInterface.h","l":320,"sig":"struct GLSLCspecializationBatch_rec","end":322,"fi":230},"size":1,"align":1,"complete":true}});

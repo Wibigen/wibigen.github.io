@@ -1,0 +1,1 @@
+DOC.got("gh/Bull/endChase.cpp","// Nom démêlé : Bull::endChase\n// Symbole manglé : endChase\n// void __thiscall Bull::endChase(Bull *this); @ .text::001e9e8c\n\n\n/* Bull::endChase() */\n\nvoid __thiscall Bull::endChase(Bull *this)\n\n{\n  al::invalidateHitSensor((LiveActor *)this,(char *)0x1925592);\n  return;\n}\n\n");

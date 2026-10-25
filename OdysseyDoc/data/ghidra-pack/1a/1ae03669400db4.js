@@ -1,0 +1,1 @@
+DOC.got("gh/Curl_fileinfo_alloc.cpp","// Nom démêlé : Curl_fileinfo_alloc\n// Symbole manglé : Curl_fileinfo_alloc\n// void * Curl_fileinfo_alloc(void); @ .text::008147d0\n\n\nvoid * Curl_fileinfo_alloc(void)\n\n{\n  void *__s;\n  \n  __s = (void *)Curl_SigloMalloc(0x80);\n  if (__s != (void *)0x0) {\n    memset(__s,0,0x80);\n  }\n  return __s;\n}\n\n");

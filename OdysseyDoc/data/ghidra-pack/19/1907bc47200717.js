@@ -1,0 +1,1 @@
+DOC.got("gh/TimeBalloon/getRankMaxTotal.cpp","// Nom démêlé : TimeBalloon::getRankMaxTotal\n// Symbole manglé : getRankMaxTotal\n// undefined8 TimeBalloon::getRankMaxTotal(void); @ .text::0045da50\n\n\n/* TimeBalloon::getRankMaxTotal() */\n\nundefined8 TimeBalloon::getRankMaxTotal(void)\n\n{\n  return 0x1e;\n}\n\n");

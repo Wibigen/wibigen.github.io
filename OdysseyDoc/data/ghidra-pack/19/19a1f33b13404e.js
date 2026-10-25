@@ -1,0 +1,1 @@
+DOC.got("gh/curl_multi_init.cpp","// Nom démêlé : curl_multi_init\n// Symbole manglé : curl_multi_init\n// void curl_multi_init(void); @ .text::007fd5b4\n\n\nvoid curl_multi_init(void)\n\n{\n  Curl_multi_handle(0x38f,0x61);\n  return;\n}\n\n");

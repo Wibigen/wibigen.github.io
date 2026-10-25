@@ -1,0 +1,1 @@
+DOC.got("gh/PochiHintPhoto/exeWait_.text_004af52c.cpp","// Nom démêlé : PochiHintPhoto::exeWait\n// Symbole manglé : exeWait\n// void PochiHintPhoto::exeWait(void); @ .text::004af52c\n\n\n/* PochiHintPhoto::exeWait() */\n\nvoid PochiHintPhoto::exeWait(void)\n\n{\n  return;\n}\n\n");

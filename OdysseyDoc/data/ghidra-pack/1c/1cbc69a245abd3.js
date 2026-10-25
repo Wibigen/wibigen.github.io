@@ -1,0 +1,1 @@
+DOC.got("gh/sead/GraphicsNvn/waitForVBlankImpl.cpp","// Nom démêlé : sead::GraphicsNvn::waitForVBlankImpl\n// Symbole manglé : waitForVBlankImpl\n// void sead::GraphicsNvn::waitForVBlankImpl(void); @ .text::0083afdc\n\n\n/* sead::GraphicsNvn::waitForVBlankImpl() */\n\nvoid sead::GraphicsNvn::waitForVBlankImpl(void)\n\n{\n  return;\n}\n\n");

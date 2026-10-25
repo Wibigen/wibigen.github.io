@@ -1,0 +1,1 @@
+DOC.got("e/4488",{"36206":{"q":"nvn::Rectangle","decl":{"f":"lib/NintendoSDK/include/nvn/nvn_Cpp.h","l":112,"sig":"struct Rectangle","fi":224},"complete":false,"fwd":[["lib/NintendoSDK/include/nvn/nvn_Cpp.h",112]]}});

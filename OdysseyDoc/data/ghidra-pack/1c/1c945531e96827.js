@@ -1,0 +1,1 @@
+DOC.got("gh/al/LiveActor/control.cpp","// Nom démêlé : al::LiveActor::control\n// Symbole manglé : control\n// void al::LiveActor::control(void); @ .text::00104c5c\n\n\n/* al::LiveActor::control() */\n\nvoid al::LiveActor::control(void)\n\n{\n  return;\n}\n\n");

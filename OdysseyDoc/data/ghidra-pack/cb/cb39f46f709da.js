@@ -1,0 +1,1 @@
+DOC.got("gh/al/isSensorMapObj.cpp","// Nom démêlé : al::isSensorMapObj\n// Symbole manglé : isSensorMapObj\n// bool al::isSensorMapObj(HitSensor *param_1); @ .text::009f2e30\n\n\n/* al::isSensorMapObj(al::HitSensor const*) */\n\nbool al::isSensorMapObj(HitSensor *param_1)\n\n{\n  return *(int *)(param_1 + 8) == 0xc;\n}\n\n");

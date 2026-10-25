@@ -1,0 +1,1 @@
+DOC.got("gh/al/isExistScreenCoverCtrl.cpp","// Nom démêlé : al::isExistScreenCoverCtrl\n// Symbole manglé : isExistScreenCoverCtrl\n// bool al::isExistScreenCoverCtrl(Scene *param_1); @ .text::00ad0e50\n\n\n/* al::isExistScreenCoverCtrl(al::Scene const*) */\n\nbool al::isExistScreenCoverCtrl(Scene *param_1)\n\n{\n  return *(long *)(param_1 + 0xb8) != 0;\n}\n\n");

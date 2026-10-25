@@ -1,0 +1,1 @@
+DOC.got("gh/Pukupuku/isSwimTypeA.cpp","// Nom démêlé : Pukupuku::isSwimTypeA\n// Symbole manglé : isSwimTypeA\n// undefined8 Pukupuku::isSwimTypeA(void); @ .text::00277770\n\n\n/* Pukupuku::isSwimTypeA() const */\n\nundefined8 Pukupuku::isSwimTypeA(void)\n\n{\n  return 1;\n}\n\n");

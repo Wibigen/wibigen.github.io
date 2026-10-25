@@ -1,0 +1,1 @@
+DOC.got("gh/KoopaShip/exeDemoHomeFlyAwayAfter.cpp","// Nom démêlé : KoopaShip::exeDemoHomeFlyAwayAfter\n// Symbole manglé : exeDemoHomeFlyAwayAfter\n// void KoopaShip::exeDemoHomeFlyAwayAfter(void); @ .text::003afb30\n\n\n/* KoopaShip::exeDemoHomeFlyAwayAfter() */\n\nvoid KoopaShip::exeDemoHomeFlyAwayAfter(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerRecoder/exeEnd_.text_004af330.cpp","// Nom démêlé : PlayerRecoder::exeEnd\n// Symbole manglé : exeEnd\n// void PlayerRecoder::exeEnd(void); @ .text::004af330\n\n\n/* PlayerRecoder::exeEnd() */\n\nvoid PlayerRecoder::exeEnd(void)\n\n{\n  return;\n}\n\n");

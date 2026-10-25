@@ -1,0 +1,1 @@
+DOC.got("gh/sead/TaskBase/enter_.text_00835ec4.cpp","// Nom démêlé : sead::TaskBase::enter\n// Symbole manglé : enter\n// void sead::TaskBase::enter(void); @ .text::00835ec4\n\n\n/* sead::TaskBase::enter() */\n\nvoid sead::TaskBase::enter(void)\n\n{\n  return;\n}\n\n");

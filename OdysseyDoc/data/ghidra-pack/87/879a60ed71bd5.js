@@ -1,0 +1,1 @@
+DOC.got("gh/al/isUsingViewportHalfZ.cpp","// Nom démêlé : al::isUsingViewportHalfZ\n// Symbole manglé : isUsingViewportHalfZ\n// undefined8 al::isUsingViewportHalfZ(void); @ .text::00ac0a40\n\n\n/* al::isUsingViewportHalfZ() */\n\nundefined8 al::isUsingViewportHalfZ(void)\n\n{\n  return 0;\n}\n\n");

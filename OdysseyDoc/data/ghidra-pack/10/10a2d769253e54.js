@@ -1,0 +1,1 @@
+DOC.got("gh/BlockTransparent2D/control_.text_003210d0.cpp","// Nom démêlé : BlockTransparent2D::control\n// Symbole manglé : control\n// void BlockTransparent2D::control(void); @ .text::003210d0\n\n\n/* BlockTransparent2D::control() */\n\nvoid BlockTransparent2D::control(void)\n\n{\n  return;\n}\n\n");

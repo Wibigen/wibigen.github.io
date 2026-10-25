@@ -1,0 +1,1 @@
+DOC.got("gh/CapMessageMoonNotifier/exeWait_.text_00339cbc.cpp","// Nom démêlé : CapMessageMoonNotifier::exeWait\n// Symbole manglé : exeWait\n// void CapMessageMoonNotifier::exeWait(void); @ .text::00339cbc\n\n\n/* CapMessageMoonNotifier::exeWait() */\n\nvoid CapMessageMoonNotifier::exeWait(void)\n\n{\n  return;\n}\n\n");

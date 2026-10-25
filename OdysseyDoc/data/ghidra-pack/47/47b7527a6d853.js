@@ -1,0 +1,1 @@
+DOC.got("gh/eui/BoxCursorControl/getClassName_.text_008f93f0.cpp","// Nom démêlé : eui::BoxCursorControl::getClassName\n// Symbole manglé : getClassName\n// undefined8 eui::BoxCursorControl::getClassName(void); @ .text::008f93f0\n\n\n/* eui::BoxCursorControl::getClassName() const */\n\nundefined8 eui::BoxCursorControl::getClassName(void)\n\n{\n  return 0x1966088;\n}\n\n");

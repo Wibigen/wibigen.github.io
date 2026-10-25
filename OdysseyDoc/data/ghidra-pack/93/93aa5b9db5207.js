@@ -1,0 +1,1 @@
+DOC.got("gh/al/EventFlowNode/init_.text_0098dce8.cpp","// Nom démêlé : al::EventFlowNode::init\n// Symbole manglé : init\n// void al::EventFlowNode::init(EventFlowNodeInitInfo *param_1); @ .text::0098dce8\n\n\n/* al::EventFlowNode::init(al::EventFlowNodeInitInfo const&) */\n\nvoid al::EventFlowNode::init(EventFlowNodeInitInfo *param_1)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/SePlayObj/waitSwitch.cpp","// Nom démêlé : al::SePlayObj::waitSwitch\n// Symbole manglé : waitSwitch\n// void __thiscall al::SePlayObj::waitSwitch(SePlayObj *this); @ .text::00a6e198\n\n\n/* al::SePlayObj::waitSwitch() */\n\nvoid __thiscall al::SePlayObj::waitSwitch(SePlayObj *this)\n\n{\n  setNerve((IUseNerve *)this,(Nerve *)0x1efc230);\n  return;\n}\n\n");

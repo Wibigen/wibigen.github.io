@@ -1,0 +1,1 @@
+DOC.got("src/2130","#pragma once\n\n#include <basis/seadTypes.h>\n\nclass IUsePlayerHeightCheck {\npublic:\n    virtual bool isAboveGround() const = 0;\n    virtual f32 getGroundHeight() const = 0;\n    virtual f32 getShadowDropHeight() const = 0;\n};\n");

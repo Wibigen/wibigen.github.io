@@ -1,0 +1,1 @@
+DOC.got("e/3644",{"31117":{"q":"nn::audio::AudioDeviceName","decl":{"f":"lib/NintendoSDK/include/nn/audio.h","l":14,"sig":"struct AudioDeviceName","end":16,"fi":16},"size":256,"align":1,"complete":true,"fields":[{"n":"raw_name","t":"char[256]","off":0,"sz":256,"acc":"public","tu":null,"bits":null,"l":15,"cm":null,"ti":null}]}});

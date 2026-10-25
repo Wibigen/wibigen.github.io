@@ -1,0 +1,1 @@
+DOC.got("gh/EchoEmitterHolder/getSceneObjName_.text_00365e1c.cpp","// Nom démêlé : EchoEmitterHolder::getSceneObjName\n// Symbole manglé : getSceneObjName\n// undefined8 EchoEmitterHolder::getSceneObjName(void); @ .text::00365e1c\n\n\n/* EchoEmitterHolder::getSceneObjName() const */\n\nundefined8 EchoEmitterHolder::getSceneObjName(void)\n\n{\n  return 0x19312a2;\n}\n\n");

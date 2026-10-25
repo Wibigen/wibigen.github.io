@@ -1,0 +1,1 @@
+DOC.got("gh/YukimaruInput/isSwingDirRight_.text_0044f924.cpp","// Nom démêlé : YukimaruInput::isSwingDirRight\n// Symbole manglé : isSwingDirRight\n// undefined8 YukimaruInput::isSwingDirRight(void); @ .text::0044f924\n\n\n/* YukimaruInput::isSwingDirRight() const */\n\nundefined8 YukimaruInput::isSwingDirRight(void)\n\n{\n  return 0;\n}\n\n");

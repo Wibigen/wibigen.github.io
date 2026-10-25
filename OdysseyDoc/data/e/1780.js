@@ -1,0 +1,1 @@
+DOC.got("e/1780",{"20254":{"q":"al::HitSensorDirectror","decl":{"f":"lib/al/Project/HitSensor/HitSensor.h","l":8,"sig":"class HitSensorDirectror","fi":1228},"complete":false,"fwd":[["lib/al/Project/HitSensor/HitSensor.h",8]]}});

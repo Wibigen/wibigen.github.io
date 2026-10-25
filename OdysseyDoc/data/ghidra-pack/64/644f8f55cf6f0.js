@@ -1,0 +1,1 @@
+DOC.got("gh/al/isNeedFormat.cpp","// Nom démêlé : al::isNeedFormat\n// Symbole manglé : isNeedFormat\n// NfpInfo al::isNeedFormat(NfpInfo *param_1); @ .text::00a606c0\n\n\n/* al::isNeedFormat(al::NfpInfo const&) */\n\nNfpInfo al::isNeedFormat(NfpInfo *param_1)\n\n{\n  return param_1[0x1e4];\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/isNoCollide_.text_009d998c.cpp","// Nom démêlé : al::isNoCollide\n// Symbole manglé : isNoCollide\n// undefined1 al::isNoCollide(LiveActor *param_1); @ .text::009d998c\n\n\n/* al::isNoCollide(al::LiveActor const*) */\n\nundefined1 al::isNoCollide(LiveActor *param_1)\n\n{\n  return *(undefined1 *)(*(long *)(param_1 + 0x100) + 6);\n}\n\n");

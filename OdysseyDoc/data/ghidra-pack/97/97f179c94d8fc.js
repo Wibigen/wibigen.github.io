@@ -1,0 +1,1 @@
+DOC.got("gh/HelpAmiiboLifeMaxUpItem/getType_.text_001045a0.cpp","// Nom démêlé : HelpAmiiboLifeMaxUpItem::getType\n// Symbole manglé : getType\n// undefined8 HelpAmiiboLifeMaxUpItem::getType(void); @ .text::001045a0\n\n\n/* HelpAmiiboLifeMaxUpItem::getType() const */\n\nundefined8 HelpAmiiboLifeMaxUpItem::getType(void)\n\n{\n  return 1;\n}\n\n");

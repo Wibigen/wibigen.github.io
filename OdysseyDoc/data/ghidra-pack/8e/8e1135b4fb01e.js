@@ -1,0 +1,1 @@
+DOC.got("gh/al/NatureDirector/init_.text_00a575c4.cpp","// Nom démêlé : al::NatureDirector::init\n// Symbole manglé : init\n// void al::NatureDirector::init(void); @ .text::00a575c4\n\n\n/* al::NatureDirector::init() */\n\nvoid al::NatureDirector::init(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/dec_.text_00720698.cpp","// Nom démêlé : nn::nex::dec\n// Symbole manglé : dec\n// void nn::nex::dec(StringStream *param_1); @ .text::00720698\n\n\n/* nn::nex::dec(nn::nex::StringStream&) */\n\nvoid nn::nex::dec(StringStream *param_1)\n\n{\n  param_1[0x120] = (StringStream)0x0;\n  param_1[0x123] = (StringStream)0x0;\n  return;\n}\n\n");

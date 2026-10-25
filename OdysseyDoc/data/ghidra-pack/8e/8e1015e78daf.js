@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/WaterMark/IsComputingAverage.cpp","// Nom démêlé : nn::nex::WaterMark::IsComputingAverage\n// Symbole manglé : IsComputingAverage\n// undefined8 nn::nex::WaterMark::IsComputingAverage(void); @ .text::00725a6c\n\n\n/* nn::nex::WaterMark::IsComputingAverage() */\n\nundefined8 nn::nex::WaterMark::IsComputingAverage(void)\n\n{\n  return 0;\n}\n\n");

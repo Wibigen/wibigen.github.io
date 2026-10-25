@@ -1,0 +1,1 @@
+DOC.got("gh/HackCap/getThrowHeight.cpp","// Nom démêlé : HackCap::getThrowHeight\n// Symbole manglé : getThrowHeight\n// undefined4 __thiscall HackCap::getThrowHeight(HackCap *this); @ .text::0050036c\n\n\n/* HackCap::getThrowHeight() const */\n\nundefined4 __thiscall HackCap::getThrowHeight(HackCap *this)\n\n{\n  return *(undefined4 *)**(undefined8 **)(this + 0x220);\n}\n\n");

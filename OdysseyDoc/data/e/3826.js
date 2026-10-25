@@ -1,0 +1,1 @@
+DOC.got("e/3826",{"31857":{"q":"nn::gfx::FenceInfoData","decl":{"f":"lib/NintendoSDK/include/nn/gfx/gfx_SyncInfoData.h","l":5,"sig":"struct FenceInfoData","end":7,"fi":125},"size":16,"align":1,"complete":true,"fields":[{"n":"reserved","t":"char[16]","off":0,"sz":16,"acc":"public","tu":null,"bits":null,"l":6,"cm":null,"ti":null}]}});

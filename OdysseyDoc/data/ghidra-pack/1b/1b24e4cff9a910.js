@@ -1,0 +1,1 @@
+DOC.got("gh/al/getTransPtr.cpp","// Nom démêlé : al::getTransPtr\n// Symbole manglé : getTransPtr\n// long al::getTransPtr(LiveActor *param_1); @ .text::009eed20\n\n\n/* al::getTransPtr(al::LiveActor*) */\n\nlong al::getTransPtr(LiveActor *param_1)\n\n{\n  return *(long *)(param_1 + 0x50) + 8;\n}\n\n");

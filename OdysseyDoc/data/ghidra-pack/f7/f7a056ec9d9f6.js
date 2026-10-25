@@ -1,0 +1,1 @@
+DOC.got("gh/Utsubo/setNerveRiseSign.cpp","// Nom démêlé : Utsubo::setNerveRiseSign\n// Symbole manglé : setNerveRiseSign\n// void __thiscall Utsubo::setNerveRiseSign(Utsubo *this); @ .text::002a8874\n\n\n/* Utsubo::setNerveRiseSign() */\n\nvoid __thiscall Utsubo::setNerveRiseSign(Utsubo *this)\n\n{\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1daefe0);\n  return;\n}\n\n");

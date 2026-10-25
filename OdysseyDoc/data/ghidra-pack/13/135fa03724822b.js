@@ -1,0 +1,1 @@
+DOC.got("gh/YukimaruRacePlayer/isEnableDemo_.text_0044f8fc.cpp","// Nom démêlé : YukimaruRacePlayer::isEnableDemo\n// Symbole manglé : isEnableDemo\n// undefined8 YukimaruRacePlayer::isEnableDemo(void); @ .text::0044f8fc\n\n\n/* YukimaruRacePlayer::isEnableDemo() */\n\nundefined8 YukimaruRacePlayer::isEnableDemo(void)\n\n{\n  return 1;\n}\n\n");

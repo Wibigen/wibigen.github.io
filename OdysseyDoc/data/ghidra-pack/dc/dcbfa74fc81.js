@@ -1,0 +1,1 @@
+DOC.got("gh/KoopaChurch/skipDemo_.text_0018bbf8.cpp","// Nom démêlé : KoopaChurch::skipDemo\n// Symbole manglé : skipDemo\n// void __thiscall KoopaChurch::skipDemo(KoopaChurch *this); @ .text::0018bbf8\n\n\n/* non-virtual thunk to KoopaChurch::skipDemo() */\n\nvoid __thiscall KoopaChurch::skipDemo(KoopaChurch *this)\n\n{\n  skipDemo(this + -0x108);\n  return;\n}\n\n");

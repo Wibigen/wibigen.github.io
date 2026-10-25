@@ -1,0 +1,1 @@
+DOC.got("gh/sead/BufferWriteStreamSrc/skip_.text_00855634.cpp","// Nom démêlé : sead::BufferWriteStreamSrc::skip\n// Symbole manglé : skip\n// undefined8 sead::BufferWriteStreamSrc::skip(int param_1); @ .text::00855634\n\n\n/* sead::BufferWriteStreamSrc::skip(int) */\n\nundefined8 sead::BufferWriteStreamSrc::skip(int param_1)\n\n{\n  return 0;\n}\n\n");

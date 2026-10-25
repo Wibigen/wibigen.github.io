@@ -1,0 +1,1 @@
+DOC.got("gh/AmiiboNpcDirector/getSceneObjName.cpp","// Nom démêlé : AmiiboNpcDirector::getSceneObjName\n// Symbole manglé : getSceneObjName\n// undefined8 AmiiboNpcDirector::getSceneObjName(void); @ .text::00101558\n\n\n/* AmiiboNpcDirector::getSceneObjName() const */\n\nundefined8 AmiiboNpcDirector::getSceneObjName(void)\n\n{\n  return 0x191c429;\n}\n\n");

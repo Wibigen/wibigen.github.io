@@ -1,0 +1,1 @@
+DOC.got("gh/Curl_base64_encode.cpp","// Nom démêlé : Curl_base64_encode\n// Symbole manglé : Curl_base64_encode\n// void Curl_base64_encode(void); @ .text::00810a58\n\n\nvoid Curl_base64_encode(void)\n\n{\n  FUN__text__00810a64(0x19fd79c);\n  return;\n}\n\n");

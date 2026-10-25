@@ -1,0 +1,1 @@
+DOC.got("gh/al/Parameter_sead_Color4f/size_.text_003d5ef4.cpp","// Nom démêlé : al::Parameter<sead::Color4f>::size\n// Symbole manglé : size\n// undefined8 al::Parameter<sead::Color4f>::size(void); @ .text::003d5ef4\n\n\n/* al::Parameter<sead::Color4f>::size() const */\n\nundefined8 al::Parameter<sead::Color4f>::size(void)\n\n{\n  return 0x10;\n}\n\n");

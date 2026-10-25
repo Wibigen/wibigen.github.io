@@ -1,0 +1,1 @@
+DOC.got("gh/al/getBlack2DTexture.cpp","// Nom démêlé : al::getBlack2DTexture\n// Symbole manglé : getBlack2DTexture\n// long al::getBlack2DTexture(void); @ .text::00b09664\n\n\n/* al::getBlack2DTexture() */\n\nlong al::getBlack2DTexture(void)\n\n{\n  return *(long *)(*(long *)PTR_sInstance_01f5b548 + 0x38) + 0x10;\n}\n\n");

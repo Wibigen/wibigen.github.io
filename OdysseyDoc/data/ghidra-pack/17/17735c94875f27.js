@@ -1,0 +1,1 @@
+DOC.got("gh/al/getUniformBlockLocationMdlMtx.cpp","// Nom démêlé : al::getUniformBlockLocationMdlMtx\n// Symbole manglé : getUniformBlockLocationMdlMtx\n// undefined * al::getUniformBlockLocationMdlMtx(void); @ .text::00b00810\n\n\n/* al::getUniformBlockLocationMdlMtx() */\n\nundefined * al::getUniformBlockLocationMdlMtx(void)\n\n{\n  return &DAT_02697458;\n}\n\n");

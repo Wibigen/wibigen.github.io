@@ -1,0 +1,1 @@
+DOC.got("gh/LavaStewVeget/exeWait_.text_003b24c8.cpp","// Nom démêlé : LavaStewVeget::exeWait\n// Symbole manglé : exeWait\n// void LavaStewVeget::exeWait(void); @ .text::003b24c8\n\n\n/* LavaStewVeget::exeWait() */\n\nvoid LavaStewVeget::exeWait(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/isSameSign.cpp","// Nom démêlé : al::isSameSign\n// Symbole manglé : isSameSign\n// bool al::isSameSign(float param_1,float param_2); @ .text::00a224c0\n\n\n/* al::isSameSign(float, float) */\n\nbool al::isSameSign(float param_1,float param_2)\n\n{\n  return 0.0 < param_1 * param_2;\n}\n\n");

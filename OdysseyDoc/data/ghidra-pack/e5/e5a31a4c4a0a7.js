@@ -1,0 +1,1 @@
+DOC.got("gh/ShopItemState/init_.text_00416ef4.cpp","// Nom démêlé : ShopItemState::init\n// Symbole manglé : init\n// void __thiscall ShopItemState::init(ShopItemState *this); @ .text::00416ef4\n\n\n/* ShopItemState::init() */\n\nvoid __thiscall ShopItemState::init(ShopItemState *this)\n\n{\n  *(undefined2 *)this = 0;\n  return;\n}\n\n");

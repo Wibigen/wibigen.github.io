@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerModelChangerYoshi/hideModel_.text_0055e764.cpp","// Nom démêlé : PlayerModelChangerYoshi::hideModel\n// Symbole manglé : hideModel\n// void PlayerModelChangerYoshi::hideModel(void); @ .text::0055e764\n\n\n/* PlayerModelChangerYoshi::hideModel() */\n\nvoid PlayerModelChangerYoshi::hideModel(void)\n\n{\n  return;\n}\n\n");

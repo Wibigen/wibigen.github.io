@@ -1,0 +1,1 @@
+DOC.got("gh/JangoCap/catched.cpp","// Nom démêlé : JangoCap::catched\n// Symbole manglé : catched\n// void __thiscall JangoCap::catched(JangoCap *this); @ .text::0022f90c\n\n\n/* JangoCap::catched() */\n\nvoid __thiscall JangoCap::catched(JangoCap *this)\n\n{\n  this[0x178] = (JangoCap)0x0;\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1d95d38);\n  return;\n}\n\n");

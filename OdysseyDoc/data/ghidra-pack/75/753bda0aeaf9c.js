@@ -1,0 +1,1 @@
+DOC.got("gh/al/CameraPoser/update_.text_001cd984.cpp","// Nom démêlé : al::CameraPoser::update\n// Symbole manglé : update\n// void al::CameraPoser::update(void); @ .text::001cd984\n\n\n/* al::CameraPoser::update() */\n\nvoid al::CameraPoser::update(void)\n\n{\n  return;\n}\n\n");

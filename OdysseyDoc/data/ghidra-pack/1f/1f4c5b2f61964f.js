@@ -1,0 +1,1 @@
+DOC.got("gh/DemoSceneStateSkipDemo/exeWait_.text_005a8e20.cpp","// Nom démêlé : DemoSceneStateSkipDemo::exeWait\n// Symbole manglé : exeWait\n// void DemoSceneStateSkipDemo::exeWait(void); @ .text::005a8e20\n\n\n/* DemoSceneStateSkipDemo::exeWait() */\n\nvoid DemoSceneStateSkipDemo::exeWait(void)\n\n{\n  return;\n}\n\n");

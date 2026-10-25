@@ -1,0 +1,1 @@
+DOC.got("gh/sead/HeapMgr/HeapMgr_.text_008455e8.cpp","// Nom démêlé : sead::HeapMgr::~HeapMgr\n// Symbole manglé : ~HeapMgr\n// void __thiscall sead::HeapMgr::~HeapMgr(HeapMgr *this); @ .text::008455e8\n\n\n/* sead::HeapMgr::~HeapMgr() */\n\nvoid __thiscall sead::HeapMgr::~HeapMgr(HeapMgr *this)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/curlx_nonblock.cpp","// Nom démêlé : curlx_nonblock\n// Symbole manglé : curlx_nonblock\n// void curlx_nonblock(undefined8 param_1,int param_2); @ .text::0081bc48\n\n\nvoid curlx_nonblock(undefined8 param_1,int param_2)\n\n{\n  if (param_2 != 0) {\n    nnsocketFcntl(param_1,4,0x802);\n    return;\n  }\n  nnsocketFcntl(param_1,4,2);\n  return;\n}\n\n");

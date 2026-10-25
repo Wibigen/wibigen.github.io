@@ -1,0 +1,1 @@
+DOC.got("gh/sead/Camera/Camera.cpp","// Nom démêlé : sead::Camera::~Camera\n// Symbole manglé : ~Camera\n// void __thiscall sead::Camera::~Camera(Camera *this); @ .text::0085bdac\n\n\n/* sead::Camera::~Camera() */\n\nvoid __thiscall sead::Camera::~Camera(Camera *this)\n\n{\n  return;\n}\n\n");

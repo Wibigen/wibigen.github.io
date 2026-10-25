@@ -1,0 +1,1 @@
+DOC.got("src/487","#pragma once\n\nnamespace al {\nclass CameraDirector;\n\nclass IUseCamera {\npublic:\n    virtual CameraDirector* getCameraDirector() const = 0;\n};\n}  // namespace al\n");

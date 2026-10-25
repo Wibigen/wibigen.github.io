@@ -1,0 +1,1 @@
+DOC.got("gh/MapLayout/isAppear.cpp","// Nom démêlé : MapLayout::isAppear\n// Symbole manglé : isAppear\n// void __thiscall MapLayout::isAppear(MapLayout *this); @ .text::002f5ac0\n\n\n/* MapLayout::isAppear() const */\n\nvoid __thiscall MapLayout::isAppear(MapLayout *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1dc8cb0);\n  return;\n}\n\n");

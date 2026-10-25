@@ -1,0 +1,1 @@
+DOC.got("gh/al/getSubActorNum.cpp","// Nom démêlé : al::getSubActorNum\n// Symbole manglé : getSubActorNum\n// undefined4 al::getSubActorNum(LiveActor *param_1); @ .text::00a0e618\n\n\n/* al::getSubActorNum(al::LiveActor const*) */\n\nundefined4 al::getSubActorNum(LiveActor *param_1)\n\n{\n  return *(undefined4 *)(*(long *)(param_1 + 0xe8) + 0xc);\n}\n\n");

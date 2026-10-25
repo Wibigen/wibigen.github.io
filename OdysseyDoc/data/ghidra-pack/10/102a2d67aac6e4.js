@@ -1,0 +1,1 @@
+DOC.got("gh/agl/lyr/Layer/calcImpl_.text_00ce5f2c.cpp","// Nom démêlé : agl::lyr::Layer::calcImpl\n// Symbole manglé : calcImpl\n// void agl::lyr::Layer::calcImpl(void); @ .text::00ce5f2c\n\n\n/* agl::lyr::Layer::calcImpl() */\n\nvoid agl::lyr::Layer::calcImpl(void)\n\n{\n  return;\n}\n\n");

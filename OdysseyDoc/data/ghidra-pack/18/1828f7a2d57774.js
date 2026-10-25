@@ -1,0 +1,1 @@
+DOC.got("gh/VolleyballBall/isRetry.cpp","// Nom démêlé : VolleyballBall::isRetry\n// Symbole manglé : isRetry\n// void __thiscall VolleyballBall::isRetry(VolleyballBall *this); @ .text::004eb5b0\n\n\n/* VolleyballBall::isRetry() const */\n\nvoid __thiscall VolleyballBall::isRetry(VolleyballBall *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1e720a0);\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/nn/atk/detail/CommandBuffer/Finalize_.text_00bbb938.cpp","// Nom démêlé : nn::atk::detail::CommandBuffer::Finalize\n// Symbole manglé : Finalize\n// void nn::atk::detail::CommandBuffer::Finalize(void); @ .text::00bbb938\n\n\n/* nn::atk::detail::CommandBuffer::Finalize() */\n\nvoid nn::atk::detail::CommandBuffer::Finalize(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/MapLayout/getProjMtx.cpp","// Nom démêlé : MapLayout::getProjMtx\n// Symbole manglé : getProjMtx\n// long __thiscall MapLayout::getProjMtx(MapLayout *this); @ .text::002f5ad8\n\n\n/* MapLayout::getProjMtx() const */\n\nlong __thiscall MapLayout::getProjMtx(MapLayout *this)\n\n{\n  return *(long *)(*(long *)(this + 0x168) + 0x130) + 0x70;\n}\n\n");

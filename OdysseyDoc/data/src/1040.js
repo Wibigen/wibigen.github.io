@@ -1,0 +1,1 @@
+DOC.got("src/1040","#pragma once\n\n#include \"Library/Factory/Factory.h\"\n\nnamespace al {\nclass Scene;\n}\n\nnamespace alSceneFunction {\nusing SceneCreatorFunction = al::Scene* (*)();\n\nclass SceneFactory : public al::Factory<SceneCreatorFunction> {\npublic:\n    SceneFactory(const char* factoryName);\n};\n}  // namespace alSceneFunction\n");

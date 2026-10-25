@@ -1,0 +1,1 @@
+DOC.got("gh/CapSwitch/exeOffWaitInvalid.cpp","// Nom démêlé : CapSwitch::exeOffWaitInvalid\n// Symbole manglé : exeOffWaitInvalid\n// void CapSwitch::exeOffWaitInvalid(void); @ .text::00342388\n\n\n/* CapSwitch::exeOffWaitInvalid() */\n\nvoid CapSwitch::exeOffWaitInvalid(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/curlx_tvnow.cpp","// Nom démêlé : curlx_tvnow\n// Symbole manglé : curlx_tvnow\n// void curlx_tvnow(void); @ .text::008045cc\n\n\nvoid curlx_tvnow(void)\n\n{\n  nnCurlShim_get_timeval(0);\n  return;\n}\n\n");

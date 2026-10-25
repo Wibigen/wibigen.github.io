@@ -1,0 +1,1 @@
+DOC.got("gh/al/showNfpErrorApplet.cpp","// Nom démêlé : al::showNfpErrorApplet\n// Symbole manglé : showNfpErrorApplet\n// void al::showNfpErrorApplet(Result *param_1); @ .text::00a60340\n\n\n/* al::showNfpErrorApplet(nn::Result const&) */\n\nvoid al::showNfpErrorApplet(Result *param_1)\n\n{\n  nn::err::ShowError(*(undefined4 *)param_1);\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/RootObject/RootObject.cpp","// Nom démêlé : nn::nex::RootObject::~RootObject\n// Symbole manglé : ~RootObject\n// void __thiscall nn::nex::RootObject::~RootObject(RootObject *this); @ .text::00451f94\n\n\n/* nn::nex::RootObject::~RootObject() */\n\nvoid __thiscall nn::nex::RootObject::~RootObject(RootObject *this)\n\n{\n  return;\n}\n\n");

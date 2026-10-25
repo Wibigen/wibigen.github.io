@@ -1,0 +1,1 @@
+DOC.got("gh/NexDataStoreCustomizeTestObj/exeWait_.text_00458968.cpp","// Nom démêlé : NexDataStoreCustomizeTestObj::exeWait\n// Symbole manglé : exeWait\n// void NexDataStoreCustomizeTestObj::exeWait(void); @ .text::00458968\n\n\n/* NexDataStoreCustomizeTestObj::exeWait() */\n\nvoid NexDataStoreCustomizeTestObj::exeWait(void)\n\n{\n  return;\n}\n\n");

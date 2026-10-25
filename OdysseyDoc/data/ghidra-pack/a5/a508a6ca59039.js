@@ -1,0 +1,1 @@
+DOC.got("gh/al/ChromakeyDrawer/getName_.text_00a837dc.cpp","// Nom démêlé : al::ChromakeyDrawer::getName\n// Symbole manglé : getName\n// undefined8 al::ChromakeyDrawer::getName(void); @ .text::00a837dc\n\n\n/* al::ChromakeyDrawer::getName() const */\n\nundefined8 al::ChromakeyDrawer::getName(void)\n\n{\n  return 0x196f3cd;\n}\n\n");

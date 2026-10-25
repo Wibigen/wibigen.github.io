@@ -1,0 +1,1 @@
+DOC.got("src/370","#pragma once\n\nnamespace al {\nclass ValidatorBase {\npublic:\n    virtual bool validate() const = 0;\n    virtual ValidatorBase* fnc_8() const = 0;\n};\n}  // namespace al\n");

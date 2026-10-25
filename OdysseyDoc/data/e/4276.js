@@ -1,0 +1,1 @@
+DOC.got("e/4276",{"34197":{"q":"nn::ui2d::ResPane","decl":{"f":"lib/NintendoSDK/include/nn/ui2d/Pane.h","l":38,"sig":"class ResPane","fi":193},"complete":false,"fwd":[["lib/NintendoSDK/include/nn/ui2d/Pane.h",38]]}});

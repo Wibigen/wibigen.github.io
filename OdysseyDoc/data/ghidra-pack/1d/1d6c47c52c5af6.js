@@ -1,0 +1,1 @@
+DOC.got("gh/BossForest/exeDie.cpp","// Nom démêlé : BossForest::exeDie\n// Symbole manglé : exeDie\n// void BossForest::exeDie(void); @ .text::001183d4\n\n\n/* BossForest::exeDie() */\n\nvoid BossForest::exeDie(void)\n\n{\n  return;\n}\n\n");

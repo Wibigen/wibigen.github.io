@@ -1,0 +1,1 @@
+DOC.got("gh/al/EventFlowMovement/isTurnMovement.cpp","// Nom démêlé : al::EventFlowMovement::isTurnMovement\n// Symbole manglé : isTurnMovement\n// undefined8 al::EventFlowMovement::isTurnMovement(void); @ .text::002aee3c\n\n\n/* al::EventFlowMovement::isTurnMovement() const */\n\nundefined8 al::EventFlowMovement::isTurnMovement(void)\n\n{\n  return 0;\n}\n\n");

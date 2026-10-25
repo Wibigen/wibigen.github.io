@@ -1,0 +1,1 @@
+DOC.got("e/4275",{"34196":{"q":"nn::ui2d::ResHermiteKey","decl":{"f":"lib/NintendoSDK/include/nn/ui2d/Util.h","l":15,"sig":"struct ResHermiteKey","fi":196},"complete":false,"fwd":[["lib/NintendoSDK/include/nn/ui2d/Util.h",15]]}});

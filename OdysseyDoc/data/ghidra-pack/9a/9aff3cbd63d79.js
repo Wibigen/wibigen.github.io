@@ -1,0 +1,1 @@
+DOC.got("gh/al/getRotate_.text_009eed64.cpp","// Nom démêlé : al::getRotate\n// Symbole manglé : getRotate\n// void al::getRotate(LiveActor *param_1); @ .text::009eed64\n\n\n/* al::getRotate(al::LiveActor const*) */\n\nvoid al::getRotate(LiveActor *param_1)\n\n{\n  (**(code **)**(undefined8 **)(param_1 + 0x50))();\n  return;\n}\n\n");

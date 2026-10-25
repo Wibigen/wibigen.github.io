@@ -1,0 +1,1 @@
+DOC.got("gh/curlx_sltosi.cpp","// Nom démêlé : curlx_sltosi\n// Symbole manglé : curlx_sltosi\n// uint curlx_sltosi(uint param_1); @ .text::0080ed80\n\n\nuint curlx_sltosi(uint param_1)\n\n{\n  return param_1 & 0x7fffffff;\n}\n\n");

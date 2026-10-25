@@ -1,0 +1,1 @@
+DOC.got("e/4498",{"36335":{"q":"nvn::ShaderDataExt","decl":{"f":"lib/NintendoSDK/include/nvn/nvn_Cpp.h","l":109,"sig":"struct ShaderDataExt","fi":224},"complete":false,"fwd":[["lib/NintendoSDK/include/nvn/nvn_Cpp.h",109]]}});

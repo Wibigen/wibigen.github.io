@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Socket/GetAddress_.text_007a97bc.cpp","// Nom démêlé : nn::nex::Socket::GetAddress\n// Symbole manglé : GetAddress\n// Socket * __thiscall nn::nex::Socket::GetAddress(Socket *this); @ .text::007a97bc\n\n\n/* nn::nex::Socket::GetAddress() */\n\nSocket * __thiscall nn::nex::Socket::GetAddress(Socket *this)\n\n{\n  return this + 8;\n}\n\n");

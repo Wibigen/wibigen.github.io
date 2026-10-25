@@ -1,0 +1,1 @@
+DOC.got("src/217","/**\n * @file Heap.h\n * @brief VFX heap implementation.\n */\n\n#pragma once\n\n#include <nn/types.h>\n\nnamespace nn {\nnamespace vfx {\nclass Heap {\npublic:\n    virtual ~Heap();\n};\n}  // namespace vfx\n}  // namespace nn\n");

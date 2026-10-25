@@ -1,0 +1,1 @@
+DOC.got("e/4254",{"34041":{"q":"nn::swkbd::UserWord","decl":{"f":"lib/NintendoSDK/include/nn/swkbd/swkbd.h","l":160,"sig":"struct UserWord","fi":188},"complete":false,"fwd":[["lib/NintendoSDK/include/nn/swkbd/swkbd.h",160]]}});

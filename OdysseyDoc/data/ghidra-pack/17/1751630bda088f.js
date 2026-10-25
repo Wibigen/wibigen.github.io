@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/OnlineCoreDDLDeclarations/Init_.text_0079ed50.cpp","// Nom démêlé : nn::nex::OnlineCoreDDLDeclarations::Init\n// Symbole manglé : Init\n// void nn::nex::OnlineCoreDDLDeclarations::Init(void); @ .text::0079ed50\n\n\n/* nn::nex::OnlineCoreDDLDeclarations::Init() */\n\nvoid nn::nex::OnlineCoreDDLDeclarations::Init(void)\n\n{\n  return;\n}\n\n");

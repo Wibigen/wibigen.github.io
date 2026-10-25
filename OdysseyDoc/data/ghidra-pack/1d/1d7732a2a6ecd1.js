@@ -1,0 +1,1 @@
+DOC.got("gh/DoorAreaChange/start_.text_0035ea80.cpp","// Nom démêlé : DoorAreaChange::start\n// Symbole manglé : start\n// void __thiscall DoorAreaChange::start(DoorAreaChange *this); @ .text::0035ea80\n\n\n/* DoorAreaChange::start() */\n\nvoid __thiscall DoorAreaChange::start(DoorAreaChange *this)\n\n{\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1df01f0);\n  return;\n}\n\n");

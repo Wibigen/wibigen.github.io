@@ -1,0 +1,1 @@
+DOC.got("gh/agl/shtxt/Resolver/Resolver_.text_008d368c.cpp","// Nom démêlé : agl::shtxt::Resolver::~Resolver\n// Symbole manglé : ~Resolver\n// void __thiscall agl::shtxt::Resolver::~Resolver(Resolver *this); @ .text::008d368c\n\n\n/* agl::shtxt::Resolver::~Resolver() */\n\nvoid __thiscall agl::shtxt::Resolver::~Resolver(Resolver *this)\n\n{\n  return;\n}\n\n");

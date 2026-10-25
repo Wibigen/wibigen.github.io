@@ -1,0 +1,1 @@
+DOC.got("gh/BossKnuckle/skipDemo_.text_00123928.cpp","// Nom démêlé : BossKnuckle::skipDemo\n// Symbole manglé : skipDemo\n// void __thiscall BossKnuckle::skipDemo(BossKnuckle *this); @ .text::00123928\n\n\n/* BossKnuckle::skipDemo() */\n\nvoid __thiscall BossKnuckle::skipDemo(BossKnuckle *this)\n\n{\n  finishStartDemo(this,true);\n  return;\n}\n\n");

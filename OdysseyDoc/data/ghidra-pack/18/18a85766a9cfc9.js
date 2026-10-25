@@ -1,0 +1,1 @@
+DOC.got("gh/SetInternalThreadCoreNo.cpp","// Nom démêlé : SetInternalThreadCoreNo\n// Symbole manglé : SetInternalThreadCoreNo\n// void SetInternalThreadCoreNo(int param_1); @ .text::007395cc\n\n\n/* SetInternalThreadCoreNo(int) */\n\nvoid SetInternalThreadCoreNo(int param_1)\n\n{\n  *(int *)PTR_01f586c8 = param_1;\n  return;\n}\n\n");

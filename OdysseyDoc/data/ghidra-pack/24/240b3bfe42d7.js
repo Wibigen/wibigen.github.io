@@ -1,0 +1,1 @@
+DOC.got("gh/al/ParameterV3f/getParamType_.text_0099e10c.cpp","// Nom démêlé : al::ParameterV3f::getParamType\n// Symbole manglé : getParamType\n// undefined8 al::ParameterV3f::getParamType(void); @ .text::0099e10c\n\n\n/* al::ParameterV3f::getParamType() const */\n\nundefined8 al::ParameterV3f::getParamType(void)\n\n{\n  return 7;\n}\n\n");

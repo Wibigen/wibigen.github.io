@@ -1,0 +1,1 @@
+DOC.got("src/2445","#pragma once\n\nnamespace al {\nclass SystemKit;\n}\n\nclass alProjectInterface {\npublic:\n    static al::SystemKit* getSystemKit();\n};\n");

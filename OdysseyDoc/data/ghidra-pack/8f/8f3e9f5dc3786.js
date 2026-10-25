@@ -1,0 +1,1 @@
+DOC.got("gh/curlx_tvdiff.cpp","// Nom démêlé : curlx_tvdiff\n// Symbole manglé : curlx_tvdiff\n// long curlx_tvdiff(long param_1,long param_2,long param_3,long param_4); @ .text::008045d4\n\n\nlong curlx_tvdiff(long param_1,long param_2,long param_3,long param_4)\n\n{\n  return (param_1 - param_3) * 1000 + (param_2 - param_4) / 1000;\n}\n\n");

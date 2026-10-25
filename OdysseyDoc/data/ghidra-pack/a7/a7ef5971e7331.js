@@ -1,0 +1,1 @@
+DOC.got("gh/GolemClimbThrustPoint/exeDead.cpp","// Nom démêlé : GolemClimbThrustPoint::exeDead\n// Symbole manglé : exeDead\n// void GolemClimbThrustPoint::exeDead(void); @ .text::00176ac0\n\n\n/* GolemClimbThrustPoint::exeDead() */\n\nvoid GolemClimbThrustPoint::exeDead(void)\n\n{\n  return;\n}\n\n");

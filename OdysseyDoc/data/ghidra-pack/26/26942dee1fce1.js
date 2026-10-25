@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/FileStorageUnit/GetSize_.text_00739a08.cpp","// Nom démêlé : nn::nex::FileStorageUnit::GetSize\n// Symbole manglé : GetSize\n// undefined8 nn::nex::FileStorageUnit::GetSize(void); @ .text::00739a08\n\n\n/* nn::nex::FileStorageUnit::GetSize() const */\n\nundefined8 nn::nex::FileStorageUnit::GetSize(void)\n\n{\n  return 0;\n}\n\n");

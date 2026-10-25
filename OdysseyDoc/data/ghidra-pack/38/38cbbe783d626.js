@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/OutputFormat/AddIndent.cpp","// Nom démêlé : nn::nex::OutputFormat::AddIndent\n// Symbole manglé : AddIndent\n// void nn::nex::OutputFormat::AddIndent(char *param_1,uint param_2); @ .text::007168bc\n\n\n/* nn::nex::OutputFormat::AddIndent(char*, unsigned int) */\n\nvoid nn::nex::OutputFormat::AddIndent(char *param_1,uint param_2)\n\n{\n  return;\n}\n\n");

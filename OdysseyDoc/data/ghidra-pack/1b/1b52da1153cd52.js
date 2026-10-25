@@ -1,0 +1,1 @@
+DOC.got("gh/nn/vfx/detail/VPrintf_.text_00c2cd04.cpp","// Nom démêlé : nn::vfx::detail::VPrintf\n// Symbole manglé : VPrintf\n// void nn::vfx::detail::VPrintf(void); @ .text::00c2cd04\n\n\n/* nn::vfx::detail::VPrintf(char const*, std::__va_list) */\n\nvoid nn::vfx::detail::VPrintf(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/sead/JobQueue/getNumJobs.cpp","// Nom démêlé : sead::JobQueue::getNumJobs\n// Symbole manglé : getNumJobs\n// undefined8 sead::JobQueue::getNumJobs(void); @ .text::00ca2bfc\n\n\n/* sead::JobQueue::getNumJobs() const */\n\nundefined8 sead::JobQueue::getNumJobs(void)\n\n{\n  return 0;\n}\n\n");

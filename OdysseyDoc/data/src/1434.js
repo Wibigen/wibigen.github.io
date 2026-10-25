@@ -1,0 +1,1 @@
+DOC.got("src/1434","#pragma once\n\n#include \"heap/seadDisposer.h\"\n#include \"random/seadRandom.h\"\n\nnamespace sead\n{\nclass GlobalRandom : public Random\n{\n    SEAD_SINGLETON_DISPOSER(GlobalRandom)\n    GlobalRandom() = default;\n};\n}  // namespace sead\n");

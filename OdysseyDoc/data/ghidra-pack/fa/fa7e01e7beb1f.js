@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/CriticalSection/IsForce.cpp","// Nom démêlé : nn::nex::CriticalSection::IsForce\n// Symbole manglé : IsForce\n// undefined8 nn::nex::CriticalSection::IsForce(void); @ .text::00726af8\n\n\n/* nn::nex::CriticalSection::IsForce() const */\n\nundefined8 nn::nex::CriticalSection::IsForce(void)\n\n{\n  return 0;\n}\n\n");

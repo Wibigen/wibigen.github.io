@@ -1,0 +1,1 @@
+DOC.got("gh/agl/utl/DevTools/isStickReverse.cpp","// Nom démêlé : agl::utl::DevTools::isStickReverse\n// Symbole manglé : isStickReverse\n// undefined1 agl::utl::DevTools::isStickReverse(void); @ .text::00890d30\n\n\n/* agl::utl::DevTools::isStickReverse() */\n\nundefined1 agl::utl::DevTools::isStickReverse(void)\n\n{\n  return DAT_025744e0;\n}\n\n");

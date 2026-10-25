@@ -1,0 +1,1 @@
+DOC.got("src/1296","#pragma once\n\n#include <basis/seadTypes.h>\n\nnamespace sead\n{\nclass Base64\n{\npublic:\n    static void encode(char* dst, const void* src, size_t length, bool url_safe);\n    static bool decode(void* dst, size_t dst_size, const char* src, size_t src_size,\n                       size_t* decoded_size);\n};\n}  // namespace sead\n");

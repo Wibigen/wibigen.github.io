@@ -1,0 +1,1 @@
+DOC.got("gh/KoopaFunction/getCapBlowDownParam.cpp","// Nom démêlé : KoopaFunction::getCapBlowDownParam\n// Symbole manglé : getCapBlowDownParam\n// undefined * KoopaFunction::getCapBlowDownParam(void); @ .text::00193628\n\n\n/* KoopaFunction::getCapBlowDownParam() */\n\nundefined * KoopaFunction::getCapBlowDownParam(void)\n\n{\n  return &DAT_01f62558;\n}\n\n");

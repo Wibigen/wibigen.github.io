@@ -1,0 +1,1 @@
+DOC.got("gh/agl/RenderBuffer/RenderBuffer_.text_0087a6b0.cpp","// Nom démêlé : agl::RenderBuffer::~RenderBuffer\n// Symbole manglé : ~RenderBuffer\n// void __thiscall agl::RenderBuffer::~RenderBuffer(RenderBuffer *this); @ .text::0087a6b0\n\n\n/* agl::RenderBuffer::~RenderBuffer() */\n\nvoid __thiscall agl::RenderBuffer::~RenderBuffer(RenderBuffer *this)\n\n{\n  return;\n}\n\n");

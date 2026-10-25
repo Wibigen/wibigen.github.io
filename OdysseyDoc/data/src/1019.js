@@ -1,0 +1,1 @@
+DOC.got("src/1019","#pragma once\n\nnamespace al {\nclass RankingDirector;\n\nclass IUseRanking {\npublic:\n    virtual RankingDirector* getRankingDirector() const = 0;\n\n    virtual bool isAvailableRanking() const { return false; }\n};\n}  // namespace al\n");

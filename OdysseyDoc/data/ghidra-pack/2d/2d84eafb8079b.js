@@ -1,0 +1,1 @@
+DOC.got("gh/TextureReplaceScreen/control_.text_00438734.cpp","// Nom démêlé : TextureReplaceScreen::control\n// Symbole manglé : control\n// void TextureReplaceScreen::control(void); @ .text::00438734\n\n\n/* TextureReplaceScreen::control() */\n\nvoid TextureReplaceScreen::control(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/isExistActorCollider.cpp","// Nom démêlé : al::isExistActorCollider\n// Symbole manglé : isExistActorCollider\n// bool al::isExistActorCollider(LiveActor *param_1); @ .text::009d7da4\n\n\n/* al::isExistActorCollider(al::LiveActor const*) */\n\nbool al::isExistActorCollider(LiveActor *param_1)\n\n{\n  return *(long *)(param_1 + 0x78) != 0;\n}\n\n");

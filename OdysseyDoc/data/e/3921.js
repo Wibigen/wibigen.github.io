@@ -1,0 +1,1 @@
+DOC.got("e/3921",{"32453":{"q":"nn::gfx::TRootSignature","decl":{"f":"lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h","l":40,"sig":"template <typename TTarget>\nclass TRootSignature","fi":51},"tp":["typename TTarget"],"complete":false,"fwd":[["lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h",40]]}});

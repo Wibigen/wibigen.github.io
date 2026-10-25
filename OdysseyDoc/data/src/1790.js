@@ -1,0 +1,1 @@
+DOC.got("src/1790","#include \"MapObj/AnagramAlphabet.h\"\n\n#include \"Library/Nerve/NerveSetupUtil.h\"\n\nnamespace {\nNERVE_IMPL(AnagramAlphabet, Wait);\nNERVE_IMPL(AnagramAlphabet, Complete);\n\n// TODO: Remove maybe_unused once this class is implemented and the nerves are used\n[[maybe_unused]] NERVES_MAKE_STRUCT(AnagramAlphabet, Wait, Complete);\n}  // namespace\n");

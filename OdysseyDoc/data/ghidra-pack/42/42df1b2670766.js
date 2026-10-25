@@ -1,0 +1,1 @@
+DOC.got("gh/al/ByamlWriter/calcHeaderSize.cpp","// Nom démêlé : al::ByamlWriter::calcHeaderSize\n// Symbole manglé : calcHeaderSize\n// undefined8 al::ByamlWriter::calcHeaderSize(void); @ .text::00b31484\n\n\n/* al::ByamlWriter::calcHeaderSize() const */\n\nundefined8 al::ByamlWriter::calcHeaderSize(void)\n\n{\n  return 0x10;\n}\n\n");

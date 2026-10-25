@@ -1,0 +1,1 @@
+DOC.got("gh/RiseMapParts/exeWait_.text_003fbddc.cpp","// Nom démêlé : RiseMapParts::exeWait\n// Symbole manglé : exeWait\n// void RiseMapParts::exeWait(void); @ .text::003fbddc\n\n\n/* RiseMapParts::exeWait() */\n\nvoid RiseMapParts::exeWait(void)\n\n{\n  return;\n}\n\n");

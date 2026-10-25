@@ -1,0 +1,1 @@
+DOC.got("src/2160","#pragma once\n\nclass HackCap;\nclass PlayerAnimator;\nstruct HackObjInfo;\n\nnamespace CapFunction {\n\nvoid putOnCapPlayer(HackCap* hackCap, PlayerAnimator* animator);\nvoid endHack(HackCap* hackCap, PlayerAnimator* animator);\nconst HackObjInfo* getHackObjInfo(HackCap* hackCap);\n\n}  // namespace CapFunction\n");

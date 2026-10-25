@@ -1,0 +1,1 @@
+DOC.got("gh/TimeBalloon/getTutorialBalloonCoin_.text_0046bdf8.cpp","// Nom démêlé : TimeBalloon::getTutorialBalloonCoin\n// Symbole manglé : getTutorialBalloonCoin\n// undefined8 TimeBalloon::getTutorialBalloonCoin(void); @ .text::0046bdf8\n\n\n/* TimeBalloon::getTutorialBalloonCoin() */\n\nundefined8 TimeBalloon::getTutorialBalloonCoin(void)\n\n{\n  return 0x1e;\n}\n\n");

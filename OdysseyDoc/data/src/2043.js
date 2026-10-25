@@ -1,0 +1,1 @@
+DOC.got("src/2043","#include \"Npc/Achievement.h\"\n\n#include \"Npc/AchievementInfoReader.h\"\n#include \"Util/AchievementUtil.h\"\n\nAchievement::Achievement(const AchievementInfo* info) : mInfo(info) {}\n\nbool Achievement::isGet(GameDataHolderAccessor accessor) const {\n    return mIsGet || rs::checkGetAchievement(accessor, mInfo->name);\n}\n");

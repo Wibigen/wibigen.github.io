@@ -1,0 +1,1 @@
+DOC.got("gh/Utsubo/isRiseReady.cpp","// Nom démêlé : Utsubo::isRiseReady\n// Symbole manglé : isRiseReady\n// void __thiscall Utsubo::isRiseReady(Utsubo *this); @ .text::002a8868\n\n\n/* Utsubo::isRiseReady() const */\n\nvoid __thiscall Utsubo::isRiseReady(Utsubo *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1daefb0);\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/ViewRenderer/preDrawGraphics_.text_0097e4fc.cpp","// Nom démêlé : al::ViewRenderer::preDrawGraphics\n// Symbole manglé : preDrawGraphics\n// void al::ViewRenderer::preDrawGraphics(void); @ .text::0097e4fc\n\n\n/* al::ViewRenderer::preDrawGraphics() */\n\nvoid al::ViewRenderer::preDrawGraphics(void)\n\n{\n  DeferredRendering::preDrawGraphics();\n  return;\n}\n\n");

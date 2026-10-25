@@ -1,0 +1,1 @@
+DOC.got("gh/MummyGenerator/exeStop_.text_002675d0.cpp","// Nom démêlé : MummyGenerator::exeStop\n// Symbole manglé : exeStop\n// void MummyGenerator::exeStop(void); @ .text::002675d0\n\n\n/* MummyGenerator::exeStop() */\n\nvoid MummyGenerator::exeStop(void)\n\n{\n  return;\n}\n\n");

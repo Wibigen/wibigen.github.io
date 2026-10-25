@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/SystemError/IsSuccess_.text_007212ac.cpp","// Nom démêlé : nn::nex::SystemError::IsSuccess\n// Symbole manglé : IsSuccess\n// bool nn::nex::SystemError::IsSuccess(uint param_1); @ .text::007212ac\n\n\n/* nn::nex::SystemError::IsSuccess(unsigned int) */\n\nbool nn::nex::SystemError::IsSuccess(uint param_1)\n\n{\n  return param_1 >> 0x1e == 0;\n}\n\n");

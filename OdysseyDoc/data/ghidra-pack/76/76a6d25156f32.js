@@ -1,0 +1,1 @@
+DOC.got("gh/Curl_tvlong.cpp","// Nom démêlé : Curl_tvlong\n// Symbole manglé : Curl_tvlong\n// void Curl_tvlong(void); @ .text::00804648\n\n\nvoid Curl_tvlong(void)\n\n{\n  return;\n}\n\n");

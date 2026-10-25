@@ -1,0 +1,1 @@
+DOC.got("gh/al/BgmLine/isPause_.text_009211c8.cpp","// Nom démêlé : al::BgmLine::isPause\n// Symbole manglé : isPause\n// bool __thiscall al::BgmLine::isPause(BgmLine *this); @ .text::009211c8\n\n\n/* al::BgmLine::isPause() const */\n\nbool __thiscall al::BgmLine::isPause(BgmLine *this)\n\n{\n  return (*(uint *)(this + 0x80) | 1) == 3;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/getShaderProgramName.cpp","// Nom démêlé : al::getShaderProgramName\n// Symbole manglé : getShaderProgramName\n// long al::getShaderProgramName(ShadingModelObj *param_1); @ .text::00b007ec\n\n\n/* al::getShaderProgramName(nn::g3d::ShadingModelObj const*) */\n\nlong al::getShaderProgramName(ShadingModelObj *param_1)\n\n{\n  return **(long **)param_1 + 2;\n}\n\n");

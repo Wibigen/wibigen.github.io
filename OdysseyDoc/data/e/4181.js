@@ -1,0 +1,1 @@
+DOC.got("e/4181",{"33567":{"q":"nn::oe::DisplayVersion","decl":{"f":"lib/NintendoSDK/include/nn/oe.h","l":38,"sig":"struct DisplayVersion","end":40,"fi":162},"size":16,"align":1,"complete":true,"fields":[{"n":"name","t":"char[16]","off":0,"sz":16,"acc":"public","tu":null,"bits":null,"l":39,"cm":null,"ti":null}]}});

@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/ClientProtocol/SetCallError.cpp","// Nom démêlé : nn::nex::ClientProtocol::SetCallError\n// Symbole manglé : SetCallError\n// void nn::nex::ClientProtocol::SetCallError(void); @ .text::007b1934\n\n\n/* nn::nex::ClientProtocol::SetCallError(nn::nex::qResult) */\n\nvoid nn::nex::ClientProtocol::SetCallError(void)\n\n{\n  return;\n}\n\n");

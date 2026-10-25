@@ -1,0 +1,1 @@
+DOC.got("gh/al/BgmLine/isLoadedResource.cpp","// Nom démêlé : al::BgmLine::isLoadedResource\n// Symbole manglé : isLoadedResource\n// undefined8 al::BgmLine::isLoadedResource(char *param_1); @ .text::0091f190\n\n\n/* al::BgmLine::isLoadedResource(char const*) */\n\nundefined8 al::BgmLine::isLoadedResource(char *param_1)\n\n{\n  return 1;\n}\n\n");

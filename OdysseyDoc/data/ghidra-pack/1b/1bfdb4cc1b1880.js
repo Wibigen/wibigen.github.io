@@ -1,0 +1,1 @@
+DOC.got("gh/alsd/AudioSystemNin/initializeSdk.cpp","// Nom démêlé : alsd::AudioSystemNin::initializeSdk_\n// Symbole manglé : initializeSdk_\n// void alsd::AudioSystemNin::initializeSdk_(void); @ .text::00b4277c\n\n\n/* alsd::AudioSystemNin::initializeSdk_() */\n\nvoid alsd::AudioSystemNin::initializeSdk_(void)\n\n{\n  return;\n}\n\n");

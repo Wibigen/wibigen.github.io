@@ -1,0 +1,1 @@
+DOC.got("gh/sead/operator-_.text_0085de84.cpp","// Nom démêlé : sead::operator-\n// Symbole manglé : operator-\n// float sead::operator-(Color4f *param_1,float param_2); @ .text::0085de84\n\n\n/* sead::TEMPNAMEPLACEHOLDERVALUE(sead::Color4f const&, float) */\n\nfloat sead::operator-(Color4f *param_1,float param_2)\n\n{\n  return *(float *)param_1 - param_2;\n}\n\n");

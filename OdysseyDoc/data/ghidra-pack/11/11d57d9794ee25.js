@@ -1,0 +1,1 @@
+DOC.got("gh/al/getPlacementInfo.cpp","// Nom démêlé : al::getPlacementInfo\n// Symbole manglé : getPlacementInfo\n// undefined8 al::getPlacementInfo(ActorInitInfo *param_1); @ .text::009ded0c\n\n\n/* al::getPlacementInfo(al::ActorInitInfo const&) */\n\nundefined8 al::getPlacementInfo(ActorInitInfo *param_1)\n\n{\n  return *(undefined8 *)(param_1 + 8);\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("src/1103","#include \"Library/Stage/StageSwitchInfo.h\"\n\nnamespace al {\nStageSwitchInfo::StageSwitchInfo() = default;\n}  // namespace al\n");

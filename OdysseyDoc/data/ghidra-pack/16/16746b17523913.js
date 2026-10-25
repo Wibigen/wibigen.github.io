@@ -1,0 +1,1 @@
+DOC.got("gh/nn/os/Mutex/Mutex_.text_00bec0fc.cpp","// Nom démêlé : nn::os::Mutex::~Mutex\n// Symbole manglé : ~Mutex\n// void __thiscall nn::os::Mutex::~Mutex(Mutex *this); @ .text::00bec0fc\n\n\n/* nn::os::Mutex::~Mutex() */\n\nvoid __thiscall nn::os::Mutex::~Mutex(Mutex *this)\n\n{\n  (*(code *)PTR_FinalizeMutex_01f4d878)();\n  return;\n}\n\n");

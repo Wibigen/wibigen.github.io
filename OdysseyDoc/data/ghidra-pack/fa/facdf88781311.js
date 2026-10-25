@@ -1,0 +1,1 @@
+DOC.got("gh/BreedaWanwan/isBack.cpp","// Nom démêlé : BreedaWanwan::isBack\n// Symbole manglé : isBack\n// void __thiscall BreedaWanwan::isBack(BreedaWanwan *this); @ .text::00150680\n\n\n/* BreedaWanwan::isBack() const */\n\nvoid __thiscall BreedaWanwan::isBack(BreedaWanwan *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1d621e8);\n  return;\n}\n\n");

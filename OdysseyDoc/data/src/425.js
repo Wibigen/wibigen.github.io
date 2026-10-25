@@ -1,0 +1,1 @@
+DOC.got("src/425","#pragma once\n\n#include <math/seadVector.h>\n\nnamespace al {\n\nstruct CameraPoseInfo {\n    sead::Vector3f pos;\n    sead::Vector3f at;\n    sead::Vector3f up;\n};\n\nstatic_assert(sizeof(CameraPoseInfo) == 0x24);\n\n}  // namespace al\n");

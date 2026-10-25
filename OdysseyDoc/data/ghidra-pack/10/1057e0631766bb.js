@@ -1,0 +1,1 @@
+DOC.got("gh/al/DynamicDrawActor/setupHio.cpp","// Nom démêlé : al::DynamicDrawActor::setupHio\n// Symbole manglé : setupHio\n// void al::DynamicDrawActor::setupHio(void); @ .text::00a6654c\n\n\n/* al::DynamicDrawActor::setupHio() */\n\nvoid al::DynamicDrawActor::setupHio(void)\n\n{\n  return;\n}\n\n");

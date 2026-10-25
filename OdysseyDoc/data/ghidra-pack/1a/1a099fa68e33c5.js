@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Job/SetToInitial.cpp","// Nom démêlé : nn::nex::Job::SetToInitial\n// Symbole manglé : SetToInitial\n// void __thiscall nn::nex::Job::SetToInitial(Job *this); @ .text::0073acfc\n\n\n/* nn::nex::Job::SetToInitial() */\n\nvoid __thiscall nn::nex::Job::SetToInitial(Job *this)\n\n{\n  *(undefined4 *)(this + 0x40) = 0;\n  return;\n}\n\n");

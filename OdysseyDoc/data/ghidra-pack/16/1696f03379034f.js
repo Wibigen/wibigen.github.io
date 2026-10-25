@@ -1,0 +1,1 @@
+DOC.got("gh/al/Scene/getAudioKeeper_.text_005a7738.cpp","// Nom démêlé : al::Scene::getAudioKeeper\n// Symbole manglé : getAudioKeeper\n// undefined8 __thiscall al::Scene::getAudioKeeper(Scene *this); @ .text::005a7738\n\n\n/* al::Scene::getAudioKeeper() const */\n\nundefined8 __thiscall al::Scene::getAudioKeeper(Scene *this)\n\n{\n  return *(undefined8 *)(this + 200);\n}\n\n");

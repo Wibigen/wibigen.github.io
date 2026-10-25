@@ -1,0 +1,1 @@
+DOC.got("gh/sead/NullFaderTask/detachDrawImpl_.text_0086fa84.cpp","// Nom démêlé : sead::NullFaderTask::detachDrawImpl\n// Symbole manglé : detachDrawImpl\n// void sead::NullFaderTask::detachDrawImpl(void); @ .text::0086fa84\n\n\n/* sead::NullFaderTask::detachDrawImpl() */\n\nvoid sead::NullFaderTask::detachDrawImpl(void)\n\n{\n  return;\n}\n\n");

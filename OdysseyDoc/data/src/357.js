@@ -1,0 +1,1 @@
+DOC.got("src/357","#pragma once\n\nnamespace al {\nclass AreaObjDirector;\n\nclass IUseAreaObj {\npublic:\n    virtual AreaObjDirector* getAreaObjDirector() const = 0;\n};\n}  // namespace al\n");

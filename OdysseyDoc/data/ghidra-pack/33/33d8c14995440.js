@@ -1,0 +1,1 @@
+DOC.got("gh/StageSceneLayout/exeShineChipComplete.cpp","// Nom démêlé : StageSceneLayout::exeShineChipComplete\n// Symbole manglé : exeShineChipComplete\n// void StageSceneLayout::exeShineChipComplete(void); @ .text::0030d2ec\n\n\n/* StageSceneLayout::exeShineChipComplete() */\n\nvoid StageSceneLayout::exeShineChipComplete(void)\n\n{\n  return;\n}\n\n");

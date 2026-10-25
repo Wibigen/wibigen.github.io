@@ -1,0 +1,1 @@
+DOC.got("gh/al/NerveStateBase/kill_.text_00114388.cpp","// Nom démêlé : al::NerveStateBase::kill\n// Symbole manglé : kill\n// void __thiscall al::NerveStateBase::kill(NerveStateBase *this); @ .text::00114388\n\n\n/* al::NerveStateBase::kill() */\n\nvoid __thiscall al::NerveStateBase::kill(NerveStateBase *this)\n\n{\n  this[0x10] = (NerveStateBase)0x1;\n  return;\n}\n\n");

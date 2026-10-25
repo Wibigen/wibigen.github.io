@@ -1,0 +1,1 @@
+DOC.got("gh/al/BgmLine/isPrepared.cpp","// Nom démêlé : al::BgmLine::isPrepared\n// Symbole manglé : isPrepared\n// bool __thiscall al::BgmLine::isPrepared(BgmLine *this); @ .text::00921200\n\n\n/* al::BgmLine::isPrepared() const */\n\nbool __thiscall al::BgmLine::isPrepared(BgmLine *this)\n\n{\n  return *(long *)(this + 0x78) != 0;\n}\n\n");

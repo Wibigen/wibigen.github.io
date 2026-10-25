@@ -1,0 +1,1 @@
+DOC.got("gh/ItemGenerator/isCoin.cpp","// Nom démêlé : ItemGenerator::isCoin\n// Symbole manglé : isCoin\n// bool __thiscall ItemGenerator::isCoin(ItemGenerator *this); @ .text::00654f98\n\n\n/* ItemGenerator::isCoin() const */\n\nbool __thiscall ItemGenerator::isCoin(ItemGenerator *this)\n\n{\n  return *(int *)(this + 0x1c) == 0;\n}\n\n");

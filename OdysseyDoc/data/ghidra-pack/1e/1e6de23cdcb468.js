@@ -1,0 +1,1 @@
+DOC.got("gh/IBalloonFindBalloon/getPlayerRank_.text_00453048.cpp","// Nom démêlé : IBalloonFindBalloon::getPlayerRank\n// Symbole manglé : getPlayerRank\n// undefined8 IBalloonFindBalloon::getPlayerRank(void); @ .text::00453048\n\n\n/* IBalloonFindBalloon::getPlayerRank() const */\n\nundefined8 IBalloonFindBalloon::getPlayerRank(void)\n\n{\n  return 0;\n}\n\n");

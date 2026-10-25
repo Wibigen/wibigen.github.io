@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/ProfilingUnit/CS.cpp","// Nom démêlé : nn::nex::ProfilingUnit::CS\n// Symbole manglé : CS\n// undefined * nn::nex::ProfilingUnit::CS(void); @ .text::00717c00\n\n\n/* nn::nex::ProfilingUnit::CS() */\n\nundefined * nn::nex::ProfilingUnit::CS(void)\n\n{\n  return PTR_s_cs_01f583f0;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/SneakingMan/exeDie_.text_00421348.cpp","// Nom démêlé : SneakingMan::exeDie\n// Symbole manglé : exeDie\n// void SneakingMan::exeDie(void); @ .text::00421348\n\n\n/* SneakingMan::exeDie() */\n\nvoid SneakingMan::exeDie(void)\n\n{\n  return;\n}\n\n");

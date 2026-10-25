@@ -1,0 +1,1 @@
+DOC.got("gh/sead/Controller/Controller_.text_00870f28.cpp","// Nom démêlé : sead::Controller::~Controller\n// Symbole manglé : ~Controller\n// void __thiscall sead::Controller::~Controller(Controller *this); @ .text::00870f28\n\n\n/* sead::Controller::~Controller() */\n\nvoid __thiscall sead::Controller::~Controller(Controller *this)\n\n{\n  return;\n}\n\n");

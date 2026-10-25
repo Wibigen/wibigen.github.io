@@ -1,0 +1,1 @@
+DOC.got("src/149","#pragma once\n\n#include <nn/irs/MomentStatistic.h>\n#include <nn/types.h>\n\nnamespace nn::irsensor {\nstruct MomentProcessorState {\n    s64 samplingNumber;\n    s64 timeStamp;\n    s32 ambientNoiseLevel;\n    u8 reserved[4];\n    MomentStatistic statistics[48];\n};\n}  // namespace nn::irsensor\n");

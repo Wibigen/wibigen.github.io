@@ -1,0 +1,1 @@
+DOC.got("gh/sead/Thread/getBlockType.cpp","// Nom démêlé : sead::Thread::getBlockType\n// Symbole manglé : getBlockType\n// undefined4 __thiscall sead::Thread::getBlockType(Thread *this); @ .text::0082f5c0\n\n\n/* sead::Thread::getBlockType() const */\n\nundefined4 __thiscall sead::Thread::getBlockType(Thread *this)\n\n{\n  return *(undefined4 *)(this + 0xc0);\n}\n\n");

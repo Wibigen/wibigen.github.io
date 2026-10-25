@@ -1,0 +1,1 @@
+DOC.got("gh/GolemClimb/getActor.cpp","// Nom démêlé : GolemClimb::getActor\n// Symbole manglé : getActor\n// void GolemClimb::getActor(void); @ .text::00175900\n\n\n/* GolemClimb::getActor() */\n\nvoid GolemClimb::getActor(void)\n\n{\n  return;\n}\n\n");

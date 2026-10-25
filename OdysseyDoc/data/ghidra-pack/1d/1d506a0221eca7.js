@@ -1,0 +1,1 @@
+DOC.got("gh/KoopaShip/onBlurMovie.cpp","// Nom démêlé : KoopaShip::onBlurMovie\n// Symbole manglé : onBlurMovie\n// void __thiscall KoopaShip::onBlurMovie(KoopaShip *this); @ .text::003ae554\n\n\n/* KoopaShip::onBlurMovie() */\n\nvoid __thiscall KoopaShip::onBlurMovie(KoopaShip *this)\n\n{\n  *(undefined4 *)(this + 0x1e8) = 0x5f;\n  return;\n}\n\n");

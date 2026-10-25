@@ -1,0 +1,1 @@
+DOC.got("src/2126","#pragma once\n\n#include <basis/seadTypes.h>\n\nclass IUsePlayerCeilingCheck {\npublic:\n    virtual bool isEnableStandUp() const = 0;\n    virtual bool isEnableHoldUp() const = 0;\n    virtual bool isPressedCeil() const = 0;\n    virtual f32 getSafetyCeilSpace() const = 0;\n    virtual f32 getCeilCheckHeight() const = 0;\n};\n");

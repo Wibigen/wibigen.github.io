@@ -1,0 +1,1 @@
+DOC.got("gh/nn/ui2d/Bounding/Bounding_.text_00bfe1a8.cpp","// Nom démêlé : nn::ui2d::Bounding::~Bounding\n// Symbole manglé : ~Bounding\n// void __thiscall nn::ui2d::Bounding::~Bounding(Bounding *this); @ .text::00bfe1a8\n\n\n/* nn::ui2d::Bounding::~Bounding() */\n\nvoid __thiscall nn::ui2d::Bounding::~Bounding(Bounding *this)\n\n{\n  return;\n}\n\n");

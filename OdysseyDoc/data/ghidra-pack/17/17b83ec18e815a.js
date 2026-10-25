@@ -1,0 +1,1 @@
+DOC.got("gh/GolemClimb/updateLookAt.cpp","// Nom démêlé : GolemClimb::updateLookAt\n// Symbole manglé : updateLookAt\n// void __thiscall GolemClimb::updateLookAt(GolemClimb *this); @ .text::00174830\n\n\n/* GolemClimb::updateLookAt() */\n\nvoid __thiscall GolemClimb::updateLookAt(GolemClimb *this)\n\n{\n  *(undefined1 *)(*(long *)(this + 0x148) + 0xc) = 1;\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/GraphicsObjShadowMaskSphere/addMulti_.text_00b1b14c.cpp","// Nom démêlé : al::GraphicsObjShadowMaskSphere::addMulti\n// Symbole manglé : addMulti\n// void al::GraphicsObjShadowMaskSphere::addMulti(void); @ .text::00b1b14c\n\n\n/* al::GraphicsObjShadowMaskSphere::addMulti() */\n\nvoid al::GraphicsObjShadowMaskSphere::addMulti(void)\n\n{\n  return;\n}\n\n");

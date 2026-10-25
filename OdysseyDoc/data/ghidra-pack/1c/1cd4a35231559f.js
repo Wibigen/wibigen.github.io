@@ -1,0 +1,1 @@
+DOC.got("gh/BossRaidChain/setFix.cpp","// Nom démêlé : BossRaidChain::setFix\n// Symbole manglé : setFix\n// void __thiscall BossRaidChain::setFix(BossRaidChain *this); @ .text::0013ed08\n\n\n/* BossRaidChain::setFix() */\n\nvoid __thiscall BossRaidChain::setFix(BossRaidChain *this)\n\n{\n  this[0x144] = (BossRaidChain)0x1;\n  return;\n}\n\n");

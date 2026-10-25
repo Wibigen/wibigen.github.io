@@ -1,0 +1,1 @@
+DOC.got("gh/agl/FragmentShader/getShaderType_.text_008807ec.cpp","// Nom démêlé : agl::FragmentShader::getShaderType\n// Symbole manglé : getShaderType\n// undefined8 agl::FragmentShader::getShaderType(void); @ .text::008807ec\n\n\n/* agl::FragmentShader::getShaderType() const */\n\nundefined8 agl::FragmentShader::getShaderType(void)\n\n{\n  return 1;\n}\n\n");

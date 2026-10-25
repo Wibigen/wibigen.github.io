@@ -1,0 +1,1 @@
+DOC.got("gh/PackunFire/onCapSearchEnd.cpp","// Nom démêlé : PackunFire::onCapSearchEnd\n// Symbole manglé : onCapSearchEnd\n// void __thiscall PackunFire::onCapSearchEnd(PackunFire *this); @ .text::0026e7e4\n\n\n/* PackunFire::onCapSearchEnd() */\n\nvoid __thiscall PackunFire::onCapSearchEnd(PackunFire *this)\n\n{\n  *(undefined8 *)(this + 0x110) = 0;\n  return;\n}\n\n");

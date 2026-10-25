@@ -1,0 +1,1 @@
+DOC.got("src/481","#include \"Library/Camera/CameraViewFlag.h\"\n\nnamespace al {\n\nCameraViewFlag::CameraViewFlag() = default;\n\nvoid CameraViewFlag::resetAllFlag() {\n    mIsInvalidCameraBlur = false;\n}\n\n}  // namespace al\n");

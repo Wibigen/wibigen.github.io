@@ -1,0 +1,1 @@
+DOC.got("gh/sead/CalculateTask/pauseDraw_.text_0086dfd8.cpp","// Nom démêlé : sead::CalculateTask::pauseDraw\n// Symbole manglé : pauseDraw\n// bool sead::CalculateTask::pauseDraw(bool param_1); @ .text::0086dfd8\n\n\n/* sead::CalculateTask::pauseDraw(bool) */\n\nbool sead::CalculateTask::pauseDraw(bool param_1)\n\n{\n  return param_1;\n}\n\n");

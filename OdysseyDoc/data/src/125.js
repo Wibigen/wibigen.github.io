@@ -1,0 +1,1 @@
+DOC.got("src/125","#pragma once\n\nnamespace nn::gfx {\n\nstruct FenceInfoData {\n    char reserved[16];\n};\n\nstruct SemaphoreInfoData {\n    char reserved[16];\n};\n\n}  // namespace nn::gfx");

@@ -1,0 +1,1 @@
+DOC.got("gh/agl/UniformBlock/getBlockAlignment.cpp","// Nom démêlé : agl::UniformBlock::getBlockAlignment_\n// Symbole manglé : getBlockAlignment_\n// undefined8 agl::UniformBlock::getBlockAlignment_(void); @ .text::00884218\n\n\n/* agl::UniformBlock::getBlockAlignment_() const */\n\nundefined8 agl::UniformBlock::getBlockAlignment_(void)\n\n{\n  return 0x100;\n}\n\n");

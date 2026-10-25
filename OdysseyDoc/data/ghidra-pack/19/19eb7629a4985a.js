@@ -1,0 +1,1 @@
+DOC.got("gh/HelpAmiiboYoshi/getType_.text_00104998.cpp","// Nom démêlé : HelpAmiiboYoshi::getType\n// Symbole manglé : getType\n// undefined8 HelpAmiiboYoshi::getType(void); @ .text::00104998\n\n\n/* HelpAmiiboYoshi::getType() const */\n\nundefined8 HelpAmiiboYoshi::getType(void)\n\n{\n  return 3;\n}\n\n");

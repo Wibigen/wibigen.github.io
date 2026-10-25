@@ -1,0 +1,1 @@
+DOC.got("gh/al/EffectSystem/getPauseForceCalcFrame.cpp","// Nom démêlé : al::EffectSystem::getPauseForceCalcFrame\n// Symbole manglé : getPauseForceCalcFrame\n// undefined8 al::EffectSystem::getPauseForceCalcFrame(void); @ .text::00986eb8\n\n\n/* al::EffectSystem::getPauseForceCalcFrame() */\n\nundefined8 al::EffectSystem::getPauseForceCalcFrame(void)\n\n{\n  return 1;\n}\n\n");

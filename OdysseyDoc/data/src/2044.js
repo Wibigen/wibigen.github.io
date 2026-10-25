@@ -1,0 +1,1 @@
+DOC.got("src/2044","#pragma once\n\n#include \"System/GameDataHolderAccessor.h\"\n\nstruct AchievementInfo;\n\nclass Achievement {\npublic:\n    Achievement(const AchievementInfo* info);\n    bool isGet(GameDataHolderAccessor accessor) const;\n\nprivate:\n    bool mIsGet = false;\n    const AchievementInfo* mInfo;\n};\n");

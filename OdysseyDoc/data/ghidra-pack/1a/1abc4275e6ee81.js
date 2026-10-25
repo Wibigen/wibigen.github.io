@@ -1,0 +1,1 @@
+DOC.got("gh/IBalloonFindSearchBalloon/getDataId_.text_0045508c.cpp","// Nom démêlé : IBalloonFindSearchBalloon::getDataId\n// Symbole manglé : getDataId\n// undefined8 IBalloonFindSearchBalloon::getDataId(void); @ .text::0045508c\n\n\n/* IBalloonFindSearchBalloon::getDataId() const */\n\nundefined8 IBalloonFindSearchBalloon::getDataId(void)\n\n{\n  return 0;\n}\n\n");

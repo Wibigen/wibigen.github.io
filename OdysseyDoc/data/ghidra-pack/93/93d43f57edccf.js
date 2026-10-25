@@ -1,0 +1,1 @@
+DOC.got("gh/TsukkunTraceHolder/getSceneObjName_.text_002a74bc.cpp","// Nom démêlé : TsukkunTraceHolder::getSceneObjName\n// Symbole manglé : getSceneObjName\n// undefined8 TsukkunTraceHolder::getSceneObjName(void); @ .text::002a74bc\n\n\n/* TsukkunTraceHolder::getSceneObjName() const */\n\nundefined8 TsukkunTraceHolder::getSceneObjName(void)\n\n{\n  return 0x1929779;\n}\n\n");

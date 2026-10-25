@@ -1,0 +1,1 @@
+DOC.got("gh/ShopUtil/getShopNameCityMan.cpp","// Nom démêlé : ShopUtil::getShopNameCityMan\n// Symbole manglé : getShopNameCityMan\n// undefined8 ShopUtil::getShopNameCityMan(void); @ .text::0030a370\n\n\n/* ShopUtil::getShopNameCityMan() */\n\nundefined8 ShopUtil::getShopNameCityMan(void)\n\n{\n  return 0x192d2e1;\n}\n\n");

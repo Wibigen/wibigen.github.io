@@ -1,0 +1,1 @@
+DOC.got("gh/TwistChain/setFree.cpp","// Nom démêlé : TwistChain::setFree\n// Symbole manglé : setFree\n// void __thiscall TwistChain::setFree(TwistChain *this); @ .text::00441a18\n\n\n/* TwistChain::setFree() */\n\nvoid __thiscall TwistChain::setFree(TwistChain *this)\n\n{\n  this[0x148] = (TwistChain)0x0;\n  return;\n}\n\n");

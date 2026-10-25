@@ -1,0 +1,1 @@
+DOC.got("gh/BossRaid/exeBattleStartWait.cpp","// Nom démêlé : BossRaid::exeBattleStartWait\n// Symbole manglé : exeBattleStartWait\n// void BossRaid::exeBattleStartWait(void); @ .text::0013d1f0\n\n\n/* BossRaid::exeBattleStartWait() */\n\nvoid BossRaid::exeBattleStartWait(void)\n\n{\n  return;\n}\n\n");

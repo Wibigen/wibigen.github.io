@@ -1,0 +1,1 @@
+DOC.got("gh/GameDataFile/winRace.cpp","// Nom démêlé : GameDataFile::winRace\n// Symbole manglé : winRace\n// void __thiscall GameDataFile::winRace(GameDataFile *this); @ .text::00624228\n\n\n/* GameDataFile::winRace() */\n\nvoid __thiscall GameDataFile::winRace(GameDataFile *this)\n\n{\n  *(undefined4 *)(this + 0xa48) = 1;\n  return;\n}\n\n");

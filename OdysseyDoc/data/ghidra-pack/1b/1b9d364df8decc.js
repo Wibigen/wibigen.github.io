@@ -1,0 +1,1 @@
+DOC.got("gh/CarryMeat/isBindable.cpp","// Nom démêlé : CarryMeat::isBindable\n// Symbole manglé : isBindable\n// void __thiscall CarryMeat::isBindable(CarryMeat *this); @ .text::001f0368\n\n\n/* CarryMeat::isBindable() const */\n\nvoid __thiscall CarryMeat::isBindable(CarryMeat *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1d893b8);\n  return;\n}\n\n");

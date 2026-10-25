@@ -1,0 +1,1 @@
+DOC.got("gh/Tiara/startFindTurn.cpp","// Nom démêlé : Tiara::startFindTurn\n// Symbole manglé : startFindTurn\n// void __thiscall Tiara::startFindTurn(Tiara *this); @ .text::004e73c4\n\n\n/* Tiara::startFindTurn() */\n\nvoid __thiscall Tiara::startFindTurn(Tiara *this)\n\n{\n  this[0x13c] = (Tiara)0x1;\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1e703a8);\n  return;\n}\n\n");

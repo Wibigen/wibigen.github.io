@@ -1,0 +1,1 @@
+DOC.got("gh/GhostPlayerRecorder/saveRecordYaml.cpp","// Nom démêlé : GhostPlayerRecorder::saveRecordYaml\n// Symbole manglé : saveRecordYaml\n// undefined8 GhostPlayerRecorder::saveRecordYaml(char *param_1); @ .text::004570b0\n\n\n/* GhostPlayerRecorder::saveRecordYaml(char const*) */\n\nundefined8 GhostPlayerRecorder::saveRecordYaml(char *param_1)\n\n{\n  return 1;\n}\n\n");

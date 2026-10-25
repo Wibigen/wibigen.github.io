@@ -1,0 +1,1 @@
+DOC.got("src/150","#pragma once\n\n#include <nn/types.h>\n\nnamespace nn::irsensor {\nstruct MomentStatistic {\n    f32 averageIntensity;\n    f32 centroidX;\n    f32 centroidY;\n};\n}  // namespace nn::irsensor\n");

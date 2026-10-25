@@ -1,0 +1,1 @@
+DOC.got("gh/al/isAmiibo.cpp","// Nom démêlé : al::isAmiibo\n// Symbole manglé : isAmiibo\n// NfpInfo al::isAmiibo(NfpInfo *param_1); @ .text::00a60370\n\n\n/* al::isAmiibo(al::NfpInfo const&) */\n\nNfpInfo al::isAmiibo(NfpInfo *param_1)\n\n{\n  return param_1[0x1e1];\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/getActorCollider.cpp","// Nom démêlé : al::getActorCollider\n// Symbole manglé : getActorCollider\n// undefined8 al::getActorCollider(LiveActor *param_1); @ .text::009d7d9c\n\n\n/* al::getActorCollider(al::LiveActor const*) */\n\nundefined8 al::getActorCollider(LiveActor *param_1)\n\n{\n  return *(undefined8 *)(param_1 + 0x78);\n}\n\n");

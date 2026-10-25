@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/PacketQueue/GetLock.cpp","// Nom démêlé : nn::nex::PacketQueue::GetLock\n// Symbole manglé : GetLock\n// undefined8 nn::nex::PacketQueue::GetLock(void); @ .text::0078fa04\n\n\n/* nn::nex::PacketQueue::GetLock() */\n\nundefined8 nn::nex::PacketQueue::GetLock(void)\n\n{\n  return 0;\n}\n\n");

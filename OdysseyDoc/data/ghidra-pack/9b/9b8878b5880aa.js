@@ -1,0 +1,1 @@
+DOC.got("gh/sead/GameFramework/isScreenShotBusy.cpp","// Nom démêlé : sead::GameFramework::isScreenShotBusy\n// Symbole manglé : isScreenShotBusy\n// undefined8 sead::GameFramework::isScreenShotBusy(void); @ .text::008326fc\n\n\n/* sead::GameFramework::isScreenShotBusy() const */\n\nundefined8 sead::GameFramework::isScreenShotBusy(void)\n\n{\n  return 0;\n}\n\n");

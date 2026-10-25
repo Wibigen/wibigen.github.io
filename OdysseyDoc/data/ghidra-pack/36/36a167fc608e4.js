@@ -1,0 +1,1 @@
+DOC.got("gh/Can/exeHide_.text_0032ad74.cpp","// Nom démêlé : Can::exeHide\n// Symbole manglé : exeHide\n// void Can::exeHide(void); @ .text::0032ad74\n\n\n/* Can::exeHide() */\n\nvoid Can::exeHide(void)\n\n{\n  return;\n}\n\n");

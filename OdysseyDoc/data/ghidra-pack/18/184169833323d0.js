@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Platform/Platform_.text_007169f4.cpp","// Nom démêlé : nn::nex::Platform::~Platform\n// Symbole manglé : ~Platform\n// void __thiscall nn::nex::Platform::~Platform(Platform *this); @ .text::007169f4\n\n\n/* nn::nex::Platform::~Platform() */\n\nvoid __thiscall nn::nex::Platform::~Platform(Platform *this)\n\n{\n  return;\n}\n\n");

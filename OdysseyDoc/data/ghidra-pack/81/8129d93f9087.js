@@ -1,0 +1,1 @@
+DOC.got("gh/BossForestBarrierCtrl/exeWait_.text_0011866c.cpp","// Nom démêlé : BossForestBarrierCtrl::exeWait\n// Symbole manglé : exeWait\n// void BossForestBarrierCtrl::exeWait(void); @ .text::0011866c\n\n\n/* BossForestBarrierCtrl::exeWait() */\n\nvoid BossForestBarrierCtrl::exeWait(void)\n\n{\n  return;\n}\n\n");

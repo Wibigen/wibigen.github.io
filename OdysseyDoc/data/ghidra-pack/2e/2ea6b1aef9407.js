@@ -1,0 +1,1 @@
+DOC.got("gh/al/OceanWave/getName_.text_00a8de74.cpp","// Nom démêlé : al::OceanWave::getName\n// Symbole manglé : getName\n// undefined8 al::OceanWave::getName(void); @ .text::00a8de74\n\n\n/* al::OceanWave::getName() const */\n\nundefined8 al::OceanWave::getName(void)\n\n{\n  return 0x1967bb3;\n}\n\n");

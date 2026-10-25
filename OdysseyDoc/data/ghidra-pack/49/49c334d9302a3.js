@@ -1,0 +1,1 @@
+DOC.got("gh/sead/Task/calc_.text_00835208.cpp","// Nom démêlé : sead::Task::calc\n// Symbole manglé : calc\n// void sead::Task::calc(void); @ .text::00835208\n\n\n/* sead::Task::calc() */\n\nvoid sead::Task::calc(void)\n\n{\n  return;\n}\n\n");

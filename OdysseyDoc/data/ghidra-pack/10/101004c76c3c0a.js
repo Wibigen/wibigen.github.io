@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/SigloNetIsConnected.cpp","// Nom démêlé : nn::nex::SigloNetIsConnected\n// Symbole manglé : SigloNetIsConnected\n// void nn::nex::SigloNetIsConnected(void); @ .text::007b0be0\n\n\n/* nn::nex::SigloNetIsConnected() */\n\nvoid nn::nex::SigloNetIsConnected(void)\n\n{\n  (*(code *)PTR_IsNetworkAvailable_01f4dcc8)();\n  return;\n}\n\n");

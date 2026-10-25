@@ -1,0 +1,1 @@
+DOC.got("gh/KickStone/exeEatBy.cpp","// Nom démêlé : KickStone::exeEatBy\n// Symbole manglé : exeEatBy\n// void KickStone::exeEatBy(void); @ .text::003ad010\n\n\n/* KickStone::exeEatBy() */\n\nvoid KickStone::exeEatBy(void)\n\n{\n  return;\n}\n\n");

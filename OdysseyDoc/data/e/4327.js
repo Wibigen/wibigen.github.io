@@ -1,0 +1,1 @@
+DOC.got("e/4327",{"34559":{"q":"nn::util::FloatColumnMajor4x3","decl":{"f":"lib/NintendoSDK/include/nn/util/MathTypes.h","l":62,"sig":"struct FloatColumnMajor4x3","end":64,"fi":200},"size":48,"align":4,"complete":true,"fields":[{"n":"m","t":"f32[3][4]","off":0,"sz":48,"acc":"public","bits":null,"l":63,"cm":null,"ti":30838}]}});

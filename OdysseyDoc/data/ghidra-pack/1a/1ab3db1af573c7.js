@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerPuppet/getTrans_.text_0055f7e4.cpp","// Nom démêlé : PlayerPuppet::getTrans\n// Symbole manglé : getTrans\n// void __thiscall PlayerPuppet::getTrans(PlayerPuppet *this); @ .text::0055f7e4\n\n\n/* PlayerPuppet::getTrans() const */\n\nvoid __thiscall PlayerPuppet::getTrans(PlayerPuppet *this)\n\n{\n  al::getTrans(*(LiveActor **)(this + 8));\n  return;\n}\n\n");

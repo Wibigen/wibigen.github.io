@@ -1,0 +1,1 @@
+DOC.got("gh/KoopaFunction/getCapPushLimit.cpp","// Nom démêlé : KoopaFunction::getCapPushLimit\n// Symbole manglé : getCapPushLimit\n// undefined1  [16] KoopaFunction::getCapPushLimit(void); @ .text::001936a8\n\n\n/* KoopaFunction::getCapPushLimit() */\n\nundefined1  [16] KoopaFunction::getCapPushLimit(void)\n\n{\n  return ZEXT816(0x40a00000);\n}\n\n");

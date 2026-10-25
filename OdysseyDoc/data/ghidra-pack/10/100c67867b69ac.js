@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/BandwidthCounter/GetList.cpp","// Nom démêlé : nn::nex::BandwidthCounter::GetList\n// Symbole manglé : GetList\n// undefined * nn::nex::BandwidthCounter::GetList(void); @ .text::0070ccac\n\n\n/* nn::nex::BandwidthCounter::GetList() */\n\nundefined * nn::nex::BandwidthCounter::GetList(void)\n\n{\n  return PTR_s_lstBWCounters_01f58258;\n}\n\n");

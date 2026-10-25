@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Core/SetFatalState.cpp","// Nom démêlé : nn::nex::Core::SetFatalState\n// Symbole manglé : SetFatalState\n// void nn::nex::Core::SetFatalState(bool param_1); @ .text::00737fb0\n\n\n/* nn::nex::Core::SetFatalState(bool) */\n\nvoid nn::nex::Core::SetFatalState(bool param_1)\n\n{\n  *PTR_s_bFatalState_01f58618 = param_1;\n  return;\n}\n\n");

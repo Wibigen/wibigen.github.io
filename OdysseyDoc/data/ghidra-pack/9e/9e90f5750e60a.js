@@ -1,0 +1,1 @@
+DOC.got("gh/sead/DrawLockContext/initialize_.text_0086fea4.cpp","// Nom démêlé : sead::DrawLockContext::initialize\n// Symbole manglé : initialize\n// void sead::DrawLockContext::initialize(Heap *param_1); @ .text::0086fea4\n\n\n/* sead::DrawLockContext::initialize(sead::Heap*) */\n\nvoid sead::DrawLockContext::initialize(Heap *param_1)\n\n{\n  return;\n}\n\n");

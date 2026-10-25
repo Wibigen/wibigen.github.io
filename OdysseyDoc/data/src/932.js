@@ -1,0 +1,1 @@
+DOC.got("src/932","#pragma once\n\n#include \"Library/LiveActor/LiveActor.h\"\n\nnamespace al {\n\nclass ModelDrawParts : public LiveActor {\npublic:\n    ModelDrawParts(const char*, const LiveActor*, const ActorInitInfo&, const char*);\n};\n\nstatic_assert(sizeof(ModelDrawParts) == 0x108, \"ModelDrawParts Size\");\n\n}  // namespace al\n");

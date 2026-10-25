@@ -1,0 +1,1 @@
+DOC.got("e/3890",{"32151":{"q":"nn::gfx::SemaphoreInfoData","decl":{"f":"lib/NintendoSDK/include/nn/gfx/gfx_SyncInfoData.h","l":9,"sig":"struct SemaphoreInfoData","end":11,"fi":125},"size":16,"align":1,"complete":true,"fields":[{"n":"reserved","t":"char[16]","off":0,"sz":16,"acc":"public","tu":null,"bits":null,"l":10,"cm":null,"ti":null}]}});

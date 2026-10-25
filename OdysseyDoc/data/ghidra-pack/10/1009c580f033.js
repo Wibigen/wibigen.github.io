@@ -1,0 +1,1 @@
+DOC.got("gh/al/ByamlData/ByamlData.cpp","// Nom démêlé : al::ByamlData::ByamlData\n// Symbole manglé : ByamlData\n// void __thiscall al::ByamlData::ByamlData(ByamlData *this); @ .text::00b2d7dc\n\n\n/* al::ByamlData::ByamlData() */\n\nvoid __thiscall al::ByamlData::ByamlData(ByamlData *this)\n\n{\n  *(undefined4 *)this = 0;\n  this[4] = (ByamlData)0x0;\n  return;\n}\n\n");

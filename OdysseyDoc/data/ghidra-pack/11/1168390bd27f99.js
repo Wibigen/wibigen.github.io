@@ -1,0 +1,1 @@
+DOC.got("gh/Fastener/switchStartOn_.text_003732bc.cpp","// Nom démêlé : Fastener::switchStartOn\n// Symbole manglé : switchStartOn\n// void __thiscall Fastener::switchStartOn(Fastener *this); @ .text::003732bc\n\n\n/* Fastener::switchStartOn() */\n\nvoid __thiscall Fastener::switchStartOn(Fastener *this)\n\n{\n  this[0xb98] = (Fastener)0x1;\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/agl/lyr/Layer/isForceDisableClear.cpp","// Nom démêlé : agl::lyr::Layer::isForceDisableClear\n// Symbole manglé : isForceDisableClear\n// undefined8 agl::lyr::Layer::isForceDisableClear(void); @ .text::00ce5f64\n\n\n/* agl::lyr::Layer::isForceDisableClear() const */\n\nundefined8 agl::lyr::Layer::isForceDisableClear(void)\n\n{\n  return 0;\n}\n\n");

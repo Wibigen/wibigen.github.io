@@ -1,0 +1,1 @@
+DOC.got("gh/al/BgmLine/prepareBgm_.text_00920854.cpp","// Nom démêlé : al::BgmLine::prepareBgm\n// Symbole manglé : prepareBgm\n// void al::BgmLine::prepareBgm(BgmPlayingRequest *param_1); @ .text::00920854\n\n\n/* al::BgmLine::prepareBgm(al::BgmPlayingRequest const&) */\n\nvoid al::BgmLine::prepareBgm(BgmPlayingRequest *param_1)\n\n{\n  return;\n}\n\n");

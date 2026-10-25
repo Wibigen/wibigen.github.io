@@ -1,0 +1,1 @@
+DOC.got("src/2245","#include \"Player/PlayerJudgeSameNerve.h\"\n\n#include \"Library/Nerve/NerveUtil.h\"\n\nPlayerJudgeSameNerve::PlayerJudgeSameNerve(const al::IUseNerve* nerveUser, const al::Nerve* nerve)\n    : mNerveUser(nerveUser), mNerve(nerve) {}\n\nbool PlayerJudgeSameNerve::judge() const {\n    return al::isNerve(mNerveUser, mNerve);\n}\n");

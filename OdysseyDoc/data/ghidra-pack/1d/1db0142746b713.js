@@ -1,0 +1,1 @@
+DOC.got("gh/BoidController/clear_.text_0064aa64.cpp","// Nom démêlé : BoidController::clear\n// Symbole manglé : clear\n// void __thiscall BoidController::clear(BoidController *this); @ .text::0064aa64\n\n\n/* BoidController::clear() */\n\nvoid __thiscall BoidController::clear(BoidController *this)\n\n{\n  *(undefined4 *)(this + 8) = 0;\n  return;\n}\n\n");

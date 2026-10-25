@@ -1,0 +1,1 @@
+DOC.got("gh/YukimaruRacer/start_.text_004f227c.cpp","// Nom démêlé : YukimaruRacer::start\n// Symbole manglé : start\n// void __thiscall YukimaruRacer::start(YukimaruRacer *this); @ .text::004f227c\n\n\n/* YukimaruRacer::start() */\n\nvoid __thiscall YukimaruRacer::start(YukimaruRacer *this)\n\n{\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1e74580);\n  return;\n}\n\n");

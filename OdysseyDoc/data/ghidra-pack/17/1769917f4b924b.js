@@ -1,0 +1,1 @@
+DOC.got("gh/TimeBalloon/getPlayerIdNone.cpp","// Nom démêlé : TimeBalloon::getPlayerIdNone\n// Symbole manglé : getPlayerIdNone\n// undefined8 TimeBalloon::getPlayerIdNone(void); @ .text::00478240\n\n\n/* TimeBalloon::getPlayerIdNone() */\n\nundefined8 TimeBalloon::getPlayerIdNone(void)\n\n{\n  return 0xffffffffffffffff;\n}\n\n");

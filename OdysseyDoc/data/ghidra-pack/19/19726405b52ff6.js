@@ -1,0 +1,1 @@
+DOC.got("gh/rs/validateGuideArrow.cpp","// Nom démêlé : rs::validateGuideArrow\n// Symbole manglé : validateGuideArrow\n// void rs::validateGuideArrow(IUsePlayerPuppet *param_1); @ .text::0066ede0\n\n\n/* rs::validateGuideArrow(IUsePlayerPuppet*) */\n\nvoid rs::validateGuideArrow(IUsePlayerPuppet *param_1)\n\n{\n  param_1[0xb4] = (IUsePlayerPuppet)0x1;\n  return;\n}\n\n");

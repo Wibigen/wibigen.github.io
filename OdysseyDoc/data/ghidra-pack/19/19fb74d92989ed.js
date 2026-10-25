@@ -1,0 +1,1 @@
+DOC.got("gh/RankingNpc/exeShow_.text_004be37c.cpp","// Nom démêlé : RankingNpc::exeShow\n// Symbole manglé : exeShow\n// void __thiscall RankingNpc::exeShow(RankingNpc *this); @ .text::004be37c\n\n\n/* RankingNpc::exeShow() */\n\nvoid __thiscall RankingNpc::exeShow(RankingNpc *this)\n\n{\n  rs::updateEventFlow(*(EventFlowExecutor **)(this + 0x150));\n  return;\n}\n\n");

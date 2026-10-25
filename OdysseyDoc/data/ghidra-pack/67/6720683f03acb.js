@@ -1,0 +1,1 @@
+DOC.got("gh/al/HdrCompose/calcGPU_.text_00aaf780.cpp","// Nom démêlé : al::HdrCompose::calcGPU\n// Symbole manglé : calcGPU\n// void al::HdrCompose::calcGPU(int param_1); @ .text::00aaf780\n\n\n/* al::HdrCompose::calcGPU(int) */\n\nvoid al::HdrCompose::calcGPU(int param_1)\n\n{\n  agl::pfx::AutoExposure::calcGPU(param_1 + 0x30);\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/YoshiFruitWatcher/exeWait_.text_002d82f4.cpp","// Nom démêlé : YoshiFruitWatcher::exeWait\n// Symbole manglé : exeWait\n// void YoshiFruitWatcher::exeWait(void); @ .text::002d82f4\n\n\n/* YoshiFruitWatcher::exeWait() */\n\nvoid YoshiFruitWatcher::exeWait(void)\n\n{\n  return;\n}\n\n");

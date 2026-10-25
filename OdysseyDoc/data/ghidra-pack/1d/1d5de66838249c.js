@@ -1,0 +1,1 @@
+DOC.got("gh/al/isActive_.text_009b1ef8.cpp","// Nom démêlé : al::isActive\n// Symbole manglé : isActive\n// LayoutActor al::isActive(LayoutActor *param_1); @ .text::009b1ef8\n\n\n/* al::isActive(al::LayoutActor const*) */\n\nLayoutActor al::isActive(LayoutActor *param_1)\n\n{\n  return param_1[0x128];\n}\n\n");

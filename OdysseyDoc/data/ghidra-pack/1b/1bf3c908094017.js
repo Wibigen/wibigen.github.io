@@ -1,0 +1,1 @@
+DOC.got("gh/al/TextureUnit/isCubemap.cpp","// Nom démêlé : al::TextureUnit::isCubemap\n// Symbole manglé : isCubemap\n// TextureUnit __thiscall al::TextureUnit::isCubemap(TextureUnit *this); @ .text::00b2a88c\n\n\n/* al::TextureUnit::isCubemap() const */\n\nTextureUnit __thiscall al::TextureUnit::isCubemap(TextureUnit *this)\n\n{\n  return this[0x150];\n}\n\n");

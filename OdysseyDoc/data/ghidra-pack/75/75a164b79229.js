@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/PRUDPStream/GetURLType_.text_00780fd8.cpp","// Nom démêlé : nn::nex::PRUDPStream::GetURLType\n// Symbole manglé : GetURLType\n// undefined8 nn::nex::PRUDPStream::GetURLType(void); @ .text::00780fd8\n\n\n/* nn::nex::PRUDPStream::GetURLType() */\n\nundefined8 nn::nex::PRUDPStream::GetURLType(void)\n\n{\n  return 0x195662b;\n}\n\n");

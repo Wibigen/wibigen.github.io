@@ -1,0 +1,1 @@
+DOC.got("gh/al/CameraPoser/end_.text_001cc678.cpp","// Nom démêlé : al::CameraPoser::end\n// Symbole manglé : end\n// void __thiscall al::CameraPoser::end(CameraPoser *this); @ .text::001cc678\n\n\n/* al::CameraPoser::end() */\n\nvoid __thiscall al::CameraPoser::end(CameraPoser *this)\n\n{\n  *(undefined4 *)(this + 0x38) = 2;\n  return;\n}\n\n");

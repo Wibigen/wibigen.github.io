@@ -1,0 +1,1 @@
+DOC.got("src/1151","#pragma once\n\n#include <prim/seadSafeString.h>\n\nnamespace al {\nstruct ActionAnimCtrlInfo;\nstruct ActionAnimDataInfo;\n}  // namespace al\n\nnamespace alActionFunction {\nconst char* getAnimName(const al::ActionAnimCtrlInfo* infoCtrl,\n                        const al::ActionAnimDataInfo* infoData);\n}  // namespace alActionFunction\n");

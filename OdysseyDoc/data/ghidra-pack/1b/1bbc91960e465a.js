@@ -1,0 +1,1 @@
+DOC.got("gh/al/ParameterString256/getParamType.cpp","// Nom démêlé : al::ParameterString256::getParamType\n// Symbole manglé : getParamType\n// undefined8 al::ParameterString256::getParamType(void); @ .text::003d5b0c\n\n\n/* al::ParameterString256::getParamType() const */\n\nundefined8 al::ParameterString256::getParamType(void)\n\n{\n  return 0xf;\n}\n\n");

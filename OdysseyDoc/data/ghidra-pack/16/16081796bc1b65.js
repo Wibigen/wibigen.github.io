@@ -1,0 +1,1 @@
+DOC.got("gh/al/getSceneDrawContext.cpp","// Nom démêlé : al::getSceneDrawContext\n// Symbole manglé : getSceneDrawContext\n// undefined8 al::getSceneDrawContext(Scene *param_1); @ .text::00acf300\n\n\n/* al::getSceneDrawContext(al::Scene const*) */\n\nundefined8 al::getSceneDrawContext(Scene *param_1)\n\n{\n  return *(undefined8 *)(*(long *)(param_1 + 0xd0) + 0x18);\n}\n\n");

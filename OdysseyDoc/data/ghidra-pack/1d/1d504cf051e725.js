@@ -1,0 +1,1 @@
+DOC.got("gh/Mirror/kill_.text_003bd780.cpp","// Nom démêlé : Mirror::kill\n// Symbole manglé : kill\n// void __thiscall Mirror::kill(Mirror *this); @ .text::003bd780\n\n\n/* Mirror::kill() */\n\nvoid __thiscall Mirror::kill(Mirror *this)\n\n{\n  al::LiveActor::kill((LiveActor *)this);\n  al::startHitReaction((LiveActor *)this,(char *)0x191e61f);\n  return;\n}\n\n");

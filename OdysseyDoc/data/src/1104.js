@@ -1,0 +1,1 @@
+DOC.got("src/1104","#pragma once\n\nnamespace al {\nclass PlacementId;\n\nstruct StageSwitchInfo {\n    StageSwitchInfo();\n\n    PlacementId* placementId = nullptr;\n    bool isSwitchOn = false;\n};\n}  // namespace al\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/SystemError/IsWarning_.text_0072128c.cpp","// Nom démêlé : nn::nex::SystemError::IsWarning\n// Symbole manglé : IsWarning\n// bool nn::nex::SystemError::IsWarning(uint param_1); @ .text::0072128c\n\n\n/* nn::nex::SystemError::IsWarning(unsigned int) */\n\nbool nn::nex::SystemError::IsWarning(uint param_1)\n\n{\n  return param_1 >> 0x1e == 2;\n}\n\n");

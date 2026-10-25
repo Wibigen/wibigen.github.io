@@ -1,0 +1,1 @@
+DOC.got("gh/Shine/setGrandShine.cpp","// Nom démêlé : Shine::setGrandShine\n// Symbole manglé : setGrandShine\n// void __thiscall Shine::setGrandShine(Shine *this); @ .text::002d1410\n\n\n/* Shine::setGrandShine() */\n\nvoid __thiscall Shine::setGrandShine(Shine *this)\n\n{\n  *(undefined4 *)(this + 0x1a0) = 2;\n  return;\n}\n\n");

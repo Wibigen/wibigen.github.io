@@ -1,0 +1,1 @@
+DOC.got("e/5561",{"4900":{"q":"BindInfo","decl":{"f":"src/System/GameDataFunction.h","l":24,"sig":"struct BindInfo","end":26,"fi":2425},"size":8,"align":8,"complete":true,"fwd":[["src/Util/InputInterruptTutorialUtil.h",6]],"fields":[{"n":"name","t":"const char *","off":0,"sz":8,"acc":"public","tu":null,"bits":null,"l":25,"cm":null,"ti":null}]}});

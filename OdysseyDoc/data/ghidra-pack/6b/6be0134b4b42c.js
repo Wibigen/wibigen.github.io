@@ -1,0 +1,1 @@
+DOC.got("gh/TrampleSwitch/isOn_.text_0043bbd4.cpp","// Nom démêlé : TrampleSwitch::isOn\n// Symbole manglé : isOn\n// void __thiscall TrampleSwitch::isOn(TrampleSwitch *this); @ .text::0043bbd4\n\n\n/* TrampleSwitch::isOn() const */\n\nvoid __thiscall TrampleSwitch::isOn(TrampleSwitch *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1e3e688);\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/KoopaCap/isEquip.cpp","// Nom démêlé : KoopaCap::isEquip\n// Symbole manglé : isEquip\n// bool __thiscall KoopaCap::isEquip(KoopaCap *this); @ .text::00185168\n\n\n/* KoopaCap::isEquip() const */\n\nbool __thiscall KoopaCap::isEquip(KoopaCap *this)\n\n{\n  return *(long *)(*(long *)(this + 0x110) + 0x138) != 0;\n}\n\n");

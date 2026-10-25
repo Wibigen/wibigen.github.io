@@ -1,0 +1,1 @@
+DOC.got("gh/nn/atk/detail/fnd/Thread/Resume_.text_00bcb23c.cpp","// Nom démêlé : nn::atk::detail::fnd::Thread::Resume\n// Symbole manglé : Resume\n// void nn::atk::detail::fnd::Thread::Resume(void); @ .text::00bcb23c\n\n\n/* nn::atk::detail::fnd::Thread::Resume() */\n\nvoid nn::atk::detail::fnd::Thread::Resume(void)\n\n{\n  return;\n}\n\n");

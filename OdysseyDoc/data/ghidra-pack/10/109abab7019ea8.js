@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerJudgeEnablePeachAmiibo/reset_.text_005594f4.cpp","// Nom démêlé : PlayerJudgeEnablePeachAmiibo::reset\n// Symbole manglé : reset\n// void PlayerJudgeEnablePeachAmiibo::reset(void); @ .text::005594f4\n\n\n/* PlayerJudgeEnablePeachAmiibo::reset() */\n\nvoid PlayerJudgeEnablePeachAmiibo::reset(void)\n\n{\n  return;\n}\n\n");

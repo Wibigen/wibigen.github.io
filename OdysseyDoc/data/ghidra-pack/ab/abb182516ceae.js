@@ -1,0 +1,1 @@
+DOC.got("gh/KoopaCap/offFinish.cpp","// Nom démêlé : KoopaCap::offFinish\n// Symbole manglé : offFinish\n// void __thiscall KoopaCap::offFinish(KoopaCap *this); @ .text::0018562c\n\n\n/* KoopaCap::offFinish() */\n\nvoid __thiscall KoopaCap::offFinish(KoopaCap *this)\n\n{\n  KoopaCapPlayer::offFinish(*(KoopaCapPlayer **)(this + 0x110));\n  return;\n}\n\n");

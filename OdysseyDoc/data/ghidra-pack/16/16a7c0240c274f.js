@@ -1,0 +1,1 @@
+DOC.got("gh/RankingNpc/endTalk.cpp","// Nom démêlé : RankingNpc::endTalk\n// Symbole manglé : endTalk\n// void __thiscall RankingNpc::endTalk(RankingNpc *this); @ .text::004be338\n\n\n/* RankingNpc::endTalk() */\n\nvoid __thiscall RankingNpc::endTalk(RankingNpc *this)\n\n{\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1e66628);\n  return;\n}\n\n");

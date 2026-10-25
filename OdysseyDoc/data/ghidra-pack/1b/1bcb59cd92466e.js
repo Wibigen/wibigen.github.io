@@ -1,0 +1,1 @@
+DOC.got("gh/MoonRock/exeChangeScene.cpp","// Nom démêlé : MoonRock::exeChangeScene\n// Symbole manglé : exeChangeScene\n// void MoonRock::exeChangeScene(void); @ .text::003c6474\n\n\n/* MoonRock::exeChangeScene() */\n\nvoid MoonRock::exeChangeScene(void)\n\n{\n  return;\n}\n\n");

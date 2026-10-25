@@ -1,0 +1,1 @@
+DOC.got("e/3996",{"32935":{"q":"nn::gfx::detail::DeviceImpl","decl":{"f":"lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h","l":164,"sig":"template <typename TTarget>\nclass DeviceImpl","fi":51},"tp":["typename TTarget"],"derived":[32375],"complete":false,"fwd":[["lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h",164]]}});

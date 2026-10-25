@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Stream/Stream_.text_0074c974.cpp","// Nom démêlé : nn::nex::Stream::~Stream\n// Symbole manglé : ~Stream\n// void __thiscall nn::nex::Stream::~Stream(Stream *this); @ .text::0074c974\n\n\n/* nn::nex::Stream::~Stream() */\n\nvoid __thiscall nn::nex::Stream::~Stream(Stream *this)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/Curl_thread_join.cpp","// Nom démêlé : Curl_thread_join\n// Symbole manglé : Curl_thread_join\n// int Curl_thread_join(long *param_1); @ .text::0080ffdc\n\n\nint Curl_thread_join(long *param_1)\n\n{\n  if (param_1 != (long *)0x0) {\n    return -(uint)(*param_1 == 0);\n  }\n  return -1;\n}\n\n");

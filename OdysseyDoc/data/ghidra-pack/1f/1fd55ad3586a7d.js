@@ -1,0 +1,1 @@
+DOC.got("gh/TimeBalloonFunction/getNoticeDataMax.cpp","// Nom démêlé : TimeBalloonFunction::getNoticeDataMax\n// Symbole manglé : getNoticeDataMax\n// undefined8 TimeBalloonFunction::getNoticeDataMax(void); @ .text::0046e74c\n\n\n/* TimeBalloonFunction::getNoticeDataMax() */\n\nundefined8 TimeBalloonFunction::getNoticeDataMax(void)\n\n{\n  return 0x20;\n}\n\n");

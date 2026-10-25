@@ -1,0 +1,1 @@
+DOC.got("gh/DokanMaze/isAppearStart.cpp","// Nom démêlé : DokanMaze::isAppearStart\n// Symbole manglé : isAppearStart\n// void __thiscall DokanMaze::isAppearStart(DokanMaze *this); @ .text::0035a6f8\n\n\n/* DokanMaze::isAppearStart() */\n\nvoid __thiscall DokanMaze::isAppearStart(DokanMaze *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1deef28);\n  return;\n}\n\n");

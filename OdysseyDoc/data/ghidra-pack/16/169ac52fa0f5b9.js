@@ -1,0 +1,1 @@
+DOC.got("gh/WorldMapMovieUpdater/exeWait_.text_00608fac.cpp","// Nom démêlé : WorldMapMovieUpdater::exeWait\n// Symbole manglé : exeWait\n// void WorldMapMovieUpdater::exeWait(void); @ .text::00608fac\n\n\n/* WorldMapMovieUpdater::exeWait() */\n\nvoid WorldMapMovieUpdater::exeWait(void)\n\n{\n  return;\n}\n\n");

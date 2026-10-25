@@ -1,0 +1,1 @@
+DOC.got("e/3959",{"32695":{"q":"nn::gfx::VertexStateImplData","decl":{"f":"lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h","l":106,"sig":"template <typename TTarget>\nstruct VertexStateImplData","fi":51},"tp":["typename TTarget"],"complete":false,"fwd":[["lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h",106]]}});

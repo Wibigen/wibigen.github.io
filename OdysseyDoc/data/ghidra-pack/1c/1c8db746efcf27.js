@@ -1,0 +1,1 @@
+DOC.got("gh/NpcEventCtrlInfo/getSceneObjName_.text_004a3484.cpp","// Nom démêlé : NpcEventCtrlInfo::getSceneObjName\n// Symbole manglé : getSceneObjName\n// undefined8 NpcEventCtrlInfo::getSceneObjName(void); @ .text::004a3484\n\n\n/* NpcEventCtrlInfo::getSceneObjName() const */\n\nundefined8 NpcEventCtrlInfo::getSceneObjName(void)\n\n{\n  return 0x193d441;\n}\n\n");

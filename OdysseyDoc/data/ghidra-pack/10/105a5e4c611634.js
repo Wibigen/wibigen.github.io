@@ -1,0 +1,1 @@
+DOC.got("gh/HomeChair/capOnPuppetPlayer.cpp","// Nom démêlé : HomeChair::capOnPuppetPlayer\n// Symbole manglé : capOnPuppetPlayer\n// void HomeChair::capOnPuppetPlayer(void); @ .text::003a825c\n\n\n/* HomeChair::capOnPuppetPlayer() */\n\nvoid HomeChair::capOnPuppetPlayer(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/Curl_if_is_interface_name.cpp","// Nom démêlé : Curl_if_is_interface_name\n// Symbole manglé : Curl_if_is_interface_name\n// undefined8 Curl_if_is_interface_name(void); @ .text::0081a490\n\n\nundefined8 Curl_if_is_interface_name(void)\n\n{\n  return 0;\n}\n\n");

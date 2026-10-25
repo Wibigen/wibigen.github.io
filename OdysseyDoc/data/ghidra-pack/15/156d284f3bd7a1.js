@@ -1,0 +1,1 @@
+DOC.got("gh/RaceManRace/control_.text_004b837c.cpp","// Nom démêlé : RaceManRace::control\n// Symbole manglé : control\n// void RaceManRace::control(void); @ .text::004b837c\n\n\n/* RaceManRace::control() */\n\nvoid RaceManRace::control(void)\n\n{\n  return;\n}\n\n");

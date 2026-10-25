@@ -1,0 +1,1 @@
+DOC.got("src/1962","#pragma once\n\n#include \"Library/LiveActor/LiveActor.h\"\n\nclass SaveFlagCheckObj : public al::LiveActor {\npublic:\n    SaveFlagCheckObj(const char* name);\n    void init(const al::ActorInitInfo& info) override;\n};\n");

@@ -1,0 +1,1 @@
+DOC.got("src/2213","#include \"Player/PlayerJudgeDead.h\"\n\n#include \"Library/LiveActor/ActorFlagFunction.h\"\n\n#include \"System/GameDataFunction.h\"\n\nPlayerJudgeDead::PlayerJudgeDead(const al::LiveActor* player) : mPlayer(player) {}\n\nbool PlayerJudgeDead::judge() const {\n    return GameDataFunction::isPlayerLifeZero(mPlayer) || al::isDead(mPlayer);\n}\n");

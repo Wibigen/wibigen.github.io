@@ -1,0 +1,1 @@
+DOC.got("gh/KoopaShell/exeDeactive_.text_0019c484.cpp","// Nom démêlé : KoopaShell::exeDeactive\n// Symbole manglé : exeDeactive\n// void KoopaShell::exeDeactive(void); @ .text::0019c484\n\n\n/* KoopaShell::exeDeactive() */\n\nvoid KoopaShell::exeDeactive(void)\n\n{\n  return;\n}\n\n");

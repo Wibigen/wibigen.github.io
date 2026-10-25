@@ -1,0 +1,1 @@
+DOC.got("src/1030","#pragma once\n\nnamespace al {\nclass Scene;\n}\n\nnamespace alSceneFunction {\ntemplate <typename T>\nal::Scene* createSceneFunc() {\n    return new T();\n}\n}  // namespace alSceneFunction\n");

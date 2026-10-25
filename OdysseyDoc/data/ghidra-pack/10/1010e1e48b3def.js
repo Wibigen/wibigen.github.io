@@ -1,0 +1,1 @@
+DOC.got("gh/ScrollBarParts/exeInvalid_.text_00301c38.cpp","// Nom démêlé : ScrollBarParts::exeInvalid\n// Symbole manglé : exeInvalid\n// void ScrollBarParts::exeInvalid(void); @ .text::00301c38\n\n\n/* ScrollBarParts::exeInvalid() */\n\nvoid ScrollBarParts::exeInvalid(void)\n\n{\n  return;\n}\n\n");

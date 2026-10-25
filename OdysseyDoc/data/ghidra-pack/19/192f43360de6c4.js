@@ -1,0 +1,1 @@
+DOC.got("gh/nn/atk/SoundArchive/IsAddon_.text_00b41ff0.cpp","// Nom démêlé : nn::atk::SoundArchive::IsAddon\n// Symbole manglé : IsAddon\n// undefined8 nn::atk::SoundArchive::IsAddon(void); @ .text::00b41ff0\n\n\n/* nn::atk::SoundArchive::IsAddon() const */\n\nundefined8 nn::atk::SoundArchive::IsAddon(void)\n\n{\n  return 0;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("e/4465",{"35884":{"q":"nvn::MappingRequest","decl":{"f":"lib/NintendoSDK/include/nvn/nvn_Cpp.h","l":110,"sig":"struct MappingRequest","fi":224},"complete":false,"fwd":[["lib/NintendoSDK/include/nvn/nvn_Cpp.h",110]]}});

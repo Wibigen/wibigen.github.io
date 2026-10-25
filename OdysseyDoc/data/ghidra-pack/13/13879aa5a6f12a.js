@@ -1,0 +1,1 @@
+DOC.got("gh/MiniGameLayout/end_.text_002fa6cc.cpp","// Nom démêlé : MiniGameLayout::end\n// Symbole manglé : end\n// void __thiscall MiniGameLayout::end(MiniGameLayout *this); @ .text::002fa6cc\n\n\n/* MiniGameLayout::end() */\n\nvoid __thiscall MiniGameLayout::end(MiniGameLayout *this)\n\n{\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1dca278);\n  return;\n}\n\n");

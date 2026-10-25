@@ -1,0 +1,1 @@
+DOC.got("gh/al/ByamlWriter/pop_.text_00b30c20.cpp","// Nom démêlé : al::ByamlWriter::pop\n// Symbole manglé : pop\n// void __thiscall al::ByamlWriter::pop(ByamlWriter *this); @ .text::00b30c20\n\n\n/* al::ByamlWriter::pop() */\n\nvoid __thiscall al::ByamlWriter::pop(ByamlWriter *this)\n\n{\n  *(int *)(this + 0x4c) = *(int *)(this + 0x4c) + -1;\n  return;\n}\n\n");

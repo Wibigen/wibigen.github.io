@@ -1,0 +1,1 @@
+DOC.got("gh/Mummy/exeWait_.text_0026655c.cpp","// Nom démêlé : Mummy::exeWait\n// Symbole manglé : exeWait\n// void Mummy::exeWait(void); @ .text::0026655c\n\n\n/* Mummy::exeWait() */\n\nvoid Mummy::exeWait(void)\n\n{\n  return;\n}\n\n");

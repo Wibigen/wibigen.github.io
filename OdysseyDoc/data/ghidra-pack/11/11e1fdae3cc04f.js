@@ -1,0 +1,1 @@
+DOC.got("gh/GKShip/exeBattleStartShipAppear.cpp","// Nom démêlé : GKShip::exeBattleStartShipAppear\n// Symbole manglé : exeBattleStartShipAppear\n// void GKShip::exeBattleStartShipAppear(void); @ .text::0016ef04\n\n\n/* GKShip::exeBattleStartShipAppear() */\n\nvoid GKShip::exeBattleStartShipAppear(void)\n\n{\n  return;\n}\n\n");

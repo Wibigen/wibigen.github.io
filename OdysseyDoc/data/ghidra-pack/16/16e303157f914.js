@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/FileStorageUnit/Close_.text_00739a34.cpp","// Nom démêlé : nn::nex::FileStorageUnit::Close\n// Symbole manglé : Close\n// undefined8 nn::nex::FileStorageUnit::Close(void); @ .text::00739a34\n\n\n/* nn::nex::FileStorageUnit::Close() */\n\nundefined8 nn::nex::FileStorageUnit::Close(void)\n\n{\n  return 0;\n}\n\n");

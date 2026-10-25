@@ -1,0 +1,1 @@
+DOC.got("gh/eui/Screen/isEnableControl.cpp","// Nom démêlé : eui::Screen::isEnableControl\n// Symbole manglé : isEnableControl\n// undefined8 eui::Screen::isEnableControl(void); @ .text::008ef4c0\n\n\n/* eui::Screen::isEnableControl() const */\n\nundefined8 eui::Screen::isEnableControl(void)\n\n{\n  return 0;\n}\n\n");

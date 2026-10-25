@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/EndPoint/Open_.text_00752474.cpp","// Nom démêlé : nn::nex::EndPoint::_Open\n// Symbole manglé : _Open\n// void __thiscall nn::nex::EndPoint::_Open(EndPoint *this); @ .text::00752474\n\n\n/* nn::nex::EndPoint::_Open() */\n\nvoid __thiscall nn::nex::EndPoint::_Open(EndPoint *this)\n\n{\n  *(int *)(this + 0xa0) = *(int *)(this + 0xa0) + 1;\n  return;\n}\n\n");

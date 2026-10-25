@@ -1,0 +1,1 @@
+DOC.got("e/4034",{"33099":{"q":"nn::gfx::detail::TextureImpl","decl":{"f":"lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h","l":185,"sig":"template <typename TTarget>\nclass TextureImpl","fi":51},"tp":["typename TTarget"],"derived":[32504],"complete":false,"fwd":[["lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h",185]]}});

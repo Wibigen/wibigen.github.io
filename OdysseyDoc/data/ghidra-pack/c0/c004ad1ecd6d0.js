@@ -1,0 +1,1 @@
+DOC.got("gh/al/ChromakeyDrawer/update_.text_00a837d4.cpp","// Nom démêlé : al::ChromakeyDrawer::update\n// Symbole manglé : update\n// void al::ChromakeyDrawer::update(GraphicsUpdateInfo *param_1); @ .text::00a837d4\n\n\n/* al::ChromakeyDrawer::update(al::GraphicsUpdateInfo const&) */\n\nvoid al::ChromakeyDrawer::update(GraphicsUpdateInfo *param_1)\n\n{\n  return;\n}\n\n");

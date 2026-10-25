@@ -1,0 +1,1 @@
+DOC.got("src/2358","#pragma once\n\n#include \"Library/Camera/CameraPoserFactory.h\"\n\nclass ProjectCameraPoserFactory : public al::CameraPoserFactory {\npublic:\n    ProjectCameraPoserFactory();\n};\n");

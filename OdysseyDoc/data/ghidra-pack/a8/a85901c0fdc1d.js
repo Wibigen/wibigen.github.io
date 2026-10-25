@@ -1,0 +1,1 @@
+DOC.got("gh/Killer2D/isStandBy.cpp","// Nom démêlé : Killer2D::isStandBy\n// Symbole manglé : isStandBy\n// void __thiscall Killer2D::isStandBy(Killer2D *this); @ .text::002475d4\n\n\n/* Killer2D::isStandBy() const */\n\nvoid __thiscall Killer2D::isStandBy(Killer2D *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1d9b7d8);\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/ServerProtocol/GetType_.text_006ffbcc.cpp","// Nom démêlé : nn::nex::ServerProtocol::GetType\n// Symbole manglé : GetType\n// undefined8 nn::nex::ServerProtocol::GetType(void); @ .text::006ffbcc\n\n\n/* nn::nex::ServerProtocol::GetType() const */\n\nundefined8 nn::nex::ServerProtocol::GetType(void)\n\n{\n  return 0x1953d82;\n}\n\n");

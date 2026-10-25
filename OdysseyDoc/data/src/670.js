@@ -1,0 +1,1 @@
+DOC.got("src/670","#pragma once\n\nnamespace al {\nclass LayoutActor;\n\nclass LayoutActorGroup {};\n}  // namespace al\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/KoopaLv1/exeFireBeam.cpp","// Nom démêlé : KoopaLv1::exeFireBeam\n// Symbole manglé : exeFireBeam\n// void __thiscall KoopaLv1::exeFireBeam(KoopaLv1 *this); @ .text::00196bb8\n\n\n/* KoopaLv1::exeFireBeam() */\n\nvoid __thiscall KoopaLv1::exeFireBeam(KoopaLv1 *this)\n\n{\n  al::updateNerveStateAndNextNerve((IUseNerve *)this,(Nerve *)0x1d71268);\n  return;\n}\n\n");

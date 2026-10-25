@@ -1,0 +1,1 @@
+DOC.got("gh/al/Projection/setTop.cpp","// Nom démêlé : al::Projection::setTop\n// Symbole manglé : setTop\n// void __thiscall al::Projection::setTop(Projection *this,float param_1); @ .text::00ac07a0\n\n\n/* al::Projection::setTop(float) */\n\nvoid __thiscall al::Projection::setTop(Projection *this,float param_1)\n\n{\n  *(float *)(this + 0x1d0) = param_1;\n  return;\n}\n\n");

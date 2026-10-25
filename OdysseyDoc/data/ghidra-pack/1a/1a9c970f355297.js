@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerJudgeFailureCameraSubjective/reset_.text_005595bc.cpp","// Nom démêlé : PlayerJudgeFailureCameraSubjective::reset\n// Symbole manglé : reset\n// void PlayerJudgeFailureCameraSubjective::reset(void); @ .text::005595bc\n\n\n/* PlayerJudgeFailureCameraSubjective::reset() */\n\nvoid PlayerJudgeFailureCameraSubjective::reset(void)\n\n{\n  return;\n}\n\n");

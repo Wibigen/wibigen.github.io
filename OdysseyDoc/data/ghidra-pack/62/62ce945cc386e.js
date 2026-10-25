@@ -1,0 +1,1 @@
+DOC.got("gh/PeachWorldMoatWater/exeFallWait.cpp","// Nom démêlé : PeachWorldMoatWater::exeFallWait\n// Symbole manglé : exeFallWait\n// void PeachWorldMoatWater::exeFallWait(void); @ .text::003de6f8\n\n\n/* PeachWorldMoatWater::exeFallWait() */\n\nvoid PeachWorldMoatWater::exeFallWait(void)\n\n{\n  return;\n}\n\n");

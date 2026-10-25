@@ -1,0 +1,1 @@
+DOC.got("gh/LMS_SetMemFuncs.cpp","// Nom démêlé : LMS_SetMemFuncs\n// Symbole manglé : LMS_SetMemFuncs\n// void LMS_SetMemFuncs(undefined8 param_1,undefined8 param_2); @ .text::00c736d0\n\n\nvoid LMS_SetMemFuncs(undefined8 param_1,undefined8 param_2)\n\n{\n  DAT_026a5998 = param_1;\n  DAT_026a59a0 = param_2;\n  return;\n}\n\n");

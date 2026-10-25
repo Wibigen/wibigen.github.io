@@ -1,0 +1,1 @@
+DOC.got("gh/al/AudioEffectCtrlPerBus/init_.text_00913a24.cpp","// Nom démêlé : al::AudioEffectCtrlPerBus::init\n// Symbole manglé : init\n// void al::AudioEffectCtrlPerBus::init(void); @ .text::00913a24\n\n\n/* al::AudioEffectCtrlPerBus::init() */\n\nvoid al::AudioEffectCtrlPerBus::init(void)\n\n{\n  return;\n}\n\n");

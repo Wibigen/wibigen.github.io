@@ -1,0 +1,1 @@
+DOC.got("gh/IBalloonFindMyBalloon/getBrokeCount_.text_00453078.cpp","// Nom démêlé : IBalloonFindMyBalloon::getBrokeCount\n// Symbole manglé : getBrokeCount\n// undefined8 IBalloonFindMyBalloon::getBrokeCount(void); @ .text::00453078\n\n\n/* IBalloonFindMyBalloon::getBrokeCount() const */\n\nundefined8 IBalloonFindMyBalloon::getBrokeCount(void)\n\n{\n  return 0;\n}\n\n");

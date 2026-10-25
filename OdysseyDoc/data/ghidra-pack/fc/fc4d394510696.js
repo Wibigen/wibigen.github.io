@@ -1,0 +1,1 @@
+DOC.got("gh/al/Scene/drawMain_.text_00603fc0.cpp","// Nom démêlé : al::Scene::drawMain\n// Symbole manglé : drawMain\n// void al::Scene::drawMain(void); @ .text::00603fc0\n\n\n/* al::Scene::drawMain() const */\n\nvoid al::Scene::drawMain(void)\n\n{\n  return;\n}\n\n");

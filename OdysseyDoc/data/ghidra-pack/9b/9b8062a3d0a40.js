@@ -1,0 +1,1 @@
+DOC.got("gh/Curl_httpchunk_init.cpp","// Nom démêlé : Curl_httpchunk_init\n// Symbole manglé : Curl_httpchunk_init\n// void Curl_httpchunk_init(long param_1); @ .text::00819260\n\n\nvoid Curl_httpchunk_init(long param_1)\n\n{\n  *(undefined8 *)(param_1 + 0x30) = 0;\n  *(undefined4 *)(param_1 + 0x1c) = 0;\n  *(undefined4 *)(param_1 + 0x20) = 0;\n  return;\n}\n\n");

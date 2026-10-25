@@ -1,0 +1,1 @@
+DOC.got("gh/RouteGuideDirector/getSceneObjName_.text_00401e8c.cpp","// Nom démêlé : RouteGuideDirector::getSceneObjName\n// Symbole manglé : getSceneObjName\n// undefined8 RouteGuideDirector::getSceneObjName(void); @ .text::00401e8c\n\n\n/* RouteGuideDirector::getSceneObjName() const */\n\nundefined8 RouteGuideDirector::getSceneObjName(void)\n\n{\n  return 0x1936eb4;\n}\n\n");

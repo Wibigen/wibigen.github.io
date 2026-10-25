@@ -1,0 +1,1 @@
+DOC.got("src/305","#pragma once\n\n#include <basis/seadTypes.h>\n\nnamespace agl::env {\n\n// TODO\nclass EnvObjSetMgr {\npublic:\n    class InitArg {\n    public:\n        InitArg();\n        virtual ~InitArg() = default;\n\n    private:\n        u32 _8 = 0x100;\n        u32 _c = 0x40;\n    };\n};\n\n}  // namespace agl::env\n");

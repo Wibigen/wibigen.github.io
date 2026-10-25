@@ -1,0 +1,1 @@
+DOC.got("gh/rs/isCollisionCodePress.cpp","// Nom démêlé : rs::isCollisionCodePress\n// Symbole manglé : isCollisionCodePress\n// void rs::isCollisionCodePress(HitInfo *param_1); @ .text::00666440\n\n\n/* rs::isCollisionCodePress(al::HitInfo const&) */\n\nvoid rs::isCollisionCodePress(HitInfo *param_1)\n\n{\n  al::isFloorCode(param_1,(char *)0x1923e8a);\n  return;\n}\n\n");

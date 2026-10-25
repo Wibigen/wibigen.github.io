@@ -1,0 +1,1 @@
+DOC.got("e/4085",{"33324":{"q":"nn::hid::SixAxisSensorHandle","decl":{"f":"lib/NintendoSDK/include/nn/hid.h","l":475,"sig":"struct SixAxisSensorHandle","end":484,"fi":133},"size":4,"align":4,"complete":true}});

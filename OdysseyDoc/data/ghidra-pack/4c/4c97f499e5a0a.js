@@ -1,0 +1,1 @@
+DOC.got("gh/FilterScope/end_.text_002eb010.cpp","// Nom démêlé : FilterScope::end\n// Symbole manglé : end\n// void __thiscall FilterScope::end(FilterScope *this); @ .text::002eb010\n\n\n/* FilterScope::end() */\n\nvoid __thiscall FilterScope::end(FilterScope *this)\n\n{\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1dc68c8);\n  return;\n}\n\n");

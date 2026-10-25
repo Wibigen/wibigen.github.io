@@ -1,0 +1,1 @@
+DOC.got("src/477","#include \"Library/Camera/CameraViewCtrlPause.h\"\n\nnamespace al {\n\nPauseCameraCtrl::PauseCameraCtrl(f32 v) : _4(v) {}\n\n}  // namespace al\n");

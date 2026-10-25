@@ -1,0 +1,1 @@
+DOC.got("src/1143","#include \"Project/Action/ActionAnimCtrl.h\"\n\n#include \"Library/LiveActor/LiveActor.h\"\n\nnamespace al {\nActionAnimCtrl::ActionAnimCtrl(LiveActor* actor) : mParentActor(actor) {}\n\n}  // namespace al\n");

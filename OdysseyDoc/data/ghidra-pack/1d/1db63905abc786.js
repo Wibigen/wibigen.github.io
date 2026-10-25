@@ -1,0 +1,1 @@
+DOC.got("gh/Curl_ipv6_scope.cpp","// Nom démêlé : Curl_ipv6_scope\n// Symbole manglé : Curl_ipv6_scope\n// undefined8 Curl_ipv6_scope(void); @ .text::0081a488\n\n\nundefined8 Curl_ipv6_scope(void)\n\n{\n  return 0;\n}\n\n");

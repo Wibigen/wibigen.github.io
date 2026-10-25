@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/QueuingSocket/IsRecvDataExists.cpp","// Nom démêlé : nn::nex::QueuingSocket::IsRecvDataExists\n// Symbole manglé : IsRecvDataExists\n// undefined8 nn::nex::QueuingSocket::IsRecvDataExists(void); @ .text::0078edc4\n\n\n/* nn::nex::QueuingSocket::IsRecvDataExists() const */\n\nundefined8 nn::nex::QueuingSocket::IsRecvDataExists(void)\n\n{\n  return 1;\n}\n\n");

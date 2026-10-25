@@ -1,0 +1,1 @@
+DOC.got("gh/sead/EnvUtil/getTarget_.text_00c5eed0.cpp","// Nom démêlé : sead::EnvUtil::getTarget\n// Symbole manglé : getTarget\n// undefined8 sead::EnvUtil::getTarget(void); @ .text::00c5eed0\n\n\n/* sead::EnvUtil::getTarget() */\n\nundefined8 sead::EnvUtil::getTarget(void)\n\n{\n  return 3;\n}\n\n");

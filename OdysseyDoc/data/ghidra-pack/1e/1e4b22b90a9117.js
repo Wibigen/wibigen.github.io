@@ -1,0 +1,1 @@
+DOC.got("gh/sead/OrthoProjection/getFovy_.text_00860234.cpp","// Nom démêlé : sead::OrthoProjection::getFovy\n// Symbole manglé : getFovy\n// undefined1  [16] sead::OrthoProjection::getFovy(void); @ .text::00860234\n\n\n/* sead::OrthoProjection::getFovy() const */\n\nundefined1  [16] sead::OrthoProjection::getFovy(void)\n\n{\n  return ZEXT816(0);\n}\n\n");

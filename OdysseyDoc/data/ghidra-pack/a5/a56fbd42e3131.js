@@ -1,0 +1,1 @@
+DOC.got("gh/GameDataFunction/getWorldIndexSpecial2.cpp","// Nom démêlé : GameDataFunction::getWorldIndexSpecial2\n// Symbole manglé : getWorldIndexSpecial2\n// undefined8 GameDataFunction::getWorldIndexSpecial2(void); @ .text::0062a138\n\n\n/* GameDataFunction::getWorldIndexSpecial2() */\n\nundefined8 GameDataFunction::getWorldIndexSpecial2(void)\n\n{\n  return 0x10;\n}\n\n");

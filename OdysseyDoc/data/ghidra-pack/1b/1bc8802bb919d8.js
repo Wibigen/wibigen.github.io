@@ -1,0 +1,1 @@
+DOC.got("gh/KillerLauncherDot/exeSleep.cpp","// Nom démêlé : KillerLauncherDot::exeSleep\n// Symbole manglé : exeSleep\n// void KillerLauncherDot::exeSleep(void); @ .text::0024911c\n\n\n/* KillerLauncherDot::exeSleep() */\n\nvoid KillerLauncherDot::exeSleep(void)\n\n{\n  return;\n}\n\n");

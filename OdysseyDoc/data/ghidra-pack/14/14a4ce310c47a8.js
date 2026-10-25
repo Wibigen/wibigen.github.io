@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Event/GetType_.text_0070fb40.cpp","// Nom démêlé : nn::nex::Event::GetType\n// Symbole manglé : GetType\n// undefined4 __thiscall nn::nex::Event::GetType(Event *this); @ .text::0070fb40\n\n\n/* nn::nex::Event::GetType() */\n\nundefined4 __thiscall nn::nex::Event::GetType(Event *this)\n\n{\n  return *(undefined4 *)(this + 0x10);\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/CameraPoser/startSnapShotMode_.text_001cd588.cpp","// Nom démêlé : al::CameraPoser::startSnapShotMode\n// Symbole manglé : startSnapShotMode\n// void al::CameraPoser::startSnapShotMode(void); @ .text::001cd588\n\n\n/* al::CameraPoser::startSnapShotMode() */\n\nvoid al::CameraPoser::startSnapShotMode(void)\n\n{\n  return;\n}\n\n");

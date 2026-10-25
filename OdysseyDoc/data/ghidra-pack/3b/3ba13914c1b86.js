@@ -1,0 +1,1 @@
+DOC.got("gh/sead/TaskBase/pauseCalcChild_.text_00836440.cpp","// Nom démêlé : sead::TaskBase::pauseCalcChild\n// Symbole manglé : pauseCalcChild\n// bool sead::TaskBase::pauseCalcChild(bool param_1); @ .text::00836440\n\n\n/* sead::TaskBase::pauseCalcChild(bool) */\n\nbool sead::TaskBase::pauseCalcChild(bool param_1)\n\n{\n  return param_1;\n}\n\n");

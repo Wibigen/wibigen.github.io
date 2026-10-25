@@ -1,0 +1,1 @@
+DOC.got("gh/BossKnuckleAnimCtrl/exeBeforeStart.cpp","// Nom démêlé : BossKnuckleAnimCtrl::exeBeforeStart\n// Symbole manglé : exeBeforeStart\n// void BossKnuckleAnimCtrl::exeBeforeStart(void); @ .text::00127ab4\n\n\n/* BossKnuckleAnimCtrl::exeBeforeStart() */\n\nvoid BossKnuckleAnimCtrl::exeBeforeStart(void)\n\n{\n  return;\n}\n\n");

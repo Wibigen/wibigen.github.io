@@ -1,0 +1,1 @@
+DOC.got("gh/agl/ResShaderArchiveData/getVersion_.text_008c10a8.cpp","// Nom démêlé : agl::ResShaderArchiveData::getVersion\n// Symbole manglé : getVersion\n// undefined8 agl::ResShaderArchiveData::getVersion(void); @ .text::008c10a8\n\n\n/* agl::ResShaderArchiveData::getVersion() */\n\nundefined8 agl::ResShaderArchiveData::getVersion(void)\n\n{\n  return 0xd;\n}\n\n");

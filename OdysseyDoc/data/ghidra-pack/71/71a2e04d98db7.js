@@ -1,0 +1,1 @@
+DOC.got("gh/sead/Framework/quitRun.cpp","// Nom démêlé : sead::Framework::quitRun_\n// Symbole manglé : quitRun_\n// void sead::Framework::quitRun_(Heap *param_1); @ .text::00832e30\n\n\n/* sead::Framework::quitRun_(sead::Heap*) */\n\nvoid sead::Framework::quitRun_(Heap *param_1)\n\n{\n  return;\n}\n\n");

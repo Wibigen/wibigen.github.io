@@ -1,0 +1,1 @@
+DOC.got("gh/wslay_queue_pop.cpp","// Nom démêlé : wslay_queue_pop\n// Symbole manglé : wslay_queue_pop\n// void wslay_queue_pop(long *param_1); @ .text::007a2ed4\n\n\nvoid wslay_queue_pop(long *param_1)\n\n{\n  long lVar1;\n  \n  lVar1 = *param_1;\n  *param_1 = *(long *)(lVar1 + 8);\n  if (lVar1 == param_1[1]) {\n    param_1[1] = 0;\n  }\n  wslay_free();\n  return;\n}\n\n");

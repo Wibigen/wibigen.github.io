@@ -1,0 +1,1 @@
+DOC.got("gh/al/getAudioDirector.cpp","// Nom démêlé : al::getAudioDirector\n// Symbole manglé : getAudioDirector\n// undefined8 al::getAudioDirector(ActorInitInfo *param_1); @ .text::009ded1c\n\n\n/* al::getAudioDirector(al::ActorInitInfo const&) */\n\nundefined8 al::getAudioDirector(ActorInitInfo *param_1)\n\n{\n  return *(undefined8 *)(param_1 + 0xd0);\n}\n\n");

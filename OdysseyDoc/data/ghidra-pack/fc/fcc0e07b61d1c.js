@@ -1,0 +1,1 @@
+DOC.got("gh/TimeBalloon/clearNotice.cpp","// Nom démêlé : TimeBalloon::clearNotice\n// Symbole manglé : clearNotice\n// void TimeBalloon::clearNotice(NoticeData *param_1); @ .text::0046e6b0\n\n\n/* TimeBalloon::clearNotice(TimeBalloon::NoticeData*) */\n\nvoid TimeBalloon::clearNotice(NoticeData *param_1)\n\n{\n  *(undefined8 *)(param_1 + 0x28) = 0;\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerJudgeCapCatch/update_.text_00558c60.cpp","// Nom démêlé : PlayerJudgeCapCatch::update\n// Symbole manglé : update\n// void PlayerJudgeCapCatch::update(void); @ .text::00558c60\n\n\n/* PlayerJudgeCapCatch::update() */\n\nvoid PlayerJudgeCapCatch::update(void)\n\n{\n  return;\n}\n\n");

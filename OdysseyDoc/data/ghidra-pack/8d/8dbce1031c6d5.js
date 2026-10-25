@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/ChecksumAlgorithm/IsReady_.text_00747f94.cpp","// Nom démêlé : nn::nex::ChecksumAlgorithm::IsReady\n// Symbole manglé : IsReady\n// undefined8 nn::nex::ChecksumAlgorithm::IsReady(void); @ .text::00747f94\n\n\n/* nn::nex::ChecksumAlgorithm::IsReady() const */\n\nundefined8 nn::nex::ChecksumAlgorithm::IsReady(void)\n\n{\n  return 1;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/ShibakenMoveAnimCtrl/exeMove_.text_004ca8b0.cpp","// Nom démêlé : ShibakenMoveAnimCtrl::exeMove\n// Symbole manglé : exeMove\n// void ShibakenMoveAnimCtrl::exeMove(void); @ .text::004ca8b0\n\n\n/* ShibakenMoveAnimCtrl::exeMove() */\n\nvoid ShibakenMoveAnimCtrl::exeMove(void)\n\n{\n  return;\n}\n\n");

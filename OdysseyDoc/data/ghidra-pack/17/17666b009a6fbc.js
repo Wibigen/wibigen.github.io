@@ -1,0 +1,1 @@
+DOC.got("gh/CapThrower/isNeedStartTowerCamera.cpp","// Nom démêlé : CapThrower::isNeedStartTowerCamera\n// Symbole manglé : isNeedStartTowerCamera\n// undefined8 CapThrower::isNeedStartTowerCamera(void); @ .text::00152638\n\n\n/* CapThrower::isNeedStartTowerCamera() */\n\nundefined8 CapThrower::isNeedStartTowerCamera(void)\n\n{\n  return 1;\n}\n\n");

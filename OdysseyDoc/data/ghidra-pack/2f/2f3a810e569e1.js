@@ -1,0 +1,1 @@
+DOC.got("gh/free_.text_00824bec.cpp","// Nom démêlé : free\n// Symbole manglé : free\n// void free(void *__ptr); @ .text::00824bec\n\n\nvoid free(void *__ptr)\n\n{\n  if (__ptr != (void *)0x0) {\n    nn::mem::StandardAllocator::Free(&DAT_02573620);\n    return;\n  }\n  return;\n}\n\n");

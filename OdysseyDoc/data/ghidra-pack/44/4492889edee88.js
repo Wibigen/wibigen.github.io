@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Chrono/GetState.cpp","// Nom démêlé : nn::nex::Chrono::GetState\n// Symbole manglé : GetState\n// undefined4 __thiscall nn::nex::Chrono::GetState(Chrono *this); @ .text::007375a0\n\n\n/* nn::nex::Chrono::GetState() const */\n\nundefined4 __thiscall nn::nex::Chrono::GetState(Chrono *this)\n\n{\n  return *(undefined4 *)(this + 0x24);\n}\n\n");

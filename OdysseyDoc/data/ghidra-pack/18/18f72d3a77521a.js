@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Time/Reset_.text_00721f1c.cpp","// Nom démêlé : nn::nex::Time::Reset\n// Symbole manglé : Reset\n// void nn::nex::Time::Reset(void); @ .text::00721f1c\n\n\n/* nn::nex::Time::Reset() */\n\nvoid nn::nex::Time::Reset(void)\n\n{\n  *PTR_s_bInitialized_01f58468 = 0;\n  return;\n}\n\n");

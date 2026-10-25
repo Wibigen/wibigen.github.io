@@ -1,0 +1,1 @@
+DOC.got("gh/nn/gfx/detail/IsSrgbFormat.cpp","// Nom démêlé : nn::gfx::detail::IsSrgbFormat\n// Symbole manglé : IsSrgbFormat\n// bool nn::gfx::detail::IsSrgbFormat(int param_1); @ .text::008246b4\n\n\n/* nn::gfx::detail::IsSrgbFormat(nn::gfx::TypeFormat) */\n\nbool nn::gfx::detail::IsSrgbFormat(int param_1)\n\n{\n  return param_1 == 6;\n}\n\n");

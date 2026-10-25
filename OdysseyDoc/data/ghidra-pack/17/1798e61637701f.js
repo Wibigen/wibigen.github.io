@@ -1,0 +1,1 @@
+DOC.got("gh/RhythmSpotlightBgmInfo/stopStrobeAnim.cpp","// Nom démêlé : RhythmSpotlightBgmInfo::stopStrobeAnim\n// Symbole manglé : stopStrobeAnim\n// void RhythmSpotlightBgmInfo::stopStrobeAnim(void); @ .text::003f8cbc\n\n\n/* RhythmSpotlightBgmInfo::stopStrobeAnim() */\n\nvoid RhythmSpotlightBgmInfo::stopStrobeAnim(void)\n\n{\n  return;\n}\n\n");

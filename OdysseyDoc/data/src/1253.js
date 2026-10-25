@@ -1,0 +1,1 @@
+DOC.got("src/1253","#pragma once\n\n#include <basis/seadTypes.h>\n#include <heap/seadHeap.h>\n\nnamespace al {\n\nvoid copyMemoryFast(u32*, const u32*, u32);\nvoid copyMemory(void*, const void*, u32);\nbool tryCompressByZlib(u8*, u32*, const u8*, u32);\nbool tryDecompressByZlib(u8*, u32*, const u8*, u32);\nsead::Heap* getCurrentHeap();\n\n}  // namespace al\n");

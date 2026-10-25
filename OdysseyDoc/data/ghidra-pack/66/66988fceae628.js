@@ -1,0 +1,1 @@
+DOC.got("gh/al/tryRequestLoadSoundItem.cpp","// Nom démêlé : al::tryRequestLoadSoundItem\n// Symbole manglé : tryRequestLoadSoundItem\n// undefined8 al::tryRequestLoadSoundItem(uint param_1); @ .text::009982d4\n\n\n/* al::tryRequestLoadSoundItem(unsigned int) */\n\nundefined8 al::tryRequestLoadSoundItem(uint param_1)\n\n{\n  return 0;\n}\n\n");

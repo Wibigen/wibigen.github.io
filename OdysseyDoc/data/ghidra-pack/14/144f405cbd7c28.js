@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/CallContextRegister/GetType_.text_0074801c.cpp","// Nom démêlé : nn::nex::CallContextRegister::GetType\n// Symbole manglé : GetType\n// undefined8 nn::nex::CallContextRegister::GetType(void); @ .text::0074801c\n\n\n/* nn::nex::CallContextRegister::GetType() const */\n\nundefined8 nn::nex::CallContextRegister::GetType(void)\n\n{\n  return 0x1955efe;\n}\n\n");

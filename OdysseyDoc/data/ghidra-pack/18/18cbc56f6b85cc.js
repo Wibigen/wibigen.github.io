@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerJudgeIsNerve/update_.text_00559fe0.cpp","// Nom démêlé : PlayerJudgeIsNerve::update\n// Symbole manglé : update\n// void PlayerJudgeIsNerve::update(void); @ .text::00559fe0\n\n\n/* PlayerJudgeIsNerve::update() */\n\nvoid PlayerJudgeIsNerve::update(void)\n\n{\n  return;\n}\n\n");

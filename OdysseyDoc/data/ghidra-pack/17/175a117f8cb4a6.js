@@ -1,0 +1,1 @@
+DOC.got("gh/nn/ui2d/TexMap/Finalize_.text_00c0b988.cpp","// Nom démêlé : nn::ui2d::TexMap::Finalize\n// Symbole manglé : Finalize\n// void nn::ui2d::TexMap::Finalize(void); @ .text::00c0b988\n\n\n/* nn::ui2d::TexMap::Finalize() */\n\nvoid nn::ui2d::TexMap::Finalize(void)\n\n{\n  return;\n}\n\n");

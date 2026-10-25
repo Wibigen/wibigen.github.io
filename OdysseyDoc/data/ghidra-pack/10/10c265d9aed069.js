@@ -1,0 +1,1 @@
+DOC.got("gh/PackunFire/exeYoshiTongueEatBind.cpp","// Nom démêlé : PackunFire::exeYoshiTongueEatBind\n// Symbole manglé : exeYoshiTongueEatBind\n// void PackunFire::exeYoshiTongueEatBind(void); @ .text::0026f5ec\n\n\n/* PackunFire::exeYoshiTongueEatBind() */\n\nvoid PackunFire::exeYoshiTongueEatBind(void)\n\n{\n  return;\n}\n\n");

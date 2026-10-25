@@ -1,0 +1,1 @@
+DOC.got("src/2527","#pragma once\n\n#include <basis/seadTypes.h>\n\nnamespace rs {\nvoid convertCsecTo(s32* minutes, s32* seconds, s32* csec, s32 time);\n}  // namespace rs\n\nnamespace RaceTimeFunction {\ns32 getRaceTimeMaxFrame();\nu32 getRaceTimeMaxCsec();\ns32 clampRaceRecordCsec(s32 csec);\n}  // namespace RaceTimeFunction\n");

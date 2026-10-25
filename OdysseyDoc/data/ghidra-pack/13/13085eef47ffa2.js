@@ -1,0 +1,1 @@
+DOC.got("gh/PaintObjHolder/execute_.text_003dcb70.cpp","// Nom démêlé : PaintObjHolder::execute\n// Symbole manglé : execute\n// void PaintObjHolder::execute(void); @ .text::003dcb70\n\n\n/* PaintObjHolder::execute() */\n\nvoid PaintObjHolder::execute(void)\n\n{\n  return;\n}\n\n");

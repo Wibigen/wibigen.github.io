@@ -1,0 +1,1 @@
+DOC.got("src/1","#pragma once\n\nnamespace nn::album {\nenum ImageOrientation {\n    ImageOrientation_None,\n    ImageOrientation_Rotate90,\n    ImageOrientation_Rotate180,\n    ImageOrientation_Rotate270\n};\n}  // namespace nn::album\n");

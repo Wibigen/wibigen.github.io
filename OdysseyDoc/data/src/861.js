@@ -1,0 +1,1 @@
+DOC.got("src/861","#pragma once\n\n#include <basis/seadTypes.h>\n\nnamespace al {\nenum class MoveType : u32 {\n    Loop,\n    Turn,\n    Stop,\n    Restart,\n};\n}\n");

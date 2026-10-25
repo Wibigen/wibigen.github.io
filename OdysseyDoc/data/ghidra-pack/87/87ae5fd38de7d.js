@@ -1,0 +1,1 @@
+DOC.got("gh/TalkPoint/exeWait_.text_00433c00.cpp","// Nom démêlé : TalkPoint::exeWait\n// Symbole manglé : exeWait\n// void __thiscall TalkPoint::exeWait(TalkPoint *this); @ .text::00433c00\n\n\n/* TalkPoint::exeWait() */\n\nvoid __thiscall TalkPoint::exeWait(TalkPoint *this)\n\n{\n  rs::updateEventFlow(*(EventFlowExecutor **)(this + 0x108));\n  return;\n}\n\n");

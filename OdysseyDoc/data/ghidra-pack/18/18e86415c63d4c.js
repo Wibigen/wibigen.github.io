@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Ticket/IsValid_.text_007c6980.cpp","// Nom démêlé : nn::nex::Ticket::IsValid\n// Symbole manglé : IsValid\n// Ticket __thiscall nn::nex::Ticket::IsValid(Ticket *this); @ .text::007c6980\n\n\n/* nn::nex::Ticket::IsValid() const */\n\nTicket __thiscall nn::nex::Ticket::IsValid(Ticket *this)\n\n{\n  return this[0xd];\n}\n\n");

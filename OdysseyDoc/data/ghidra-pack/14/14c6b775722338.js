@@ -1,0 +1,1 @@
+DOC.got("gh/sead/SeparateHeap/isFreeable_.text_00c5c954.cpp","// Nom démêlé : sead::SeparateHeap::isFreeable\n// Symbole manglé : isFreeable\n// undefined8 sead::SeparateHeap::isFreeable(void); @ .text::00c5c954\n\n\n/* sead::SeparateHeap::isFreeable() const */\n\nundefined8 sead::SeparateHeap::isFreeable(void)\n\n{\n  return 1;\n}\n\n");

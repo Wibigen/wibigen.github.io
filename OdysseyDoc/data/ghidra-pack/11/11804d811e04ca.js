@@ -1,0 +1,1 @@
+DOC.got("gh/sead/ExpHeap/free_.text_008413f0.cpp","// Nom démêlé : sead::ExpHeap::free\n// Symbole manglé : free\n// void __thiscall sead::ExpHeap::free(ExpHeap *this,void *param_1); @ .text::008413f0\n\n\n/* sead::ExpHeap::free(void*) */\n\nvoid __thiscall sead::ExpHeap::free(ExpHeap *this,void *param_1)\n\n{\n  freeAndGetAllocatableSize(this,param_1,8);\n  return;\n}\n\n");

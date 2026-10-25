@@ -1,0 +1,1 @@
+DOC.got("gh/PillarSwitchOpenMapParts/exeWaitOpend.cpp","// Nom démêlé : PillarSwitchOpenMapParts::exeWaitOpend\n// Symbole manglé : exeWaitOpend\n// void PillarSwitchOpenMapParts::exeWaitOpend(void); @ .text::003e18d8\n\n\n/* PillarSwitchOpenMapParts::exeWaitOpend() */\n\nvoid PillarSwitchOpenMapParts::exeWaitOpend(void)\n\n{\n  return;\n}\n\n");

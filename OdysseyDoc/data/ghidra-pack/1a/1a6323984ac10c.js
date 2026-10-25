@@ -1,0 +1,1 @@
+DOC.got("gh/FUN_.text_0027ba64.cpp","// Nom démêlé : FUN_.text__0027ba64\n// Symbole manglé : FUN_.text__0027ba64\n// uint FUN_.text__0027ba64(undefined8 param_1,AreaObj *param_2); @ .text::0027ba64\n\n\nuint FUN__text__0027ba64(undefined8 param_1,AreaObj *param_2)\n\n{\n  uint uVar1;\n  \n  uVar1 = al::isWaterAreaIgnore(param_2);\n  return ~uVar1 & 1;\n}\n\n");

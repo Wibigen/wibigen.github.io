@@ -1,0 +1,1 @@
+DOC.got("src/1006","#pragma once\n\nnamespace al {\nclass RailRider;\n\nclass IUseRail {\npublic:\n    virtual RailRider* getRailRider() const = 0;\n};\n}  // namespace al\n");

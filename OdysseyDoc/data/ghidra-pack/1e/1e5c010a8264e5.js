@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerJudgeTalkGround/reset_.text_0055bca0.cpp","// Nom démêlé : PlayerJudgeTalkGround::reset\n// Symbole manglé : reset\n// void PlayerJudgeTalkGround::reset(void); @ .text::0055bca0\n\n\n/* PlayerJudgeTalkGround::reset() */\n\nvoid PlayerJudgeTalkGround::reset(void)\n\n{\n  return;\n}\n\n");

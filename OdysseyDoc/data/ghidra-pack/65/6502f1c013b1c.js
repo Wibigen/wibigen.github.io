@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/TraceLog/GetInstance_.text_00710fbc.cpp","// Nom démêlé : nn::nex::TraceLog::GetInstance\n// Symbole manglé : GetInstance\n// long nn::nex::TraceLog::GetInstance(void); @ .text::00710fbc\n\n\n/* nn::nex::TraceLog::GetInstance() */\n\nlong nn::nex::TraceLog::GetInstance(void)\n\n{\n  return *(long *)PTR_s_pGv_01f58288 + 0x1c8;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/isActiveCamera.cpp","// Nom démêlé : al::isActiveCamera\n// Symbole manglé : isActiveCamera\n// CameraTicket al::isActiveCamera(CameraTicket *param_1); @ .text::0093c630\n\n\n/* al::isActiveCamera(al::CameraTicket const*) */\n\nCameraTicket al::isActiveCamera(CameraTicket *param_1)\n\n{\n  return param_1[0x14];\n}\n\n");

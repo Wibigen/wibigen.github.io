@@ -1,0 +1,1 @@
+DOC.got("gh/al/FogParam/isApplySky.cpp","// Nom démêlé : al::FogParam::isApplySky\n// Symbole manglé : isApplySky\n// undefined1 __thiscall al::FogParam::isApplySky(FogParam *this); @ .text::009a1dcc\n\n\n/* al::FogParam::isApplySky() const */\n\nundefined1 __thiscall al::FogParam::isApplySky(FogParam *this)\n\n{\n  return *(undefined1 *)(*(long *)(this + 0x18) + 0x6c);\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/nn/vfx/System/System_.text_00c37b8c.cpp","// Nom démêlé : nn::vfx::System::~System\n// Symbole manglé : ~System\n// void __thiscall nn::vfx::System::~System(System *this); @ .text::00c37b8c\n\n\n/* nn::vfx::System::~System() */\n\nvoid __thiscall nn::vfx::System::~System(System *this)\n\n{\n  ~System(this);\n  operator_delete(this);\n  return;\n}\n\n");

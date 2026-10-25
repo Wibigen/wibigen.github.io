@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerInput/resetAlongWall.cpp","// Nom démêlé : PlayerInput::resetAlongWall\n// Symbole manglé : resetAlongWall\n// void __thiscall PlayerInput::resetAlongWall(PlayerInput *this); @ .text::0054c0d4\n\n\n/* PlayerInput::resetAlongWall() */\n\nvoid __thiscall PlayerInput::resetAlongWall(PlayerInput *this)\n\n{\n  *(undefined8 *)(this + 0x1c) = 0;\n  return;\n}\n\n");

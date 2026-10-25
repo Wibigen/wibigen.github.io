@@ -1,0 +1,1 @@
+DOC.got("gh/rs/isRideSphinx.cpp","// Nom démêlé : rs::isRideSphinx\n// Symbole manglé : isRideSphinx\n// undefined1 rs::isRideSphinx(long param_1); @ .text::00634390\n\n\n/* rs::isRideSphinx(GameDataHolderAccessor) */\n\nundefined1 rs::isRideSphinx(long param_1)\n\n{\n  return *(undefined1 *)(*(long *)(param_1 + 0x20) + 2000);\n}\n\n");

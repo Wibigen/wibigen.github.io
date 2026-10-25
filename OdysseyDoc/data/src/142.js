@@ -1,0 +1,1 @@
+DOC.got("src/142","#pragma once\n\n#include <nn/types.h>\n\nnamespace nn::irsensor {\nstruct DpdProcessorState {\n    s64 samplingNumber;\n    s64 timeStamp;\n    s32 pointingStatus;\n    f32 positionX;\n    f32 positionY;\n};\n}  // namespace nn::irsensor\n");

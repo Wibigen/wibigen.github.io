@@ -1,0 +1,1 @@
+DOC.got("gh/al/RailRider/reverse_.text_00ac3700.cpp","// Nom démêlé : al::RailRider::reverse\n// Symbole manglé : reverse\n// void __thiscall al::RailRider::reverse(RailRider *this); @ .text::00ac3700\n\n\n/* al::RailRider::reverse() */\n\nvoid __thiscall al::RailRider::reverse(RailRider *this)\n\n{\n  this[0x28] = (RailRider)((byte)this[0x28] ^ 1);\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/CollectBgmSpeaker/exeWait_.text_00350548.cpp","// Nom démêlé : CollectBgmSpeaker::exeWait\n// Symbole manglé : exeWait\n// void CollectBgmSpeaker::exeWait(void); @ .text::00350548\n\n\n/* CollectBgmSpeaker::exeWait() */\n\nvoid CollectBgmSpeaker::exeWait(void)\n\n{\n  return;\n}\n\n");

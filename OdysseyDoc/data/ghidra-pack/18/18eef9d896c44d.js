@@ -1,0 +1,1 @@
+DOC.got("gh/KoopaPuppet/showModel.cpp","// Nom démêlé : KoopaPuppet::showModel\n// Symbole manglé : showModel\n// void __thiscall KoopaPuppet::showModel(KoopaPuppet *this); @ .text::001997f0\n\n\n/* KoopaPuppet::showModel() */\n\nvoid __thiscall KoopaPuppet::showModel(KoopaPuppet *this)\n\n{\n  al::showModelIfHide(*(LiveActor **)this);\n  return;\n}\n\n");

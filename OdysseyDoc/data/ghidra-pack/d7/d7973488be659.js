@@ -1,0 +1,1 @@
+DOC.got("gh/BootLayout/isEndWipe.cpp","// Nom démêlé : BootLayout::isEndWipe\n// Symbole manglé : isEndWipe\n// void __thiscall BootLayout::isEndWipe(BootLayout *this); @ .text::002db770\n\n\n/* BootLayout::isEndWipe() const */\n\nvoid __thiscall BootLayout::isEndWipe(BootLayout *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1dc1e08);\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/MayorItem/endPresent.cpp","// Nom démêlé : MayorItem::endPresent\n// Symbole manglé : endPresent\n// void __thiscall MayorItem::endPresent(MayorItem *this); @ .text::002ccd10\n\n\n/* MayorItem::endPresent() */\n\nvoid __thiscall MayorItem::endPresent(MayorItem *this)\n\n{\n  this[0x118] = (MayorItem)0x1;\n  return;\n}\n\n");

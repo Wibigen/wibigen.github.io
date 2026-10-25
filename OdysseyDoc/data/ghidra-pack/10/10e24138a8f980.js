@@ -1,0 +1,1 @@
+DOC.got("gh/MoveHomeNpc/exeTalkEnd.cpp","// Nom démêlé : MoveHomeNpc::exeTalkEnd\n// Symbole manglé : exeTalkEnd\n// void MoveHomeNpc::exeTalkEnd(void); @ .text::004a2a74\n\n\n/* MoveHomeNpc::exeTalkEnd() */\n\nvoid MoveHomeNpc::exeTalkEnd(void)\n\n{\n  return;\n}\n\n");

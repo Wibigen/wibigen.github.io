@@ -1,0 +1,1 @@
+DOC.got("gh/Poetter/control_.text_004af920.cpp","// Nom démêlé : Poetter::control\n// Symbole manglé : control\n// void Poetter::control(void); @ .text::004af920\n\n\n/* Poetter::control() */\n\nvoid Poetter::control(void)\n\n{\n  return;\n}\n\n");

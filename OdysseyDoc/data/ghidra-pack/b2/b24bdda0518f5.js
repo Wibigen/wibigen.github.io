@@ -1,0 +1,1 @@
+DOC.got("gh/sead/FrameBuffer/FrameBuffer_.text_0085e394.cpp","// Nom démêlé : sead::FrameBuffer::~FrameBuffer\n// Symbole manglé : ~FrameBuffer\n// void __thiscall sead::FrameBuffer::~FrameBuffer(FrameBuffer *this); @ .text::0085e394\n\n\n/* sead::FrameBuffer::~FrameBuffer() */\n\nvoid __thiscall sead::FrameBuffer::~FrameBuffer(FrameBuffer *this)\n\n{\n  return;\n}\n\n");

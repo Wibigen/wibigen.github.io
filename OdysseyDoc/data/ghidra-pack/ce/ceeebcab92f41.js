@@ -1,0 +1,1 @@
+DOC.got("gh/sead/PrimitiveDrawMgrNvn/endImpl.cpp","// Nom démêlé : sead::PrimitiveDrawMgrNvn::endImpl\n// Symbole manglé : endImpl\n// void sead::PrimitiveDrawMgrNvn::endImpl(DrawContext *param_1); @ .text::0083c478\n\n\n/* sead::PrimitiveDrawMgrNvn::endImpl(sead::DrawContext*) */\n\nvoid sead::PrimitiveDrawMgrNvn::endImpl(DrawContext *param_1)\n\n{\n  return;\n}\n\n");

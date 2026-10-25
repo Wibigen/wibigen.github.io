@@ -1,0 +1,1 @@
+DOC.got("e/3812",{"31816":{"q":"nn::gfx::DescriptorSlotData","decl":{"f":"lib/NintendoSDK/include/nn/gfx/gfx_DescriptorSlot.h","l":8,"sig":"struct DescriptorSlotData","end":10,"fi":79},"size":8,"align":8,"complete":true,"fields":[{"n":"value","t":"uint64_t","off":0,"sz":8,"acc":"public","bits":null,"l":9,"cm":null,"ti":null}]}});

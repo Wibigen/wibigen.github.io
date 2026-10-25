@@ -1,0 +1,1 @@
+DOC.got("e/3746",{"31577":{"q":"nn::g3d::WorldMtxManip","decl":{"f":"lib/NintendoSDK/include/nn/g3d/World.h","l":5,"sig":"class WorldMtxManip","fi":44},"complete":false,"fwd":[["lib/NintendoSDK/include/nn/g3d/World.h",5]]}});

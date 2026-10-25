@@ -1,0 +1,1 @@
+DOC.got("gh/al/isSensorBindableKoura.cpp","// Nom démêlé : al::isSensorBindableKoura\n// Symbole manglé : isSensorBindableKoura\n// bool al::isSensorBindableKoura(HitSensor *param_1); @ .text::009fdb24\n\n\n/* al::isSensorBindableKoura(al::HitSensor const*) */\n\nbool al::isSensorBindableKoura(HitSensor *param_1)\n\n{\n  return *(int *)(param_1 + 8) == 0x16;\n}\n\n");

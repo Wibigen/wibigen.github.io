@@ -1,0 +1,1 @@
+DOC.got("e/3839",{"319":{"q":"(anonymous@src/Enemy/EnemyStateReset)::(anonymous)","decl":{"f":"src/Enemy/EnemyStateReset.cpp","l":21,"sig":"NERVES_MAKE_STRUCT(EnemyStateReset, Wait)","end":21,"fi":1594},"size":8,"align":8,"complete":true,"fields":[{"n":"Wait","t":"EnemyStateResetNrvWait","off":0,"sz":8,"acc":"public","bits":null,"l":21,"cm":null,"ti":1293}]}});

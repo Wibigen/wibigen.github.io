@@ -1,0 +1,1 @@
+DOC.got("gh/NeedleTrap/exeStop_.text_003d0420.cpp","// Nom démêlé : NeedleTrap::exeStop\n// Symbole manglé : exeStop\n// void NeedleTrap::exeStop(void); @ .text::003d0420\n\n\n/* NeedleTrap::exeStop() */\n\nvoid NeedleTrap::exeStop(void)\n\n{\n  return;\n}\n\n");

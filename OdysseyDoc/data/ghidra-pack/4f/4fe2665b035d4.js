@@ -1,0 +1,1 @@
+DOC.got("gh/Frog/endHack_.text_0048d594.cpp","// Nom démêlé : Frog::endHack\n// Symbole manglé : endHack\n// void __thiscall Frog::endHack(Frog *this); @ .text::0048d594\n\n\n/* Frog::endHack() */\n\nvoid __thiscall Frog::endHack(Frog *this)\n\n{\n  al::endBgmSituation((IUseAudioKeeper *)(this + 0x10),(char *)0x193c8ba,false);\n  return;\n}\n\n");

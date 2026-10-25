@@ -1,0 +1,1 @@
+DOC.got("gh/AimingCursor/end_.text_002d8c04.cpp","// Nom démêlé : AimingCursor::end\n// Symbole manglé : end\n// void __thiscall AimingCursor::end(AimingCursor *this); @ .text::002d8c04\n\n\n/* AimingCursor::end() */\n\nvoid __thiscall AimingCursor::end(AimingCursor *this)\n\n{\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1dc0b68);\n  return;\n}\n\n");

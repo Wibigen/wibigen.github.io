@@ -1,0 +1,1 @@
+DOC.got("gh/ShopItemState/onBuyShine.cpp","// Nom démêlé : ShopItemState::onBuyShine\n// Symbole manglé : onBuyShine\n// void __thiscall ShopItemState::onBuyShine(ShopItemState *this); @ .text::00416efc\n\n\n/* ShopItemState::onBuyShine() */\n\nvoid __thiscall ShopItemState::onBuyShine(ShopItemState *this)\n\n{\n  this[1] = (ShopItemState)0x1;\n  return;\n}\n\n");

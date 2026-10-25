@@ -1,0 +1,1 @@
+DOC.got("gh/al/VertexDrawer/clear_.text_00a96ab4.cpp","// Nom démêlé : al::VertexDrawer::clear\n// Symbole manglé : clear\n// void __thiscall al::VertexDrawer::clear(VertexDrawer *this); @ .text::00a96ab4\n\n\n/* al::VertexDrawer::clear() */\n\nvoid __thiscall al::VertexDrawer::clear(VertexDrawer *this)\n\n{\n  *(undefined8 *)(this + 0x18) = 0;\n  return;\n}\n\n");

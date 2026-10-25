@@ -1,0 +1,1 @@
+DOC.got("e/1257",{"17600":{"q":"al::AudioMic","decl":{"f":"lib/al/Library/Audio/System/AudioKeeper.h","l":19,"sig":"class AudioMic","fi":378},"complete":false,"fwd":[["lib/al/Library/Audio/AudioDirector.h",17],["lib/al/Library/Audio/System/AudioKeeper.h",19]]}});

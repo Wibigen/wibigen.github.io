@@ -1,0 +1,1 @@
+DOC.got("gh/agl/lyr/Renderer/drawStatus.cpp","// Nom démêlé : agl::lyr::Renderer::drawStatus\n// Symbole manglé : drawStatus\n// void agl::lyr::Renderer::drawStatus(RenderInfo *param_1); @ .text::00ca298c\n\n\n/* agl::lyr::Renderer::drawStatus(agl::lyr::RenderInfo const&) const */\n\nvoid agl::lyr::Renderer::drawStatus(RenderInfo *param_1)\n\n{\n  return;\n}\n\n");

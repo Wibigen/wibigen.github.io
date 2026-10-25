@@ -1,0 +1,1 @@
+DOC.got("gh/al/PrePassLightBase/exeDead_.text_009cfe90.cpp","// Nom démêlé : al::PrePassLightBase::exeDead\n// Symbole manglé : exeDead\n// void al::PrePassLightBase::exeDead(void); @ .text::009cfe90\n\n\n/* al::PrePassLightBase::exeDead() */\n\nvoid al::PrePassLightBase::exeDead(void)\n\n{\n  return;\n}\n\n");

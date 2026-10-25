@@ -1,0 +1,1 @@
+DOC.got("gh/CommonHorizontalList/exeDecideEnd.cpp","// Nom démêlé : CommonHorizontalList::exeDecideEnd\n// Symbole manglé : exeDecideEnd\n// void CommonHorizontalList::exeDecideEnd(void); @ .text::002e06c0\n\n\n/* CommonHorizontalList::exeDecideEnd() */\n\nvoid CommonHorizontalList::exeDecideEnd(void)\n\n{\n  return;\n}\n\n");

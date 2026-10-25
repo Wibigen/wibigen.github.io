@@ -1,0 +1,1 @@
+DOC.got("gh/al/getUniformBlockLocationLightEnv.cpp","// Nom démêlé : al::getUniformBlockLocationLightEnv\n// Symbole manglé : getUniformBlockLocationLightEnv\n// undefined * al::getUniformBlockLocationLightEnv(void); @ .text::00b00860\n\n\n/* al::getUniformBlockLocationLightEnv() */\n\nundefined * al::getUniformBlockLocationLightEnv(void)\n\n{\n  return &DAT_026974e8;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("e/3700",{"31383":{"q":"nn::fs::FileHandle","decl":{"f":"lib/NintendoSDK/include/nn/fs/fs_types.h","l":12,"sig":"struct FileHandle","end":14,"fi":29},"size":8,"align":8,"complete":true,"fields":[{"n":"_internal","t":"u64","off":0,"sz":8,"acc":"public","bits":null,"l":13,"cm":null,"ti":49377}]}});

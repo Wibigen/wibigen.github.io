@@ -1,0 +1,1 @@
+DOC.got("src/2350","#pragma once\n\nnamespace al {\nclass IUseSceneObjHolder;\n}  // namespace al\n\nnamespace rs {\nvoid requestShowHtmlViewer(const al::IUseSceneObjHolder*);\n}  // namespace rs\n");

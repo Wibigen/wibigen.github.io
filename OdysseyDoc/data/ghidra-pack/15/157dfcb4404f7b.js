@@ -1,0 +1,1 @@
+DOC.got("gh/eui/HoverButton/getClassName_.text_008f5ae8.cpp","// Nom démêlé : eui::HoverButton::getClassName\n// Symbole manglé : getClassName\n// undefined8 eui::HoverButton::getClassName(void); @ .text::008f5ae8\n\n\n/* eui::HoverButton::getClassName() const */\n\nundefined8 eui::HoverButton::getClassName(void)\n\n{\n  return 0x1965f25;\n}\n\n");

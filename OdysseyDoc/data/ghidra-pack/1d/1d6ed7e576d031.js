@@ -1,0 +1,1 @@
+DOC.got("gh/al/BgmLine/isWaitStart.cpp","// Nom démêlé : al::BgmLine::isWaitStart\n// Symbole manglé : isWaitStart\n// bool __thiscall al::BgmLine::isWaitStart(BgmLine *this); @ .text::009211dc\n\n\n/* al::BgmLine::isWaitStart() const */\n\nbool __thiscall al::BgmLine::isWaitStart(BgmLine *this)\n\n{\n  return *(int *)(this + 0x80) == 0;\n}\n\n");

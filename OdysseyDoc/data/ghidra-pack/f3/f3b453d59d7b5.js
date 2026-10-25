@@ -1,0 +1,1 @@
+DOC.got("gh/AmiiboNpc/exeTalk_.text_0047aec8.cpp","// Nom démêlé : AmiiboNpc::exeTalk\n// Symbole manglé : exeTalk\n// void __thiscall AmiiboNpc::exeTalk(AmiiboNpc *this); @ .text::0047aec8\n\n\n/* AmiiboNpc::exeTalk() */\n\nvoid __thiscall AmiiboNpc::exeTalk(AmiiboNpc *this)\n\n{\n  rs::updateEventFlow(*(EventFlowExecutor **)(this + 0x110));\n  return;\n}\n\n");

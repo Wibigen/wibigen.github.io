@@ -1,0 +1,1 @@
+DOC.got("gh/alsd/AudioPlayer/initialize_.text_00b93040.cpp","// Nom démêlé : alsd::AudioPlayer::initialize\n// Symbole manglé : initialize\n// void alsd::AudioPlayer::initialize(void); @ .text::00b93040\n\n\n/* alsd::AudioPlayer::initialize() */\n\nvoid alsd::AudioPlayer::initialize(void)\n\n{\n  return;\n}\n\n");

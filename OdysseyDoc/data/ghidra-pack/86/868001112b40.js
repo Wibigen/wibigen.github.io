@@ -1,0 +1,1 @@
+DOC.got("gh/al/getRacerNum.cpp","// Nom démêlé : al::getRacerNum\n// Symbole manglé : getRacerNum\n// undefined4 al::getRacerNum(RaceJudgeDirector *param_1); @ .text::00a55a2c\n\n\n/* al::getRacerNum(al::RaceJudgeDirector const*) */\n\nundefined4 al::getRacerNum(RaceJudgeDirector *param_1)\n\n{\n  return *(undefined4 *)(param_1 + 8);\n}\n\n");

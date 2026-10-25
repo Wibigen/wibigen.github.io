@@ -1,0 +1,1 @@
+DOC.got("e/4348",{"34716":{"q":"nn::util::Unorm8x4","decl":{"f":"lib/NintendoSDK/include/nn/util/MathTypes.h","l":66,"sig":"struct Unorm8x4","end":70,"fi":200},"size":4,"align":1,"complete":true,"fwd":[["lib/NintendoSDK/include/nn/ui2d/Pane.h",17]]}});

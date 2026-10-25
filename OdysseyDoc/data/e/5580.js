@@ -1,0 +1,1 @@
+DOC.got("e/5580",{"49201":{"q":"sead::ZeroInitializeTag","decl":{"f":"lib/sead/include/prim/seadStorageFor.h","l":14,"sig":"struct ZeroInitializeTag","end":16,"fi":1429},"size":1,"align":1,"complete":true}});

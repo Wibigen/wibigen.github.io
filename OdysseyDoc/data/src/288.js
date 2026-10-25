@@ -1,0 +1,1 @@
+DOC.got("src/288","#pragma once\n\nnamespace agl {\n\n// TODO\nclass TextureDataSerializerTGA {\npublic:\n    enum class TGAFormat {\n        _1 = 1,\n    };\n};\n\n}  // namespace agl\n");

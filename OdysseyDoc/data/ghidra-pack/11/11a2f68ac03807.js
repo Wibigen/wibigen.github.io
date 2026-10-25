@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/SocketDriver/Socket/Listen_.text_007adf6c.cpp","// Nom démêlé : nn::nex::SocketDriver::Socket::Listen\n// Symbole manglé : Listen\n// undefined8 nn::nex::SocketDriver::Socket::Listen(void); @ .text::007adf6c\n\n\n/* nn::nex::SocketDriver::Socket::Listen() */\n\nundefined8 nn::nex::SocketDriver::Socket::Listen(void)\n\n{\n  return 0;\n}\n\n");

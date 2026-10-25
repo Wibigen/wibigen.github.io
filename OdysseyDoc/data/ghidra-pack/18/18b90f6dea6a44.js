@@ -1,0 +1,1 @@
+DOC.got("gh/ShopLayoutFooter/appear_.text_00307654.cpp","// Nom démêlé : ShopLayoutFooter::appear\n// Symbole manglé : appear\n// void ShopLayoutFooter::appear(void); @ .text::00307654\n\n\n/* ShopLayoutFooter::appear() */\n\nvoid ShopLayoutFooter::appear(void)\n\n{\n  return;\n}\n\n");

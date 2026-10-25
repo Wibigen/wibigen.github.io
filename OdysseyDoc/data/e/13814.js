@@ -1,0 +1,1 @@
+DOC.got("e/13814",{"158":{"q":"ams::ns::detail::result","files":["lib/NintendoSDK/include/vapours/results/ns_results.hpp"]}});

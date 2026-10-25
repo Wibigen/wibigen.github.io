@@ -1,0 +1,1 @@
+DOC.got("src/730","#pragma once\n\n#include <basis/seadTypes.h>\n\nnamespace al {\nclass ComboCounter {\npublic:\n    ComboCounter() = default;\n\n    virtual void increment() { mCount++; }\n\n    s32 getCount() const { return mCount; }\n\nprivate:\n    s32 mCount = 0;\n};\n}  // namespace al\n");

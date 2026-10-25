@@ -1,0 +1,1 @@
+DOC.got("gh/al/getLapMax_.text_00a55818.cpp","// Nom démêlé : al::getLapMax\n// Symbole manglé : getLapMax\n// undefined4 al::getLapMax(RaceJudgeDirector *param_1); @ .text::00a55818\n\n\n/* al::getLapMax(al::RaceJudgeDirector const*) */\n\nundefined4 al::getLapMax(RaceJudgeDirector *param_1)\n\n{\n  return *(undefined4 *)(param_1 + 0x28);\n}\n\n");

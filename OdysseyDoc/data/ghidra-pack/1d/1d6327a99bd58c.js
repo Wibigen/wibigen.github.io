@@ -1,0 +1,1 @@
+DOC.got("gh/GolemMoveState/kill_.text_00179b9c.cpp","// Nom démêlé : GolemMoveState::kill\n// Symbole manglé : kill\n// void __thiscall GolemMoveState::kill(GolemMoveState *this); @ .text::00179b9c\n\n\n/* GolemMoveState::kill() */\n\nvoid __thiscall GolemMoveState::kill(GolemMoveState *this)\n\n{\n  this[0x10] = (GolemMoveState)0x1;\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerStateGrabCeil/isEnableTrample_.text_0056da20.cpp","// Nom démêlé : PlayerStateGrabCeil::isEnableTrample\n// Symbole manglé : isEnableTrample\n// undefined8 PlayerStateGrabCeil::isEnableTrample(void); @ .text::0056da20\n\n\n/* PlayerStateGrabCeil::isEnableTrample() const */\n\nundefined8 PlayerStateGrabCeil::isEnableTrample(void)\n\n{\n  return 1;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/Curl_ipvalid.cpp","// Nom démêlé : Curl_ipvalid\n// Symbole manglé : Curl_ipvalid\n// bool Curl_ipvalid(long param_1); @ .text::007fb874\n\n\nbool Curl_ipvalid(long param_1)\n\n{\n  return *(long *)(param_1 + 0x520) != 2;\n}\n\n");

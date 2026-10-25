@@ -1,0 +1,1 @@
+DOC.got("gh/al/AudioEffectProcInfo/dummy_.text_00b43ae8.cpp","// Nom démêlé : al::AudioEffectProcInfo::dummy\n// Symbole manglé : dummy\n// void al::AudioEffectProcInfo::dummy(void); @ .text::00b43ae8\n\n\n/* al::AudioEffectProcInfo::dummy() */\n\nvoid al::AudioEffectProcInfo::dummy(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/WaterLauncherCork/exeWait_.text_00444bcc.cpp","// Nom démêlé : WaterLauncherCork::exeWait\n// Symbole manglé : exeWait\n// void WaterLauncherCork::exeWait(void); @ .text::00444bcc\n\n\n/* WaterLauncherCork::exeWait() */\n\nvoid WaterLauncherCork::exeWait(void)\n\n{\n  return;\n}\n\n");

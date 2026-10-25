@@ -1,0 +1,1 @@
+DOC.got("e/4130",{"33402":{"q":"nn::hid::detail::UniquePadSharedMemoryFormat","decl":{"f":"lib/NintendoSDK/include/nn/hid.h","l":844,"sig":"struct UniquePadSharedMemoryFormat","end":846,"fi":133},"size":16384,"align":8,"complete":true,"fields":[{"n":"mEntries","t":"UniquePadSharedMemoryEntry[16]","off":0,"sz":16384,"acc":"public","bits":null,"l":845,"cm":null,"ti":33401}]}});

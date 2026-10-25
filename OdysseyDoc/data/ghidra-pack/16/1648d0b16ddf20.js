@@ -1,0 +1,1 @@
+DOC.got("gh/al/getLayoutDisplayHeight.cpp","// Nom démêlé : al::getLayoutDisplayHeight\n// Symbole manglé : getLayoutDisplayHeight\n// undefined8 al::getLayoutDisplayHeight(void); @ .text::00ad1434\n\n\n/* al::getLayoutDisplayHeight() */\n\nundefined8 al::getLayoutDisplayHeight(void)\n\n{\n  return 0x2d0;\n}\n\n");

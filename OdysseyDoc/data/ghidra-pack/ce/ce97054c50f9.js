@@ -1,0 +1,1 @@
+DOC.got("gh/al/ByamlWriterInt/getTypeCode_.text_00b32898.cpp","// Nom démêlé : al::ByamlWriterInt::getTypeCode\n// Symbole manglé : getTypeCode\n// undefined8 al::ByamlWriterInt::getTypeCode(void); @ .text::00b32898\n\n\n/* al::ByamlWriterInt::getTypeCode() const */\n\nundefined8 al::ByamlWriterInt::getTypeCode(void)\n\n{\n  return 0xd1;\n}\n\n");

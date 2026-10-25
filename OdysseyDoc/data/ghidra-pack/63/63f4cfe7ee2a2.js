@@ -1,0 +1,1 @@
+DOC.got("gh/al/getModelName_.text_009e2000.cpp","// Nom démêlé : al::getModelName\n// Symbole manglé : getModelName\n// undefined8 al::getModelName(LiveActor *param_1); @ .text::009e2000\n\n\n/* al::getModelName(al::LiveActor const*) */\n\nundefined8 al::getModelName(LiveActor *param_1)\n\n{\n  return *(undefined8 *)(*(long *)(param_1 + 0x88) + 8);\n}\n\n");

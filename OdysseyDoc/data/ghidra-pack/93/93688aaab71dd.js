@@ -1,0 +1,1 @@
+DOC.got("gh/Donsuke/isPlayerPosLeft.cpp","// Nom démêlé : Donsuke::isPlayerPosLeft\n// Symbole manglé : isPlayerPosLeft\n// bool __thiscall Donsuke::isPlayerPosLeft(Donsuke *this); @ .text::001fbc50\n\n\n/* Donsuke::isPlayerPosLeft() */\n\nbool __thiscall Donsuke::isPlayerPosLeft(Donsuke *this)\n\n{\n  return 0.0 < *(float *)(this + 0x160);\n}\n\n");

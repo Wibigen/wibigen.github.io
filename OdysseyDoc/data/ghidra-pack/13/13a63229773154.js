@@ -1,0 +1,1 @@
+DOC.got("gh/al/CartoonDrawParam/getParamName_.text_00b792b8.cpp","// Nom démêlé : al::CartoonDrawParam::getParamName\n// Symbole manglé : getParamName\n// undefined8 al::CartoonDrawParam::getParamName(void); @ .text::00b792b8\n\n\n/* al::CartoonDrawParam::getParamName() const */\n\nundefined8 al::CartoonDrawParam::getParamName(void)\n\n{\n  return 0x19788ff;\n}\n\n");

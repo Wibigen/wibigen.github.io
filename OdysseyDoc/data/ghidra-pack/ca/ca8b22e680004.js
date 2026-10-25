@@ -1,0 +1,1 @@
+DOC.got("gh/al/SnapShotCameraCtrl/exeWait_.text_009409b8.cpp","// Nom démêlé : al::SnapShotCameraCtrl::exeWait\n// Symbole manglé : exeWait\n// void al::SnapShotCameraCtrl::exeWait(void); @ .text::009409b8\n\n\n/* al::SnapShotCameraCtrl::exeWait() */\n\nvoid al::SnapShotCameraCtrl::exeWait(void)\n\n{\n  return;\n}\n\n");

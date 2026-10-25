@@ -1,0 +1,1 @@
+DOC.got("gh/al/FogParam/getSlope.cpp","// Nom démêlé : al::FogParam::getSlope\n// Symbole manglé : getSlope\n// undefined4 __thiscall al::FogParam::getSlope(FogParam *this); @ .text::009a1e2c\n\n\n/* al::FogParam::getSlope() const */\n\nundefined4 __thiscall al::FogParam::getSlope(FogParam *this)\n\n{\n  return *(undefined4 *)(*(long *)(this + 0x58) + 0x6c);\n}\n\n");

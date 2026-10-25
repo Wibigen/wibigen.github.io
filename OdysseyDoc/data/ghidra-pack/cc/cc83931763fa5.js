@@ -1,0 +1,1 @@
+DOC.got("gh/MofumofuBody/exePanicDamagePrepare.cpp","// Nom démêlé : MofumofuBody::exePanicDamagePrepare\n// Symbole manglé : exePanicDamagePrepare\n// void MofumofuBody::exePanicDamagePrepare(void); @ .text::001b3d40\n\n\n/* MofumofuBody::exePanicDamagePrepare() */\n\nvoid MofumofuBody::exePanicDamagePrepare(void)\n\n{\n  return;\n}\n\n");

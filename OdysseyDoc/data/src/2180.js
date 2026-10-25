@@ -1,0 +1,1 @@
+DOC.got("src/2180","#include \"Player/PlayerCounterForceRun.h\"\n\n#include \"Library/Math/MathUtil.h\"\n\nPlayerCounterForceRun::PlayerCounterForceRun() = default;\n\nvoid PlayerCounterForceRun::setupForceRun(s32 frames, f32 speed) {\n    mCounter = frames;\n    mSpeed = speed;\n}\n\nvoid PlayerCounterForceRun::update() {\n    mCounter = al::converge(mCounter, 0, 1);\n}\n");

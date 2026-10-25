@@ -1,0 +1,1 @@
+DOC.got("e/5591",{"49254":{"q":"sead::hostio::FileInfo","decl":{"f":"lib/agl/include/detail/aglFileIOMgr.h","l":9,"sig":"class FileInfo","fi":290},"complete":false,"fwd":[["lib/agl/include/detail/aglFileIOMgr.h",9]]}});

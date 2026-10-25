@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/HTTPURL/GetQuery.cpp","// Nom démêlé : nn::nex::HTTPURL::GetQuery\n// Symbole manglé : GetQuery\n// HTTPURL * __thiscall nn::nex::HTTPURL::GetQuery(HTTPURL *this); @ .text::0074aa88\n\n\n/* nn::nex::HTTPURL::GetQuery() const */\n\nHTTPURL * __thiscall nn::nex::HTTPURL::GetQuery(HTTPURL *this)\n\n{\n  return this + 0x70;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("e/4371",{"34866":{"q":"nn::vfx::EmitterSetResource","decl":{"f":"lib/NintendoSDK/include/nn/vfx/Resource.h","l":14,"sig":"struct EmitterSetResource","fi":218},"complete":false,"fwd":[["lib/NintendoSDK/include/nn/vfx/Resource.h",14]]}});

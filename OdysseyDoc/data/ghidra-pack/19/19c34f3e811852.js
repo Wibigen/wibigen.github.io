@@ -1,0 +1,1 @@
+DOC.got("gh/nnCurlShim_fgets.cpp","// Nom démêlé : nnCurlShim_fgets\n// Symbole manglé : nnCurlShim_fgets\n// void nnCurlShim_fgets(void); @ .text::0080f690\n\n\nvoid nnCurlShim_fgets(void)\n\n{\n  nndetailDiagAbortFormatImpl(0x1959ab1,0x1959d18,0x1959c07,0x15b,0x1959c4b,0x1959d23);\n  return;\n}\n\n");

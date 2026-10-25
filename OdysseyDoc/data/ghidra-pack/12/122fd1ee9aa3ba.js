@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/HTTPURL/GetScheme.cpp","// Nom démêlé : nn::nex::HTTPURL::GetScheme\n// Symbole manglé : GetScheme\n// HTTPURL * __thiscall nn::nex::HTTPURL::GetScheme(HTTPURL *this); @ .text::0074aa50\n\n\n/* nn::nex::HTTPURL::GetScheme() const */\n\nHTTPURL * __thiscall nn::nex::HTTPURL::GetScheme(HTTPURL *this)\n\n{\n  return this + 8;\n}\n\n");

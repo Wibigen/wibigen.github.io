@@ -1,0 +1,1 @@
+DOC.got("gh/DoorWarpPuppetController/exeWait_.text_0036215c.cpp","// Nom démêlé : DoorWarpPuppetController::exeWait\n// Symbole manglé : exeWait\n// void DoorWarpPuppetController::exeWait(void); @ .text::0036215c\n\n\n/* DoorWarpPuppetController::exeWait() */\n\nvoid DoorWarpPuppetController::exeWait(void)\n\n{\n  return;\n}\n\n");

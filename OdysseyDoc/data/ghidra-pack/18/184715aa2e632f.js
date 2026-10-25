@@ -1,0 +1,1 @@
+DOC.got("gh/al/getVirtualDisplayWidth.cpp","// Nom démêlé : al::getVirtualDisplayWidth\n// Symbole manglé : getVirtualDisplayWidth\n// undefined8 al::getVirtualDisplayWidth(void); @ .text::00ad143c\n\n\n/* al::getVirtualDisplayWidth() */\n\nundefined8 al::getVirtualDisplayWidth(void)\n\n{\n  return 0x500;\n}\n\n");

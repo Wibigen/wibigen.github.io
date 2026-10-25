@@ -1,0 +1,1 @@
+DOC.got("gh/TRex/getHeadColliderShapeName.cpp","// Nom démêlé : TRex::getHeadColliderShapeName\n// Symbole manglé : getHeadColliderShapeName\n// undefined8 TRex::getHeadColliderShapeName(void); @ .text::00298b18\n\n\n/* TRex::getHeadColliderShapeName() */\n\nundefined8 TRex::getHeadColliderShapeName(void)\n\n{\n  return 0x191d5c8;\n}\n\n");

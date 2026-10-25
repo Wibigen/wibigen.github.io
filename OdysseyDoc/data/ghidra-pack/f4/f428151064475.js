@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Job/SetToReady.cpp","// Nom démêlé : nn::nex::Job::SetToReady\n// Symbole manglé : SetToReady\n// void __thiscall nn::nex::Job::SetToReady(Job *this); @ .text::0073acc8\n\n\n/* nn::nex::Job::SetToReady() */\n\nvoid __thiscall nn::nex::Job::SetToReady(Job *this)\n\n{\n  *(undefined4 *)(this + 0x40) = 3;\n  return;\n}\n\n");

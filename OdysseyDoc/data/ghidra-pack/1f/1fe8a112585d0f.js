@@ -1,0 +1,1 @@
+DOC.got("gh/KuriboHack/noRevive.cpp","// Nom démêlé : KuriboHack::noRevive\n// Symbole manglé : noRevive\n// void __thiscall KuriboHack::noRevive(KuriboHack *this); @ .text::0024e224\n\n\n/* KuriboHack::noRevive() */\n\nvoid __thiscall KuriboHack::noRevive(KuriboHack *this)\n\n{\n  *(undefined1 *)(*(long *)(this + 0x118) + 0x3c) = 0;\n  return;\n}\n\n");

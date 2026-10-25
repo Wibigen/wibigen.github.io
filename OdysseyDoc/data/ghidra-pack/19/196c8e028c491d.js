@@ -1,0 +1,1 @@
+DOC.got("gh/MockBalloonFindSequenceInfo/onTutorial.cpp","// Nom démêlé : MockBalloonFindSequenceInfo::onTutorial\n// Symbole manglé : onTutorial\n// void MockBalloonFindSequenceInfo::onTutorial(void); @ .text::0045756c\n\n\n/* MockBalloonFindSequenceInfo::onTutorial() */\n\nvoid MockBalloonFindSequenceInfo::onTutorial(void)\n\n{\n  return;\n}\n\n");

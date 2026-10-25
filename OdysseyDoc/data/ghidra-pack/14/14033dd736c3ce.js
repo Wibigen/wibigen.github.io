@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/SystemInfo/IsRunningPS2.cpp","// Nom démêlé : nn::nex::SystemInfo::IsRunningPS2\n// Symbole manglé : IsRunningPS2\n// undefined8 nn::nex::SystemInfo::IsRunningPS2(void); @ .text::0072153c\n\n\n/* nn::nex::SystemInfo::IsRunningPS2() */\n\nundefined8 nn::nex::SystemInfo::IsRunningPS2(void)\n\n{\n  return 0;\n}\n\n");

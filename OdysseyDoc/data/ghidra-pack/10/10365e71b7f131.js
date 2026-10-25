@@ -1,0 +1,1 @@
+DOC.got("gh/ScenarioStartCamera/isEnableSkipDemo_.text_001cff60.cpp","// Nom démêlé : ScenarioStartCamera::isEnableSkipDemo\n// Symbole manglé : isEnableSkipDemo\n// undefined8 ScenarioStartCamera::isEnableSkipDemo(void); @ .text::001cff60\n\n\n/* ScenarioStartCamera::isEnableSkipDemo() const */\n\nundefined8 ScenarioStartCamera::isEnableSkipDemo(void)\n\n{\n  return 1;\n}\n\n");

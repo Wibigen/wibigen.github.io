@@ -1,0 +1,1 @@
+DOC.got("gh/agl/lyr/Layer/postDrawImpl.cpp","// Nom démêlé : agl::lyr::Layer::postDrawImpl\n// Symbole manglé : postDrawImpl\n// void agl::lyr::Layer::postDrawImpl(RenderInfo *param_1); @ .text::00ce5f48\n\n\n/* agl::lyr::Layer::postDrawImpl(agl::lyr::RenderInfo const&) const */\n\nvoid agl::lyr::Layer::postDrawImpl(RenderInfo *param_1)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/nn/font/PairFont/GetType_.text_00cec79c.cpp","// Nom démêlé : nn::font::PairFont::GetType\n// Symbole manglé : GetType\n// undefined8 nn::font::PairFont::GetType(void); @ .text::00cec79c\n\n\n/* nn::font::PairFont::GetType() const */\n\nundefined8 nn::font::PairFont::GetType(void)\n\n{\n  return 3;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/Projection/getFovy_.text_00ac0a60.cpp","// Nom démêlé : al::Projection::getFovy\n// Symbole manglé : getFovy\n// undefined4 __thiscall al::Projection::getFovy(Projection *this); @ .text::00ac0a60\n\n\n/* al::Projection::getFovy() const */\n\nundefined4 __thiscall al::Projection::getFovy(Projection *this)\n\n{\n  return *(undefined4 *)(this + 0xa0);\n}\n\n");

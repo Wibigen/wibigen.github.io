@@ -1,0 +1,1 @@
+DOC.got("gh/IBalloonFindBalloon/setImageTo_.text_0045305c.cpp","// Nom démêlé : IBalloonFindBalloon::setImageTo\n// Symbole manglé : setImageTo\n// void IBalloonFindBalloon::setImageTo(LiveActor *param_1); @ .text::0045305c\n\n\n/* IBalloonFindBalloon::setImageTo(al::LiveActor*) const */\n\nvoid IBalloonFindBalloon::setImageTo(LiveActor *param_1)\n\n{\n  return;\n}\n\n");

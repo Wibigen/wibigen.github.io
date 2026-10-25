@@ -1,0 +1,1 @@
+DOC.got("e/5263",{"45731":{"q":"sead::HashCRC16::Context","acc":"public","decl":{"f":"lib/sead/include/codec/seadHashCRC16.h","l":11,"sig":"struct Context","end":14,"fi":1297},"size":4,"align":4,"complete":true,"fields":[{"n":"hash","t":"u32","off":0,"sz":4,"acc":"public","bits":null,"l":13,"cm":null,"ti":49376}]}});

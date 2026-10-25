@@ -1,0 +1,1 @@
+DOC.got("gh/al/JointRumbler/getCtrlTypeName_.text_009acf04.cpp","// Nom démêlé : al::JointRumbler::getCtrlTypeName\n// Symbole manglé : getCtrlTypeName\n// undefined8 al::JointRumbler::getCtrlTypeName(void); @ .text::009acf04\n\n\n/* al::JointRumbler::getCtrlTypeName() const */\n\nundefined8 al::JointRumbler::getCtrlTypeName(void)\n\n{\n  return 0x196c06f;\n}\n\n");

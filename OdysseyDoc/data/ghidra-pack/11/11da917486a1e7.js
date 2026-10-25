@@ -1,0 +1,1 @@
+DOC.got("gh/Nokonoko/control_.text_002686a8.cpp","// Nom démêlé : Nokonoko::control\n// Symbole manglé : control\n// void Nokonoko::control(void); @ .text::002686a8\n\n\n/* Nokonoko::control() */\n\nvoid Nokonoko::control(void)\n\n{\n  return;\n}\n\n");

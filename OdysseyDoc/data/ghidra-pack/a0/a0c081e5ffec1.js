@@ -1,0 +1,1 @@
+DOC.got("gh/al/ActorOcclusionKeeper/appear_.text_00b12d74.cpp","// Nom démêlé : al::ActorOcclusionKeeper::appear\n// Symbole manglé : appear\n// bool al::ActorOcclusionKeeper::appear(bool param_1); @ .text::00b12d74\n\n\n/* al::ActorOcclusionKeeper::appear(bool) */\n\nbool al::ActorOcclusionKeeper::appear(bool param_1)\n\n{\n  return param_1;\n}\n\n");

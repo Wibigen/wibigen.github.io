@@ -1,0 +1,1 @@
+DOC.got("gh/HackCap/isHide_.text_004fe70c.cpp","// Nom démêlé : HackCap::isHide\n// Symbole manglé : isHide\n// void __thiscall HackCap::isHide(HackCap *this); @ .text::004fe70c\n\n\n/* HackCap::isHide() const */\n\nvoid __thiscall HackCap::isHide(HackCap *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1e75b60);\n  return;\n}\n\n");

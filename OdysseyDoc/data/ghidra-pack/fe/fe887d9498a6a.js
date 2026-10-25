@@ -1,0 +1,1 @@
+DOC.got("gh/Curl_ssl_set_engine_default.cpp","// Nom démêlé : Curl_ssl_set_engine_default\n// Symbole manglé : Curl_ssl_set_engine_default\n// undefined8 Curl_ssl_set_engine_default(void); @ .text::0080e748\n\n\nundefined8 Curl_ssl_set_engine_default(void)\n\n{\n  return 4;\n}\n\n");

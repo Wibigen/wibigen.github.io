@@ -1,0 +1,1 @@
+DOC.got("gh/KuriboMini/exeHide_.text_002565b4.cpp","// Nom démêlé : KuriboMini::exeHide\n// Symbole manglé : exeHide\n// void KuriboMini::exeHide(void); @ .text::002565b4\n\n\n/* KuriboMini::exeHide() */\n\nvoid KuriboMini::exeHide(void)\n\n{\n  return;\n}\n\n");

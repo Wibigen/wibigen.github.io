@@ -1,0 +1,1 @@
+DOC.got("src/1188","#pragma once\n\nnamespace al {\nclass LiveActor;\n}\n\nnamespace alClippingFunction {\nvoid addToClippingTarget(al::LiveActor* actor);\nvoid removeFromClippingTarget(al::LiveActor* actor);\n}  // namespace alClippingFunction\n");

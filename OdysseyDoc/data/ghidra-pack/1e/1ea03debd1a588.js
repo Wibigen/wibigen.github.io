@@ -1,0 +1,1 @@
+DOC.got("gh/agl/Shader/getRingItemSize.cpp","// Nom démêlé : agl::Shader::getRingItemSize\n// Symbole manglé : getRingItemSize\n// undefined8 agl::Shader::getRingItemSize(void); @ .text::008807e0\n\n\n/* agl::Shader::getRingItemSize() const */\n\nundefined8 agl::Shader::getRingItemSize(void)\n\n{\n  return 0;\n}\n\n");

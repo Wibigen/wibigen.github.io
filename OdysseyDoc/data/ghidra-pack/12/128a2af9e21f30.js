@@ -1,0 +1,1 @@
+DOC.got("gh/al/onCalcAnim.cpp","// Nom démêlé : al::onCalcAnim\n// Symbole manglé : onCalcAnim\n// void al::onCalcAnim(LiveActor *param_1); @ .text::009d9998\n\n\n/* al::onCalcAnim(al::LiveActor*) */\n\nvoid al::onCalcAnim(LiveActor *param_1)\n\n{\n  *(undefined1 *)(*(long *)(param_1 + 0x100) + 4) = 0;\n  return;\n}\n\n");

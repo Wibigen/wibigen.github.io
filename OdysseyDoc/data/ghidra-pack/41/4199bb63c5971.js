@@ -1,0 +1,1 @@
+DOC.got("gh/al/isFirstKey_.text_009b01f0.cpp","// Nom démêlé : al::isFirstKey\n// Symbole manglé : isFirstKey\n// bool al::isFirstKey(KeyPoseKeeper *param_1); @ .text::009b01f0\n\n\n/* al::isFirstKey(al::KeyPoseKeeper const*) */\n\nbool al::isFirstKey(KeyPoseKeeper *param_1)\n\n{\n  return *(int *)(param_1 + 0xc) == 0;\n}\n\n");

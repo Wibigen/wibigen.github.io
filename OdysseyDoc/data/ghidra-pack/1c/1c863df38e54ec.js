@@ -1,0 +1,1 @@
+DOC.got("gh/curl_share_strerror.cpp","// Nom démêlé : curl_share_strerror\n// Symbole manglé : curl_share_strerror\n// undefined8 curl_share_strerror(uint param_1); @ .text::008044d4\n\n\nundefined8 curl_share_strerror(uint param_1)\n\n{\n  if (param_1 < 6) {\n    return *(undefined8 *)((long)(int)param_1 * 8 + 0x1ec9f90);\n  }\n  return 0x1958e1b;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/LapRecorder/exeWait_.text_003b14fc.cpp","// Nom démêlé : LapRecorder::exeWait\n// Symbole manglé : exeWait\n// void LapRecorder::exeWait(void); @ .text::003b14fc\n\n\n/* LapRecorder::exeWait() */\n\nvoid LapRecorder::exeWait(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/curlx_sitouz.cpp","// Nom démêlé : curlx_sitouz\n// Symbole manglé : curlx_sitouz\n// long curlx_sitouz(int param_1); @ .text::0080eda4\n\n\nlong curlx_sitouz(int param_1)\n\n{\n  return (long)param_1;\n}\n\n");

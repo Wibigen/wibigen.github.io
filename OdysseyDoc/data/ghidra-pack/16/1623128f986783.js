@@ -1,0 +1,1 @@
+DOC.got("gh/Senobi/getStretchJointName.cpp","// Nom démêlé : Senobi::getStretchJointName\n// Symbole manglé : getStretchJointName\n// undefined8 Senobi::getStretchJointName(void); @ .text::0027e410\n\n\n/* Senobi::getStretchJointName() */\n\nundefined8 Senobi::getStretchJointName(void)\n\n{\n  return 0x192886f;\n}\n\n");

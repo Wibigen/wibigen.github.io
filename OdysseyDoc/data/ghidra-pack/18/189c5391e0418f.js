@@ -1,0 +1,1 @@
+DOC.got("gh/Mummy/startSleep.cpp","// Nom démêlé : Mummy::startSleep\n// Symbole manglé : startSleep\n// void __thiscall Mummy::startSleep(Mummy *this); @ .text::00265564\n\n\n/* Mummy::startSleep() */\n\nvoid __thiscall Mummy::startSleep(Mummy *this)\n\n{\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1da15b0);\n  return;\n}\n\n");

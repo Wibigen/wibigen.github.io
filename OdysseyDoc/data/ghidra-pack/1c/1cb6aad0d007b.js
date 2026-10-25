@@ -1,0 +1,1 @@
+DOC.got("gh/StackerCap/exeInvincibleAttack_.text_001bf4c0.cpp","// Nom démêlé : StackerCap::exeInvincibleAttack\n// Symbole manglé : exeInvincibleAttack\n// void StackerCap::exeInvincibleAttack(void); @ .text::001bf4c0\n\n\n/* StackerCap::exeInvincibleAttack() */\n\nvoid StackerCap::exeInvincibleAttack(void)\n\n{\n  return;\n}\n\n");

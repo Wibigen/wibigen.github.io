@@ -1,0 +1,1 @@
+DOC.got("gh/FukuwaraiNpc/exeEventStartResultEnd.cpp","// Nom démêlé : FukuwaraiNpc::exeEventStartResultEnd\n// Symbole manglé : exeEventStartResultEnd\n// void FukuwaraiNpc::exeEventStartResultEnd(void); @ .text::004949c0\n\n\n/* FukuwaraiNpc::exeEventStartResultEnd() */\n\nvoid FukuwaraiNpc::exeEventStartResultEnd(void)\n\n{\n  return;\n}\n\n");

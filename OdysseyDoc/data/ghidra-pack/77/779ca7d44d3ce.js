@@ -1,0 +1,1 @@
+DOC.got("gh/sead/PerformanceMgrNx/startPowerMeasuring.cpp","// Nom démêlé : sead::PerformanceMgrNx::startPowerMeasuring\n// Symbole manglé : startPowerMeasuring\n// void sead::PerformanceMgrNx::startPowerMeasuring(void); @ .text::00832930\n\n\n/* sead::PerformanceMgrNx::startPowerMeasuring() */\n\nvoid sead::PerformanceMgrNx::startPowerMeasuring(void)\n\n{\n  return;\n}\n\n");

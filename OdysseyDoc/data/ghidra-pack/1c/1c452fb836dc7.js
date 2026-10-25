@@ -1,0 +1,1 @@
+DOC.got("gh/al/getActorTrans.cpp","// Nom démêlé : al::getActorTrans\n// Symbole manglé : getActorTrans\n// void al::getActorTrans(HitSensor *param_1); @ .text::009f2974\n\n\n/* al::getActorTrans(al::HitSensor const*) */\n\nvoid al::getActorTrans(HitSensor *param_1)\n\n{\n  getTrans(*(LiveActor **)(param_1 + 0x40));\n  return;\n}\n\n");

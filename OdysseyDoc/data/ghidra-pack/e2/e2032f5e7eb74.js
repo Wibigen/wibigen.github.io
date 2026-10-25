@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/FileStorageDevice/Open_.text_00739a60.cpp","// Nom démêlé : nn::nex::FileStorageDevice::Open\n// Symbole manglé : Open\n// undefined8 nn::nex::FileStorageDevice::Open(String *param_1); @ .text::00739a60\n\n\n/* nn::nex::FileStorageDevice::Open(nn::nex::String const&) */\n\nundefined8 nn::nex::FileStorageDevice::Open(String *param_1)\n\n{\n  return 0;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("src/809","#pragma once\n\n#include <basis/seadTypes.h>\n\nnamespace al {\nclass IntervalTrigger {\npublic:\n    IntervalTrigger(f32 intervalTime);\n    void update(f32 deltaTime);\n\n    bool isTriggered() const { return mIsTriggered; }\n\nprivate:\n    f32 mIntervalTime = 0.0f;\n    f32 mTime = 0.0f;\n    bool mIsTriggered = false;\n};\n}  // namespace al\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/GolemClimb/isMoon.cpp","// Nom démêlé : GolemClimb::isMoon\n// Symbole manglé : isMoon\n// GolemClimb __thiscall GolemClimb::isMoon(GolemClimb *this); @ .text::00175974\n\n\n/* GolemClimb::isMoon() */\n\nGolemClimb __thiscall GolemClimb::isMoon(GolemClimb *this)\n\n{\n  return this[0x348];\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/sead/IDelegateR_bool/clone_.text_004d89e0.cpp","// Nom démêlé : sead::IDelegateR<bool>::clone\n// Symbole manglé : clone\n// undefined8 sead::IDelegateR<bool>::clone(Heap *param_1); @ .text::004d89e0\n\n\n/* sead::IDelegateR<bool>::clone(sead::Heap*) const */\n\nundefined8 sead::IDelegateR<bool>::clone(Heap *param_1)\n\n{\n  return 0;\n}\n\n");

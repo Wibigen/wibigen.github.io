@@ -1,0 +1,1 @@
+DOC.got("gh/IItemExistanceJudge/isExist_.text_00340f44.cpp","// Nom démêlé : IItemExistanceJudge::isExist\n// Symbole manglé : isExist\n// undefined8 IItemExistanceJudge::isExist(void); @ .text::00340f44\n\n\n/* IItemExistanceJudge::isExist() const */\n\nundefined8 IItemExistanceJudge::isExist(void)\n\n{\n  return 0;\n}\n\n");

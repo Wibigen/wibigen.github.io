@@ -1,0 +1,1 @@
+DOC.got("gh/al/SwitchOpenMapParts/exeWaitOpend_.text_00a1b410.cpp","// Nom démêlé : al::SwitchOpenMapParts::exeWaitOpend\n// Symbole manglé : exeWaitOpend\n// void al::SwitchOpenMapParts::exeWaitOpend(void); @ .text::00a1b410\n\n\n/* al::SwitchOpenMapParts::exeWaitOpend() */\n\nvoid al::SwitchOpenMapParts::exeWaitOpend(void)\n\n{\n  return;\n}\n\n");

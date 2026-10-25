@@ -1,0 +1,1 @@
+DOC.got("src/1462","#pragma once\n\n#include \"basis/seadTypes.h\"\n\nnamespace sead\n{\nclass ThreadUtil\n{\npublic:\n    static s32 ConvertPrioritySeadToPlatform(s32 prio);\n    static s32 ConvertPriorityPlatformToSead(s32 prio);\n    static uintptr_t GetCurrentStackPointer();\n};\n}  // namespace sead\n");

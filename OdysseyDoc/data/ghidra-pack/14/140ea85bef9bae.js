@@ -1,0 +1,1 @@
+DOC.got("gh/rs/getRippleGenerateMaterialFlower.cpp","// Nom démêlé : rs::getRippleGenerateMaterialFlower\n// Symbole manglé : getRippleGenerateMaterialFlower\n// undefined8 rs::getRippleGenerateMaterialFlower(void); @ .text::00667ccc\n\n\n/* rs::getRippleGenerateMaterialFlower() */\n\nundefined8 rs::getRippleGenerateMaterialFlower(void)\n\n{\n  return 0x1952987;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/CageShine/exeWait_.text_00327478.cpp","// Nom démêlé : CageShine::exeWait\n// Symbole manglé : exeWait\n// void CageShine::exeWait(void); @ .text::00327478\n\n\n/* CageShine::exeWait() */\n\nvoid CageShine::exeWait(void)\n\n{\n  return;\n}\n\n");

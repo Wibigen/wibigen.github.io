@@ -1,0 +1,1 @@
+DOC.got("src/591","#pragma once\n\n#include \"Library/Event/EventFlowNode.h\"\n\nnamespace al {\nclass EventFlowNodeJoin : public EventFlowNode {\npublic:\n    EventFlowNodeJoin(const char* name) : EventFlowNode(name) {}\n\n    void init(const EventFlowNodeInitInfo& info) override;\n};\n\nstatic_assert(sizeof(EventFlowNodeJoin) == 0x68);\n}  // namespace al\n");

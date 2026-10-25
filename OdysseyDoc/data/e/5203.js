@@ -1,0 +1,1 @@
+DOC.got("e/5203",{"45012":{"q":"sead::DisplayBuffer","decl":{"f":"lib/sead/include/gfx/seadFrameBuffer.h","l":11,"sig":"class DisplayBuffer","fi":1364},"complete":false,"fwd":[["lib/agl/include/common/aglRenderBuffer.h",10],["lib/sead/include/gfx/seadFrameBuffer.h",11]]}});

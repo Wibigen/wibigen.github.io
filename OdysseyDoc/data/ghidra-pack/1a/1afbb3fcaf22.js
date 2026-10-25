@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/CacheManager/GetInstance_.text_0072f91c.cpp","// Nom démêlé : nn::nex::CacheManager::GetInstance\n// Symbole manglé : GetInstance\n// long nn::nex::CacheManager::GetInstance(void); @ .text::0072f91c\n\n\n/* nn::nex::CacheManager::GetInstance() */\n\nlong nn::nex::CacheManager::GetInstance(void)\n\n{\n  return *(long *)PTR_s_pGv_01f58288 + 0x1f0;\n}\n\n");

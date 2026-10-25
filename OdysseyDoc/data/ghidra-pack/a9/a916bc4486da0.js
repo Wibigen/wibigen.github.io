@@ -1,0 +1,1 @@
+DOC.got("gh/DemoHackFirstDirector/exeEnd_.text_001d3334.cpp","// Nom démêlé : DemoHackFirstDirector::exeEnd\n// Symbole manglé : exeEnd\n// void DemoHackFirstDirector::exeEnd(void); @ .text::001d3334\n\n\n/* DemoHackFirstDirector::exeEnd() */\n\nvoid DemoHackFirstDirector::exeEnd(void)\n\n{\n  return;\n}\n\n");

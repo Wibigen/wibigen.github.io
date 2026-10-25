@@ -1,0 +1,1 @@
+DOC.got("e/381",{"12265":{"q":"PlayerInitInfo","decl":{"f":"src/Util/PlayerUtil.h","l":19,"sig":"class PlayerInitInfo","fi":2517},"complete":false,"fwd":[["src/Player/PlayerActorBase.h",14],["src/Util/PlayerUtil.h",19]]}});

@@ -1,0 +1,1 @@
+DOC.got("gh/nn/font/PairFont/PairFont_.text_00cec4d0.cpp","// Nom démêlé : nn::font::PairFont::~PairFont\n// Symbole manglé : ~PairFont\n// void __thiscall nn::font::PairFont::~PairFont(PairFont *this); @ .text::00cec4d0\n\n\n/* nn::font::PairFont::~PairFont() */\n\nvoid __thiscall nn::font::PairFont::~PairFont(PairFont *this)\n\n{\n  return;\n}\n\n");

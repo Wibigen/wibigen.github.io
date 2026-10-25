@@ -1,0 +1,1 @@
+DOC.got("gh/GolemClimb/endMove_.text_00172cb0.cpp","// Nom démêlé : GolemClimb::endMove\n// Symbole manglé : endMove\n// void __thiscall GolemClimb::endMove(GolemClimb *this); @ .text::00172cb0\n\n\n/* GolemClimb::endMove() */\n\nvoid __thiscall GolemClimb::endMove(GolemClimb *this)\n\n{\n  this[0x349] = (GolemClimb)0x0;\n  FUN__text__00170874();\n  return;\n}\n\n");

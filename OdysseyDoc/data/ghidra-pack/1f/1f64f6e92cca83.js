@@ -1,0 +1,1 @@
+DOC.got("gh/TestMusaBlock/control_.text_004355fc.cpp","// Nom démêlé : TestMusaBlock::control\n// Symbole manglé : control\n// void TestMusaBlock::control(void); @ .text::004355fc\n\n\n/* TestMusaBlock::control() */\n\nvoid TestMusaBlock::control(void)\n\n{\n  return;\n}\n\n");

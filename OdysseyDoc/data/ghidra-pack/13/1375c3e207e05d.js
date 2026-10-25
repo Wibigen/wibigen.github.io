@@ -1,0 +1,1 @@
+DOC.got("gh/TalkNpc/kill_.text_004de3c0.cpp","// Nom démêlé : TalkNpc::kill\n// Symbole manglé : kill\n// void __thiscall TalkNpc::kill(TalkNpc *this); @ .text::004de3c0\n\n\n/* TalkNpc::kill() */\n\nvoid __thiscall TalkNpc::kill(TalkNpc *this)\n\n{\n  al::LiveActor::kill((LiveActor *)this);\n  al::tryOnSwitchDeadOn((IUseStageSwitch *)(this + 0x18));\n  return;\n}\n\n");

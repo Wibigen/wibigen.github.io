@@ -1,0 +1,1 @@
+DOC.got("src/6","#pragma once\n\n#include <nn/types.h>\n\nnamespace nn {\nnamespace atk {\nenum class AuxBus : s32 { AuxBus_A, AuxBus_B, AuxBus_C };\n}\n}  // namespace nn\n");

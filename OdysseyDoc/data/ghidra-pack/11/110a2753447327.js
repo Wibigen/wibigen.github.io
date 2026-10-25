@@ -1,0 +1,1 @@
+DOC.got("gh/nn/font/ResFontBase/GetType_.text_00beed74.cpp","// Nom démêlé : nn::font::ResFontBase::GetType\n// Symbole manglé : GetType\n// undefined8 nn::font::ResFontBase::GetType(void); @ .text::00beed74\n\n\n/* nn::font::ResFontBase::GetType() const */\n\nundefined8 nn::font::ResFontBase::GetType(void)\n\n{\n  return 1;\n}\n\n");

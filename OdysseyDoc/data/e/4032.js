@@ -1,0 +1,1 @@
+DOC.got("e/4032",{"33092":{"q":"nn::gfx::detail::TessellationStateImpl","decl":{"f":"lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h","l":206,"sig":"template <typename TTarget>\nclass TessellationStateImpl","fi":51},"tp":["typename TTarget"],"complete":false,"fwd":[["lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h",206]]}});

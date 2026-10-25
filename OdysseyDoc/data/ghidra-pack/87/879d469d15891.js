@@ -1,0 +1,1 @@
+DOC.got("gh/Bomb/exeWait_.text_001d99dc.cpp","// Nom démêlé : Bomb::exeWait\n// Symbole manglé : exeWait\n// void Bomb::exeWait(void); @ .text::001d99dc\n\n\n/* Bomb::exeWait() */\n\nvoid Bomb::exeWait(void)\n\n{\n  return;\n}\n\n");

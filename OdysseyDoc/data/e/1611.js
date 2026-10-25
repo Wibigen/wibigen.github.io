@@ -1,0 +1,1 @@
+DOC.got("e/1611",{"19557":{"q":"al::EventReceiver","decl":{"f":"src/Npc/SessionMusicianNpc.h","l":23,"sig":"class EventReceiver","fi":2086},"complete":false,"fwd":[["src/Npc/SessionMusicianNpc.h",23]]}});

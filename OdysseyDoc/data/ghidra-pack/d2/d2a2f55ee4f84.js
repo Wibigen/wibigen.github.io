@@ -1,0 +1,1 @@
+DOC.got("gh/FixMapPartsDitherAppear/exeWait_.text_0038542c.cpp","// Nom démêlé : FixMapPartsDitherAppear::exeWait\n// Symbole manglé : exeWait\n// void FixMapPartsDitherAppear::exeWait(void); @ .text::0038542c\n\n\n/* FixMapPartsDitherAppear::exeWait() */\n\nvoid FixMapPartsDitherAppear::exeWait(void)\n\n{\n  return;\n}\n\n");

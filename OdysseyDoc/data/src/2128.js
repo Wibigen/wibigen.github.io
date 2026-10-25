@@ -1,0 +1,1 @@
+DOC.got("src/2128","#pragma once\n\n#include <basis/seadTypes.h>\n\nclass IUsePlayerFallDistanceCheck {\npublic:\n    virtual f32 getFallDistance() const = 0;\n};\n");

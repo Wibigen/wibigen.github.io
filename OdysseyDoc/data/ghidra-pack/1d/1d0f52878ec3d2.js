@@ -1,0 +1,1 @@
+DOC.got("gh/HackCap/isEnableThrow.cpp","// Nom démêlé : HackCap::isEnableThrow\n// Symbole manglé : isEnableThrow\n// void __thiscall HackCap::isEnableThrow(HackCap *this); @ .text::004fd200\n\n\n/* HackCap::isEnableThrow() const */\n\nvoid __thiscall HackCap::isEnableThrow(HackCap *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1e75b88);\n  return;\n}\n\n");

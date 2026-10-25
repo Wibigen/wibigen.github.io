@@ -1,0 +1,1 @@
+DOC.got("gh/PaintObj/PaintObj_.text_003d6e0c.cpp","// Nom démêlé : PaintObj::~PaintObj\n// Symbole manglé : ~PaintObj\n// void __thiscall PaintObj::~PaintObj(PaintObj *this); @ .text::003d6e0c\n\n\n/* PaintObj::~PaintObj() */\n\nvoid __thiscall PaintObj::~PaintObj(PaintObj *this)\n\n{\n  ~PaintObj(this);\n  operator_delete(this);\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Key/GetLength_.text_00729d4c.cpp","// Nom démêlé : nn::nex::Key::GetLength\n// Symbole manglé : GetLength\n// long __thiscall nn::nex::Key::GetLength(Key *this); @ .text::00729d4c\n\n\n/* nn::nex::Key::GetLength() const */\n\nlong __thiscall nn::nex::Key::GetLength(Key *this)\n\n{\n  return *(long *)(this + 0x18) - *(long *)(this + 0x10);\n}\n\n");

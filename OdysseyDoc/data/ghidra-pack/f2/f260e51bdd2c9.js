@@ -1,0 +1,1 @@
+DOC.got("gh/GKShip/exeBattleStartTalk.cpp","// Nom démêlé : GKShip::exeBattleStartTalk\n// Symbole manglé : exeBattleStartTalk\n// void GKShip::exeBattleStartTalk(void); @ .text::0016ef08\n\n\n/* GKShip::exeBattleStartTalk() */\n\nvoid GKShip::exeBattleStartTalk(void)\n\n{\n  return;\n}\n\n");

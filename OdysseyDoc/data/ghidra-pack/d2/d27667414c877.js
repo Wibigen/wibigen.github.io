@@ -1,0 +1,1 @@
+DOC.got("gh/YukimaruInput/isTriggerJump_.text_0044f90c.cpp","// Nom démêlé : YukimaruInput::isTriggerJump\n// Symbole manglé : isTriggerJump\n// undefined8 YukimaruInput::isTriggerJump(void); @ .text::0044f90c\n\n\n/* YukimaruInput::isTriggerJump() const */\n\nundefined8 YukimaruInput::isTriggerJump(void)\n\n{\n  return 0;\n}\n\n");

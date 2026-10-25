@@ -1,0 +1,1 @@
+DOC.got("gh/rs/isInvalidNpcScare.cpp","// Nom démêlé : rs::isInvalidNpcScare\n// Symbole manglé : isInvalidNpcScare\n// TalkNpcParam rs::isInvalidNpcScare(TalkNpcParam *param_1); @ .text::00657b18\n\n\n/* rs::isInvalidNpcScare(TalkNpcParam const*) */\n\nTalkNpcParam rs::isInvalidNpcScare(TalkNpcParam *param_1)\n\n{\n  return param_1[0x39];\n}\n\n");

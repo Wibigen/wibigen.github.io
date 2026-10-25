@@ -1,0 +1,1 @@
+DOC.got("gh/agl/env/EnvObj/getEnvObjName.cpp","// Nom démêlé : agl::env::EnvObj::getEnvObjName\n// Symbole manglé : getEnvObjName\n// EnvObj * __thiscall agl::env::EnvObj::getEnvObjName(EnvObj *this); @ .text::00cd2824\n\n\n/* agl::env::EnvObj::getEnvObjName() const */\n\nEnvObj * __thiscall agl::env::EnvObj::getEnvObjName(EnvObj *this)\n\n{\n  return this + 0x78;\n}\n\n");

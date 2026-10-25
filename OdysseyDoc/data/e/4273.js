@@ -1,0 +1,1 @@
+DOC.got("e/4273",{"34194":{"q":"nn::ui2d::ResExtUserData","decl":{"f":"lib/NintendoSDK/include/nn/ui2d/Util.h","l":19,"sig":"class ResExtUserData","fi":196},"complete":false,"fwd":[["lib/NintendoSDK/include/nn/ui2d/Util.h",19]]}});

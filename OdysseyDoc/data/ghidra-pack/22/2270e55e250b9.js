@@ -1,0 +1,1 @@
+DOC.got("gh/CageSwitch/exeCloseWait.cpp","// Nom démêlé : CageSwitch::exeCloseWait\n// Symbole manglé : exeCloseWait\n// void CageSwitch::exeCloseWait(void); @ .text::00328518\n\n\n/* CageSwitch::exeCloseWait() */\n\nvoid CageSwitch::exeCloseWait(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/isSensorCollision.cpp","// Nom démêlé : al::isSensorCollision\n// Symbole manglé : isSensorCollision\n// bool al::isSensorCollision(HitSensor *param_1); @ .text::009fdab4\n\n\n/* al::isSensorCollision(al::HitSensor const*) */\n\nbool al::isSensorCollision(HitSensor *param_1)\n\n{\n  return *(int *)(param_1 + 8) == 0xf;\n}\n\n");

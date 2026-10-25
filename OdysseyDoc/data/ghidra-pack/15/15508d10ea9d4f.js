@@ -1,0 +1,1 @@
+DOC.got("gh/Curl_num_addresses.cpp","// Nom démêlé : Curl_num_addresses\n// Symbole manglé : Curl_num_addresses\n// int Curl_num_addresses(long param_1); @ .text::007faf50\n\n\nint Curl_num_addresses(long param_1)\n\n{\n  int iVar1;\n  \n  iVar1 = 0;\n  for (; param_1 != 0; param_1 = *(long *)(param_1 + 0x28)) {\n    iVar1 = iVar1 + 1;\n  }\n  return iVar1;\n}\n\n");

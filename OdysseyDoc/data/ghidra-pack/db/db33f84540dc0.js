@@ -1,0 +1,1 @@
+DOC.got("gh/al/setTransZ.cpp","// Nom démêlé : al::setTransZ\n// Symbole manglé : setTransZ\n// void al::setTransZ(LiveActor *param_1,float param_2); @ .text::009eed58\n\n\n/* al::setTransZ(al::LiveActor*, float) */\n\nvoid al::setTransZ(LiveActor *param_1,float param_2)\n\n{\n  *(float *)(*(long *)(param_1 + 0x50) + 0x10) = param_2;\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/Parameter_float/getParamType_.text_003d5f3c.cpp","// Nom démêlé : al::Parameter<float>::getParamType\n// Symbole manglé : getParamType\n// undefined8 al::Parameter<float>::getParamType(void); @ .text::003d5f3c\n\n\n/* al::Parameter<float>::getParamType() const */\n\nundefined8 al::Parameter<float>::getParamType(void)\n\n{\n  return 0;\n}\n\n");

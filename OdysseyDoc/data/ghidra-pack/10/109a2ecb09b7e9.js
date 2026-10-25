@@ -1,0 +1,1 @@
+DOC.got("gh/JangoCap/hideBalloon.cpp","// Nom démêlé : JangoCap::hideBalloon\n// Symbole manglé : hideBalloon\n// void __thiscall JangoCap::hideBalloon(JangoCap *this); @ .text::0022f860\n\n\n/* JangoCap::hideBalloon() */\n\nvoid __thiscall JangoCap::hideBalloon(JangoCap *this)\n\n{\n  BalloonIcon::hideAndStopUpdate(*(BalloonIcon **)(this + 0x118));\n  return;\n}\n\n");

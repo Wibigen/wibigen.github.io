@@ -1,0 +1,1 @@
+DOC.got("gh/agl/detail/Surface/printInfo.cpp","// Nom démêlé : agl::detail::Surface::printInfo\n// Symbole manglé : printInfo\n// void agl::detail::Surface::printInfo(void); @ .text::008b7268\n\n\n/* agl::detail::Surface::printInfo() const */\n\nvoid agl::detail::Surface::printInfo(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/rs/getSpecialPurposeName2DOnly.cpp","// Nom démêlé : rs::getSpecialPurposeName2DOnly\n// Symbole manglé : getSpecialPurposeName2DOnly\n// undefined8 rs::getSpecialPurposeName2DOnly(void); @ .text::00641974\n\n\n/* rs::getSpecialPurposeName2DOnly() */\n\nundefined8 rs::getSpecialPurposeName2DOnly(void)\n\n{\n  return 0x19514a4;\n}\n\n");

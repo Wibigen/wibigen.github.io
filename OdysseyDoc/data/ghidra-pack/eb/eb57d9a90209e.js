@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Packet/GetOverhead.cpp","// Nom démêlé : nn::nex::Packet::GetOverhead\n// Symbole manglé : GetOverhead\n// undefined8 nn::nex::Packet::GetOverhead(void); @ .text::00780284\n\n\n/* nn::nex::Packet::GetOverhead() */\n\nundefined8 nn::nex::Packet::GetOverhead(void)\n\n{\n  return 0x40;\n}\n\n");

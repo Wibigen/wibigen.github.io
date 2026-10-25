@@ -1,0 +1,1 @@
+DOC.got("gh/Pyramid/attackSensor_.text_003e8f34.cpp","// Nom démêlé : Pyramid::attackSensor\n// Symbole manglé : attackSensor\n// void Pyramid::attackSensor(HitSensor *param_1,HitSensor *param_2); @ .text::003e8f34\n\n\n/* Pyramid::attackSensor(al::HitSensor*, al::HitSensor*) */\n\nvoid Pyramid::attackSensor(HitSensor *param_1,HitSensor *param_2)\n\n{\n  return;\n}\n\n");

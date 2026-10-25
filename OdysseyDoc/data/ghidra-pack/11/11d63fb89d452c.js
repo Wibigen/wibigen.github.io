@@ -1,0 +1,1 @@
+DOC.got("gh/al/isExistCollisionParts.cpp","// Nom démêlé : al::isExistCollisionParts\n// Symbole manglé : isExistCollisionParts\n// bool al::isExistCollisionParts(LiveActor *param_1); @ .text::009d7dc0\n\n\n/* al::isExistCollisionParts(al::LiveActor const*) */\n\nbool al::isExistCollisionParts(LiveActor *param_1)\n\n{\n  return *(long *)(param_1 + 0x80) != 0;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("e/1915",{"21022":{"q":"al::MatchStr","decl":{"f":"lib/al/Library/Base/StringUtil.h","l":6,"sig":"struct MatchStr","end":8,"fi":387},"size":8,"align":8,"complete":true,"fields":[{"n":"str","t":"const char *","off":0,"sz":8,"acc":"public","tu":null,"bits":null,"l":7,"cm":null,"ti":null}]}});

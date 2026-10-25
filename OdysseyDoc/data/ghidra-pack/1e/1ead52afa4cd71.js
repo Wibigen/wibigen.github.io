@@ -1,0 +1,1 @@
+DOC.got("gh/sead/Thread/getStackSize.cpp","// Nom démêlé : sead::Thread::getStackSize\n// Symbole manglé : getStackSize\n// undefined4 __thiscall sead::Thread::getStackSize(Thread *this); @ .text::0082f5c8\n\n\n/* sead::Thread::getStackSize() const */\n\nundefined4 __thiscall sead::Thread::getStackSize(Thread *this)\n\n{\n  return *(undefined4 *)(this + 0x88);\n}\n\n");

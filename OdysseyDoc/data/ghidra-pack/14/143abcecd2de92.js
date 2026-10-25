@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerOxygen/reset_.text_0055ec78.cpp","// Nom démêlé : PlayerOxygen::reset\n// Symbole manglé : reset\n// void __thiscall PlayerOxygen::reset(PlayerOxygen *this); @ .text::0055ec78\n\n\n/* PlayerOxygen::reset() */\n\nvoid __thiscall PlayerOxygen::reset(PlayerOxygen *this)\n\n{\n  *(undefined4 *)this = 0x3f800000;\n  *(undefined8 *)(this + 4) = 0;\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerModelChangerYoshi/isFireFlower_.text_0055e82c.cpp","// Nom démêlé : PlayerModelChangerYoshi::isFireFlower\n// Symbole manglé : isFireFlower\n// undefined8 PlayerModelChangerYoshi::isFireFlower(void); @ .text::0055e82c\n\n\n/* PlayerModelChangerYoshi::isFireFlower() const */\n\nundefined8 PlayerModelChangerYoshi::isFireFlower(void)\n\n{\n  return 0;\n}\n\n");

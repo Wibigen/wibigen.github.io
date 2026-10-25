@@ -1,0 +1,1 @@
+DOC.got("gh/BossForestLocalFunction/isLastPhase.cpp","// Nom démêlé : BossForestLocalFunction::isLastPhase\n// Symbole manglé : isLastPhase\n// bool BossForestLocalFunction::isLastPhase(int param_1); @ .text::0011be0c\n\n\n/* BossForestLocalFunction::isLastPhase(int) */\n\nbool BossForestLocalFunction::isLastPhase(int param_1)\n\n{\n  return 1 < param_1;\n}\n\n");

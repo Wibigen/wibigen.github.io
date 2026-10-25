@@ -1,0 +1,1 @@
+DOC.got("gh/nn/ui2d/TextBox/LoadMtx_.text_00c0e8f8.cpp","// Nom démêlé : nn::ui2d::TextBox::LoadMtx\n// Symbole manglé : LoadMtx\n// void nn::ui2d::TextBox::LoadMtx(DrawInfo *param_1); @ .text::00c0e8f8\n\n\n/* nn::ui2d::TextBox::LoadMtx(nn::ui2d::DrawInfo&) */\n\nvoid nn::ui2d::TextBox::LoadMtx(DrawInfo *param_1)\n\n{\n  return;\n}\n\n");

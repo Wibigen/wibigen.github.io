@@ -1,0 +1,1 @@
+DOC.got("gh/al/ByamlWriterDouble/print_.text_00b32a6c.cpp","// Nom démêlé : al::ByamlWriterDouble::print\n// Symbole manglé : print\n// int al::ByamlWriterDouble::print(int param_1); @ .text::00b32a6c\n\n\n/* al::ByamlWriterDouble::print(int) const */\n\nint al::ByamlWriterDouble::print(int param_1)\n\n{\n  return param_1;\n}\n\n");

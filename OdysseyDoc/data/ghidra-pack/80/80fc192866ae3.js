@@ -1,0 +1,1 @@
+DOC.got("gh/Radish/pull.cpp","// Nom démêlé : Radish::pull\n// Symbole manglé : pull\n// void __thiscall Radish::pull(Radish *this); @ .text::003eda40\n\n\n/* Radish::pull() */\n\nvoid __thiscall Radish::pull(Radish *this)\n\n{\n  al::invalidateClipping((LiveActor *)this);\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1e22bd0);\n  return;\n}\n\n");

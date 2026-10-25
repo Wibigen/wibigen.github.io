@@ -1,0 +1,1 @@
+DOC.got("gh/CapSwitchTimer/exeFreeze_.text_00342ce8.cpp","// Nom démêlé : CapSwitchTimer::exeFreeze\n// Symbole manglé : exeFreeze\n// void CapSwitchTimer::exeFreeze(void); @ .text::00342ce8\n\n\n/* CapSwitchTimer::exeFreeze() */\n\nvoid CapSwitchTimer::exeFreeze(void)\n\n{\n  return;\n}\n\n");

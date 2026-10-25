@@ -1,0 +1,1 @@
+DOC.got("gh/CoinCounter/isWait_.text_002de768.cpp","// Nom démêlé : CoinCounter::isWait\n// Symbole manglé : isWait\n// void __thiscall CoinCounter::isWait(CoinCounter *this); @ .text::002de768\n\n\n/* CoinCounter::isWait() const */\n\nvoid __thiscall CoinCounter::isWait(CoinCounter *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1dc3518);\n  return;\n}\n\n");

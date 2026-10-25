@@ -1,0 +1,1 @@
+DOC.got("gh/al/ByamlWriterContainer/addInt_.text_00b32b10.cpp","// Nom démêlé : al::ByamlWriterContainer::addInt\n// Symbole manglé : addInt\n// int al::ByamlWriterContainer::addInt(int param_1); @ .text::00b32b10\n\n\n/* al::ByamlWriterContainer::addInt(int) */\n\nint al::ByamlWriterContainer::addInt(int param_1)\n\n{\n  return param_1;\n}\n\n");

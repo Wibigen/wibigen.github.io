@@ -1,0 +1,1 @@
+DOC.got("gh/YoshiFruitWatcher/getSceneObjName_.text_002d89c0.cpp","// Nom démêlé : YoshiFruitWatcher::getSceneObjName\n// Symbole manglé : getSceneObjName\n// undefined8 YoshiFruitWatcher::getSceneObjName(void); @ .text::002d89c0\n\n\n/* YoshiFruitWatcher::getSceneObjName() const */\n\nundefined8 YoshiFruitWatcher::getSceneObjName(void)\n\n{\n  return 0x192b4ee;\n}\n\n");

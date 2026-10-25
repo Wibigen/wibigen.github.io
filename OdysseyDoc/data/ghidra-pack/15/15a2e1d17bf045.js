@@ -1,0 +1,1 @@
+DOC.got("gh/Stacker/updateAnimFrameCapOnHead.cpp","// Nom démêlé : Stacker::updateAnimFrameCapOnHead\n// Symbole manglé : updateAnimFrameCapOnHead\n// void Stacker::updateAnimFrameCapOnHead(void); @ .text::001bd40c\n\n\n/* Stacker::updateAnimFrameCapOnHead() */\n\nvoid Stacker::updateAnimFrameCapOnHead(void)\n\n{\n  return;\n}\n\n");

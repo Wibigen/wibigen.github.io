@@ -1,0 +1,1 @@
+DOC.got("gh/sead/DrawLockContext/genMessage.cpp","// Nom démêlé : sead::DrawLockContext::genMessage\n// Symbole manglé : genMessage\n// void sead::DrawLockContext::genMessage(Context *param_1); @ .text::0086feb8\n\n\n/* sead::DrawLockContext::genMessage(sead::hostio::Context*) */\n\nvoid sead::DrawLockContext::genMessage(Context *param_1)\n\n{\n  return;\n}\n\n");

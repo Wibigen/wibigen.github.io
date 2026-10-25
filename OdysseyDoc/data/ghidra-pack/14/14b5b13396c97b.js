@@ -1,0 +1,1 @@
+DOC.got("gh/DoorWarpLock/unlock_.text_00361ad8.cpp","// Nom démêlé : DoorWarpLock::unlock\n// Symbole manglé : unlock\n// void __thiscall DoorWarpLock::unlock(DoorWarpLock *this); @ .text::00361ad8\n\n\n/* DoorWarpLock::unlock() */\n\nvoid __thiscall DoorWarpLock::unlock(DoorWarpLock *this)\n\n{\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1df1ba8);\n  return;\n}\n\n");

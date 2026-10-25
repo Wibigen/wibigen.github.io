@@ -1,0 +1,1 @@
+DOC.got("e/13762",{"29996":{"q":"ams::capsrv::detail::result::ResultModuleId","decl":{"f":"lib/NintendoSDK/include/vapours/results/capsrv_results.hpp","l":24,"sig":"R_DEFINE_NAMESPACE_RESULT_MODULE(206)","fi":232},"underlying":"std::integral_constant<int, 206>"}});

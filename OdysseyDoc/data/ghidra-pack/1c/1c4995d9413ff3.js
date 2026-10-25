@@ -1,0 +1,1 @@
+DOC.got("gh/al/RaceJudge/isFinalLap.cpp","// Nom démêlé : al::RaceJudge::isFinalLap\n// Symbole manglé : isFinalLap\n// bool __thiscall al::RaceJudge::isFinalLap(RaceJudge *this); @ .text::00b70070\n\n\n/* al::RaceJudge::isFinalLap() const */\n\nbool __thiscall al::RaceJudge::isFinalLap(RaceJudge *this)\n\n{\n  return *(int *)(this + 0x30) == *(int *)(this + 0x2c) + -1;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/CRC16Checksum/GetChecksumLength.cpp","// Nom démêlé : nn::nex::CRC16Checksum::GetChecksumLength\n// Symbole manglé : GetChecksumLength\n// undefined8 nn::nex::CRC16Checksum::GetChecksumLength(void); @ .text::00729a14\n\n\n/* nn::nex::CRC16Checksum::GetChecksumLength() */\n\nundefined8 nn::nex::CRC16Checksum::GetChecksumLength(void)\n\n{\n  return 2;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/BossMagmaCamera/exeNone.cpp","// Nom démêlé : BossMagmaCamera::exeNone\n// Symbole manglé : exeNone\n// void BossMagmaCamera::exeNone(void); @ .text::00139774\n\n\n/* BossMagmaCamera::exeNone() */\n\nvoid BossMagmaCamera::exeNone(void)\n\n{\n  return;\n}\n\n");

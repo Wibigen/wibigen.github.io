@@ -1,0 +1,1 @@
+DOC.got("gh/RailDrawerEdge/exeWait_.text_003f3c88.cpp","// Nom démêlé : RailDrawerEdge::exeWait\n// Symbole manglé : exeWait\n// void RailDrawerEdge::exeWait(void); @ .text::003f3c88\n\n\n/* RailDrawerEdge::exeWait() */\n\nvoid RailDrawerEdge::exeWait(void)\n\n{\n  return;\n}\n\n");

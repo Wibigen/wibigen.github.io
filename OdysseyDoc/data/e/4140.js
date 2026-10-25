@@ -1,0 +1,1 @@
+DOC.got("e/4140",{"33429":{"q":"nn::hid::tmp::SixAxisSensorCountState","decl":{"f":"lib/NintendoSDK/include/nn/hid.h","l":649,"sig":"struct SixAxisSensorCountState","end":651,"fi":133},"size":40,"align":1,"complete":true,"fields":[{"n":"padding","t":"u8[40]","off":0,"sz":40,"acc":"public","bits":null,"l":650,"cm":null,"ti":49378}]}});

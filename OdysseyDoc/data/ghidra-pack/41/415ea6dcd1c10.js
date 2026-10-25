@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/HttpClient/HttpClient_.text_00799f28.cpp","// Nom démêlé : nn::nex::HttpClient::~HttpClient\n// Symbole manglé : ~HttpClient\n// void __thiscall nn::nex::HttpClient::~HttpClient(HttpClient *this); @ .text::00799f28\n\n\n/* nn::nex::HttpClient::~HttpClient() */\n\nvoid __thiscall nn::nex::HttpClient::~HttpClient(HttpClient *this)\n\n{\n  return;\n}\n\n");

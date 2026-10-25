@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/StorageUnit/Reserve_.text_0074808c.cpp","// Nom démêlé : nn::nex::StorageUnit::Reserve\n// Symbole manglé : Reserve\n// undefined8 nn::nex::StorageUnit::Reserve(ulong param_1); @ .text::0074808c\n\n\n/* nn::nex::StorageUnit::Reserve(unsigned long) */\n\nundefined8 nn::nex::StorageUnit::Reserve(ulong param_1)\n\n{\n  return 0;\n}\n\n");

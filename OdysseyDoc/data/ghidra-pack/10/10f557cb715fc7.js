@@ -1,0 +1,1 @@
+DOC.got("gh/Shine/isEndAppearGK.cpp","// Nom démêlé : Shine::isEndAppearGK\n// Symbole manglé : isEndAppearGK\n// void __thiscall Shine::isEndAppearGK(Shine *this); @ .text::002d0800\n\n\n/* Shine::isEndAppearGK() const */\n\nvoid __thiscall Shine::isEndAppearGK(Shine *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1dbe500);\n  return;\n}\n\n");

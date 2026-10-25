@@ -1,0 +1,1 @@
+DOC.got("gh/al/isRailMoveRestart.cpp","// Nom démêlé : al::isRailMoveRestart\n// Symbole manglé : isRailMoveRestart\n// bool al::isRailMoveRestart(int param_1); @ .text::0098bce4\n\n\n/* al::isRailMoveRestart(int) */\n\nbool al::isRailMoveRestart(int param_1)\n\n{\n  return param_1 == 2;\n}\n\n");

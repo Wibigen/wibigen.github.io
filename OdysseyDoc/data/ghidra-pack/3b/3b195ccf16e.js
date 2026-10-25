@@ -1,0 +1,1 @@
+DOC.got("gh/AchievementNpc/control_.text_00479530.cpp","// Nom démêlé : AchievementNpc::control\n// Symbole manglé : control\n// void AchievementNpc::control(void); @ .text::00479530\n\n\n/* AchievementNpc::control() */\n\nvoid AchievementNpc::control(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/WaveSurfMapParts/exeWait_.text_00446fd4.cpp","// Nom démêlé : WaveSurfMapParts::exeWait\n// Symbole manglé : exeWait\n// void WaveSurfMapParts::exeWait(void); @ .text::00446fd4\n\n\n/* WaveSurfMapParts::exeWait() */\n\nvoid WaveSurfMapParts::exeWait(void)\n\n{\n  return;\n}\n\n");

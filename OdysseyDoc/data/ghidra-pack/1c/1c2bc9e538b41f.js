@@ -1,0 +1,1 @@
+DOC.got("gh/TRex/getPatrolGravityAccel.cpp","// Nom démêlé : TRex::getPatrolGravityAccel\n// Symbole manglé : getPatrolGravityAccel\n// undefined1  [16] TRex::getPatrolGravityAccel(void); @ .text::00298afc\n\n\n/* TRex::getPatrolGravityAccel() */\n\nundefined1  [16] TRex::getPatrolGravityAccel(void)\n\n{\n  return ZEXT816(0x40400000);\n}\n\n");

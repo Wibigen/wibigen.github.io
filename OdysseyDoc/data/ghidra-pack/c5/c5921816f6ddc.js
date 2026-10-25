@@ -1,0 +1,1 @@
+DOC.got("gh/TestMusaBlockGenerator/exeHide_.text_00436abc.cpp","// Nom démêlé : TestMusaBlockGenerator::exeHide\n// Symbole manglé : exeHide\n// void TestMusaBlockGenerator::exeHide(void); @ .text::00436abc\n\n\n/* TestMusaBlockGenerator::exeHide() */\n\nvoid TestMusaBlockGenerator::exeHide(void)\n\n{\n  return;\n}\n\n");

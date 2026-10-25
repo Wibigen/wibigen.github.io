@@ -1,0 +1,1 @@
+DOC.got("src/1933","#pragma once\n\n#include \"Library/LiveActor/LiveActor.h\"\n\nclass PeachWorldTree : public al::LiveActor {\npublic:\n    PeachWorldTree(const char* name);\n\n    void init(const al::ActorInitInfo& info) override;\n    void control() override;\n};\n");

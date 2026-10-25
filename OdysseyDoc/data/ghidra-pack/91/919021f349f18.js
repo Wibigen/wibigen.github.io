@@ -1,0 +1,1 @@
+DOC.got("gh/agl/pfx/AutoExposure/calcGPU_.text_00c7fbf8.cpp","// Nom démêlé : agl::pfx::AutoExposure::calcGPU\n// Symbole manglé : calcGPU\n// int agl::pfx::AutoExposure::calcGPU(int param_1); @ .text::00c7fbf8\n\n\n/* agl::pfx::AutoExposure::calcGPU(int) const */\n\nint agl::pfx::AutoExposure::calcGPU(int param_1)\n\n{\n  return param_1;\n}\n\n");

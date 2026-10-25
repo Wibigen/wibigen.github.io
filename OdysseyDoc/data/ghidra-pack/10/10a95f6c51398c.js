@@ -1,0 +1,1 @@
+DOC.got("gh/MapLayout/getSceneObjName_.text_002f6b24.cpp","// Nom démêlé : MapLayout::getSceneObjName\n// Symbole manglé : getSceneObjName\n// undefined8 MapLayout::getSceneObjName(void); @ .text::002f6b24\n\n\n/* MapLayout::getSceneObjName() const */\n\nundefined8 MapLayout::getSceneObjName(void)\n\n{\n  return 0x192c665;\n}\n\n");

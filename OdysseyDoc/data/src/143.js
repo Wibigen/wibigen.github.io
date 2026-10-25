@@ -1,0 +1,1 @@
+DOC.got("src/143","#pragma once\n\n#include <nn/irs/HandAnalysisMode.h>\n\nnamespace nn::irsensor {\nstruct HandAnalysisConfig {\n    HandAnalysisMode mode;\n};\n}  // namespace nn::irsensor\n");

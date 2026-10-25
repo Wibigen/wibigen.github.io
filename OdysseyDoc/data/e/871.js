@@ -1,0 +1,1 @@
+DOC.got("e/871",{"15586":{"q":"agl::GPUMemAddr","decl":{"f":"lib/agl/include/common/aglGPUMemAddr.h","l":37,"sig":"template <typename T>\nclass GPUMemAddr : public GPUMemAddrBase","end":37,"fi":267},"tp":["typename T"],"bases":[["GPUMemAddrBase","public",false,15587]],"complete":true}});

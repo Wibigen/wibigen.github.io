@@ -1,0 +1,1 @@
+DOC.got("gh/nn/ui2d/Layout/Layout_.text_00c00be8.cpp","// Nom démêlé : nn::ui2d::Layout::~Layout\n// Symbole manglé : ~Layout\n// void __thiscall nn::ui2d::Layout::~Layout(Layout *this); @ .text::00c00be8\n\n\n/* nn::ui2d::Layout::~Layout() */\n\nvoid __thiscall nn::ui2d::Layout::~Layout(Layout *this)\n\n{\n  *(undefined **)this = PTR_01f60290 + 0x10;\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/wslay_event_get_read_enabled.cpp","// Nom démêlé : wslay_event_get_read_enabled\n// Symbole manglé : wslay_event_get_read_enabled\n// undefined1 wslay_event_get_read_enabled(long param_1); @ .text::007a231c\n\n\nundefined1 wslay_event_get_read_enabled(long param_1)\n\n{\n  return *(undefined1 *)(param_1 + 0x20);\n}\n\n");

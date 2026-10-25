@@ -1,0 +1,1 @@
+DOC.got("e/3832",{"31875":{"q":"nn::gfx::MemoryPoolImplData","decl":{"f":"lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h","l":133,"sig":"template <typename TTarget>\nstruct MemoryPoolImplData","fi":51},"tp":["typename TTarget"],"complete":false,"fwd":[["lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h",133]]}});

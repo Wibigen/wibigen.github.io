@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/TimedSignal/Trace_.text_0074794c.cpp","// Nom démêlé : nn::nex::TimedSignal::Trace\n// Symbole manglé : Trace\n// void nn::nex::TimedSignal::Trace(void); @ .text::0074794c\n\n\n/* nn::nex::TimedSignal::Trace() */\n\nvoid nn::nex::TimedSignal::Trace(void)\n\n{\n  return;\n}\n\n");

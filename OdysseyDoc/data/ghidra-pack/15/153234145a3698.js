@@ -1,0 +1,1 @@
+DOC.got("gh/StageSceneLayout/exeCoinCountAnim.cpp","// Nom démêlé : StageSceneLayout::exeCoinCountAnim\n// Symbole manglé : exeCoinCountAnim\n// void StageSceneLayout::exeCoinCountAnim(void); @ .text::0030d2e8\n\n\n/* StageSceneLayout::exeCoinCountAnim() */\n\nvoid StageSceneLayout::exeCoinCountAnim(void)\n\n{\n  return;\n}\n\n");

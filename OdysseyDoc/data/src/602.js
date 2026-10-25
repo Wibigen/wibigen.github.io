@@ -1,0 +1,1 @@
+DOC.got("src/602","#pragma once\n\n#include <basis/seadTypes.h>\n\nnamespace al {\nstruct ExecuteOrder {\n    const char* listName;\n    const char* executeGroup;\n    s32 listMaxSize;\n    const char* groupType;\n};\n\nstatic_assert(sizeof(ExecuteOrder) == 0x20);\n\n}  // namespace al\n");

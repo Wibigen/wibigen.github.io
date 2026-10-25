@@ -1,0 +1,1 @@
+DOC.got("src/947","#pragma once\n\n#include \"Library/Area/AreaObj.h\"\n\nnamespace al {\nclass SeBarrierArea : public AreaObj {\npublic:\n    SeBarrierArea(const char* name);\n\n    void init(const AreaInitInfo& info) override;\n\nprivate:\n    sead::Vector3f mTrans = {0.0, 0.0, 0.0};\n    bool mHasData = false;\n};\n}  // namespace al\n");

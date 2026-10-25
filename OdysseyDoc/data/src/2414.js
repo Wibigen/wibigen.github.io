@@ -1,0 +1,1 @@
+DOC.got("src/2414","#pragma once\n\n#include \"Library/HostIO/HioNode.h\"\n\nnamespace al {\nclass ByamlIter;\nclass ByamlWriter;\n}  // namespace al\n\nclass ByamlSave : public al::HioNode {\npublic:\n    virtual void write(al::ByamlWriter* writer) = 0;\n    virtual void read(const al::ByamlIter& save) = 0;\n};\n");

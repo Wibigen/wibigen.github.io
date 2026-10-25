@@ -1,0 +1,1 @@
+DOC.got("gh/al/WindowConfirmWait/exeHide_.text_00a9ca2c.cpp","// Nom démêlé : al::WindowConfirmWait::exeHide\n// Symbole manglé : exeHide\n// void al::WindowConfirmWait::exeHide(void); @ .text::00a9ca2c\n\n\n/* al::WindowConfirmWait::exeHide() */\n\nvoid al::WindowConfirmWait::exeHide(void)\n\n{\n  return;\n}\n\n");

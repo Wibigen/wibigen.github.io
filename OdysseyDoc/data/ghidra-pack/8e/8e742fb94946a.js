@@ -1,0 +1,1 @@
+DOC.got("gh/WanwanStateHack/endPull.cpp","// Nom démêlé : WanwanStateHack::endPull\n// Symbole manglé : endPull\n// void WanwanStateHack::endPull(void); @ .text::002ad784\n\n\n/* WanwanStateHack::endPull() */\n\nvoid WanwanStateHack::endPull(void)\n\n{\n  return;\n}\n\n");

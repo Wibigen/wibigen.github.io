@@ -1,0 +1,1 @@
+DOC.got("gh/GabuZou/calcSerchSizeZ.cpp","// Nom démêlé : GabuZou::calcSerchSizeZ\n// Symbole manglé : calcSerchSizeZ\n// int __thiscall GabuZou::calcSerchSizeZ(GabuZou *this); @ .text::00201ce0\n\n\n/* GabuZou::calcSerchSizeZ() const */\n\nint __thiscall GabuZou::calcSerchSizeZ(GabuZou *this)\n\n{\n  return (*(int *)(this + 0x19c) + 1) - *(int *)(this + 400);\n}\n\n");

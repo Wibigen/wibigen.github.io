@@ -1,0 +1,1 @@
+DOC.got("gh/SphinxRideMiniGameNpc/exeTalkEnd_.text_004d9ef8.cpp","// Nom démêlé : SphinxRideMiniGameNpc::exeTalkEnd\n// Symbole manglé : exeTalkEnd\n// void SphinxRideMiniGameNpc::exeTalkEnd(void); @ .text::004d9ef8\n\n\n/* SphinxRideMiniGameNpc::exeTalkEnd() */\n\nvoid SphinxRideMiniGameNpc::exeTalkEnd(void)\n\n{\n  return;\n}\n\n");

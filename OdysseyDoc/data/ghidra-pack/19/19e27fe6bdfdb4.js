@@ -1,0 +1,1 @@
+DOC.got("gh/sead/StackPrinter/StackPrinter.cpp","// Nom démêlé : sead::StackPrinter::StackPrinter\n// Symbole manglé : StackPrinter\n// void __thiscall sead::StackPrinter::StackPrinter(StackPrinter *this); @ .text::00c732dc\n\n\n/* sead::StackPrinter::StackPrinter() */\n\nvoid __thiscall sead::StackPrinter::StackPrinter(StackPrinter *this)\n\n{\n  return;\n}\n\n");

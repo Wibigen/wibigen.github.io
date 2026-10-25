@@ -1,0 +1,1 @@
+DOC.got("gh/al/ThunderRenderKeeper/getName_.text_00b0d768.cpp","// Nom démêlé : al::ThunderRenderKeeper::getName\n// Symbole manglé : getName\n// undefined8 al::ThunderRenderKeeper::getName(void); @ .text::00b0d768\n\n\n/* al::ThunderRenderKeeper::getName() const */\n\nundefined8 al::ThunderRenderKeeper::getName(void)\n\n{\n  return 0x1974f80;\n}\n\n");

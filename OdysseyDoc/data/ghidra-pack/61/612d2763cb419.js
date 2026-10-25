@@ -1,0 +1,1 @@
+DOC.got("gh/agl/pfx/Bloom/update_.text_00c82ca4.cpp","// Nom démêlé : agl::pfx::Bloom::update\n// Symbole manglé : update\n// void agl::pfx::Bloom::update(void); @ .text::00c82ca4\n\n\n/* agl::pfx::Bloom::update() */\n\nvoid agl::pfx::Bloom::update(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("src/978","#pragma once\n\n#include \"Library/Layout/LayoutActor.h\"\n\nnamespace al {\nclass LayoutInitInfo;\n\nclass SimpleLayoutAppear : public LayoutActor {\npublic:\n    SimpleLayoutAppear(const char* name, const char* layoutName, const LayoutInitInfo& info,\n                       const char* archiveName);\n\n    void appear() override;\n};\n}  // namespace al\n");

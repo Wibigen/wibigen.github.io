@@ -1,0 +1,1 @@
+DOC.got("e/4197",{"33726":{"q":"nn::os::SystemEvent","decl":{"f":"lib/NintendoSDK/include/nn/os.h","l":70,"sig":"struct SystemEvent","end":72,"fi":163},"size":48,"align":8,"complete":true,"fields":[{"n":"m_SystemEventType","t":"SystemEventType","off":0,"sz":48,"acc":"public","bits":null,"l":71,"cm":null,"ti":33727}]}});

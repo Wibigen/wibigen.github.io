@@ -1,0 +1,1 @@
+DOC.got("gh/TankBullet/exeYoshiEat.cpp","// Nom démêlé : TankBullet::exeYoshiEat\n// Symbole manglé : exeYoshiEat\n// void TankBullet::exeYoshiEat(void); @ .text::0028aa40\n\n\n/* TankBullet::exeYoshiEat() */\n\nvoid TankBullet::exeYoshiEat(void)\n\n{\n  return;\n}\n\n");

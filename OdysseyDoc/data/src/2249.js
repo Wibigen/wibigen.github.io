@@ -1,0 +1,1 @@
+DOC.got("src/2249","#include \"Player/PlayerJudgeSleep.h\"\n\n#include \"Player/PlayerStateWait.h\"\n\nPlayerJudgeSleep::PlayerJudgeSleep(const PlayerStateWait* stateWait) : mStateWait(stateWait) {}\n\nbool PlayerJudgeSleep::judge() const {\n    return mStateWait->isSleep();\n}\n");

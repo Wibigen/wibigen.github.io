@@ -1,0 +1,1 @@
+DOC.got("src/2129","#pragma once\n\nclass PlayerHackKeeper;\n\nclass IUsePlayerHack {\npublic:\n    virtual PlayerHackKeeper* getPlayerHackKeeper() const = 0;\n};\n");

@@ -1,0 +1,1 @@
+DOC.got("e/13918",{"33905":{"q":"nn::settings::system::GetFirmwareVersion","decl":{"f":"lib/NintendoSDK/include/nn/settings.h","l":55,"sig":"Result GetFirmwareVersion(FirmwareVersion*)","fi":182},"ret":"Result","params":[["FirmwareVersion *","",null,33903]],"mangled":"_ZN2nn8settings6system18GetFirmwareVersionEPNS1_15FirmwareVersionE","ret_id":30899}});

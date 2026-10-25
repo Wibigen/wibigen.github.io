@@ -1,0 +1,1 @@
+DOC.got("src/1277","#include \"Project/SaveDataSequenceBase.h\"\n\nnamespace al {\n\nSaveDataSequenceBase::SaveDataSequenceBase() = default;\n\n}  // namespace al\n");

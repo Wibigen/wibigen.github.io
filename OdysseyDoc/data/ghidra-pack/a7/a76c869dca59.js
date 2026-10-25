@@ -1,0 +1,1 @@
+DOC.got("gh/al/ByamlWriterData/printIndent.cpp","// Nom démêlé : al::ByamlWriterData::printIndent\n// Symbole manglé : printIndent\n// int al::ByamlWriterData::printIndent(int param_1); @ .text::00b318c0\n\n\n/* al::ByamlWriterData::printIndent(int) const */\n\nint al::ByamlWriterData::printIndent(int param_1)\n\n{\n  return param_1;\n}\n\n");

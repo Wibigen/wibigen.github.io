@@ -1,0 +1,1 @@
+DOC.got("gh/sead/FrameHeap/free_.text_0084346c.cpp","// Nom démêlé : sead::FrameHeap::free\n// Symbole manglé : free\n// void sead::FrameHeap::free(void *param_1); @ .text::0084346c\n\n\n/* sead::FrameHeap::free(void*) */\n\nvoid sead::FrameHeap::free(void *param_1)\n\n{\n  return;\n}\n\n");

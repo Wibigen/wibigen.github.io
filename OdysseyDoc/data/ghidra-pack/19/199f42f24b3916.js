@@ -1,0 +1,1 @@
+DOC.got("gh/FUN_.text_00ad818c.cpp","// Nom démêlé : FUN_.text__00ad818c\n// Symbole manglé : FUN_.text__00ad818c\n// void FUN_.text__00ad818c(void); @ .text::00ad818c\n\n\nvoid FUN__text__00ad818c(void)\n\n{\n  al::SeResourceSpecificInfo::SeResourceSpecificInfo((SeResourceSpecificInfo *)&DAT_02696e78);\n  return;\n}\n\n");

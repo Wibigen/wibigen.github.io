@@ -1,0 +1,1 @@
+DOC.got("gh/al/Parameter_bool/getParamType_.text_0099e16c.cpp","// Nom démêlé : al::Parameter<bool>::getParamType\n// Symbole manglé : getParamType\n// undefined8 al::Parameter<bool>::getParamType(void); @ .text::0099e16c\n\n\n/* al::Parameter<bool>::getParamType() const */\n\nundefined8 al::Parameter<bool>::getParamType(void)\n\n{\n  return 0;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/InformationWindowRequester/done_.text_005ad4d0.cpp","// Nom démêlé : InformationWindowRequester::done\n// Symbole manglé : done\n// void InformationWindowRequester::done(TutorialInfo *param_1); @ .text::005ad4d0\n\n\n/* InformationWindowRequester::done(TutorialInfo const*) */\n\nvoid InformationWindowRequester::done(TutorialInfo *param_1)\n\n{\n  return;\n}\n\n");

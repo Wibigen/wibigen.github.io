@@ -1,0 +1,1 @@
+DOC.got("src/2075","#pragma once\n\n#include <prim/seadEnum.h>\n\nSEAD_ENUM(SessionEventProgress\n    , Entry\n    , Wait1stMusician\n    , Wait2ndMusician\n    , Wait3rdMusician\n    , Wait4thMusician\n    , RequestGoToThePowerPlant\n    , WaitThePowerPlantWorks\n    , TheCeremonyIsReady\n    , GoForTheCeremony\n)\n");

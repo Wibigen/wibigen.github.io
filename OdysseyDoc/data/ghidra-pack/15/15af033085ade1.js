@@ -1,0 +1,1 @@
+DOC.got("gh/Breeda/calcHandPos.cpp","// Nom démêlé : Breeda::calcHandPos\n// Symbole manglé : calcHandPos\n// void __thiscall Breeda::calcHandPos(Breeda *this); @ .text::001487c8\n\n\n/* Breeda::calcHandPos() */\n\nvoid __thiscall Breeda::calcHandPos(Breeda *this)\n\n{\n  al::calcJointPos((Vector3 *)(this + 0x1dc),(LiveActor *)this,(char *)0x191f38c);\n  return;\n}\n\n");

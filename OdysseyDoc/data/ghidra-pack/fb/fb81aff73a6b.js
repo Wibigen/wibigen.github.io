@@ -1,0 +1,1 @@
+DOC.got("gh/BlockStateNoItem/exeWait_.text_0031f444.cpp","// Nom démêlé : BlockStateNoItem::exeWait\n// Symbole manglé : exeWait\n// void BlockStateNoItem::exeWait(void); @ .text::0031f444\n\n\n/* BlockStateNoItem::exeWait() */\n\nvoid BlockStateNoItem::exeWait(void)\n\n{\n  return;\n}\n\n");

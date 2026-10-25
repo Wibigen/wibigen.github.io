@@ -1,0 +1,1 @@
+DOC.got("gh/agl/fx/OfxBase/getOfxName.cpp","// Nom démêlé : agl::fx::OfxBase::getOfxName\n// Symbole manglé : getOfxName\n// OfxBase * __thiscall agl::fx::OfxBase::getOfxName(OfxBase *this); @ .text::00cd2858\n\n\n/* agl::fx::OfxBase::getOfxName() const */\n\nOfxBase * __thiscall agl::fx::OfxBase::getOfxName(OfxBase *this)\n\n{\n  return this + 0xe38;\n}\n\n");

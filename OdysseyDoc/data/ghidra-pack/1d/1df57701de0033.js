@@ -1,0 +1,1 @@
+DOC.got("gh/MockBalloonFindMyBalloonHolder/update_.text_00457414.cpp","// Nom démêlé : MockBalloonFindMyBalloonHolder::update\n// Symbole manglé : update\n// void MockBalloonFindMyBalloonHolder::update(void); @ .text::00457414\n\n\n/* MockBalloonFindMyBalloonHolder::update() */\n\nvoid MockBalloonFindMyBalloonHolder::update(void)\n\n{\n  return;\n}\n\n");

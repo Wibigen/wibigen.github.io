@@ -1,0 +1,1 @@
+DOC.got("gh/FilterFly/isWaitEnd.cpp","// Nom démêlé : FilterFly::isWaitEnd\n// Symbole manglé : isWaitEnd\n// void __thiscall FilterFly::isWaitEnd(FilterFly *this); @ .text::002eade4\n\n\n/* FilterFly::isWaitEnd() const */\n\nvoid __thiscall FilterFly::isWaitEnd(FilterFly *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1dc64b8);\n  return;\n}\n\n");

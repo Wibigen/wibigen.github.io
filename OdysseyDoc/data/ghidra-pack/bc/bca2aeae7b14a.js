@@ -1,0 +1,1 @@
+DOC.got("gh/al/ISceneObj/getSceneObjName_.text_001076b4.cpp","// Nom démêlé : al::ISceneObj::getSceneObjName\n// Symbole manglé : getSceneObjName\n// undefined1 * al::ISceneObj::getSceneObjName(void); @ .text::001076b4\n\n\n/* al::ISceneObj::getSceneObjName() const */\n\nundefined1 * al::ISceneObj::getSceneObjName(void)\n\n{\n  return &DAT_0191caa8;\n}\n\n");

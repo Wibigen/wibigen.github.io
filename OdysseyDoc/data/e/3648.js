@@ -1,0 +1,1 @@
+DOC.got("e/3648",{"31123":{"q":"nn::audio::AuxType","decl":{"f":"lib/NintendoSDK/include/nn/audio.h","l":123,"sig":"struct AuxType","end":125,"fi":16},"size":8,"align":8,"complete":true,"fields":[{"n":"_0","t":"u64 *","off":0,"sz":8,"acc":"public","bits":null,"l":124,"cm":null,"ti":49377}]}});

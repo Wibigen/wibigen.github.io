@@ -1,0 +1,1 @@
+DOC.got("gh/sead/FrameHeap/genInformation_.text_00843d20.cpp","// Nom démêlé : sead::FrameHeap::genInformation_\n// Symbole manglé : genInformation_\n// void sead::FrameHeap::genInformation_(Context *param_1); @ .text::00843d20\n\n\n/* sead::FrameHeap::genInformation_(sead::hostio::Context*) */\n\nvoid sead::FrameHeap::genInformation_(Context *param_1)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/updateEffect_.text_00ad0a8c.cpp","// Nom démêlé : al::updateEffect\n// Symbole manglé : updateEffect\n// void al::updateEffect(Scene *param_1); @ .text::00ad0a8c\n\n\n/* al::updateEffect(al::Scene*) */\n\nvoid al::updateEffect(Scene *param_1)\n\n{\n  alExecuteFunction::updateEffect(*(ExecuteDirector **)(*(long *)(param_1 + 0x90) + 0x20));\n  return;\n}\n\n");

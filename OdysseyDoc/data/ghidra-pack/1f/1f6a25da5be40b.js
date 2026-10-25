@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerActorBase/endDemoMainShineGet.cpp","// Nom démêlé : PlayerActorBase::endDemoMainShineGet\n// Symbole manglé : endDemoMainShineGet\n// void PlayerActorBase::endDemoMainShineGet(void); @ .text::0044f8b8\n\n\n/* PlayerActorBase::endDemoMainShineGet() */\n\nvoid PlayerActorBase::endDemoMainShineGet(void)\n\n{\n  return;\n}\n\n");

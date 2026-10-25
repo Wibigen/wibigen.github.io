@@ -1,0 +1,1 @@
+DOC.got("gh/TimeBalloon/min.cpp","// Nom démêlé : TimeBalloon::min\n// Symbole manglé : min\n// long TimeBalloon::min(long param_1,long param_2); @ .text::0045d194\n\n\n/* TimeBalloon::min(long, long) */\n\nlong TimeBalloon::min(long param_1,long param_2)\n\n{\n  if (param_2 <= param_1) {\n    param_1 = param_2;\n  }\n  return param_1;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/SearchAmiiboDataTable/getDataNumMax.cpp","// Nom démêlé : SearchAmiiboDataTable::getDataNumMax\n// Symbole manglé : getDataNumMax\n// undefined8 SearchAmiiboDataTable::getDataNumMax(void); @ .text::00105070\n\n\n/* SearchAmiiboDataTable::getDataNumMax() const */\n\nundefined8 SearchAmiiboDataTable::getDataNumMax(void)\n\n{\n  return 3;\n}\n\n");

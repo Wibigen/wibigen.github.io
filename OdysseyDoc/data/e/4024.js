@@ -1,0 +1,1 @@
+DOC.got("e/4024",{"33053":{"q":"nn::gfx::detail::SemaphoreImpl","decl":{"f":"lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h","l":230,"sig":"template <typename TTarget>\nclass SemaphoreImpl","fi":51},"tp":["typename TTarget"],"derived":[32464],"complete":false,"fwd":[["lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h",230]]}});

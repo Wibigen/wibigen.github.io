@@ -1,0 +1,1 @@
+DOC.got("gh/TimeBalloon/getDataTypeAchievementId.cpp","// Nom démêlé : TimeBalloon::getDataTypeAchievementId\n// Symbole manglé : getDataTypeAchievementId\n// undefined8 TimeBalloon::getDataTypeAchievementId(void); @ .text::00468ce8\n\n\n/* TimeBalloon::getDataTypeAchievementId() */\n\nundefined8 TimeBalloon::getDataTypeAchievementId(void)\n\n{\n  return 200;\n}\n\n");

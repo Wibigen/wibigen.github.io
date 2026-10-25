@@ -1,0 +1,1 @@
+DOC.got("gh/GunetterKeyMover/isRestart.cpp","// Nom démêlé : GunetterKeyMover::isRestart\n// Symbole manglé : isRestart\n// bool __thiscall GunetterKeyMover::isRestart(GunetterKeyMover *this); @ .text::0020eb30\n\n\n/* GunetterKeyMover::isRestart() const */\n\nbool __thiscall GunetterKeyMover::isRestart(GunetterKeyMover *this)\n\n{\n  return *(int *)(this + 0x14) == 2;\n}\n\n");

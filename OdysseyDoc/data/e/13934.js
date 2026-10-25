@@ -1,0 +1,1 @@
+DOC.got("e/13934",{"34965":{"q":"nn::xcd::DeviceHandle","decl":{"f":"lib/NintendoSDK/include/nn/xcd.h","l":13,"sig":"typedef u64 DeviceHandle","fi":221},"underlying":"u64","under_id":49377}});

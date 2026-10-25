@@ -1,0 +1,1 @@
+DOC.got("gh/ShineChip/isGot_.text_002d437c.cpp","// Nom démêlé : ShineChip::isGot\n// Symbole manglé : isGot\n// void __thiscall ShineChip::isGot(ShineChip *this); @ .text::002d437c\n\n\n/* ShineChip::isGot() const */\n\nvoid __thiscall ShineChip::isGot(ShineChip *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1dbeaf8);\n  return;\n}\n\n");

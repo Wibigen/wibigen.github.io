@@ -1,0 +1,1 @@
+DOC.got("gh/al/Projection/getFar_.text_00ac0304.cpp","// Nom démêlé : al::Projection::getFar\n// Symbole manglé : getFar\n// undefined4 __thiscall al::Projection::getFar(Projection *this); @ .text::00ac0304\n\n\n/* al::Projection::getFar() const */\n\nundefined4 __thiscall al::Projection::getFar(Projection *this)\n\n{\n  return *(undefined4 *)(this + 0x9c);\n}\n\n");

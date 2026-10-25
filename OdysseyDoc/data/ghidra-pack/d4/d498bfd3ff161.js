@@ -1,0 +1,1 @@
+DOC.got("gh/rs/isOnSaveObjInfo.cpp","// Nom démêlé : rs::isOnSaveObjInfo\n// Symbole manglé : isOnSaveObjInfo\n// SaveObjInfo rs::isOnSaveObjInfo(SaveObjInfo *param_1); @ .text::006318c4\n\n\n/* rs::isOnSaveObjInfo(SaveObjInfo const*) */\n\nSaveObjInfo rs::isOnSaveObjInfo(SaveObjInfo *param_1)\n\n{\n  return param_1[8];\n}\n\n");

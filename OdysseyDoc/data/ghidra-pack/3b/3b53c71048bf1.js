@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/ServerProtocol/GetProtocolType.cpp","// Nom démêlé : nn::nex::ServerProtocol::GetProtocolType\n// Symbole manglé : GetProtocolType\n// undefined8 nn::nex::ServerProtocol::GetProtocolType(void); @ .text::006ffc74\n\n\n/* nn::nex::ServerProtocol::GetProtocolType() const */\n\nundefined8 nn::nex::ServerProtocol::GetProtocolType(void)\n\n{\n  return 1;\n}\n\n");

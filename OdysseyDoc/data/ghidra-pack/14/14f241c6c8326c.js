@@ -1,0 +1,1 @@
+DOC.got("gh/GameDataFunction/getHomeShipStageName.cpp","// Nom démêlé : GameDataFunction::getHomeShipStageName\n// Symbole manglé : getHomeShipStageName\n// undefined8 GameDataFunction::getHomeShipStageName(void); @ .text::0062cf84\n\n\n/* GameDataFunction::getHomeShipStageName() */\n\nundefined8 GameDataFunction::getHomeShipStageName(void)\n\n{\n  return 0x1947db3;\n}\n\n");

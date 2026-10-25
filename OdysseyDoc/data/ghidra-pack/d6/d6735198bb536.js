@@ -1,0 +1,1 @@
+DOC.got("gh/KuriboHack/exeEatBind.cpp","// Nom démêlé : KuriboHack::exeEatBind\n// Symbole manglé : exeEatBind\n// void KuriboHack::exeEatBind(void); @ .text::00250da4\n\n\n/* KuriboHack::exeEatBind() */\n\nvoid KuriboHack::exeEatBind(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("e/3604",{"30894":{"q":"nn::ApplicationId","decl":{"f":"lib/NintendoSDK/include/nn/nn.h","l":11,"sig":"struct ApplicationId","end":13,"fi":159},"size":8,"align":8,"complete":true,"fields":[{"n":"m_Id","t":"u64","off":0,"sz":8,"acc":"public","bits":null,"l":12,"cm":null,"ti":49377}]}});

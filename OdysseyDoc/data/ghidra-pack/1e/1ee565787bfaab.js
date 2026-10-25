@@ -1,0 +1,1 @@
+DOC.got("gh/TsukkunStateHack/exeDamage_.text_002a6fbc.cpp","// Nom démêlé : TsukkunStateHack::exeDamage\n// Symbole manglé : exeDamage\n// void TsukkunStateHack::exeDamage(void); @ .text::002a6fbc\n\n\n/* TsukkunStateHack::exeDamage() */\n\nvoid TsukkunStateHack::exeDamage(void)\n\n{\n  return;\n}\n\n");

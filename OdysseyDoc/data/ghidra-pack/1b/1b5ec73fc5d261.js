@@ -1,0 +1,1 @@
+DOC.got("gh/rs/isExistDemoShine.cpp","// Nom démêlé : rs::isExistDemoShine\n// Symbole manglé : isExistDemoShine\n// bool rs::isExistDemoShine(Scene *param_1); @ .text::005d3414\n\n\n/* rs::isExistDemoShine(al::Scene const*) */\n\nbool rs::isExistDemoShine(Scene *param_1)\n\n{\n  return *(long *)(*(long *)(*(long *)(param_1 + 0x90) + 0xd0) + 0x78) != 0;\n}\n\n");

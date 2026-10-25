@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/ThreadVariableRoot/ResetValues_.text_00726b5c.cpp","// Nom démêlé : nn::nex::ThreadVariableRoot::ResetValues\n// Symbole manglé : ResetValues\n// void nn::nex::ThreadVariableRoot::ResetValues(void); @ .text::00726b5c\n\n\n/* nn::nex::ThreadVariableRoot::ResetValues() */\n\nvoid nn::nex::ThreadVariableRoot::ResetValues(void)\n\n{\n  return;\n}\n\n");

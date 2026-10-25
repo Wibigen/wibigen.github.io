@@ -1,0 +1,1 @@
+DOC.got("gh/eui/Screen/doOpenEnd.cpp","// Nom démêlé : eui::Screen::doOpenEnd_\n// Symbole manglé : doOpenEnd_\n// void eui::Screen::doOpenEnd_(void); @ .text::008ef848\n\n\n/* eui::Screen::doOpenEnd_() */\n\nvoid eui::Screen::doOpenEnd_(void)\n\n{\n  return;\n}\n\n");

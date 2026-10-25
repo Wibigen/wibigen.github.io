@@ -1,0 +1,1 @@
+DOC.got("gh/al/Sequence/isDisposable_.text_00af2240.cpp","// Nom démêlé : al::Sequence::isDisposable\n// Symbole manglé : isDisposable\n// undefined8 al::Sequence::isDisposable(void); @ .text::00af2240\n\n\n/* al::Sequence::isDisposable() const */\n\nundefined8 al::Sequence::isDisposable(void)\n\n{\n  return 1;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("src/705","#include \"Library/LiveActor/ActorInitResourceData.h\"\n\nnamespace al {\n\nActorInitResourceData::ActorInitResourceData(Resource* res) : mResource(res) {\n    mResDataAnim = InitResourceDataAnim::tryCreate(res, nullptr);\n    mResDataAction = InitResourceDataAction::tryCreate(res, mResDataAnim, nullptr);\n}\n}  // namespace al\n");

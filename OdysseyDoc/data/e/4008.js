@@ -1,0 +1,1 @@
+DOC.got("e/4008",{"32999":{"q":"nn::gfx::detail::QueueImpl","decl":{"f":"lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h","l":224,"sig":"template <typename TTarget>\nclass QueueImpl","fi":51},"tp":["typename TTarget"],"derived":[32429],"complete":false,"fwd":[["lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h",224]]}});

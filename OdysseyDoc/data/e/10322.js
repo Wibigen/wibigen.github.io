@@ -1,0 +1,1 @@
+DOC.got("e/10322",{"7027":{"q":"GLSLCshaderInfoUnion_rec","decl":{"f":"lib/NintendoSDK/include/nvnTool/nvnTool_GlslcInterface.h","l":395,"sig":"union GLSLCshaderInfoUnion_rec","end":397,"fi":230},"size":44,"align":4,"complete":true,"fields":[{"n":"compute","t":"GLSLCshaderInfoCompute","off":0,"sz":44,"acc":"public","bits":null,"l":396,"cm":null,"ti":7024}]}});

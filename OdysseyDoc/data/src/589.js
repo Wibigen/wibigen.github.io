@@ -1,0 +1,1 @@
+DOC.got("src/589","#pragma once\n\n#include \"Library/Factory/Factory.h\"\n\nnamespace al {\nclass EventFlowNode;\n\nusing EventFlowNodeCreatorFunction = EventFlowNode* (*)(const char* eventFlowNodeName);\n\nclass EventFlowNodeFactory : public Factory<EventFlowNodeCreatorFunction> {\npublic:\n    EventFlowNodeFactory();  // \"イベントフローノード生成\"\n};\n}  // namespace al\n");

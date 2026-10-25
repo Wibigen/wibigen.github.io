@@ -1,0 +1,1 @@
+DOC.got("gh/al/SkyParam/getParamObj_.text_00a513a4.cpp","// Nom démêlé : al::SkyParam::getParamObj\n// Symbole manglé : getParamObj\n// undefined8 __thiscall al::SkyParam::getParamObj(SkyParam *this); @ .text::00a513a4\n\n\n/* al::SkyParam::getParamObj() */\n\nundefined8 __thiscall al::SkyParam::getParamObj(SkyParam *this)\n\n{\n  return *(undefined8 *)(this + 8);\n}\n\n");

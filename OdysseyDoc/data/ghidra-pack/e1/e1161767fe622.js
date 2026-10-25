@@ -1,0 +1,1 @@
+DOC.got("gh/RaceLayout/isEndResult.cpp","// Nom démêlé : RaceLayout::isEndResult\n// Symbole manglé : isEndResult\n// void __thiscall RaceLayout::isEndResult(RaceLayout *this); @ .text::00300630\n\n\n/* RaceLayout::isEndResult() const */\n\nvoid __thiscall RaceLayout::isEndResult(RaceLayout *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1dcc078);\n  return;\n}\n\n");

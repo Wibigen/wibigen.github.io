@@ -1,0 +1,1 @@
+DOC.got("gh/CapSlotReel/reset_.text_00341800.cpp","// Nom démêlé : CapSlotReel::reset\n// Symbole manglé : reset\n// void __thiscall CapSlotReel::reset(CapSlotReel *this); @ .text::00341800\n\n\n/* CapSlotReel::reset() */\n\nvoid __thiscall CapSlotReel::reset(CapSlotReel *this)\n\n{\n  al::startAction(*(LiveActor **)(this + 0x110),&DAT_0191c5bc);\n  return;\n}\n\n");

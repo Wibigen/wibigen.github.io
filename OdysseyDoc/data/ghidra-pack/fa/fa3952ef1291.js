@@ -1,0 +1,1 @@
+DOC.got("gh/nn/vfx/EmitterSet/Fade.cpp","// Nom démêlé : nn::vfx::EmitterSet::Fade\n// Symbole manglé : Fade\n// void __thiscall nn::vfx::EmitterSet::Fade(EmitterSet *this); @ .text::00c2bed0\n\n\n/* nn::vfx::EmitterSet::Fade() */\n\nvoid __thiscall nn::vfx::EmitterSet::Fade(EmitterSet *this)\n\n{\n  this[9] = (EmitterSet)0x1;\n  return;\n}\n\n");

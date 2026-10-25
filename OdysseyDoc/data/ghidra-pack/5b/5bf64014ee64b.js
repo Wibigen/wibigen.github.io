@@ -1,0 +1,1 @@
+DOC.got("gh/HelpAmiiboNavigateCoinCollect/getType_.text_00104788.cpp","// Nom démêlé : HelpAmiiboNavigateCoinCollect::getType\n// Symbole manglé : getType\n// undefined8 HelpAmiiboNavigateCoinCollect::getType(void); @ .text::00104788\n\n\n/* HelpAmiiboNavigateCoinCollect::getType() const */\n\nundefined8 HelpAmiiboNavigateCoinCollect::getType(void)\n\n{\n  return 2;\n}\n\n");

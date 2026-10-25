@@ -1,0 +1,1 @@
+DOC.got("e/5088",{"43929":{"q":"sead::BaseMtx22","decl":{"f":"lib/sead/include/math/seadMathBase.h","l":62,"sig":"template <typename T>\nstruct BaseMtx22","end":69,"fi":1387},"tp":["typename T"],"complete":true}});

@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerPowerGlove/init_.text_0055f66c.cpp","// Nom démêlé : PlayerPowerGlove::init\n// Symbole manglé : init\n// void PlayerPowerGlove::init(ActorInitInfo *param_1); @ .text::0055f66c\n\n\n/* PlayerPowerGlove::init(al::ActorInitInfo const&) */\n\nvoid PlayerPowerGlove::init(ActorInitInfo *param_1)\n\n{\n  return;\n}\n\n");

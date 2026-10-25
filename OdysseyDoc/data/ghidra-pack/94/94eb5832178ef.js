@@ -1,0 +1,1 @@
+DOC.got("gh/sead/Mutex/tryLock_.text_0085a6a4.cpp","// Nom démêlé : sead::Mutex::tryLock\n// Symbole manglé : tryLock\n// void __thiscall sead::Mutex::tryLock(Mutex *this); @ .text::0085a6a4\n\n\n/* sead::Mutex::tryLock() */\n\nvoid __thiscall sead::Mutex::tryLock(Mutex *this)\n\n{\n  nn::os::TryLockMutex((MutexType *)(this + 0x20));\n  return;\n}\n\n");

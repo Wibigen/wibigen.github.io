@@ -1,0 +1,1 @@
+DOC.got("gh/RadioCassette/appear_.text_003ebacc.cpp","// Nom démêlé : RadioCassette::appear\n// Symbole manglé : appear\n// void RadioCassette::appear(void); @ .text::003ebacc\n\n\n/* RadioCassette::appear() */\n\nvoid RadioCassette::appear(void)\n\n{\n  return;\n}\n\n");

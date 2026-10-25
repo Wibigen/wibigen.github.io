@@ -1,0 +1,1 @@
+DOC.got("gh/CapSwitch/isOn_.text_0034238c.cpp","// Nom démêlé : CapSwitch::isOn\n// Symbole manglé : isOn\n// void __thiscall CapSwitch::isOn(CapSwitch *this); @ .text::0034238c\n\n\n/* CapSwitch::isOn() const */\n\nvoid __thiscall CapSwitch::isOn(CapSwitch *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1de3ea0);\n  return;\n}\n\n");

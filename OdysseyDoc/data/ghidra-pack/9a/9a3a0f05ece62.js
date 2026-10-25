@@ -1,0 +1,1 @@
+DOC.got("gh/TestMusaBlock/split.cpp","// Nom démêlé : TestMusaBlock::split\n// Symbole manglé : split\n// void TestMusaBlock::split(void); @ .text::00435600\n\n\n/* TestMusaBlock::split() */\n\nvoid TestMusaBlock::split(void)\n\n{\n  return;\n}\n\n");

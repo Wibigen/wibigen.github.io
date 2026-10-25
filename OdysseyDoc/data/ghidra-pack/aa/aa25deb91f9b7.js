@@ -1,0 +1,1 @@
+DOC.got("gh/BreedaWanwan/exeDemo_.text_0014f1d8.cpp","// Nom démêlé : BreedaWanwan::exeDemo\n// Symbole manglé : exeDemo\n// void BreedaWanwan::exeDemo(void); @ .text::0014f1d8\n\n\n/* BreedaWanwan::exeDemo() */\n\nvoid BreedaWanwan::exeDemo(void)\n\n{\n  return;\n}\n\n");

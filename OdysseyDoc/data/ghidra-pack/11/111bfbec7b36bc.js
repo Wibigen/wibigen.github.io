@@ -1,0 +1,1 @@
+DOC.got("gh/al/SePlayer/isPlaying_.text_00b96598.cpp","// Nom démêlé : al::SePlayer::isPlaying\n// Symbole manglé : isPlaying\n// bool __thiscall al::SePlayer::isPlaying(SePlayer *this); @ .text::00b96598\n\n\n/* al::SePlayer::isPlaying() const */\n\nbool __thiscall al::SePlayer::isPlaying(SePlayer *this)\n\n{\n  return 0 < *(int *)(this + 0x10);\n}\n\n");

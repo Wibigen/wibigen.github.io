@@ -1,0 +1,1 @@
+DOC.got("e/3650",{"31125":{"q":"nn::audio::CircularBufferSinkType","decl":{"f":"lib/NintendoSDK/include/nn/audio.h","l":119,"sig":"struct CircularBufferSinkType","end":121,"fi":16},"size":8,"align":8,"complete":true,"fields":[{"n":"_0","t":"u64 *","off":0,"sz":8,"acc":"public","bits":null,"l":120,"cm":null,"ti":49377}]}});

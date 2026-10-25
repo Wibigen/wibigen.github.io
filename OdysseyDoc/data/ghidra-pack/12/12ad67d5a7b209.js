@@ -1,0 +1,1 @@
+DOC.got("gh/agl/utl/Parameter_float/size_.text_0089af00.cpp","// Nom démêlé : agl::utl::Parameter<float>::size\n// Symbole manglé : size\n// undefined8 agl::utl::Parameter<float>::size(void); @ .text::0089af00\n\n\n/* agl::utl::Parameter<float>::size() const */\n\nundefined8 agl::utl::Parameter<float>::size(void)\n\n{\n  return 4;\n}\n\n");

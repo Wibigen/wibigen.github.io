@@ -1,0 +1,1 @@
+DOC.got("gh/al/setFixedModelFlag.cpp","// Nom démêlé : al::setFixedModelFlag\n// Symbole manglé : setFixedModelFlag\n// void al::setFixedModelFlag(LiveActor *param_1); @ .text::009dfdfc\n\n\n/* al::setFixedModelFlag(al::LiveActor*) */\n\nvoid al::setFixedModelFlag(LiveActor *param_1)\n\n{\n  *(undefined1 *)(*(long *)(param_1 + 0x88) + 0x61) = 1;\n  return;\n}\n\n");

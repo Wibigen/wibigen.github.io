@@ -1,0 +1,1 @@
+DOC.got("gh/sead/MainThread/quit.cpp","// Nom démêlé : sead::MainThread::quit\n// Symbole manglé : quit\n// bool sead::MainThread::quit(bool param_1); @ .text::0085af5c\n\n\n/* sead::MainThread::quit(bool) */\n\nbool sead::MainThread::quit(bool param_1)\n\n{\n  return param_1;\n}\n\n");

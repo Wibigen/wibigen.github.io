@@ -1,0 +1,1 @@
+DOC.got("src/803","#pragma once\n\n#include <basis/seadTypes.h>\n\nnamespace al {\nenum class Axis : s32 {\n    InvertZ = -3,\n    InvertY = -2,\n    InvertX = -1,\n    None = 0,\n    X = 1,\n    Y = 2,\n    Z = 3,\n};\n}\n");

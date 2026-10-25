@@ -1,0 +1,1 @@
+DOC.got("src/2536","#pragma once\n\nnamespace al {\nclass IUseSceneObjHolder;\nclass LayoutTextureRenderObj;\n}  // namespace al\n\nnamespace rs {\nvoid registerLayoutTextureRenderObj(al::IUseSceneObjHolder* user,\n                                    al::LayoutTextureRenderObj* renderObj);\n}\n");

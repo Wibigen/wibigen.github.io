@@ -1,0 +1,1 @@
+DOC.got("gh/TimeBalloon/getBalloonPeriod.cpp","// Nom démêlé : TimeBalloon::getBalloonPeriod\n// Symbole manglé : getBalloonPeriod\n// undefined8 TimeBalloon::getBalloonPeriod(void); @ .text::004687f4\n\n\n/* TimeBalloon::getBalloonPeriod() */\n\nundefined8 TimeBalloon::getBalloonPeriod(void)\n\n{\n  return 0x1e;\n}\n\n");

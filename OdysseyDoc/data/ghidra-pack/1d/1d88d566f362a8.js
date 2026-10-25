@@ -1,0 +1,1 @@
+DOC.got("gh/sead/FrameHeap/isFreeable_.text_00843d70.cpp","// Nom démêlé : sead::FrameHeap::isFreeable\n// Symbole manglé : isFreeable\n// undefined8 sead::FrameHeap::isFreeable(void); @ .text::00843d70\n\n\n/* sead::FrameHeap::isFreeable() const */\n\nundefined8 sead::FrameHeap::isFreeable(void)\n\n{\n  return 0;\n}\n\n");

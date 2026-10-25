@@ -1,0 +1,1 @@
+DOC.got("src/306","#pragma once\n\n#include \"environment/aglEnvObj.h\"\n\nnamespace agl::env {\n\n// TODO\nclass Fog : public EnvObj {\npublic:\n    static const TypeInfo* sTypeInfo;\n};\n\n}  // namespace agl::env\n");

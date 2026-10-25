@@ -1,0 +1,1 @@
+DOC.got("src/384","#pragma once\n\n#include <basis/seadTypes.h>\n#include <cstdarg>\n\nnamespace al {\nu32 calcHashCode(const char* str);\nu32 calcHashCodeLower(const char* str);\nu32 calcHashCodeFmt(const char* format, std::va_list argv);\nu32 calcHashCodeFmt(const char* format, ...);\nconst char* getBaseName(const char* name);\n}  // namespace al\n");

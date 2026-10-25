@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Log/GetLogDevice.cpp","// Nom démêlé : nn::nex::Log::GetLogDevice\n// Symbole manglé : GetLogDevice\n// undefined8 __thiscall nn::nex::Log::GetLogDevice(Log *this); @ .text::007115e8\n\n\n/* nn::nex::Log::GetLogDevice() */\n\nundefined8 __thiscall nn::nex::Log::GetLogDevice(Log *this)\n\n{\n  return *(undefined8 *)(this + 8);\n}\n\n");

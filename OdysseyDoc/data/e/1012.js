@@ -1,0 +1,1 @@
+DOC.got("e/1012",{"16271":{"q":"agl::utl::DevTools::PoiningControlBuffer","decl":{"f":"lib/agl/include/utility/aglDevTools.h","l":36,"sig":"class PoiningControlBuffer","fi":319},"complete":false,"fwd":[["lib/agl/include/utility/aglDevTools.h",36]]}});

@@ -1,0 +1,1 @@
+DOC.got("gh/rs/isModeDiverRom.cpp","// Nom démêlé : rs::isModeDiverRom\n// Symbole manglé : isModeDiverRom\n// undefined8 rs::isModeDiverRom(void); @ .text::006bf9f0\n\n\n/* rs::isModeDiverRom() */\n\nundefined8 rs::isModeDiverRom(void)\n\n{\n  return 0;\n}\n\n");

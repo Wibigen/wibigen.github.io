@@ -1,0 +1,1 @@
+DOC.got("gh/al/getActorVelocity.cpp","// Nom démêlé : al::getActorVelocity\n// Symbole manglé : getActorVelocity\n// void al::getActorVelocity(HitSensor *param_1); @ .text::009f298c\n\n\n/* al::getActorVelocity(al::HitSensor const*) */\n\nvoid al::getActorVelocity(HitSensor *param_1)\n\n{\n  getVelocity(*(LiveActor **)(param_1 + 0x40));\n  return;\n}\n\n");

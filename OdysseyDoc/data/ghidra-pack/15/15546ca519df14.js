@@ -1,0 +1,1 @@
+DOC.got("gh/al/JointMtxPtr/setNull.cpp","// Nom démêlé : al::JointMtxPtr::setNull\n// Symbole manglé : setNull\n// void __thiscall al::JointMtxPtr::setNull(JointMtxPtr *this); @ .text::00a3eda4\n\n\n/* al::JointMtxPtr::setNull() */\n\nvoid __thiscall al::JointMtxPtr::setNull(JointMtxPtr *this)\n\n{\n  *(undefined8 *)this = 0;\n  this[8] = (JointMtxPtr)0x0;\n  return;\n}\n\n");

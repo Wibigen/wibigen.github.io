@@ -1,0 +1,1 @@
+DOC.got("gh/al/startPadRumbleStrong.cpp","// Nom démêlé : al::startPadRumbleStrong\n// Symbole manglé : startPadRumbleStrong\n// void al::startPadRumbleStrong(LiveActor *param_1,int param_2); @ .text::0096b800\n\n\n/* al::startPadRumbleStrong(al::LiveActor const*, int) */\n\nvoid al::startPadRumbleStrong(LiveActor *param_1,int param_2)\n\n{\n  return;\n}\n\n");

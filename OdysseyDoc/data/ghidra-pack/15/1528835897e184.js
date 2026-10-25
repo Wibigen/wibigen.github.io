@@ -1,0 +1,1 @@
+DOC.got("gh/DemoWorldMoveHomeBackGround/exeWait_.text_00354c90.cpp","// Nom démêlé : DemoWorldMoveHomeBackGround::exeWait\n// Symbole manglé : exeWait\n// void DemoWorldMoveHomeBackGround::exeWait(void); @ .text::00354c90\n\n\n/* DemoWorldMoveHomeBackGround::exeWait() */\n\nvoid DemoWorldMoveHomeBackGround::exeWait(void)\n\n{\n  return;\n}\n\n");

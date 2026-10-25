@@ -1,0 +1,1 @@
+DOC.got("src/140","#pragma once\n\n#include <nn/irs/Rect.h>\n\nnamespace nn::irsensor {\nstruct DpdProcessorConfig {\n    Rect windowOfInterest;\n};\n}  // namespace nn::irsensor\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/sead/UnitHeap/resizeBack_.text_00c5d240.cpp","// Nom démêlé : sead::UnitHeap::resizeBack\n// Symbole manglé : resizeBack\n// undefined8 sead::UnitHeap::resizeBack(void *param_1,ulong param_2); @ .text::00c5d240\n\n\n/* sead::UnitHeap::resizeBack(void*, unsigned long) */\n\nundefined8 sead::UnitHeap::resizeBack(void *param_1,ulong param_2)\n\n{\n  return 0;\n}\n\n");

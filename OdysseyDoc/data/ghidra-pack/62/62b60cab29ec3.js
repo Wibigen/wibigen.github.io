@@ -1,0 +1,1 @@
+DOC.got("gh/al/WipeSimple/isOpenEnd_.text_00a9e350.cpp","// Nom démêlé : al::WipeSimple::isOpenEnd\n// Symbole manglé : isOpenEnd\n// bool __thiscall al::WipeSimple::isOpenEnd(WipeSimple *this); @ .text::00a9e350\n\n\n/* al::WipeSimple::isOpenEnd() const */\n\nbool __thiscall al::WipeSimple::isOpenEnd(WipeSimple *this)\n\n{\n  return this[0x128] == (WipeSimple)0x0;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/HardIconParts/startEnd.cpp","// Nom démêlé : HardIconParts::startEnd\n// Symbole manglé : startEnd\n// void __thiscall HardIconParts::startEnd(HardIconParts *this); @ .text::002edc58\n\n\n/* HardIconParts::startEnd() */\n\nvoid __thiscall HardIconParts::startEnd(HardIconParts *this)\n\n{\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1dc7ad8);\n  return;\n}\n\n");

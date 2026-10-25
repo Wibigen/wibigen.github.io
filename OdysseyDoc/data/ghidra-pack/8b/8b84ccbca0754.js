@@ -1,0 +1,1 @@
+DOC.got("gh/al/pausePadRumble.cpp","// Nom démêlé : al::pausePadRumble\n// Symbole manglé : pausePadRumble\n// void al::pausePadRumble(Scene *param_1); @ .text::00ad0fb8\n\n\n/* al::pausePadRumble(al::Scene const*) */\n\nvoid al::pausePadRumble(Scene *param_1)\n\n{\n  PadRumbleDirector::pause(*(PadRumbleDirector **)(*(long *)(param_1 + 0x90) + 0xe0));\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("e/13792",{"137":{"q":"ams::i2c::detail::result","files":["lib/NintendoSDK/include/vapours/results/i2c_results.hpp"]}});

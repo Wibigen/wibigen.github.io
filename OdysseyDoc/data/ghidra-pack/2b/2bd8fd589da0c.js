@@ -1,0 +1,1 @@
+DOC.got("gh/agl/pfx/FlareFilter/calc_.text_00c97b08.cpp","// Nom démêlé : agl::pfx::FlareFilter::calc\n// Symbole manglé : calc\n// void agl::pfx::FlareFilter::calc(void); @ .text::00c97b08\n\n\n/* agl::pfx::FlareFilter::calc() */\n\nvoid agl::pfx::FlareFilter::calc(void)\n\n{\n  return;\n}\n\n");

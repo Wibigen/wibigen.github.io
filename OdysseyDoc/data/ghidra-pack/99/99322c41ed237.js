@@ -1,0 +1,1 @@
+DOC.got("gh/Long/initAfterPlacement_.text_0025e740.cpp","// Nom démêlé : Long::initAfterPlacement\n// Symbole manglé : initAfterPlacement\n// void Long::initAfterPlacement(void); @ .text::0025e740\n\n\n/* Long::initAfterPlacement() */\n\nvoid Long::initAfterPlacement(void)\n\n{\n  return;\n}\n\n");

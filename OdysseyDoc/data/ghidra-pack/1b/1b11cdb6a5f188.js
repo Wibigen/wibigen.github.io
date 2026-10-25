@@ -1,0 +1,1 @@
+DOC.got("gh/al/isClipped_.text_009d79d0.cpp","// Nom démêlé : al::isClipped\n// Symbole manglé : isClipped\n// undefined1 al::isClipped(LiveActor *param_1); @ .text::009d79d0\n\n\n/* al::isClipped(al::LiveActor const*) */\n\nundefined1 al::isClipped(LiveActor *param_1)\n\n{\n  return *(undefined1 *)(*(long *)(param_1 + 0x100) + 1);\n}\n\n");

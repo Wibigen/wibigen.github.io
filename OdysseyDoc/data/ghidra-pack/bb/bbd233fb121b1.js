@@ -1,0 +1,1 @@
+DOC.got("gh/nn/gfx/util/QuadShape/QuadShape.cpp","// Nom démêlé : nn::gfx::util::QuadShape::~QuadShape\n// Symbole manglé : ~QuadShape\n// void __thiscall nn::gfx::util::QuadShape::~QuadShape(QuadShape *this); @ .text::00c55bf0\n\n\n/* nn::gfx::util::QuadShape::~QuadShape() */\n\nvoid __thiscall nn::gfx::util::QuadShape::~QuadShape(QuadShape *this)\n\n{\n  return;\n}\n\n");

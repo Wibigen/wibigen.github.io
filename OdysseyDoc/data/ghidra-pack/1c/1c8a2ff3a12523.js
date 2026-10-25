@@ -1,0 +1,1 @@
+DOC.got("gh/al/isSpanningTree_.text_00ac83fc.cpp","// Nom démêlé : al::isSpanningTree\n// Symbole manglé : isSpanningTree\n// undefined8 al::isSpanningTree(ConstPtrArray *param_1); @ .text::00ac83fc\n\n\n/* al::isSpanningTree(sead::ConstPtrArray<al::Graph::Edge> const&) */\n\nundefined8 al::isSpanningTree(ConstPtrArray *param_1)\n\n{\n  return 1;\n}\n\n");

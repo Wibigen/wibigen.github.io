@@ -1,0 +1,1 @@
+DOC.got("gh/al/updateLayoutKit.cpp","// Nom démêlé : al::updateLayoutKit\n// Symbole manglé : updateLayoutKit\n// void al::updateLayoutKit(Scene *param_1); @ .text::00ad0a84\n\n\n/* al::updateLayoutKit(al::Scene*) */\n\nvoid al::updateLayoutKit(Scene *param_1)\n\n{\n  executeUpdate(*(LayoutKit **)(param_1 + 0x98));\n  return;\n}\n\n");

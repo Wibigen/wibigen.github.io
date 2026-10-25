@@ -1,0 +1,1 @@
+DOC.got("src/1831","#pragma once\n\n#include \"Library/Obj/PartsModel.h\"\n\nclass CapTargetParts : public al::PartsModel {\npublic:\n    CapTargetParts(al::LiveActor* actor, const al::ActorInitInfo& initInfo);\n    void startHack();\n    void startNormal();\n    void startSwoon();\n};\n");

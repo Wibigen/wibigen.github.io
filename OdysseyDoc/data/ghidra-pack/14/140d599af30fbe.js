@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerJudgeStatusPoleClimb/reset_.text_0055baf0.cpp","// Nom démêlé : PlayerJudgeStatusPoleClimb::reset\n// Symbole manglé : reset\n// void PlayerJudgeStatusPoleClimb::reset(void); @ .text::0055baf0\n\n\n/* PlayerJudgeStatusPoleClimb::reset() */\n\nvoid PlayerJudgeStatusPoleClimb::reset(void)\n\n{\n  return;\n}\n\n");

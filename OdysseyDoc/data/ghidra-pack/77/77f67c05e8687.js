@@ -1,0 +1,1 @@
+DOC.got("gh/al/BgmPlayObj/finalize_.text_00a631a0.cpp","// Nom démêlé : al::BgmPlayObj::finalize\n// Symbole manglé : finalize\n// void al::BgmPlayObj::finalize(void); @ .text::00a631a0\n\n\n/* al::BgmPlayObj::finalize() */\n\nvoid al::BgmPlayObj::finalize(void)\n\n{\n  return;\n}\n\n");

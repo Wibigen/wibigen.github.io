@@ -1,0 +1,1 @@
+DOC.got("e/12658",{"8564":{"q":"HackerJudgeNormalJump","decl":{"f":"src/Enemy/GamaneHackState.h","l":16,"sig":"class HackerJudgeNormalJump","fi":1609},"complete":false,"fwd":[["src/Enemy/GamaneHackState.h",16]]}});

@@ -1,0 +1,1 @@
+DOC.got("gh/Senobi/resetCounter.cpp","// Nom démêlé : Senobi::resetCounter\n// Symbole manglé : resetCounter\n// void __thiscall Senobi::resetCounter(Senobi *this); @ .text::0027f3ec\n\n\n/* Senobi::resetCounter() */\n\nvoid __thiscall Senobi::resetCounter(Senobi *this)\n\n{\n  SenobiStateHack::resetCounter(*(SenobiStateHack **)(this + 0x130));\n  return;\n}\n\n");

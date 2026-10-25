@@ -1,0 +1,1 @@
+DOC.got("gh/E3Sequence/isDisposable.cpp","// Nom démêlé : E3Sequence::isDisposable\n// Symbole manglé : isDisposable\n// undefined8 E3Sequence::isDisposable(void); @ .text::0060b10c\n\n\n/* E3Sequence::isDisposable() const */\n\nundefined8 E3Sequence::isDisposable(void)\n\n{\n  return 1;\n}\n\n");

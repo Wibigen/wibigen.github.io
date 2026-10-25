@@ -1,0 +1,1 @@
+DOC.got("e/4377",{"34904":{"q":"nn::vfx::detail::BinaryData","decl":{"f":"lib/NintendoSDK/include/nn/vfx/Resource.h","l":18,"sig":"struct BinaryData","fi":218},"complete":false,"fwd":[["lib/NintendoSDK/include/nn/vfx/Resource.h",18]]}});

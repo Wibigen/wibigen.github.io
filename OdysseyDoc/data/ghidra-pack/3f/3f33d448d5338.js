@@ -1,0 +1,1 @@
+DOC.got("gh/agl/Shader/setBinary.cpp","// Nom démêlé : agl::Shader::setBinary\n// Symbole manglé : setBinary\n// void __thiscall agl::Shader::setBinary(Shader *this,void *param_1); @ .text::008c1678\n\n\n/* agl::Shader::setBinary(void const*) */\n\nvoid __thiscall agl::Shader::setBinary(Shader *this,void *param_1)\n\n{\n  *(void **)(this + 8) = param_1;\n  return;\n}\n\n");

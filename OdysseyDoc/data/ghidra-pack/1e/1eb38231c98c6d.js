@@ -1,0 +1,1 @@
+DOC.got("gh/al/SaveDataFunction/makeInvalidResult.cpp","// Nom démêlé : al::SaveDataFunction::makeInvalidResult\n// Symbole manglé : makeInvalidResult\n// undefined8 al::SaveDataFunction::makeInvalidResult(void); @ .text::00b7f394\n\n\n/* al::SaveDataFunction::makeInvalidResult() */\n\nundefined8 al::SaveDataFunction::makeInvalidResult(void)\n\n{\n  return 0;\n}\n\n");

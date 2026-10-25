@@ -1,0 +1,1 @@
+DOC.got("gh/IBalloonFindBalloon/getPos_.text_0045303c.cpp","// Nom démêlé : IBalloonFindBalloon::getPos\n// Symbole manglé : getPos\n// undefined * IBalloonFindBalloon::getPos(void); @ .text::0045303c\n\n\n/* IBalloonFindBalloon::getPos() const */\n\nundefined * IBalloonFindBalloon::getPos(void)\n\n{\n  return PTR_01f4ebc8;\n}\n\n");

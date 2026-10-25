@@ -1,0 +1,1 @@
+DOC.got("src/1097","#include \"Library/Stage/StageResourceUtil.h\"\n\nnamespace al {\n\nvoid makeStageDataArchivePath(sead::BufferedSafeString* archivePath, const char* stageName,\n                              const char* resourceType) {\n    archivePath->format(\"StageData/%s%s\", stageName, resourceType);\n}\n\n}  // namespace al\n");

@@ -1,0 +1,1 @@
+DOC.got("e/2478",{"24420":{"q":"al::Strike","decl":{"f":"lib/al/Library/Collision/CollisionDirector.h","l":16,"sig":"class Strike","fi":512},"complete":false,"fwd":[["lib/al/Library/Collision/CollisionDirector.h",16]]}});

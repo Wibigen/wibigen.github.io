@@ -1,0 +1,1 @@
+DOC.got("gh/al/BgmProcInfo/BgmProcInfo.cpp","// Nom démêlé : al::BgmProcInfo::~BgmProcInfo\n// Symbole manglé : ~BgmProcInfo\n// void __thiscall al::BgmProcInfo::~BgmProcInfo(BgmProcInfo *this); @ .text::0092bf38\n\n\n/* al::BgmProcInfo::~BgmProcInfo() */\n\nvoid __thiscall al::BgmProcInfo::~BgmProcInfo(BgmProcInfo *this)\n\n{\n  return;\n}\n\n");

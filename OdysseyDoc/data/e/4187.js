@@ -1,0 +1,1 @@
+DOC.got("e/4187",{"33628":{"q":"nn::os::FiberType","decl":{"f":"lib/NintendoSDK/include/nn/os/os_ThreadTypes.h","l":18,"sig":"struct FiberType","fi":178},"complete":false,"fwd":[["lib/NintendoSDK/include/nn/os/os_ThreadTypes.h",18]]}});

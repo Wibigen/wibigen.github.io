@@ -1,0 +1,1 @@
+DOC.got("gh/KoopaChurch/isEnableSkipDemo_.text_0018bdb8.cpp","// Nom démêlé : KoopaChurch::isEnableSkipDemo\n// Symbole manglé : isEnableSkipDemo\n// undefined8 KoopaChurch::isEnableSkipDemo(void); @ .text::0018bdb8\n\n\n/* KoopaChurch::isEnableSkipDemo() const */\n\nundefined8 KoopaChurch::isEnableSkipDemo(void)\n\n{\n  return 1;\n}\n\n");

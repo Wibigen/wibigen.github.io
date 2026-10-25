@@ -1,0 +1,1 @@
+DOC.got("src/2435","#include \"System/GameSystem.h\"\n\n#include \"Library/Nerve/NerveSetupUtil.h\"\n\nnamespace {\nNERVE_IMPL(GameSystem, Play);\n\n// TODO: Remove maybe_unused once this class is implemented and the nerves are used\n[[maybe_unused]] NERVES_MAKE_STRUCT(GameSystem, Play);\n}  // namespace\n");

@@ -1,0 +1,1 @@
+DOC.got("src/1381","#ifndef SEAD_HOST_IO_MGR_H_\n#define SEAD_HOST_IO_MGR_H_\n\nnamespace sead\n{\nclass HostIOMgr\n{\npublic:\n    struct Parameter\n    {\n    };\n};\n\n}  // namespace sead\n\n#endif  // SEAD_HOST_IO_MGR_H_\n");

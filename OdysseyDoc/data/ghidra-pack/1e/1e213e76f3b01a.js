@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Relay/GetMTU.cpp","// Nom démêlé : nn::nex::Relay::GetMTU\n// Symbole manglé : GetMTU\n// undefined4 __thiscall nn::nex::Relay::GetMTU(Relay *this); @ .text::0076ddf4\n\n\n/* nn::nex::Relay::GetMTU() */\n\nundefined4 __thiscall nn::nex::Relay::GetMTU(Relay *this)\n\n{\n  return *(undefined4 *)(*(long *)(*(long *)(this + 8) + 0x10) + 0x98);\n}\n\n");

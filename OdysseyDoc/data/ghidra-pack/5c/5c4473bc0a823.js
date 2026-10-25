@@ -1,0 +1,1 @@
+DOC.got("gh/IBalloonFindBalloon/getOwnerName_.text_00457488.cpp","// Nom démêlé : IBalloonFindBalloon::getOwnerName\n// Symbole manglé : getOwnerName\n// undefined8 IBalloonFindBalloon::getOwnerName(void); @ .text::00457488\n\n\n/* IBalloonFindBalloon::getOwnerName() const */\n\nundefined8 IBalloonFindBalloon::getOwnerName(void)\n\n{\n  return 0;\n}\n\n");

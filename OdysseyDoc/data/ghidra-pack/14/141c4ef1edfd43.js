@@ -1,0 +1,1 @@
+DOC.got("gh/al/NerveStateBase/control_.text_00114394.cpp","// Nom démêlé : al::NerveStateBase::control\n// Symbole manglé : control\n// void al::NerveStateBase::control(void); @ .text::00114394\n\n\n/* al::NerveStateBase::control() */\n\nvoid al::NerveStateBase::control(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/agl/detail/GetFileTime.cpp","// Nom démêlé : agl::detail::GetFileTime\n// Symbole manglé : GetFileTime\n// undefined8 agl::detail::GetFileTime(SafeStringBase *param_1); @ .text::00c7648c\n\n\n/* agl::detail::GetFileTime(sead::SafeStringBase<char> const&) */\n\nundefined8 agl::detail::GetFileTime(SafeStringBase *param_1)\n\n{\n  return 0xffffffffffffffff;\n}\n\n");

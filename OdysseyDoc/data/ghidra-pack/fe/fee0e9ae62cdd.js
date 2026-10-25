@@ -1,0 +1,1 @@
+DOC.got("gh/al/SkyParam/getRotate_.text_00a50cf8.cpp","// Nom démêlé : al::SkyParam::getRotate\n// Symbole manglé : getRotate\n// long __thiscall al::SkyParam::getRotate(SkyParam *this); @ .text::00a50cf8\n\n\n/* al::SkyParam::getRotate() const */\n\nlong __thiscall al::SkyParam::getRotate(SkyParam *this)\n\n{\n  return *(long *)(this + 0x18) + 0x6c;\n}\n\n");

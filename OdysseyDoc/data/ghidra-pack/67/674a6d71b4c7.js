@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerJudgeDeadSceneEnd/reset_.text_00558ec4.cpp","// Nom démêlé : PlayerJudgeDeadSceneEnd::reset\n// Symbole manglé : reset\n// void PlayerJudgeDeadSceneEnd::reset(void); @ .text::00558ec4\n\n\n/* PlayerJudgeDeadSceneEnd::reset() */\n\nvoid PlayerJudgeDeadSceneEnd::reset(void)\n\n{\n  return;\n}\n\n");

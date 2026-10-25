@@ -1,0 +1,1 @@
+DOC.got("src/209","#pragma once\n\n#include <nn/util/detail/util_TypeTraits.h>\n\nnamespace nn::util {\n\ntemplate <typename T>\nT align_up(T x, size_t align) {\n    typedef typename detail::MakeUnsigned<T>::Type UIntType;\n    UIntType mask = align - 1;\n    return (x + mask) & ~mask;\n}\n\n}  // namespace nn::util");

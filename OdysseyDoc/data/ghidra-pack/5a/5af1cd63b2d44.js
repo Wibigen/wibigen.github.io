@@ -1,0 +1,1 @@
+DOC.got("gh/rs/getNetworkPrototypeDirectory.cpp","// Nom démêlé : rs::getNetworkPrototypeDirectory\n// Symbole manglé : getNetworkPrototypeDirectory\n// undefined8 rs::getNetworkPrototypeDirectory(void); @ .text::006573c4\n\n\n/* rs::getNetworkPrototypeDirectory() */\n\nundefined8 rs::getNetworkPrototypeDirectory(void)\n\n{\n  return 0x1951ea6;\n}\n\n");

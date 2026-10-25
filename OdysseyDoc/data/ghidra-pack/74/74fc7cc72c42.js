@@ -1,0 +1,1 @@
+DOC.got("gh/MoonRock/isEnableSkipDemo_.text_003c5fa4.cpp","// Nom démêlé : MoonRock::isEnableSkipDemo\n// Symbole manglé : isEnableSkipDemo\n// undefined8 MoonRock::isEnableSkipDemo(void); @ .text::003c5fa4\n\n\n/* MoonRock::isEnableSkipDemo() const */\n\nundefined8 MoonRock::isEnableSkipDemo(void)\n\n{\n  return 1;\n}\n\n");

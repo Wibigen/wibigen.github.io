@@ -1,0 +1,1 @@
+DOC.got("e/3655",{"31130":{"q":"nn::audio::FinalMixType","decl":{"f":"lib/NintendoSDK/include/nn/audio.h","l":131,"sig":"struct FinalMixType","end":133,"fi":16},"size":8,"align":8,"complete":true,"fields":[{"n":"_0","t":"u64 *","off":0,"sz":8,"acc":"public","bits":null,"l":132,"cm":null,"ti":49377}]}});

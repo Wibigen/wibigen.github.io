@@ -1,0 +1,1 @@
+DOC.got("e/4092",{"33332":{"q":"nn::hid::VibrationDeviceHandle","decl":{"f":"lib/NintendoSDK/include/nn/hid.h","l":486,"sig":"struct VibrationDeviceHandle","end":495,"fi":133},"size":4,"align":4,"complete":true,"fwd":[["lib/al/Library/Controller/NpadController.h",8]]}});

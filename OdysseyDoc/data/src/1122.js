@@ -1,0 +1,1 @@
+DOC.got("src/1122","#pragma once\n\n#include <basis/seadTypes.h>\n\n#include \"Library/Yaml/ByamlData.h\"\n\nnamespace al {\nclass ByamlContainerHeader {\npublic:\n    s32 getType() const;\n    s32 getCount(bool isRev) const;\n\n    ByamlDataType getTypeCode() const { return (ByamlDataType)mType; }\n\nprivate:\n    u32 mType;\n};\n}  // namespace al\n");

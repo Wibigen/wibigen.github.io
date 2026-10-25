@@ -1,0 +1,1 @@
+DOC.got("gh/nn/vfx/Config/Config.cpp","// Nom démêlé : nn::vfx::Config::~Config\n// Symbole manglé : ~Config\n// void __thiscall nn::vfx::Config::~Config(Config *this); @ .text::00987350\n\n\n/* nn::vfx::Config::~Config() */\n\nvoid __thiscall nn::vfx::Config::~Config(Config *this)\n\n{\n  return;\n}\n\n");

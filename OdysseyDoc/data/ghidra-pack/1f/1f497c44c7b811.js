@@ -1,0 +1,1 @@
+DOC.got("gh/al/isDead_.text_009b1f00.cpp","// Nom démêlé : al::isDead\n// Symbole manglé : isDead\n// bool al::isDead(LayoutActor *param_1); @ .text::009b1f00\n\n\n/* al::isDead(al::LayoutActor const*) */\n\nbool al::isDead(LayoutActor *param_1)\n\n{\n  return param_1[0x128] == (LayoutActor)0x0;\n}\n\n");

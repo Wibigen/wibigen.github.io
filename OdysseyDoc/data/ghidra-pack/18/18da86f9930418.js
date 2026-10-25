@@ -1,0 +1,1 @@
+DOC.got("gh/UtsuboFunction/isMove_.text_002a8b64.cpp","// Nom démêlé : UtsuboFunction::isMove\n// Symbole manglé : isMove\n// bool UtsuboFunction::isMove(AreaObjGroup *param_1); @ .text::002a8b64\n\n\n/* UtsuboFunction::isMove(al::AreaObjGroup const*) */\n\nbool UtsuboFunction::isMove(AreaObjGroup *param_1)\n\n{\n  return param_1 != (AreaObjGroup *)0x0;\n}\n\n");

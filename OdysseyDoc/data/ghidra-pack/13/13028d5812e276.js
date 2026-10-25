@@ -1,0 +1,1 @@
+DOC.got("gh/al/getAreaObjBaseMtx.cpp","// Nom démêlé : al::getAreaObjBaseMtx\n// Symbole manglé : getAreaObjBaseMtx\n// AreaObj * al::getAreaObjBaseMtx(AreaObj *param_1); @ .text::009052d4\n\n\n/* al::getAreaObjBaseMtx(al::AreaObj const*) */\n\nAreaObj * al::getAreaObjBaseMtx(AreaObj *param_1)\n\n{\n  return param_1 + 0x30;\n}\n\n");

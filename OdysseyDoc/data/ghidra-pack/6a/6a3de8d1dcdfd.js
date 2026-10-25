@@ -1,0 +1,1 @@
+DOC.got("gh/TestGrafittiLayout/getResetColor.cpp","// Nom démêlé : TestGrafittiLayout::getResetColor\n// Symbole manglé : getResetColor\n// undefined4 * TestGrafittiLayout::getResetColor(void); @ .text::0030ef40\n\n\n/* TestGrafittiLayout::getResetColor() const */\n\nundefined4 * TestGrafittiLayout::getResetColor(void)\n\n{\n  return &DAT_01f63404;\n}\n\n");

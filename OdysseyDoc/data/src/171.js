@@ -1,0 +1,1 @@
+DOC.got("src/171","#pragma once\n\nnamespace nn::os {\nenum EventClearMode { EventClearMode_ManualClear, EventClearMode_AutoClear };\n}  // namespace nn::os\n");

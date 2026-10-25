@@ -1,0 +1,1 @@
+DOC.got("gh/sead/TaskBase/onEvent.cpp","// Nom démêlé : sead::TaskBase::onEvent\n// Symbole manglé : onEvent\n// void sead::TaskBase::onEvent(TaskEvent *param_1); @ .text::00835ecc\n\n\n/* sead::TaskBase::onEvent(sead::TaskEvent const&) */\n\nvoid sead::TaskBase::onEvent(TaskEvent *param_1)\n\n{\n  return;\n}\n\n");

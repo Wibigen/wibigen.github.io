@@ -1,0 +1,1 @@
+DOC.got("gh/StackerCap/isBoost.cpp","// Nom démêlé : StackerCap::isBoost\n// Symbole manglé : isBoost\n// void __thiscall StackerCap::isBoost(StackerCap *this); @ .text::001beb18\n\n\n/* StackerCap::isBoost() const */\n\nvoid __thiscall StackerCap::isBoost(StackerCap *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1d7b840);\n  return;\n}\n\n");

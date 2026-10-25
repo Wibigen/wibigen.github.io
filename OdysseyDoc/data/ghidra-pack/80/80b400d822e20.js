@@ -1,0 +1,1 @@
+DOC.got("gh/sead/Thread/calcStackUsedSizePeak.cpp","// Nom démêlé : sead::Thread::calcStackUsedSizePeak\n// Symbole manglé : calcStackUsedSizePeak\n// undefined8 sead::Thread::calcStackUsedSizePeak(void); @ .text::0085b080\n\n\n/* sead::Thread::calcStackUsedSizePeak() const */\n\nundefined8 sead::Thread::calcStackUsedSizePeak(void)\n\n{\n  return 0;\n}\n\n");

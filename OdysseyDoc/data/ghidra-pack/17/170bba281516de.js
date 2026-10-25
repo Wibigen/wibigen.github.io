@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerModelChanger2D3D/hideShadowMask.cpp","// Nom démêlé : PlayerModelChanger2D3D::hideShadowMask\n// Symbole manglé : hideShadowMask\n// void PlayerModelChanger2D3D::hideShadowMask(void); @ .text::0055dc94\n\n\n/* PlayerModelChanger2D3D::hideShadowMask() */\n\nvoid PlayerModelChanger2D3D::hideShadowMask(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/TestMusaBlockObj/init_.text_00436c60.cpp","// Nom démêlé : TestMusaBlockObj::init\n// Symbole manglé : init\n// void TestMusaBlockObj::init(ActorInitInfo *param_1); @ .text::00436c60\n\n\n/* TestMusaBlockObj::init(al::ActorInitInfo const&) */\n\nvoid TestMusaBlockObj::init(ActorInitInfo *param_1)\n\n{\n  return;\n}\n\n");

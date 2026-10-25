@@ -1,0 +1,1 @@
+DOC.got("gh/sead/Thread/sleep_.text_0085aba0.cpp","// Nom démêlé : sead::Thread::sleep\n// Symbole manglé : sleep\n// void sead::Thread::sleep(void); @ .text::0085aba0\n\n\n/* sead::Thread::sleep(sead::TickSpan) */\n\nvoid sead::Thread::sleep(void)\n\n{\n  nn::os::ConvertToTimeSpan();\n  nn::os::SleepThread();\n  return;\n}\n\n");

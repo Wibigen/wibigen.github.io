@@ -1,0 +1,1 @@
+DOC.got("gh/al/EventFlowNode/isEnableEndFork.cpp","// Nom démêlé : al::EventFlowNode::isEnableEndFork\n// Symbole manglé : isEnableEndFork\n// undefined8 al::EventFlowNode::isEnableEndFork(void); @ .text::002b10e4\n\n\n/* al::EventFlowNode::isEnableEndFork() const */\n\nundefined8 al::EventFlowNode::isEnableEndFork(void)\n\n{\n  return 0;\n}\n\n");

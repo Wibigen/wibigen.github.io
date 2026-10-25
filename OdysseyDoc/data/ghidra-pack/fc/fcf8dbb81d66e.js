@@ -1,0 +1,1 @@
+DOC.got("gh/rs/getPlayerRank_.text_00631b80.cpp","// Nom démêlé : rs::getPlayerRank\n// Symbole manglé : getPlayerRank\n// undefined4 rs::getPlayerRank(long param_1); @ .text::00631b80\n\n\n/* rs::getPlayerRank(GameDataHolderAccessor) */\n\nundefined4 rs::getPlayerRank(long param_1)\n\n{\n  return *(undefined4 *)(*(long *)(*(long *)(param_1 + 0x20) + 0x630) + 0x18);\n}\n\n");

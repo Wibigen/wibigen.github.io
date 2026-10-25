@@ -1,0 +1,1 @@
+DOC.got("src/2516","#include \"Util/PlayerUtil.h\"\n\n#include \"Library/LiveActor/ActorPoseUtil.h\"\n#include \"Library/Player/PlayerUtil.h\"\n\nconst sead::Vector3f& rs::getPlayerPos(const al::LiveActor* actor) {\n    const al::LiveActor* player = al::getPlayerActor(actor, 0);\n    return al::getTrans(player);\n}\n");

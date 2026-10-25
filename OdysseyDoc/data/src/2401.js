@@ -1,0 +1,1 @@
+DOC.got("src/2401","#pragma once\n\nnamespace al {\nclass IUseSceneObjHolder;\n}  // namespace al\n\nnamespace rs {\nvoid disableOpenWipeForSkipDemo(const al::IUseSceneObjHolder*);\nbool isDisableOpenWipeForSkipDemo(const al::IUseSceneObjHolder*);\n}  // namespace rs\n");

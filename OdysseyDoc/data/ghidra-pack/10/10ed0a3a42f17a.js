@@ -1,0 +1,1 @@
+DOC.got("gh/nn/font/Font/Font_.text_00bf89bc.cpp","// Nom démêlé : nn::font::Font::~Font\n// Symbole manglé : ~Font\n// void __thiscall nn::font::Font::~Font(Font *this); @ .text::00bf89bc\n\n\n/* nn::font::Font::~Font() */\n\nvoid __thiscall nn::font::Font::~Font(Font *this)\n\n{\n  return;\n}\n\n");

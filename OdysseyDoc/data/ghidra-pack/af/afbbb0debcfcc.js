@@ -1,0 +1,1 @@
+DOC.got("gh/HomeBed/tryEndBind.cpp","// Nom démêlé : HomeBed::tryEndBind\n// Symbole manglé : tryEndBind\n// undefined8 HomeBed::tryEndBind(void); @ .text::003a77dc\n\n\n/* HomeBed::tryEndBind() */\n\nundefined8 HomeBed::tryEndBind(void)\n\n{\n  return 0;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/FogParam/getStart.cpp","// Nom démêlé : al::FogParam::getStart\n// Symbole manglé : getStart\n// undefined4 __thiscall al::FogParam::getStart(FogParam *this); @ .text::009a1e20\n\n\n/* al::FogParam::getStart() const */\n\nundefined4 __thiscall al::FogParam::getStart(FogParam *this)\n\n{\n  return *(undefined4 *)(*(long *)(this + 0x50) + 0x6c);\n}\n\n");

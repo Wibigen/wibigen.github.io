@@ -1,0 +1,1 @@
+DOC.got("gh/al/EffectSystem/endInit_.text_0098735c.cpp","// Nom démêlé : al::EffectSystem::endInit\n// Symbole manglé : endInit\n// void al::EffectSystem::endInit(void); @ .text::0098735c\n\n\n/* al::EffectSystem::endInit() */\n\nvoid al::EffectSystem::endInit(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/isExistShadowMaskCtrl.cpp","// Nom démêlé : al::isExistShadowMaskCtrl\n// Symbole manglé : isExistShadowMaskCtrl\n// bool al::isExistShadowMaskCtrl(LiveActor *param_1); @ .text::00b1318c\n\n\n/* al::isExistShadowMaskCtrl(al::LiveActor*) */\n\nbool al::isExistShadowMaskCtrl(LiveActor *param_1)\n\n{\n  return **(long **)(param_1 + 0xd0) != 0;\n}\n\n");

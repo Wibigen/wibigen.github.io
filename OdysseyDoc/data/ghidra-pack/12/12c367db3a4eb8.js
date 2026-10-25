@@ -1,0 +1,1 @@
+DOC.got("gh/rs/getTestCapName.cpp","// Nom démêlé : rs::getTestCapName\n// Symbole manglé : getTestCapName\n// undefined8 rs::getTestCapName(void); @ .text::0064ccb4\n\n\n/* rs::getTestCapName() */\n\nundefined8 rs::getTestCapName(void)\n\n{\n  return 0x192ddaa;\n}\n\n");

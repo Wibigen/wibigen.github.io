@@ -1,0 +1,1 @@
+DOC.got("src/169","#pragma once\n\nnamespace nn::os {\n\nenum ConditionVariableStatus { ConditionVariableStatus_Timeout, ConditionVariableStatus_NoTimeout };\n\n}  // namespace nn::os");

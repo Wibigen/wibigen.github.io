@@ -1,0 +1,1 @@
+DOC.got("gh/KuriboWingHackState/control_.text_0025d6b0.cpp","// Nom démêlé : KuriboWingHackState::control\n// Symbole manglé : control\n// void KuriboWingHackState::control(void); @ .text::0025d6b0\n\n\n/* KuriboWingHackState::control() */\n\nvoid KuriboWingHackState::control(void)\n\n{\n  return;\n}\n\n");

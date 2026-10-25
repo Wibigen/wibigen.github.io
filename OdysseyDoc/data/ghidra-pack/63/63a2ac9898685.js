@@ -1,0 +1,1 @@
+DOC.got("gh/sead/DebugFontMgrJis1Nvn/getWidth.cpp","// Nom démêlé : sead::DebugFontMgrJis1Nvn::getWidth\n// Symbole manglé : getWidth\n// undefined1  [16] sead::DebugFontMgrJis1Nvn::getWidth(void); @ .text::00838d60\n\n\n/* sead::DebugFontMgrJis1Nvn::getWidth() const */\n\nundefined1  [16] sead::DebugFontMgrJis1Nvn::getWidth(void)\n\n{\n  return ZEXT816(0x41800000);\n}\n\n");

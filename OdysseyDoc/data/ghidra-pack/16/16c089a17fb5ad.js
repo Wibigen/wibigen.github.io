@@ -1,0 +1,1 @@
+DOC.got("gh/StageSceneStateTimeBalloon/exePlay_.text_005f55f4.cpp","// Nom démêlé : StageSceneStateTimeBalloon::exePlay\n// Symbole manglé : exePlay\n// void StageSceneStateTimeBalloon::exePlay(void); @ .text::005f55f4\n\n\n/* StageSceneStateTimeBalloon::exePlay() */\n\nvoid StageSceneStateTimeBalloon::exePlay(void)\n\n{\n  return;\n}\n\n");

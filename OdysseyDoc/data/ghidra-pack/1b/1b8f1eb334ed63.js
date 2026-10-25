@@ -1,0 +1,1 @@
+DOC.got("gh/BreedaWanwan/stop_.text_00150a34.cpp","// Nom démêlé : BreedaWanwan::stop\n// Symbole manglé : stop\n// void __thiscall BreedaWanwan::stop(BreedaWanwan *this); @ .text::00150a34\n\n\n/* BreedaWanwan::stop() */\n\nvoid __thiscall BreedaWanwan::stop(BreedaWanwan *this)\n\n{\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1d62220);\n  return;\n}\n\n");

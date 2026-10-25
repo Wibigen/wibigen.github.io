@@ -1,0 +1,1 @@
+DOC.got("gh/UniqObjInfo/isEmpty_.text_0063e550.cpp","// Nom démêlé : UniqObjInfo::isEmpty\n// Symbole manglé : isEmpty\n// bool __thiscall UniqObjInfo::isEmpty(UniqObjInfo *this); @ .text::0063e550\n\n\n/* UniqObjInfo::isEmpty() const */\n\nbool __thiscall UniqObjInfo::isEmpty(UniqObjInfo *this)\n\n{\n  return **(char **)(this + 8) == *PTR_01f4eba0;\n}\n\n");

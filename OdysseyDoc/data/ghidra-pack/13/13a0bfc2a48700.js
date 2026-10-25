@@ -1,0 +1,1 @@
+DOC.got("gh/Byugo/isMoveAtBlow.cpp","// Nom démêlé : Byugo::isMoveAtBlow\n// Symbole manglé : isMoveAtBlow\n// bool __thiscall Byugo::isMoveAtBlow(Byugo *this); @ .text::001edda4\n\n\n/* Byugo::isMoveAtBlow() const */\n\nbool __thiscall Byugo::isMoveAtBlow(Byugo *this)\n\n{\n  return 0xff < *(ushort *)(this + 0x170) && (*(ushort *)(this + 0x170) & 0xff) != 0;\n}\n\n");

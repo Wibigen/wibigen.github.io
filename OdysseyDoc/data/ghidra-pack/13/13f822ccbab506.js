@@ -1,0 +1,1 @@
+DOC.got("gh/sead/PerformanceMgrNx/isDockIn.cpp","// Nom démêlé : sead::PerformanceMgrNx::isDockIn\n// Symbole manglé : isDockIn\n// undefined8 sead::PerformanceMgrNx::isDockIn(void); @ .text::00832928\n\n\n/* sead::PerformanceMgrNx::isDockIn() */\n\nundefined8 sead::PerformanceMgrNx::isDockIn(void)\n\n{\n  return 0;\n}\n\n");

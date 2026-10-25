@@ -1,0 +1,1 @@
+DOC.got("src/376","#pragma once\n\n#include <basis/seadTypes.h>\n\nnamespace al {\n\nclass IAudioSystemPause {\npublic:\n    virtual void pauseSystem(bool, const char*, bool, f32, bool, bool, bool) = 0;\n};\n\n}  // namespace al\n");

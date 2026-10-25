@@ -1,0 +1,1 @@
+DOC.got("e/3695",{"31365":{"q":"nn::friends::Url","decl":{"f":"lib/NintendoSDK/include/nn/friends.h","l":13,"sig":"struct Url","end":15,"fi":22},"size":160,"align":1,"complete":true,"fields":[{"n":"m_Buffer","t":"char[160]","off":0,"sz":160,"acc":"public","tu":null,"bits":null,"l":14,"cm":null,"ti":null}]}});

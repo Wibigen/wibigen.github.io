@@ -1,0 +1,1 @@
+DOC.got("gh/DecideIconLayout/exeEnd_.text_002ea3a0.cpp","// Nom démêlé : DecideIconLayout::exeEnd\n// Symbole manglé : exeEnd\n// void DecideIconLayout::exeEnd(void); @ .text::002ea3a0\n\n\n/* DecideIconLayout::exeEnd() */\n\nvoid DecideIconLayout::exeEnd(void)\n\n{\n  return;\n}\n\n");

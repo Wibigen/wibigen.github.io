@@ -1,0 +1,1 @@
+DOC.got("gh/JangoCap/startStruggle.cpp","// Nom démêlé : JangoCap::startStruggle\n// Symbole manglé : startStruggle\n// void __thiscall JangoCap::startStruggle(JangoCap *this); @ .text::0022f958\n\n\n/* JangoCap::startStruggle() */\n\nvoid __thiscall JangoCap::startStruggle(JangoCap *this)\n\n{\n  al::startAction((LiveActor *)this,(char *)0x1926c2e);\n  return;\n}\n\n");

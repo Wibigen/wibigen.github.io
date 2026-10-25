@@ -1,0 +1,1 @@
+DOC.got("src/1207","#include \"Project/Execute/ExecuteSystemInitInfo.h\"\n\nnamespace al {\n\nExecuteSystemInitInfo::ExecuteSystemInitInfo() = default;\n\n}  // namespace al\n");

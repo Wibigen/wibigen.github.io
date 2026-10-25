@@ -1,0 +1,1 @@
+DOC.got("e/4359",{"3483":{"q":"::NVNprogram","decl":{"f":"lib/NintendoSDK/include/nvn/nvn.h","l":144,"sig":"struct","end":146,"fi":223},"size":192,"align":1,"complete":true,"fields":[{"n":"reserved","t":"char[192]","off":0,"sz":192,"acc":"public","tu":null,"bits":null,"l":145,"cm":null,"ti":null}]}});

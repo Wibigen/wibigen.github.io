@@ -1,0 +1,1 @@
+DOC.got("gh/SpaceShuttleChild/exeWait_.text_00427a3c.cpp","// Nom démêlé : SpaceShuttleChild::exeWait\n// Symbole manglé : exeWait\n// void SpaceShuttleChild::exeWait(void); @ .text::00427a3c\n\n\n/* SpaceShuttleChild::exeWait() */\n\nvoid SpaceShuttleChild::exeWait(void)\n\n{\n  return;\n}\n\n");

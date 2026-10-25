@@ -1,0 +1,1 @@
+DOC.got("gh/sead/PerformanceMgrNx/printPerformance.cpp","// Nom démêlé : sead::PerformanceMgrNx::printPerformance\n// Symbole manglé : printPerformance\n// void sead::PerformanceMgrNx::printPerformance(void); @ .text::0083291c\n\n\n/* sead::PerformanceMgrNx::printPerformance() */\n\nvoid sead::PerformanceMgrNx::printPerformance(void)\n\n{\n  return;\n}\n\n");

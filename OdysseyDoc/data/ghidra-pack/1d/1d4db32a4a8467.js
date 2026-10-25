@@ -1,0 +1,1 @@
+DOC.got("gh/GolemClimb/getSkeleton.cpp","// Nom démêlé : GolemClimb::getSkeleton\n// Symbole manglé : getSkeleton\n// undefined8 __thiscall GolemClimb::getSkeleton(GolemClimb *this); @ .text::00175904\n\n\n/* GolemClimb::getSkeleton() */\n\nundefined8 __thiscall GolemClimb::getSkeleton(GolemClimb *this)\n\n{\n  return *(undefined8 *)(this + 0x178);\n}\n\n");

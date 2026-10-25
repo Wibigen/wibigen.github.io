@@ -1,0 +1,1 @@
+DOC.got("src/735","#include \"Library/LiveActor/LiveActorFlag.h\"\n\nnamespace al {\nLiveActorFlag::LiveActorFlag() = default;\n}\n");

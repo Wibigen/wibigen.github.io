@@ -1,0 +1,1 @@
+DOC.got("gh/al/ActorPoseKeeperBase/getQuatPtr.cpp","// Nom démêlé : al::ActorPoseKeeperBase::getQuatPtr\n// Symbole manglé : getQuatPtr\n// undefined8 al::ActorPoseKeeperBase::getQuatPtr(void); @ .text::009ee11c\n\n\n/* al::ActorPoseKeeperBase::getQuatPtr() */\n\nundefined8 al::ActorPoseKeeperBase::getQuatPtr(void)\n\n{\n  return 0;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/HammerBros/tryShootSwing_.text_00210ebc.cpp","// Nom démêlé : HammerBros::tryShootSwing\n// Symbole manglé : tryShootSwing\n// void __thiscall HammerBros::tryShootSwing(HammerBros *this); @ .text::00210ebc\n\n\n/* HammerBros::tryShootSwing() */\n\nvoid __thiscall HammerBros::tryShootSwing(HammerBros *this)\n\n{\n  tryShootLocal(this,true,true);\n  return;\n}\n\n");

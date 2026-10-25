@@ -1,0 +1,1 @@
+DOC.got("gh/Bubble/showHackCap.cpp","// Nom démêlé : Bubble::showHackCap\n// Symbole manglé : showHackCap\n// void __thiscall Bubble::showHackCap(Bubble *this); @ .text::001e725c\n\n\n/* Bubble::showHackCap() */\n\nvoid __thiscall Bubble::showHackCap(Bubble *this)\n\n{\n  rs::showHackCap(*(IUsePlayerHack **)(this + 0x150));\n  return;\n}\n\n");

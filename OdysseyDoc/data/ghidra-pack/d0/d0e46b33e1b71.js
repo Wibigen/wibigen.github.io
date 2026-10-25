@@ -1,0 +1,1 @@
+DOC.got("gh/VolleyballBall/control_.text_004eafcc.cpp","// Nom démêlé : VolleyballBall::control\n// Symbole manglé : control\n// void VolleyballBall::control(void); @ .text::004eafcc\n\n\n/* VolleyballBall::control() */\n\nvoid VolleyballBall::control(void)\n\n{\n  return;\n}\n\n");

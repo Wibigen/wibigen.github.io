@@ -1,0 +1,1 @@
+DOC.got("src/1674","#pragma once\n\n#include \"Library/LiveActor/LiveActor.h\"\n\nnamespace al {\nstruct ActorInitInfo;\n}  // namespace al\n\nclass CoinBlow : public al::LiveActor {\npublic:\n    CoinBlow(const char* name);\n\n    void init(const al::ActorInitInfo& info) override;\n\n    void listenStart();\n\nprivate:\n    const char* mBlowSize = nullptr;\n};\n");

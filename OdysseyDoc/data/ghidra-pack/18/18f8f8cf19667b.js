@@ -1,0 +1,1 @@
+DOC.got("gh/RootTask/RootTask_.text_00639378.cpp","// Nom démêlé : RootTask::~RootTask\n// Symbole manglé : ~RootTask\n// void __thiscall RootTask::~RootTask(RootTask *this); @ .text::00639378\n\n\n/* RootTask::~RootTask() */\n\nvoid __thiscall RootTask::~RootTask(RootTask *this)\n\n{\n  sead::Task::~Task((Task *)this);\n  operator_delete(this);\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/UniqObjInfo/print.cpp","// Nom démêlé : UniqObjInfo::print\n// Symbole manglé : print\n// void UniqObjInfo::print(void); @ .text::0063e720\n\n\n/* UniqObjInfo::print() const */\n\nvoid UniqObjInfo::print(void)\n\n{\n  return;\n}\n\n");

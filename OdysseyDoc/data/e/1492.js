@@ -1,0 +1,1 @@
+DOC.got("e/1492",{"19005":{"q":"al::CollisionCheckInfoBase","decl":{"f":"lib/al/Library/Collision/CollisionPartsKeeperUtil.h","l":18,"sig":"class CollisionCheckInfoBase","fi":514},"complete":false,"fwd":[["lib/al/Library/Collision/CollisionPartsKeeperUtil.h",18],["lib/al/Library/Collision/ICollisionPartsKeeper.h",17]]}});

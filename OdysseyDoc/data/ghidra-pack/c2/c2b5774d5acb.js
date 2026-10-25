@@ -1,0 +1,1 @@
+DOC.got("gh/IBalloonFindMyAchievementHolder/isRankUp.cpp","// Nom démêlé : IBalloonFindMyAchievementHolder::isRankUp\n// Symbole manglé : isRankUp\n// undefined8 IBalloonFindMyAchievementHolder::isRankUp(void); @ .text::00451b7c\n\n\n/* IBalloonFindMyAchievementHolder::isRankUp() const */\n\nundefined8 IBalloonFindMyAchievementHolder::isRankUp(void)\n\n{\n  return 0;\n}\n\n");

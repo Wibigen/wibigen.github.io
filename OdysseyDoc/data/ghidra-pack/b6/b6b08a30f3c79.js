@@ -1,0 +1,1 @@
+DOC.got("gh/rs/is2D.cpp","// Nom démêlé : rs::is2D\n// Symbole manglé : is2D\n// undefined1 rs::is2D(IUseDimension *param_1); @ .text::006419f8\n\n\n/* rs::is2D(IUseDimension const*) */\n\nundefined1 rs::is2D(IUseDimension *param_1)\n\n{\n  long lVar1;\n  \n  lVar1 = (*(code *)**(undefined8 **)param_1)();\n  return *(undefined1 *)(lVar1 + 9);\n}\n\n");

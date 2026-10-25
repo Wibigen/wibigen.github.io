@@ -1,0 +1,1 @@
+DOC.got("gh/nn/gfx/detail/Nvn/ToTimeSpan.cpp","// Nom démêlé : nn::gfx::detail::Nvn::ToTimeSpan\n// Symbole manglé : ToTimeSpan\n// long nn::gfx::detail::Nvn::ToTimeSpan(long param_1); @ .text::008249ac\n\n\n/* nn::gfx::detail::Nvn::ToTimeSpan(long) */\n\nlong nn::gfx::detail::Nvn::ToTimeSpan(long param_1)\n\n{\n  return param_1 * 0xd >> 3;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("src/969","#include \"Library/Play/Graphics/PartsGraphics.h\"\n\n#include \"Library/Draw/GraphicsSystemInfo.h\"\n\nnamespace al {\n\nPartsGraphics::PartsGraphics(GraphicsSystemInfo* gfxSysInfo)\n    : sead::TListNode<PartsGraphics*>(this) {\n    gfxSysInfo->registPartsGraphics(this);\n}\n\n}  // namespace al\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/nn/atk/detail/WaveSound/OnUpdateParam_.text_00bc6244.cpp","// Nom démêlé : nn::atk::detail::WaveSound::OnUpdateParam\n// Symbole manglé : OnUpdateParam\n// void nn::atk::detail::WaveSound::OnUpdateParam(void); @ .text::00bc6244\n\n\n/* nn::atk::detail::WaveSound::OnUpdateParam() */\n\nvoid nn::atk::detail::WaveSound::OnUpdateParam(void)\n\n{\n  return;\n}\n\n");

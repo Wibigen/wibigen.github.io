@@ -1,0 +1,1 @@
+DOC.got("gh/al/CameraStateRailMoveMovie/exeWait_.text_00a7f8f0.cpp","// Nom démêlé : al::CameraStateRailMoveMovie::exeWait\n// Symbole manglé : exeWait\n// void al::CameraStateRailMoveMovie::exeWait(void); @ .text::00a7f8f0\n\n\n/* al::CameraStateRailMoveMovie::exeWait() */\n\nvoid al::CameraStateRailMoveMovie::exeWait(void)\n\n{\n  return;\n}\n\n");

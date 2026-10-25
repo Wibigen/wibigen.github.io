@@ -1,0 +1,1 @@
+DOC.got("src/605","#pragma once\n\n#include <basis/seadTypes.h>\n\nnamespace al {\nstruct ExecuteOrder;\n\nstruct ExecuteTable {\n    const char* name = nullptr;\n    const ExecuteOrder* executeOrders = nullptr;\n    s32 executeOrderCount = 0;\n};\n\nstatic_assert(sizeof(ExecuteTable) == 0x18);\n\n}  // namespace al\n");

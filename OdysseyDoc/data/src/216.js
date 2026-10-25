@@ -1,0 +1,1 @@
+DOC.got("src/216","/**\n * @file Config.h\n * @brief VFX configuration.\n */\n\n#pragma once\n\nnamespace nn {\nnamespace vfx {\nclass Config {\npublic:\n    virtual ~Config();\n};\n}  // namespace vfx\n}  // namespace nn\n");

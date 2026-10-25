@@ -1,0 +1,1 @@
+DOC.got("gh/agl/lght/SSII/calcViewGPU_.text_00cb0374.cpp","// Nom démêlé : agl::lght::SSII::calcViewGPU\n// Symbole manglé : calcViewGPU\n// int agl::lght::SSII::calcViewGPU(int param_1); @ .text::00cb0374\n\n\n/* agl::lght::SSII::calcViewGPU(int) */\n\nint agl::lght::SSII::calcViewGPU(int param_1)\n\n{\n  return param_1;\n}\n\n");

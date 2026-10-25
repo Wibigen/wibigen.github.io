@@ -1,0 +1,1 @@
+DOC.got("gh/FireBlower/initAfterPlacement_.text_00158450.cpp","// Nom démêlé : FireBlower::initAfterPlacement\n// Symbole manglé : initAfterPlacement\n// void FireBlower::initAfterPlacement(void); @ .text::00158450\n\n\n/* FireBlower::initAfterPlacement() */\n\nvoid FireBlower::initAfterPlacement(void)\n\n{\n  return;\n}\n\n");

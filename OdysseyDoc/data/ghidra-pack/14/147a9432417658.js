@@ -1,0 +1,1 @@
+DOC.got("gh/al/isMessageTagEndMark.cpp","// Nom démêlé : al::isMessageTagEndMark\n// Symbole manglé : isMessageTagEndMark\n// bool al::isMessageTagEndMark(wchar16 param_1); @ .text::00a392a4\n\n\n/* al::isMessageTagEndMark(char16_t) */\n\nbool al::isMessageTagEndMark(wchar16 param_1)\n\n{\n  return param_1 == L'\\x0e';\n}\n\n");

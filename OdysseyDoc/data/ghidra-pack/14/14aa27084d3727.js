@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/SpinTest/GetTimeout.cpp","// Nom démêlé : nn::nex::SpinTest::GetTimeout\n// Symbole manglé : GetTimeout\n// undefined4 __thiscall nn::nex::SpinTest::GetTimeout(SpinTest *this); @ .text::0071b2a4\n\n\n/* nn::nex::SpinTest::GetTimeout() */\n\nundefined4 __thiscall nn::nex::SpinTest::GetTimeout(SpinTest *this)\n\n{\n  return *(undefined4 *)(this + 0xc);\n}\n\n");

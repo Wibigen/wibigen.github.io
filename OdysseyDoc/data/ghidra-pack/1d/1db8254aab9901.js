@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Variant/GetType_.text_00722b78.cpp","// Nom démêlé : nn::nex::Variant::GetType\n// Symbole manglé : GetType\n// undefined4 __thiscall nn::nex::Variant::GetType(Variant *this); @ .text::00722b78\n\n\n/* nn::nex::Variant::GetType() const */\n\nundefined4 __thiscall nn::nex::Variant::GetType(Variant *this)\n\n{\n  return *(undefined4 *)(this + 8);\n}\n\n");

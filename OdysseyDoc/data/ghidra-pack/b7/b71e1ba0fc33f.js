@@ -1,0 +1,1 @@
+DOC.got("gh/IBalloonFindMyBalloon/getPayCoinNum_.text_00453068.cpp","// Nom démêlé : IBalloonFindMyBalloon::getPayCoinNum\n// Symbole manglé : getPayCoinNum\n// undefined8 IBalloonFindMyBalloon::getPayCoinNum(void); @ .text::00453068\n\n\n/* IBalloonFindMyBalloon::getPayCoinNum() const */\n\nundefined8 IBalloonFindMyBalloon::getPayCoinNum(void)\n\n{\n  return 0;\n}\n\n");

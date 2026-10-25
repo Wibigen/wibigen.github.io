@@ -1,0 +1,1 @@
+DOC.got("src/624","#include \"Library/Execute/ExecutorListBase.h\"\n\nnamespace al {\n\nExecutorListBase::ExecutorListBase(const char* name) : mName(name) {}\n\n}  // namespace al\n");

@@ -1,0 +1,1 @@
+DOC.got("src/83","#pragma once\n\n#include <nn/nn_BitTypes.h>\n\nnamespace nn::gfx {\nstruct DeviceInfoData {\n    Bit8 debugMode;\n    char reserved2[3];\n    uint16_t apiMajorVersion;\n    uint16_t apiMinorVersion;\n    char reserved[56];\n};\n}  // namespace nn::gfx");

@@ -1,0 +1,1 @@
+DOC.got("gh/SessionMusicianNpc/exeWarp.cpp","// Nom démêlé : SessionMusicianNpc::exeWarp\n// Symbole manglé : exeWarp\n// void SessionMusicianNpc::exeWarp(void); @ .text::004c4754\n\n\n/* SessionMusicianNpc::exeWarp() */\n\nvoid SessionMusicianNpc::exeWarp(void)\n\n{\n  return;\n}\n\n");

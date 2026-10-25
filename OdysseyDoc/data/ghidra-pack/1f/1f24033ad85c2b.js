@@ -1,0 +1,1 @@
+DOC.got("gh/al/YFogParam/getParamName_.text_009a5730.cpp","// Nom démêlé : al::YFogParam::getParamName\n// Symbole manglé : getParamName\n// undefined8 al::YFogParam::getParamName(void); @ .text::009a5730\n\n\n/* al::YFogParam::getParamName() const */\n\nundefined8 al::YFogParam::getParamName(void)\n\n{\n  return 0x196bde1;\n}\n\n");

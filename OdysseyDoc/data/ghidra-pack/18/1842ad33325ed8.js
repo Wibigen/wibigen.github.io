@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/CriticalSection/HasOwnership.cpp","// Nom démêlé : nn::nex::CriticalSection::HasOwnership\n// Symbole manglé : HasOwnership\n// undefined8 nn::nex::CriticalSection::HasOwnership(void); @ .text::0070ddc8\n\n\n/* nn::nex::CriticalSection::HasOwnership() const */\n\nundefined8 nn::nex::CriticalSection::HasOwnership(void)\n\n{\n  return 1;\n}\n\n");

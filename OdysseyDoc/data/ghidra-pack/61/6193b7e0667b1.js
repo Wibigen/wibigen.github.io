@@ -1,0 +1,1 @@
+DOC.got("gh/al/isSensorName.cpp","// Nom démêlé : al::isSensorName\n// Symbole manglé : isSensorName\n// void al::isSensorName(HitSensor *param_1,char *param_2); @ .text::009f29bc\n\n\n/* al::isSensorName(al::HitSensor const*, char const*) */\n\nvoid al::isSensorName(HitSensor *param_1,char *param_2)\n\n{\n  isEqualString(*(char **)param_1,param_2);\n  return;\n}\n\n");

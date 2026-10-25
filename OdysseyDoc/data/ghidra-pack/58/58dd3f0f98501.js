@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/showbase.cpp","// Nom démêlé : nn::nex::showbase\n// Symbole manglé : showbase\n// void nn::nex::showbase(StringStream *param_1); @ .text::00720704\n\n\n/* nn::nex::showbase(nn::nex::StringStream&) */\n\nvoid nn::nex::showbase(StringStream *param_1)\n\n{\n  param_1[0x121] = (StringStream)0x1;\n  return;\n}\n\n");

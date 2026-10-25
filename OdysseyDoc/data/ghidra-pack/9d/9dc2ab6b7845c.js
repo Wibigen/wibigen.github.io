@@ -1,0 +1,1 @@
+DOC.got("gh/agl/lyr/Layer/calcJobWeight.cpp","// Nom démêlé : agl::lyr::Layer::calcJobWeight\n// Symbole manglé : calcJobWeight\n// void agl::lyr::Layer::calcJobWeight(void); @ .text::00ce5f6c\n\n\n/* agl::lyr::Layer::calcJobWeight() */\n\nvoid agl::lyr::Layer::calcJobWeight(void)\n\n{\n  return;\n}\n\n");

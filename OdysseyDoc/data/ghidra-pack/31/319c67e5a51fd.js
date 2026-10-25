@@ -1,0 +1,1 @@
+DOC.got("gh/Closet/isSelect.cpp","// Nom démêlé : Closet::isSelect\n// Symbole manglé : isSelect\n// void __thiscall Closet::isSelect(Closet *this); @ .text::0034e68c\n\n\n/* Closet::isSelect() */\n\nvoid __thiscall Closet::isSelect(Closet *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1de96e8);\n  return;\n}\n\n");

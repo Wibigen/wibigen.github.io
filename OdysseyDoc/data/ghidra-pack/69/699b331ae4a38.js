@@ -1,0 +1,1 @@
+DOC.got("gh/Tsukkun/exeStandBy_.text_002a2e20.cpp","// Nom démêlé : Tsukkun::exeStandBy\n// Symbole manglé : exeStandBy\n// void Tsukkun::exeStandBy(void); @ .text::002a2e20\n\n\n/* Tsukkun::exeStandBy() */\n\nvoid Tsukkun::exeStandBy(void)\n\n{\n  return;\n}\n\n");

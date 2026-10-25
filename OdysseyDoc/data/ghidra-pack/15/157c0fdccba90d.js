@@ -1,0 +1,1 @@
+DOC.got("gh/IBalloonFindMyBalloon/setPos_.text_00453060.cpp","// Nom démêlé : IBalloonFindMyBalloon::setPos\n// Symbole manglé : setPos\n// void IBalloonFindMyBalloon::setPos(Vector3 *param_1); @ .text::00453060\n\n\n/* IBalloonFindMyBalloon::setPos(sead::Vector3<float> const&) */\n\nvoid IBalloonFindMyBalloon::setPos(Vector3 *param_1)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/KoopaCapPunching/exeDead_.text_0018ab0c.cpp","// Nom démêlé : KoopaCapPunching::exeDead\n// Symbole manglé : exeDead\n// void KoopaCapPunching::exeDead(void); @ .text::0018ab0c\n\n\n/* KoopaCapPunching::exeDead() */\n\nvoid KoopaCapPunching::exeDead(void)\n\n{\n  return;\n}\n\n");

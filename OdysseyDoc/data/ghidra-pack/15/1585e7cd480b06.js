@@ -1,0 +1,1 @@
+DOC.got("gh/eui/AnimButton/StartDrag.cpp","// Nom démêlé : eui::AnimButton::StartDrag\n// Symbole manglé : StartDrag\n// void eui::AnimButton::StartDrag(Vector2 *param_1); @ .text::008f2e78\n\n\n/* eui::AnimButton::StartDrag(sead::Vector2<float> const&) */\n\nvoid eui::AnimButton::StartDrag(Vector2 *param_1)\n\n{\n  return;\n}\n\n");

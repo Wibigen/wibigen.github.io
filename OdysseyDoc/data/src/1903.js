@@ -1,0 +1,1 @@
+DOC.got("src/1903","#pragma once\n\n#include \"Library/LiveActor/LiveActor.h\"\n\nclass LavaPan : public al::LiveActor {\npublic:\n    LavaPan(const char* name);\n\n    void init(const al::ActorInitInfo& info) override;\n    void exeWait();\n    void exeRumble();\n};\n");

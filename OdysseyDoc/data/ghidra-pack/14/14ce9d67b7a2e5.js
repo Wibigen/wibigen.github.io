@@ -1,0 +1,1 @@
+DOC.got("gh/DemoHackFirstDirector/exeWatch_.text_001d2fc4.cpp","// Nom démêlé : DemoHackFirstDirector::exeWatch\n// Symbole manglé : exeWatch\n// void DemoHackFirstDirector::exeWatch(void); @ .text::001d2fc4\n\n\n/* DemoHackFirstDirector::exeWatch() */\n\nvoid DemoHackFirstDirector::exeWatch(void)\n\n{\n  return;\n}\n\n");

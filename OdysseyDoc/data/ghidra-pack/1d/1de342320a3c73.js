@@ -1,0 +1,1 @@
+DOC.got("gh/ShineListLayout/exeDeactive_.text_00306534.cpp","// Nom démêlé : ShineListLayout::exeDeactive\n// Symbole manglé : exeDeactive\n// void ShineListLayout::exeDeactive(void); @ .text::00306534\n\n\n/* ShineListLayout::exeDeactive() */\n\nvoid ShineListLayout::exeDeactive(void)\n\n{\n  return;\n}\n\n");

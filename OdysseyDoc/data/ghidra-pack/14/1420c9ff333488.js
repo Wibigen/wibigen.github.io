@@ -1,0 +1,1 @@
+DOC.got("gh/Curl_multi_handlePipeBreak.cpp","// Nom démêlé : Curl_multi_handlePipeBreak\n// Symbole manglé : Curl_multi_handlePipeBreak\n// void Curl_multi_handlePipeBreak(long param_1); @ .text::007fe0f8\n\n\nvoid Curl_multi_handlePipeBreak(long param_1)\n\n{\n  *(undefined8 *)(param_1 + 0x10) = 0;\n  return;\n}\n\n");

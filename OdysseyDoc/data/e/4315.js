@@ -1,0 +1,1 @@
+DOC.got("e/4315",{"345":{"q":"(anonymous@src/Item/CoinCollectHintState)::(anonymous)","decl":{"f":"src/Item/CoinCollectHintState.cpp","l":15,"sig":"NERVES_MAKE_STRUCT(CoinCollectHintState, Wait)","end":15,"fi":1689},"size":8,"align":8,"complete":true,"fields":[{"n":"Wait","t":"CoinCollectHintStateNrvWait","off":0,"sz":8,"acc":"public","bits":null,"l":15,"cm":null,"ti":1004}]}});

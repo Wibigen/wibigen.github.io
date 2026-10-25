@@ -1,0 +1,1 @@
+DOC.got("gh/rs/isClosetScenePlayer.cpp","// Nom démêlé : rs::isClosetScenePlayer\n// Symbole manglé : isClosetScenePlayer\n// PlayerInitInfo rs::isClosetScenePlayer(PlayerInitInfo *param_1); @ .text::0066f3d8\n\n\n/* rs::isClosetScenePlayer(PlayerInitInfo const&) */\n\nPlayerInitInfo rs::isClosetScenePlayer(PlayerInitInfo *param_1)\n\n{\n  return param_1[0x45];\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("src/482","#pragma once\n\nnamespace al {\n\nclass CameraViewFlag {\npublic:\n    CameraViewFlag();\n\n    void resetAllFlag();\n\n    void setInvalidCameraBlur(bool invalid) { mIsInvalidCameraBlur = invalid; }\n\n    bool isInvalidCameraBlur() const { return mIsInvalidCameraBlur; }\n\nprivate:\n    bool mIsInvalidCameraBlur = false;\n};\n\n}  // namespace al\n");

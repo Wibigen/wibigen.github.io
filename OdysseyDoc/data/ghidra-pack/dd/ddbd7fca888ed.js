@@ -1,0 +1,1 @@
+DOC.got("gh/Curl_ssl_backend.cpp","// Nom démêlé : Curl_ssl_backend\n// Symbole manglé : Curl_ssl_backend\n// undefined8 Curl_ssl_backend(void); @ .text::0080e198\n\n\nundefined8 Curl_ssl_backend(void)\n\n{\n  return 0xb;\n}\n\n");

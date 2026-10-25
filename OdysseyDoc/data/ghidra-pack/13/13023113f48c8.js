@@ -1,0 +1,1 @@
+DOC.got("gh/al/updateKit.cpp","// Nom démêlé : al::updateKit\n// Symbole manglé : updateKit\n// void al::updateKit(Scene *param_1); @ .text::00ad0a50\n\n\n/* al::updateKit(al::Scene*) */\n\nvoid al::updateKit(Scene *param_1)\n\n{\n  executeUpdate(*(LiveActorKit **)(param_1 + 0x90),(char *)0x0);\n  return;\n}\n\n");

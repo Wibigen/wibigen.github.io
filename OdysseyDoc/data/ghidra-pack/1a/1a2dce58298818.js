@@ -1,0 +1,1 @@
+DOC.got("gh/eui/Screen/doLoadResource.cpp","// Nom démêlé : eui::Screen::doLoadResource_\n// Symbole manglé : doLoadResource_\n// void eui::Screen::doLoadResource_(Heap *param_1); @ .text::008ef710\n\n\n/* eui::Screen::doLoadResource_(sead::Heap*) */\n\nvoid eui::Screen::doLoadResource_(Heap *param_1)\n\n{\n  return;\n}\n\n");

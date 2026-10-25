@@ -1,0 +1,1 @@
+DOC.got("e/3656",{"31160":{"q":"nn::audio::MemoryPoolType","decl":{"f":"lib/NintendoSDK/include/nn/audio.h","l":115,"sig":"struct MemoryPoolType","end":117,"fi":16},"size":8,"align":8,"complete":true,"fields":[{"n":"_0","t":"u64 *","off":0,"sz":8,"acc":"public","bits":null,"l":116,"cm":null,"ti":49377}]}});

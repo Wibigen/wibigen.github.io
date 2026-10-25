@@ -1,0 +1,1 @@
+DOC.got("gh/RankingNameHolder/write_.text_004bdc44.cpp","// Nom démêlé : RankingNameHolder::write\n// Symbole manglé : write\n// void RankingNameHolder::write(void); @ .text::004bdc44\n\n\n/* RankingNameHolder::write() */\n\nvoid RankingNameHolder::write(void)\n\n{\n  return;\n}\n\n");

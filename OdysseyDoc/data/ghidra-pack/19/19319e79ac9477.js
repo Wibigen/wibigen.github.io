@@ -1,0 +1,1 @@
+DOC.got("gh/GuidePosInfoHolder/getSceneObjName_.text_005aa938.cpp","// Nom démêlé : GuidePosInfoHolder::getSceneObjName\n// Symbole manglé : getSceneObjName\n// undefined8 GuidePosInfoHolder::getSceneObjName(void); @ .text::005aa938\n\n\n/* GuidePosInfoHolder::getSceneObjName() const */\n\nundefined8 GuidePosInfoHolder::getSceneObjName(void)\n\n{\n  return 0x19484ad;\n}\n\n");

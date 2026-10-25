@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Inet/Terminate_.text_007a4828.cpp","// Nom démêlé : nn::nex::Inet::Terminate\n// Symbole manglé : Terminate\n// undefined8 nn::nex::Inet::Terminate(void); @ .text::007a4828\n\n\n/* nn::nex::Inet::Terminate() */\n\nundefined8 nn::nex::Inet::Terminate(void)\n\n{\n  return 1;\n}\n\n");

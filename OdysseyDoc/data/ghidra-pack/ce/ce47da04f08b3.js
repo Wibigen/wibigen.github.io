@@ -1,0 +1,1 @@
+DOC.got("gh/Tsukkun/clearBend.cpp","// Nom démêlé : Tsukkun::clearBend\n// Symbole manglé : clearBend\n// void __thiscall Tsukkun::clearBend(Tsukkun *this); @ .text::002a1e70\n\n\n/* Tsukkun::clearBend() */\n\nvoid __thiscall Tsukkun::clearBend(Tsukkun *this)\n\n{\n  *(undefined4 *)(this + 0x174) = 0;\n  return;\n}\n\n");

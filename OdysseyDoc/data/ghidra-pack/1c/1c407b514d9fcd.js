@@ -1,0 +1,1 @@
+DOC.got("gh/JokuHand/control_.text_00237f8c.cpp","// Nom démêlé : JokuHand::control\n// Symbole manglé : control\n// void __thiscall JokuHand::control(JokuHand *this); @ .text::00237f8c\n\n\n/* JokuHand::control() */\n\nvoid __thiscall JokuHand::control(JokuHand *this)\n\n{\n  al::updatePoseMtx((LiveActor *)this,*(Matrix34 **)(this + 0x108));\n  return;\n}\n\n");

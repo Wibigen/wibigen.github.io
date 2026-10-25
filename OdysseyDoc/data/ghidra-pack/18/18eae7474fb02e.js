@@ -1,0 +1,1 @@
+DOC.got("gh/nn/vfx/System/FlushTempBuffer.cpp","// Nom démêlé : nn::vfx::System::FlushTempBuffer\n// Symbole manglé : FlushTempBuffer\n// void nn::vfx::System::FlushTempBuffer(void); @ .text::00c399a0\n\n\n/* nn::vfx::System::FlushTempBuffer() */\n\nvoid nn::vfx::System::FlushTempBuffer(void)\n\n{\n  return;\n}\n\n");

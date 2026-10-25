@@ -1,0 +1,1 @@
+DOC.got("e/4274",{"34195":{"q":"nn::ui2d::ResExtUserDataList","decl":{"f":"lib/NintendoSDK/include/nn/ui2d/Pane.h","l":41,"sig":"struct ResExtUserDataList","fi":193},"complete":false,"fwd":[["lib/NintendoSDK/include/nn/ui2d/Pane.h",41],["lib/NintendoSDK/include/nn/ui2d/Util.h",18]]}});

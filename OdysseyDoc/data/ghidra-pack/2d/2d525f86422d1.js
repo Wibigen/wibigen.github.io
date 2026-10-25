@@ -1,0 +1,1 @@
+DOC.got("gh/ElectricWire/switchStartOn.cpp","// Nom démêlé : ElectricWire::switchStartOn\n// Symbole manglé : switchStartOn\n// void __thiscall ElectricWire::switchStartOn(ElectricWire *this); @ .text::00368c28\n\n\n/* ElectricWire::switchStartOn() */\n\nvoid __thiscall ElectricWire::switchStartOn(ElectricWire *this)\n\n{\n  this[0x2e8] = (ElectricWire)0x1;\n  return;\n}\n\n");

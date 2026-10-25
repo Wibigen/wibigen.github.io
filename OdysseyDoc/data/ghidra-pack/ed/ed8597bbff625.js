@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Statistics/Trace_.text_00744cf0.cpp","// Nom démêlé : nn::nex::Statistics::Trace\n// Symbole manglé : Trace\n// void nn::nex::Statistics::Trace(ulong param_1,char *param_2); @ .text::00744cf0\n\n\n/* nn::nex::Statistics::Trace(unsigned long, char const*) */\n\nvoid nn::nex::Statistics::Trace(ulong param_1,char *param_2)\n\n{\n  return;\n}\n\n");

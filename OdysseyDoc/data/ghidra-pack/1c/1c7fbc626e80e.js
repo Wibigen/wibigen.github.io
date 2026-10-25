@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/OutputFormat/EndString.cpp","// Nom démêlé : nn::nex::OutputFormat::EndString\n// Symbole manglé : EndString\n// void nn::nex::OutputFormat::EndString(char *param_1,uint param_2); @ .text::007168c8\n\n\n/* nn::nex::OutputFormat::EndString(char*, unsigned int) */\n\nvoid nn::nex::OutputFormat::EndString(char *param_1,uint param_2)\n\n{\n  return;\n}\n\n");

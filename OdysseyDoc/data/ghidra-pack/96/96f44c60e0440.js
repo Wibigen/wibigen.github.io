@@ -1,0 +1,1 @@
+DOC.got("gh/RaceManRace/exeGoalNpcWinPlayerGoal.cpp","// Nom démêlé : RaceManRace::exeGoalNpcWinPlayerGoal\n// Symbole manglé : exeGoalNpcWinPlayerGoal\n// void RaceManRace::exeGoalNpcWinPlayerGoal(void); @ .text::004b8950\n\n\n/* RaceManRace::exeGoalNpcWinPlayerGoal() */\n\nvoid RaceManRace::exeGoalNpcWinPlayerGoal(void)\n\n{\n  return;\n}\n\n");

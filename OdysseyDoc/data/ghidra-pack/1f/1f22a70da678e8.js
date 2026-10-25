@@ -1,0 +1,1 @@
+DOC.got("gh/Tire/initAfterPlacement_.text_00439780.cpp","// Nom démêlé : Tire::initAfterPlacement\n// Symbole manglé : initAfterPlacement\n// void Tire::initAfterPlacement(void); @ .text::00439780\n\n\n/* Tire::initAfterPlacement() */\n\nvoid Tire::initAfterPlacement(void)\n\n{\n  return;\n}\n\n");

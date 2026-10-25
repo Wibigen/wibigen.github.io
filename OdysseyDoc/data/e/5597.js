@@ -1,0 +1,1 @@
+DOC.got("e/5597",{"49263":{"q":"sead::hostio::NodeEventListener","decl":{"f":"lib/sead/include/hostio/seadHostIOEventListener.h","l":101,"sig":"class NodeEventListener : public PropertyEventListener","end":110,"fi":1380},"size":1,"align":1,"bases":[["PropertyEventListener","public",false,49265]],"derived":[49266],"complete":true}});

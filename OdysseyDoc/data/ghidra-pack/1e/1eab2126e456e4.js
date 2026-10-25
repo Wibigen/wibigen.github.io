@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/ConsoleIO/OutputIsSupported.cpp","// Nom démêlé : nn::nex::ConsoleIO::OutputIsSupported\n// Symbole manglé : OutputIsSupported\n// undefined8 nn::nex::ConsoleIO::OutputIsSupported(void); @ .text::0070d9d4\n\n\n/* nn::nex::ConsoleIO::OutputIsSupported() */\n\nundefined8 nn::nex::ConsoleIO::OutputIsSupported(void)\n\n{\n  return 1;\n}\n\n");

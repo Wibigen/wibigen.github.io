@@ -1,0 +1,1 @@
+DOC.got("gh/al/isUsingReverseProjection.cpp","// Nom démêlé : al::isUsingReverseProjection\n// Symbole manglé : isUsingReverseProjection\n// undefined8 al::isUsingReverseProjection(void); @ .text::00973c10\n\n\n/* al::isUsingReverseProjection() */\n\nundefined8 al::isUsingReverseProjection(void)\n\n{\n  return 0;\n}\n\n");

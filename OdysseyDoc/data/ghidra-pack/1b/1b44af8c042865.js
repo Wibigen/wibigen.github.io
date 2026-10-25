@@ -1,0 +1,1 @@
+DOC.got("gh/WindowConfirmData/exeDisable_.text_003116bc.cpp","// Nom démêlé : WindowConfirmData::exeDisable\n// Symbole manglé : exeDisable\n// void WindowConfirmData::exeDisable(void); @ .text::003116bc\n\n\n/* WindowConfirmData::exeDisable() */\n\nvoid WindowConfirmData::exeDisable(void)\n\n{\n  return;\n}\n\n");

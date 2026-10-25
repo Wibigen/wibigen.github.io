@@ -1,0 +1,1 @@
+DOC.got("gh/MoviePlayer/isDecode.cpp","// Nom démêlé : MoviePlayer::isDecode\n// Symbole manglé : isDecode\n// MoviePlayer __thiscall MoviePlayer::isDecode(MoviePlayer *this); @ .text::006573b0\n\n\n/* MoviePlayer::isDecode() const */\n\nMoviePlayer __thiscall MoviePlayer::isDecode(MoviePlayer *this)\n\n{\n  return this[0x40];\n}\n\n");

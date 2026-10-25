@@ -1,0 +1,1 @@
+DOC.got("e/4135",{"33419":{"q":"nn::hid::system::InputSourceState","decl":{"f":"lib/NintendoSDK/include/nn/hid.h","l":641,"sig":"struct InputSourceState","end":643,"fi":133},"size":8,"align":8,"complete":true,"fields":[{"n":"mTimestamp","t":"u64","off":0,"sz":8,"acc":"public","bits":null,"l":642,"cm":null,"ti":49377}]}});

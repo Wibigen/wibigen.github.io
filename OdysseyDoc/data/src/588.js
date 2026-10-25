@@ -1,0 +1,1 @@
+DOC.got("src/588","#include \"Library/Event/EventFlowNodeFactory.h\"\n\nnamespace al {\nEventFlowNodeFactory::EventFlowNodeFactory() : Factory(\"イベントフローノード生成\") {}\n}  // namespace al\n");

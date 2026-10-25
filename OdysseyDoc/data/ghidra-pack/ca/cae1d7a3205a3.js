@@ -1,0 +1,1 @@
+DOC.got("gh/al/EffectSystem/calcParticle_.text_00987ad8.cpp","// Nom démêlé : al::EffectSystem::calcParticle\n// Symbole manglé : calcParticle\n// int al::EffectSystem::calcParticle(int param_1); @ .text::00987ad8\n\n\n/* al::EffectSystem::calcParticle(int) */\n\nint al::EffectSystem::calcParticle(int param_1)\n\n{\n  return param_1;\n}\n\n");

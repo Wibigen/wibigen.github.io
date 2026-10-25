@@ -1,0 +1,1 @@
+DOC.got("gh/CandlestandBgmDirector/exeSleep_.text_0032d994.cpp","// Nom démêlé : CandlestandBgmDirector::exeSleep\n// Symbole manglé : exeSleep\n// void CandlestandBgmDirector::exeSleep(void); @ .text::0032d994\n\n\n/* CandlestandBgmDirector::exeSleep() */\n\nvoid CandlestandBgmDirector::exeSleep(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/MemoryManager/EndProtection.cpp","// Nom démêlé : nn::nex::MemoryManager::EndProtection\n// Symbole manglé : EndProtection\n// void nn::nex::MemoryManager::EndProtection(void); @ .text::00726b40\n\n\n/* nn::nex::MemoryManager::EndProtection() */\n\nvoid nn::nex::MemoryManager::EndProtection(void)\n\n{\n  return;\n}\n\n");

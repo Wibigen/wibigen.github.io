@@ -1,0 +1,1 @@
+DOC.got("gh/RouteGuideArrowBase/setGuideAlpha_.text_00400ed4.cpp","// Nom démêlé : RouteGuideArrowBase::setGuideAlpha\n// Symbole manglé : setGuideAlpha\n// void RouteGuideArrowBase::setGuideAlpha(float param_1); @ .text::00400ed4\n\n\n/* RouteGuideArrowBase::setGuideAlpha(float) */\n\nvoid RouteGuideArrowBase::setGuideAlpha(float param_1)\n\n{\n  return;\n}\n\n");

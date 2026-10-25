@@ -1,0 +1,1 @@
+DOC.got("gh/al/isStop_.text_009b01fc.cpp","// Nom démêlé : al::isStop\n// Symbole manglé : isStop\n// KeyPoseKeeper al::isStop(KeyPoseKeeper *param_1); @ .text::009b01fc\n\n\n/* al::isStop(al::KeyPoseKeeper const*) */\n\nKeyPoseKeeper al::isStop(KeyPoseKeeper *param_1)\n\n{\n  return param_1[0x15];\n}\n\n");

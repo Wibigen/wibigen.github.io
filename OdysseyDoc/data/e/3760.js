@@ -1,0 +1,1 @@
+DOC.got("e/3760",{"31634":{"q":"nn::gfx::BufferImplData","decl":{"f":"lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h","l":88,"sig":"template <typename TTarget>\nstruct BufferImplData","fi":51},"tp":["typename TTarget"],"complete":false,"fwd":[["lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h",88]]}});

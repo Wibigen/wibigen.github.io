@@ -1,0 +1,1 @@
+DOC.got("gh/sead/DebugFontMgrJis1Nvn/getMaxDrawNum.cpp","// Nom démêlé : sead::DebugFontMgrJis1Nvn::getMaxDrawNum\n// Symbole manglé : getMaxDrawNum\n// undefined8 sead::DebugFontMgrJis1Nvn::getMaxDrawNum(void); @ .text::00838d80\n\n\n/* sead::DebugFontMgrJis1Nvn::getMaxDrawNum() const */\n\nundefined8 sead::DebugFontMgrJis1Nvn::getMaxDrawNum(void)\n\n{\n  return 0x80;\n}\n\n");

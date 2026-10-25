@@ -1,0 +1,1 @@
+DOC.got("gh/sead/Heap/dump_.text_008455cc.cpp","// Nom démêlé : sead::Heap::dump\n// Symbole manglé : dump\n// void sead::Heap::dump(void); @ .text::008455cc\n\n\n/* sead::Heap::dump() const */\n\nvoid sead::Heap::dump(void)\n\n{\n  return;\n}\n\n");

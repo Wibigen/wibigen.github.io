@@ -1,0 +1,1 @@
+DOC.got("src/971","#pragma once\n\nnamespace al {\n\nbool isUsingPrepassTriangleCulling();\n\n}\n");

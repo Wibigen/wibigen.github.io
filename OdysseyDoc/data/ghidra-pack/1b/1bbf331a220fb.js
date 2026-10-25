@@ -1,0 +1,1 @@
+DOC.got("gh/Shine/exeHold_.text_002d2f60.cpp","// Nom démêlé : Shine::exeHold\n// Symbole manglé : exeHold\n// void Shine::exeHold(void); @ .text::002d2f60\n\n\n/* Shine::exeHold() */\n\nvoid Shine::exeHold(void)\n\n{\n  return;\n}\n\n");

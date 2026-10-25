@@ -1,0 +1,1 @@
+DOC.got("gh/al/RootSercher/getConnectCount.cpp","// Nom démêlé : al::RootSercher::getConnectCount\n// Symbole manglé : getConnectCount\n// undefined8 al::RootSercher::getConnectCount(void); @ .text::008fffac\n\n\n/* al::RootSercher::getConnectCount() const */\n\nundefined8 al::RootSercher::getConnectCount(void)\n\n{\n  return 4;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/FixMapPartsFukankunZoomCapMessage/control_.text_00385838.cpp","// Nom démêlé : FixMapPartsFukankunZoomCapMessage::control\n// Symbole manglé : control\n// void FixMapPartsFukankunZoomCapMessage::control(void); @ .text::00385838\n\n\n/* FixMapPartsFukankunZoomCapMessage::control() */\n\nvoid FixMapPartsFukankunZoomCapMessage::control(void)\n\n{\n  return;\n}\n\n");

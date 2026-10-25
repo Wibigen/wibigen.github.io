@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Chrono/Reset_.text_00737174.cpp","// Nom démêlé : nn::nex::Chrono::Reset\n// Symbole manglé : Reset\n// void __thiscall nn::nex::Chrono::Reset(Chrono *this); @ .text::00737174\n\n\n/* nn::nex::Chrono::Reset() */\n\nvoid __thiscall nn::nex::Chrono::Reset(Chrono *this)\n\n{\n  *(undefined8 *)(this + 0x20) = 0x200000000;\n  return;\n}\n\n");

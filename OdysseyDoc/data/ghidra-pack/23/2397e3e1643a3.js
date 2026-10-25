@@ -1,0 +1,1 @@
+DOC.got("gh/BossRaid/startAttack_.text_0013dba0.cpp","// Nom démêlé : BossRaid::startAttack\n// Symbole manglé : startAttack\n// void __thiscall BossRaid::startAttack(BossRaid *this); @ .text::0013dba0\n\n\n/* BossRaid::startAttack() */\n\nvoid __thiscall BossRaid::startAttack(BossRaid *this)\n\n{\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1d5d238);\n  return;\n}\n\n");

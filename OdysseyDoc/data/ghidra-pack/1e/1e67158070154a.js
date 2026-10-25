@@ -1,0 +1,1 @@
+DOC.got("gh/MapLayout/end_.text_002f1af4.cpp","// Nom démêlé : MapLayout::end\n// Symbole manglé : end\n// void __thiscall MapLayout::end(MapLayout *this); @ .text::002f1af4\n\n\n/* MapLayout::end() */\n\nvoid __thiscall MapLayout::end(MapLayout *this)\n\n{\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1dc8cd0);\n  return;\n}\n\n");

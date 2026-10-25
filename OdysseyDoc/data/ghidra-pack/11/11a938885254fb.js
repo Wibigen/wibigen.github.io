@@ -1,0 +1,1 @@
+DOC.got("gh/Squirrel/kill_.text_004db1ec.cpp","// Nom démêlé : Squirrel::kill\n// Symbole manglé : kill\n// void __thiscall Squirrel::kill(Squirrel *this); @ .text::004db1ec\n\n\n/* Squirrel::kill() */\n\nvoid __thiscall Squirrel::kill(Squirrel *this)\n\n{\n  al::startHitReaction((LiveActor *)this,(char *)0x191e61f);\n  al::LiveActor::kill((LiveActor *)this);\n  return;\n}\n\n");

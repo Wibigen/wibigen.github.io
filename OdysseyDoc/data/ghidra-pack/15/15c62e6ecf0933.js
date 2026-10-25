@@ -1,0 +1,1 @@
+DOC.got("gh/OpeningStageStartDemo/exeWait_.text_001d5040.cpp","// Nom démêlé : OpeningStageStartDemo::exeWait\n// Symbole manglé : exeWait\n// void OpeningStageStartDemo::exeWait(void); @ .text::001d5040\n\n\n/* OpeningStageStartDemo::exeWait() */\n\nvoid OpeningStageStartDemo::exeWait(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/wslay_event_shutdown_read.cpp","// Nom démêlé : wslay_event_shutdown_read\n// Symbole manglé : wslay_event_shutdown_read\n// void wslay_event_shutdown_read(long param_1); @ .text::007a230c\n\n\nvoid wslay_event_shutdown_read(long param_1)\n\n{\n  *(undefined1 *)(param_1 + 0x20) = 0;\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/agl/ShaderProgram/setShaderGX2.cpp","// Nom démêlé : agl::ShaderProgram::setShaderGX2_\n// Symbole manglé : setShaderGX2_\n// void agl::ShaderProgram::setShaderGX2_(DrawContext *param_1); @ .text::0087eba8\n\n\n/* agl::ShaderProgram::setShaderGX2_(agl::DrawContext*) const */\n\nvoid agl::ShaderProgram::setShaderGX2_(DrawContext *param_1)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/YukimaruRacerTiago/outputInfo.cpp","// Nom démêlé : YukimaruRacerTiago::outputInfo\n// Symbole manglé : outputInfo\n// void YukimaruRacerTiago::outputInfo(void); @ .text::004f376c\n\n\n/* YukimaruRacerTiago::outputInfo() */\n\nvoid YukimaruRacerTiago::outputInfo(void)\n\n{\n  return;\n}\n\n");

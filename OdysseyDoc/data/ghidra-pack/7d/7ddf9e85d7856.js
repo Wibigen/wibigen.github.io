@@ -1,0 +1,1 @@
+DOC.got("gh/al/AnimResInfo/getFrameMax.cpp","// Nom démêlé : al::AnimResInfo::getFrameMax\n// Symbole manglé : getFrameMax\n// int __thiscall al::AnimResInfo::getFrameMax(AnimResInfo *this); @ .text::00b3b85c\n\n\n/* al::AnimResInfo::getFrameMax() const */\n\nint __thiscall al::AnimResInfo::getFrameMax(AnimResInfo *this)\n\n{\n  return (int)*(float *)(this + 0x10);\n}\n\n");

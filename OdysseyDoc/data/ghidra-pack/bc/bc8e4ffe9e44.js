@@ -1,0 +1,1 @@
+DOC.got("gh/al/getConnectBaseTrans.cpp","// Nom démêlé : al::getConnectBaseTrans\n// Symbole manglé : getConnectBaseTrans\n// void al::getConnectBaseTrans(MtxConnector *param_1); @ .text::009591c8\n\n\n/* al::getConnectBaseTrans(al::MtxConnector const*) */\n\nvoid al::getConnectBaseTrans(MtxConnector *param_1)\n\n{\n  MtxConnector::getBaseTrans(param_1);\n  return;\n}\n\n");

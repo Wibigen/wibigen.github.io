@@ -1,0 +1,1 @@
+DOC.got("gh/YoshiJudgeWallHitDown/update_.text_0059769c.cpp","// Nom démêlé : YoshiJudgeWallHitDown::update\n// Symbole manglé : update\n// void YoshiJudgeWallHitDown::update(void); @ .text::0059769c\n\n\n/* YoshiJudgeWallHitDown::update() */\n\nvoid YoshiJudgeWallHitDown::update(void)\n\n{\n  return;\n}\n\n");

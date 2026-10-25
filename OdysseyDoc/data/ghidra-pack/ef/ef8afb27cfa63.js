@@ -1,0 +1,1 @@
+DOC.got("gh/GameDataFile/unlockHint.cpp","// Nom démêlé : GameDataFile::unlockHint\n// Symbole manglé : unlockHint\n// void __thiscall GameDataFile::unlockHint(GameDataFile *this); @ .text::00621e88\n\n\n/* GameDataFile::unlockHint() */\n\nvoid __thiscall GameDataFile::unlockHint(GameDataFile *this)\n\n{\n  unlockHintImpl(this,1);\n  return;\n}\n\n");

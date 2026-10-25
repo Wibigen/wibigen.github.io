@@ -1,0 +1,1 @@
+DOC.got("gh/ElectricWire/initAfterPlacement_.text_0036a744.cpp","// Nom démêlé : ElectricWire::initAfterPlacement\n// Symbole manglé : initAfterPlacement\n// void ElectricWire::initAfterPlacement(void); @ .text::0036a744\n\n\n/* ElectricWire::initAfterPlacement() */\n\nvoid ElectricWire::initAfterPlacement(void)\n\n{\n  return;\n}\n\n");

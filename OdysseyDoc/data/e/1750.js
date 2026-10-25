@@ -1,0 +1,1 @@
+DOC.got("e/1750",{"20113":{"q":"al::GraphicsCalcGpuInfo","decl":{"f":"lib/al/Library/Draw/GraphicsSystemInfo.h","l":46,"sig":"class GraphicsCalcGpuInfo","fi":561},"complete":false,"fwd":[["lib/al/Library/Draw/GraphicsSystemInfo.h",46],["lib/al/Library/Draw/IUsePartsGraphics.h",8]]}});

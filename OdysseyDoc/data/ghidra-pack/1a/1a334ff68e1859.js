@@ -1,0 +1,1 @@
+DOC.got("gh/agl/lyr/Layer/drawDebugInfo.cpp","// Nom démêlé : agl::lyr::Layer::drawDebugInfo_\n// Symbole manglé : drawDebugInfo_\n// void agl::lyr::Layer::drawDebugInfo_(RenderInfo *param_1); @ .text::00ce51e0\n\n\n/* agl::lyr::Layer::drawDebugInfo_(agl::lyr::RenderInfo const&) const */\n\nvoid agl::lyr::Layer::drawDebugInfo_(RenderInfo *param_1)\n\n{\n  return;\n}\n\n");

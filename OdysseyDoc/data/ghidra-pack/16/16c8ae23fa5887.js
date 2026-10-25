@@ -1,0 +1,1 @@
+DOC.got("gh/sead/TaskMgr/initHostIO_.text_008368c4.cpp","// Nom démêlé : sead::TaskMgr::initHostIO\n// Symbole manglé : initHostIO\n// void sead::TaskMgr::initHostIO(void); @ .text::008368c4\n\n\n/* sead::TaskMgr::initHostIO() */\n\nvoid sead::TaskMgr::initHostIO(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("e/4183",{"33604":{"q":"nn::os::ConditionVariableType","decl":{"f":"lib/NintendoSDK/include/nn/os.h","l":51,"sig":"struct ConditionVariableType","end":51,"fi":163},"size":1,"align":1,"complete":true}});

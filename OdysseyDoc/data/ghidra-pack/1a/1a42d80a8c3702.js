@@ -1,0 +1,1 @@
+DOC.got("gh/sead/DebugFontMgrNvn/getEncoding_.text_00839be8.cpp","// Nom démêlé : sead::DebugFontMgrNvn::getEncoding\n// Symbole manglé : getEncoding\n// undefined8 sead::DebugFontMgrNvn::getEncoding(void); @ .text::00839be8\n\n\n/* sead::DebugFontMgrNvn::getEncoding() const */\n\nundefined8 sead::DebugFontMgrNvn::getEncoding(void)\n\n{\n  return 2;\n}\n\n");

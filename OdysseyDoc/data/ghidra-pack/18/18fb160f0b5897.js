@@ -1,0 +1,1 @@
+DOC.got("gh/al/CameraPoser/getName_.text_001cc690.cpp","// Nom démêlé : al::CameraPoser::getName\n// Symbole manglé : getName\n// undefined8 __thiscall al::CameraPoser::getName(CameraPoser *this); @ .text::001cc690\n\n\n/* al::CameraPoser::getName() const */\n\nundefined8 __thiscall al::CameraPoser::getName(CameraPoser *this)\n\n{\n  return *(undefined8 *)(this + 0x30);\n}\n\n");

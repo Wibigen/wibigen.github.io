@@ -1,0 +1,1 @@
+DOC.got("gh/PaintObj/onClipped.cpp","// Nom démêlé : PaintObj::onClipped\n// Symbole manglé : onClipped\n// void PaintObj::onClipped(void); @ .text::003d8468\n\n\n/* PaintObj::onClipped() */\n\nvoid PaintObj::onClipped(void)\n\n{\n  return;\n}\n\n");

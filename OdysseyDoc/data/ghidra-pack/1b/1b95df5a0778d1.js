@@ -1,0 +1,1 @@
+DOC.got("gh/MofumofuJudgeDamage/judge.cpp","// Nom démêlé : MofumofuJudgeDamage::judge\n// Symbole manglé : judge\n// void MofumofuJudgeDamage::judge(Mofumofu *param_1); @ .text::001b687c\n\n\n/* MofumofuJudgeDamage::judge(Mofumofu const*) const */\n\nvoid MofumofuJudgeDamage::judge(Mofumofu *param_1)\n\n{\n  judgeCore((MofumofuJudgeDamage *)param_1,-1);\n  return;\n}\n\n");

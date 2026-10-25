@@ -1,0 +1,1 @@
+DOC.got("gh/FireBros/isPlayerHackBros.cpp","// Nom démêlé : FireBros::isPlayerHackBros\n// Symbole manglé : isPlayerHackBros\n// undefined8 FireBros::isPlayerHackBros(void); @ .text::002005e8\n\n\n/* FireBros::isPlayerHackBros() */\n\nundefined8 FireBros::isPlayerHackBros(void)\n\n{\n  return 0;\n}\n\n");

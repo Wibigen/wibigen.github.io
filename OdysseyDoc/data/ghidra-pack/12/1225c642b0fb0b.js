@@ -1,0 +1,1 @@
+DOC.got("gh/agl/TextureData/forceChangeUNormToSRGB.cpp","// Nom démêlé : agl::TextureData::forceChangeUNormToSRGB\n// Symbole manglé : forceChangeUNormToSRGB\n// void agl::TextureData::forceChangeUNormToSRGB(void); @ .text::00882d90\n\n\n/* agl::TextureData::forceChangeUNormToSRGB() */\n\nvoid agl::TextureData::forceChangeUNormToSRGB(void)\n\n{\n  return;\n}\n\n");

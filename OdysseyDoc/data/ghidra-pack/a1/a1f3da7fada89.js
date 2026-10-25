@@ -1,0 +1,1 @@
+DOC.got("gh/CapFlower/isBloom.cpp","// Nom démêlé : CapFlower::isBloom\n// Symbole manglé : isBloom\n// void __thiscall CapFlower::isBloom(CapFlower *this); @ .text::00333c7c\n\n\n/* CapFlower::isBloom() const */\n\nvoid __thiscall CapFlower::isBloom(CapFlower *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1de01c8);\n  return;\n}\n\n");

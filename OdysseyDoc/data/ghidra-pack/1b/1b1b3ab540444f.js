@@ -1,0 +1,1 @@
+DOC.got("gh/BootLayout/exeEndWipe.cpp","// Nom démêlé : BootLayout::exeEndWipe\n// Symbole manglé : exeEndWipe\n// void BootLayout::exeEndWipe(void); @ .text::002db8bc\n\n\n/* BootLayout::exeEndWipe() */\n\nvoid BootLayout::exeEndWipe(void)\n\n{\n  return;\n}\n\n");

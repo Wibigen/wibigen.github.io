@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/BitOn/BitOn.cpp","// Nom démêlé : nn::nex::BitOn::BitOn\n// Symbole manglé : BitOn\n// void __thiscall nn::nex::BitOn::BitOn(BitOn *this); @ .text::0072fb30\n\n\n/* nn::nex::BitOn::BitOn() */\n\nvoid __thiscall nn::nex::BitOn::BitOn(BitOn *this)\n\n{\n  *(undefined **)this = PTR_01f585c0 + 0x10;\n  return;\n}\n\n");

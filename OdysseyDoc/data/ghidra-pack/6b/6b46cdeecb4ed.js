@@ -1,0 +1,1 @@
+DOC.got("gh/sead/ExpHeap/isEmpty_.text_00842a40.cpp","// Nom démêlé : sead::ExpHeap::isEmpty\n// Symbole manglé : isEmpty\n// bool __thiscall sead::ExpHeap::isEmpty(ExpHeap *this); @ .text::00842a40\n\n\n/* sead::ExpHeap::isEmpty() const */\n\nbool __thiscall sead::ExpHeap::isEmpty(ExpHeap *this)\n\n{\n  return *(int *)(this + 0x108) == 0;\n}\n\n");

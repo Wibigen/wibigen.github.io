@@ -1,0 +1,1 @@
+DOC.got("src/2490","#include \"Util/HackerJudge.h\"\n\nHackerJudge::HackerJudge(IUsePlayerHack** parent) : mHacker(parent) {}\n");

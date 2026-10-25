@@ -1,0 +1,1 @@
+DOC.got("src/2363","#pragma once\n\n#include \"Library/Scene/SceneFactory.h\"\n\nclass ProjectSceneFactory : public alSceneFunction::SceneFactory {\npublic:\n    ProjectSceneFactory();\n};\n");

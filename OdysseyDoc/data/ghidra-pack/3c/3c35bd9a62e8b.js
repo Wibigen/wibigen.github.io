@@ -1,0 +1,1 @@
+DOC.got("gh/al/calcAccel_.text_00a23cb8.cpp","// Nom démêlé : al::calcAccel\n// Symbole manglé : calcAccel\n// float al::calcAccel(float param_1,float param_2); @ .text::00a23cb8\n\n\n/* al::calcAccel(float, float) */\n\nfloat al::calcAccel(float param_1,float param_2)\n\n{\n  return ((1.0 - param_2) * param_1) / param_2;\n}\n\n");

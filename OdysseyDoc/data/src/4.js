@@ -1,0 +1,1 @@
+DOC.got("src/4","#pragma once\n\nnamespace nn::applet {\nenum class ExitReason { Normal = 0, Canceled = 1, Abnormal = 2, Unexpected = 10 };\n}\n");

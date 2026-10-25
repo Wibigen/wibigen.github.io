@@ -1,0 +1,1 @@
+DOC.got("gh/MoonWorldBell/exeWait_.text_003c67e0.cpp","// Nom démêlé : MoonWorldBell::exeWait\n// Symbole manglé : exeWait\n// void MoonWorldBell::exeWait(void); @ .text::003c67e0\n\n\n/* MoonWorldBell::exeWait() */\n\nvoid MoonWorldBell::exeWait(void)\n\n{\n  return;\n}\n\n");

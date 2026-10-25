@@ -1,0 +1,1 @@
+DOC.got("gh/LMS_CloseMessage.cpp","// Nom démêlé : LMS_CloseMessage\n// Symbole manglé : LMS_CloseMessage\n// void LMS_CloseMessage(long param_1); @ .text::00c705b0\n\n\nvoid LMS_CloseMessage(long param_1)\n\n{\n  if (*(long *)(param_1 + 0x18) != 0) {\n    LMSi_Free();\n  }\n  LMSi_Free(param_1);\n  return;\n}\n\n");

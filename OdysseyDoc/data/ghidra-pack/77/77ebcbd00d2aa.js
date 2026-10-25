@@ -1,0 +1,1 @@
+DOC.got("gh/eui/Screen/doButtonOffStart.cpp","// Nom démêlé : eui::Screen::doButtonOffStart_\n// Symbole manglé : doButtonOffStart_\n// void eui::Screen::doButtonOffStart_(AnimButton *param_1); @ .text::008ef8f0\n\n\n/* eui::Screen::doButtonOffStart_(eui::AnimButton*) */\n\nvoid eui::Screen::doButtonOffStart_(AnimButton *param_1)\n\n{\n  return;\n}\n\n");

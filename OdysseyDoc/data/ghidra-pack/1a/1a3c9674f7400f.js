@@ -1,0 +1,1 @@
+DOC.got("gh/ShoppingWatcherStateWear/exeWait_.text_00416aec.cpp","// Nom démêlé : ShoppingWatcherStateWear::exeWait\n// Symbole manglé : exeWait\n// void ShoppingWatcherStateWear::exeWait(void); @ .text::00416aec\n\n\n/* ShoppingWatcherStateWear::exeWait() */\n\nvoid ShoppingWatcherStateWear::exeWait(void)\n\n{\n  return;\n}\n\n");

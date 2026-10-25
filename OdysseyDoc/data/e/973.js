@@ -1,0 +1,1 @@
+DOC.got("e/973",{"16098":{"q":"agl::env::EnvObjSetMgr","decl":{"f":"lib/agl/include/environment/aglEnvObjSetMgr.h","l":8,"sig":"class EnvObjSetMgr","end":19,"fi":305},"size":1,"align":1,"complete":true}});

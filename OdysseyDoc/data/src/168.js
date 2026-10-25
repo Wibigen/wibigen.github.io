@@ -1,0 +1,1 @@
+DOC.got("src/168","#pragma once\n\n#include <nn/types.h>\n\nnamespace nn::os::detail {\n\ntypedef uint32_t InternalThreadHandle;\n\n}  // namespace nn::os::detail");

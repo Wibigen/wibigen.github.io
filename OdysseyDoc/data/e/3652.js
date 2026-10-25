@@ -1,0 +1,1 @@
+DOC.got("e/3652",{"31128":{"q":"nn::audio::DeviceSinkType","decl":{"f":"lib/NintendoSDK/include/nn/audio.h","l":149,"sig":"struct DeviceSinkType","end":152,"fi":16},"size":8,"align":8,"complete":true,"fields":[{"n":"_0","t":"u64 *","off":0,"sz":8,"acc":"public","bits":null,"l":151,"cm":null,"ti":49377}]}});

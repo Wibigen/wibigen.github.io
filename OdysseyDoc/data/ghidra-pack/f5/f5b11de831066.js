@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerConst/getTall.cpp","// Nom démêlé : PlayerConst::getTall\n// Symbole manglé : getTall\n// undefined4 __thiscall PlayerConst::getTall(PlayerConst *this); @ .text::0053cf14\n\n\n/* PlayerConst::getTall() const */\n\nundefined4 __thiscall PlayerConst::getTall(PlayerConst *this)\n\n{\n  return *(undefined4 *)(this + 0x54);\n}\n\n");

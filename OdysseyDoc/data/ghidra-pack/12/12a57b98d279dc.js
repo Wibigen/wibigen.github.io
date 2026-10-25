@@ -1,0 +1,1 @@
+DOC.got("gh/agl/utl/INamedObj/isHostIOEnabled.cpp","// Nom démêlé : agl::utl::INamedObj::isHostIOEnabled\n// Symbole manglé : isHostIOEnabled\n// undefined8 agl::utl::INamedObj::isHostIOEnabled(void); @ .text::00c9ee74\n\n\n/* agl::utl::INamedObj::isHostIOEnabled() const */\n\nundefined8 agl::utl::INamedObj::isHostIOEnabled(void)\n\n{\n  return 1;\n}\n\n");

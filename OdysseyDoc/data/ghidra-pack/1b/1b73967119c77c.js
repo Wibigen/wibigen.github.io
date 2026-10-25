@@ -1,0 +1,1 @@
+DOC.got("gh/RadiconNpc/control_.text_004bcc10.cpp","// Nom démêlé : RadiconNpc::control\n// Symbole manglé : control\n// void RadiconNpc::control(void); @ .text::004bcc10\n\n\n/* RadiconNpc::control() */\n\nvoid RadiconNpc::control(void)\n\n{\n  return;\n}\n\n");

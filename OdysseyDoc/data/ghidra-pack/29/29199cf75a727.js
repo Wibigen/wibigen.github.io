@@ -1,0 +1,1 @@
+DOC.got("gh/agl/utl/DevTools/genMessage_.text_00889388.cpp","// Nom démêlé : agl::utl::DevTools::genMessage\n// Symbole manglé : genMessage\n// void agl::utl::DevTools::genMessage(Context *param_1); @ .text::00889388\n\n\n/* agl::utl::DevTools::genMessage(sead::hostio::Context*) */\n\nvoid agl::utl::DevTools::genMessage(Context *param_1)\n\n{\n  return;\n}\n\n");

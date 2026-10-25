@@ -1,0 +1,1 @@
+DOC.got("gh/LapRecorder/startWatch.cpp","// Nom démêlé : LapRecorder::startWatch\n// Symbole manglé : startWatch\n// void __thiscall LapRecorder::startWatch(LapRecorder *this); @ .text::003b14f0\n\n\n/* LapRecorder::startWatch() */\n\nvoid __thiscall LapRecorder::startWatch(LapRecorder *this)\n\n{\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1e0c378);\n  return;\n}\n\n");

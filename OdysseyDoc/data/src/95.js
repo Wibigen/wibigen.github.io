@@ -1,0 +1,1 @@
+DOC.got("src/95","#pragma once\n\n#include <nn/nn_BitTypes.h>\n\nnamespace nn::gfx {\n\nstruct QueueInfoData {\n    Bit16 capability;\n    char reserved[30];\n};\n\n}  // namespace nn::gfx");

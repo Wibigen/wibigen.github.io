@@ -1,0 +1,1 @@
+DOC.got("gh/BossMagma/skipDemo_.text_0012f820.cpp","// Nom démêlé : BossMagma::skipDemo\n// Symbole manglé : skipDemo\n// void __thiscall BossMagma::skipDemo(BossMagma *this); @ .text::0012f820\n\n\n/* BossMagma::skipDemo() */\n\nvoid __thiscall BossMagma::skipDemo(BossMagma *this)\n\n{\n  this[0x260] = (BossMagma)0x1;\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("e/5057",{"429":{"q":"(anonymous@src/System/GameSystem)::(anonymous)","decl":{"f":"src/System/GameSystem.cpp","l":9,"sig":"NERVES_MAKE_STRUCT(GameSystem, Play)","end":9,"fi":2435},"size":8,"align":8,"complete":true,"fields":[{"n":"Play","t":"GameSystemNrvPlay","off":0,"sz":8,"acc":"public","bits":null,"l":9,"cm":null,"ti":1479}]}});

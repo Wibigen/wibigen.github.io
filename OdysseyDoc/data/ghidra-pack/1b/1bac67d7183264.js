@@ -1,0 +1,1 @@
+DOC.got("gh/al/getSceneHeap.cpp","// Nom démêlé : al::getSceneHeap\n// Symbole manglé : getSceneHeap\n// undefined8 al::getSceneHeap(void); @ .text::00a36e78\n\n\n/* al::getSceneHeap() */\n\nundefined8 al::getSceneHeap(void)\n\n{\n  long *plVar1;\n  \n  plVar1 = (long *)alProjectInterface::getSystemKit();\n  return *(undefined8 *)(*plVar1 + 0x18);\n}\n\n");

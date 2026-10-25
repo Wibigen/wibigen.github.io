@@ -1,0 +1,1 @@
+DOC.got("gh/KoopaStateHipDrop/kill_.text_0019fe48.cpp","// Nom démêlé : KoopaStateHipDrop::kill\n// Symbole manglé : kill\n// void __thiscall KoopaStateHipDrop::kill(KoopaStateHipDrop *this); @ .text::0019fe48\n\n\n/* KoopaStateHipDrop::kill() */\n\nvoid __thiscall KoopaStateHipDrop::kill(KoopaStateHipDrop *this)\n\n{\n  this[0x10] = (KoopaStateHipDrop)0x1;\n  return;\n}\n\n");

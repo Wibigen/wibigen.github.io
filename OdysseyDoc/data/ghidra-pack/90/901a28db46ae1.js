@@ -1,0 +1,1 @@
+DOC.got("gh/ShopInfo/getShineDirect.cpp","// Nom démêlé : ShopInfo::getShineDirect\n// Symbole manglé : getShineDirect\n// void __thiscall ShopInfo::getShineDirect(ShopInfo *this); @ .text::003097a8\n\n\n/* ShopInfo::getShineDirect() */\n\nvoid __thiscall ShopInfo::getShineDirect(ShopInfo *this)\n\n{\n  Shine::getDirect(*(Shine **)(this + 0x10));\n  return;\n}\n\n");

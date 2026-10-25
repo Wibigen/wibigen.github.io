@@ -1,0 +1,1 @@
+DOC.got("gh/CapBomb/exeWait_.text_00332600.cpp","// Nom démêlé : CapBomb::exeWait\n// Symbole manglé : exeWait\n// void CapBomb::exeWait(void); @ .text::00332600\n\n\n/* CapBomb::exeWait() */\n\nvoid CapBomb::exeWait(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/HintPhoto/control_.text_003a1cc0.cpp","// Nom démêlé : HintPhoto::control\n// Symbole manglé : control\n// void HintPhoto::control(void); @ .text::003a1cc0\n\n\n/* HintPhoto::control() */\n\nvoid HintPhoto::control(void)\n\n{\n  return;\n}\n\n");

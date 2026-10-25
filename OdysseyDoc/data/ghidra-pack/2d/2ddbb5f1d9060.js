@@ -1,0 +1,1 @@
+DOC.got("gh/GameDataFile/isRaceStart.cpp","// Nom démêlé : GameDataFile::isRaceStart\n// Symbole manglé : isRaceStart\n// bool __thiscall GameDataFile::isRaceStart(GameDataFile *this); @ .text::0061d01c\n\n\n/* GameDataFile::isRaceStart() const */\n\nbool __thiscall GameDataFile::isRaceStart(GameDataFile *this)\n\n{\n  return *(int *)(this + 0xa44) != 0;\n}\n\n");

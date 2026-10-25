@@ -1,0 +1,1 @@
+DOC.got("gh/alsd/AudioSystemNin/getOutputMode.cpp","// Nom démêlé : alsd::AudioSystemNin::getOutputMode\n// Symbole manglé : getOutputMode\n// undefined8 alsd::AudioSystemNin::getOutputMode(void); @ .text::00b42b98\n\n\n/* alsd::AudioSystemNin::getOutputMode() const */\n\nundefined8 alsd::AudioSystemNin::getOutputMode(void)\n\n{\n  return 4;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/rs/getPuppetTrans.cpp","// Nom démêlé : rs::getPuppetTrans\n// Symbole manglé : getPuppetTrans\n// void rs::getPuppetTrans(IUsePlayerPuppet *param_1); @ .text::0066ea68\n\n\n/* rs::getPuppetTrans(IUsePlayerPuppet const*) */\n\nvoid rs::getPuppetTrans(IUsePlayerPuppet *param_1)\n\n{\n  (**(code **)(*(long *)param_1 + 0x38))();\n  return;\n}\n\n");

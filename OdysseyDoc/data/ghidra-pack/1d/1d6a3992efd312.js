@@ -1,0 +1,1 @@
+DOC.got("gh/rs/isModeJungleGymRom.cpp","// Nom démêlé : rs::isModeJungleGymRom\n// Symbole manglé : isModeJungleGymRom\n// undefined8 rs::isModeJungleGymRom(void); @ .text::006bf9f8\n\n\n/* rs::isModeJungleGymRom() */\n\nundefined8 rs::isModeJungleGymRom(void)\n\n{\n  return 0;\n}\n\n");

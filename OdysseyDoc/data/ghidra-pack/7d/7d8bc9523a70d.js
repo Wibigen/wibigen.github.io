@@ -1,0 +1,1 @@
+DOC.got("gh/TwistChain/isTwist.cpp","// Nom démêlé : TwistChain::isTwist\n// Symbole manglé : isTwist\n// void __thiscall TwistChain::isTwist(TwistChain *this); @ .text::00441bdc\n\n\n/* TwistChain::isTwist() const */\n\nvoid __thiscall TwistChain::isTwist(TwistChain *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1e41588);\n  return;\n}\n\n");

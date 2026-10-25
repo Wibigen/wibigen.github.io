@@ -1,0 +1,1 @@
+DOC.got("gh/MoonWorldCaptureParadeLift/exeWait_.text_003c6b4c.cpp","// Nom démêlé : MoonWorldCaptureParadeLift::exeWait\n// Symbole manglé : exeWait\n// void MoonWorldCaptureParadeLift::exeWait(void); @ .text::003c6b4c\n\n\n/* MoonWorldCaptureParadeLift::exeWait() */\n\nvoid MoonWorldCaptureParadeLift::exeWait(void)\n\n{\n  return;\n}\n\n");

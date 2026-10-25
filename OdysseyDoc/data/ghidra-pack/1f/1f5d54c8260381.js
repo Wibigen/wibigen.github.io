@@ -1,0 +1,1 @@
+DOC.got("gh/eui/ButtonBase/UpdateCancel.cpp","// Nom démêlé : eui::ButtonBase::UpdateCancel\n// Symbole manglé : UpdateCancel\n// undefined8 eui::ButtonBase::UpdateCancel(void); @ .text::008f4148\n\n\n/* eui::ButtonBase::UpdateCancel() */\n\nundefined8 eui::ButtonBase::UpdateCancel(void)\n\n{\n  return 1;\n}\n\n");

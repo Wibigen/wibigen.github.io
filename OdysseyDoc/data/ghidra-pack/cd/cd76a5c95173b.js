@@ -1,0 +1,1 @@
+DOC.got("gh/eui/Screen/getElinkSystem.cpp","// Nom démêlé : eui::Screen::getElinkSystem_\n// Symbole manglé : getElinkSystem_\n// undefined8 eui::Screen::getElinkSystem_(void); @ .text::008ef908\n\n\n/* eui::Screen::getElinkSystem_() const */\n\nundefined8 eui::Screen::getElinkSystem_(void)\n\n{\n  return 0;\n}\n\n");

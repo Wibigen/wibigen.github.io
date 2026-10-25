@@ -1,0 +1,1 @@
+DOC.got("src/1834","#pragma once\n\n#include <container/seadPtrArray.h>\n\n#include \"Library/LiveActor/LiveActor.h\"\n\nclass Car;\n\nclass CarWatcher : public al::LiveActor {\npublic:\n    CarWatcher(const char* name);\n\n    void init(const al::ActorInitInfo& info) override;\n\nprivate:\n    sead::PtrArray<Car> mCars{};\n};\n\nstatic_assert(sizeof(CarWatcher) == 0x118);\n");

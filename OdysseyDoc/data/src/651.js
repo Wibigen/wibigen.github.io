@@ -1,0 +1,1 @@
+DOC.got("src/651","#pragma once\n\nnamespace al {\nclass IUseHioNode {\npublic:\n    // ??\n};\n\nclass HioNode : public IUseHioNode {\npublic:\n    // ??\n};\n}  // namespace al\n");

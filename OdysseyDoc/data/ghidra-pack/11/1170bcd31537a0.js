@@ -1,0 +1,1 @@
+DOC.got("gh/al/calcChildStepCount.cpp","// Nom démêlé : al::calcChildStepCount\n// Symbole manglé : calcChildStepCount\n// void al::calcChildStepCount(ActorInitInfo *param_1); @ .text::00a11578\n\n\n/* al::calcChildStepCount(al::ActorInitInfo const&) */\n\nvoid al::calcChildStepCount(ActorInitInfo *param_1)\n\n{\n  calcLinkChildNum(param_1,(char *)0x196d6df);\n  return;\n}\n\n");

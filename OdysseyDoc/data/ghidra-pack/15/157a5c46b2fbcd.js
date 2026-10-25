@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Core/GetThreadStackSize_.text_00739778.cpp","// Nom démêlé : nn::nex::Core::GetThreadStackSize\n// Symbole manglé : GetThreadStackSize\n// undefined8 nn::nex::Core::GetThreadStackSize(void); @ .text::00739778\n\n\n/* nn::nex::Core::GetThreadStackSize() */\n\nundefined8 nn::nex::Core::GetThreadStackSize(void)\n\n{\n  return *(undefined8 *)PTR_01f583a0;\n}\n\n");

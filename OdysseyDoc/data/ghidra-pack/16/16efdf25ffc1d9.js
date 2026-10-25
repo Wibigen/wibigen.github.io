@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/HTTPURL/GetPort.cpp","// Nom démêlé : nn::nex::HTTPURL::GetPort\n// Symbole manglé : GetPort\n// undefined4 __thiscall nn::nex::HTTPURL::GetPort(HTTPURL *this); @ .text::0074aa70\n\n\n/* nn::nex::HTTPURL::GetPort() const */\n\nundefined4 __thiscall nn::nex::HTTPURL::GetPort(HTTPURL *this)\n\n{\n  return *(undefined4 *)(this + 0x48);\n}\n\n");

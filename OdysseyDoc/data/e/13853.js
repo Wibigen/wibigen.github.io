@@ -1,0 +1,1 @@
+DOC.got("e/13853",{"196":{"q":"ams::time::detail","files":["lib/NintendoSDK/include/vapours/results/time_results.hpp"]}});

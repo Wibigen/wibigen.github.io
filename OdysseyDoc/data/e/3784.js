@@ -1,0 +1,1 @@
+DOC.got("e/3784",{"31709":{"q":"nn::gfx::CommandBufferImplData::(anonymous)","acc":"public","decl":{"f":"lib/NintendoSDK/include/nn/gfx/gfx_CommandBufferData-api.nvn.8.h","l":23,"sig":"struct","end":25,"fi":71},"size":160,"align":1,"complete":true,"fields":[{"n":"reserved","t":"char[160]","off":0,"sz":160,"acc":"public","tu":null,"bits":null,"l":24,"cm":null,"ti":null}]}});

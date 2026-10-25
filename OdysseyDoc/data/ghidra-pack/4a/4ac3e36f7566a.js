@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/SystemInfo/IsRunningNT.cpp","// Nom démêlé : nn::nex::SystemInfo::IsRunningNT\n// Symbole manglé : IsRunningNT\n// undefined8 nn::nex::SystemInfo::IsRunningNT(uint *param_1); @ .text::0072151c\n\n\n/* nn::nex::SystemInfo::IsRunningNT(unsigned int*) */\n\nundefined8 nn::nex::SystemInfo::IsRunningNT(uint *param_1)\n\n{\n  return 0;\n}\n\n");

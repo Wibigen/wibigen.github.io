@@ -1,0 +1,1 @@
+DOC.got("gh/Curl_chunked_strerror.cpp","// Nom démêlé : Curl_chunked_strerror\n// Symbole manglé : Curl_chunked_strerror\n// undefined8 Curl_chunked_strerror(int param_1); @ .text::00819640\n\n\nundefined8 Curl_chunked_strerror(int param_1)\n\n{\n  if (param_1 - 1U < 6) {\n    return *(undefined8 *)((long)(int)(param_1 - 1U) * 8 + 0x1eca160);\n  }\n  return 0x195ac81;\n}\n\n");

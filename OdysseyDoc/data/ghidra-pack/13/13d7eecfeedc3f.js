@@ -1,0 +1,1 @@
+DOC.got("gh/al/modi.cpp","// Nom démêlé : al::modi\n// Symbole manglé : modi\n// int al::modi(int param_1,int param_2); @ .text::00a23c98\n\n\n/* al::modi(int, int) */\n\nint al::modi(int param_1,int param_2)\n\n{\n  int iVar1;\n  \n  iVar1 = 0;\n  if (param_2 != 0) {\n    iVar1 = param_1 / param_2;\n  }\n  return param_1 - iVar1 * param_2;\n}\n\n");

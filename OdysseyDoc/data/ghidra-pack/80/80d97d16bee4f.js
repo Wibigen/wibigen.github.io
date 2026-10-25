@@ -1,0 +1,1 @@
+DOC.got("gh/sead/MainThread/waitDone_.text_0085af60.cpp","// Nom démêlé : sead::MainThread::waitDone\n// Symbole manglé : waitDone\n// void sead::MainThread::waitDone(void); @ .text::0085af60\n\n\n/* sead::MainThread::waitDone() */\n\nvoid sead::MainThread::waitDone(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/PoleGrabCeil/exeGrab.cpp","// Nom démêlé : PoleGrabCeil::exeGrab\n// Symbole manglé : exeGrab\n// void __thiscall PoleGrabCeil::exeGrab(PoleGrabCeil *this); @ .text::003e6380\n\n\n/* PoleGrabCeil::exeGrab() */\n\nvoid __thiscall PoleGrabCeil::exeGrab(PoleGrabCeil *this)\n\n{\n  FUN__text__003e628c(this + 0x108,this);\n  return;\n}\n\n");

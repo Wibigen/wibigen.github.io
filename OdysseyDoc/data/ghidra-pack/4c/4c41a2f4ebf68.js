@@ -1,0 +1,1 @@
+DOC.got("gh/TalkNpcParamHolder/getSceneObjName_.text_004e2910.cpp","// Nom démêlé : TalkNpcParamHolder::getSceneObjName\n// Symbole manglé : getSceneObjName\n// undefined8 TalkNpcParamHolder::getSceneObjName(void); @ .text::004e2910\n\n\n/* TalkNpcParamHolder::getSceneObjName() const */\n\nundefined8 TalkNpcParamHolder::getSceneObjName(void)\n\n{\n  return 0x1940f11;\n}\n\n");

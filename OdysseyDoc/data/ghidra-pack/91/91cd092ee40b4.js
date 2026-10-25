@@ -1,0 +1,1 @@
+DOC.got("gh/al/isExistRail_.text_00ac5590.cpp","// Nom démêlé : al::isExistRail\n// Symbole manglé : isExistRail\n// bool al::isExistRail(IUseRail *param_1); @ .text::00ac5590\n\n\n/* al::isExistRail(al::IUseRail const*) */\n\nbool al::isExistRail(IUseRail *param_1)\n\n{\n  long lVar1;\n  \n  lVar1 = (*(code *)**(undefined8 **)param_1)();\n  return lVar1 != 0;\n}\n\n");

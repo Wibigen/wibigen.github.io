@@ -1,0 +1,1 @@
+DOC.got("gh/al/StarrySky/getName_.text_00b0bb4c.cpp","// Nom démêlé : al::StarrySky::getName\n// Symbole manglé : getName\n// undefined8 al::StarrySky::getName(void); @ .text::00b0bb4c\n\n\n/* al::StarrySky::getName() const */\n\nundefined8 al::StarrySky::getName(void)\n\n{\n  return 0x1974efc;\n}\n\n");

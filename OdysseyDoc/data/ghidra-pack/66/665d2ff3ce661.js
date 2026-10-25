@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/DummyPacketEncDec/Decode_.text_007918f4.cpp","// Nom démêlé : nn::nex::DummyPacketEncDec::Decode\n// Symbole manglé : Decode\n// void nn::nex::DummyPacketEncDec::Decode(Packet *param_1); @ .text::007918f4\n\n\n/* nn::nex::DummyPacketEncDec::Decode(nn::nex::Packet*) */\n\nvoid nn::nex::DummyPacketEncDec::Decode(Packet *param_1)\n\n{\n  return;\n}\n\n");

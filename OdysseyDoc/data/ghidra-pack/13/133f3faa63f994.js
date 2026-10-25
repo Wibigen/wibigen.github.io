@@ -1,0 +1,1 @@
+DOC.got("gh/BalloonFindSearchBalloonServer/broke.cpp","// Nom démêlé : BalloonFindSearchBalloonServer::broke\n// Symbole manglé : broke\n// void BalloonFindSearchBalloonServer::broke(void); @ .text::00453604\n\n\n/* BalloonFindSearchBalloonServer::broke() */\n\nvoid BalloonFindSearchBalloonServer::broke(void)\n\n{\n  return;\n}\n\n");

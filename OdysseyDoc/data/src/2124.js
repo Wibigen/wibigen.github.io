@@ -1,0 +1,1 @@
+DOC.got("src/2124","#pragma once\n\nclass IJudge {\npublic:\n    virtual void reset() = 0;\n    virtual void update() = 0;\n    virtual bool judge() const = 0;\n};\n");

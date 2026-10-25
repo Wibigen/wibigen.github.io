@@ -1,0 +1,1 @@
+DOC.got("gh/EnemyStateDamageCap/exeWait_.text_001fd5c0.cpp","// Nom démêlé : EnemyStateDamageCap::exeWait\n// Symbole manglé : exeWait\n// void EnemyStateDamageCap::exeWait(void); @ .text::001fd5c0\n\n\n/* EnemyStateDamageCap::exeWait() */\n\nvoid EnemyStateDamageCap::exeWait(void)\n\n{\n  return;\n}\n\n");

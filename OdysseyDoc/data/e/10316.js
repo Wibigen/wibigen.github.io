@@ -1,0 +1,1 @@
+DOC.got("e/10316",{"7016":{"q":"GLSLCresults_rec","decl":{"f":"lib/NintendoSDK/include/nvnTool/nvnTool_GlslcInterface.h","l":505,"sig":"struct GLSLCresults_rec","end":509,"fi":230},"size":48,"align":8,"complete":true,"fields":[{"n":"reserved","t":"uint8_t[32]","off":16,"sz":32,"acc":"public","bits":null,"l":508,"cm":null,"ti":null}]}});

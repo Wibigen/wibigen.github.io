@@ -1,0 +1,1 @@
+DOC.got("src/1003","#pragma once\n\n#include <basis/seadTypes.h>\n\nnamespace al {\n\nstruct OrthoProjectionInfo {\n    f32 nearClipWidth = -1.0f;\n    f32 nearClipHeight = -1.0f;\n};\n\nstatic_assert(sizeof(OrthoProjectionInfo) == 0x8);\n\n}  // namespace al\n");

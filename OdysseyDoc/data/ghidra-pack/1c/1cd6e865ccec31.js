@@ -1,0 +1,1 @@
+DOC.got("gh/Closet/isOpenEnd.cpp","// Nom démêlé : Closet::isOpenEnd\n// Symbole manglé : isOpenEnd\n// undefined8 __thiscall Closet::isOpenEnd(Closet *this); @ .text::0034e670\n\n\n/* Closet::isOpenEnd() */\n\nundefined8 __thiscall Closet::isOpenEnd(Closet *this)\n\n{\n  if (this[0x108] != (Closet)0x0) {\n    this[0x108] = (Closet)0x0;\n    return 1;\n  }\n  return 0;\n}\n\n");

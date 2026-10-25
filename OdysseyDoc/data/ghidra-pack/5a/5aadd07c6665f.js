@@ -1,0 +1,1 @@
+DOC.got("gh/rs/isActiveDemo_.text_006508ec.cpp","// Nom démêlé : rs::isActiveDemo\n// Symbole manglé : isActiveDemo\n// void rs::isActiveDemo(Scene *param_1); @ .text::006508ec\n\n\n/* rs::isActiveDemo(al::Scene const*) */\n\nvoid rs::isActiveDemo(Scene *param_1)\n\n{\n  al::DemoDirector::isActiveDemo(*(DemoDirector **)(*(long *)(param_1 + 0x90) + 0xd0));\n  return;\n}\n\n");

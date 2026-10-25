@@ -1,0 +1,1 @@
+DOC.got("gh/HipDropTile/control_.text_003a4d10.cpp","// Nom démêlé : HipDropTile::control\n// Symbole manglé : control\n// void __thiscall HipDropTile::control(HipDropTile *this); @ .text::003a4d10\n\n\n/* HipDropTile::control() */\n\nvoid __thiscall HipDropTile::control(HipDropTile *this)\n\n{\n  this[0x134] = (HipDropTile)0x0;\n  return;\n}\n\n");

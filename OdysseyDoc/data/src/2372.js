@@ -1,0 +1,1 @@
+DOC.got("src/2372","#pragma once\n\nstruct SceneEventListener {\npublic:\n    virtual void notify() = 0;\n};\n");

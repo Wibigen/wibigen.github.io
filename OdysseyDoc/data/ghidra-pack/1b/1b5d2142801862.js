@@ -1,0 +1,1 @@
+DOC.got("gh/Can/getReflection.cpp","// Nom démêlé : Can::getReflection\n// Symbole manglé : getReflection\n// undefined4 __thiscall Can::getReflection(Can *this); @ .text::0032ad28\n\n\n/* Can::getReflection() const */\n\nundefined4 __thiscall Can::getReflection(Can *this)\n\n{\n  return *(undefined4 *)((ulong)(byte)this[0x119] * 4 + 0x19869a8);\n}\n\n");

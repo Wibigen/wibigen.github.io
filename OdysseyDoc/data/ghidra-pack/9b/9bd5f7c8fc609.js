@@ -1,0 +1,1 @@
+DOC.got("gh/BombTailCap/exeBeforeBattleStart_.text_001122ac.cpp","// Nom démêlé : BombTailCap::exeBeforeBattleStart\n// Symbole manglé : exeBeforeBattleStart\n// void BombTailCap::exeBeforeBattleStart(void); @ .text::001122ac\n\n\n/* BombTailCap::exeBeforeBattleStart() */\n\nvoid BombTailCap::exeBeforeBattleStart(void)\n\n{\n  return;\n}\n\n");

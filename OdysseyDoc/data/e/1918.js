@@ -1,0 +1,1 @@
+DOC.got("e/1918",{"21025":{"q":"al::Matrix43","decl":{"f":"lib/al/Library/Math/MatrixUtil.h","l":15,"sig":"template <typename T>\nstruct Matrix43","end":17,"fi":817},"tp":["typename T"],"complete":true,"fwd":[["lib/al/Library/Layout/LayoutActorUtil.h",25]],"fields":[{"n":"m","t":"T[3][4]","off":null,"sz":null,"acc":"public","tu":null,"bits":null,"l":16,"cm":null,"ti":null}]}});

@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Plugin/GetInstance_.text_0073d858.cpp","// Nom démêlé : nn::nex::Plugin::GetInstance\n// Symbole manglé : GetInstance\n// undefined8 nn::nex::Plugin::GetInstance(void); @ .text::0073d858\n\n\n/* nn::nex::Plugin::GetInstance() */\n\nundefined8 nn::nex::Plugin::GetInstance(void)\n\n{\n  return *(undefined8 *)PTR_s_pInstance_01f58758;\n}\n\n");

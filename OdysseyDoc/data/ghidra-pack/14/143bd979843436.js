@@ -1,0 +1,1 @@
+DOC.got("gh/EventDemoCtrl/getSceneObjName_.text_002b0ad4.cpp","// Nom démêlé : EventDemoCtrl::getSceneObjName\n// Symbole manglé : getSceneObjName\n// undefined8 EventDemoCtrl::getSceneObjName(void); @ .text::002b0ad4\n\n\n/* EventDemoCtrl::getSceneObjName() const */\n\nundefined8 EventDemoCtrl::getSceneObjName(void)\n\n{\n  return 0x1929bd6;\n}\n\n");

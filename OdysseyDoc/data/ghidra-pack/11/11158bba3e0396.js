@@ -1,0 +1,1 @@
+DOC.got("gh/RankingNpc/RankingNpc.cpp","// Nom démêlé : RankingNpc::~RankingNpc\n// Symbole manglé : ~RankingNpc\n// void __thiscall RankingNpc::~RankingNpc(RankingNpc *this); @ .text::004be3d0\n\n\n/* RankingNpc::~RankingNpc() */\n\nvoid __thiscall RankingNpc::~RankingNpc(RankingNpc *this)\n\n{\n  return;\n}\n\n");

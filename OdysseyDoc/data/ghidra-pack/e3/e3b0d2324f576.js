@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Variant/Variant.cpp","// Nom démêlé : nn::nex::Variant::Variant\n// Symbole manglé : Variant\n// void __thiscall nn::nex::Variant::Variant(Variant *this); @ .text::00722710\n\n\n/* nn::nex::Variant::Variant() */\n\nvoid __thiscall nn::nex::Variant::Variant(Variant *this)\n\n{\n  *(undefined4 *)(this + 8) = 0;\n  return;\n}\n\n");

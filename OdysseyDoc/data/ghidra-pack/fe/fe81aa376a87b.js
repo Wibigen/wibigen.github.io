@@ -1,0 +1,1 @@
+DOC.got("gh/Curl_speedinit.cpp","// Nom démêlé : Curl_speedinit\n// Symbole manglé : Curl_speedinit\n// void Curl_speedinit(long param_1); @ .text::00803e00\n\n\nvoid Curl_speedinit(long param_1)\n\n{\n  *(undefined8 *)(param_1 + 0x8a0) = 0;\n  *(undefined8 *)(param_1 + 0x898) = 0;\n  return;\n}\n\n");

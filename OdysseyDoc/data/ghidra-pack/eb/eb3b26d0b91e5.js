@@ -1,0 +1,1 @@
+DOC.got("gh/nn/init/GetAllocator.cpp","// Nom démêlé : nn::init::GetAllocator\n// Symbole manglé : GetAllocator\n// undefined * nn::init::GetAllocator(void); @ .text::00824b38\n\n\n/* nn::init::GetAllocator() */\n\nundefined * nn::init::GetAllocator(void)\n\n{\n  return &DAT_02573620;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/IBalloonFindMyBalloonHolder/isError_.text_00452fe0.cpp","// Nom démêlé : IBalloonFindMyBalloonHolder::isError\n// Symbole manglé : isError\n// undefined8 IBalloonFindMyBalloonHolder::isError(void); @ .text::00452fe0\n\n\n/* IBalloonFindMyBalloonHolder::isError() const */\n\nundefined8 IBalloonFindMyBalloonHolder::isError(void)\n\n{\n  return 0;\n}\n\n");

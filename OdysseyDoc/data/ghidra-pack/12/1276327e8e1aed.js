@@ -1,0 +1,1 @@
+DOC.got("gh/sead/UnitHeap/adjust_.text_00c5d07c.cpp","// Nom démêlé : sead::UnitHeap::adjust\n// Symbole manglé : adjust\n// undefined8 __thiscall sead::UnitHeap::adjust(UnitHeap *this); @ .text::00c5d07c\n\n\n/* sead::UnitHeap::adjust() */\n\nundefined8 __thiscall sead::UnitHeap::adjust(UnitHeap *this)\n\n{\n  return *(undefined8 *)(this + 0x40);\n}\n\n");

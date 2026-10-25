@@ -1,0 +1,1 @@
+DOC.got("gh/Curl_mk_dnscache.cpp","// Nom démêlé : Curl_mk_dnscache\n// Symbole manglé : Curl_mk_dnscache\n// void Curl_mk_dnscache(void); @ .text::007fb4fc\n\n\nvoid Curl_mk_dnscache(void)\n\n{\n  Curl_hash_alloc(7,PTR_01f59b90,PTR_01f59b98,&LAB__text__007faed4);\n  return;\n}\n\n");

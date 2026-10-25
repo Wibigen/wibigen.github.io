@@ -1,0 +1,1 @@
+DOC.got("gh/Chorobon/exeMove_.text_001f41bc.cpp","// Nom démêlé : Chorobon::exeMove\n// Symbole manglé : exeMove\n// void Chorobon::exeMove(void); @ .text::001f41bc\n\n\n/* Chorobon::exeMove() */\n\nvoid Chorobon::exeMove(void)\n\n{\n  return;\n}\n\n");

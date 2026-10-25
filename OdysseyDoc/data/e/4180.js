@@ -1,0 +1,1 @@
+DOC.got("e/4180",{"33566":{"q":"nn::nlibsdk::heap::CentralHeap","decl":{"f":"lib/NintendoSDK/include/nn/mem.h","l":15,"sig":"class CentralHeap","fi":155},"complete":false,"fwd":[["lib/NintendoSDK/include/nn/mem.h",15]]}});

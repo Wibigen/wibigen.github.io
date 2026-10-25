@@ -1,0 +1,1 @@
+DOC.got("gh/al/getRailPos_.text_00ac4228.cpp","// Nom démêlé : al::getRailPos\n// Symbole manglé : getRailPos\n// long al::getRailPos(IUseRail *param_1); @ .text::00ac4228\n\n\n/* al::getRailPos(al::IUseRail const*) */\n\nlong al::getRailPos(IUseRail *param_1)\n\n{\n  long lVar1;\n  \n  lVar1 = (*(code *)**(undefined8 **)param_1)();\n  return lVar1 + 8;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/Hosui/endHackSpin.cpp","// Nom démêlé : Hosui::endHackSpin\n// Symbole manglé : endHackSpin\n// void __thiscall Hosui::endHackSpin(Hosui *this); @ .text::0021a194\n\n\n/* Hosui::endHackSpin() */\n\nvoid __thiscall Hosui::endHackSpin(Hosui *this)\n\n{\n  this[0x19a] = (Hosui)0x1;\n  return;\n}\n\n");

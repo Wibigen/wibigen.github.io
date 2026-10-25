@@ -1,0 +1,1 @@
+DOC.got("gh/al/resetPadAutoSleepTimeCount.cpp","// Nom démêlé : al::resetPadAutoSleepTimeCount\n// Symbole manglé : resetPadAutoSleepTimeCount\n// int al::resetPadAutoSleepTimeCount(int param_1); @ .text::00963e34\n\n\n/* al::resetPadAutoSleepTimeCount(int) */\n\nint al::resetPadAutoSleepTimeCount(int param_1)\n\n{\n  return param_1;\n}\n\n");

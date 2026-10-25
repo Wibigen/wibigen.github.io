@@ -1,0 +1,1 @@
+DOC.got("src/2304","#pragma once\n\n#include \"Library/Nerve/NerveStateBase.h\"\n\nnamespace al {\nclass LiveActor;\n}\n\nclass PlayerStateAutoDash : public al::ActorStateBase {\npublic:\n    PlayerStateAutoDash(al::LiveActor* player);\n\n    void appear() override;\n    void exeDash();\n    void exeRun();\n\nprivate:\n    s32 mRunTimer = 0;\n};\n");

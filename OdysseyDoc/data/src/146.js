@@ -1,0 +1,1 @@
+DOC.got("src/146","#pragma once\n\n#include <nn/types.h>\n\nnamespace nn::irsensor {\nenum class ImageTransferProcessorFormat : u32 {\n    _320x240,\n    _160x120,\n    _80x60,\n    _40x30,  // [4.0.0+]\n    _20x15,  // [4.0.0+]\n};\n}  // namespace nn::irsensor\n");

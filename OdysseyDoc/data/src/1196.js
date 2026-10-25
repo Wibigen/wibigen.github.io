@@ -1,0 +1,1 @@
+DOC.got("src/1196","#pragma once\n\n#include <math/seadVector.h>\n\nnamespace al {\n\nclass PadRumbleKeeper {\npublic:\n    PadRumbleKeeper(s32 port);\n\n    s32 getPort() const { return mPort; }\n\nprivate:\n    s32 mPort;\n};\n\n}  // namespace al\n");

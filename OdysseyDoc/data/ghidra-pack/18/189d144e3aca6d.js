@@ -1,0 +1,1 @@
+DOC.got("gh/ChurchDoor/isOpenWait.cpp","// Nom démêlé : ChurchDoor::isOpenWait\n// Symbole manglé : isOpenWait\n// void __thiscall ChurchDoor::isOpenWait(ChurchDoor *this); @ .text::0034b630\n\n\n/* ChurchDoor::isOpenWait() const */\n\nvoid __thiscall ChurchDoor::isOpenWait(ChurchDoor *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1de73f8);\n  return;\n}\n\n");

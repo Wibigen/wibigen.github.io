@@ -1,0 +1,1 @@
+DOC.got("e/10296",{"7005":{"q":"GLSLCperStageShaderInfo_rec","decl":{"f":"lib/NintendoSDK/include/nvnTool/nvnTool_GlslcInterface.h","l":399,"sig":"struct GLSLCperStageShaderInfo_rec","end":401,"fi":230},"size":264,"align":4,"complete":true,"fields":[{"n":"shaderInfo","t":"GLSLCshaderInfoUnion[6]","off":0,"sz":264,"acc":"public","bits":null,"l":400,"cm":null,"ti":7026}]}});

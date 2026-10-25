@@ -1,0 +1,1 @@
+DOC.got("gh/KickStone/endHold.cpp","// Nom démêlé : KickStone::endHold\n// Symbole manglé : endHold\n// void __thiscall KickStone::endHold(KickStone *this); @ .text::003ad0dc\n\n\n/* KickStone::endHold() */\n\nvoid __thiscall KickStone::endHold(KickStone *this)\n\n{\n  al::setScaleAll((LiveActor *)this,1.0);\n  al::hideSilhouetteModel((LiveActor *)this);\n  return;\n}\n\n");

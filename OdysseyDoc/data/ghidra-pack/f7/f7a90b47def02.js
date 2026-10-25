@@ -1,0 +1,1 @@
+DOC.got("gh/WorldResourceLoader/createResourcePlayer.cpp","// Nom démêlé : WorldResourceLoader::createResourcePlayer\n// Symbole manglé : createResourcePlayer\n// void WorldResourceLoader::createResourcePlayer(void); @ .text::00614758\n\n\n/* WorldResourceLoader::createResourcePlayer() */\n\nvoid WorldResourceLoader::createResourcePlayer(void)\n\n{\n  return;\n}\n\n");

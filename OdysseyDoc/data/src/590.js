@@ -1,0 +1,1 @@
+DOC.got("src/590","#include \"Library/Event/EventFlowNodeJoin.h\"\n\n#include \"Library/Event/EventFlowFunction.h\"\n\nnamespace al {\n\nvoid EventFlowNodeJoin::init(const EventFlowNodeInitInfo& info) {\n    initEventFlowNode(this, info);\n}\n\n}  // namespace al\n");

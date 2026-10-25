@@ -1,0 +1,1 @@
+DOC.got("src/39","/**\n * @file ResShapeAnim.h\n * @brief Resource file for shape animations.\n */\n\n#pragma once\n\nnamespace nn {\nnamespace g3d {\nclass ResShapeAnim {\npublic:\n    void Reset();\n};\n}  // namespace g3d\n}  // namespace nn\n");

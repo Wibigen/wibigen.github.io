@@ -1,0 +1,1 @@
+DOC.got("gh/rs/resetHelpAmiibo.cpp","// Nom démêlé : rs::resetHelpAmiibo\n// Symbole manglé : resetHelpAmiibo\n// void rs::resetHelpAmiibo(IUseSceneObjHolder *param_1); @ .text::00644920\n\n\n/* rs::resetHelpAmiibo(al::IUseSceneObjHolder const*) */\n\nvoid rs::resetHelpAmiibo(IUseSceneObjHolder *param_1)\n\n{\n  return;\n}\n\n");

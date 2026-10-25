@@ -1,0 +1,1 @@
+DOC.got("gh/Closet/exeWait_.text_0034e6e4.cpp","// Nom démêlé : Closet::exeWait\n// Symbole manglé : exeWait\n// void Closet::exeWait(void); @ .text::0034e6e4\n\n\n/* Closet::exeWait() */\n\nvoid Closet::exeWait(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/YoshiStateHack/exeLockOn_.text_00597da4.cpp","// Nom démêlé : YoshiStateHack::exeLockOn\n// Symbole manglé : exeLockOn\n// void YoshiStateHack::exeLockOn(void); @ .text::00597da4\n\n\n/* YoshiStateHack::exeLockOn() */\n\nvoid YoshiStateHack::exeLockOn(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/CameraTargetBase/isGrabCeil.cpp","// Nom démêlé : al::CameraTargetBase::isGrabCeil\n// Symbole manglé : isGrabCeil\n// undefined8 al::CameraTargetBase::isGrabCeil(void); @ .text::001271ac\n\n\n/* al::CameraTargetBase::isGrabCeil() const */\n\nundefined8 al::CameraTargetBase::isGrabCeil(void)\n\n{\n  return 0;\n}\n\n");

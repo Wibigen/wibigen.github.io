@@ -1,0 +1,1 @@
+DOC.got("gh/al/submitViewModel.cpp","// Nom démêlé : al::submitViewModel\n// Symbole manglé : submitViewModel\n// void al::submitViewModel(LiveActor *param_1,Matrix34 *param_2); @ .text::009e2098\n\n\n/* al::submitViewModel(al::LiveActor const*, sead::Matrix34<float> const&) */\n\nvoid al::submitViewModel(LiveActor *param_1,Matrix34 *param_2)\n\n{\n  return;\n}\n\n");

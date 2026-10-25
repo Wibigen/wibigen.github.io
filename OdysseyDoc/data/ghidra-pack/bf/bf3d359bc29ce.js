@@ -1,0 +1,1 @@
+DOC.got("gh/TextureReplaceScreen/onClipped_.text_00438738.cpp","// Nom démêlé : TextureReplaceScreen::onClipped\n// Symbole manglé : onClipped\n// void TextureReplaceScreen::onClipped(void); @ .text::00438738\n\n\n/* TextureReplaceScreen::onClipped() */\n\nvoid TextureReplaceScreen::onClipped(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/nn/ui2d/Pane/GetVertexColor.cpp","// Nom démêlé : nn::ui2d::Pane::GetVertexColor\n// Symbole manglé : GetVertexColor\n// undefined8 nn::ui2d::Pane::GetVertexColor(int param_1); @ .text::00c083b0\n\n\n/* nn::ui2d::Pane::GetVertexColor(int) const */\n\nundefined8 nn::ui2d::Pane::GetVertexColor(int param_1)\n\n{\n  return 0xffffffff;\n}\n\n");

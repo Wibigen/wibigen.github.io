@@ -1,0 +1,1 @@
+DOC.got("gh/WorldMapRoute/exeWait_.text_0044cf40.cpp","// Nom démêlé : WorldMapRoute::exeWait\n// Symbole manglé : exeWait\n// void WorldMapRoute::exeWait(void); @ .text::0044cf40\n\n\n/* WorldMapRoute::exeWait() */\n\nvoid WorldMapRoute::exeWait(void)\n\n{\n  return;\n}\n\n");

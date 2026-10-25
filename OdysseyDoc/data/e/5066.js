@@ -1,0 +1,1 @@
+DOC.got("e/5066",{"43791":{"q":"sead::AnyDelegate1Const","decl":{"f":"lib/agl/include/shader_text/aglShaderTextExpressionEvaluator.h","l":9,"sig":"template <typename T>\nclass AnyDelegate1Const","fi":314},"tp":["typename T"],"complete":false,"fwd":[["lib/agl/include/shader_text/aglShaderTextExpressionEvaluator.h",9],["lib/agl/include/shader_text/aglShaderTextSyntaxTree.h",9]]}});

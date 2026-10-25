@@ -1,0 +1,1 @@
+DOC.got("gh/sead/MainThread/setPriority_.text_0085af68.cpp","// Nom démêlé : sead::MainThread::setPriority\n// Symbole manglé : setPriority\n// int sead::MainThread::setPriority(int param_1); @ .text::0085af68\n\n\n/* sead::MainThread::setPriority(int) */\n\nint sead::MainThread::setPriority(int param_1)\n\n{\n  return param_1;\n}\n\n");

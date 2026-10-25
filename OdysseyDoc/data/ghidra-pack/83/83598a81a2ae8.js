@@ -1,0 +1,1 @@
+DOC.got("gh/agl/lyr/Layer/preDrawImpl.cpp","// Nom démêlé : agl::lyr::Layer::preDrawImpl\n// Symbole manglé : preDrawImpl\n// void agl::lyr::Layer::preDrawImpl(RenderInfo *param_1); @ .text::00ce5f34\n\n\n/* agl::lyr::Layer::preDrawImpl(agl::lyr::RenderInfo const&) const */\n\nvoid agl::lyr::Layer::preDrawImpl(RenderInfo *param_1)\n\n{\n  return;\n}\n\n");

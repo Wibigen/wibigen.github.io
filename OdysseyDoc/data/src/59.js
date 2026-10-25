@@ -1,0 +1,1 @@
+DOC.got("src/59","#pragma once\n\n#include <nn/gfx/detail/gfx_RootSignature-api.common.h>\n#include <nn/gfx/gfx_Common.h>\n\nnamespace nn::gfx::detail {\ntemplate <>\nclass RootSignatureImpl<ApiVariationNvn8> : public RootSignatureImplCommon<ApiVariationNvn8> {};\n}  // namespace nn::gfx::detail");

@@ -1,0 +1,1 @@
+DOC.got("gh/alsd/AudioPlayer/getSoundCount_.text_00b9304c.cpp","// Nom démêlé : alsd::AudioPlayer::getSoundCount\n// Symbole manglé : getSoundCount\n// undefined8 alsd::AudioPlayer::getSoundCount(void); @ .text::00b9304c\n\n\n/* alsd::AudioPlayer::getSoundCount() const */\n\nundefined8 alsd::AudioPlayer::getSoundCount(void)\n\n{\n  return 0;\n}\n\n");

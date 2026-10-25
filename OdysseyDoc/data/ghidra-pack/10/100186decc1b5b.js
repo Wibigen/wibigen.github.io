@@ -1,0 +1,1 @@
+DOC.got("gh/agl/shtxt/Clause/Clause_.text_008d7ee8.cpp","// Nom démêlé : agl::shtxt::Clause::~Clause\n// Symbole manglé : ~Clause\n// void __thiscall agl::shtxt::Clause::~Clause(Clause *this); @ .text::008d7ee8\n\n\n/* agl::shtxt::Clause::~Clause() */\n\nvoid __thiscall agl::shtxt::Clause::~Clause(Clause *this)\n\n{\n  return;\n}\n\n");

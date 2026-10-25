@@ -1,0 +1,1 @@
+DOC.got("gh/al/isUsingPrepassTriangleCulling.cpp","// Nom démêlé : al::isUsingPrepassTriangleCulling\n// Symbole manglé : isUsingPrepassTriangleCulling\n// undefined8 al::isUsingPrepassTriangleCulling(void); @ .text::00a9167c\n\n\n/* al::isUsingPrepassTriangleCulling() */\n\nundefined8 al::isUsingPrepassTriangleCulling(void)\n\n{\n  return 0;\n}\n\n");

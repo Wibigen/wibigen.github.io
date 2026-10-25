@@ -1,0 +1,1 @@
+DOC.got("gh/sead/Resource/Resource_.text_008532dc.cpp","// Nom démêlé : sead::Resource::~Resource\n// Symbole manglé : ~Resource\n// void __thiscall sead::Resource::~Resource(Resource *this); @ .text::008532dc\n\n\n/* sead::Resource::~Resource() */\n\nvoid __thiscall sead::Resource::~Resource(Resource *this)\n\n{\n  return;\n}\n\n");

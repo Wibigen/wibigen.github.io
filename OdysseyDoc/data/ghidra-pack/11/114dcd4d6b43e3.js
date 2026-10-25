@@ -1,0 +1,1 @@
+DOC.got("gh/al/forceInitLanguage_.text_00a38994.cpp","// Nom démêlé : al::forceInitLanguage\n// Symbole manglé : forceInitLanguage\n// void al::forceInitLanguage(char *param_1); @ .text::00a38994\n\n\n/* al::forceInitLanguage(char const*) */\n\nvoid al::forceInitLanguage(char *param_1)\n\n{\n  FUN__text__00a389a8();\n  forceInitLanguage();\n  return;\n}\n\n");

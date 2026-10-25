@@ -1,0 +1,1 @@
+DOC.got("gh/SmallWanderBoss/initAfterPlacement_.text_001b9cfc.cpp","// Nom démêlé : SmallWanderBoss::initAfterPlacement\n// Symbole manglé : initAfterPlacement\n// void SmallWanderBoss::initAfterPlacement(void); @ .text::001b9cfc\n\n\n/* SmallWanderBoss::initAfterPlacement() */\n\nvoid SmallWanderBoss::initAfterPlacement(void)\n\n{\n  return;\n}\n\n");

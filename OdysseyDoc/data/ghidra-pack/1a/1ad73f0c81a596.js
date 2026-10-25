@@ -1,0 +1,1 @@
+DOC.got("gh/Coin2D/isGot_.text_002bd7a8.cpp","// Nom démêlé : Coin2D::isGot\n// Symbole manglé : isGot\n// void __thiscall Coin2D::isGot(Coin2D *this); @ .text::002bd7a8\n\n\n/* Coin2D::isGot() const */\n\nvoid __thiscall Coin2D::isGot(Coin2D *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1db61b8);\n  return;\n}\n\n");

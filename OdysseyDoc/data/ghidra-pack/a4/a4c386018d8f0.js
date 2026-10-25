@@ -1,0 +1,1 @@
+DOC.got("gh/eui/Screen/doAfterBuildLayout.cpp","// Nom démêlé : eui::Screen::doAfterBuildLayout_\n// Symbole manglé : doAfterBuildLayout_\n// void eui::Screen::doAfterBuildLayout_(Heap *param_1); @ .text::008ef5b0\n\n\n/* eui::Screen::doAfterBuildLayout_(sead::Heap*) */\n\nvoid eui::Screen::doAfterBuildLayout_(Heap *param_1)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/sead/NullFaderTask/pauseDrawChild_.text_0086fa7c.cpp","// Nom démêlé : sead::NullFaderTask::pauseDrawChild\n// Symbole manglé : pauseDrawChild\n// bool sead::NullFaderTask::pauseDrawChild(bool param_1); @ .text::0086fa7c\n\n\n/* sead::NullFaderTask::pauseDrawChild(bool) */\n\nbool sead::NullFaderTask::pauseDrawChild(bool param_1)\n\n{\n  return param_1;\n}\n\n");

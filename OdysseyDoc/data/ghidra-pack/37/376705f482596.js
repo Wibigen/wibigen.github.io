@@ -1,0 +1,1 @@
+DOC.got("gh/eui/TraceGaugeControl/getClassName_.text_008f7660.cpp","// Nom démêlé : eui::TraceGaugeControl::getClassName\n// Symbole manglé : getClassName\n// undefined8 eui::TraceGaugeControl::getClassName(void); @ .text::008f7660\n\n\n/* eui::TraceGaugeControl::getClassName() const */\n\nundefined8 eui::TraceGaugeControl::getClassName(void)\n\n{\n  return 0x1965f6b;\n}\n\n");

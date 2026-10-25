@@ -1,0 +1,1 @@
+DOC.got("gh/HackCap/requestReturn.cpp","// Nom démêlé : HackCap::requestReturn\n// Symbole manglé : requestReturn\n// void __thiscall HackCap::requestReturn(HackCap *this,bool *param_1); @ .text::004fd2d8\n\n\n/* HackCap::requestReturn(bool*) */\n\nvoid __thiscall HackCap::requestReturn(HackCap *this,bool *param_1)\n\n{\n  tryReturn(this,false,param_1);\n  return;\n}\n\n");

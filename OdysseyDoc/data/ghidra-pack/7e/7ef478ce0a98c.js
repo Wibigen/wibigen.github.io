@@ -1,0 +1,1 @@
+DOC.got("gh/WaterfallWorldFallDownBridge/exeWait_.text_004437e8.cpp","// Nom démêlé : WaterfallWorldFallDownBridge::exeWait\n// Symbole manglé : exeWait\n// void WaterfallWorldFallDownBridge::exeWait(void); @ .text::004437e8\n\n\n/* WaterfallWorldFallDownBridge::exeWait() */\n\nvoid WaterfallWorldFallDownBridge::exeWait(void)\n\n{\n  return;\n}\n\n");

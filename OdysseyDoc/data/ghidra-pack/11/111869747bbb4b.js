@@ -1,0 +1,1 @@
+DOC.got("gh/rs/getTestClothesName.cpp","// Nom démêlé : rs::getTestClothesName\n// Symbole manglé : getTestClothesName\n// undefined8 rs::getTestClothesName(void); @ .text::0064cca8\n\n\n/* rs::getTestClothesName() */\n\nundefined8 rs::getTestClothesName(void)\n\n{\n  return 0x191ca52;\n}\n\n");

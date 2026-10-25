@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/noboolalpha.cpp","// Nom démêlé : nn::nex::noboolalpha\n// Symbole manglé : noboolalpha\n// void nn::nex::noboolalpha(StringStream *param_1); @ .text::0072071c\n\n\n/* nn::nex::noboolalpha(nn::nex::StringStream&) */\n\nvoid nn::nex::noboolalpha(StringStream *param_1)\n\n{\n  param_1[0x122] = (StringStream)0x0;\n  return;\n}\n\n");

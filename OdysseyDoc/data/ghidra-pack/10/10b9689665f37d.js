@@ -1,0 +1,1 @@
+DOC.got("gh/RadiconNpc/exeWaitHack_.text_004bcce4.cpp","// Nom démêlé : RadiconNpc::exeWaitHack\n// Symbole manglé : exeWaitHack\n// void RadiconNpc::exeWaitHack(void); @ .text::004bcce4\n\n\n/* RadiconNpc::exeWaitHack() */\n\nvoid RadiconNpc::exeWaitHack(void)\n\n{\n  return;\n}\n\n");

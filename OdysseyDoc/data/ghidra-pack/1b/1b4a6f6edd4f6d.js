@@ -1,0 +1,1 @@
+DOC.got("gh/al/FogParam/getSkyMip.cpp","// Nom démêlé : al::FogParam::getSkyMip\n// Symbole manglé : getSkyMip\n// undefined4 __thiscall al::FogParam::getSkyMip(FogParam *this); @ .text::009a1e44\n\n\n/* al::FogParam::getSkyMip() const */\n\nundefined4 __thiscall al::FogParam::getSkyMip(FogParam *this)\n\n{\n  return *(undefined4 *)(*(long *)(this + 0x68) + 0x6c);\n}\n\n");

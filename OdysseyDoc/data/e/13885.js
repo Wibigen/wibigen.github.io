@@ -1,0 +1,1 @@
+DOC.got("e/13885",{"225":{"q":"nn::font::detail","files":["lib/NintendoSDK/include/nn/font/font_Util.h"]},"99353":{"q":"nn::font::GlyphNode","inferred":true},"99656":{"q":"nn::font::WordWrapping","inferred":true}});

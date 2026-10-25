@@ -1,0 +1,1 @@
+DOC.got("gh/eui/GetNwAllocatorHeap.cpp","// Nom démêlé : eui::GetNwAllocatorHeap\n// Symbole manglé : GetNwAllocatorHeap\n// undefined8 eui::GetNwAllocatorHeap(void); @ .text::008e02b4\n\n\n/* eui::GetNwAllocatorHeap() */\n\nundefined8 eui::GetNwAllocatorHeap(void)\n\n{\n  return *(undefined8 *)PTR_g_pUserDataForAllocator_01f5bad0;\n}\n\n");

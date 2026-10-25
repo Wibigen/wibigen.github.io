@@ -1,0 +1,1 @@
+DOC.got("e/3692",{"31357":{"q":"nn::friends::ImageSize","decl":{"f":"lib/NintendoSDK/include/nn/friends.h","l":16,"sig":"struct ImageSize","end":18,"fi":22},"size":4,"align":4,"complete":true,"fields":[{"n":"m_Size","t":"s32","off":0,"sz":4,"acc":"public","bits":null,"l":17,"cm":null,"ti":43737}]}});

@@ -1,0 +1,1 @@
+DOC.got("gh/rs/endWipeOpen.cpp","// Nom démêlé : rs::endWipeOpen\n// Symbole manglé : endWipeOpen\n// void rs::endWipeOpen(GameDataHolder *param_1); @ .text::0060e120\n\n\n/* rs::endWipeOpen(GameDataHolder const*) */\n\nvoid rs::endWipeOpen(GameDataHolder *param_1)\n\n{\n  *(undefined1 *)(*(long *)(param_1 + 600) + 6) = 1;\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("e/4213",{"338":{"q":"(anonymous@src/Item/Coin2DCityDirector)::(anonymous)","decl":{"f":"src/Item/Coin2DCityDirector.cpp","l":19,"sig":"NERVES_MAKE_STRUCT(Coin2DCityDirector, Wait)","end":19,"fi":1671},"size":8,"align":8,"complete":true,"fields":[{"n":"Wait","t":"Coin2DCityDirectorNrvWait","off":0,"sz":8,"acc":"public","bits":null,"l":19,"cm":null,"ti":958}]}});

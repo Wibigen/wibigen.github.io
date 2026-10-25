@@ -1,0 +1,1 @@
+DOC.got("gh/al/getUniformBlockLocationShp.cpp","// Nom démêlé : al::getUniformBlockLocationShp\n// Symbole manglé : getUniformBlockLocationShp\n// undefined * al::getUniformBlockLocationShp(void); @ .text::00b00820\n\n\n/* al::getUniformBlockLocationShp() */\n\nundefined * al::getUniformBlockLocationShp(void)\n\n{\n  return &DAT_02697470;\n}\n\n");

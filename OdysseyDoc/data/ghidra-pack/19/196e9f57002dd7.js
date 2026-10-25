@@ -1,0 +1,1 @@
+DOC.got("gh/al/getSensorPos_.text_009f1b10.cpp","// Nom démêlé : al::getSensorPos\n// Symbole manglé : getSensorPos\n// HitSensor * al::getSensorPos(HitSensor *param_1); @ .text::009f1b10\n\n\n/* al::getSensorPos(al::HitSensor const*) */\n\nHitSensor * al::getSensorPos(HitSensor *param_1)\n\n{\n  return param_1 + 0xc;\n}\n\n");

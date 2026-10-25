@@ -1,0 +1,1 @@
+DOC.got("gh/sead/Event/setSignal_.text_00c644b4.cpp","// Nom démêlé : sead::Event::setSignal\n// Symbole manglé : setSignal\n// void __thiscall sead::Event::setSignal(Event *this); @ .text::00c644b4\n\n\n/* sead::Event::setSignal() */\n\nvoid __thiscall sead::Event::setSignal(Event *this)\n\n{\n  nn::os::SignalLightEvent((LightEventType *)(this + 0x20));\n  return;\n}\n\n");

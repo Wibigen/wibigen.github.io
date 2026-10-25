@@ -1,0 +1,1 @@
+DOC.got("e/3796",{"31762":{"q":"nn::gfx::DepthStencilViewImplData","decl":{"f":"lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h","l":130,"sig":"template <typename TTarget>\nstruct DepthStencilViewImplData","fi":51},"tp":["typename TTarget"],"complete":false,"fwd":[["lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h",130]]}});

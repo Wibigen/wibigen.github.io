@@ -1,0 +1,1 @@
+DOC.got("gh/al/getSamplerLocationUniform1.cpp","// Nom démêlé : al::getSamplerLocationUniform1\n// Symbole manglé : getSamplerLocationUniform1\n// undefined * al::getSamplerLocationUniform1(void); @ .text::00b008c0\n\n\n/* al::getSamplerLocationUniform1() */\n\nundefined * al::getSamplerLocationUniform1(void)\n\n{\n  return &DAT_02697578;\n}\n\n");

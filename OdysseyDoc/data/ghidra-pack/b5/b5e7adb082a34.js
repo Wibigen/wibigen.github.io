@@ -1,0 +1,1 @@
+DOC.got("gh/wslay_extra_byteswap16.cpp","// Nom démêlé : wslay_extra_byteswap16\n// Symbole manglé : wslay_extra_byteswap16\n// uint wslay_extra_byteswap16(uint param_1); @ .text::007b0c24\n\n\nuint wslay_extra_byteswap16(uint param_1)\n\n{\n  return ((param_1 & 0xff00ff00) >> 8 | (param_1 & 0xff00ff) << 8) & 0xffff;\n}\n\n");

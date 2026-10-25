@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/RankingDDLDeclarations/Init_.text_00bd9534.cpp","// Nom démêlé : nn::nex::RankingDDLDeclarations::Init\n// Symbole manglé : Init\n// void nn::nex::RankingDDLDeclarations::Init(void); @ .text::00bd9534\n\n\n/* nn::nex::RankingDDLDeclarations::Init() */\n\nvoid nn::nex::RankingDDLDeclarations::Init(void)\n\n{\n  return;\n}\n\n");

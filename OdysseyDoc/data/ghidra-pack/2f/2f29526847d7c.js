@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/ProfilingUnit/IsEnabled.cpp","// Nom démêlé : nn::nex::ProfilingUnit::IsEnabled\n// Symbole manglé : IsEnabled\n// undefined1 nn::nex::ProfilingUnit::IsEnabled(void); @ .text::00717150\n\n\n/* nn::nex::ProfilingUnit::IsEnabled() */\n\nundefined1 nn::nex::ProfilingUnit::IsEnabled(void)\n\n{\n  return *PTR_01f583e0;\n}\n\n");

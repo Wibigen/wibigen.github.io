@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/ExceptionHandler/Initialize_.text_00711160.cpp","// Nom démêlé : nn::nex::ExceptionHandler::Initialize\n// Symbole manglé : Initialize\n// void nn::nex::ExceptionHandler::Initialize(void); @ .text::00711160\n\n\n/* nn::nex::ExceptionHandler::Initialize() */\n\nvoid nn::nex::ExceptionHandler::Initialize(void)\n\n{\n  return;\n}\n\n");

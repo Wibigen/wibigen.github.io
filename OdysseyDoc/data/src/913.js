@@ -1,0 +1,1 @@
+DOC.got("src/913","#pragma once\n\n#include \"Library/LiveActor/LiveActor.h\"\n\nnamespace al {\n\nclass IUseFinalize {\npublic:\n    virtual void finalize() = 0;\n};\n\nclass DynamicDrawActor : public LiveActor, public IUseFinalize {\npublic:\n    // incomplete\n    void finalize() override;\n\nprivate:\n    // missing\n};\n\n}  // namespace al\n");

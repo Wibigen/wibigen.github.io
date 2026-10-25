@@ -1,0 +1,1 @@
+DOC.got("gh/TRexNeckRumbleCtrl/getCtrlTypeName_.text_0029e440.cpp","// Nom démêlé : TRexNeckRumbleCtrl::getCtrlTypeName\n// Symbole manglé : getCtrlTypeName\n// undefined8 TRexNeckRumbleCtrl::getCtrlTypeName(void); @ .text::0029e440\n\n\n/* TRexNeckRumbleCtrl::getCtrlTypeName() const */\n\nundefined8 TRexNeckRumbleCtrl::getCtrlTypeName(void)\n\n{\n  return 0x1929431;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/BgmLine/isRunning_.text_009211b8.cpp","// Nom démêlé : al::BgmLine::isRunning\n// Symbole manglé : isRunning\n// bool __thiscall al::BgmLine::isRunning(BgmLine *this); @ .text::009211b8\n\n\n/* al::BgmLine::isRunning() const */\n\nbool __thiscall al::BgmLine::isRunning(BgmLine *this)\n\n{\n  return *(uint *)(this + 0x80) < 3;\n}\n\n");

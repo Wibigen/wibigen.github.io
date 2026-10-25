@@ -1,0 +1,1 @@
+DOC.got("gh/al/EffectObj/getBaseMtx_.text_00354a94.cpp","// Nom démêlé : al::EffectObj::getBaseMtx\n// Symbole manglé : getBaseMtx\n// EffectObj * __thiscall al::EffectObj::getBaseMtx(EffectObj *this); @ .text::00354a94\n\n\n/* al::EffectObj::getBaseMtx() const */\n\nEffectObj * __thiscall al::EffectObj::getBaseMtx(EffectObj *this)\n\n{\n  return this + 0x108;\n}\n\n");

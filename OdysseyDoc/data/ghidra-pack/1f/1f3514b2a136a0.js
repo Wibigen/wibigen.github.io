@@ -1,0 +1,1 @@
+DOC.got("gh/TimeFlagTelop/isEnd_.text_00439264.cpp","// Nom démêlé : TimeFlagTelop::isEnd\n// Symbole manglé : isEnd\n// void __thiscall TimeFlagTelop::isEnd(TimeFlagTelop *this); @ .text::00439264\n\n\n/* TimeFlagTelop::isEnd() const */\n\nvoid __thiscall TimeFlagTelop::isEnd(TimeFlagTelop *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1e3d678);\n  return;\n}\n\n");

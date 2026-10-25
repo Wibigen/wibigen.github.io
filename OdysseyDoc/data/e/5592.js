@@ -1,0 +1,1 @@
+DOC.got("e/5592",{"49255":{"q":"sead::hostio::GenEvent","decl":{"f":"lib/sead/include/hostio/seadHostIOReflexible.h","l":14,"sig":"class GenEvent","fi":1383},"complete":false,"fwd":[["lib/sead/include/hostio/seadHostIOReflexible.h",14]]}});

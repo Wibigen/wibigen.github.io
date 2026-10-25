@@ -1,0 +1,1 @@
+DOC.got("e/3994",{"32913":{"q":"nn::gfx::detail::DescriptorPoolImpl","decl":{"f":"lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h","l":188,"sig":"template <typename TTarget>\nclass DescriptorPoolImpl","fi":51},"tp":["typename TTarget"],"derived":[32352],"complete":false,"fwd":[["lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h",188]]}});

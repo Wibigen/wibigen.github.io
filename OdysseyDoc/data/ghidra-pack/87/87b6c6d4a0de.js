@@ -1,0 +1,1 @@
+DOC.got("gh/nn/vfx/detail/GetStaticHeap.cpp","// Nom démêlé : nn::vfx::detail::GetStaticHeap\n// Symbole manglé : GetStaticHeap\n// undefined8 nn::vfx::detail::GetStaticHeap(void); @ .text::00c2c8d8\n\n\n/* nn::vfx::detail::GetStaticHeap() */\n\nundefined8 nn::vfx::detail::GetStaticHeap(void)\n\n{\n  return *(undefined8 *)PTR_g_pStaticHeap_01f60400;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("src/2500","#pragma once\n\nclass IJudge;\n\nnamespace rs {\nvoid resetJudge(IJudge* judge);\nvoid updateJudge(IJudge* judge);\nbool isJudge(const IJudge* judge);\nbool updateJudgeAndResult(IJudge* judge);\nbool judgeAndResetReturnTrue(IJudge* judge);\n}  // namespace rs\n");

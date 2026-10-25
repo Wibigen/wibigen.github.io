@@ -1,0 +1,1 @@
+DOC.got("e/13799",{"30441":{"q":"ams::ldr::detail::result::ResultModuleId","decl":{"f":"lib/NintendoSDK/include/vapours/results/loader_results.hpp","l":25,"sig":"R_DEFINE_NAMESPACE_RESULT_MODULE(9)","fi":244},"underlying":"std::integral_constant<int, 9>"}});

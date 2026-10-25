@@ -1,0 +1,1 @@
+DOC.got("gh/al/GraphicsAreaDirector/endInit_.text_00b516a4.cpp","// Nom démêlé : al::GraphicsAreaDirector::endInit\n// Symbole manglé : endInit\n// void al::GraphicsAreaDirector::endInit(void); @ .text::00b516a4\n\n\n/* al::GraphicsAreaDirector::endInit() */\n\nvoid al::GraphicsAreaDirector::endInit(void)\n\n{\n  return;\n}\n\n");

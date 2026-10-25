@@ -1,0 +1,1 @@
+DOC.got("gh/Pyramid/initAfterPlacement_.text_003e8f30.cpp","// Nom démêlé : Pyramid::initAfterPlacement\n// Symbole manglé : initAfterPlacement\n// void Pyramid::initAfterPlacement(void); @ .text::003e8f30\n\n\n/* Pyramid::initAfterPlacement() */\n\nvoid Pyramid::initAfterPlacement(void)\n\n{\n  return;\n}\n\n");

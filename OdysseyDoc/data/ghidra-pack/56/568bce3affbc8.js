@@ -1,0 +1,1 @@
+DOC.got("gh/eui/ControlBase/getClassName_.text_008f4f60.cpp","// Nom démêlé : eui::ControlBase::getClassName\n// Symbole manglé : getClassName\n// undefined8 eui::ControlBase::getClassName(void); @ .text::008f4f60\n\n\n/* eui::ControlBase::getClassName() const */\n\nundefined8 eui::ControlBase::getClassName(void)\n\n{\n  return 0x1965e84;\n}\n\n");

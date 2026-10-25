@@ -1,0 +1,1 @@
+DOC.got("gh/Nokonoko2D/exeKouraMove.cpp","// Nom démêlé : Nokonoko2D::exeKouraMove\n// Symbole manglé : exeKouraMove\n// void Nokonoko2D::exeKouraMove(void); @ .text::0026b5bc\n\n\n/* Nokonoko2D::exeKouraMove() */\n\nvoid Nokonoko2D::exeKouraMove(void)\n\n{\n  return;\n}\n\n");

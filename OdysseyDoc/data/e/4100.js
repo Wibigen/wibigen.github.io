@@ -1,0 +1,1 @@
+DOC.got("e/4100",{"33346":{"q":"nn::hid::detail::BasicXpadSharedMemoryFormat","decl":{"f":"lib/NintendoSDK/include/nn/hid.h","l":808,"sig":"struct BasicXpadSharedMemoryFormat","end":810,"fi":133},"size":4096,"align":8,"complete":true,"fields":[{"n":"mEntries","t":"BasicXpadSharedMemoryEntry[4]","off":0,"sz":4096,"acc":"public","bits":null,"l":809,"cm":null,"ti":33345}]}});

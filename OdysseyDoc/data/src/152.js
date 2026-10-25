@@ -1,0 +1,1 @@
+DOC.got("src/152","#pragma once\n\n#include <nn/types.h>\n\nnamespace nn::irsensor {\nstruct TeraPluginProcessorConfig {\n    s8 mode;\n    s8 _1;  // [6.0.0+]\n    s8 _2;  // [6.0.0+]\n    s8 _3;  // [6.0.0+]\n};\n}  // namespace nn::irsensor\n");

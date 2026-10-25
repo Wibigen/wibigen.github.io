@@ -1,0 +1,1 @@
+DOC.got("gh/BrosWeaponBase/isBreak_.text_001db5e4.cpp","// Nom démêlé : BrosWeaponBase::isBreak\n// Symbole manglé : isBreak\n// undefined8 BrosWeaponBase::isBreak(void); @ .text::001db5e4\n\n\n/* BrosWeaponBase::isBreak() const */\n\nundefined8 BrosWeaponBase::isBreak(void)\n\n{\n  return 0;\n}\n\n");

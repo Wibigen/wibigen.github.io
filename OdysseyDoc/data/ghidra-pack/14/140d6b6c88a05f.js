@@ -1,0 +1,1 @@
+DOC.got("gh/al/SeSituationKeeper/holdSituation.cpp","// Nom démêlé : al::SeSituationKeeper::holdSituation\n// Symbole manglé : holdSituation\n// void al::SeSituationKeeper::holdSituation(char *param_1); @ .text::00ae61c8\n\n\n/* al::SeSituationKeeper::holdSituation(char const*) */\n\nvoid al::SeSituationKeeper::holdSituation(char *param_1)\n\n{\n  return;\n}\n\n");

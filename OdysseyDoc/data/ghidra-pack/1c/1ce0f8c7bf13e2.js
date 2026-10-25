@@ -1,0 +1,1 @@
+DOC.got("gh/nn/font/Font/Font.cpp","// Nom démêlé : nn::font::Font::Font\n// Symbole manglé : Font\n// void __thiscall nn::font::Font::Font(Font *this); @ .text::00bf89a0\n\n\n/* nn::font::Font::Font() */\n\nvoid __thiscall nn::font::Font::Font(Font *this)\n\n{\n  *(undefined **)this = PTR_01f60208 + 0x10;\n  *(undefined2 *)(this + 8) = 0x101;\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/CitySignal/exeWaitBlue.cpp","// Nom démêlé : CitySignal::exeWaitBlue\n// Symbole manglé : exeWaitBlue\n// void CitySignal::exeWaitBlue(void); @ .text::0034c718\n\n\n/* CitySignal::exeWaitBlue() */\n\nvoid CitySignal::exeWaitBlue(void)\n\n{\n  return;\n}\n\n");

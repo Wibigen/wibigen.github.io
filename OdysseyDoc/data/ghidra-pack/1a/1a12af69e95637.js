@@ -1,0 +1,1 @@
+DOC.got("gh/KoopaCap/isAttach_.text_001852c8.cpp","// Nom démêlé : KoopaCap::isAttach\n// Symbole manglé : isAttach\n// void __thiscall KoopaCap::isAttach(KoopaCap *this); @ .text::001852c8\n\n\n/* KoopaCap::isAttach() const */\n\nvoid __thiscall KoopaCap::isAttach(KoopaCap *this)\n\n{\n  al::isNerve((IUseNerve *)this,(Nerve *)0x1d6c910);\n  return;\n}\n\n");

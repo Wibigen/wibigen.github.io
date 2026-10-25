@@ -1,0 +1,1 @@
+DOC.got("e/3974",{"32768":{"q":"nn::gfx::detail::BufferTextureViewImpl","decl":{"f":"lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h","l":170,"sig":"template <typename TTarget>\nclass BufferTextureViewImpl","fi":51},"tp":["typename TTarget"],"complete":false,"fwd":[["lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h",170],["lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h",221]]}});

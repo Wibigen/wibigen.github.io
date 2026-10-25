@@ -1,0 +1,1 @@
+DOC.got("gh/al/CameraTargetBase/calcFront_.text_0093a724.cpp","// Nom démêlé : al::CameraTargetBase::calcFront\n// Symbole manglé : calcFront\n// void al::CameraTargetBase::calcFront(Vector3 *param_1); @ .text::0093a724\n\n\n/* al::CameraTargetBase::calcFront(sead::Vector3<float>*) const */\n\nvoid al::CameraTargetBase::calcFront(Vector3 *param_1)\n\n{\n  return;\n}\n\n");

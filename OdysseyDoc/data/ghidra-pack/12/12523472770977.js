@@ -1,0 +1,1 @@
+DOC.got("gh/LifeMaxUpItem2D/exeDeadWait.cpp","// Nom démêlé : LifeMaxUpItem2D::exeDeadWait\n// Symbole manglé : exeDeadWait\n// void LifeMaxUpItem2D::exeDeadWait(void); @ .text::002c95ec\n\n\n/* LifeMaxUpItem2D::exeDeadWait() */\n\nvoid LifeMaxUpItem2D::exeDeadWait(void)\n\n{\n  return;\n}\n\n");

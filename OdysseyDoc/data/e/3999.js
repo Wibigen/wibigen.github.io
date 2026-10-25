@@ -1,0 +1,1 @@
+DOC.got("e/3999",{"32944":{"q":"nn::gfx::detail::FenceImpl","decl":{"f":"lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h","l":227,"sig":"template <typename TTarget>\nclass FenceImpl","fi":51},"tp":["typename TTarget"],"derived":[32386],"complete":false,"fwd":[["lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h",227]]}});

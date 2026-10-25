@@ -1,0 +1,1 @@
+DOC.got("e/5086",{"43925":{"q":"sead::AtomicDirectInitTag","decl":{"f":"lib/sead/include/thread/seadAtomic.h","l":9,"sig":"struct AtomicDirectInitTag","end":11,"fi":1451},"size":1,"align":1,"complete":true}});

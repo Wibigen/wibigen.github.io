@@ -1,0 +1,1 @@
+DOC.got("src/2370","#include \"Scene/SceneEventFunctorListener.h\"\n\n#include \"Library/Thread/FunctorV0M.h\"\n\nSceneEventFunctorListener::SceneEventFunctorListener(const al::FunctorBase& functor) {\n    mFunctor = functor.clone();\n}\n\nvoid SceneEventFunctorListener::notify() {\n    if (!mFunctor)\n        return;\n\n    (*mFunctor)();\n}\n");

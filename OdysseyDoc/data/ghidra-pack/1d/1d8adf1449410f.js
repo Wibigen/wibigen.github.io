@@ -1,0 +1,1 @@
+DOC.got("gh/al/PrepassTriangleCulling/getName_.text_00a92854.cpp","// Nom démêlé : al::PrepassTriangleCulling::getName\n// Symbole manglé : getName\n// undefined8 al::PrepassTriangleCulling::getName(void); @ .text::00a92854\n\n\n/* al::PrepassTriangleCulling::getName() const */\n\nundefined8 al::PrepassTriangleCulling::getName(void)\n\n{\n  return 0x196fd73;\n}\n\n");

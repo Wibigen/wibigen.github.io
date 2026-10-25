@@ -1,0 +1,1 @@
+DOC.got("e/8380",{"6151":{"q":"CollisionPartsFilterBase","decl":{"f":"src/Enemy/KuriboHack.h","l":15,"sig":"class CollisionPartsFilterBase","fi":1629},"complete":false,"fwd":[["src/Enemy/KuriboHack.h",15]]}});

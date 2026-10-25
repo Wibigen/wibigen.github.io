@@ -1,0 +1,1 @@
+DOC.got("gh/GameDataFunction/getHintNumMax.cpp","// Nom démêlé : GameDataFunction::getHintNumMax\n// Symbole manglé : getHintNumMax\n// undefined8 GameDataFunction::getHintNumMax(void); @ .text::00629de4\n\n\n/* GameDataFunction::getHintNumMax(GameDataHolderAccessor) */\n\nundefined8 GameDataFunction::getHintNumMax(void)\n\n{\n  return 0x46;\n}\n\n");

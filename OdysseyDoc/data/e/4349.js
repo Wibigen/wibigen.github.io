@@ -1,0 +1,1 @@
+DOC.got("e/4349",{"34717":{"q":"nn::util::Unorm8x4::(anonymous)","acc":"public","decl":{"f":"lib/NintendoSDK/include/nn/util/MathTypes.h","l":67,"sig":"union","end":69,"fi":200},"size":4,"align":1,"complete":true,"fields":[{"n":"v","t":"uint8_t[4]","off":0,"sz":4,"acc":"public","bits":null,"l":68,"cm":null,"ti":null}]}});

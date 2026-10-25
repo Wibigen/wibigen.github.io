@@ -1,0 +1,1 @@
+DOC.got("gh/al/isSensorLookAt.cpp","// Nom démêlé : al::isSensorLookAt\n// Symbole manglé : isSensorLookAt\n// bool al::isSensorLookAt(HitSensor *param_1); @ .text::009fdae4\n\n\n/* al::isSensorLookAt(al::HitSensor const*) */\n\nbool al::isSensorLookAt(HitSensor *param_1)\n\n{\n  return *(int *)(param_1 + 8) == 0x12;\n}\n\n");

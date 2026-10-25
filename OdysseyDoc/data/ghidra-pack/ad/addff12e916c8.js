@@ -1,0 +1,1 @@
+DOC.got("gh/al/isIgnoreNoDrawZprepassWhenCulling.cpp","// Nom démêlé : al::isIgnoreNoDrawZprepassWhenCulling\n// Symbole manglé : isIgnoreNoDrawZprepassWhenCulling\n// undefined8 al::isIgnoreNoDrawZprepassWhenCulling(void); @ .text::00a9168c\n\n\n/* al::isIgnoreNoDrawZprepassWhenCulling() */\n\nundefined8 al::isIgnoreNoDrawZprepassWhenCulling(void)\n\n{\n  return 1;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("e/2456",{"24321":{"q":"al::SphereHitResultBuffer","decl":{"f":"lib/al/Library/Collision/CollisionParts.h","l":14,"sig":"class SphereHitResultBuffer","fi":513},"complete":false,"fwd":[["lib/al/Library/Collision/CollisionParts.h",14],["lib/al/Library/Collision/ICollisionPartsKeeper.h",14]]}});

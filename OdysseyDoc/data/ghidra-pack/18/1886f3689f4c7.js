@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/DateTime/IsValid_.text_0070e668.cpp","// Nom démêlé : nn::nex::DateTime::IsValid\n// Symbole manglé : IsValid\n// bool __thiscall nn::nex::DateTime::IsValid(DateTime *this); @ .text::0070e668\n\n\n/* nn::nex::DateTime::IsValid() const */\n\nbool __thiscall nn::nex::DateTime::IsValid(DateTime *this)\n\n{\n  return ((byte)this[5] & 3) == 0;\n}\n\n");

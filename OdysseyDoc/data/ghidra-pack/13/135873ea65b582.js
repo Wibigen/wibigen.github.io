@@ -1,0 +1,1 @@
+DOC.got("gh/al/LayoutKit/createCameraParamForIcon.cpp","// Nom démêlé : al::LayoutKit::createCameraParamForIcon\n// Symbole manglé : createCameraParamForIcon\n// void al::LayoutKit::createCameraParamForIcon(void); @ .text::009bbfe0\n\n\n/* al::LayoutKit::createCameraParamForIcon() */\n\nvoid al::LayoutKit::createCameraParamForIcon(void)\n\n{\n  return;\n}\n\n");

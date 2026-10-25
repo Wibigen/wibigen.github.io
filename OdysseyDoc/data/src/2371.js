@@ -1,0 +1,1 @@
+DOC.got("src/2371","#pragma once\n\n#include \"Scene/SceneEventListener.h\"\n\nnamespace al {\nclass FunctorBase;\n}  // namespace al\n\nclass SceneEventFunctorListener : public SceneEventListener {\npublic:\n    SceneEventFunctorListener(const al::FunctorBase& functor);\n\n    void notify() override;\n\nprivate:\n    al::FunctorBase* mFunctor = nullptr;\n};\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/sead/GraphicsNvn/setBlendEnableImpl.cpp","// Nom démêlé : sead::GraphicsNvn::setBlendEnableImpl\n// Symbole manglé : setBlendEnableImpl\n// bool sead::GraphicsNvn::setBlendEnableImpl(bool param_1); @ .text::0083afc0\n\n\n/* sead::GraphicsNvn::setBlendEnableImpl(bool) */\n\nbool sead::GraphicsNvn::setBlendEnableImpl(bool param_1)\n\n{\n  return param_1;\n}\n\n");

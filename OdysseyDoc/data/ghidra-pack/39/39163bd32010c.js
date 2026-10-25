@@ -1,0 +1,1 @@
+DOC.got("gh/al/getFront_.text_009ef684.cpp","// Nom démêlé : al::getFront\n// Symbole manglé : getFront\n// void al::getFront(LiveActor *param_1); @ .text::009ef684\n\n\n/* al::getFront(al::LiveActor const*) */\n\nvoid al::getFront(LiveActor *param_1)\n\n{\n  (**(code **)(**(long **)(param_1 + 0x50) + 0x18))();\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/DemoSyncedSeCtrl/notifyDemoSkip_.text_00973824.cpp","// Nom démêlé : al::DemoSyncedSeCtrl::notifyDemoSkip\n// Symbole manglé : notifyDemoSkip\n// void al::DemoSyncedSeCtrl::notifyDemoSkip(void); @ .text::00973824\n\n\n/* al::DemoSyncedSeCtrl::notifyDemoSkip() */\n\nvoid al::DemoSyncedSeCtrl::notifyDemoSkip(void)\n\n{\n  return;\n}\n\n");

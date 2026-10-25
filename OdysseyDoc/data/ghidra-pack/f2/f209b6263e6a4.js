@@ -1,0 +1,1 @@
+DOC.got("gh/CrystalBreakable/exeWait_.text_00351990.cpp","// Nom démêlé : CrystalBreakable::exeWait\n// Symbole manglé : exeWait\n// void CrystalBreakable::exeWait(void); @ .text::00351990\n\n\n/* CrystalBreakable::exeWait() */\n\nvoid CrystalBreakable::exeWait(void)\n\n{\n  return;\n}\n\n");

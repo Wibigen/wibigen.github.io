@@ -1,0 +1,1 @@
+DOC.got("src/2493","#pragma once\n\nclass ActorDimensionKeeper;\n\nclass IUseDimension {\npublic:\n    virtual ActorDimensionKeeper* getActorDimensionKeeper() const = 0;\n};\n");

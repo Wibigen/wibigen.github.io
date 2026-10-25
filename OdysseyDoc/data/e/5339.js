@@ -1,0 +1,1 @@
+DOC.got("e/5339",{"4647":{"q":"ActorStateReactionBase","decl":{"f":"src/Util/NpcAnimUtil.h","l":15,"sig":"class ActorStateReactionBase","fi":2505},"complete":false,"fwd":[["src/Util/NpcAnimUtil.h",15]]}});

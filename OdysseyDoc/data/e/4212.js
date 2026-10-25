@@ -1,0 +1,1 @@
+DOC.got("e/4212",{"33797":{"q":"nn::os::detail::TimeoutHelper","decl":{"f":"lib/NintendoSDK/include/nn/os/detail/os_InternalConditionVariable-os.horizon.h","l":9,"sig":"class TimeoutHelper","fi":164},"complete":false,"fwd":[["lib/NintendoSDK/include/nn/os/detail/os_InternalConditionVariable-os.horizon.h",9]]}});

@@ -1,0 +1,1 @@
+DOC.got("gh/al/getPlayerNumMax_.text_00aa3e8c.cpp","// Nom démêlé : al::getPlayerNumMax\n// Symbole manglé : getPlayerNumMax\n// undefined4 al::getPlayerNumMax(PlayerHolder *param_1); @ .text::00aa3e8c\n\n\n/* al::getPlayerNumMax(al::PlayerHolder const*) */\n\nundefined4 al::getPlayerNumMax(PlayerHolder *param_1)\n\n{\n  return *(undefined4 *)(param_1 + 0xc);\n}\n\n");

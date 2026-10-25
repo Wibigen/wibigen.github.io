@@ -1,0 +1,1 @@
+DOC.got("gh/DT_FINI.cpp","// Nom démêlé : _DT_FINI\n// Symbole manglé : _DT_FINI\n// void _DT_FINI(void); @ 00100160\n\n\nvoid _DT_FINI(void)\n\n{\n  __nnmusl_fini_dso(PTR_01f4eb30,PTR_FUN_01f4eb38,PTR_DAT_01f4eb40,PTR_DAT_01f4eb50,PTR_DAT_01f4eb78\n                    ,PTR_DAT_01f4eb80);\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("src/417","#pragma once\n\n#include <basis/seadTypes.h>\n#include <math/seadVector.h>\n\n#include \"Library/HostIO/HioNode.h\"\n\nnamespace al {\nclass ByamlIter;\n\nclass CameraOffsetCtrl : public HioNode {\npublic:\n    virtual void load(const ByamlIter& iter) = 0;\n    virtual const sead::Vector3f& getOffset() const = 0;\n};\n\n}  // namespace al\n");

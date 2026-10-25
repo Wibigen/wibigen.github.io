@@ -1,0 +1,1 @@
+DOC.got("gh/al/endTextPaneAnim.cpp","// Nom démêlé : al::endTextPaneAnim\n// Symbole manglé : endTextPaneAnim\n// void al::endTextPaneAnim(LayoutActor *param_1); @ .text::009b124c\n\n\n/* al::endTextPaneAnim(al::LayoutActor*) */\n\nvoid al::endTextPaneAnim(LayoutActor *param_1)\n\n{\n  LayoutTextPaneAnimator::end(*(LayoutTextPaneAnimator **)(param_1 + 0xf0));\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("src/1508","#pragma once\n\n#include \"Library/Area/AreaObj.h\"\n\nclass NpcForceMaterialCodeArea : public al::AreaObj {\npublic:\n    NpcForceMaterialCodeArea(const char* name);\n\n    void init(const al::AreaInitInfo& info) override;\n\nprivate:\n    const char* mMaterialCodeName = nullptr;\n};\n");

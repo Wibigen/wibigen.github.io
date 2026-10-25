@@ -1,0 +1,1 @@
+DOC.got("src/199","#pragma once\n\nnamespace nn::util {\n\ntemplate <typename T>\nclass AccessorBase : protected T {\npublic:\n    using value_type = T;\n\n    AccessorBase() = delete;\n\n    T& ToData() { return *this; }\n    const T& ToData() const { return *this; }\n};\n\n}  // namespace nn::util\n");

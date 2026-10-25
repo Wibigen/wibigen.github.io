@@ -1,0 +1,1 @@
+DOC.got("gh/al/CapAcceleratorKeyMoveMapParts/control_.text_0032fb2c.cpp","// Nom démêlé : al::CapAcceleratorKeyMoveMapParts::control\n// Symbole manglé : control\n// void al::CapAcceleratorKeyMoveMapParts::control(void); @ .text::0032fb2c\n\n\n/* al::CapAcceleratorKeyMoveMapParts::control() */\n\nvoid al::CapAcceleratorKeyMoveMapParts::control(void)\n\n{\n  return;\n}\n\n");

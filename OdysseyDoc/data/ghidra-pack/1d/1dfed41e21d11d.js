@@ -1,0 +1,1 @@
+DOC.got("gh/HackObjMovieCameraTarget/exeInvalid.cpp","// Nom démêlé : HackObjMovieCameraTarget::exeInvalid\n// Symbole manglé : exeInvalid\n// void HackObjMovieCameraTarget::exeInvalid(void); @ .text::001ce7d4\n\n\n/* HackObjMovieCameraTarget::exeInvalid() */\n\nvoid HackObjMovieCameraTarget::exeInvalid(void)\n\n{\n  return;\n}\n\n");

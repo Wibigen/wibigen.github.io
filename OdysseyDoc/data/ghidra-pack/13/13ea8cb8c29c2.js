@@ -1,0 +1,1 @@
+DOC.got("gh/sead/MainThread/calc_.text_0085af6c.cpp","// Nom démêlé : sead::MainThread::calc_\n// Symbole manglé : calc_\n// void sead::MainThread::calc_(long param_1); @ .text::0085af6c\n\n\n/* sead::MainThread::calc_(long) */\n\nvoid sead::MainThread::calc_(long param_1)\n\n{\n  return;\n}\n\n");

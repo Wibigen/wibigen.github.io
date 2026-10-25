@@ -1,0 +1,1 @@
+DOC.got("gh/al/resetPadPose.cpp","// Nom démêlé : al::resetPadPose\n// Symbole manglé : resetPadPose\n// int al::resetPadPose(int param_1); @ .text::00963e30\n\n\n/* al::resetPadPose(int) */\n\nint al::resetPadPose(int param_1)\n\n{\n  return param_1;\n}\n\n");

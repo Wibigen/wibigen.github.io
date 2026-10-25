@@ -1,0 +1,1 @@
+DOC.got("gh/al/getRailDir.cpp","// Nom démêlé : al::getRailDir\n// Symbole manglé : getRailDir\n// long al::getRailDir(IUseRail *param_1); @ .text::00ac5054\n\n\n/* al::getRailDir(al::IUseRail const*) */\n\nlong al::getRailDir(IUseRail *param_1)\n\n{\n  long lVar1;\n  \n  lVar1 = (*(code *)**(undefined8 **)param_1)();\n  return lVar1 + 0x14;\n}\n\n");

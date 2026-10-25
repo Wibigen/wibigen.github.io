@@ -1,0 +1,1 @@
+DOC.got("gh/umac_update.cpp","// Nom démêlé : umac_update\n// Symbole manglé : umac_update\n// undefined8 umac_update(void); @ .text::0072edc0\n\n\nundefined8 umac_update(void)\n\n{\n  uhash_update();\n  return 1;\n}\n\n");

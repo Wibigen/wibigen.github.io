@@ -1,0 +1,1 @@
+DOC.got("gh/TRexFootIK/getCtrlTypeName_.text_0029cd20.cpp","// Nom démêlé : TRexFootIK::getCtrlTypeName\n// Symbole manglé : getCtrlTypeName\n// undefined8 TRexFootIK::getCtrlTypeName(void); @ .text::0029cd20\n\n\n/* TRexFootIK::getCtrlTypeName() const */\n\nundefined8 TRexFootIK::getCtrlTypeName(void)\n\n{\n  return 0x19293a5;\n}\n\n");

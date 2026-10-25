@@ -1,0 +1,1 @@
+DOC.got("e/4385",{"34937":{"q":"nn::vi::Layer","decl":{"f":"lib/sead/include/framework/nx/seadGameFrameworkNx.h","l":17,"sig":"class Layer","fi":1341},"complete":false,"fwd":[["lib/NintendoSDK/include/nn/gfx/gfx_SwapChainInfoData.h",9],["lib/NintendoSDK/include/nn/vi.h",48],["lib/sead/include/framework/nx/seadGameFrameworkNx.h",17]]}});

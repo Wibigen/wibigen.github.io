@@ -1,0 +1,1 @@
+DOC.got("gh/al/BgmKeeper/update_.text_0091dc34.cpp","// Nom démêlé : al::BgmKeeper::update\n// Symbole manglé : update\n// void al::BgmKeeper::update(void); @ .text::0091dc34\n\n\n/* al::BgmKeeper::update() */\n\nvoid al::BgmKeeper::update(void)\n\n{\n  return;\n}\n\n");

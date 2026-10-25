@@ -1,0 +1,1 @@
+DOC.got("gh/TimeFlagTelop/exeWait_.text_00439270.cpp","// Nom démêlé : TimeFlagTelop::exeWait\n// Symbole manglé : exeWait\n// void TimeFlagTelop::exeWait(void); @ .text::00439270\n\n\n/* TimeFlagTelop::exeWait() */\n\nvoid TimeFlagTelop::exeWait(void)\n\n{\n  return;\n}\n\n");

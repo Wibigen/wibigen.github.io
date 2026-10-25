@@ -1,0 +1,1 @@
+DOC.got("gh/LapRecorder/control_.text_003b13f8.cpp","// Nom démêlé : LapRecorder::control\n// Symbole manglé : control\n// void LapRecorder::control(void); @ .text::003b13f8\n\n\n/* LapRecorder::control() */\n\nvoid LapRecorder::control(void)\n\n{\n  return;\n}\n\n");

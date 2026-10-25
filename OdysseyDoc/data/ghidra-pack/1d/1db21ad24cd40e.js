@@ -1,0 +1,1 @@
+DOC.got("gh/nn/vfx/detail/Warning.cpp","// Nom démêlé : nn::vfx::detail::Warning\n// Symbole manglé : Warning\n// void nn::vfx::detail::Warning(void); @ .text::00c2ccf0\n\n\n/* nn::vfx::detail::Warning(void*, nn::vfx::detail::RuntimeWarningId) */\n\nvoid nn::vfx::detail::Warning(void)\n\n{\n  return;\n}\n\n");

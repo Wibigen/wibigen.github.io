@@ -1,0 +1,1 @@
+DOC.got("gh/al/isExistResGraphicsFile.cpp","// Nom démêlé : al::isExistResGraphicsFile\n// Symbole manglé : isExistResGraphicsFile\n// bool al::isExistResGraphicsFile(Resource *param_1); @ .text::00acb4d0\n\n\n/* al::isExistResGraphicsFile(al::Resource const*) */\n\nbool al::isExistResGraphicsFile(Resource *param_1)\n\n{\n  return *(long *)(param_1 + 0xb8) != 0;\n}\n\n");

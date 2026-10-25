@@ -1,0 +1,1 @@
+DOC.got("gh/MofumofuWarpHole/open.cpp","// Nom démêlé : MofumofuWarpHole::open\n// Symbole manglé : open\n// void __thiscall MofumofuWarpHole::open(MofumofuWarpHole *this); @ .text::001b7048\n\n\n/* MofumofuWarpHole::open() */\n\nvoid __thiscall MofumofuWarpHole::open(MofumofuWarpHole *this)\n\n{\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1d78df8);\n  return;\n}\n\n");

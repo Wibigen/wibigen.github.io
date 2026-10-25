@@ -1,0 +1,1 @@
+DOC.got("gh/al/isRailMoveTurn.cpp","// Nom démêlé : al::isRailMoveTurn\n// Symbole manglé : isRailMoveTurn\n// bool al::isRailMoveTurn(int param_1); @ .text::0098bcd8\n\n\n/* al::isRailMoveTurn(int) */\n\nbool al::isRailMoveTurn(int param_1)\n\n{\n  return param_1 == 1;\n}\n\n");

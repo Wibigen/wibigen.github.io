@@ -1,0 +1,1 @@
+DOC.got("gh/TRexFootIK/exeWait_.text_0029cd1c.cpp","// Nom démêlé : TRexFootIK::exeWait\n// Symbole manglé : exeWait\n// void TRexFootIK::exeWait(void); @ .text::0029cd1c\n\n\n/* TRexFootIK::exeWait() */\n\nvoid TRexFootIK::exeWait(void)\n\n{\n  return;\n}\n\n");

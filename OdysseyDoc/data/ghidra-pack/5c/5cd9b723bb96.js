@@ -1,0 +1,1 @@
+DOC.got("gh/VolleyballBall/exeWait_.text_004eb5d0.cpp","// Nom démêlé : VolleyballBall::exeWait\n// Symbole manglé : exeWait\n// void VolleyballBall::exeWait(void); @ .text::004eb5d0\n\n\n/* VolleyballBall::exeWait() */\n\nvoid VolleyballBall::exeWait(void)\n\n{\n  return;\n}\n\n");

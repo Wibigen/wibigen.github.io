@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerCapManHeroEyesControl/exeDemo_.text_0052e428.cpp","// Nom démêlé : PlayerCapManHeroEyesControl::exeDemo\n// Symbole manglé : exeDemo\n// void PlayerCapManHeroEyesControl::exeDemo(void); @ .text::0052e428\n\n\n/* PlayerCapManHeroEyesControl::exeDemo() */\n\nvoid PlayerCapManHeroEyesControl::exeDemo(void)\n\n{\n  return;\n}\n\n");

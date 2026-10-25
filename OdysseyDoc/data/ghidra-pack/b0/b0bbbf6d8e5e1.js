@@ -1,0 +1,1 @@
+DOC.got("gh/Coin/get_.text_002bc114.cpp","// Nom démêlé : Coin::get\n// Symbole manglé : get\n// void __thiscall Coin::get(Coin *this); @ .text::002bc114\n\n\n/* Coin::get() */\n\nvoid __thiscall Coin::get(Coin *this)\n\n{\n  al::startHitReaction((LiveActor *)this,(char *)0x1926cdd);\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1db5bb8);\n  return;\n}\n\n");

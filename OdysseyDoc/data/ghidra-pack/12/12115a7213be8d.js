@@ -1,0 +1,1 @@
+DOC.got("gh/YukimaruStateHack/exeCancel_.text_004f3e7c.cpp","// Nom démêlé : YukimaruStateHack::exeCancel\n// Symbole manglé : exeCancel\n// void YukimaruStateHack::exeCancel(void); @ .text::004f3e7c\n\n\n/* YukimaruStateHack::exeCancel() */\n\nvoid YukimaruStateHack::exeCancel(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/wslay_event_get_close_received.cpp","// Nom démêlé : wslay_event_get_close_received\n// Symbole manglé : wslay_event_get_close_received\n// byte wslay_event_get_close_received(long param_1); @ .text::007a232c\n\n\nbyte wslay_event_get_close_received(long param_1)\n\n{\n  return *(byte *)(param_1 + 0x11) & 1;\n}\n\n");

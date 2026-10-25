@@ -1,0 +1,1 @@
+DOC.got("gh/rs/onCollide2D.cpp","// Nom démêlé : rs::onCollide2D\n// Symbole manglé : onCollide2D\n// void rs::onCollide2D(Collider2D3D *param_1); @ .text::0064e720\n\n\n/* rs::onCollide2D(Collider2D3D*) */\n\nvoid rs::onCollide2D(Collider2D3D *param_1)\n\n{\n  *param_1 = (Collider2D3D)0x1;\n  ColliderDisk::onInvalidate(*(ColliderDisk **)(param_1 + 0x10));\n  return;\n}\n\n");

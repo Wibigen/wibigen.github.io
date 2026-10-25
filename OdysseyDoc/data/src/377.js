@@ -1,0 +1,1 @@
+DOC.got("src/377","#pragma once\n\nnamespace al {\nclass AudioKeeper;\n\nclass IUseAudioKeeper {\npublic:\n    virtual AudioKeeper* getAudioKeeper() const = 0;\n};\n}  // namespace al\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/ByamlWriterBigData/calcBigDataSize.cpp","// Nom démêlé : al::ByamlWriterBigData::calcBigDataSize\n// Symbole manglé : calcBigDataSize\n// undefined8 al::ByamlWriterBigData::calcBigDataSize(void); @ .text::00b32af8\n\n\n/* al::ByamlWriterBigData::calcBigDataSize() const */\n\nundefined8 al::ByamlWriterBigData::calcBigDataSize(void)\n\n{\n  return 8;\n}\n\n");

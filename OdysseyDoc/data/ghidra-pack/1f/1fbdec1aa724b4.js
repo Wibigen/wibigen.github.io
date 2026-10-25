@@ -1,0 +1,1 @@
+DOC.got("gh/sead/DateSpan/DateSpan.cpp","// Nom démêlé : sead::DateSpan::DateSpan\n// Symbole manglé : DateSpan\n// void __thiscall sead::DateSpan::DateSpan(DateSpan *this,long param_1); @ .text::00871888\n\n\n/* sead::DateSpan::DateSpan(long) */\n\nvoid __thiscall sead::DateSpan::DateSpan(DateSpan *this,long param_1)\n\n{\n  *(long *)this = param_1;\n  return;\n}\n\n");

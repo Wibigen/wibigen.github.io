@@ -1,0 +1,1 @@
+DOC.got("gh/ImomuPartsController/getJointCtrlNum.cpp","// Nom démêlé : ImomuPartsController::getJointCtrlNum\n// Symbole manglé : getJointCtrlNum\n// undefined8 ImomuPartsController::getJointCtrlNum(void); @ .text::00223e1c\n\n\n/* ImomuPartsController::getJointCtrlNum() */\n\nundefined8 ImomuPartsController::getJointCtrlNum(void)\n\n{\n  return 0xf;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/SystemClock/Reset_.text_00720c8c.cpp","// Nom démêlé : nn::nex::SystemClock::Reset\n// Symbole manglé : Reset\n// void nn::nex::SystemClock::Reset(void); @ .text::00720c8c\n\n\n/* nn::nex::SystemClock::Reset() */\n\nvoid nn::nex::SystemClock::Reset(void)\n\n{\n  *PTR_s_bInitialized_01f58468 = 0;\n  return;\n}\n\n");

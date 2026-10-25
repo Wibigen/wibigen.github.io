@@ -1,0 +1,1 @@
+DOC.got("gh/SimpleLayoutMenu/exeEndWait_.text_0030ab2c.cpp","// Nom démêlé : SimpleLayoutMenu::exeEndWait\n// Symbole manglé : exeEndWait\n// void SimpleLayoutMenu::exeEndWait(void); @ .text::0030ab2c\n\n\n/* SimpleLayoutMenu::exeEndWait() */\n\nvoid SimpleLayoutMenu::exeEndWait(void)\n\n{\n  return;\n}\n\n");

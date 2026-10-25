@@ -1,0 +1,1 @@
+DOC.got("gh/HackCap/recordCapJump.cpp","// Nom démêlé : HackCap::recordCapJump\n// Symbole manglé : recordCapJump\n// void HackCap::recordCapJump(PlayerWallActionHistory *param_1); @ .text::004fd9f4\n\n\n/* HackCap::recordCapJump(PlayerWallActionHistory*) */\n\nvoid HackCap::recordCapJump(PlayerWallActionHistory *param_1)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/Coin2D/exeWait_.text_002bd5d8.cpp","// Nom démêlé : Coin2D::exeWait\n// Symbole manglé : exeWait\n// void Coin2D::exeWait(void); @ .text::002bd5d8\n\n\n/* Coin2D::exeWait() */\n\nvoid Coin2D::exeWait(void)\n\n{\n  return;\n}\n\n");

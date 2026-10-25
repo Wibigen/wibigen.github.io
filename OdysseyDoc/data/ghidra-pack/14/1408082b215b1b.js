@@ -1,0 +1,1 @@
+DOC.got("gh/wslay_event_set_error.cpp","// Nom démêlé : wslay_event_set_error\n// Symbole manglé : wslay_event_set_error\n// void wslay_event_set_error(long param_1,undefined4 param_2); @ .text::007a22a4\n\n\nvoid wslay_event_set_error(long param_1,undefined4 param_2)\n\n{\n  *(undefined4 *)(param_1 + 0x70) = param_2;\n  return;\n}\n\n");

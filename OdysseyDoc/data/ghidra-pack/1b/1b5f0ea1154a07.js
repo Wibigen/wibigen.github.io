@@ -1,0 +1,1 @@
+DOC.got("gh/sead/PerformanceMgrNx/initialize_.text_008328f0.cpp","// Nom démêlé : sead::PerformanceMgrNx::initialize\n// Symbole manglé : initialize\n// void sead::PerformanceMgrNx::initialize(void); @ .text::008328f0\n\n\n/* sead::PerformanceMgrNx::initialize() */\n\nvoid sead::PerformanceMgrNx::initialize(void)\n\n{\n  (*(code *)PTR_Initialize_01f4e0d8)();\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/rs/getPlayerActor.cpp","// Nom démêlé : rs::getPlayerActor\n// Symbole manglé : getPlayerActor\n// void rs::getPlayerActor(Scene *param_1); @ .text::005d2d48\n\n\n/* rs::getPlayerActor(al::Scene const*) */\n\nvoid rs::getPlayerActor(Scene *param_1)\n\n{\n  al::getPlayerActor(*(PlayerHolder **)(*(long *)(param_1 + 0x90) + 0x98),0);\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("src/833","#pragma once\n\n#include \"Library/Model/ModelDrawerBase.h\"\n\nnamespace al {\n\nclass ModelDrawerBufferUpdate : public ModelDrawerBase {\npublic:\n    ModelDrawerBufferUpdate(const char* name);\n\n    void draw() const override;\n    void createTable() override;\n};\n\nstatic_assert(sizeof(ModelDrawerBufferUpdate) == 0x50);\n\n}  // namespace al\n");

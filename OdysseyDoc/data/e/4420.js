@@ -1,0 +1,1 @@
+DOC.got("e/4420",{"354":{"q":"(anonymous@src/Item/DotCharacterRare)::(anonymous)","decl":{"f":"src/Item/DotCharacterRare.cpp","l":11,"sig":"NERVES_MAKE_STRUCT(DotCharacterRare, PopUp)","end":11,"fi":1711},"size":8,"align":8,"complete":true,"fields":[{"n":"PopUp","t":"DotCharacterRareNrvPopUp","off":0,"sz":8,"acc":"public","bits":null,"l":11,"cm":null,"ti":1242}]}});

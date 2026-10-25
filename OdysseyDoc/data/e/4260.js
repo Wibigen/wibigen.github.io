@@ -1,0 +1,1 @@
+DOC.got("e/4260",{"34052":{"q":"nn::time::TimeZoneRule","decl":{"f":"lib/NintendoSDK/include/nn/time.h","l":74,"sig":"struct TimeZoneRule","fi":189},"complete":false,"fwd":[["lib/NintendoSDK/include/nn/time.h",74]]}});

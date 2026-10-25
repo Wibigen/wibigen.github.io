@@ -1,0 +1,1 @@
+DOC.got("gh/al/isExistModel.cpp","// Nom démêlé : al::isExistModel\n// Symbole manglé : isExistModel\n// bool al::isExistModel(LiveActor *param_1); @ .text::009df670\n\n\n/* al::isExistModel(al::LiveActor const*) */\n\nbool al::isExistModel(LiveActor *param_1)\n\n{\n  return *(long *)(param_1 + 0x88) != 0;\n}\n\n");

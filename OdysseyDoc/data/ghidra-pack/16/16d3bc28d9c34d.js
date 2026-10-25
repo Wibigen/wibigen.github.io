@@ -1,0 +1,1 @@
+DOC.got("gh/sead/UnitHeap/getSize_.text_00c5d248.cpp","// Nom démêlé : sead::UnitHeap::getSize\n// Symbole manglé : getSize\n// undefined8 __thiscall sead::UnitHeap::getSize(UnitHeap *this); @ .text::00c5d248\n\n\n/* sead::UnitHeap::getSize() const */\n\nundefined8 __thiscall sead::UnitHeap::getSize(UnitHeap *this)\n\n{\n  return *(undefined8 *)(this + 0x40);\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/ParameterS32/getParamTypeStr_.text_003d5f7c.cpp","// Nom démêlé : al::ParameterS32::getParamTypeStr\n// Symbole manglé : getParamTypeStr\n// void al::ParameterS32::getParamTypeStr(void); @ .text::003d5f7c\n\n\n/* al::ParameterS32::getParamTypeStr() const */\n\nvoid al::ParameterS32::getParamTypeStr(void)\n\n{\n  YamlParamType::text_(3);\n  return;\n}\n\n");

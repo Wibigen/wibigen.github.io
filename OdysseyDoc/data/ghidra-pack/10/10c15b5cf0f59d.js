@@ -1,0 +1,1 @@
+DOC.got("gh/al/isCollidedWall_.text_009d8738.cpp","// Nom démêlé : al::isCollidedWall\n// Symbole manglé : isCollidedWall\n// bool al::isCollidedWall(LiveActor *param_1); @ .text::009d8738\n\n\n/* al::isCollidedWall(al::LiveActor const*) */\n\nbool al::isCollidedWall(LiveActor *param_1)\n\n{\n  return 0.0 <= *(float *)(*(long *)(param_1 + 0x78) + 0x1b8);\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("e/4196",{"33710":{"q":"nn::os::SemaphoreType","decl":{"f":"lib/NintendoSDK/include/nn/os.h","l":53,"sig":"struct SemaphoreType","end":55,"fi":163},"size":40,"align":8,"complete":true,"fields":[{"n":"storage","t":"std::aligned_storage_t<40, 8>","off":0,"sz":40,"acc":"public","bits":null,"l":54,"cm":null,"ti":null}]}});

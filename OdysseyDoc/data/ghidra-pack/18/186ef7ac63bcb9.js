@@ -1,0 +1,1 @@
+DOC.got("gh/YoshiTongue/isExistEatBind.cpp","// Nom démêlé : YoshiTongue::isExistEatBind\n// Symbole manglé : isExistEatBind\n// bool __thiscall YoshiTongue::isExistEatBind(YoshiTongue *this); @ .text::005a1c4c\n\n\n/* YoshiTongue::isExistEatBind() const */\n\nbool __thiscall YoshiTongue::isExistEatBind(YoshiTongue *this)\n\n{\n  return *(int *)(this + 0x180) != 0;\n}\n\n");

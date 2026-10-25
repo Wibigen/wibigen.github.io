@@ -1,0 +1,1 @@
+DOC.got("gh/al/GridMeshXZ/getLodNum.cpp","// Nom démêlé : al::GridMeshXZ::getLodNum\n// Symbole manglé : getLodNum\n// undefined4 __thiscall al::GridMeshXZ::getLodNum(GridMeshXZ *this); @ .text::00b76c58\n\n\n/* al::GridMeshXZ::getLodNum() const */\n\nundefined4 __thiscall al::GridMeshXZ::getLodNum(GridMeshXZ *this)\n\n{\n  return *(undefined4 *)(this + 0xc);\n}\n\n");

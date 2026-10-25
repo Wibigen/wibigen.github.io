@@ -1,0 +1,1 @@
+DOC.got("gh/HackCap/endHackShineGetDemo.cpp","// Nom démêlé : HackCap::endHackShineGetDemo\n// Symbole manglé : endHackShineGetDemo\n// void HackCap::endHackShineGetDemo(void); @ .text::004fddbc\n\n\n/* HackCap::endHackShineGetDemo() */\n\nvoid HackCap::endHackShineGetDemo(void)\n\n{\n  return;\n}\n\n");

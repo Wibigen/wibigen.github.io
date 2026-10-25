@@ -1,0 +1,1 @@
+DOC.got("src/392","#pragma once\n\nnamespace al {\nclass AudioDirector;\nclass BgmDataBase;\nstruct BgmUserInfo;\n}  // namespace al\n\nnamespace alBgmFunction {\nal::BgmUserInfo* tryFindBgmUserInfo(const al::BgmDataBase*, const char*);\n}\n");

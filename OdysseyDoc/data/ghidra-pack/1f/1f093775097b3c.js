@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerRecoder/exeWait_.text_004af220.cpp","// Nom démêlé : PlayerRecoder::exeWait\n// Symbole manglé : exeWait\n// void PlayerRecoder::exeWait(void); @ .text::004af220\n\n\n/* PlayerRecoder::exeWait() */\n\nvoid PlayerRecoder::exeWait(void)\n\n{\n  return;\n}\n\n");

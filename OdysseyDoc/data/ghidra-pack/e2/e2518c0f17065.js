@@ -1,0 +1,1 @@
+DOC.got("gh/RaceTimeFunction/getRaceTimeMaxFrame.cpp","// Nom démêlé : RaceTimeFunction::getRaceTimeMaxFrame\n// Symbole manglé : getRaceTimeMaxFrame\n// undefined8 RaceTimeFunction::getRaceTimeMaxFrame(void); @ .text::006bf0cc\n\n\n/* RaceTimeFunction::getRaceTimeMaxFrame() */\n\nundefined8 RaceTimeFunction::getRaceTimeMaxFrame(void)\n\n{\n  return 0x34bbf;\n}\n\n");

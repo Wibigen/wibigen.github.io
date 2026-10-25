@@ -1,0 +1,1 @@
+DOC.got("src/311","#pragma once\n\n#include \"environment/aglEnvObj.h\"\n\nnamespace agl::pfx {\n\n// TODO\nclass DepthOfFieldObj : public env::EnvObj {\npublic:\n    static const env::TypeInfo* sTypeInfo;\n};\n\n}  // namespace agl::pfx\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/getLodLevel_.text_00a4f610.cpp","// Nom démêlé : al::getLodLevel\n// Symbole manglé : getLodLevel\n// void al::getLodLevel(ModelKeeper *param_1); @ .text::00a4f610\n\n\n/* al::getLodLevel(al::ModelKeeper const*) */\n\nvoid al::getLodLevel(ModelKeeper *param_1)\n\n{\n  ModelCtrl::getLodLevel(*(ModelCtrl **)(param_1 + 0x10));\n  return;\n}\n\n");

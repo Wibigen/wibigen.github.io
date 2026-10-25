@@ -1,0 +1,1 @@
+DOC.got("gh/sead/DebugFontMgrJis1Nvn/getEncoding.cpp","// Nom démêlé : sead::DebugFontMgrJis1Nvn::getEncoding\n// Symbole manglé : getEncoding\n// undefined8 sead::DebugFontMgrJis1Nvn::getEncoding(void); @ .text::00839128\n\n\n/* sead::DebugFontMgrJis1Nvn::getEncoding() const */\n\nundefined8 sead::DebugFontMgrJis1Nvn::getEncoding(void)\n\n{\n  return 2;\n}\n\n");

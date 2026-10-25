@@ -1,0 +1,1 @@
+DOC.got("gh/BlockBrick/control_.text_0031beb8.cpp","// Nom démêlé : BlockBrick::control\n// Symbole manglé : control\n// void BlockBrick::control(void); @ .text::0031beb8\n\n\n/* BlockBrick::control() */\n\nvoid BlockBrick::control(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/SphinxRideMiniGameNpc/control_.text_004d9eb8.cpp","// Nom démêlé : SphinxRideMiniGameNpc::control\n// Symbole manglé : control\n// void SphinxRideMiniGameNpc::control(void); @ .text::004d9eb8\n\n\n/* SphinxRideMiniGameNpc::control() */\n\nvoid SphinxRideMiniGameNpc::control(void)\n\n{\n  return;\n}\n\n");

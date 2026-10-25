@@ -1,0 +1,1 @@
+DOC.got("e/5427",{"47595":{"q":"sead::Ray","decl":{"f":"lib/sead/include/gfx/seadCamera.h","l":13,"sig":"template <typename T>\nclass Ray","fi":1360},"tp":["typename T"],"complete":false,"fwd":[["lib/sead/include/gfx/seadCamera.h",13],["lib/sead/include/gfx/seadProjection.h",15],["lib/sead/include/gfx/seadViewport.h",10]]}});

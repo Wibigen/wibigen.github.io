@@ -1,0 +1,1 @@
+DOC.got("src/103","#pragma once\n\n#include <nn/gfx/detail/gfx_Misc.h>\n#include <nn/nn_BitTypes.h>\n\nnamespace nn::gfx {\n\ntemplate <class TTarget>\nstruct RootSignatureImplData {\n    Bit8 state;\n    char reserved[3];\n    uint32_t memorySize;\n    detail::Ptr<void> pWorkMemory;\n};\n\n}  // namespace nn::gfx");

@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Job/SetToSuspended.cpp","// Nom démêlé : nn::nex::Job::SetToSuspended\n// Symbole manglé : SetToSuspended\n// void __thiscall nn::nex::Job::SetToSuspended(Job *this); @ .text::00736e2c\n\n\n/* nn::nex::Job::SetToSuspended() */\n\nvoid __thiscall nn::nex::Job::SetToSuspended(Job *this)\n\n{\n  *(undefined4 *)(this + 0x40) = 2;\n  return;\n}\n\n");

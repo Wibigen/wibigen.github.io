@@ -1,0 +1,1 @@
+DOC.got("e/5359",{"46742":{"q":"sead::NinFileDeviceBase::FileHandleInner","acc":"protected","decl":{"f":"lib/sead/include/filedevice/nin/seadNinFileDeviceBaseNin.h","l":17,"sig":"struct FileHandleInner","fi":1332},"complete":false,"fwd":[["lib/sead/include/filedevice/nin/seadNinFileDeviceBaseNin.h",17]]}});

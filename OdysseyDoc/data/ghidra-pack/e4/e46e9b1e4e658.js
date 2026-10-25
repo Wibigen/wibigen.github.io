@@ -1,0 +1,1 @@
+DOC.got("gh/al/RaceJudge/validateUpdate.cpp","// Nom démêlé : al::RaceJudge::validateUpdate\n// Symbole manglé : validateUpdate\n// void __thiscall al::RaceJudge::validateUpdate(RaceJudge *this); @ .text::00b702d8\n\n\n/* al::RaceJudge::validateUpdate() */\n\nvoid __thiscall al::RaceJudge::validateUpdate(RaceJudge *this)\n\n{\n  this[0x62] = (RaceJudge)0x1;\n  return;\n}\n\n");

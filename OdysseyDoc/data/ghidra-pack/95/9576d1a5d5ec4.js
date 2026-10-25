@@ -1,0 +1,1 @@
+DOC.got("gh/TimeBalloon/isGotBalloon.cpp","// Nom démêlé : TimeBalloon::isGotBalloon\n// Symbole manglé : isGotBalloon\n// bool TimeBalloon::isGotBalloon(BalloonData *param_1); @ .text::0045e918\n\n\n/* TimeBalloon::isGotBalloon(TimeBalloon::BalloonData const&) */\n\nbool TimeBalloon::isGotBalloon(BalloonData *param_1)\n\n{\n  return 0 < *(long *)(param_1 + 0x48);\n}\n\n");

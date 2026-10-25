@@ -1,0 +1,1 @@
+DOC.got("gh/FukanKunInteractionEmpty/setUp_.text_0048a3c4.cpp","// Nom démêlé : FukanKunInteractionEmpty::setUp\n// Symbole manglé : setUp\n// void FukanKunInteractionEmpty::setUp(FlyObject *param_1); @ .text::0048a3c4\n\n\n/* FukanKunInteractionEmpty::setUp(FlyObject*) */\n\nvoid FukanKunInteractionEmpty::setUp(FlyObject *param_1)\n\n{\n  return;\n}\n\n");

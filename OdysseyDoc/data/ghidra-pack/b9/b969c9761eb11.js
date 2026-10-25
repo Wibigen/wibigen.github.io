@@ -1,0 +1,1 @@
+DOC.got("gh/RaceManShell/control_.text_004b929c.cpp","// Nom démêlé : RaceManShell::control\n// Symbole manglé : control\n// void RaceManShell::control(void); @ .text::004b929c\n\n\n/* RaceManShell::control() */\n\nvoid RaceManShell::control(void)\n\n{\n  return;\n}\n\n");

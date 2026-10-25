@@ -1,0 +1,1 @@
+DOC.got("gh/al/ByamlWriterArray/isArray_.text_00b32b7c.cpp","// Nom démêlé : al::ByamlWriterArray::isArray\n// Symbole manglé : isArray\n// undefined8 al::ByamlWriterArray::isArray(void); @ .text::00b32b7c\n\n\n/* al::ByamlWriterArray::isArray() const */\n\nundefined8 al::ByamlWriterArray::isArray(void)\n\n{\n  return 1;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/sead/Thread/yield.cpp","// Nom démêlé : sead::Thread::yield\n// Symbole manglé : yield\n// void sead::Thread::yield(void); @ .text::0085abb4\n\n\n/* sead::Thread::yield() */\n\nvoid sead::Thread::yield(void)\n\n{\n  (*(code *)PTR_YieldThread_01f4da38)();\n  return;\n}\n\n");

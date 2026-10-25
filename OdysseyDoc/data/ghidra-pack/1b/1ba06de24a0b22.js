@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/NgsBridgeImp/IsConnected_.text_00be51b4.cpp","// Nom démêlé : nn::nex::NgsBridgeImp::IsConnected\n// Symbole manglé : IsConnected\n// void nn::nex::NgsBridgeImp::IsConnected(void); @ .text::00be51b4\n\n\n/* nn::nex::NgsBridgeImp::IsConnected() const */\n\nvoid nn::nex::NgsBridgeImp::IsConnected(void)\n\n{\n  BackEndServices::IsConnected();\n  return;\n}\n\n");

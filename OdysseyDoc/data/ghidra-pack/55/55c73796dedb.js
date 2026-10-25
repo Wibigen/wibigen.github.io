@@ -1,0 +1,1 @@
+DOC.got("gh/al/AudioEffectCtrlPerBus/finalize_.text_00913a28.cpp","// Nom démêlé : al::AudioEffectCtrlPerBus::finalize\n// Symbole manglé : finalize\n// void al::AudioEffectCtrlPerBus::finalize(void); @ .text::00913a28\n\n\n/* al::AudioEffectCtrlPerBus::finalize() */\n\nvoid al::AudioEffectCtrlPerBus::finalize(void)\n\n{\n  return;\n}\n\n");

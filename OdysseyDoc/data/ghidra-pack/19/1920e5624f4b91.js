@@ -1,0 +1,1 @@
+DOC.got("gh/RotateTarget/control_.text_003ffcb0.cpp","// Nom démêlé : RotateTarget::control\n// Symbole manglé : control\n// void RotateTarget::control(void); @ .text::003ffcb0\n\n\n/* RotateTarget::control() */\n\nvoid RotateTarget::control(void)\n\n{\n  return;\n}\n\n");

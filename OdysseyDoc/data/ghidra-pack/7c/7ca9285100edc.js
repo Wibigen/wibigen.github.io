@@ -1,0 +1,1 @@
+DOC.got("gh/agl/DisplayList/suspend.cpp","// Nom démêlé : agl::DisplayList::suspend\n// Symbole manglé : suspend\n// undefined8 agl::DisplayList::suspend(void **param_1); @ .text::00879f54\n\n\n/* agl::DisplayList::suspend(void**) */\n\nundefined8 agl::DisplayList::suspend(void **param_1)\n\n{\n  *param_1 = (void *)0x0;\n  return 0;\n}\n\n");

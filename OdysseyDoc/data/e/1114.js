@@ -1,0 +1,1 @@
+DOC.got("e/1114",{"16841":{"q":"al::ActionPadAndCameraInfo","decl":{"f":"lib/al/Project/Action/ActionPadAndCameraCtrl.h","l":6,"sig":"class ActionPadAndCameraInfo","fi":1152},"complete":false,"fwd":[["lib/al/Project/Action/ActionPadAndCameraCtrl.h",6]]}});

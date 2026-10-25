@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerJudgeSafetyPointRecovery/reset_.text_0055b01c.cpp","// Nom démêlé : PlayerJudgeSafetyPointRecovery::reset\n// Symbole manglé : reset\n// void PlayerJudgeSafetyPointRecovery::reset(void); @ .text::0055b01c\n\n\n/* PlayerJudgeSafetyPointRecovery::reset() */\n\nvoid PlayerJudgeSafetyPointRecovery::reset(void)\n\n{\n  return;\n}\n\n");

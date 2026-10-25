@@ -1,0 +1,1 @@
+DOC.got("gh/curl_easy_cleanup.cpp","// Nom démêlé : curl_easy_cleanup\n// Symbole manglé : curl_easy_cleanup\n// void curl_easy_cleanup(long param_1); @ .text::007f8b20\n\n\nvoid curl_easy_cleanup(long param_1)\n\n{\n  if (param_1 != 0) {\n    Curl_close();\n    return;\n  }\n  return;\n}\n\n");

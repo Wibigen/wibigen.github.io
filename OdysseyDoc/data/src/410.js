@@ -1,0 +1,1 @@
+DOC.got("src/410","#include \"Library/Camera/CameraFlagCtrl.h\"\n\nnamespace al {\n\nCameraFlagCtrl::CameraFlagCtrl() = default;\n\n}  // namespace al\n");

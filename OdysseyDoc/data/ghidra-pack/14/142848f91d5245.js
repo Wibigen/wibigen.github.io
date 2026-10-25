@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/RootTransport/GetRouter.cpp","// Nom démêlé : nn::nex::RootTransport::GetRouter\n// Symbole manglé : GetRouter\n// undefined8 nn::nex::RootTransport::GetRouter(void); @ .text::007644a4\n\n\n/* nn::nex::RootTransport::GetRouter() */\n\nundefined8 nn::nex::RootTransport::GetRouter(void)\n\n{\n  return 0;\n}\n\n");

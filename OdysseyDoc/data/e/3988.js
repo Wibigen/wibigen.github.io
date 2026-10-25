@@ -1,0 +1,1 @@
+DOC.got("e/3988",{"32897":{"q":"nn::gfx::detail::DepthStencilStateImpl","decl":{"f":"lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h","l":200,"sig":"template <typename TTarget>\nclass DepthStencilStateImpl","fi":51},"tp":["typename TTarget"],"derived":[32335],"complete":false,"fwd":[["lib/NintendoSDK/include/nn/gfx/detail/gfx_Fwd.h",200]]}});

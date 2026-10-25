@@ -1,0 +1,1 @@
+DOC.got("gh/al/exponentIn.cpp","// Nom démêlé : al::exponentIn\n// Symbole manglé : exponentIn\n// float al::exponentIn(float param_1,float param_2); @ .text::00a20d60\n\n\n/* al::exponentIn(float, float) */\n\nfloat al::exponentIn(float param_1,float param_2)\n\n{\n  float fVar1;\n  \n  fVar1 = exp2f((param_1 + -1.0) * param_2);\n  return fVar1 * param_1;\n}\n\n");

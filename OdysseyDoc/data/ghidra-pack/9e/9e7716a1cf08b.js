@@ -1,0 +1,1 @@
+DOC.got("gh/rs/getStickerList.cpp","// Nom démêlé : rs::getStickerList\n// Symbole manglé : getStickerList\n// long rs::getStickerList(long param_1); @ .text::0064cc30\n\n\n/* rs::getStickerList(GameDataHolderAccessor) */\n\nlong rs::getStickerList(long param_1)\n\n{\n  return param_1 + 0x140;\n}\n\n");

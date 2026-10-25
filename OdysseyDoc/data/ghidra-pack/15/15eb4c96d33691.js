@@ -1,0 +1,1 @@
+DOC.got("gh/BalloonFindMyBalloonDummyHolder/prepare_.text_00452f6c.cpp","// Nom démêlé : BalloonFindMyBalloonDummyHolder::prepare\n// Symbole manglé : prepare\n// void BalloonFindMyBalloonDummyHolder::prepare(void); @ .text::00452f6c\n\n\n/* BalloonFindMyBalloonDummyHolder::prepare() */\n\nvoid BalloonFindMyBalloonDummyHolder::prepare(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/sead/TaskBase/onDestroy.cpp","// Nom démêlé : sead::TaskBase::onDestroy\n// Symbole manglé : onDestroy\n// void __thiscall sead::TaskBase::onDestroy(TaskBase *this); @ .text::006394c4\n\n\n/* sead::TaskBase::onDestroy() */\n\nvoid __thiscall sead::TaskBase::onDestroy(TaskBase *this)\n\n{\n  *(uint *)(this + 0x60) = *(uint *)(this + 0x60) | 4;\n  return;\n}\n\n");

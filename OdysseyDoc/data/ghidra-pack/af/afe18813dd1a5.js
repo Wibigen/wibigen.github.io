@@ -1,0 +1,1 @@
+DOC.got("gh/al/Scene/control_.text_00603fbc.cpp","// Nom démêlé : al::Scene::control\n// Symbole manglé : control\n// void al::Scene::control(void); @ .text::00603fbc\n\n\n/* al::Scene::control() */\n\nvoid al::Scene::control(void)\n\n{\n  return;\n}\n\n");

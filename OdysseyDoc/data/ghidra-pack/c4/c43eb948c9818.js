@@ -1,0 +1,1 @@
+DOC.got("gh/al/LiveActor/init_.text_00104c24.cpp","// Nom démêlé : al::LiveActor::init\n// Symbole manglé : init\n// void al::LiveActor::init(ActorInitInfo *param_1); @ .text::00104c24\n\n\n/* al::LiveActor::init(al::ActorInitInfo const&) */\n\nvoid al::LiveActor::init(ActorInitInfo *param_1)\n\n{\n  return;\n}\n\n");

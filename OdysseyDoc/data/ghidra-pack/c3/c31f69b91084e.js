@@ -1,0 +1,1 @@
+DOC.got("gh/nn/g3d/AnimObj/AnimObj.cpp","// Nom démêlé : nn::g3d::AnimObj::~AnimObj\n// Symbole manglé : ~AnimObj\n// void __thiscall nn::g3d::AnimObj::~AnimObj(AnimObj *this); @ .text::00c17df8\n\n\n/* nn::g3d::AnimObj::~AnimObj() */\n\nvoid __thiscall nn::g3d::AnimObj::~AnimObj(AnimObj *this)\n\n{\n  return;\n}\n\n");

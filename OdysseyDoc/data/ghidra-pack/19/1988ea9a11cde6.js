@@ -1,0 +1,1 @@
+DOC.got("gh/agl/env/EnvObj/update_.text_00cd2814.cpp","// Nom démêlé : agl::env::EnvObj::update\n// Symbole manglé : update\n// void agl::env::EnvObj::update(void); @ .text::00cd2814\n\n\n/* agl::env::EnvObj::update() */\n\nvoid agl::env::EnvObj::update(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/Killer2D/exeAppear_.text_00247624.cpp","// Nom démêlé : Killer2D::exeAppear\n// Symbole manglé : exeAppear\n// void __thiscall Killer2D::exeAppear(Killer2D *this); @ .text::00247624\n\n\n/* Killer2D::exeAppear() */\n\nvoid __thiscall Killer2D::exeAppear(Killer2D *this)\n\n{\n  al::setNerveAtActionEnd((LiveActor *)this,(Nerve *)0x1d9b7d8);\n  return;\n}\n\n");

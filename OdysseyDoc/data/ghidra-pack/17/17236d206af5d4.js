@@ -1,0 +1,1 @@
+DOC.got("gh/al/ByamlWriterContainer/addNull_.text_00b32b34.cpp","// Nom démêlé : al::ByamlWriterContainer::addNull\n// Symbole manglé : addNull\n// void al::ByamlWriterContainer::addNull(void); @ .text::00b32b34\n\n\n/* al::ByamlWriterContainer::addNull() */\n\nvoid al::ByamlWriterContainer::addNull(void)\n\n{\n  return;\n}\n\n");

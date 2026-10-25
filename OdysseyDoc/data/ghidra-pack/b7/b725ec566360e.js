@@ -1,0 +1,1 @@
+DOC.got("gh/agl/fx/OfxBase/initialize_.text_00ccd26c.cpp","// Nom démêlé : agl::fx::OfxBase::initialize\n// Symbole manglé : initialize\n// int agl::fx::OfxBase::initialize(int param_1,Heap *param_2); @ .text::00ccd26c\n\n\n/* agl::fx::OfxBase::initialize(int, sead::Heap*) */\n\nint agl::fx::OfxBase::initialize(int param_1,Heap *param_2)\n\n{\n  return param_1;\n}\n\n");

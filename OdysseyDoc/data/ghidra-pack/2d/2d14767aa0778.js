@@ -1,0 +1,1 @@
+DOC.got("gh/BombTail/offCap.cpp","// Nom démêlé : BombTail::offCap\n// Symbole manglé : offCap\n// void __thiscall BombTail::offCap(BombTail *this); @ .text::0010db4c\n\n\n/* BombTail::offCap() */\n\nvoid __thiscall BombTail::offCap(BombTail *this)\n\n{\n  this[0x110] = (BombTail)0x0;\n  BombTailCap::disappear(*(BombTailCap **)(this + 0x118));\n  return;\n}\n\n");

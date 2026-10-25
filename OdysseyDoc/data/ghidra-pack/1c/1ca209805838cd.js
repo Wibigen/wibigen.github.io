@@ -1,0 +1,1 @@
+DOC.got("gh/al/GraphicsSystemInfo/cancelLerp.cpp","// Nom démêlé : al::GraphicsSystemInfo::cancelLerp\n// Symbole manglé : cancelLerp\n// void al::GraphicsSystemInfo::cancelLerp(void); @ .text::009797b8\n\n\n/* al::GraphicsSystemInfo::cancelLerp() */\n\nvoid al::GraphicsSystemInfo::cancelLerp(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("src/2354","#pragma once\n\n#include \"Library/LiveActor/ActorFactory.h\"\n\nclass ProjectAppearSwitchFactory : public al::ActorFactory {\npublic:\n    ProjectAppearSwitchFactory();\n    const char* convertName(const char* name) const override;\n};\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/SouvenirDirector/exeWait_.text_00426a14.cpp","// Nom démêlé : SouvenirDirector::exeWait\n// Symbole manglé : exeWait\n// void SouvenirDirector::exeWait(void); @ .text::00426a14\n\n\n/* SouvenirDirector::exeWait() */\n\nvoid SouvenirDirector::exeWait(void)\n\n{\n  return;\n}\n\n");

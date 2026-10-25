@@ -1,0 +1,1 @@
+DOC.got("gh/al/DynamicTexAlloc/getAlloc.cpp","// Nom démêlé : al::DynamicTexAlloc::getAlloc\n// Symbole manglé : getAlloc\n// undefined8 al::DynamicTexAlloc::getAlloc(void); @ .text::00b09584\n\n\n/* al::DynamicTexAlloc::getAlloc() const */\n\nundefined8 al::DynamicTexAlloc::getAlloc(void)\n\n{\n  return *(undefined8 *)PTR_sInstance_01f54d30;\n}\n\n");

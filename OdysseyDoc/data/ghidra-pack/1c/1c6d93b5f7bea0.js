@@ -1,0 +1,1 @@
+DOC.got("gh/al/Triangle/getFaceNormal.cpp","// Nom démêlé : al::Triangle::getFaceNormal\n// Symbole manglé : getFaceNormal\n// Triangle * __thiscall al::Triangle::getFaceNormal(Triangle *this); @ .text::00950d6c\n\n\n/* al::Triangle::getFaceNormal() const */\n\nTriangle * __thiscall al::Triangle::getFaceNormal(Triangle *this)\n\n{\n  return this + 0x18;\n}\n\n");

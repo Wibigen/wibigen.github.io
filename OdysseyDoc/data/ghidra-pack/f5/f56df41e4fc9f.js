@@ -1,0 +1,1 @@
+DOC.got("gh/al/PointSpriteCursorHolder/getName_.text_00a91670.cpp","// Nom démêlé : al::PointSpriteCursorHolder::getName\n// Symbole manglé : getName\n// undefined8 al::PointSpriteCursorHolder::getName(void); @ .text::00a91670\n\n\n/* al::PointSpriteCursorHolder::getName() const */\n\nundefined8 al::PointSpriteCursorHolder::getName(void)\n\n{\n  return 0x196fd14;\n}\n\n");

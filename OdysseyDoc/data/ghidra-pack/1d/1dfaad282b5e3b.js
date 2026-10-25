@@ -1,0 +1,1 @@
+DOC.got("gh/Curl_set_dns_interface.cpp","// Nom démêlé : Curl_set_dns_interface\n// Symbole manglé : Curl_set_dns_interface\n// undefined8 Curl_set_dns_interface(void); @ .text::00810540\n\n\nundefined8 Curl_set_dns_interface(void)\n\n{\n  return 4;\n}\n\n");

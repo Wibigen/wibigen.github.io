@@ -1,0 +1,1 @@
+DOC.got("gh/al/isNearZero_.text_00a1f49c.cpp","// Nom démêlé : al::isNearZero\n// Symbole manglé : isNearZero\n// bool al::isNearZero(float param_1,float param_2); @ .text::00a1f49c\n\n\n/* al::isNearZero(float, float) */\n\nbool al::isNearZero(float param_1,float param_2)\n\n{\n  if (param_1 <= 0.0) {\n    param_1 = -param_1;\n  }\n  return param_1 < param_2;\n}\n\n");

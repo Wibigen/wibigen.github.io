@@ -1,0 +1,1 @@
+DOC.got("gh/al/getCurrentKeyQuat.cpp","// Nom démêlé : al::getCurrentKeyQuat\n// Symbole manglé : getCurrentKeyQuat\n// void al::getCurrentKeyQuat(KeyPoseKeeper *param_1); @ .text::009affcc\n\n\n/* al::getCurrentKeyQuat(al::KeyPoseKeeper const*) */\n\nvoid al::getCurrentKeyQuat(KeyPoseKeeper *param_1)\n\n{\n  KeyPoseKeeper::getCurrentKeyPose(param_1);\n  return;\n}\n\n");

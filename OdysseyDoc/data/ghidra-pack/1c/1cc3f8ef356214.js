@@ -1,0 +1,1 @@
+DOC.got("gh/BlockBrick2D/exeItemEmpty_.text_0031c7f4.cpp","// Nom démêlé : BlockBrick2D::exeItemEmpty\n// Symbole manglé : exeItemEmpty\n// void BlockBrick2D::exeItemEmpty(void); @ .text::0031c7f4\n\n\n/* BlockBrick2D::exeItemEmpty() */\n\nvoid BlockBrick2D::exeItemEmpty(void)\n\n{\n  return;\n}\n\n");

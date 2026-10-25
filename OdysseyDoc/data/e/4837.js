@@ -1,0 +1,1 @@
+DOC.got("e/4837",{"394":{"q":"(anonymous@src/MapObj/RouletteSwitch)::(anonymous)","decl":{"f":"src/MapObj/RouletteSwitch.cpp","l":21,"sig":"NERVES_MAKE_STRUCT(RouletteSwitch, Wait)","end":21,"fi":1958},"size":8,"align":8,"complete":true,"fields":[{"n":"Wait","t":"RouletteSwitchNrvWait","off":0,"sz":8,"acc":"public","bits":null,"l":21,"cm":null,"ti":2670}]}});

@@ -1,0 +1,1 @@
+DOC.got("gh/FooterParts/exeFadeOut.cpp","// Nom démêlé : FooterParts::exeFadeOut\n// Symbole manglé : exeFadeOut\n// void FooterParts::exeFadeOut(void); @ .text::002eb4d0\n\n\n/* FooterParts::exeFadeOut() */\n\nvoid FooterParts::exeFadeOut(void)\n\n{\n  return;\n}\n\n");

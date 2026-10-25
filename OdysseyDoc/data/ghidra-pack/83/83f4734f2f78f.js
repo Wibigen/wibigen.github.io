@@ -1,0 +1,1 @@
+DOC.got("gh/al/JointInfo/JointInfo.cpp","// Nom démêlé : al::JointInfo::JointInfo\n// Symbole manglé : JointInfo\n// void __thiscall al::JointInfo::JointInfo(JointInfo *this); @ .text::009ae000\n\n\n/* al::JointInfo::JointInfo() */\n\nvoid __thiscall al::JointInfo::JointInfo(JointInfo *this)\n\n{\n  *(undefined8 *)this = 0;\n  return;\n}\n\n");

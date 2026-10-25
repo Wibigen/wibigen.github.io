@@ -1,0 +1,1 @@
+DOC.got("gh/al/ByamlWriterHash/isHash.cpp","// Nom démêlé : al::ByamlWriterHash::isHash\n// Symbole manglé : isHash\n// undefined8 al::ByamlWriterHash::isHash(void); @ .text::00b32b38\n\n\n/* al::ByamlWriterHash::isHash() const */\n\nundefined8 al::ByamlWriterHash::isHash(void)\n\n{\n  return 1;\n}\n\n");

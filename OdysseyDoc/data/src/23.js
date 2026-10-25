@@ -1,0 +1,1 @@
+DOC.got("src/23","#pragma once\n\n#include <nn/fs/fs_types.h>\n\nnamespace nn::fs {\n\nResult MountBcatSaveData(const char*, ApplicationId);\nResult CreateBcatSaveData(ApplicationId, s64);\n\n}  // namespace nn::fs\n");

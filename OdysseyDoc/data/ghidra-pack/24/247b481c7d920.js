@@ -1,0 +1,1 @@
+DOC.got("gh/PaintObjHolder/getSceneObjName_.text_003dcbf8.cpp","// Nom démêlé : PaintObjHolder::getSceneObjName\n// Symbole manglé : getSceneObjName\n// undefined8 PaintObjHolder::getSceneObjName(void); @ .text::003dcbf8\n\n\n/* PaintObjHolder::getSceneObjName() const */\n\nundefined8 PaintObjHolder::getSceneObjName(void)\n\n{\n  return 0x1935782;\n}\n\n");

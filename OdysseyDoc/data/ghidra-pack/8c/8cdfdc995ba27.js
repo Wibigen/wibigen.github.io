@@ -1,0 +1,1 @@
+DOC.got("gh/TRex/getHoldJumpStartUpSpeed.cpp","// Nom démêlé : TRex::getHoldJumpStartUpSpeed\n// Symbole manglé : getHoldJumpStartUpSpeed\n// undefined1  [16] TRex::getHoldJumpStartUpSpeed(void); @ .text::00298aec\n\n\n/* TRex::getHoldJumpStartUpSpeed() */\n\nundefined1  [16] TRex::getHoldJumpStartUpSpeed(void)\n\n{\n  return ZEXT816(0x41800000);\n}\n\n");

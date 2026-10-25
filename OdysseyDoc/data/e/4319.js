@@ -1,0 +1,1 @@
+DOC.got("e/4319",{"34551":{"q":"nn::util::Float2::(anonymous)","acc":"public","decl":{"f":"lib/NintendoSDK/include/nn/util/MathTypes.h","l":30,"sig":"union","end":36,"fi":200},"size":8,"align":4,"complete":true,"fields":[{"n":"v","t":"f32[2]","off":0,"sz":8,"acc":"public","bits":null,"l":31,"cm":null,"ti":30838}]}});

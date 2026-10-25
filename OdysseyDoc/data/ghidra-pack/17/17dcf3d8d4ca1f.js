@@ -1,0 +1,1 @@
+DOC.got("gh/InformAfterGameClearScene/exeShopMoon.cpp","// Nom démêlé : InformAfterGameClearScene::exeShopMoon\n// Symbole manglé : exeShopMoon\n// void InformAfterGameClearScene::exeShopMoon(void); @ .text::005aae48\n\n\n/* InformAfterGameClearScene::exeShopMoon() */\n\nvoid InformAfterGameClearScene::exeShopMoon(void)\n\n{\n  return;\n}\n\n");

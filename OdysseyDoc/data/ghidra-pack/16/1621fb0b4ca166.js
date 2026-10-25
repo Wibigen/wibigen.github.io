@@ -1,0 +1,1 @@
+DOC.got("gh/GolemClimb/endShout_.text_001751b0.cpp","// Nom démêlé : GolemClimb::endShout\n// Symbole manglé : endShout\n// void __thiscall GolemClimb::endShout(GolemClimb *this); @ .text::001751b0\n\n\n/* non-virtual thunk to GolemClimb::endShout() */\n\nvoid __thiscall GolemClimb::endShout(GolemClimb *this)\n\n{\n  return;\n}\n\n");

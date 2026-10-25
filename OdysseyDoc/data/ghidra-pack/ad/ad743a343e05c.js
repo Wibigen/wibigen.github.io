@@ -1,0 +1,1 @@
+DOC.got("gh/agl/utl/ParameterBase/isBinary.cpp","// Nom démêlé : agl::utl::ParameterBase::isBinary\n// Symbole manglé : isBinary\n// undefined8 agl::utl::ParameterBase::isBinary(void); @ .text::00608c88\n\n\n/* agl::utl::ParameterBase::isBinary() const */\n\nundefined8 agl::utl::ParameterBase::isBinary(void)\n\n{\n  return 0;\n}\n\n");

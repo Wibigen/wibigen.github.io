@@ -1,0 +1,1 @@
+DOC.got("gh/CarryMeat/drop.cpp","// Nom démêlé : CarryMeat::drop\n// Symbole manglé : drop\n// void __thiscall CarryMeat::drop(CarryMeat *this); @ .text::001f043c\n\n\n/* CarryMeat::drop() */\n\nvoid __thiscall CarryMeat::drop(CarryMeat *this)\n\n{\n  *(undefined8 *)(this + 0x150) = 0;\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1d893d8);\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/CurlMallocCallback.cpp","// Nom démêlé : nn::nex::CurlMallocCallback\n// Symbole manglé : CurlMallocCallback\n// void nn::nex::CurlMallocCallback(ulong param_1); @ .text::007b0774\n\n\n/* nn::nex::CurlMallocCallback(unsigned long) */\n\nvoid nn::nex::CurlMallocCallback(ulong param_1)\n\n{\n  nn::mem::StandardAllocator::Allocate(0x2572008);\n  return;\n}\n\n");

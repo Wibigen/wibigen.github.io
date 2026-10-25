@@ -1,0 +1,1 @@
+DOC.got("e/4086",{"33325":{"q":"nn::hid::SixAxisSensorHandle::(anonymous)","acc":"public","decl":{"f":"lib/NintendoSDK/include/nn/hid.h","l":476,"sig":"union","end":483,"fi":133},"size":4,"align":4,"complete":true,"fields":[{"n":"typeValue","t":"u32","off":0,"sz":4,"acc":"public","bits":null,"l":477,"cm":null,"ti":49376}]}});

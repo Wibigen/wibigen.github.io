@@ -1,0 +1,1 @@
+DOC.got("src/2329","#pragma once\n\n#include \"Library/Nerve/NerveStateBase.h\"\n\nclass PlayerStateWait : public al::ActorStateBase {\npublic:\n    bool isEnableCancelAction() const;\n    bool isSleep() const;\n\nprivate:\n    u8 padding[0xE8 - sizeof(al::ActorStateBase)];\n};\n");

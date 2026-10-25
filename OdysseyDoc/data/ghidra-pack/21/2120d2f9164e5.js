@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerActorBase/init_.text_0044f87c.cpp","// Nom démêlé : PlayerActorBase::init\n// Symbole manglé : init\n// void PlayerActorBase::init(ActorInitInfo *param_1); @ .text::0044f87c\n\n\n/* PlayerActorBase::init(al::ActorInitInfo const&) */\n\nvoid PlayerActorBase::init(ActorInitInfo *param_1)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/sead/ExpHeap/getSize_.text_00841ce4.cpp","// Nom démêlé : sead::ExpHeap::getSize\n// Symbole manglé : getSize\n// undefined8 __thiscall sead::ExpHeap::getSize(ExpHeap *this); @ .text::00841ce4\n\n\n/* sead::ExpHeap::getSize() const */\n\nundefined8 __thiscall sead::ExpHeap::getSize(ExpHeap *this)\n\n{\n  return *(undefined8 *)(this + 0x40);\n}\n\n");

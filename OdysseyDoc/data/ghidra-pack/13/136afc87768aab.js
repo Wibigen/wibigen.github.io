@@ -1,0 +1,1 @@
+DOC.got("gh/CounterLifeCtrl/end_.text_002e6254.cpp","// Nom démêlé : CounterLifeCtrl::end\n// Symbole manglé : end\n// void __thiscall CounterLifeCtrl::end(CounterLifeCtrl *this); @ .text::002e6254\n\n\n/* CounterLifeCtrl::end() */\n\nvoid __thiscall CounterLifeCtrl::end(CounterLifeCtrl *this)\n\n{\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1dc4bc8);\n  return;\n}\n\n");

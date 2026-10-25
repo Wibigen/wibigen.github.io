@@ -1,0 +1,1 @@
+DOC.got("gh/HardIconParts/startHide.cpp","// Nom démêlé : HardIconParts::startHide\n// Symbole manglé : startHide\n// void __thiscall HardIconParts::startHide(HardIconParts *this); @ .text::002edc34\n\n\n/* HardIconParts::startHide() */\n\nvoid __thiscall HardIconParts::startHide(HardIconParts *this)\n\n{\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1dc7a18);\n  return;\n}\n\n");

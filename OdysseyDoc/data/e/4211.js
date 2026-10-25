@@ -1,0 +1,1 @@
+DOC.got("e/4211",{"33796":{"q":"nn::os::detail::MultiWaitObjectList","decl":{"f":"lib/NintendoSDK/include/nn/os/os_EventTypes.h","l":10,"sig":"class MultiWaitObjectList","fi":172},"complete":false,"fwd":[["lib/NintendoSDK/include/nn/os/os_EventTypes.h",10],["lib/NintendoSDK/include/nn/os/os_MessageQueueTypes.h",10],["lib/NintendoSDK/include/nn/os/os_ThreadTypes.h",21]]}});

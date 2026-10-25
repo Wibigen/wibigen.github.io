@@ -1,0 +1,1 @@
+DOC.got("src/741","#include \"Library/LiveActor/LiveActorInfo.h\"\n\nnamespace al {\n\nSubActorInfo::SubActorInfo() = default;\n\n}\n");

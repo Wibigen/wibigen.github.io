@@ -1,0 +1,1 @@
+DOC.got("gh/nn/vfx/Primitive/GetBufferCount.cpp","// Nom démêlé : nn::vfx::Primitive::GetBufferCount\n// Symbole manglé : GetBufferCount\n// undefined8 nn::vfx::Primitive::GetBufferCount(void); @ .text::00c2fe14\n\n\n/* nn::vfx::Primitive::GetBufferCount() const */\n\nundefined8 nn::vfx::Primitive::GetBufferCount(void)\n\n{\n  return 1;\n}\n\n");

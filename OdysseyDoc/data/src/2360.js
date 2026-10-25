@@ -1,0 +1,1 @@
+DOC.got("src/2360","#pragma once\n\n#include \"Library/Event/EventFlowNodeFactory.h\"\n\nclass ProjectEventFlowNodeFactory : public al::EventFlowNodeFactory {\npublic:\n    ProjectEventFlowNodeFactory();\n};\n");

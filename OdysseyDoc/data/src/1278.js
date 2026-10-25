@@ -1,0 +1,1 @@
+DOC.got("src/1278","#pragma once\n\n#include <basis/seadTypes.h>\n\nnamespace al {\n\nclass SaveDataSequenceBase {\npublic:\n    SaveDataSequenceBase();\n\n    virtual s32 threadFunc(const char* fileName) = 0;\n};\n\nstatic_assert(sizeof(SaveDataSequenceBase) == 0x8);\n\n}  // namespace al\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/TitleMenuScene/control_.text_00605cc8.cpp","// Nom démêlé : TitleMenuScene::control\n// Symbole manglé : control\n// void TitleMenuScene::control(void); @ .text::00605cc8\n\n\n/* TitleMenuScene::control() */\n\nvoid TitleMenuScene::control(void)\n\n{\n  return;\n}\n\n");

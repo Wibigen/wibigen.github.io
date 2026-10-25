@@ -1,0 +1,1 @@
+DOC.got("src/304","#pragma once\n\n#include \"environment/aglEnvObjBuffer.h\"\n\nnamespace agl::env {\n\n// TODO\nclass EnvObjMgr {\npublic:\n    class InitArg : public EnvObjBuffer::AllocateArg {\n    public:\n        InitArg();\n\n    private:\n        u32 _20c = 0x100;\n        u32 _210 = 1;\n    };\n};\n\n}  // namespace agl::env\n");

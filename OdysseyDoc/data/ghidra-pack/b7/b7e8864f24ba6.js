@@ -1,0 +1,1 @@
+DOC.got("gh/al/getJoyPadSingleRightPort.cpp","// Nom démêlé : al::getJoyPadSingleRightPort\n// Symbole manglé : getJoyPadSingleRightPort\n// undefined8 al::getJoyPadSingleRightPort(void); @ .text::0095bf28\n\n\n/* al::getJoyPadSingleRightPort() */\n\nundefined8 al::getJoyPadSingleRightPort(void)\n\n{\n  return 1;\n}\n\n");

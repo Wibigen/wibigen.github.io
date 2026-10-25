@@ -1,0 +1,1 @@
+DOC.got("gh/al/TriangleDrawActor/end_.text_00a707d0.cpp","// Nom démêlé : al::TriangleDrawActor::end\n// Symbole manglé : end\n// void al::TriangleDrawActor::end(void); @ .text::00a707d0\n\n\n/* al::TriangleDrawActor::end() */\n\nvoid al::TriangleDrawActor::end(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("e/3613",{"30944":{"q":"nn::account::Nickname","decl":{"f":"lib/NintendoSDK/include/nn/account.h","l":13,"sig":"struct Nickname","end":15,"fi":0},"size":33,"align":1,"complete":true,"fields":[{"n":"m_Buffer","t":"char[33]","off":0,"sz":33,"acc":"public","tu":null,"bits":null,"l":14,"cm":null,"ti":null}]}});

@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/Job/SetToRunning.cpp","// Nom démêlé : nn::nex::Job::SetToRunning\n// Symbole manglé : SetToRunning\n// void __thiscall nn::nex::Job::SetToRunning(Job *this); @ .text::0073acd4\n\n\n/* nn::nex::Job::SetToRunning() */\n\nvoid __thiscall nn::nex::Job::SetToRunning(Job *this)\n\n{\n  *(undefined4 *)(this + 0x40) = 4;\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("src/2520","#pragma once\n\n#include <basis/seadTypes.h>\n\nnamespace al {\nclass LiveActor;\n}\n\nclass CapTargetInfo;\n\nnamespace PlayerCapFunction {\nbool isEnableBirdLandPlayerCapOn(const al::LiveActor*);\n}\n\nnamespace EventFlowFunction {\nbool isCapTargetHackType(const CapTargetInfo*, s32);\n}\n");

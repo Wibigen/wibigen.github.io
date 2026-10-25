@@ -1,0 +1,1 @@
+DOC.got("gh/GrowSeedUtil/getGuideLabelName.cpp","// Nom démêlé : GrowSeedUtil::getGuideLabelName\n// Symbole manglé : getGuideLabelName\n// undefined8 GrowSeedUtil::getGuideLabelName(void); @ .text::0039a510\n\n\n/* GrowSeedUtil::getGuideLabelName() */\n\nundefined8 GrowSeedUtil::getGuideLabelName(void)\n\n{\n  return 0x1932743;\n}\n\n");

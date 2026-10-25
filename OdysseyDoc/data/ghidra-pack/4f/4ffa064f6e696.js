@@ -1,0 +1,1 @@
+DOC.got("gh/MoviePlayer/isLooped.cpp","// Nom démêlé : MoviePlayer::isLooped\n// Symbole manglé : isLooped\n// undefined1 __thiscall MoviePlayer::isLooped(MoviePlayer *this); @ .text::006573b8\n\n\n/* MoviePlayer::isLooped() const */\n\nundefined1 __thiscall MoviePlayer::isLooped(MoviePlayer *this)\n\n{\n  return *(undefined1 *)(*(long *)(this + 0x28) + 0x2f3);\n}\n\n");

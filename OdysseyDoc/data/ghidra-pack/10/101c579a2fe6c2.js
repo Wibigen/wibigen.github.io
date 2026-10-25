@@ -1,0 +1,1 @@
+DOC.got("gh/CollectAnimal/endWalk.cpp","// Nom démêlé : CollectAnimal::endWalk\n// Symbole manglé : endWalk\n// void __thiscall CollectAnimal::endWalk(CollectAnimal *this); @ .text::0048423c\n\n\n/* CollectAnimal::endWalk() */\n\nvoid __thiscall CollectAnimal::endWalk(CollectAnimal *this)\n\n{\n  al::setSklAnimBlendFrameRateAll((LiveActor *)this,1.0,false);\n  return;\n}\n\n");

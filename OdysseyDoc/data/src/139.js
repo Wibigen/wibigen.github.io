@@ -1,0 +1,1 @@
+DOC.got("src/139","#pragma once\n\n#include <nn/irs/ClusteringData.h>\n#include <nn/types.h>\n\nnamespace nn::irsensor {\nstruct ClusteringProcessorState {\n    s64 samplingNumber;\n    s64 timeStamp;\n    u8 objectCount;\n    s32 ambientNoiseLevel;\n    ClusteringData data[16];\n};\n}  // namespace nn::irsensor\n");

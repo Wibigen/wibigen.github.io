@@ -1,0 +1,1 @@
+DOC.got("gh/Tank/enableShoot.cpp","// Nom démêlé : Tank::enableShoot\n// Symbole manglé : enableShoot\n// void __thiscall Tank::enableShoot(Tank *this); @ .text::00286df4\n\n\n/* Tank::enableShoot() */\n\nvoid __thiscall Tank::enableShoot(Tank *this)\n\n{\n  this[0x1ac] = (Tank)0x1;\n  return;\n}\n\n");

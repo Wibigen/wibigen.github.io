@@ -1,0 +1,1 @@
+DOC.got("e/4389",{"34953":{"q":"nn::vi::NativeWindow","decl":{"f":"lib/NintendoSDK/include/nn/vi.h","l":49,"sig":"class NativeWindow","fi":220},"complete":false,"fwd":[["lib/NintendoSDK/include/nn/vi.h",49]]}});

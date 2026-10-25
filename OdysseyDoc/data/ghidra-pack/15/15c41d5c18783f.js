@@ -1,0 +1,1 @@
+DOC.got("gh/GiantWanderBoss/exeStopBeforeBattle.cpp","// Nom démêlé : GiantWanderBoss::exeStopBeforeBattle\n// Symbole manglé : exeStopBeforeBattle\n// void GiantWanderBoss::exeStopBeforeBattle(void); @ .text::00162ba0\n\n\n/* GiantWanderBoss::exeStopBeforeBattle() */\n\nvoid GiantWanderBoss::exeStopBeforeBattle(void)\n\n{\n  return;\n}\n\n");

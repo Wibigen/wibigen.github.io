@@ -1,0 +1,1 @@
+DOC.got("gh/al/getDisplayWidth.cpp","// Nom démêlé : al::getDisplayWidth\n// Symbole manglé : getDisplayWidth\n// undefined8 al::getDisplayWidth(void); @ .text::00ad140c\n\n\n/* al::getDisplayWidth() */\n\nundefined8 al::getDisplayWidth(void)\n\n{\n  return 0x500;\n}\n\n");

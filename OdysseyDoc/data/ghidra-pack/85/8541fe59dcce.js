@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/OutputFormat/AddMessage.cpp","// Nom démêlé : nn::nex::OutputFormat::AddMessage\n// Symbole manglé : AddMessage\n// undefined8 nn::nex::OutputFormat::AddMessage(void); @ .text::007168c0\n\n\n/* nn::nex::OutputFormat::AddMessage(char*, unsigned int, char const*, std::__va_list) */\n\nundefined8 nn::nex::OutputFormat::AddMessage(void)\n\n{\n  return 0;\n}\n\n");

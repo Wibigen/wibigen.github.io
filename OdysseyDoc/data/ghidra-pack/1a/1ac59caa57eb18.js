@@ -1,0 +1,1 @@
+DOC.got("gh/sead/EnvUtil/printCurrentTime.cpp","// Nom démêlé : sead::EnvUtil::printCurrentTime\n// Symbole manglé : printCurrentTime\n// void sead::EnvUtil::printCurrentTime(void); @ .text::00c5f4ec\n\n\n/* sead::EnvUtil::printCurrentTime() */\n\nvoid sead::EnvUtil::printCurrentTime(void)\n\n{\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/alsd/AudioPlayer/finalize_.text_00b93044.cpp","// Nom démêlé : alsd::AudioPlayer::finalize\n// Symbole manglé : finalize\n// void alsd::AudioPlayer::finalize(void); @ .text::00b93044\n\n\n/* alsd::AudioPlayer::finalize() */\n\nvoid alsd::AudioPlayer::finalize(void)\n\n{\n  return;\n}\n\n");

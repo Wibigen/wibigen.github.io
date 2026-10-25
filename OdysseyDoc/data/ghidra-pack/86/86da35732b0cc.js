@@ -1,0 +1,1 @@
+DOC.got("gh/agl/pfx/Sky/preRead_.text_008bf858.cpp","// Nom démêlé : agl::pfx::Sky::preRead_\n// Symbole manglé : preRead_\n// undefined8 __thiscall agl::pfx::Sky::preRead_(Sky *this); @ .text::008bf858\n\n\n/* agl::pfx::Sky::preRead_() */\n\nundefined8 __thiscall agl::pfx::Sky::preRead_(Sky *this)\n\n{\n  *(undefined4 *)(this + 0x700) = 0xffffffff;\n  return 1;\n}\n\n");

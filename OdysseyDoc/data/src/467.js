@@ -1,0 +1,1 @@
+DOC.got("src/467","#include \"Library/Camera/CameraTicket.h\"\n\nnamespace al {\n\nCameraTicket::CameraTicket(CameraPoser* poser, const CameraTicketId* ticketId, s32 priority)\n    : mPoser(poser), mTicketId(ticketId), mPriority(priority) {}\n\nvoid CameraTicket::setPriority(s32 priority) {\n    mPriority = priority;\n}\n\n}  // namespace al\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/GridMeshXZ/calcVtxNum.cpp","// Nom démêlé : al::GridMeshXZ::calcVtxNum\n// Symbole manglé : calcVtxNum\n// int __thiscall al::GridMeshXZ::calcVtxNum(GridMeshXZ *this); @ .text::00b73c18\n\n\n/* al::GridMeshXZ::calcVtxNum() const */\n\nint __thiscall al::GridMeshXZ::calcVtxNum(GridMeshXZ *this)\n\n{\n  return *(int *)(this + 8) + 1;\n}\n\n");

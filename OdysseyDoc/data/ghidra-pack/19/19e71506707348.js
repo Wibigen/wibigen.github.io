@@ -1,0 +1,1 @@
+DOC.got("gh/al/getMaterialCount.cpp","// Nom démêlé : al::getMaterialCount\n// Symbole manglé : getMaterialCount\n// void al::getMaterialCount(LiveActor *param_1); @ .text::009e0950\n\n\n/* al::getMaterialCount(al::LiveActor const*) */\n\nvoid al::getMaterialCount(LiveActor *param_1)\n\n{\n  getMaterialCount(*(ModelKeeper **)(param_1 + 0x88));\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/TimeFlagTelop/close_.text_00439228.cpp","// Nom démêlé : TimeFlagTelop::close\n// Symbole manglé : close\n// void __thiscall TimeFlagTelop::close(TimeFlagTelop *this); @ .text::00439228\n\n\n/* TimeFlagTelop::close() */\n\nvoid __thiscall TimeFlagTelop::close(TimeFlagTelop *this)\n\n{\n  al::setNerve((IUseNerve *)this,(Nerve *)0x1e3d678);\n  return;\n}\n\n");

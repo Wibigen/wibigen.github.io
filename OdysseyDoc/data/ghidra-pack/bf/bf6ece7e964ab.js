@@ -1,0 +1,1 @@
+DOC.got("gh/al/endCameraPause.cpp","// Nom démêlé : al::endCameraPause\n// Symbole manglé : endCameraPause\n// void al::endCameraPause(PauseCameraCtrl *param_1); @ .text::00ad07a8\n\n\n/* al::endCameraPause(al::PauseCameraCtrl*) */\n\nvoid al::endCameraPause(PauseCameraCtrl *param_1)\n\n{\n  *param_1 = (PauseCameraCtrl)0x0;\n  return;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/al/getFireMaterialCode.cpp","// Nom démêlé : al::getFireMaterialCode\n// Symbole manglé : getFireMaterialCode\n// undefined8 al::getFireMaterialCode(LiveActor *param_1); @ .text::00a57a38\n\n\n/* al::getFireMaterialCode(al::LiveActor const*) */\n\nundefined8 al::getFireMaterialCode(LiveActor *param_1)\n\n{\n  return 0x19338cd;\n}\n\n");

@@ -1,0 +1,1 @@
+DOC.got("gh/Curl_nnssl_false_start.cpp","// Nom démêlé : Curl_nnssl_false_start\n// Symbole manglé : Curl_nnssl_false_start\n// undefined8 Curl_nnssl_false_start(void); @ .text::0081dd50\n\n\nundefined8 Curl_nnssl_false_start(void)\n\n{\n  return 0;\n}\n\n");

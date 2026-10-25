@@ -1,0 +1,1 @@
+DOC.got("gh/GotogotonFace/getEdge.cpp","// Nom démêlé : GotogotonFace::getEdge\n// Symbole manglé : getEdge\n// long __thiscall GotogotonFace::getEdge(GotogotonFace *this,int param_1); @ .text::0020934c\n\n\n/* GotogotonFace::getEdge(int) */\n\nlong __thiscall GotogotonFace::getEdge(GotogotonFace *this,int param_1)\n\n{\n  return *(long *)this + (long)param_1 * 0x20;\n}\n\n");

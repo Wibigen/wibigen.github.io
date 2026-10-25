@@ -1,0 +1,1 @@
+DOC.got("gh/al/CameraTargetBase/isClimbPole.cpp","// Nom démêlé : al::CameraTargetBase::isClimbPole\n// Symbole manglé : isClimbPole\n// undefined8 al::CameraTargetBase::isClimbPole(void); @ .text::001271a4\n\n\n/* al::CameraTargetBase::isClimbPole() const */\n\nundefined8 al::CameraTargetBase::isClimbPole(void)\n\n{\n  return 0;\n}\n\n");

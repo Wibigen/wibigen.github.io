@@ -1,0 +1,1 @@
+DOC.got("e/1260",{"17603":{"q":"al::AudioResourceDirector","decl":{"f":"lib/al/Library/Memory/HeapUtil.h","l":6,"sig":"class AudioResourceDirector","fi":823},"complete":false,"fwd":[["lib/al/Library/Memory/HeapUtil.h",6],["lib/al/Project/Memory/MemorySystem.h",9]]}});

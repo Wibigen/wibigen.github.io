@@ -1,0 +1,1 @@
+DOC.got("gh/Curl_sasl_build_spn.cpp","// Nom démêlé : Curl_sasl_build_spn\n// Symbole manglé : Curl_sasl_build_spn\n// void Curl_sasl_build_spn(undefined8 param_1,undefined8 param_2); @ .text::0081e08c\n\n\nvoid Curl_sasl_build_spn(undefined8 param_1,undefined8 param_2)\n\n{\n  curl_maprintf(0x195b8e1,param_1,param_2);\n  return;\n}\n\n");

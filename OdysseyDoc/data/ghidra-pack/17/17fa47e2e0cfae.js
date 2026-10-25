@@ -1,0 +1,1 @@
+DOC.got("gh/TimeBalloonInsertionLayout/exeWait_.text_003108c0.cpp","// Nom démêlé : TimeBalloonInsertionLayout::exeWait\n// Symbole manglé : exeWait\n// void TimeBalloonInsertionLayout::exeWait(void); @ .text::003108c0\n\n\n/* TimeBalloonInsertionLayout::exeWait() */\n\nvoid TimeBalloonInsertionLayout::exeWait(void)\n\n{\n  return;\n}\n\n");

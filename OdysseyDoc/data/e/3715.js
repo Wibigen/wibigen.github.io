@@ -1,0 +1,1 @@
+DOC.got("e/3715",{"31443":{"q":"nn::g3d::ICalculateWorldCallback::CallbackArg","acc":"public","decl":{"f":"lib/NintendoSDK/include/nn/g3d/World.h","l":10,"sig":"struct CallbackArg","fi":44},"complete":false,"fwd":[["lib/NintendoSDK/include/nn/g3d/World.h",10]]}});

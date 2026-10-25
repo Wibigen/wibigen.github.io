@@ -1,0 +1,1 @@
+DOC.got("e/5598",{"49264":{"q":"sead::hostio::PropertyEvent","decl":{"f":"lib/sead/include/hostio/seadHostIOEventListener.h","l":16,"sig":"class PropertyEvent","fi":1380},"complete":false,"fwd":[["lib/sead/include/heap/seadHeap.h",26],["lib/sead/include/hostio/seadHostIOEventListener.h",16],["lib/sead/include/time/seadCalendarTime.h",11]]}});

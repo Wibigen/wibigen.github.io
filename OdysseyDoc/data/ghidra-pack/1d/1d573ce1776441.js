@@ -1,0 +1,1 @@
+DOC.got("gh/TestMusaBlock/initAfterPlacement_.text_004355f8.cpp","// Nom démêlé : TestMusaBlock::initAfterPlacement\n// Symbole manglé : initAfterPlacement\n// void TestMusaBlock::initAfterPlacement(void); @ .text::004355f8\n\n\n/* TestMusaBlock::initAfterPlacement() */\n\nvoid TestMusaBlock::initAfterPlacement(void)\n\n{\n  return;\n}\n\n");

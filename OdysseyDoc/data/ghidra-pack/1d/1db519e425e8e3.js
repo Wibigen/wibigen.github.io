@@ -1,0 +1,1 @@
+DOC.got("gh/al/ISceneObj/ISceneObj.cpp","// Nom démêlé : al::ISceneObj::~ISceneObj\n// Symbole manglé : ~ISceneObj\n// void __thiscall al::ISceneObj::~ISceneObj(ISceneObj *this); @ .text::001035f4\n\n\n/* al::ISceneObj::~ISceneObj() */\n\nvoid __thiscall al::ISceneObj::~ISceneObj(ISceneObj *this)\n\n{\n  return;\n}\n\n");

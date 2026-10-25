@@ -1,0 +1,1 @@
+DOC.got("gh/HackerJudgeStartRun/reset_.text_0050ec54.cpp","// Nom démêlé : HackerJudgeStartRun::reset\n// Symbole manglé : reset\n// void HackerJudgeStartRun::reset(void); @ .text::0050ec54\n\n\n/* HackerJudgeStartRun::reset() */\n\nvoid HackerJudgeStartRun::reset(void)\n\n{\n  return;\n}\n\n");

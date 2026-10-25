@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/WorkerThreads/Initialize_.text_0074820c.cpp","// Nom démêlé : nn::nex::WorkerThreads::Initialize\n// Symbole manglé : Initialize\n// void nn::nex::WorkerThreads::Initialize(void); @ .text::0074820c\n\n\n/* nn::nex::WorkerThreads::Initialize() */\n\nvoid nn::nex::WorkerThreads::Initialize(void)\n\n{\n  return;\n}\n\n");

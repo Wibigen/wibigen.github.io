@@ -1,0 +1,1 @@
+DOC.got("gh/StageSceneLayout/exeShineCountAppear_.text_0030d2f0.cpp","// Nom démêlé : StageSceneLayout::exeShineCountAppear\n// Symbole manglé : exeShineCountAppear\n// void StageSceneLayout::exeShineCountAppear(void); @ .text::0030d2f0\n\n\n/* StageSceneLayout::exeShineCountAppear() */\n\nvoid StageSceneLayout::exeShineCountAppear(void)\n\n{\n  return;\n}\n\n");

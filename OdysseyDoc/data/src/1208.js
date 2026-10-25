@@ -1,0 +1,1 @@
+DOC.got("src/1208","#pragma once\n\nnamespace agl {\nclass DrawContext;\n}\n\nnamespace al {\nstruct ExecuteSystemInitInfo {\n    ExecuteSystemInitInfo();\n\n    agl::DrawContext* drawCtx = nullptr;\n};\n\nstatic_assert(sizeof(ExecuteSystemInitInfo) == 0x8);\n\n}  // namespace al\n");

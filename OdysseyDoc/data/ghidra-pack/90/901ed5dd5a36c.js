@@ -1,0 +1,1 @@
+DOC.got("gh/agl/pfx/FlareFilter/calcGPU_.text_00c97e64.cpp","// Nom démêlé : agl::pfx::FlareFilter::calcGPU\n// Symbole manglé : calcGPU\n// void agl::pfx::FlareFilter::calcGPU(void); @ .text::00c97e64\n\n\n/* agl::pfx::FlareFilter::calcGPU() const */\n\nvoid agl::pfx::FlareFilter::calcGPU(void)\n\n{\n  return;\n}\n\n");

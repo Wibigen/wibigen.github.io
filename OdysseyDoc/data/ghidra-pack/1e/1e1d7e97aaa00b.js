@@ -1,0 +1,1 @@
+DOC.got("gh/al/BgmLine/isFadeOut.cpp","// Nom démêlé : al::BgmLine::isFadeOut\n// Symbole manglé : isFadeOut\n// bool __thiscall al::BgmLine::isFadeOut(BgmLine *this); @ .text::009211ec\n\n\n/* al::BgmLine::isFadeOut() const */\n\nbool __thiscall al::BgmLine::isFadeOut(BgmLine *this)\n\n{\n  return *(int *)(this + 0x80) - 3U < 2;\n}\n\n");

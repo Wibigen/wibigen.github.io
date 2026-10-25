@@ -1,0 +1,1 @@
+DOC.got("gh/al/isPadExistDeviceSpeaker.cpp","// Nom démêlé : al::isPadExistDeviceSpeaker\n// Symbole manglé : isPadExistDeviceSpeaker\n// undefined8 al::isPadExistDeviceSpeaker(int param_1); @ .text::0096340c\n\n\n/* al::isPadExistDeviceSpeaker(int) */\n\nundefined8 al::isPadExistDeviceSpeaker(int param_1)\n\n{\n  return 0;\n}\n\n");

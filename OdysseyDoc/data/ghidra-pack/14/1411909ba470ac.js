@@ -1,0 +1,1 @@
+DOC.got("gh/al/isStep.cpp","// Nom démêlé : al::isStep\n// Symbole manglé : isStep\n// bool al::isStep(IUseNerve *param_1,int param_2); @ .text::00a59b88\n\n\n/* al::isStep(al::IUseNerve const*, int) */\n\nbool al::isStep(IUseNerve *param_1,int param_2)\n\n{\n  long lVar1;\n  \n  lVar1 = (*(code *)**(undefined8 **)param_1)();\n  return *(int *)(lVar1 + 0x18) == param_2;\n}\n\n");

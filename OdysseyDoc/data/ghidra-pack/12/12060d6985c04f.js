@@ -1,0 +1,1 @@
+DOC.got("gh/nn/atk/detail/driver/Bank/Bank_.text_00bcf648.cpp","// Nom démêlé : nn::atk::detail::driver::Bank::~Bank\n// Symbole manglé : ~Bank\n// void __thiscall nn::atk::detail::driver::Bank::~Bank(Bank *this); @ .text::00bcf648\n\n\n/* nn::atk::detail::driver::Bank::~Bank() */\n\nvoid __thiscall nn::atk::detail::driver::Bank::~Bank(Bank *this)\n\n{\n  return;\n}\n\n");

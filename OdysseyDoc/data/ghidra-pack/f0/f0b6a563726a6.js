@@ -1,0 +1,1 @@
+DOC.got("gh/eui/TagProcessor/getRubyCharSpace.cpp","// Nom démêlé : eui::TagProcessor::getRubyCharSpace_\n// Symbole manglé : getRubyCharSpace_\n// undefined1  [16] eui::TagProcessor::getRubyCharSpace_(void); @ .text::008fddb0\n\n\n/* eui::TagProcessor::getRubyCharSpace_() const */\n\nundefined1  [16] eui::TagProcessor::getRubyCharSpace_(void)\n\n{\n  return ZEXT816(0);\n}\n\n");

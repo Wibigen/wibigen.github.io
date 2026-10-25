@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/BandwidthCounter/Trace_.text_0070d0a8.cpp","// Nom démêlé : nn::nex::BandwidthCounter::Trace\n// Symbole manglé : Trace\n// void nn::nex::BandwidthCounter::Trace(ulong param_1); @ .text::0070d0a8\n\n\n/* nn::nex::BandwidthCounter::Trace(unsigned long) */\n\nvoid nn::nex::BandwidthCounter::Trace(ulong param_1)\n\n{\n  return;\n}\n\n");

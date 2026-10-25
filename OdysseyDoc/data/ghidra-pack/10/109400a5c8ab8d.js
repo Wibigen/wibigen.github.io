@@ -1,0 +1,1 @@
+DOC.got("gh/nn/nex/ByteStream/CanAppend_.text_00732a58.cpp","// Nom démêlé : nn::nex::ByteStream::CanAppend\n// Symbole manglé : CanAppend\n// undefined8 nn::nex::ByteStream::CanAppend(uint param_1); @ .text::00732a58\n\n\n/* nn::nex::ByteStream::CanAppend(unsigned int) const */\n\nundefined8 nn::nex::ByteStream::CanAppend(uint param_1)\n\n{\n  return 1;\n}\n\n");

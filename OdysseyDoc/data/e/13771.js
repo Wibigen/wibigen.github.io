@@ -1,0 +1,1 @@
+DOC.got("e/13771",{"119":{"q":"ams::dmnt::detail::result","files":["lib/NintendoSDK/include/vapours/results/dmnt_results.hpp"]}});

@@ -1,0 +1,1 @@
+DOC.got("gh/PlayerInput/isSpinInput.cpp","// Nom démêlé : PlayerInput::isSpinInput\n// Symbole manglé : isSpinInput\n// bool __thiscall PlayerInput::isSpinInput(PlayerInput *this); @ .text::0054da04\n\n\n/* PlayerInput::isSpinInput() const */\n\nbool __thiscall PlayerInput::isSpinInput(PlayerInput *this)\n\n{\n  return *(int *)(*(long *)(this + 0x70) + 0x28) != 0;\n}\n\n");
