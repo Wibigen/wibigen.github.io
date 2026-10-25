@@ -263,13 +263,12 @@ const P = (() => {
     const sig = args.map(a => a[0] + ' ' + a[1]).join(', ');
     const call = 'Orig(' + args.map(a => a[1]).join(', ') + ')';
     const sym = (b.lab || []).find(l => l.startsWith('_Z'));
-    let code = `// ${q} — offset ${U.hex(b.off)}\n// !! Offset valid for Super Mario Odyssey 1.0.0 ONLY !!\n`;
+    let code = `// ${q} — offset ${U.hex(b.off)}\n`;
     warn.forEach(w => code += `// WARNING: ${w}\n`);
-    code += `#include <exlaunch.hpp>\n${inc ? `#include ${inc}\n` : ''}\n`;
     code += `HOOK_DEFINE_TRAMPOLINE(${id}) {\n    static ${ret} Callback(${sig}) {\n`;
-    code += ret === 'void' ? `        // before\n        ${call};\n        // after\n` : `        // before\n        ${ret} result = ${call};\n        // after\n        return result;\n`;
-    code += `    }\n};\n\n// In exl_main(), after exl::hook::Initialize():\n//   ${id}::InstallAtOffset(${U.hex(b.off)});\n`;
-    if (sym) code += `// or look the symbol up at runtime instead of using the offset:\n//   ${id}::InstallAtSymbol("${sym}");\n`;
+    code += ret === 'void' ? `        ${call};\n` : `        ${ret} result = ${call};\n        return result;\n`;
+    code += `    }\n};\n\n//${id}::InstallAtOffset(${U.hex(b.off)});\n`;
+    if (sym) code += `//${id}::InstallAtSymbol("${sym}");\n`;
     if (bins.length > 1) code += `// Other entries for this function: ${bins.slice(1).map(x => U.hex(x.off) + (x.lab && x.lab[0] ? ' (' + x.lab[0] + ')' : '')).join(', ')}\n`;
     return code;
   }
