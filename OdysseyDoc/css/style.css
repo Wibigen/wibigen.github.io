@@ -389,3 +389,15 @@ tr.flash td { animation: flash 1.6s ease-out; }
 
 /* version warning (must come after .note.warn) */
 .note.ver-note { border-color: var(--accent); background: var(--accent-soft); color: var(--text); }
+
+/* VS Code extension download */
+.top-btn.vsc-btn { display: inline-flex; align-items: center; gap: 6px; color: #fff; background: #007acc; border-color: #007acc; font-weight: 600; }
+.top-btn.vsc-btn:hover { background: #0065a9; border-color: #0065a9; color: #fff; }
+.vsc-ico { font-size: 12px; line-height: 1; }
+.vsc-card { display: flex; align-items: center; gap: 14px; margin: 0 0 14px; padding: 12px 16px; border: 1px solid #007acc; border-radius: 10px; background: color-mix(in srgb, #007acc 8%, var(--bg-elev)); color: var(--text); }
+.vsc-card:hover { text-decoration: none; background: color-mix(in srgb, #007acc 15%, var(--bg-elev)); }
+.vsc-card > span:nth-child(2) { display: flex; flex-direction: column; gap: 2px; }
+.vsc-card-ico { width: 34px; height: 34px; flex: none; display: grid; place-items: center; border-radius: 8px; background: #007acc; color: #fff; font-size: 16px; }
+.vsc-card-go { margin-left: auto; font-weight: 600; color: #007acc; white-space: nowrap; }
+:root[data-theme="dark"] .vsc-card-go { color: #4fb3ff; }
+@media (max-width: 900px) { .top-btn.vsc-btn .vsc-txt { display: none; } }

@@ -263,12 +263,13 @@ const P = (() => {
     const sig = args.map(a => a[0] + ' ' + a[1]).join(', ');
     const call = 'Orig(' + args.map(a => a[1]).join(', ') + ')';
     const sym = (b.lab || []).find(l => l.startsWith('_Z'));
-    let code = `// ${q} — offset ${U.hex(b.off)}\n`;
+    let code = `// ${q} — offset ${U.hex(b.off)}\n// !! Offset valid for Super Mario Odyssey 1.0.0 ONLY !!\n`;
     warn.forEach(w => code += `// WARNING: ${w}\n`);
+    code += `#include <exlaunch.hpp>\n${inc ? `#include ${inc}\n` : ''}\n`;
     code += `HOOK_DEFINE_TRAMPOLINE(${id}) {\n    static ${ret} Callback(${sig}) {\n`;
-    code += ret === 'void' ? `        ${call};\n` : `        ${ret} result = ${call};\n        return result;\n`;
-    code += `    }\n};\n\n//${id}::InstallAtOffset(${U.hex(b.off)});\n`;
-    if (sym) code += `//${id}::InstallAtSymbol("${sym}");\n`;
+    code += ret === 'void' ? `        // before\n        ${call};\n        // after\n` : `        // before\n        ${ret} result = ${call};\n        // after\n        return result;\n`;
+    code += `    }\n};\n\n// In exl_main(), after exl::hook::Initialize():\n//   ${id}::InstallAtOffset(${U.hex(b.off)});\n`;
+    if (sym) code += `// or look the symbol up at runtime instead of using the offset:\n//   ${id}::InstallAtSymbol("${sym}");\n`;
     if (bins.length > 1) code += `// Other entries for this function: ${bins.slice(1).map(x => U.hex(x.off) + (x.lab && x.lab[0] ? ' (' + x.lab[0] + ')' : '')).join(', ')}\n`;
     return code;
   }
@@ -872,6 +873,7 @@ const P = (() => {
       Every class, function, method, enum, typedef, variable, macro and file has its own page.</p>
       <p class="small dim">Tip: <span class="kbd">Ctrl</span>+<span class="kbd">K</span> or <span class="kbd">/</span> to search. You can also search an address: <code>0x1ccff4</code>, <code>0x71001ccff4</code> or <code>.text::002ccff4</code>.</p></div>
       <div class="note warn ver-note"><b>All offsets and addresses on this site are for Super Mario Odyssey 1.0.0.</b> Functions move between versions, so they do not work on 1.1, 1.2 or 1.3.</div>
+      <a class="vsc-card" href="https://github.com/Wibigen/OdysseyDoc-VSCode/releases/" target="_blank" rel="noopener"><span class="vsc-card-ico">⬇</span><span><b>OdysseyDoc for VS Code</b><span class="small dim">Get this documentation inside your editor while you mod. Download the latest release on GitHub.</span></span><span class="vsc-card-go">Download ↗</span></a>
       <div class="cards">
         ${card(ncls, 'declared classes / structs', '#/classes')}
         ${card(kc.xclass || 0, 'classes inferred from binary', '#/classes')}
@@ -1033,6 +1035,7 @@ const P = (() => {
       ...Object.entries(m.subs || {}).map(([p, [r, v]]) => [esc(p), `<a target="_blank" rel="noopener" href="https://github.com/${r}/tree/${v}">${esc(r)}</a>`]),
       ['Method', 'Semantic analysis of every header and .cpp with libclang (types, parameters, field offsets, sizes), cross-referenced with <code>data/file_list.yml</code> (every function in the binary, with status) by demangled name, then with the Ghidra repository by address.'],
     ]))}
+    ${section('VS Code extension', '<p>The OdysseyDoc extension brings this documentation into Visual Studio Code. <a class="btn" href="https://github.com/Wibigen/OdysseyDoc-VSCode/releases/" target="_blank" rel="noopener">⬇ Download the latest release ↗</a></p>')}
     ${section('Game version', '<p><b>Super Mario Odyssey 1.0.0 only.</b> The decompilation targets 1.0.0, and every offset, address, size and instruction shown here comes from the 1.0.0 <code>main</code> executable. Do not use them on 1.1, 1.2 or 1.3: functions are at different offsets there.</p>')}
     ${section('Return types', kv(Object.values(RSRC).map(r => [`<span class="pill ${r[0]}">${r[0] === 'bad' ? '⚠ ' : ''}${r[1]}</span>`, esc(r[2])])))}
     ${section('Hook safety', '<p>exlaunch’s trampoline hook writes a single <code>B</code> over the first instruction when the callback is within ±128 MB (the normal case for SMO, whose <code>main</code> is ~12.5 MB), otherwise an absolute jump over the first 4–5 instructions. PC-relative instructions in the overwritten part (b, bl, b.cond, cbz/cbnz, tbz/tbnz, adr/adrp, ldr literal) are relocated into the trampoline. Real breakage comes from code branching back into the overwritten bytes, loops back to the entry, and functions shorter than the patch.</p><p>Size checks are always shown. Instruction-level checks need <code>generator/ghidra/ExportOdysseyDoc.java</code> run on your Ghidra project.</p>')}
