@@ -401,3 +401,5 @@ tr.flash td { animation: flash 1.6s ease-out; }
 .vsc-card-go { margin-left: auto; font-weight: 600; color: #007acc; white-space: nowrap; }
 :root[data-theme="dark"] .vsc-card-go { color: #4fb3ff; }
 @media (max-width: 900px) { .top-btn.vsc-btn .vsc-txt { display: none; } }
+
+.fw-tabs { margin-bottom: 10px; }

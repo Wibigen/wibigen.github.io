@@ -154,23 +154,59 @@ const P = (() => {
     return `<span class="pill ${r[0]}" title="${esc(r[2])}">${r[0] === 'bad' ? '⚠ ' : ''}${r[1]}</span>${short ? '' : ` <span class="small dim">${esc(r[2])}</span>`}`;
   }
 
+  // ---------------------------------------------------------------- hook frameworks
+  const FWS = { exlaunch: 'exlaunch', hakkun: 'Hakkun' };
+  let FW = 'exlaunch';
+  try { const f = localStorage.getItem('odoc-fw'); if (FWS[f]) FW = f; } catch (e) { }
+  function setFw(f) { FW = f; try { localStorage.setItem('odoc-fw', f); } catch (e) { } }
+
+  /** classifies an exported instruction [mnemonic, operands, pcRelative] */
+  function insKind(x) {
+    if (!x) return null;
+    const m = x[0].toLowerCase().replace(/^_/, ''), ops = (x[1] || '').trim().toLowerCase();
+    if (m === 'adr' || m === 'adrp') return 'adr';
+    if (m === 'b') return 'b';
+    if (m === 'bl') return 'bl';
+    if (m.startsWith('b.') || m === 'cbz' || m === 'cbnz' || m === 'tbz' || m === 'tbnz') return 'cond';
+    if (x[2] && m === 'ldr') return /^[wx](\d|zr)/.test(ops) ? 'ldrlit' : 'simdlit';
+    if (x[2] && m === 'ldrsw') return 'ldrswlit';
+    if (x[2] && m === 'prfm') return 'prfmlit';
+    return null;
+  }
+
   // ---------------------------------------------------------------- hook safety
-  /** Evaluates a binary entry for an exlaunch trampoline hook.
-   *  near = single B patch (callback within ±128 MB, the normal case for SMO's ~12.5 MB main)
-   *  far  = absolute jump patch (LDR X17 / BR X17 / address: 4–5 instructions, 16–20 bytes) */
-  function hookSafety(b) {
+  /** Evaluates a binary entry for a trampoline hook.
+   *  Both frameworks write a single B when the callback is within ±128 MB (always true for SMO's ~12.5 MB main).
+   *  exlaunch: out of range → absolute jump over 4–5 instructions; relocates b/bl/b.cond/cbz/tbz/adr/adrp/ldr literal.
+   *  Hakkun (LibHakkun hook/Trampoline.cpp): relocates adr/adrp/b/bl/b.cond/cbz/tbz (conditionals need
+   *  TRAMPOLINE_LEVEL ≥ 1 and must be the last overwritten instruction), aborts on LDR (literal),
+   *  copies other literal loads unrelocated. Out of range → only with TRAMPOLINE_LEVEL 2 (up to 5 instructions). */
+  function hookSafety(b, fw = FW) {
     const issues = [];
     const hk = b.hk;
-    if (b.thunk) issues.push({ lvl: 'warn', mode: 'both', t: 'This entry is a non-virtual thunk (this-pointer adjustor). Hooking it only catches calls made through this base-class view; hook the main entry instead.' });
-    if (b.sz < 20) issues.push({ lvl: 'bad', mode: 'far', t: `The function is only ${b.sz} bytes. An absolute-jump patch writes 16–20 bytes and would overwrite the start of the next function.` });
-    if (hk) {
-      if (hk.loop && hk.loop.length) issues.push({ lvl: 'bad', mode: 'both', t: `The function branches back to its own entry from inside (at ${hk.loop.map(x => U.hex(x)).join(', ')}). With a trampoline, every iteration re-enters your hook (nested calls, stack growth).` });
-      if (hk.into && hk.into.length) issues.push({ lvl: 'bad', mode: 'far', t: `Code branches into the bytes an absolute-jump patch overwrites: ${hk.into.map(([t, f]) => `${U.hex(f)} → ${U.hex(t)} (entry+${t - b.off})`).join(', ')}. Those branches would land in the middle of the patch.` });
-      const ins = hk.i || [];
-      if (ins[0] && ins[0][2]) issues.push({ lvl: 'warn', mode: 'near', t: `The first instruction (<code>${esc(ins[0][0] + ' ' + ins[0][1])}</code>) is PC-relative. exlaunch relocates it into the trampoline (b/bl/b.cond/cbz/tbz/adr/adrp/ldr literal are supported), so it normally works — but a literal load copies the value at hook time, and a hand-written trampoline would break.` });
-      const farPc = ins.slice(1, 5).map((x, k) => x[2] ? `#${k + 2} <code>${esc(x[0] + ' ' + x[1])}</code>` : null).filter(Boolean);
-      if (farPc.length) issues.push({ lvl: 'warn', mode: 'far', t: `PC-relative instruction(s) inside a 5-instruction patch: ${farPc.join(', ')}. exlaunch relocates them, but this is the classic place where trampolines break.` });
-      if (ins[0] && /^b$/i.test(ins[0][0])) issues.push({ lvl: 'info', mode: 'both', t: 'The function is a tail jump (<code>b</code>) to another function; consider hooking the target instead.' });
+    const ins = (hk && hk.i) || [];
+    const code = x => `<code>${esc(x[0] + ' ' + x[1])}</code>`;
+    if (b.thunk) issues.push({ lvl: 'warn', mode: 'both', t: 'Non-virtual thunk (this-pointer adjustor): hooking it only catches calls through this base-class view. Hook the main entry instead.' });
+    if (hk && hk.loop && hk.loop.length) issues.push({ lvl: 'bad', mode: 'both', t: `Branches back to its own entry from inside (at ${hk.loop.map(x => U.hex(x)).join(', ')}): every iteration would re-enter your hook.` });
+    if (hk && hk.into && hk.into.length) issues.push({ lvl: 'bad', mode: 'far', t: `Code branches into bytes a multi-instruction patch overwrites: ${hk.into.map(([t, f]) => `${U.hex(f)} → ${U.hex(t)} (entry+${t - b.off})`).join(', ')}.` });
+    if (b.sz < 20) issues.push({ lvl: 'bad', mode: 'far', t: `Only ${b.sz} bytes: a multi-instruction patch (up to 20 bytes) would overwrite the next function.` });
+    const k0 = insKind(ins[0]);
+    if (k0 === 'b') issues.push({ lvl: 'info', mode: 'both', t: 'Tail jump (<code>b</code>) to another function: consider hooking the target instead.' });
+    if (fw === 'hakkun') {
+      if (k0 === 'ldrlit') issues.push({ lvl: 'bad', mode: 'near', t: `First instruction ${code(ins[0])} is an LDR (literal): Hakkun aborts at install (“LDR(literal) not supported”).` });
+      else if (k0 === 'ldrswlit' || k0 === 'simdlit') issues.push({ lvl: 'bad', mode: 'near', t: `First instruction ${code(ins[0])} is a literal load Hakkun does not recognise: it is copied unrelocated, so <code>orig()</code> loads from the wrong address.` });
+      else if (k0 === 'cond') issues.push({ lvl: 'warn', mode: 'near', t: `First instruction ${code(ins[0])} is a conditional branch: relocated only with <code>TRAMPOLINE_LEVEL</code> ≥ 1 (the default). Level 0 does not support it.` });
+      else if (k0 === 'adr' || k0 === 'bl') issues.push({ lvl: 'info', mode: 'near', t: `First instruction ${code(ins[0])} is PC-relative; Hakkun relocates it.` });
+      ins.slice(0, 5).forEach((x, n) => {
+        const kk = insKind(x);
+        if (kk === 'ldrlit') issues.push({ lvl: 'bad', mode: 'far', t: `#${n + 1} ${code(x)}: LDR (literal) aborts the install if it falls inside the patch.` });
+        else if (kk === 'ldrswlit' || kk === 'simdlit') issues.push({ lvl: 'bad', mode: 'far', t: `#${n + 1} ${code(x)}: literal load copied unrelocated if it falls inside the patch.` });
+        else if ((kk === 'b' || kk === 'cond') && n < 4) issues.push({ lvl: 'bad', mode: 'far', t: `#${n + 1} ${code(x)}: a branch that is not the last overwritten instruction aborts the install (“cannot return from this situation”).` });
+      });
+    } else {
+      if (ins[0] && ins[0][2]) issues.push({ lvl: 'warn', mode: 'near', t: `First instruction ${code(ins[0])} is PC-relative. exlaunch relocates it into the trampoline, so it normally works (a literal load copies the value at hook time).` });
+      const farPc = ins.slice(1, 5).map((x, n) => x[2] ? `#${n + 2} ${code(x)}` : null).filter(Boolean);
+      if (farPc.length) issues.push({ lvl: 'warn', mode: 'far', t: `PC-relative instruction(s) inside the 5-instruction patch: ${farPc.join(', ')} (relocated by exlaunch).` });
     }
     const worst = mode => {
       const l = issues.filter(x => x.mode === mode || x.mode === 'both').map(x => x.lvl);
@@ -182,31 +218,36 @@ const P = (() => {
   }
   const HOOK_LABEL = { ok: ['s1', 'Safe to hook'], warn: ['s2', 'Hook with care'], bad: ['bad', 'Unsafe to hook'], unknown: ['', 'Not checked'] };
   function hookPill(v, prefix = '') { const l = HOOK_LABEL[v]; return `<span class="pill ${l[0]}">${prefix}${l[1]}</span>`; }
+  const mainBin = d => (d.bin || []).find(b => !b.thunk) || (d.bin || [])[0];
 
-  function hookSection(i, d) {
+  function hookSection(i, d, fw = FW) {
     const bins = (d.bin || []);
     if (!bins.length) return '';
+    const NEAR = '<span class="small dim">A single <code>B</code> over the first instruction (callback within ±128 MB — always the case for SMO’s ~12.5 MB main).</span>';
+    const FAR = fw === 'hakkun'
+      ? '<span class="small dim">Only with <code>TRAMPOLINE_LEVEL 2</code> and an out-of-range callback: up to 5 instructions overwritten.</span>'
+      : '<span class="small dim">Callback out of range: absolute jump over the first 4–5 instructions (16–20 bytes).</span>';
     let h = '';
     for (const b of bins) {
-      const r = hookSafety(b);
+      const r = hookSafety(b, fw);
       const lst = mode => r.issues.filter(x => x.mode === mode || x.mode === 'both').map(x => `<li class="hk-${x.lvl}">${x.t}</li>`).join('');
       const nearL = lst('near'), farL = lst('far');
       if (bins.length > 1) h += `<h3>Entry ${U.hex(b.off)}${b.thunk ? ' (thunk)' : ''}</h3>`;
       h += kv([
-        ['Normal case', `${hookPill(r.near)} <span class="small dim">exlaunch writes a single <code>B</code> over the first instruction (callback within ±128 MB — always the case for SMO’s ~12.5 MB main).</span>${nearL ? `<ul class="hk-list">${nearL}</ul>` : ''}`],
-        ['Fallback', `${hookPill(r.far)} <span class="small dim">If the callback is out of range, exlaunch writes an absolute jump over the first 4–5 instructions (16–20 bytes).</span>${farL ? `<ul class="hk-list">${farL}</ul>` : ''}`],
+        ['Normal case', `${hookPill(r.near)} ${NEAR}${nearL ? `<ul class="hk-list">${nearL}</ul>` : ''}`],
+        ['Fallback', `${hookPill(r.far)} ${FAR}${farL ? `<ul class="hk-list">${farL}</ul>` : ''}`],
         ['Size', `${U.num(b.sz)} bytes`],
       ]);
       if (b.hk && b.hk.i && b.hk.i.length) {
         h += `<table class="t hk-ins"><thead><tr><th>#</th><th>Offset</th><th>Instruction</th><th>PC-relative</th><th>Overwritten</th></tr></thead><tbody>${b.hk.i.map((x, k) =>
           `<tr><td class="num">${k + 1}</td><td class="num">${U.hex(b.off + 4 * k)}</td><td class="m">${esc(x[0])} ${esc(x[1])}</td><td>${x[2] ? '<span class="pill s2">yes</span>' : '<span class="dim">no</span>'}</td><td class="small">${k === 0 ? 'normal + fallback' : k < 5 ? 'fallback only' : '—'}</td></tr>`).join('')}</tbody></table>`;
       }
-      if (!r.checked) h += `<div class="note">Instruction-level checks (PC-relative instructions, branches into the patch, loops back to the entry) need data from your Ghidra project: run <code>generator/ghidra/ExportOdysseyDoc.java</code>, then rebuild with <code>--ghidra-export</code>. Only the size check is shown here.</div>`;
+      if (!r.checked) h += `<div class="note">Instruction-level checks (first instruction, branches into the patch, loops back to the entry) need data from your Ghidra project: run <code>generator/ghidra/ExportOdysseyDoc.java</code>, then rebuild with <code>--ghidra-export</code>.</div>`;
     }
     return h;
   }
 
-  // ---------------------------------------------------------------- HOOK_DEFINE_TRAMPOLINE template
+  // ---------------------------------------------------------------- hook templates (exlaunch / Hakkun)
   const GH_TYPES = { void: 'void', undefined: 'u8', undefined1: 'u8', undefined2: 'u16', undefined4: 'u32', undefined8: 'u64',
     bool: 'bool', byte: 'u8', uchar: 'u8', char: 'char', ushort: 'u16', short: 's16', uint: 'u32', int: 's32',
     ulong: 'u64', long: 's64', ulonglong: 'u64', longlong: 's64', float: 'f32', double: 'f64' };
@@ -223,14 +264,21 @@ const P = (() => {
     }
     return null;
   }
-  function includeFor(path) {
-    if (!path) return null;
-    if (path.startsWith('src/')) return `"${path.slice(4)}"`;
-    if (path.startsWith('lib/al/')) return `"${path.slice(7)}"`;
-    const m = path.match(/^lib\/(?:sead|agl|eui|NintendoSDK|NintendoSDK-NEX)\/include\/(.*)$/);
+  /** include path with OdysseyHeaders: the exlaunch base adds al/ and game/ to the include path,
+   *  Hakkun-Example includes from the headers root ("game/...", "al/...", <sead/...>). */
+  function includeFor(path, fw) {
+    if (!path || path.endsWith('.cpp')) return null;
+    if (path.startsWith('src/')) return `"${fw === 'hakkun' ? 'game/' : ''}${path.slice(4)}"`;
+    if (path.startsWith('lib/al/')) return `"${fw === 'hakkun' ? 'al/' : ''}${path.slice(7)}"`;
+    let m = path.match(/^lib\/sead\/include\/(.*)$/);
+    if (m) return `<${fw === 'hakkun' ? 'sead/' : ''}${m[1]}>`;
+    m = path.match(/^lib\/agl\/include\/(.*)$/);
+    if (m) return `"${fw === 'hakkun' ? 'agl/' : ''}${m[1]}"`;
+    m = path.match(/^lib\/(?:eui|NintendoSDK|NintendoSDK-NEX)\/include\/(.*)$/);
     return m ? `<${m[1]}>` : null;
   }
-  function hookTemplate(i, d) {
+  /** Everything both templates need: name, return type, arguments, warnings. */
+  function hookSig(i, d) {
     const bins = (d.bin || []).filter(b => !b.thunk);
     if (!bins.length) return null;
     const b = bins[0], k = IX.kind(i), fl = d.flags || [];
@@ -238,40 +286,57 @@ const P = (() => {
     const owner = q.endsWith('::' + name) ? q.slice(0, q.length - name.length - 2) : null;
     const p = IX.parent(i);
     const isMember = owner && p !== null && CLS.has(IX.kind(p)) && !fl.includes('static') && k !== 'sym';
+    const hctx = HL.ctxFromEntity(i);
     const warn = [];
     let ret;
-    const hctx = HL.ctxFromEntity(i);
     if (k === 'ctor' || k === 'dtor') ret = 'void';
     else if (d.ret) ret = HL.qualify(d.ret, hctx).replace(/\s+([*&])/g, '$1');
-    else {
-      const g = ghidraTypeToCpp(d.gret);
-      ret = g || 'u64';
-      warn.push(`return type GUESSED${d.gret ? ` (Ghidra: ${d.gret})` : ''} — verify before shipping`);
-    }
-    if (d.rsrc === 'declared') warn.push('return type declared in the decomp but not verified (function not decompiled yet)');
+    else { ret = ghidraTypeToCpp(d.gret) || 'u64'; warn.push(`return type guessed${d.gret ? ` (Ghidra: ${d.gret})` : ''}`); }
     const args = [];
-    if (isMember) args.push([(fl.includes('const') ? 'const ' : '') + owner + '*', 'self']);
-    (d.params || []).forEach((x, n) => args.push([HL.qualify(x[0], hctx).replace(/\s+([*&])/g, '$1'), (x[1] || 'arg' + n).replace(/^(this|self)$/, '$1_')]));
-    if (fl.includes('variadic')) warn.push('variadic function: Orig() cannot forward the "..." arguments');
-    if (k === 'sym') warn.push('no C++ signature known: fill in the parameters from the Ghidra pseudo-code');
-    const r = hookSafety(b);
-    if (r.near === 'bad') warn.push('hook safety: UNSAFE (see "Hook safety" on this page)');
-    else if (r.near === 'warn') warn.push('hook safety: check the warnings in "Hook safety" on this page');
+    // types in an anonymous namespace cannot be named outside their .cpp: use void*
+    const local = t => /\(anonymous@/.test(t);
+    if (isMember) {
+      if (local(owner)) warn.push('class is local to its .cpp: self is void*');
+      args.push([(fl.includes('const') ? 'const ' : '') + (local(owner) ? 'void' : owner) + '*', 'self']);
+    }
+    (d.params || []).forEach((x, n) => {
+      const t = HL.qualify(x[0], hctx).replace(/\s+([*&])/g, '$1');
+      args.push([local(t) ? 'void*' : t, (x[1] || 'arg' + n).replace(/^(this|self|orig)$/, '$1_')]);
+    });
+    if (local(ret)) ret = 'void*';
+    if (fl.includes('variadic')) warn.push('variadic: the "..." arguments are not forwarded');
+    if (k === 'sym') warn.push('signature unknown, fill in the parameters');
+    // identifier: PlayerActorHakoniwa::exeJump -> PlayerActorHakoniwaExeJump
+    const parts = q.replace(/\(anonymous@[^)]*\)::/g, '').split('::').map(x => x.replace(/^~(.*)$/, '$1Dtor').replace(/[^A-Za-z0-9]+/g, ''));
+    if (k === 'ctor') parts[parts.length - 1] += 'Ctor';
     const ov = IX.slug(i).match(/~(\d+)$/);
-    const id = q.replace(/\(anonymous@[^)]*\)/g, 'anon').replace(/[^A-Za-z0-9]+/g, '_').replace(/^_+|_+$/g, '') + (ov ? '_' + ov[1] : '') + '_Hook';
-    const inc = includeFor(d.decl && d.decl.f);
-    const sig = args.map(a => a[0] + ' ' + a[1]).join(', ');
-    const call = 'Orig(' + args.map(a => a[1]).join(', ') + ')';
-    const sym = (b.lab || []).find(l => l.startsWith('_Z'));
-    let code = `// ${q} — offset ${U.hex(b.off)}\n// !! Offset valid for Super Mario Odyssey 1.0.0 ONLY !!\n`;
-    warn.forEach(w => code += `// WARNING: ${w}\n`);
+    const id = parts.filter(Boolean).map(x => x[0].toUpperCase() + x.slice(1)).join('') + (ov ? ov[1] : '');
+    // symbols in an anonymous namespace are local: not in the dynamic symbol table, so not usable by name
+    const sym = (b.lab || []).find(l => l.startsWith('_Z') && !l.includes('_GLOBAL__N_'));
+    return { b, bins, ret, args, warn, id, sym, q };
+  }
+  function hookTemplate(i, d, fw = FW) {
+    const S = hookSig(i, d);
+    if (!S) return null;
+    const { b, ret, args, id, sym } = S;
+    const warn = S.warn.slice();
+    if (hookSafety(b, fw).near === 'bad') warn.push(`unsafe to hook with ${FWS[fw]}, see Hook safety`);
+    const inc = includeFor(d.decl && d.decl.f, fw);
+    const params = args.map(a => a[0] + ' ' + a[1]).join(', ');
+    const names = args.map(a => a[1]).join(', ');
+    const call = (ret === 'void' ? '' : 'return ') + (fw === 'hakkun' ? 'orig' : 'Orig') + `(${names});`;
+    let code = warn.map(w => `// WARNING: ${w}\n`).join('');
+    if (fw === 'hakkun') {
+      const v = id[0].toLowerCase() + id.slice(1) + 'Hook';
+      code += `#include "hk/hook/Trampoline.h"\n${inc ? `#include ${inc}\n` : ''}\n`;
+      code += `HkTrampoline ${v} = [](TrampolineStatic()${params ? ', ' + params : ''}) -> ${ret} {\n    ${call}\n};\n\n`;
+      code += sym ? `// hkMain(): ${v}.installAtSym<"${sym}">();\n` : `// hkMain(), SMO 1.0.0 only: ${v}.installAtMainOffset(${U.hex(b.off)});\n`;
+      return { code, sym: sym ? `@smo:100\n${sym}\n` : null };
+    }
     code += `#include <exlaunch.hpp>\n${inc ? `#include ${inc}\n` : ''}\n`;
-    code += `HOOK_DEFINE_TRAMPOLINE(${id}) {\n    static ${ret} Callback(${sig}) {\n`;
-    code += ret === 'void' ? `        // before\n        ${call};\n        // after\n` : `        // before\n        ${ret} result = ${call};\n        // after\n        return result;\n`;
-    code += `    }\n};\n\n// In exl_main(), after exl::hook::Initialize():\n//   ${id}::InstallAtOffset(${U.hex(b.off)});\n`;
-    if (sym) code += `// or look the symbol up at runtime instead of using the offset:\n//   ${id}::InstallAtSymbol("${sym}");\n`;
-    if (bins.length > 1) code += `// Other entries for this function: ${bins.slice(1).map(x => U.hex(x.off) + (x.lab && x.lab[0] ? ' (' + x.lab[0] + ')' : '')).join(', ')}\n`;
-    return code;
+    code += `HOOK_DEFINE_TRAMPOLINE(${id}) {\n    static ${ret} Callback(${params}) {\n        ${call}\n    }\n};\n\n`;
+    code += `// exl_main(), SMO 1.0.0 only: ${id}::InstallAtOffset(${U.hex(b.off)});\n`;
+    return { code, sym: null };
   }
 
   // ---------------------------------------------------------------- calls / called by
@@ -377,7 +442,7 @@ const P = (() => {
     let h = crumbs(i) + title(i, k);
     h += `<div class="page-sub">${U.esc(U.KIND_LABEL[k])} ${st ? U.pill(st) : `<span class="pill">${U.STATUS_SHORT[0]}</span>`}
           ${d.binonly ? '<span class="pill warn" title="No declaration in the decomp headers: signature rebuilt from the binary symbol">Inferred from binary</span>' : ''}
-          ${(d.bin || []).length ? hookPill(hookSafety((d.bin.find(b => !b.thunk) || d.bin[0])).near, 'Hook: ') : ''}
+          ${(d.bin || []).length ? `<span id="x-hookpill">${hookPill(hookSafety(mainBin(d)).near, 'Hook (' + FWS[FW] + '): ')}</span>` : ''}
           ${['ghidra', 'unknown'].includes(d.rsrc) ? '<span class="pill bad" title="The return type is not confirmed by the decomp">⚠ Return type guessed</span>' : ''}
           ${flagTags(d.flags, d.acc)}</div>`;
     if (d.cm) h += `<div class="comment-doc">${esc(d.cm)}</div>`;
@@ -406,7 +471,7 @@ const P = (() => {
     }
     const u = IX.unit(i); if (u !== null) rows.push(['Unit / file', U.link(u, IX.q(u))]);
     if (d.mangled) rows.push(['Mangled symbol', `<code>${esc(d.mangled)}</code> <button class="btn" data-copy="${esc(d.mangled)}">⧉</button>`]);
-    if (d.bin && d.bin.length) rows.push(['Offset (main)', d.bin.map(b => `<code>${U.hex(b.off)}</code>`).join(', ') + ' <span class="pill warn ver">SMO 1.0.0 only</span> <span class="dim">— offset for exlaunch <code>InstallAtOffset</code></span>']);
+    if (d.bin && d.bin.length) rows.push(['Offset (main)', d.bin.map(b => `<code>${U.hex(b.off)}</code>`).join(', ') + ' <span class="pill warn ver">SMO 1.0.0 only</span> <span class="dim">— for <code>InstallAtOffset</code> (exlaunch) / <code>installAtMainOffset</code> (Hakkun)</span>']);
     else rows.push(['Binary', '<span class="dim">No matching symbol (inline function, uninstantiated template, or removed by the optimizer).</span>']);
     if (d.overrides) rows.push(['Overrides', d.overrides.map(x => U.link(x, IX.q(x))).join('<br>')]);
     const over = IX.fnByQ.get(IX.q(i))?.filter(x => x !== i) || [];
@@ -435,9 +500,9 @@ const P = (() => {
       h += section('Implementation (decompiled code)', '<div id="x-def"><div class="dim">Loading…</div></div>');
     else if (d.def) h += section('Implementation (decompiled code)', '<div class="note">Defined at the declaration (see above).</div>');
 
-    const tpl = hookTemplate(i, d);
-    if (tpl) h += section('Hook template (exlaunch)', `<div class="code-head"><span class="path">HOOK_DEFINE_TRAMPOLINE — paste into your exlaunch project</span><span class="acts"><button class="btn" data-copy-tpl="1">Copy</button></span></div><div id="x-tpl"></div>`);
-    if (d.bin && d.bin.length) h += section('Hook safety', hookSection(i, d));
+    const hasTpl = !!hookSig(i, d);
+    if (hasTpl) h += section('Hook template', `<div class="tabs fw-tabs">${Object.entries(FWS).map(([k, l]) => `<button data-fw="${k}" class="${k === FW ? 'on' : ''}">${l}</button>`).join('')}</div><div id="x-tpl"></div>`);
+    if (d.bin && d.bin.length) h += section('Hook safety', '<div id="x-hooksafety"></div>');
     if (d.bin && d.bin.length) {
       const ambNote = '<h3>Ambiguous</h3><p class="small dim">Several overloads have the same name and argument count; the pseudo-code does not say which one is called.</p>';
       h += section('Calls', (d.calls ? xrefList(d.calls) : '<span class="dim">No direct calls found.</span>') +
@@ -453,10 +518,28 @@ const P = (() => {
       h += section('Ghidra pseudo-code', ghs.map((g, j) => `<div class="small dim" style="margin:4px 0 6px">Ghidra signature: <code>${esc(g[1] || '')}</code></div><div id="x-gh${j}"><div class="dim">Loading pseudo-code…</div></div>`).join(''), ghs.length);
     }
     main.innerHTML = h;
-    if (tpl) {
-      main.querySelector('#x-tpl').innerHTML = HL.block(tpl, { ctx });
-      main.querySelector('[data-copy-tpl]').addEventListener('click', ev => { U.copy(tpl); ev.target.textContent = 'Copied ✓'; setTimeout(() => (ev.target.textContent = 'Copy'), 1200); });
-    }
+    const drawHook = () => {
+      const pill = main.querySelector('#x-hookpill');
+      if (pill) pill.innerHTML = hookPill(hookSafety(mainBin(d)).near, 'Hook (' + FWS[FW] + '): ');
+      const hs = main.querySelector('#x-hooksafety');
+      if (hs) hs.innerHTML = hookSection(i, d);
+      const box = main.querySelector('#x-tpl');
+      if (!box) return;
+      const t = hookTemplate(i, d);
+      const copyHead = (label, key) => `<div class="code-head"><span class="path">${label}</span><span class="acts"><button class="btn" data-copy-k="${key}">Copy</button></span></div>`;
+      box.innerHTML = copyHead(FW === 'hakkun' ? 'C++ — HkTrampoline' : 'C++ — HOOK_DEFINE_TRAMPOLINE', 'code') + HL.block(t.code, { ctx }) +
+        (t.sym ? copyHead('syms/*.sym — needed by installAtSym (sail)', 'sym') + HL.block(t.sym, {}) +
+          '<p class="small dim">Symbols resolve by name on 1.0.0–1.2.0, so you can extend the line to <code>@smo:100,101,110,120</code>. 1.3.0 is stripped: add an <code>@smo:130</code> block with <code>symbol = 0x…</code> (the 1.3.0 address is not on this site).</p>' : '');
+      box.querySelectorAll('[data-copy-k]').forEach(btn => btn.addEventListener('click', () => {
+        U.copy(t[btn.dataset.copyK]); btn.textContent = 'Copied ✓'; setTimeout(() => (btn.textContent = 'Copy'), 1200);
+      }));
+    };
+    drawHook();
+    main.querySelectorAll('.fw-tabs button').forEach(btn => btn.addEventListener('click', () => {
+      setFw(btn.dataset.fw);
+      main.querySelectorAll('.fw-tabs button').forEach(x => x.classList.toggle('on', x === btn));
+      drawHook();
+    }));
     main.querySelectorAll('.xr-more').forEach(btn => btn.addEventListener('click', () => {
       const ids = btn.dataset.ids.split(',').map(Number);
       btn.previousElementSibling.insertAdjacentHTML('beforeend', ids.map(x => `<div>${U.st(IX.status(x))}${U.link(x, shortQ(IX.q(x)))}</div>`).join(''));
@@ -594,7 +677,7 @@ const P = (() => {
       const fl = dd.flags || [];
       const st = IX.status(x);
       const ret = ['ctor', 'dtor'].includes(IX.kind(x)) ? '' : (dd.ret ? HL.type(dd.ret, dd.ret_id, ctx) : (dd.gret ? `<span class="dim" title="Ghidra estimate">${esc(dd.gret)}?</span>` : ''));
-      const sig = `${U.link(x)}<span class="dim">(${paramsText(dd)})</span>${['ghidra', 'unknown'].includes(dd.rsrc) ? ' <span class="tag priv" title="Return type guessed (not in the decomp)">ret?</span>' : ''}${dd.bin && dd.bin.length && hookSafety(dd.bin.find(b => !b.thunk) || dd.bin[0]).near === 'bad' ? ' <span class="tag priv" title="Unsafe to hook with a trampoline">no hook</span>' : ''}`;
+      const sig = `${U.link(x)}<span class="dim">(${paramsText(dd)})</span>${['ghidra', 'unknown'].includes(dd.rsrc) ? ' <span class="tag priv" title="Return type guessed (not in the decomp)">ret?</span>' : ''}${dd.bin && dd.bin.length && hookSafety(mainBin(dd)).near === 'bad' ? ` <span class="tag priv" title="Unsafe to hook with a ${FWS[FW]} trampoline">no hook</span>` : ''}`;
       const off = dd.bin && dd.bin.length ? `<code>${U.hex(dd.bin[0].off)}</code>` : '<span class="dim">—</span>';
       const impl = dd.def ? U.fileLink(dd.def.f, dd.def.l, dd.def.fi).replace(/>([^<]*)</, (m, s) => '>' + esc(s.split('/').pop()) + '<') : (dd.binonly ? '<span class="dim">binary only</span>' : (fl.includes('pure') ? '<span class="dim">= 0</span>' : '<span class="dim">—</span>'));
       t += `<tr data-n="${esc(IX.nameL[x])}" data-st="${st}" data-v="${fl.includes('virtual') || fl.includes('override') ? 1 : 0}"><td>${U.st(st)}</td><td class="type">${ret}</td><td class="m">${sig}</td><td class="tags">${flagTags(fl.includes('override') ? fl.filter(f => f !== 'virtual') : fl)}</td><td class="num">${off}</td><td class="small">${impl}</td></tr>`;
@@ -1036,9 +1119,9 @@ const P = (() => {
       ['Method', 'Semantic analysis of every header and .cpp with libclang (types, parameters, field offsets, sizes), cross-referenced with <code>data/file_list.yml</code> (every function in the binary, with status) by demangled name, then with the Ghidra repository by address.'],
     ]))}
     ${section('VS Code extension', '<p>The OdysseyDoc extension brings this documentation into Visual Studio Code. <a class="btn" href="https://github.com/Wibigen/OdysseyDoc-VSCode/releases/" target="_blank" rel="noopener">⬇ Download the latest release ↗</a></p>')}
-    ${section('Game version', '<p><b>Super Mario Odyssey 1.0.0 only.</b> The decompilation targets 1.0.0, and every offset, address, size and instruction shown here comes from the 1.0.0 <code>main</code> executable. Do not use them on 1.1, 1.2 or 1.3: functions are at different offsets there.</p>')}
+    ${section('Game version', '<p><b>Super Mario Odyssey 1.0.0 only.</b> The decompilation targets 1.0.0, and every offset, address, size and instruction shown here comes from the 1.0.0 <code>main</code> executable. Do not use them on 1.1, 1.2 or 1.3: functions are at different offsets there.</p><p>1.0.0 <code>main</code> build ID: <code>3ca12dfaaf9c82da064d1698df79cda1</code>.</p>')}
     ${section('Return types', kv(Object.values(RSRC).map(r => [`<span class="pill ${r[0]}">${r[0] === 'bad' ? '⚠ ' : ''}${r[1]}</span>`, esc(r[2])])))}
-    ${section('Hook safety', '<p>exlaunch’s trampoline hook writes a single <code>B</code> over the first instruction when the callback is within ±128 MB (the normal case for SMO, whose <code>main</code> is ~12.5 MB), otherwise an absolute jump over the first 4–5 instructions. PC-relative instructions in the overwritten part (b, bl, b.cond, cbz/cbnz, tbz/tbnz, adr/adrp, ldr literal) are relocated into the trampoline. Real breakage comes from code branching back into the overwritten bytes, loops back to the entry, and functions shorter than the patch.</p><p>Size checks are always shown. Instruction-level checks need <code>generator/ghidra/ExportOdysseyDoc.java</code> run on your Ghidra project.</p>')}
+    ${section('Hook safety', '<p>exlaunch and Hakkun both write a single <code>B</code> over the first instruction when the callback is within ±128 MB — always the case for SMO, whose <code>main</code> is ~12.5 MB. The overwritten instruction is copied into a trampoline that <code>Orig</code>/<code>orig</code> runs.</p><ul class="hk-list"><li><b>exlaunch</b> relocates b, bl, b.cond, cbz/cbnz, tbz/tbnz, adr/adrp and literal loads. Out of range it writes an absolute jump over 4–5 instructions.</li><li><b>Hakkun</b> relocates adr/adrp, b, bl and (with <code>TRAMPOLINE_LEVEL</code> ≥ 1, the default) b.cond, cbz/cbnz, tbz/tbnz. It <b>aborts at install</b> on an LDR (literal) and copies LDRSW/SIMD literal loads unrelocated. Out-of-range callbacks need <code>TRAMPOLINE_LEVEL 2</code> (up to 5 instructions), where a branch that is not the last overwritten instruction also aborts.</li></ul><p>In both, code that branches back into the overwritten bytes or loops back to the entry breaks the hook. Size checks are always shown; instruction-level checks need <code>generator/ghidra/ExportOdysseyDoc.java</code> run on your Ghidra project.</p>')}
     ${section('Calls / called by', '<p>Built from the Ghidra pseudo-code (direct calls, overloads resolved by argument count). Virtual calls and calls through function pointers are not visible there.</p>')}
     ${section('Function statuses', kv([
       [U.pill(1), 'The decompiled code recompiles to instructions identical to the original.'],
