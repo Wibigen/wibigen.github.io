@@ -1,120 +1,142 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wibigen - À propos</title>
+    <title>About - Wibigen</title>
+    <meta name="description" content="Who Wibigen is and the key moments since 2022.">
+    <meta name="theme-color" content="#061822">
+    <meta property="og:title" content="About - Wibigen">
+    <meta property="og:description" content="Who Wibigen is and the key moments since 2022.">
+    <meta property="og:image" content="https://wibigen.github.io/ressources/wibigen2.png">
+    <meta property="og:url" content="https://wibigen.github.io/a-propos.html">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" type="image/png" href="ressources/logo-wibigen-V2-rond.png">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="anim.css">
-
+    <script>document.documentElement.classList.add('js');</script>
     <script src="scripts.js" defer></script>
-
-    <h1 class="header">
-        <a href="index.html">Accueil</a>
-        <a href="a-propos.html">À propos</a>
-        <a href="stats.html">Stats</a>
-        <a href="contenu.html">Contenu</a>
-        <a href="wibidev.html">WibiDev</a>
-    </h1>
-    <img src="ressources\à propos.png" width="100%" height="auto">
-
 </head>
 
 <body>
 
-    <div class="corps1">
-        <p>
-            Wibigen est un créateur hors pair de contenus et vidéaste actif depuis le 26 décembre 2022,
-            principalement axé sur le gaming, avec des jeux comme Super Mario Odyssey ou Minecraft.
-        </p>
-    </div>
-
-    <br>
-    <h1 class="title">
-        Moments Clés
-    </h1>
-    <br>
-
-    <div class="corps2">
-        <div class="container" class="anim1">
-            <div class="image-text-block">
-                <img src="ressources\youtube-logo.png" alt="Youtube" class="image">
-                <div class="text-container">
-                    <h2 class="text-right-top">Création de la chaine YouTube</h2>
-                    <p class="text-right-bottom">25 décembre 2022</p>
-                </div>
+    <header class="header">
+        <a class="brand" href="index.html">
+            <img src="ressources/logo-wibigen-V2-rond.png" alt="" width="40" height="40">
+            <span>Wibigen</span>
+        </a>
+        <button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="main-nav"><span></span></button>
+        <nav class="nav" id="main-nav" aria-label="Main">
+            <a href="index.html">Home</a>
+            <a href="a-propos.html">About</a>
+            <a href="stats.html">Stats</a>
+            <a href="contenu.html">Content</a>
+            <a href="wibidev.html">WibiDev</a>
+            <div class="nav-social">
+                <a href="https://www.youtube.com/@wibigen" target="_blank" rel="noopener" aria-label="YouTube"><img src="ressources/youtube-logo.png" alt="" width="26" height="26"></a>
+                <a href="https://www.twitch.tv/wibigen" target="_blank" rel="noopener" aria-label="Twitch"><img src="ressources/twitch-logo.png" alt="" width="26" height="26"></a>
+                <a href="https://discord.com/invite/JNUA7q6dcx" target="_blank" rel="noopener" aria-label="Discord"><img src="ressources/discord-logo.png" alt="" width="26" height="26"></a>
             </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <h1>About</h1>
+            <p>Who I am and how it all started.</p>
+        </section>
+
+        <section class="section wrap">
+            <div class="card intro reveal">
+                <p>Wibigen is a one-of-a-kind content creator and video maker, active since December 26, 2022, focused mainly on gaming with games like Super Mario Odyssey and Minecraft.</p>
+            </div>
+        </section>
+
+        <section class="section wrap">
+            <h2 class="section-title">Key moments</h2>
+            <ol class="timeline">
+                <li class="reveal">
+                    <div class="card milestone">
+                        <img src="ressources/youtube-logo.png" alt="">
+                        <div>
+                            <h3>YouTube channel created</h3>
+                            <time datetime="2022-12-25">December 25, 2022</time>
+                        </div>
+                    </div>
+                </li>
+                <li class="reveal">
+                    <div class="card milestone">
+                        <img src="ressources/twitch-logo.png" alt="">
+                        <div>
+                            <h3>Twitch channel created</h3>
+                            <time datetime="2023-12-23">December 23, 2023</time>
+                        </div>
+                    </div>
+                </li>
+                <li class="reveal">
+                    <div class="card milestone">
+                        <img src="ressources/discord-logo.png" alt="">
+                        <div>
+                            <h3>Discord server created</h3>
+                            <time datetime="2024-02-20">February 20, 2024</time>
+                        </div>
+                    </div>
+                </li>
+                <li class="reveal">
+                    <div class="card milestone">
+                        <img src="ressources/odoo-logo.png" class="icon-light" alt="">
+                        <div>
+                            <h3>First website launched</h3>
+                            <time datetime="2024-03-16">March 16, 2024</time>
+                        </div>
+                    </div>
+                </li>
+                <li class="reveal">
+                    <div class="card milestone">
+                        <img src="ressources/html-logo.png" alt="">
+                        <div>
+                            <h3>Website rebuilt from scratch</h3>
+                            <time datetime="2025-03-28">March 28, 2025</time>
+                        </div>
+                    </div>
+                </li>
+                <li class="reveal">
+                    <div class="card milestone">
+                        <img src="ressources/discord-logo.png" alt="">
+                        <div>
+                            <h3>New Discord server created</h3>
+                            <time datetime="2026-06-07">June 7, 2026</time>
+                        </div>
+                    </div>
+                </li>
+                <li class="reveal">
+                    <div class="card milestone">
+                        <img src="ressources/html-logo.png" alt="">
+                        <div>
+                            <h3>Website rebuilt (again) with a new design</h3>
+                            <time datetime="2025-03-28">November 9, 2026</time>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <div class="left">
+            <span>© 2022-<span class="year">2026</span> Wibigen</span>
+            <a href="mailto:wibigen-mail@proton.me">Contact me</a>
         </div>
 
-        <div class="container" class="anim1">
-            <div class="image-text-block">
-                <img src="ressources\twitch-logo.png" alt="Twitch" class="image">
-                <div class="text-container">
-                    <h2 class="text-right-top">Création de la chaine Twitch</h2>
-                    <p class="text-right-bottom">23 décembre 2023</p>
-                </div>
-            </div>
+        <div class="center">
+            <img src="ressources/logo-wibigen-V2-rond.png" alt="Wibigen logo" width="56" height="56">
         </div>
 
-        <div class="container" class="anim1">
-            <div class="image-text-block">
-                <img src="ressources\discord-logo.png" alt="Discord" class="image">
-                <div class="text-container">
-                    <h2 class="text-right-top">Création du serveur Discord</h2>
-                    <p class="text-right-bottom">20 février 2024</p>
-                </div>
-            </div>
+        <div class="right">
+            <a href="https://www.youtube.com/@wibigen" target="_blank" rel="noopener" aria-label="YouTube"><img src="ressources/youtube-logo.png" alt="" width="34" height="34"></a>
+            <a href="https://www.twitch.tv/wibigen" target="_blank" rel="noopener" aria-label="Twitch"><img src="ressources/twitch-logo.png" alt="" width="34" height="34"></a>
+            <a href="https://discord.com/invite/JNUA7q6dcx" target="_blank" rel="noopener" aria-label="Discord"><img src="ressources/discord-logo.png" alt="" width="34" height="34"></a>
         </div>
-
-        <div class="container" class="anim1">
-            <div class="image-text-block">
-                <img src="ressources\odoo-logo.png" alt="odoo" class="image">
-                <div class="text-container">
-                    <h2 class="text-right-top">Création du Site Web</h2>
-                    <p class="text-right-bottom">16 mars 2024</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="container" class="anim1">
-            <div class="image-text-block">
-                <img src="ressources\html-logo.png" alt="HTML" class="image">
-                <div class="text-container">
-                    <h2 class="text-right-top">Re-création du Site Web</h2>
-                    <p class="text-right-bottom">28 mars 2025</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="container" class="anim1">
-            <div class="image-text-block">
-                <img src="ressources\discord-logo.png" alt="Discord" class="image">
-                <div class="text-container">
-                    <h2 class="text-right-top">Création d'un nouveau Discord</h2>
-                    <p class="text-right-bottom">7 juin 2026</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    </footer>
 
 </body>
-
-<footer>
-    <div class="left">
-        © 2022-2025 Wibigen
-        <br> <a href="mailto:wibigen-mail@proton.me">Me Contacter</a>
-    </div>
-
-    <div class="center">
-        <img src="ressources\logo-wibigen-V2-rond.png">
-    </div>
-
-    <div class="right">
-        <a href="https://www.youtube.com/channel/@wibigen" target="_blank"><img src="ressources/youtube-logo.png"></a>
-        <a href="https://www.twitch.tv/wibigen" target="_blank"><img src="ressources/twitch-logo.png"></a>
-        <a href="https://discord.com/invite/JNUA7q6dcx" target="_blank"><img src="ressources/discord-logo.png"></a>
-    </div>
-</footer>
-
 </html>

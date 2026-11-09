@@ -1,59 +1,110 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WibiDev</title>
+    <title>WibiDev - Wibigen</title>
+    <meta name="description" content="Game mods by Wibigen, pulled live from GameBanana.">
+    <meta name="theme-color" content="#061822">
+    <meta property="og:title" content="WibiDev - Wibigen">
+    <meta property="og:description" content="Game mods by Wibigen, pulled live from GameBanana.">
+    <meta property="og:image" content="https://wibigen.github.io/ressources/wibigen2.png">
+    <meta property="og:url" content="https://wibigen.github.io/wibidev.html">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" type="image/png" href="ressources/logo-wibigen-V2-rond.png">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="anim.css">
-
+    <script>document.documentElement.classList.add('js');</script>
     <script src="scripts.js" defer></script>
-
-    <h1 class="header">
-        <a href="index.html">Accueil</a>
-        <a href="a-propos.html">À propos</a>
-        <a href="stats.html">Stats</a>
-        <a href="contenu.html">Contenu</a>
-        <a href="wibidev.html">WibiDev</a>
-    </h1>
-    <img src="ressources\wibidev.png" width="100%" height="auto">
-
 </head>
 
 <body>
-    
-    <div class="corps2">
-        <a href="https://gamebanana.com/mods/718091"><img src="https://gamebanana.com/mods/embeddables/718091?type=large"/></a>
-        <a href="https://gamebanana.com/mods/716479"><img src="https://gamebanana.com/mods/embeddables/716479?type=large"/></a>
-        <a href="https://gamebanana.com/mods/688406"><img src="https://gamebanana.com/mods/embeddables/688406?type=large"/></a>
-        <a href="https://gamebanana.com/mods/681980"><img src="https://gamebanana.com/mods/embeddables/681980?type=large"/></a>
-        <a href="https://gamebanana.com/mods/681823"><img src="https://gamebanana.com/mods/embeddables/681823?type=large"/></a>
-        <a href="https://gamebanana.com/mods/665218"><img src="https://gamebanana.com/mods/embeddables/665218?type=large"/></a>
-        <a href="https://gamebanana.com/wips/99325"><img src="https://gamebanana.com/wips/embeddables/99325?type=large"/></a>
-        <a href="https://gamebanana.com/mods/664938"><img src="https://gamebanana.com/mods/embeddables/664938?type=large"/></a>
-        <a href="https://gamebanana.com/mods/662800"><img src="https://gamebanana.com/mods/embeddables/662800?type=large"/></a>
-        <a href="https://gamebanana.com/mods/630379"><img src="https://gamebanana.com/mods/embeddables/630379?type=large"/></a>
-        <a href="https://gamebanana.com/mods/627806"><img src="https://gamebanana.com/mods/embeddables/627806?type=large"/></a>
-    </div>
+
+    <header class="header">
+        <a class="brand" href="index.html">
+            <img src="ressources/logo-wibigen-V2-rond.png" alt="" width="40" height="40">
+            <span>Wibigen</span>
+        </a>
+        <button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="main-nav"><span></span></button>
+        <nav class="nav" id="main-nav" aria-label="Main">
+            <a href="index.html">Home</a>
+            <a href="a-propos.html">About</a>
+            <a href="stats.html">Stats</a>
+            <a href="contenu.html">Content</a>
+            <a href="wibidev.html">WibiDev</a>
+            <div class="nav-social">
+                <a href="https://www.youtube.com/@wibigen" target="_blank" rel="noopener" aria-label="YouTube"><img src="ressources/youtube-logo.png" alt="" width="26" height="26"></a>
+                <a href="https://www.twitch.tv/wibigen" target="_blank" rel="noopener" aria-label="Twitch"><img src="ressources/twitch-logo.png" alt="" width="26" height="26"></a>
+                <a href="https://discord.com/invite/JNUA7q6dcx" target="_blank" rel="noopener" aria-label="Discord"><img src="ressources/discord-logo.png" alt="" width="26" height="26"></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <h1>WibiDev</h1>
+            <p>Mods and tools I make for games — pulled live from GameBanana.</p>
+        </section>
+
+        <section class="section wrap">
+            <div class="toolbar">
+                <div class="chips" id="game-chips" role="group" aria-label="Filter by game"></div>
+                <div class="toolbar-right">
+                    <input class="input" id="mod-search" type="search" placeholder="Search mods…" aria-label="Search mods">
+                    <select class="select" id="mod-sort" aria-label="Sort">
+                        <option value="updated">Recently updated</option>
+                        <option value="added">Newest</option>
+                        <option value="likes">Most liked</option>
+                        <option value="views">Most viewed</option>
+                        <option value="downloads">Most downloaded</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mod-grid" id="mod-grid" aria-live="polite">
+                <div class="card mod-card skeleton" aria-hidden="true">
+                    <div class="mod-thumb"></div>
+                    <div class="mod-body"><div class="sk-line" style="width:40%"></div><div class="sk-line" style="width:80%;height:16px"></div><div class="sk-line" style="width:65%"></div></div>
+                </div>
+                <div class="card mod-card skeleton" aria-hidden="true">
+                    <div class="mod-thumb"></div>
+                    <div class="mod-body"><div class="sk-line" style="width:40%"></div><div class="sk-line" style="width:80%;height:16px"></div><div class="sk-line" style="width:65%"></div></div>
+                </div>
+                <div class="card mod-card skeleton" aria-hidden="true">
+                    <div class="mod-thumb"></div>
+                    <div class="mod-body"><div class="sk-line" style="width:40%"></div><div class="sk-line" style="width:80%;height:16px"></div><div class="sk-line" style="width:65%"></div></div>
+                </div>
+                <div class="card mod-card skeleton" aria-hidden="true">
+                    <div class="mod-thumb"></div>
+                    <div class="mod-body"><div class="sk-line" style="width:40%"></div><div class="sk-line" style="width:80%;height:16px"></div><div class="sk-line" style="width:65%"></div></div>
+                </div>
+                <div class="card mod-card skeleton" aria-hidden="true">
+                    <div class="mod-thumb"></div>
+                    <div class="mod-body"><div class="sk-line" style="width:40%"></div><div class="sk-line" style="width:80%;height:16px"></div><div class="sk-line" style="width:65%"></div></div>
+                </div>
+                <div class="card mod-card skeleton" aria-hidden="true">
+                    <div class="mod-thumb"></div>
+                    <div class="mod-body"><div class="sk-line" style="width:40%"></div><div class="sk-line" style="width:80%;height:16px"></div><div class="sk-line" style="width:65%"></div></div>
+                </div>
+            </div>
+            <p class="gb-credit"><span id="mod-count"></span>Data from <a id="gb-profile" href="https://gamebanana.com/" target="_blank" rel="noopener">GameBanana</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="left">
+            <span>© 2022-<span class="year">2026</span> Wibigen</span>
+            <a href="mailto:wibigen-mail@proton.me">Contact me</a>
+        </div>
+
+        <div class="center">
+            <img src="ressources/logo-wibigen-V2-rond.png" alt="Wibigen logo" width="56" height="56">
+        </div>
+
+        <div class="right">
+            <a href="https://www.youtube.com/@wibigen" target="_blank" rel="noopener" aria-label="YouTube"><img src="ressources/youtube-logo.png" alt="" width="34" height="34"></a>
+            <a href="https://www.twitch.tv/wibigen" target="_blank" rel="noopener" aria-label="Twitch"><img src="ressources/twitch-logo.png" alt="" width="34" height="34"></a>
+            <a href="https://discord.com/invite/JNUA7q6dcx" target="_blank" rel="noopener" aria-label="Discord"><img src="ressources/discord-logo.png" alt="" width="34" height="34"></a>
+        </div>
+    </footer>
 
 </body>
-
-<footer>
-    <div class="left">
-        © 2022-2025 Wibigen
-        <br> <a href="mailto:wibigen-mail@proton.me">Me Contacter</a>
-    </div>
-
-    <div class="center">
-        <img src="ressources\logo-wibigen-V2-rond.png">
-    </div>
-
-    <div class="right">
-        <a href="https://www.youtube.com/channel/@wibigen" target="_blank"><img src="ressources/youtube-logo.png"></a>
-        <a href="https://www.twitch.tv/wibigen" target="_blank"><img src="ressources/twitch-logo.png"></a>
-        <a href="https://discord.com/invite/JNUA7q6dcx" target="_blank"><img src="ressources/discord-logo.png"></a>
-    </div>
-</footer>
-
 </html>

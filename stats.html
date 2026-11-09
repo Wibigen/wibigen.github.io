@@ -1,76 +1,96 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wibigen - Stats</title>
+    <title>Stats - Wibigen</title>
+    <meta name="description" content="Wibigen channel numbers on YouTube, Twitch and Discord.">
+    <meta name="theme-color" content="#061822">
+    <meta property="og:title" content="Stats - Wibigen">
+    <meta property="og:description" content="Wibigen channel numbers on YouTube, Twitch and Discord.">
+    <meta property="og:image" content="https://wibigen.github.io/ressources/wibigen2.png">
+    <meta property="og:url" content="https://wibigen.github.io/stats.html">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" type="image/png" href="ressources/logo-wibigen-V2-rond.png">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="anim.css">
-
+    <script>document.documentElement.classList.add('js');</script>
     <script src="scripts.js" defer></script>
-
-    <h1 class="header">
-        <a href="index.html">Accueil</a>
-        <a href="a-propos.html">À propos</a>
-        <a href="stats.html">Stats</a>
-        <a href="contenu.html">Contenu</a>
-        <a href="wibidev.html">WibiDev</a>
-    </h1>
-    <img src="ressources\stats.png" width="100%" height="auto">
-
 </head>
 
 <body>
 
-    <h1 class="title">
-        YouTube
-    </h1>
-    <div class="corps-stats">
-        <p>Abonnés : <span id="Ysubscribers">Chargement...</span></p>
-        <p>Total de Vues : <span id="Yviews">Chargement...</span></p>
-        <p>Vidéos : <span id="Yvideos">Chargement...</span></p>
-    </div>
+    <header class="header">
+        <a class="brand" href="index.html">
+            <img src="ressources/logo-wibigen-V2-rond.png" alt="" width="40" height="40">
+            <span>Wibigen</span>
+        </a>
+        <button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="main-nav"><span></span></button>
+        <nav class="nav" id="main-nav" aria-label="Main">
+            <a href="index.html">Home</a>
+            <a href="a-propos.html">About</a>
+            <a href="stats.html">Stats</a>
+            <a href="contenu.html">Content</a>
+            <a href="wibidev.html">WibiDev</a>
+            <div class="nav-social">
+                <a href="https://www.youtube.com/@wibigen" target="_blank" rel="noopener" aria-label="YouTube"><img src="ressources/youtube-logo.png" alt="" width="26" height="26"></a>
+                <a href="https://www.twitch.tv/wibigen" target="_blank" rel="noopener" aria-label="Twitch"><img src="ressources/twitch-logo.png" alt="" width="26" height="26"></a>
+                <a href="https://discord.com/invite/JNUA7q6dcx" target="_blank" rel="noopener" aria-label="Discord"><img src="ressources/discord-logo.png" alt="" width="26" height="26"></a>
+            </div>
+        </nav>
+    </header>
 
-    <br>
+    <main>
+        <section class="page-hero">
+            <h1>Stats</h1>
+            <p>The numbers behind the channels.</p>
+        </section>
 
-    <h1 class="title">
-        Twitch
-    </h1>
-    <div class="corps-stats">
-        <p>Followers : <span id="Tfollowers">7</span></p>
-        <p>Abonnés : <span id="Tsubscribers">0</span></p>
-        <p>Statut : <span id="Tstatut">Hors-ligne</span></p>
-    </div>
+        <section class="section wrap stats-yt">
+            <h2 class="section-title"><img src="ressources/youtube-logo.png" alt="">YouTube <small>Live from YouTube</small></h2>
+            <div class="stat-grid">
+                <div class="card stat reveal"><span class="stat-label">Subscribers</span><span class="stat-value loading" id="Ysubscribers">…</span></div>
+                <div class="card stat reveal"><span class="stat-label">Total views</span><span class="stat-value loading" id="Yviews">…</span></div>
+                <div class="card stat reveal"><span class="stat-label">Videos</span><span class="stat-value loading" id="Yvideos">…</span></div>
+            </div>
+        </section>
 
-    <br>
+        <section class="section wrap stats-tw">
+            <h2 class="section-title"><img src="ressources/twitch-logo.png" alt="">Twitch</h2>
+            <div class="stat-grid">
+                <div class="card stat reveal"><span class="stat-label">Followers</span><span class="stat-value" id="Tfollowers">44</span></div>
+                <div class="card stat reveal"><span class="stat-label">Subscribers</span><span class="stat-value" id="Tsubscribers">0</span></div>
+                <div class="card stat reveal"><span class="stat-label">Status</span><span class="stat-value loading" id="Tstatus">…</span></div>
+            </div>
+            <p class="note">Followers and subscribers are updated by hand; the status is live.</p>
+        </section>
 
-    <h1 class="title">
-        Discord
-    </h1>
-    <div class="corps-stats">
-        <p>Membres : <span id="Dmembers">5</span></p>
-        <p>Salons : <span id="Dservers">8</span></p>
-        <p>Boosts : <span id="Dboosts">0</span></p>
-    </div>
+        <section class="section wrap stats-dc">
+            <h2 class="section-title"><img src="ressources/discord-logo.png" alt="">Discord</h2>
+            <div class="stat-grid">
+                <div class="card stat reveal"><span class="stat-label">Members</span><span class="stat-value loading" id="Dmembers">118</span></div>
+                <div class="card stat reveal"><span class="stat-label">Online now</span><span class="stat-value loading" id="Donline">~35</span></div>
+                <div class="card stat reveal"><span class="stat-label">Boosts</span><span class="stat-value loading" id="Dboosts">3</span></div>
+            </div>
+            <p class="note">Followers and subscribers are updated by hand; the status is live.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="left">
+            <span>© 2022-<span class="year">2026</span> Wibigen</span>
+            <a href="mailto:wibigen-mail@proton.me">Contact me</a>
+        </div>
+
+        <div class="center">
+            <img src="ressources/logo-wibigen-V2-rond.png" alt="Wibigen logo" width="56" height="56">
+        </div>
+
+        <div class="right">
+            <a href="https://www.youtube.com/@wibigen" target="_blank" rel="noopener" aria-label="YouTube"><img src="ressources/youtube-logo.png" alt="" width="34" height="34"></a>
+            <a href="https://www.twitch.tv/wibigen" target="_blank" rel="noopener" aria-label="Twitch"><img src="ressources/twitch-logo.png" alt="" width="34" height="34"></a>
+            <a href="https://discord.com/invite/JNUA7q6dcx" target="_blank" rel="noopener" aria-label="Discord"><img src="ressources/discord-logo.png" alt="" width="34" height="34"></a>
+        </div>
+    </footer>
 
 </body>
-
-<footer>
-    <div class="left">
-        © 2022-2025 Wibigen
-        <br> <a href="mailto:wibigen-mail@proton.me">Me Contacter</a>
-    </div>
-
-    <div class="center">
-        <img src="ressources\logo-wibigen-V2-rond.png">
-    </div>
-
-    <div class="right">
-        <a href="https://www.youtube.com/channel/@wibigen" target="_blank"><img src="ressources/youtube-logo.png"></a>
-        <a href="https://www.twitch.tv/wibigen" target="_blank"><img src="ressources/twitch-logo.png"></a>
-        <a href="https://discord.com/invite/JNUA7q6dcx" target="_blank"><img src="ressources/discord-logo.png"></a>
-    </div>
-</footer>
-
 </html>

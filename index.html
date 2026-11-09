@@ -1,59 +1,102 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wibigen - Accueil</title>
+    <title>Wibigen</title>
+    <meta name="description" content="Wibigen: YouTube videos, Twitch streams, a Discord community and game mods.">
+    <meta name="theme-color" content="#061822">
+    <meta property="og:title" content="Wibigen">
+    <meta property="og:description" content="Wibigen: YouTube videos, Twitch streams, a Discord community and game mods.">
+    <meta property="og:image" content="https://wibigen.github.io/ressources/wibigen2.png">
+    <meta property="og:url" content="https://wibigen.github.io/">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" type="image/png" href="ressources/logo-wibigen-V2-rond.png">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="anim.css">
-
+    <script>document.documentElement.classList.add('js');</script>
     <script src="scripts.js" defer></script>
-
-    <h1 class="header">
-        <a href="index.html">Accueil</a>
-        <a href="a-propos.html">À propos</a>
-        <a href="stats.html">Stats</a>
-        <a href="contenu.html">Contenu</a>
-        <a href="wibidev.html">WibiDev</a>
-    </h1>
-    <img src="ressources\wibigen2.png" width="100%" height="auto">
-
 </head>
 
 <body>
 
-    <div class="corps3" style="font-weight: bold;">
-        <a href="https://www.youtube.com/channel/UCV_JyfXoQahFCvyBlDM8zbw" target="_blank"  style="text-decoration:none">
-            <img src="ressources\youtube-logo.png">
-            Youtube 
+    <header class="header">
+        <a class="brand" href="index.html">
+            <img src="ressources/logo-wibigen-V2-rond.png" alt="" width="40" height="40">
+            <span>Wibigen</span>
         </a>
-        <a href="https://www.twitch.tv/wibigen" target="_blank"  style="text-decoration:none">
-            <img class="a" src="ressources\twitch-logo.png">
-            Twitch 
-        </a>
-        <a href="https://discord.gg/FeuV9MqEuA" target="_blank"  style="text-decoration:none">
-            <img class="a" src="ressources\discord-logo.png">
-            Discord 
-        </a>
-    </div>
+        <button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="main-nav"><span></span></button>
+        <nav class="nav" id="main-nav" aria-label="Main">
+            <a href="index.html">Home</a>
+            <a href="a-propos.html">About</a>
+            <a href="stats.html">Stats</a>
+            <a href="contenu.html">Content</a>
+            <a href="wibidev.html">WibiDev</a>
+            <div class="nav-social">
+                <a href="https://www.youtube.com/@wibigen" target="_blank" rel="noopener" aria-label="YouTube"><img src="ressources/youtube-logo.png" alt="" width="26" height="26"></a>
+                <a href="https://www.twitch.tv/wibigen" target="_blank" rel="noopener" aria-label="Twitch"><img src="ressources/twitch-logo.png" alt="" width="26" height="26"></a>
+                <a href="https://discord.com/invite/JNUA7q6dcx" target="_blank" rel="noopener" aria-label="Discord"><img src="ressources/discord-logo.png" alt="" width="26" height="26"></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-glow" aria-hidden="true"></div>
+            <img class="hero-logo" src="ressources/logo-wibigen-V2-rond.png" alt="Wibigen logo" width="160" height="160">
+            <h1 class="hero-title">Wibigen</h1>
+            <p class="hero-sub">Videos, streams, community and mods — find me everywhere.</p>
+        </section>
+
+        <section class="section wrap" aria-label="My channels">
+            <div class="socials">
+                <a class="card social-card yt reveal" href="https://www.youtube.com/channel/UCV_JyfXoQahFCvyBlDM8zbw" target="_blank" rel="noopener">
+                    <img src="ressources/youtube-logo.png" alt="" width="72" height="72">
+                    <span class="social-name">YouTube</span>
+                    <span class="social-desc">Videos</span>
+                    <span class="social-cta">Visit the channel →</span>
+                </a>
+                <a class="card social-card tw reveal" href="https://www.twitch.tv/wibigen" target="_blank" rel="noopener">
+                    <img src="ressources/twitch-logo.png" alt="" width="72" height="72">
+                    <span class="social-name">Twitch</span>
+                    <span class="social-desc">Live streams</span>
+                    <span class="social-cta">Join the stream →</span>
+                </a>
+                <a class="card social-card dc reveal" href="https://discord.gg/FeuV9MqEuA" target="_blank" rel="noopener">
+                    <img src="ressources/discord-logo.png" alt="" width="72" height="72">
+                    <span class="social-name">Discord</span>
+                    <span class="social-desc">Community</span>
+                    <span class="social-cta">Join the server →</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="section wrap">
+            <h2 class="section-title">Explore</h2>
+            <div class="explore">
+                <a class="card reveal" href="a-propos.html"><strong>About</strong><span>The story and key moments</span></a>
+                <a class="card reveal" href="stats.html"><strong>Stats</strong><span>Channel numbers, live</span></a>
+                <a class="card reveal" href="contenu.html"><strong>Content</strong><span>My latest videos</span></a>
+                <a class="card reveal" href="wibidev.html"><strong>WibiDev</strong><span>Mods I make for games</span></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="left">
+            <span>© 2022-<span class="year">2026</span> Wibigen</span>
+            <a href="mailto:wibigen-mail@proton.me">Contact me</a>
+        </div>
+
+        <div class="center">
+            <img src="ressources/logo-wibigen-V2-rond.png" alt="Wibigen logo" width="56" height="56">
+        </div>
+
+        <div class="right">
+            <a href="https://www.youtube.com/@wibigen" target="_blank" rel="noopener" aria-label="YouTube"><img src="ressources/youtube-logo.png" alt="" width="34" height="34"></a>
+            <a href="https://www.twitch.tv/wibigen" target="_blank" rel="noopener" aria-label="Twitch"><img src="ressources/twitch-logo.png" alt="" width="34" height="34"></a>
+            <a href="https://discord.com/invite/JNUA7q6dcx" target="_blank" rel="noopener" aria-label="Discord"><img src="ressources/discord-logo.png" alt="" width="34" height="34"></a>
+        </div>
+    </footer>
 
 </body>
-
-<footer>
-    <div class="left">
-        © 2022-2025 Wibigen
-        <br> <a href="mailto:wibigen-mail@proton.me">Me Contacter</a>
-    </div>
-
-    <div class="center">
-        <img src="ressources\logo-wibigen-V2-rond.png">
-    </div>
-
-    <div class="right">
-        <a href="https://www.youtube.com/channel/@wibigen" target="_blank"><img src="ressources/youtube-logo.png"></a>
-        <a href="https://www.twitch.tv/wibigen" target="_blank"><img src="ressources/twitch-logo.png"></a>
-        <a href="https://discord.com/invite/JNUA7q6dcx" target="_blank"><img src="ressources/discord-logo.png"></a>
-    </div>
-</footer>    
 </html>
